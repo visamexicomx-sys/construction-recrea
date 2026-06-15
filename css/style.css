@@ -276,6 +276,7 @@ section { padding: 5rem 0; }
   background: var(--dark);
   color: rgba(255,255,255,.7);
   padding: 4rem 0 2rem;
+  word-break: break-word;
 }
 .footer h5 { color: #fff; font-weight: 700; margin-bottom: 1.25rem; }
 .footer a { color: rgba(255,255,255,.7); text-decoration: none; }
