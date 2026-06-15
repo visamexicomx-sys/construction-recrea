@@ -351,6 +351,7 @@ section { padding: 5rem 0; }
   .accordion-button { font-size: .92rem; padding: .65rem .8rem; }
   .whatsapp-float { width: 52px; height: 52px; bottom: 18px; right: 18px; }
   .whatsapp-float svg { width: 26px; height: 26px; }
+  .email-float { width: 52px; height: 52px; bottom: 18px; right: 78px; font-size: 1.3rem; }
 }
 
 /* Floating WhatsApp */
@@ -371,3 +372,23 @@ section { padding: 5rem 0; }
 }
 .whatsapp-float:hover { transform: scale(1.1); }
 .whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+
+.email-float {
+  position: fixed;
+  bottom: 25px;
+  right: 95px;
+  width: 60px;
+  height: 60px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(212,168,67,.4);
+  z-index: 999;
+  transition: transform .3s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.email-float:hover { transform: scale(1.1); color: #fff; }
