@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /partners/
+
+Sitemap: https://construction-recrea.com/sitemap.xml
