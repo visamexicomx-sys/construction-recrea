@@ -47,15 +47,6 @@ img, video, iframe, table, pre {
   padding: .5rem 1rem !important;
 }
 .nav-link:hover { color: var(--accent) !important; }
-.btn-whatsapp {
-  background: #25D366;
-  color: #fff !important;
-  border: none;
-  border-radius: 50px;
-  padding: .5rem 1.5rem;
-  font-weight: 600;
-}
-.btn-whatsapp:hover { background: #1da851; color: #fff; }
 
 /* Hero */
 .hero {
@@ -363,34 +354,14 @@ section { padding: 5rem 0; }
   .service-card .card-img-top { height: 160px; }
   .project-card { height: 200px; }
   .accordion-button { font-size: .92rem; padding: .65rem .8rem; }
-  .whatsapp-float { width: 52px; height: 52px; bottom: 18px; right: 18px; }
-  .whatsapp-float svg { width: 26px; height: 26px; }
-  .email-float { width: 52px; height: 52px; bottom: 18px; right: 78px; font-size: 1.3rem; }
+  .email-float { width: 52px; height: 52px; bottom: 18px; right: 18px; font-size: 1.3rem; }
 }
 
-/* Floating WhatsApp */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 60px;
-  height: 60px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 15px rgba(37,211,102,.4);
-  z-index: 999;
-  transition: transform .3s;
-}
-.whatsapp-float:hover { transform: scale(1.1); }
-.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
-
+/* Floating Email */
 .email-float {
   position: fixed;
   bottom: 25px;
-  right: 95px;
+  right: 25px;
   width: 60px;
   height: 60px;
   background: var(--accent);
