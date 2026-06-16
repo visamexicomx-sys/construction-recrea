@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- RECREA text - dark version for light backgrounds -->
+  <text x="0" y="42" font-family="Inter, sans-serif" font-weight="300" font-size="38" letter-spacing="12" fill="#0f1f2e">RECREA</text>
+  <!-- Gold accent line -->
+  <rect x="0" y="52" width="60" height="2.5" rx="1.25" fill="#d4a843"/>
+  <!-- arquitectura text -->
+  <text x="0" y="68" font-family="Inter, sans-serif" font-weight="300" font-size="13" letter-spacing="4" fill="#6c757d">arquitectura</text>
+  <!-- construcción text -->
+  <text x="152" y="68" font-family="Inter, sans-serif" font-weight="300" font-size="13" letter-spacing="4" fill="#6c757d">construcción</text>
+</svg>
