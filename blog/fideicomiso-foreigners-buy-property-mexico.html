@@ -159,9 +159,32 @@
 </article>
 
 <footer class="footer"><div class="container"><div class="footer-bottom text-center"><p class="mb-0">&copy; 2008–2026 Recrea Construction. All rights reserved. | <a href="/en/">Home</a> · <a href="./">Blog</a></p></div></div></footer>
-<a href="https://wa.me/529844525333" class="whatsapp-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.724-6.252-1.957l-.436-.31-3.266 1.095 1.095-3.266-.31-.436A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
 <a href="mailto:constructionrecrea@gmail.com" class="email-float" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});</script>
+<!-- WhatsApp Smart Widget -->
+<div class="wa-widget" id="waWidget">
+  <div class="wa-chat-box" id="waChatBox">
+    <div class="wa-chat-header">
+      <div class="wa-avatar"><i class="bi bi-headset"></i></div>
+      <div>
+        <div class="wa-chat-name">Recrea Construction</div>
+        <div class="wa-chat-status"><span class="wa-online-dot"></span> Online — reply in &lt;30 min</div>
+      </div>
+      <button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="wa-chat-body">
+      <div class="wa-message"><span>Hello! How can we help with your construction project?</span></div>
+    </div>
+    <div class="wa-quick-btns">
+      <a href="https://wa.me/529844525333?text=Hello!%20I%20need%20info" target="_blank" rel="noopener" class="wa-quick-btn">New Construction</a>
+      <a href="https://wa.me/529844525333?text=Hello!%20Renovation" target="_blank" rel="noopener" class="wa-quick-btn">Renovation</a>
+      <a href="https://wa.me/529844525333?text=Hello!%20Free%20quote" target="_blank" rel="noopener" class="wa-quick-btn">Free Quote</a>
+      <a href="https://wa.me/529844525333?text=Hello!" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Start Chat</a>
+    </div>
+  </div>
+  <button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button>
+</div>
+<script>(function(){var t=document.getElementById('waToggle'),b=document.getElementById('waChatBox'),c=document.getElementById('waClose'),i=document.getElementById('waIcon');if(!t||!b)return;t.addEventListener('click',function(){var o=b.classList.toggle('wa-show');t.classList.toggle('wa-open',o);if(i)i.className=o?'bi bi-x-lg':'bi bi-whatsapp';});if(c)c.addEventListener('click',function(){b.classList.remove('wa-show');t.classList.remove('wa-open');if(i)i.className='bi bi-whatsapp';});document.addEventListener('click',function(e){if(!document.getElementById('waWidget').contains(e.target)){b.classList.remove('wa-show');t.classList.remove('wa-open');if(i)i.className='bi bi-whatsapp';}});})();</script>
 </body>
 </html>

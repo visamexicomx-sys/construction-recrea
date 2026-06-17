@@ -8,5 +8,29 @@
 </head>
 <body>
 <p>Página movida. <a href="https://construction-recrea.com/#projects">Haz clic aquí</a> si no eres redirigido.</p>
+<!-- WhatsApp Smart Widget -->
+<div class="wa-widget" id="waWidget">
+  <div class="wa-chat-box" id="waChatBox">
+    <div class="wa-chat-header">
+      <div class="wa-avatar"><i class="bi bi-headset"></i></div>
+      <div>
+        <div class="wa-chat-name">Recrea Construction</div>
+        <div class="wa-chat-status"><span class="wa-online-dot"></span> Online — reply in &lt;30 min</div>
+      </div>
+      <button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="wa-chat-body">
+      <div class="wa-message"><span>Hello! How can we help with your construction project? Choose an option or type your question.</span></div>
+    </div>
+    <div class="wa-quick-btns">
+      <a href="https://wa.me/529844525333?text=Hello!%20New%20construction%20info" target="_blank" rel="noopener" class="wa-quick-btn">New Construction</a>
+      <a href="https://wa.me/529844525333?text=Hello!%20Renovation%20info" target="_blank" rel="noopener" class="wa-quick-btn">Renovation</a>
+      <a href="https://wa.me/529844525333?text=Hello!%20Free%20quote%20please" target="_blank" rel="noopener" class="wa-quick-btn">Free Quote</a>
+      <a href="https://wa.me/529844525333?text=Hello!%20I%20have%20a%20question" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Start Chat</a>
+    </div>
+  </div>
+  <button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button>
+</div>
+<script>(function(){var t=document.getElementById('waToggle'),b=document.getElementById('waChatBox'),c=document.getElementById('waClose'),i=document.getElementById('waIcon');if(!t||!b)return;t.addEventListener('click',function(){var o=b.classList.toggle('wa-show');t.classList.toggle('wa-open',o);if(i)i.className=o?'bi bi-x-lg':'bi bi-whatsapp';});if(c)c.addEventListener('click',function(){b.classList.remove('wa-show');t.classList.remove('wa-open');if(i)i.className='bi bi-whatsapp';});document.addEventListener('click',function(e){if(!document.getElementById('waWidget').contains(e.target)){b.classList.remove('wa-show');t.classList.remove('wa-open');if(i)i.className='bi bi-whatsapp';}});})();</script>
 </body>
 </html>
