@@ -490,12 +490,14 @@ section { padding: 5rem 0; }
 /* Floating Email */
 .email-float {
   position: fixed;
-  bottom: 25px;
-  right: 95px;
-  width: 60px;
-  height: 60px;
+  bottom: 26px;
+  right: 96px;
+  width: 62px;
+  height: 62px;
   background: var(--accent);
   border-radius: 50%;
+  border: none;
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,12 +507,13 @@ section { padding: 5rem 0; }
   color: #fff;
   text-decoration: none;
   font-size: 1.6rem;
+  -webkit-tap-highlight-color: transparent;
 }
 .email-float:hover { transform: scale(1.1); color: #fff; }
 
 @media (max-width: 480px) {
   .wa-chat-box { width: calc(100vw - 30px); right: -15px; }
   .wa-widget { right: 15px; bottom: 15px; }
-  .whatsapp-float { width: 54px; height: 54px; font-size: 1.5rem; bottom: 15px; right: 15px; }
-  .email-float { width: 52px; height: 52px; right: 78px; font-size: 1.3rem; }
+  .whatsapp-float { width: 50px; height: 50px; font-size: 1.4rem; bottom: 16px; right: 16px; }
+  .email-float { width: 50px; height: 50px; bottom: 16px; right: 76px; font-size: 1.3rem; }
 }
