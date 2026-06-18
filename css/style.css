@@ -354,9 +354,6 @@ section { padding: 5rem 0; }
   .service-card .card-img-top { height: 160px; }
   .project-card { height: 200px; }
   .accordion-button { font-size: .92rem; padding: .65rem .8rem; }
-  .whatsapp-float { width: 52px; height: 52px; bottom: 18px; right: 18px; }
-  .whatsapp-float svg { width: 26px; height: 26px; }
-  .email-float { width: 52px; height: 52px; bottom: 18px; right: 78px; font-size: 1.3rem; }
 }
 
 /* WhatsApp Smart Widget */
@@ -496,7 +493,7 @@ section { padding: 5rem 0; }
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 15px rgba(212,168,67,.4);
-  z-index: 999;
+  z-index: 9998;
   transition: transform .3s;
   color: #fff;
   text-decoration: none;
