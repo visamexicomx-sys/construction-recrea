@@ -740,22 +740,24 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       close=document.getElementById('waClose'),
       icon=document.getElementById('waIcon');
   if(!toggle||!box)return;
+  var isOpen=false;
   toggle.addEventListener('click',function(e){
+    e.preventDefault();
     e.stopPropagation();
-    var open=box.classList.toggle('wa-show');
-    toggle.classList.toggle('wa-open',open);
-    if(icon){icon.className=open?'bi bi-x-lg':'bi bi-whatsapp';}
+    isOpen=!isOpen;
+    box.classList.toggle('open',isOpen);
+    if(icon)icon.className=isOpen?'bi bi-x-lg':'bi bi-whatsapp';
   });
   if(close)close.addEventListener('click',function(e){
     e.stopPropagation();
-    box.classList.remove('wa-show');
-    toggle.classList.remove('wa-open');
+    isOpen=false;
+    box.classList.remove('open');
     if(icon)icon.className='bi bi-whatsapp';
   });
   document.addEventListener('click',function(e){
-    if(!e.target.closest('#waWidget')){
-      box.classList.remove('wa-show');
-      toggle.classList.remove('wa-open');
+    if(isOpen&&!e.target.closest('#waWidget')){
+      isOpen=false;
+      box.classList.remove('open');
       if(icon)icon.className='bi bi-whatsapp';
     }
   });
