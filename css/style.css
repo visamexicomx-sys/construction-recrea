@@ -340,7 +340,9 @@ section { padding: 5rem 0; }
   .navbar-brand { font-size: 1.1rem; }
   .navbar-collapse { background: var(--dark); padding: 1rem; border-radius: 0 0 12px 12px; margin-top: .5rem; }
   .navbar-collapse .nav-link { padding: .75rem 1rem !important; border-bottom: 1px solid rgba(255,255,255,.05); }
-  .navbar-collapse .dropdown-menu { background: rgba(0,0,0,.2); border: none; }
+  .navbar-collapse .dropdown-menu { background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+  .navbar-collapse .dropdown-menu .dropdown-item { color: #333; }
+  .navbar-collapse .dropdown-menu .dropdown-item:hover, .navbar-collapse .dropdown-menu .dropdown-item.active { background: var(--accent); color: #fff; }
   .table-responsive, table { display: block; overflow-x: auto; }
   .row { margin-left: 0; margin-right: 0; }
   .container-fluid, .container { padding-left: 15px; padding-right: 15px; overflow: hidden; }
