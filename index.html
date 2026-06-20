@@ -48,7 +48,7 @@
     },
     "geo": {"@type": "GeoCoordinates", "latitude": 20.6296, "longitude": -87.0739},
     "areaServed": ["Playa del Carmen", "Cancún", "Tulum", "Puerto Aventuras", "Akumal"],
-    "sameAs": ["https://www.facebook.com/recrea.arquitectura", "https://www.instagram.com/recrea_arquitectura"],
+    "sameAs": ["https://www.facebook.com/recrea.arquitectura", "https://www.instagram.com/recrea_arquitectura", "https://www.tiktok.com/@recrea.construction"],
     "openingHoursSpecification": [
       {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
       {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00"}
@@ -70,7 +70,8 @@
   }
   </script>
 </head>
-<body>
+<body class="has-top-bar">
+<div class="top-cta-bar"><span>Cotización Gratis — Respondemos en 2 min</span><a href="https://wa.me/529844525333?text=Hola!%20Quiero%20una%20cotización%20gratis" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -112,7 +113,7 @@
     <div class="row align-items-center">
       <div class="col-lg-7">
         <span class="badge-years">18+ Años de Experiencia</span>
-        <h1>Constructora y Remodelación en Playa del Carmen</h1>
+        <h1>Constructora y Remodelación en Playa del Carmen y Tulum</h1>
         <p class="lead mt-3 mb-4">Construimos casas, villas y espacios comerciales en la Riviera Maya. Arquitectura, permisos, construcción y acabados — todo en una empresa.</p>
         <div class="d-flex flex-wrap gap-3">
           <a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Cotización Gratis</a>
@@ -510,7 +511,7 @@
   </div>
 </section>
 
-<!-- Testimonials -->
+<!-- Testimonials Carousel -->
 <section id="testimonials">
   <div class="container">
     <div class="text-center">
@@ -518,27 +519,45 @@
       <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
       <p class="section-subtitle">Hemos construido para 7-Eleven, GoMart y cientos de propietarios</p>
     </div>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="testimonial-card">
-          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-          <blockquote>"Recrea construyó nuestra villa en Tulum desde cero. Se encargaron de todo — diseño, permisos, construcción, hasta los muebles. Reportes fotográficos diarios nos mantuvieron informados."</blockquote>
-          <cite>David & Sarah M., Tulum</cite>
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Recrea construyó nuestra villa en Tulum desde cero. Se encargaron de todo — diseño, permisos, construcción, hasta los muebles. Reportes fotográficos diarios nos mantuvieron informados."</blockquote><cite>David & Sarah M., Tulum</cite></div></div>
+            <div class="col-md-4 d-none d-md-block"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Como inversionista canadiense, construir a distancia en México parecía arriesgado. Recrea hizo el proceso transparente y sin estrés. Terminaron a tiempo y la calidad superó las expectativas."</blockquote><cite>James R., Toronto, Canadá</cite></div></div>
+            <div class="col-md-4 d-none d-md-block"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Contratamos a Recrea para remodelar nuestro restaurante en Playa. Entendieron exactamente lo que necesitábamos y entregaron dentro del presupuesto. Totalmente recomendados."</blockquote><cite>Marco & Patricia L., Playa del Carmen</cite></div></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Compramos terreno en Playa del Carmen y Recrea se encargó de todo, desde los planos arquitectónicos hasta la última mano de pintura. La casa es impresionante y la entregaron antes de tiempo."</blockquote><cite>Michael & Lisa K., Austin, EE.UU.</cite></div></div>
+            <div class="col-md-4 d-none d-md-block"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"La construcción de nuestra franquicia 7-Eleven se completó a tiempo a pesar de los desafíos de suministro. La gestión de proyecto y comunicación de Recrea fueron excepcionales de principio a fin."</blockquote><cite>Cliente Corporativo, 7-Eleven México</cite></div></div>
+            <div class="col-md-4 d-none d-md-block"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Vivo en Alemania y manejé toda mi obra a distancia con Recrea. Videollamadas semanales, fotos diarias y cero sorpresas en el presupuesto. La alberca y la azotea quedaron perfectas."</blockquote><cite>Thomas W., Múnich, Alemania</cite></div></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Recrea remodeló nuestro departamento en Puerto Aventuras — cocina nueva, baños y reinstalación eléctrica completa. Trabajaron alrededor del horario de nuestros inquilinos y terminaron en 6 semanas."</blockquote><cite>Anna & Robert P., Puerto Aventuras</cite></div></div>
+            <div class="col-md-4 d-none d-md-block"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Necesitábamos cortinas anticiclónicas, nueva impermeabilización y mejoras eléctricas — todo antes de lluvias. Recrea entregó todo en 3 semanas. Profesionales y rápidos."</blockquote><cite>Carlos & María G., Cancún</cite></div></div>
+            <div class="col-md-4 d-none d-md-block"><div class="testimonial-card"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><blockquote>"Tercer proyecto con Recrea — dos villas y ahora un hotel boutique. Entienden los requisitos comerciales, manejan permisos impecablemente y su equipo de herrería es el mejor de la región."</blockquote><cite>Alejandro V., Tulum</cite></div></div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="testimonial-card">
-          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-          <blockquote>"Como inversionista canadiense, construir a distancia en México parecía arriesgado. Recrea hizo el proceso transparente y sin estrés. Terminaron a tiempo y la calidad superó las expectativas."</blockquote>
-          <cite>James R., Toronto, Canadá</cite>
-        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev" style="width:5%"><span class="carousel-control-prev-icon" style="filter:invert(40%)"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next" style="width:5%"><span class="carousel-control-next-icon" style="filter:invert(40%)"></span></button>
+      <div class="carousel-indicators" style="bottom:-40px">
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active" style="background:#333"></button>
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" style="background:#333"></button>
+        <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2" style="background:#333"></button>
       </div>
-      <div class="col-md-4">
-        <div class="testimonial-card">
-          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-          <blockquote>"Contratamos a Recrea para remodelar nuestro restaurante en Playa. Entendieron exactamente lo que necesitábamos y entregaron dentro del presupuesto. Totalmente recomendados para proyectos comerciales."</blockquote>
-          <cite>Marco & Patricia L., Playa del Carmen</cite>
-        </div>
+    </div>
+    <div class="text-center mt-5 mb-3">
+      <div class="d-inline-flex align-items-center gap-2 px-4 py-2 rounded-pill" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);border:1px solid #e0e0e0">
+        <img src="https://www.google.com/favicon.ico" alt="Google" width="20" height="20">
+        <span class="fw-bold" style="color:#202124">Reseñas de Google</span>
+        <span style="color:#fbbc04;font-size:1.1rem"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+        <span class="fw-bold" style="color:#202124">5.0</span>
+        <span style="color:#70757a">· 9 reseñas</span>
       </div>
     </div>
   </div>
@@ -597,6 +616,7 @@
 </section>
 
 <!-- CTA -->
+<div class="trust-badges"><span class="trust-badge"><i class="bi bi-award"></i>18+ Años</span><span class="trust-badge"><i class="bi bi-building"></i>196+ Proyectos</span><span class="trust-badge"><i class="bi bi-shield-check"></i>Licencia</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Asegurados</span></div>
 <section class="cta-section">
   <div class="container text-center">
     <h2 class="mb-3">¿Listo Para Iniciar Tu Proyecto?</h2>
@@ -640,7 +660,7 @@
           <a href="https://www.facebook.com/recrea.arquitectura" class="me-3 fs-4"><i class="bi bi-facebook"></i></a>
           <a href="https://www.instagram.com/recrea_arquitectura" class="me-3 fs-4"><i class="bi bi-instagram"></i></a>
           <a href="https://www.threads.net/@recrea_arquitectura" class="me-3 fs-4"><i class="bi bi-threads"></i></a>
-          <a href="https://www.tiktok.com/@recrea_arquitectura" class="fs-4"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.tiktok.com/@recrea.construction" class="fs-4"><i class="bi bi-tiktok"></i></a>
         </div>
       </div>
       <div class="col-lg-7">
@@ -757,7 +777,7 @@
       <div class="wa-avatar"><i class="bi bi-headset"></i></div>
       <div>
         <div class="wa-chat-name">Recrea Construcción</div>
-        <div class="wa-chat-status"><span class="wa-online-dot"></span> En línea — respuesta en &lt;30 min</div>
+        <div class="wa-chat-status"><span class="wa-online-dot"></span> En línea — En línea — respuesta en &lt;2 min</div>
       </div>
       <button class="wa-close" id="waClose" aria-label="Cerrar"><i class="bi bi-x-lg"></i></button>
     </div>
