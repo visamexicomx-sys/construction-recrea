@@ -33,7 +33,7 @@ img, video, iframe, table, pre {
 
 /* Navbar */
 .navbar {
-  padding: 1rem 0;
+  padding: .35rem 0;
   transition: background .3s;
 }
 .navbar.scrolled {
@@ -41,13 +41,13 @@ img, video, iframe, table, pre {
   box-shadow: 0 2px 20px rgba(0,0,0,.15);
 }
 .navbar-brand img {
-  height: 58px;
+  height: 53px;
 }
 .nav-link {
   color: rgba(255,255,255,.85) !important;
   font-weight: 500;
-  font-size: .95rem;
-  padding: .5rem 1rem !important;
+  font-size: .9rem;
+  padding: .35rem .75rem !important;
 }
 .nav-link:hover { color: var(--accent) !important; }
 
@@ -562,8 +562,8 @@ section { padding: 5rem 0; }
   gap: 12px;
 }
 .top-cta-bar a {
-  color: #fff;
-  background: var(--primary);
+  color: #000;
+  background: #25D366;
   padding: 4px 16px;
   border-radius: 50px;
   text-decoration: none;
@@ -572,7 +572,7 @@ section { padding: 5rem 0; }
   transition: background .2s;
   white-space: nowrap;
 }
-.top-cta-bar a:hover { background: var(--dark); }
+.top-cta-bar a:hover { background: #1da851; }
 .has-top-bar .navbar { top: 36px !important; }
 .has-top-bar .breadcrumb-spacer, .has-top-bar > div[style*="padding-top"] { padding-top: 116px !important; }
 @media (max-width: 480px) {
