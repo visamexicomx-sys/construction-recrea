@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Certifications -->
+  <url>
+    <loc>https://construction-recrea.com/certificaciones/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/certificaciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/certifications/"/>
+  </url>
+  <url>
+    <loc>https://construction-recrea.com/certifications/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/certificaciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/certifications/"/>
+  </url>
+
   <!-- Main pages -->
   <url>
     <loc>https://construction-recrea.com/</loc>
