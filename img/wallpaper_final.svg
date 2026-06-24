@@ -175,19 +175,19 @@
   <text x="690" y="430" font-family="Georgia, 'Times New Roman', serif" font-style="normal" font-size="36" fill="white" text-anchor="middle">1</text>
 
   <!-- "sin B" right of H-G segment -->
-  <text x="1006" y="298" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">sin <tspan font-style="italic">B</tspan></text>
+  <text x="1006" y="298" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">sin B</text>
 
   <!-- "cos B" on E-G diagonal, middle -->
-  <text x="775" y="600" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos <tspan font-style="italic">B</tspan></text>
+  <text x="775" y="600" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos B</text>
 
   <!-- "90 − A" on E-G near J, small -->
-  <text x="810" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="white" text-anchor="middle">90 − <tspan font-style="italic">A</tspan></text>
+  <text x="810" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="white" text-anchor="middle">90 − A</text>
 
   <!-- "sin A cos B" rotated vertical on right side G-F -->
-  <text x="1114" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="middle" transform="rotate(90, 1114, 640)">sin <tspan font-style="italic">A</tspan> cos <tspan font-style="italic">B</tspan></text>
+  <text x="1114" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="middle" transform="rotate(90, 1114, 640)">sin A cos B</text>
 
   <!-- "cos A cos B" on base E-F, below center -->
-  <text x="817" y="836" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos <tspan font-style="italic">A</tspan> cos <tspan font-style="italic">B</tspan></text>
+  <text x="817" y="836" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos A cos B</text>
 
   <!-- Vertex labels -->
   <!-- H top -->
@@ -223,7 +223,7 @@
         font-size="58"
         fill="white"
         text-anchor="middle"
-        letter-spacing="1">sin(<tspan>A</tspan> + <tspan>B</tspan>) = sin <tspan>A</tspan> cos <tspan>B</tspan> + cos <tspan>A</tspan> sin <tspan>B</tspan></text>
+        letter-spacing="1">sin(A + B) = sin A cos B + cos A sin B</text>
 
   <!-- Subtle vignette overlay (darkens edges) -->
   <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
