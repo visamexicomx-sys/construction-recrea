@@ -23,7 +23,7 @@
   <!-- Main pages -->
   <url>
     <loc>https://construction-recrea.com/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/"/>
@@ -35,27 +35,51 @@
   </url>
   <url>
     <loc>https://construction-recrea.com/en/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+      <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/en/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/de/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/en/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/ru/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/en/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/zh/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/en/"/>
   </url>
 
   <!-- Services -->
@@ -172,6 +196,11 @@
     <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/blog-es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/blog-ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/blog-de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/blog/construction-costs-playa-del-carmen-2026.html</loc>
@@ -300,6 +329,11 @@
     <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/blog-es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/blog-ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/blog-de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/blog-es/costos-construccion-playa-del-carmen-2026.html</loc>
@@ -428,6 +462,11 @@
     <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/blog-es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/blog-ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/blog-de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/blog-ru/inostrantsy-stroitelstvo-doma-meksika.html</loc>
@@ -587,6 +626,11 @@
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/blog-es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/blog-ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/blog-de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/blog-de/bauboom-quintana-roo-2026.html</loc>
@@ -631,6 +675,11 @@
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://construction-recrea.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://construction-recrea.com/blog-es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://construction-recrea.com/blog-ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://construction-recrea.com/blog-de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/"/>
   </url>
   <url>
     <loc>https://construction-recrea.com/blog-zh/quintana-roo-jianzhu-fanrong-2026.html</loc>
