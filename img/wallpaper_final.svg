@@ -124,90 +124,83 @@
     <polygon points="1850,930 1856,950 1876,956 1856,962 1850,982 1844,962 1824,956 1844,950" fill="#b0c0d8" stroke="none"/>
   </g>
 
-  <!-- ===== MAIN DIAGRAM — centered ~55% from left ===== -->
-  <!-- Points (px):
-       E = (555, 780)
-       H = (870, 140)
-       G = (1080, 480)
-       F = (1080, 780)
-       J = (870, 780)
-       I = (870, 480)
+  <!-- ===== MAIN DIAGRAM — sin(A+B) proof ===== -->
+  <!-- Corrected geometry: angle EGH = 90° exact (A≈30°, B≈33.8°)
+       E = (555, 780)    bottom-left vertex
+       H = (870, 140)    top vertex
+       G = (1068, 484)   right vertex, right angle here
+       F = (1068, 780)   base below G
+       J = (870, 780)    base below H
+       I = (870, 484)    intersection of altitude HJ and horizontal through G
   -->
 
   <g transform="translate(738.4,92) scale(0.8)">
   <g filter="url(#glow_line)">
-    <!-- Main triangle E-H-G-F base -->
     <!-- E to H (hypotenuse = 1) -->
     <line x1="555" y1="780" x2="870" y2="140" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <!-- H to G (= sin B) -->
-    <line x1="870" y1="140" x2="1080" y2="480" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-    <!-- G to F (= sin A cos B, vertical right side) -->
-    <line x1="1080" y1="480" x2="1080" y2="780" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="870" y1="140" x2="1068" y2="484" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- G to F (= sin A cos B, vertical) -->
+    <line x1="1068" y1="484" x2="1068" y2="780" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <!-- E to F (base = cos A cos B) -->
-    <line x1="555" y1="780" x2="1080" y2="780" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-
+    <line x1="555" y1="780" x2="1068" y2="780" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <!-- H to J (altitude, vertical) -->
     <line x1="870" y1="140" x2="870" y2="780" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
-
     <!-- E to G (= cos B, diagonal) -->
-    <line x1="555" y1="780" x2="1080" y2="480" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
-
+    <line x1="555" y1="780" x2="1068" y2="484" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
     <!-- I to G (horizontal) -->
-    <line x1="870" y1="480" x2="1080" y2="480" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
+    <line x1="870" y1="484" x2="1068" y2="484" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
   </g>
 
   <!-- Right angle marks -->
-  <!-- At J (870,780): between vertical and horizontal -->
+  <!-- At J (870,780): HJ ⊥ EF -->
   <polyline points="870,760 890,760 890,780" fill="none" stroke="white" stroke-width="1.8"/>
-  <!-- At F (1080,780): between vertical GF and base EF -->
-  <polyline points="1060,780 1060,760 1080,760" fill="none" stroke="white" stroke-width="1.8"/>
-  <!-- At I (870,480): between H-J and I-G -->
-  <polyline points="870,500 890,500 890,480" fill="none" stroke="white" stroke-width="1.8"/>
-  <!-- At G (1080,480): small angle square -->
-  <polyline points="1062,480 1062,498 1080,498" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- At F (1068,780): GF ⊥ EF -->
+  <polyline points="1048,780 1048,760 1068,760" fill="none" stroke="white" stroke-width="1.8"/>
+  <!-- At I (870,484): HJ ⊥ IG -->
+  <polyline points="870,504 890,504 890,484" fill="none" stroke="white" stroke-width="1.8"/>
+  <!-- At G: angle EGH = 90° (the key right angle for the proof) -->
+  <polyline points="1052,493 1043,477 1059,468" fill="none" stroke="white" stroke-width="1.8"/>
 
-  <!-- Small angle A at G (inside triangle I-G) -->
-  <text x="1052" y="474" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="18" fill="white" opacity="0.9" text-anchor="middle">A</text>
+  <!-- Angle A label at G (angle between GI and GE) -->
+  <text x="1038" y="478" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="18" fill="white" opacity="0.9" text-anchor="middle">A</text>
 
   <!-- ===== LABELS ===== -->
 
-  <!-- "1" on E-H hypotenuse, midpoint shifted left -->
+  <!-- "1" on E-H hypotenuse -->
   <text x="690" y="430" font-family="Georgia, 'Times New Roman', serif" font-style="normal" font-size="36" fill="white" text-anchor="middle">1</text>
 
-  <!-- "sin B" right of H-G segment -->
-  <text x="1006" y="298" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">sin B</text>
+  <!-- "sin B" on H-G -->
+  <text x="1000" y="298" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">sin B</text>
 
-  <!-- "cos B" on E-G diagonal, middle -->
+  <!-- "cos B" on E-G diagonal -->
   <text x="775" y="600" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos B</text>
 
-  <!-- "90 − A" on E-G near J, small -->
+  <!-- "90 − A" angle between EG and vertical HJ -->
   <text x="810" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="white" text-anchor="middle">90 − A</text>
 
-  <!-- "sin A cos B" rotated vertical on right side G-F -->
-  <text x="1114" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="middle" transform="rotate(90, 1114, 640)">sin A cos B</text>
+  <!-- "sin A cos B" on vertical G-F -->
+  <text x="1102" y="632" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="middle" transform="rotate(90, 1102, 632)">sin A cos B</text>
 
-  <!-- "cos A cos B" on base E-F, below center -->
-  <text x="817" y="836" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos A cos B</text>
+  <!-- "cos A sin B" on altitude segment H-I -->
+  <text x="838" y="312" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="white" text-anchor="end">cos A sin B</text>
+
+  <!-- "cos A cos B" on base E-F -->
+  <text x="812" y="836" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos A cos B</text>
 
   <!-- Vertex labels -->
-  <!-- H top -->
   <text x="870" y="118" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="middle">H</text>
-  <!-- G right -->
-  <text x="1104" y="488" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="white" text-anchor="start">G</text>
-  <!-- I left of I point -->
-  <text x="840" y="488" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="end">I</text>
-  <!-- E bottom left -->
+  <text x="1092" y="492" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="white" text-anchor="start">G</text>
+  <text x="840" y="492" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="end">I</text>
   <text x="528" y="800" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="end">E</text>
-  <!-- F bottom right -->
-  <text x="1106" y="800" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="start">F</text>
-  <!-- J bottom of altitude -->
+  <text x="1094" y="800" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="start">F</text>
   <text x="874" y="812" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">J</text>
 
-  <!-- Angle B and A at E -->
-  <!-- Arc for angle B (outer) -->
+  <!-- Angle arcs at E -->
+  <!-- Arc for angle B (between EH and EG) -->
   <path d="M 596,748 A 62,62 0 0,1 618,696" fill="none" stroke="white" stroke-width="1.6" opacity="0.9"/>
   <text x="604" y="728" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="start">B</text>
-  <!-- Arc for angle A (inner) -->
+  <!-- Arc for angle A (between EG and horizontal EF) -->
   <path d="M 592,762 A 42,42 0 0,1 606,724" fill="none" stroke="white" stroke-width="1.4" opacity="0.8"/>
   <text x="614" y="758" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="white" text-anchor="start">A</text>
   </g>
