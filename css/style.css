@@ -75,7 +75,8 @@ img, video, iframe, table, pre {
 /* Hero */
 .hero {
   background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
-  min-height: 90vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   position: relative;
@@ -85,8 +86,8 @@ img, video, iframe, table, pre {
   content: '';
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background: url('../img/hero-bg.jpg') center/cover no-repeat;
-  opacity: .15;
+  background: url('../img/wallpaper_final.svg') center/cover no-repeat;
+  opacity: .25;
 }
 .hero .container { position: relative; z-index: 1; }
 .hero h1 {
@@ -328,7 +329,7 @@ section { padding: 5rem 0; }
 
 /* Responsive - Tablet */
 @media (max-width: 991px) {
-  .hero { min-height: 80vh; }
+  .hero { min-height: 100vh; min-height: 100dvh; }
   .hero h1 { font-size: 2.2rem; }
   .section-title { font-size: 1.8rem; }
   .project-card { height: 250px; }

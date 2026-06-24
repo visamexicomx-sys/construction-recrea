@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Dark background gradient -->
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1a1e2a"/>
+      <stop offset="100%" stop-color="#0a0b0e"/>
+    </radialGradient>
+    <!-- Glow for center -->
+    <radialGradient id="glow" cx="58%" cy="46%" r="32%">
+      <stop offset="0%" stop-color="#1e2540" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0a0b0e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Blue glow for bg shapes -->
+    <filter id="blur4" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur8" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="glow_line" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <!-- ===== BACKGROUND GEOMETRIC SHAPES (blurred, tinted blue) ===== -->
+
+  <!-- Top-left grid dots -->
+  <g opacity="0.18" fill="#4a6fa5">
+    <circle cx="72" cy="420" r="2.5"/><circle cx="96" cy="420" r="2.5"/>
+    <circle cx="120" cy="420" r="2.5"/><circle cx="144" cy="420" r="2.5"/>
+    <circle cx="168" cy="420" r="2.5"/><circle cx="72" cy="444" r="2.5"/>
+    <circle cx="96" cy="444" r="2.5"/><circle cx="120" cy="444" r="2.5"/>
+    <circle cx="144" cy="444" r="2.5"/><circle cx="168" cy="444" r="2.5"/>
+    <circle cx="72" cy="468" r="2.5"/><circle cx="96" cy="468" r="2.5"/>
+    <circle cx="120" cy="468" r="2.5"/><circle cx="144" cy="468" r="2.5"/>
+    <circle cx="168" cy="468" r="2.5"/><circle cx="72" cy="492" r="2.5"/>
+    <circle cx="96" cy="492" r="2.5"/><circle cx="120" cy="492" r="2.5"/>
+    <circle cx="144" cy="492" r="2.5"/><circle cx="168" cy="492" r="2.5"/>
+    <circle cx="72" cy="516" r="2.5"/><circle cx="96" cy="516" r="2.5"/>
+    <circle cx="120" cy="516" r="2.5"/><circle cx="144" cy="516" r="2.5"/>
+    <circle cx="168" cy="516" r="2.5"/>
+  </g>
+
+  <!-- Left grid lines faint -->
+  <g opacity="0.08" stroke="#5577bb" stroke-width="0.8" fill="none">
+    <line x1="40" y1="350" x2="320" y2="350"/>
+    <line x1="40" y1="380" x2="320" y2="380"/>
+    <line x1="40" y1="410" x2="320" y2="410"/>
+    <line x1="40" y1="440" x2="320" y2="440"/>
+    <line x1="40" y1="470" x2="320" y2="470"/>
+    <line x1="40" y1="500" x2="320" y2="500"/>
+    <line x1="40" y1="530" x2="320" y2="530"/>
+    <line x1="100" y1="330" x2="100" y2="560"/>
+    <line x1="140" y1="330" x2="140" y2="560"/>
+    <line x1="180" y1="330" x2="180" y2="560"/>
+    <line x1="220" y1="330" x2="220" y2="560"/>
+    <line x1="260" y1="330" x2="260" y2="560"/>
+  </g>
+
+  <!-- BG triangle top-left (blue tinted, blurred) -->
+  <g opacity="0.22" filter="url(#blur4)">
+    <polygon points="80,580 240,300 360,580" fill="#1a2d5a" stroke="#2a4a8a" stroke-width="1.5"/>
+    <line x1="80" y1="580" x2="295" y2="432" stroke="#3a5a9a" stroke-width="1"/>
+    <line x1="240" y1="300" x2="360" y2="580" stroke="#3a5a9a" stroke-width="1"/>
+  </g>
+  <!-- Inner triangle top-left -->
+  <g opacity="0.15" filter="url(#blur4)">
+    <polygon points="130,530 240,340 330,530" fill="none" stroke="#4a6aaa" stroke-width="1"/>
+  </g>
+
+  <!-- BG triangle bottom-left -->
+  <g opacity="0.25" filter="url(#blur4)">
+    <polygon points="60,900 280,620 380,900" fill="#162244" stroke="#2a4a7a" stroke-width="1.5"/>
+  </g>
+
+  <!-- BG star/diamond bottom-left -->
+  <g opacity="0.3" filter="url(#blur2)">
+    <polygon points="200,820 225,770 250,820 225,870" fill="none" stroke="#4060a0" stroke-width="1.2"/>
+  </g>
+
+  <!-- Right side scattered triangles -->
+  <!-- Top-right large triangle -->
+  <g opacity="0.2" filter="url(#blur4)">
+    <polygon points="1680,60 1860,80 1780,240" fill="#12204a" stroke="#2a3a7a" stroke-width="1.5"/>
+    <line x1="1680" y1="60" x2="1780" y2="240" stroke="#3a5a8a" stroke-width="1"/>
+  </g>
+
+  <!-- Right mid triangle -->
+  <g opacity="0.28" filter="url(#blur4)">
+    <polygon points="1620,560 1820,460 1860,700" fill="#14224a" stroke="#2a4a80" stroke-width="1.5"/>
+    <line x1="1620" y1="560" x2="1860" y2="700" stroke="#3a5a8a" stroke-width="1"/>
+  </g>
+
+  <!-- Right bottom triangle/spike (the sharp blue one) -->
+  <g opacity="0.35" filter="url(#blur2)">
+    <polygon points="1760,640 1820,620 1790,820" fill="#0e1a40" stroke="#2a4070" stroke-width="1.8"/>
+    <line x1="1760" y1="640" x2="1790" y2="820" stroke="#3a5a8a" stroke-width="1.2"/>
+  </g>
+
+  <!-- Right dots cluster -->
+  <g opacity="0.15" fill="#4a6fa5">
+    <circle cx="1740" cy="400" r="2"/><circle cx="1766" cy="400" r="2"/>
+    <circle cx="1792" cy="400" r="2"/><circle cx="1818" cy="400" r="2"/>
+    <circle cx="1740" cy="424" r="2"/><circle cx="1766" cy="424" r="2"/>
+    <circle cx="1792" cy="424" r="2"/><circle cx="1818" cy="424" r="2"/>
+    <circle cx="1740" cy="448" r="2"/><circle cx="1766" cy="448" r="2"/>
+    <circle cx="1792" cy="448" r="2"/><circle cx="1818" cy="448" r="2"/>
+  </g>
+
+  <!-- Bottom-right diamond/rhombus -->
+  <g opacity="0.25" filter="url(#blur2)">
+    <polygon points="1820,880 1860,840 1900,880 1860,920" fill="none" stroke="#8a9ab0" stroke-width="2"/>
+  </g>
+  <!-- Glowing 4-point star bottom right -->
+  <g opacity="0.6">
+    <polygon points="1850,930 1856,950 1876,956 1856,962 1850,982 1844,962 1824,956 1844,950" fill="#b0c0d8" stroke="none"/>
+  </g>
+
+  <!-- ===== MAIN DIAGRAM — centered ~55% from left ===== -->
+  <!-- Points (px):
+       E = (555, 780)
+       H = (870, 140)
+       G = (1080, 480)
+       F = (1080, 780)
+       J = (870, 780)
+       I = (870, 480)
+  -->
+
+  <g transform="translate(738.4,92) scale(0.8)">
+  <g filter="url(#glow_line)">
+    <!-- Main triangle E-H-G-F base -->
+    <!-- E to H (hypotenuse = 1) -->
+    <line x1="555" y1="780" x2="870" y2="140" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- H to G (= sin B) -->
+    <line x1="870" y1="140" x2="1080" y2="480" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- G to F (= sin A cos B, vertical right side) -->
+    <line x1="1080" y1="480" x2="1080" y2="780" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- E to F (base = cos A cos B) -->
+    <line x1="555" y1="780" x2="1080" y2="780" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+
+    <!-- H to J (altitude, vertical) -->
+    <line x1="870" y1="140" x2="870" y2="780" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
+
+    <!-- E to G (= cos B, diagonal) -->
+    <line x1="555" y1="780" x2="1080" y2="480" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
+
+    <!-- I to G (horizontal) -->
+    <line x1="870" y1="480" x2="1080" y2="480" stroke="white" stroke-width="2.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right angle marks -->
+  <!-- At J (870,780): between vertical and horizontal -->
+  <polyline points="870,760 890,760 890,780" fill="none" stroke="white" stroke-width="1.8"/>
+  <!-- At F (1080,780): between vertical GF and base EF -->
+  <polyline points="1060,780 1060,760 1080,760" fill="none" stroke="white" stroke-width="1.8"/>
+  <!-- At I (870,480): between H-J and I-G -->
+  <polyline points="870,500 890,500 890,480" fill="none" stroke="white" stroke-width="1.8"/>
+  <!-- At G (1080,480): small angle square -->
+  <polyline points="1062,480 1062,498 1080,498" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- Small angle A at G (inside triangle I-G) -->
+  <text x="1052" y="474" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="18" fill="white" opacity="0.9" text-anchor="middle">A</text>
+
+  <!-- ===== LABELS ===== -->
+
+  <!-- "1" on E-H hypotenuse, midpoint shifted left -->
+  <text x="690" y="430" font-family="Georgia, 'Times New Roman', serif" font-style="normal" font-size="36" fill="white" text-anchor="middle">1</text>
+
+  <!-- "sin B" right of H-G segment -->
+  <text x="1006" y="298" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">sin <tspan font-style="italic">B</tspan></text>
+
+  <!-- "cos B" on E-G diagonal, middle -->
+  <text x="775" y="600" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos <tspan font-style="italic">B</tspan></text>
+
+  <!-- "90 − A" on E-G near J, small -->
+  <text x="810" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="white" text-anchor="middle">90 − <tspan font-style="italic">A</tspan></text>
+
+  <!-- "sin A cos B" rotated vertical on right side G-F -->
+  <text x="1114" y="640" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="middle" transform="rotate(90, 1114, 640)">sin <tspan font-style="italic">A</tspan> cos <tspan font-style="italic">B</tspan></text>
+
+  <!-- "cos A cos B" on base E-F, below center -->
+  <text x="817" y="836" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="middle">cos <tspan font-style="italic">A</tspan> cos <tspan font-style="italic">B</tspan></text>
+
+  <!-- Vertex labels -->
+  <!-- H top -->
+  <text x="870" y="118" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="middle">H</text>
+  <!-- G right -->
+  <text x="1104" y="488" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="white" text-anchor="start">G</text>
+  <!-- I left of I point -->
+  <text x="840" y="488" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="end">I</text>
+  <!-- E bottom left -->
+  <text x="528" y="800" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="end">E</text>
+  <!-- F bottom right -->
+  <text x="1106" y="800" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="white" text-anchor="start">F</text>
+  <!-- J bottom of altitude -->
+  <text x="874" y="812" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" fill="white" text-anchor="start">J</text>
+
+  <!-- Angle B and A at E -->
+  <!-- Arc for angle B (outer) -->
+  <path d="M 596,748 A 62,62 0 0,1 618,696" fill="none" stroke="white" stroke-width="1.6" opacity="0.9"/>
+  <text x="604" y="728" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="white" text-anchor="start">B</text>
+  <!-- Arc for angle A (inner) -->
+  <path d="M 592,762 A 42,42 0 0,1 606,724" fill="none" stroke="white" stroke-width="1.4" opacity="0.8"/>
+  <text x="614" y="758" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="white" text-anchor="start">A</text>
+  </g>
+
+  <!-- ===== BOTTOM FORMULA ===== -->
+  <!-- Divider line -->
+  <line x1="400" y1="890" x2="1520" y2="890" stroke="white" stroke-width="0.6" stroke-opacity="0.2"/>
+
+  <!-- sin(A + B) = sin A cos B + cos A sin B -->
+  <text x="960" y="980"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-style="italic"
+        font-size="58"
+        fill="white"
+        text-anchor="middle"
+        letter-spacing="1">sin(<tspan>A</tspan> + <tspan>B</tspan>) = sin <tspan>A</tspan> cos <tspan>B</tspan> + cos <tspan>A</tspan> sin <tspan>B</tspan></text>
+
+  <!-- Subtle vignette overlay (darkens edges) -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+    <stop offset="0%" stop-color="black" stop-opacity="0"/>
+    <stop offset="100%" stop-color="black" stop-opacity="0.55"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+
+</svg>
