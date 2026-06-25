@@ -363,6 +363,10 @@ section { padding: 5rem 0; }
   .why-card { padding: 1.25rem 1rem; }
   .why-icon { width: 55px; height: 55px; font-size: 1.4rem; }
   .step-number { width: 40px; height: 40px; font-size: 1rem; }
+  .process-scroll.row { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 1rem; padding-bottom: .75rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+  .process-scroll > div { flex: 0 0 70%; scroll-snap-align: start; max-width: 70%; }
+  .process-scroll::-webkit-scrollbar { height: 4px; }
+  .process-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
   .cta-section { padding: 3rem 0; }
   .cta-section h2 { font-size: 1.5rem; }
   .cta-section .btn-lg { width: 100%; margin-bottom: .5rem; }
