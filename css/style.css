@@ -327,6 +327,8 @@ section { padding: 5rem 0; }
 .blog-card .card-body { padding: 1.5rem; }
 .blog-card .badge { background: var(--accent); color: var(--dark); }
 
+.btn-show-projects { display: none; margin-top: 1.5rem; }
+
 /* Responsive - Tablet */
 @media (max-width: 991px) {
   .hero { min-height: 100vh; min-height: 100dvh; }
@@ -352,6 +354,10 @@ section { padding: 5rem 0; }
   section { padding: 2.5rem 0; }
   .service-card .card-img-top { height: 180px; }
   .project-card { height: 220px; }
+  #projects .row > div:nth-child(n+7) { display: none; }
+  #projects .row.show-all > div:nth-child(n+7) { display: block; }
+  .btn-show-projects { display: block; }
+  .hero .d-flex > a:nth-child(2) { display: none; }
   .testimonial-card { padding: 1.25rem; }
   .testimonial-card blockquote { font-size: .9rem; }
   .why-card { padding: 1.25rem 1rem; }
