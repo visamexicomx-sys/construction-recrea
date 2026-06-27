@@ -16,7 +16,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="../css/style.min.css?v=6" rel="stylesheet">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Permisos y Licencias de Construcción en Playa del Carmen, Tulum", "provider": {"@type": "GeneralContractor", "name": "Recrea Construction", "telephone": "+52-984-452-5333", "address": {"@type": "PostalAddress", "addressLocality": "Playa del Carmen", "addressRegion": "Quintana Roo", "addressCountry": "MX"}}, "areaServed": ["Playa del Carmen", "Tulum", "Cancún", "Puerto Aventuras", "Akumal"], "description": "Planos arquitectónicos completos para construcción en la Riviera Maya: arquitectónico, estructural, eléctrico, hidráulico, HVAC, renders 3D."}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Planos Arquitectónicos e Ingeniería — Recrea Construction", "provider": {"@type": "GeneralContractor", "name": "Recrea Construction", "telephone": "+52-984-452-5333", "address": {"@type": "PostalAddress", "addressLocality": "Playa del Carmen", "addressRegion": "Quintana Roo", "addressCountry": "MX"}}, "areaServed": ["Playa del Carmen", "Tulum", "Cancún", "Puerto Aventuras", "Akumal"], "description": "Planos arquitectónicos completos para construcción en la Riviera Maya: arquitectónico, estructural, eléctrico, hidráulico, HVAC, renders 3D.", "offers": {"@type": "AggregateOffer", "lowPrice": "400", "highPrice": "1500", "priceCurrency": "USD"}}</script>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -35,58 +35,596 @@
   <link rel="alternate" hreflang="zh" href="https://construction-recrea.com/services/jianzhu-tupian.html">
   <link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/services/plans.html">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://construction-recrea.com/"}, {"@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://construction-recrea.com/services/servicios.html"}, {"@type": "ListItem", "position": 3, "name": "Planos Arquitectónicos"}]}</script>
+<style>
+.plan-hero{background:linear-gradient(135deg,#0f1f2e 0%,#1a3a5c 50%,#0f3460 100%);padding:80px 0 60px;margin-top:56px;position:relative;overflow:hidden}
+.plan-hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:50%;background:url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23ffffff' stroke-opacity='.04' fill='none'%3E%3Crect x='10' y='10' width='80' height='60' stroke-width='1'/%3E%3Cline x1='10' y1='40' x2='90' y2='40' stroke-width='.5'/%3E%3Cline x1='50' y1='10' x2='50' y2='70' stroke-width='.5'/%3E%3Ccircle cx='150' cy='50' r='25' stroke-width='1'/%3E%3Cline x1='125' y1='50' x2='175' y2='50' stroke-width='.5'/%3E%3Crect x='30' y='120' width='60' height='60' stroke-width='1'/%3E%3Cline x1='30' y1='150' x2='90' y2='150' stroke-width='.5'/%3E%3Cline x1='120' y1='110' x2='180' y2='110' stroke-width='.5'/%3E%3Cline x1='120' y1='130' x2='180' y2='130' stroke-width='.5'/%3E%3Cline x1='120' y1='150' x2='160' y2='150' stroke-width='.5'/%3E%3C/g%3E%3C/svg%3E") repeat;opacity:.6}
+.plan-hero h1{font-size:2.6rem;font-weight:800;color:#fff}
+.plan-hero .lead{color:rgba(255,255,255,.75);font-size:1.1rem}
+.hero-stats{display:flex;gap:24px;margin-top:20px;flex-wrap:wrap}
+.hero-stat{text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px 20px;min-width:100px;backdrop-filter:blur(8px)}
+.hero-stat strong{color:#d4a843;font-size:1.6rem;display:block;font-weight:800}
+.hero-stat span{color:rgba(255,255,255,.6);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px}
+.plan-tabs{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;background:#fff;border-radius:16px;padding:12px;box-shadow:0 4px 20px rgba(0,0,0,.06);margin-top:-30px;position:relative;z-index:10}
+.plan-tab{border:2px solid #e9ecef;background:#fff;border-radius:12px;padding:10px 16px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .25s;display:flex;align-items:center;gap:6px;color:#495057}
+.plan-tab:hover{border-color:#d4a843;color:#d4a843;transform:translateY(-1px)}
+.plan-tab.active{background:#0f1f2e;color:#fff;border-color:#0f1f2e}
+.plan-tab.active i{color:#d4a843}
+.plan-detail{display:none;animation:fadeUp .4s ease}
+.plan-detail.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.plan-card{background:#fff;border-radius:16px;border:1px solid #e9ecef;padding:32px;transition:all .3s}
+.plan-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.plan-card .plan-icon{width:60px;height:60px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:16px}
+.plan-card h3{font-size:1.3rem;font-weight:700;color:#1a1a2e}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px}
+.spec-item{display:flex;align-items:center;gap:8px;font-size:.88rem;color:#495057;padding:8px 12px;background:#f8f9fa;border-radius:8px}
+.spec-item i{color:#d4a843;font-size:1rem;flex-shrink:0}
+.deliverables{margin-top:20px;padding:20px;background:linear-gradient(135deg,#f8f9fa,#fff);border-radius:12px;border:1px solid #e9ecef}
+.deliverables h5{font-size:.85rem;text-transform:uppercase;letter-spacing:1px;color:#6c757d;margin-bottom:12px}
+.del-item{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;margin:3px;background:#fff;border:1px solid #dee2e6;border-radius:20px;font-size:.82rem;color:#333;font-weight:500}
+.del-item i{color:#198754;font-size:.75rem}
+.price-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.price-card{background:#fff;border:2px solid #e9ecef;border-radius:16px;padding:24px;text-align:center;transition:all .3s;position:relative}
+.price-card:hover{border-color:#d4a843;transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.price-card.featured{border-color:#d4a843;background:linear-gradient(135deg,#0f1f2e,#1a3a5c);color:#fff}
+.price-card.featured::before{content:'MÁS POPULAR';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#d4a843;color:#0f1f2e;font-size:.65rem;font-weight:800;padding:3px 14px;border-radius:20px;letter-spacing:1px}
+.price-card .price-label{font-size:.8rem;text-transform:uppercase;letter-spacing:1px;color:#6c757d;margin-bottom:4px}
+.price-card.featured .price-label{color:rgba(255,255,255,.6)}
+.price-card .price-amount{font-size:2rem;font-weight:800;color:#0f1f2e}
+.price-card.featured .price-amount{color:#d4a843}
+.price-card .price-unit{font-size:.85rem;color:#6c757d}
+.price-card.featured .price-unit{color:rgba(255,255,255,.6)}
+.price-card .price-name{font-weight:700;font-size:1rem;margin-bottom:8px}
+.price-card .price-includes{text-align:left;font-size:.82rem;color:#6c757d;margin-top:12px}
+.price-card.featured .price-includes{color:rgba(255,255,255,.7)}
+.price-card .price-includes li{padding:3px 0;list-style:none}
+.price-card .price-includes li::before{content:'✓ ';color:#d4a843;font-weight:700}
+.price-card .price-time{font-size:.78rem;color:#6c757d;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,.06)}
+.price-card.featured .price-time{color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.1)}
+.process-flow{display:flex;gap:0;overflow-x:auto;padding:8px 0}
+.process-step-v{flex:1;min-width:140px;text-align:center;position:relative;padding:16px 8px}
+.process-step-v::after{content:'';position:absolute;top:32px;right:-50%;width:100%;height:2px;background:linear-gradient(90deg,#d4a843,#e9ecef);z-index:0}
+.process-step-v:last-child::after{display:none}
+.step-circle{width:42px;height:42px;background:#0f1f2e;color:#d4a843;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;margin:0 auto 10px;position:relative;z-index:1}
+.process-step-v h6{font-size:.78rem;font-weight:700;color:#1a1a2e;margin-bottom:2px}
+.process-step-v small{font-size:.7rem;color:#6c757d}
+.faq-plan .accordion-item{border:none;margin-bottom:8px}
+.faq-plan .accordion-button{background:#f8f9fa;border-radius:12px!important;font-weight:600;font-size:.92rem;padding:14px 18px}
+.faq-plan .accordion-button:not(.collapsed){background:rgba(212,168,67,.08);color:#1a3a5c}
+.faq-plan .accordion-body{font-size:.9rem;color:#495057;line-height:1.6;padding:12px 18px}
+.compare-table{border-radius:12px;overflow:hidden;border:1px solid #e9ecef}
+.compare-table th{background:#0f1f2e;color:#fff;font-weight:600;font-size:.82rem;padding:12px 16px;text-align:center}
+.compare-table td{padding:10px 16px;font-size:.85rem;text-align:center;vertical-align:middle}
+.compare-table .check{color:#198754;font-size:1.1rem}
+.compare-table .dash{color:#dee2e6}
+.compare-table tr:nth-child(even){background:#f8f9fa}
+.compare-table td:first-child{text-align:left;font-weight:600;color:#1a1a2e}
+.software-strip{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;padding:20px;background:#f8f9fa;border-radius:12px}
+.sw-badge{display:flex;align-items:center;gap:6px;padding:6px 14px;background:#fff;border:1px solid #dee2e6;border-radius:20px;font-size:.8rem;font-weight:600;color:#495057}
+.sw-badge i{color:#d4a843}
+.testimonial-mini{background:linear-gradient(135deg,#f0f7ff,#fdf6e3);border:1px solid rgba(212,168,67,.2);border-radius:16px;padding:24px;position:relative}
+.testimonial-mini::before{content:'"';position:absolute;top:8px;left:16px;font-size:3rem;color:#d4a843;opacity:.3;font-family:Georgia,serif}
+.testimonial-mini p{font-style:italic;color:#555;margin-bottom:8px;padding-left:20px}
+.testimonial-mini cite{font-weight:600;color:#1a1a2e;font-style:normal;font-size:.88rem;padding-left:20px}
+@media(max-width:768px){
+.plan-hero h1{font-size:1.8rem}
+.hero-stats{gap:10px}
+.hero-stat{min-width:80px;padding:12px}
+.hero-stat strong{font-size:1.2rem}
+.plan-tabs{gap:4px;padding:8px}
+.plan-tab{padding:8px 12px;font-size:.78rem}
+.spec-grid{grid-template-columns:1fr}
+.price-cards{grid-template-columns:1fr}
+.process-flow{gap:0}
+.process-step-v{min-width:100px;padding:10px 4px}
+}
+</style>
 </head>
 <body class="has-top-bar">
-<div class="top-cta-bar"><span>Cotización Gratis — Respondemos en 2 min</span><a href="https://wa.me/529844525333?text=Hola!%20Cotización" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"><div class="container"><a class="navbar-brand fw-bold" href="/">RECREA</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navMenu"><ul class="navbar-nav ms-auto align-items-center"><li class="nav-item"><a class="nav-link active" href="/services/servicios.html">Servicios</a></li><li class="nav-item"><a class="nav-link" href="/#proyectos">Proyectos</a></li><li class="nav-item"><a class="nav-link" href="/#nosotros">Nosotros</a></li><li class="nav-item"><a class="nav-link" href="/certifications/">Certificaciones</a></li><li class="nav-item"><a class="nav-link" href="/blog-es/">Blog</a></li><li class="nav-item"><a class="nav-link" href="/noticias/">Noticias</a></li><li class="nav-item"><a class="nav-link" href="/partners/">Socios</a></li><li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li><li class="nav-item"><a class="nav-link" href="/#contacto">Contacto</a></li><li class="nav-item dropdown ms-lg-2"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ES</a><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="/en/">English</a></li><li><a class="dropdown-item active" href="#">Español</a></li><li><a class="dropdown-item" href="/de/">Deutsch</a></li><li><a class="dropdown-item" href="/ru/">Русский</a></li><li><a class="dropdown-item" href="/zh/">中文</a></li></ul></li></ul></div></div></nav>
+<div class="top-cta-bar"><span>Cotización Gratis — Respondemos en 2 min</span><a href="https://wa.me/529844525333?text=Hola!%20Cotización%20planos%20arquitectónicos" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"><div class="container"><a class="navbar-brand fw-bold" href="/">RECREA</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navMenu"><ul class="navbar-nav ms-auto align-items-center"><li class="nav-item"><a class="nav-link active" href="/services/servicios.html">Servicios</a></li><li class="nav-item"><a class="nav-link" href="/#projects">Proyectos</a></li><li class="nav-item"><a class="nav-link" href="/#about">Nosotros</a></li><li class="nav-item"><a class="nav-link" href="/certificaciones/">Certificaciones</a></li><li class="nav-item"><a class="nav-link" href="/blog-es/">Blog</a></li><li class="nav-item"><a class="nav-link" href="/noticias/">Noticias</a></li><li class="nav-item"><a class="nav-link" href="/partners/es.html">Partners</a></li><li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li><li class="nav-item"><a class="nav-link" href="/#contact">Contacto</a></li><li class="nav-item dropdown ms-lg-2"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ES</a><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item active" href="#">Español</a></li><li><a class="dropdown-item" href="plans.html">English</a></li><li><a class="dropdown-item" href="architekturplaene.html">Deutsch</a></li><li><a class="dropdown-item" href="plany.html">Русский</a></li><li><a class="dropdown-item" href="jianzhu-tupian.html">中文</a></li></ul></li></ul></div></div></nav>
 <div style="padding-top:116px"></div>
 <nav class="container mt-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Inicio</a></li><li class="breadcrumb-item"><a href="/services/servicios.html">Servicios</a></li><li class="breadcrumb-item active">Planos Arquitectónicos</li></ol></nav>
-<section class="py-5"><div class="container"><div class="row justify-content-center"><div class="col-lg-8">
+
+<!-- HERO -->
+<section class="plan-hero">
+<div class="container position-relative" style="z-index:1">
+<div class="row align-items-center">
+<div class="col-lg-7">
+<span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold"><i class="bi bi-rulers me-1"></i>Servicio Profesional</span>
 <h1>Planos Arquitectónicos e Ingeniería</h1>
-<p class="lead">Cada proyecto incluye un juego completo de planos profesionales diseñados por nuestros arquitectos e ingenieros. O contrata solo planos desde $800 USD.</p>
-<div class="row g-3 my-4">
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">196+</div><small class="text-muted">Proyectos</small></div></div>
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">6</div><small class="text-muted">Tipos de Planos</small></div></div>
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">3D</div><small class="text-muted">Renders</small></div></div>
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">DRO</div><small class="text-muted">Certificado</small></div></div>
+<p class="lead">Juego completo de planos profesionales: arquitectónico, estructural, eléctrico, hidráulico, HVAC y renders 3D. Cumplimiento normativo NOM y reglamento municipal.</p>
+<div class="hero-stats">
+<div class="hero-stat"><strong>196+</strong><span>Proyectos</span></div>
+<div class="hero-stat"><strong>6</strong><span>Disciplinas</span></div>
+<div class="hero-stat"><strong>3D</strong><span>Renders</span></div>
+<div class="hero-stat"><strong>DRO</strong><span>Certificado</span></div>
+<div class="hero-stat"><strong>$800</strong><span>Desde USD</span></div>
 </div>
-<h2>Qué Incluye</h2>
-<div class="row g-3 mb-4">
-  <div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body text-center p-4"><i class="bi bi-pencil-square fs-1 mb-3" style="color:var(--accent)"></i><h5 class="fw-bold">Plano Arquitectónico</h5><p class="text-muted">Plantas, alzados, cortes, detalles constructivos, especificaciones de materiales</p></div></div></div>
-  <div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body text-center p-4"><i class="bi bi-bricks fs-1 mb-3" style="color:var(--accent)"></i><h5 class="fw-bold">Plano Estructural</h5><p class="text-muted">Cimentación, columnas, trabes, losas, armados, cálculo de cargas</p></div></div></div>
-  <div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body text-center p-4"><i class="bi bi-lightning-charge fs-1 mb-3" style="color:var(--accent)"></i><h5 class="fw-bold">Plano Eléctrico</h5><p class="text-muted">Circuitos, tableros, iluminación, tierra física, protección, pre-instalación solar</p></div></div></div>
-  <div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body text-center p-4"><i class="bi bi-moisture fs-1 mb-3" style="color:var(--accent)"></i><h5 class="fw-bold">Plano Hidráulico</h5><p class="text-muted">Suministro de agua, drenaje, cisterna, bomba, gas, captación pluvial</p></div></div></div>
-  <div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body text-center p-4"><i class="bi bi-snow fs-1 mb-3" style="color:var(--accent)"></i><h5 class="fw-bold">Plano HVAC</h5><p class="text-muted">Aire acondicionado, ductos, ventilación, mini-splits, eficiencia energética</p></div></div></div>
-  <div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body text-center p-4"><i class="bi bi-badge-3d fs-1 mb-3" style="color:var(--accent)"></i><h5 class="fw-bold">Renders 3D</h5><p class="text-muted">Visualización fotorrealista — interior y exterior — ve tu casa antes de construir</p></div></div></div>
 </div>
-<h2>Precios</h2>
-<div class="table-responsive mb-4"><table class="table table-bordered"><thead class="table-dark"><tr><th>Servicio</th><th>Incluye</th><th>Precio</th><th>Plazo</th></tr></thead><tbody>
-<tr><td><strong>Planos con Construcción</strong></td><td>Los 6 tipos + renders 3D</td><td>Incluido (sin costo extra)</td><td>2 semanas</td></tr>
-<tr><td><strong>Solo Planos — Residencial</strong></td><td>Los 6 tipos + renders 3D</td><td>Desde $800 USD</td><td>2 semanas</td></tr>
-<tr><td><strong>Solo Planos — Comercial</strong></td><td>Todos los planos + seguridad contra incendios</td><td>Desde $1,500 USD</td><td>2 semanas</td></tr>
-<tr><td><strong>Solo Renders 3D</strong></td><td>Renders fotorrealistas interior/exterior</td><td>Desde $400 USD</td><td>1 día</td></tr>
-<tr><td><strong>Evaluación Estructural</strong></td><td>Evaluación de edificio existente</td><td>Desde $600 USD</td><td>1 semana</td></tr>
-</tbody></table></div>
-<div class="lead-magnet">
-  <h3><i class="bi bi-file-earmark-pdf me-2"></i>Gratis: Guía de Costos de Construcción 2026</h3>
-  <p>Precios reales por m², costos de terreno, permisos, gastos ocultos. PDF de 196+ proyectos en la Riviera Maya.</p>
+<div class="col-lg-5 text-center mt-4 mt-lg-0">
+<!-- Blueprint SVG illustration -->
+<svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" style="max-width:320px;opacity:.85">
+<rect width="300" height="240" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.1)" stroke-width="1"/>
+<g stroke="rgba(255,255,255,.4)" fill="none" stroke-width="1">
+<rect x="40" y="60" width="120" height="80"/><rect x="40" y="60" width="60" height="40"/>
+<rect x="100" y="100" width="30" height="40"/><rect x="70" y="108" width="20" height="32"/>
+<line x1="40" y1="140" x2="160" y2="140"/><line x1="40" y1="60" x2="40" y2="140"/>
+<line x1="180" y1="50" x2="280" y2="50"/><line x1="180" y1="70" x2="260" y2="70"/>
+<line x1="180" y1="90" x2="240" y2="90"/><line x1="180" y1="110" x2="270" y2="110"/>
+<line x1="180" y1="130" x2="250" y2="130"/>
+<circle cx="70" cy="80" r="8" stroke-dasharray="2,2"/>
+<line x1="40" y1="155" x2="160" y2="155" stroke-dasharray="4,3" stroke="rgba(212,168,67,.5)"/>
+<text x="95" y="163" font-size="7" fill="rgba(212,168,67,.6)" text-anchor="middle" font-family="Inter">12.00 m</text>
+<line x1="25" y1="60" x2="25" y2="140" stroke-dasharray="4,3" stroke="rgba(212,168,67,.5)"/>
+<text x="22" y="105" font-size="7" fill="rgba(212,168,67,.6)" text-anchor="end" font-family="Inter" transform="rotate(-90,22,105)">8.00 m</text>
+</g>
+<text x="180" y="180" font-size="10" fill="rgba(255,255,255,.3)" font-family="Inter" font-weight="600">PLANO ARQUITECTÓNICO</text>
+<text x="180" y="195" font-size="7" fill="rgba(255,255,255,.2)" font-family="Inter">ESC. 1:100 | PLANTA BAJA</text>
+<rect x="180" y="205" width="100" height="20" rx="2" fill="none" stroke="rgba(255,255,255,.15)"/>
+<text x="230" y="218" font-size="7" fill="rgba(255,255,255,.25)" font-family="Inter" text-anchor="middle">RECREA CONSTRUCTION</text>
+</svg>
+</div>
+</div>
+</div>
+</section>
+
+<!-- INTERACTIVE TABS -->
+<div class="container">
+<div class="plan-tabs">
+<button class="plan-tab active" onclick="showPlan('all',this)"><i class="bi bi-grid-3x3-gap"></i>Todos</button>
+<button class="plan-tab" onclick="showPlan('arq',this)"><i class="bi bi-pencil-square"></i>Arquitectónico</button>
+<button class="plan-tab" onclick="showPlan('est',this)"><i class="bi bi-bricks"></i>Estructural</button>
+<button class="plan-tab" onclick="showPlan('elec',this)"><i class="bi bi-lightning-charge"></i>Eléctrico</button>
+<button class="plan-tab" onclick="showPlan('hid',this)"><i class="bi bi-moisture"></i>Hidráulico</button>
+<button class="plan-tab" onclick="showPlan('hvac',this)"><i class="bi bi-snow"></i>HVAC</button>
+<button class="plan-tab" onclick="showPlan('render',this)"><i class="bi bi-badge-3d"></i>Renders 3D</button>
+</div>
+</div>
+
+<!-- PLAN DETAILS -->
+<section class="py-5">
+<div class="container">
+
+<!-- ALL -->
+<div class="plan-detail active" id="plan-all">
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="plan-card h-100">
+<div class="plan-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-pencil-square"></i></div>
+<h3>Plano Arquitectónico</h3>
+<p class="text-muted">Distribución espacial, plantas, alzados, cortes y detalles constructivos.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Plantas arquitectónicas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Alzados y fachadas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cortes y secciones</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cuadro de acabados</div>
+</div>
+</div></div>
+<div class="col-md-6 col-lg-4">
+<div class="plan-card h-100">
+<div class="plan-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-bricks"></i></div>
+<h3>Plano Estructural</h3>
+<p class="text-muted">Diseño sismo-resistente y anti-huracán para suelo calcáreo de la Riviera Maya.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cimentación y zapatas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Columnas y trabes</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Armados de losas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Memoria de cálculo</div>
+</div>
+</div></div>
+<div class="col-md-6 col-lg-4">
+<div class="plan-card h-100">
+<div class="plan-icon" style="background:rgba(253,126,20,.08);color:#fd7e14"><i class="bi bi-lightning-charge"></i></div>
+<h3>Plano Eléctrico</h3>
+<p class="text-muted">Circuitos, tableros, tierra física, iluminación y pre-instalación solar.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Diagrama unifilar</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cuadro de cargas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Tableros y circuitos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Pre-instalación solar</div>
+</div>
+</div></div>
+<div class="col-md-6 col-lg-4">
+<div class="plan-card h-100">
+<div class="plan-icon" style="background:rgba(13,202,240,.08);color:#0dcaf0"><i class="bi bi-moisture"></i></div>
+<h3>Plano Hidráulico</h3>
+<p class="text-muted">Red de agua potable, drenaje sanitario y pluvial, cisterna y sistema de bombeo.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Red agua potable</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Drenaje sanitario</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Captación pluvial</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cisterna y bombeo</div>
+</div>
+</div></div>
+<div class="col-md-6 col-lg-4">
+<div class="plan-card h-100">
+<div class="plan-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-snow"></i></div>
+<h3>Plano HVAC</h3>
+<p class="text-muted">Climatización eficiente para el trópico: mini-splits, ductos y ventilación natural.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cálculo térmico BTU</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Ubicación equipos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Ductos y difusores</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Ventilación cruzada</div>
+</div>
+</div></div>
+<div class="col-md-6 col-lg-4">
+<div class="plan-card h-100">
+<div class="plan-icon" style="background:rgba(111,66,193,.08);color:#6f42c1"><i class="bi bi-badge-3d"></i></div>
+<h3>Renders 3D</h3>
+<p class="text-muted">Visualización fotorrealista de tu proyecto antes de construir — interior y exterior.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Exterior diurno/nocturno</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Interiores amueblados</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Vistas aéreas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Recorrido virtual</div>
+</div>
+</div></div>
+</div>
+</div>
+
+<!-- ARQUITECTÓNICO -->
+<div class="plan-detail" id="plan-arq">
+<div class="plan-card">
+<div class="d-flex align-items-center gap-3 mb-3">
+<div class="plan-icon mb-0" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-pencil-square"></i></div>
+<div><h3 class="mb-0">Plano Arquitectónico</h3><small class="text-muted">La base de tu proyecto — diseño funcional y estético</small></div>
+</div>
+<p>El plano arquitectónico define la distribución espacial, circulación, orientación solar y cumplimiento con el Reglamento de Construcción de Solidaridad y la NOM. Es el documento base para obtener la licencia de construcción y la aprobación del DRO.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Planta de conjunto</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Plantas arquitectónicas por nivel</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Alzados (4 fachadas)</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cortes longitudinal y transversal</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Planta de azotea</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Planta de techos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cuadro de áreas (COS/CUS)</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cuadro de acabados</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Detalles constructivos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Plano de cancelería</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Orientación y norte</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cuadro de puertas y ventanas</div>
+</div>
+<div class="deliverables">
+<h5><i class="bi bi-file-earmark-zip me-1"></i>Entregables</h5>
+<span class="del-item"><i class="bi bi-check-lg"></i>Archivo DWG (AutoCAD)</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>PDF imprimible</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Planos sellados DRO</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Escala 1:50 / 1:100</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Modelo BIM (opcional)</span>
+</div>
+</div>
+</div>
+
+<!-- ESTRUCTURAL -->
+<div class="plan-detail" id="plan-est">
+<div class="plan-card">
+<div class="d-flex align-items-center gap-3 mb-3">
+<div class="plan-icon mb-0" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-bricks"></i></div>
+<div><h3 class="mb-0">Plano Estructural</h3><small class="text-muted">Ingeniería sismo-resistente y anti-huracán</small></div>
+</div>
+<p>Diseño estructural calculado para las condiciones geológicas de la Riviera Maya: suelo calcáreo, manto freático alto, zona sísmica B y vientos huracanados categoría 5. Cumplimiento con NTC, NOM-031 y reglamento RCDF.</p>
+<div class="row g-3 my-3">
+<div class="col-sm-4"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">Zona B</strong><small class="text-muted">Sísmica</small></div></div>
+<div class="col-sm-4"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">Cat. 5</strong><small class="text-muted">Vientos 260+ km/h</small></div></div>
+<div class="col-sm-4"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">Calcáreo</strong><small class="text-muted">Suelo karst</small></div></div>
+</div>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Planta de cimentación</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Armado de zapatas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Armado de columnas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Armado de trabes</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Armado de losas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Armado de escaleras</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Detalles de refuerzo</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Memoria de cálculo</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Estudio de mecánica de suelos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Especificaciones de concreto</div>
+</div>
+<div class="deliverables">
+<h5><i class="bi bi-file-earmark-zip me-1"></i>Entregables</h5>
+<span class="del-item"><i class="bi bi-check-lg"></i>DWG estructural</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Memoria de cálculo PDF</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Corresponsable estructural</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Modelo ETABS/SAP2000</span>
+</div>
+</div>
+</div>
+
+<!-- ELÉCTRICO -->
+<div class="plan-detail" id="plan-elec">
+<div class="plan-card">
+<div class="d-flex align-items-center gap-3 mb-3">
+<div class="plan-icon mb-0" style="background:rgba(253,126,20,.08);color:#fd7e14"><i class="bi bi-lightning-charge"></i></div>
+<div><h3 class="mb-0">Plano Eléctrico</h3><small class="text-muted">NOM-001-SEDE compliant</small></div>
+</div>
+<p>Diseño eléctrico conforme a la NOM-001-SEDE vigente. Incluye diagrama unifilar, cuadro de cargas, distribución de circuitos, sistema de tierra física y pre-instalación para paneles solares e inversores.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Diagrama unifilar general</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cuadro de cargas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Circuitos por nivel</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Tableros de distribución</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Planta de iluminación</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Planta de contactos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Sistema de tierra física</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Protección contra rayos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Pre-instalación solar</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cableado estructurado (datos)</div>
+</div>
+</div>
+</div>
+
+<!-- HIDRÁULICO -->
+<div class="plan-detail" id="plan-hid">
+<div class="plan-card">
+<div class="d-flex align-items-center gap-3 mb-3">
+<div class="plan-icon mb-0" style="background:rgba(13,202,240,.08);color:#0dcaf0"><i class="bi bi-moisture"></i></div>
+<div><h3 class="mb-0">Plano Hidráulico y Sanitario</h3><small class="text-muted">Agua potable, drenaje, captación pluvial</small></div>
+</div>
+<p>Diseño integral de instalaciones hidráulicas y sanitarias adaptado a la Riviera Maya: manto freático alto, biodigestores (no hay alcantarillado municipal en zonas nuevas), captación pluvial obligatoria y cisternas con sistema de presurización.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Red de agua fría y caliente</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Drenaje sanitario</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Drenaje pluvial</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cisterna y equipo hidroneumático</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Biodigestor / planta de tratamiento</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Captación de agua de lluvia</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Isométricos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Red de gas LP</div>
+</div>
+</div>
+</div>
+
+<!-- HVAC -->
+<div class="plan-detail" id="plan-hvac">
+<div class="plan-card">
+<div class="d-flex align-items-center gap-3 mb-3">
+<div class="plan-icon mb-0" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-snow"></i></div>
+<div><h3 class="mb-0">Plano HVAC</h3><small class="text-muted">Climatización eficiente para clima tropical</small></div>
+</div>
+<p>Diseño de climatización para 35°C y 85% humedad relativa. Cálculo térmico por zona, selección de equipos inverter de alta eficiencia (SEER 20+), ductos y difusores, ventilación natural cruzada y cumplimiento con NOM-020-ENER.</p>
+<div class="row g-3 my-3">
+<div class="col-sm-3"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">35°C</strong><small class="text-muted">Temp. diseño</small></div></div>
+<div class="col-sm-3"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">85%</strong><small class="text-muted">Humedad</small></div></div>
+<div class="col-sm-3"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">SEER 20+</strong><small class="text-muted">Eficiencia</small></div></div>
+<div class="col-sm-3"><div class="text-center p-3 bg-light rounded"><strong class="d-block" style="color:var(--accent)">NOM-020</strong><small class="text-muted">Cumplimiento</small></div></div>
+</div>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cálculo térmico por zona (BTU)</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Selección de equipos</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Ubicación de condensadoras</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Ruta de ductos y tuberías</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Difusores y rejillas</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Ventilación natural cruzada</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Drenajes de condensado</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Instalación eléctrica A/C</div>
+</div>
+</div>
+</div>
+
+<!-- RENDERS -->
+<div class="plan-detail" id="plan-render">
+<div class="plan-card">
+<div class="d-flex align-items-center gap-3 mb-3">
+<div class="plan-icon mb-0" style="background:rgba(111,66,193,.08);color:#6f42c1"><i class="bi bi-badge-3d"></i></div>
+<div><h3 class="mb-0">Renders 3D Fotorrealistas</h3><small class="text-muted">Ve tu proyecto antes de construir</small></div>
+</div>
+<p>Renders de alta calidad para visualizar tu proyecto, presentar a inversionistas o publicar en portales inmobiliarios. Iluminación realista, materiales con textura y paisajismo tropical.</p>
+<div class="spec-grid">
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Exterior diurno</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Exterior nocturno</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Interiores amueblados</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Vista aérea / drone</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Recorrido virtual 360°</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Video walkthrough</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>4K resolución</div>
+<div class="spec-item"><i class="bi bi-check-circle-fill"></i>Paisajismo tropical</div>
+</div>
+<div class="deliverables">
+<h5><i class="bi bi-file-earmark-zip me-1"></i>Entregables</h5>
+<span class="del-item"><i class="bi bi-check-lg"></i>JPG 4K (300 dpi)</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Video MP4 walkthrough</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Tour 360° interactivo</span>
+<span class="del-item"><i class="bi bi-check-lg"></i>Modelo SketchUp/3ds Max</span>
+</div>
+</div>
+</div>
+
+<!-- COMPARISON TABLE -->
+<div class="my-5">
+<h2 class="fw-bold mb-4 text-center"><i class="bi bi-table me-2"></i>Qué Incluye Cada Paquete</h2>
+<div class="table-responsive">
+<table class="table compare-table mb-0">
+<thead><tr><th style="text-align:left">Disciplina</th><th>Con Construcción</th><th>Solo Planos<br>Residencial</th><th>Solo Planos<br>Comercial</th><th>Solo Renders</th></tr></thead>
+<tbody>
+<tr><td>Plano Arquitectónico</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Plano Estructural</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Plano Eléctrico</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Plano Hidráulico</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Plano HVAC</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Renders 3D</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+<tr><td>Contra incendios</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Firma DRO</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Memoria de cálculo</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="dash">—</td></tr>
+<tr><td>Modelo BIM</td><td class="check">✓</td><td>Opcional</td><td class="check">✓</td><td class="dash">—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- PRICING -->
+<h2 class="fw-bold mb-4 text-center"><i class="bi bi-currency-dollar me-2"></i>Precios Transparentes</h2>
+<div class="price-cards mb-5">
+<div class="price-card featured">
+<div class="price-label">CON CONSTRUCCIÓN</div>
+<div class="price-name">Planos + Obra</div>
+<div class="price-amount">$0</div>
+<div class="price-unit">incluido en presupuesto</div>
+<ul class="price-includes">
+<li>6 disciplinas completas</li>
+<li>Renders 3D interior/exterior</li>
+<li>Firma DRO incluida</li>
+<li>Revisiones ilimitadas</li>
+</ul>
+<div class="price-time"><i class="bi bi-clock me-1"></i>2 semanas</div>
+</div>
+<div class="price-card">
+<div class="price-label">RESIDENCIAL</div>
+<div class="price-name">Solo Planos</div>
+<div class="price-amount">$800</div>
+<div class="price-unit">USD — desde</div>
+<ul class="price-includes">
+<li>6 disciplinas completas</li>
+<li>Renders 3D incluidos</li>
+<li>Firma DRO incluida</li>
+<li>2 rondas de revisiones</li>
+</ul>
+<div class="price-time"><i class="bi bi-clock me-1"></i>2 semanas</div>
+</div>
+<div class="price-card">
+<div class="price-label">COMERCIAL</div>
+<div class="price-name">Solo Planos</div>
+<div class="price-amount">$1,500</div>
+<div class="price-unit">USD — desde</div>
+<ul class="price-includes">
+<li>Todas las disciplinas</li>
+<li>Contra incendios</li>
+<li>Protección Civil</li>
+<li>Modelo BIM incluido</li>
+</ul>
+<div class="price-time"><i class="bi bi-clock me-1"></i>2 semanas</div>
+</div>
+<div class="price-card">
+<div class="price-label">RENDERS</div>
+<div class="price-name">Solo 3D</div>
+<div class="price-amount">$400</div>
+<div class="price-unit">USD — desde</div>
+<ul class="price-includes">
+<li>Exterior día y noche</li>
+<li>Interiores amueblados</li>
+<li>4K resolución</li>
+<li>Entrega en 24 hrs</li>
+</ul>
+<div class="price-time"><i class="bi bi-clock me-1"></i>1 día</div>
+</div>
+</div>
+
+<!-- PROCESS -->
+<h2 class="fw-bold mb-4 text-center"><i class="bi bi-arrow-right-circle me-2"></i>Proceso de Trabajo</h2>
+<div class="process-flow mb-5">
+<div class="process-step-v">
+<div class="step-circle">1</div>
+<h6>Briefing</h6>
+<small>Programa de necesidades y terreno</small>
+</div>
+<div class="process-step-v">
+<div class="step-circle">2</div>
+<h6>Anteproyecto</h6>
+<small>Propuesta y distribución</small>
+</div>
+<div class="process-step-v">
+<div class="step-circle">3</div>
+<h6>Revisión</h6>
+<small>Ajustes con el cliente</small>
+</div>
+<div class="process-step-v">
+<div class="step-circle">4</div>
+<h6>Ejecutivo</h6>
+<small>Planos de las 6 disciplinas</small>
+</div>
+<div class="process-step-v">
+<div class="step-circle">5</div>
+<h6>Renders</h6>
+<small>Visualización 3D</small>
+</div>
+<div class="process-step-v">
+<div class="step-circle">6</div>
+<h6>DRO</h6>
+<small>Firma y sello oficial</small>
+</div>
+<div class="process-step-v">
+<div class="step-circle">7</div>
+<h6>Entrega</h6>
+<small>DWG + PDF + BIM</small>
+</div>
+</div>
+
+<!-- SOFTWARE -->
+<h2 class="fw-bold mb-3 text-center"><i class="bi bi-cpu me-2"></i>Software y Tecnología</h2>
+<div class="software-strip mb-5">
+<span class="sw-badge"><i class="bi bi-pencil-square"></i>AutoCAD</span>
+<span class="sw-badge"><i class="bi bi-box"></i>Revit BIM</span>
+<span class="sw-badge"><i class="bi bi-badge-3d"></i>SketchUp Pro</span>
+<span class="sw-badge"><i class="bi bi-camera"></i>V-Ray / Lumion</span>
+<span class="sw-badge"><i class="bi bi-bricks"></i>ETABS</span>
+<span class="sw-badge"><i class="bi bi-calculator"></i>SAP2000</span>
+<span class="sw-badge"><i class="bi bi-lightning"></i>DIALUX</span>
+<span class="sw-badge"><i class="bi bi-snow"></i>HAP Carrier</span>
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="testimonial-mini mb-5">
+<p>"Recrea nos entregó los planos completos en 10 días. La calidad del renderizado nos ayudó a vender 4 unidades antes de empezar la obra."</p>
+<cite>— Carlos M., Desarrollador inmobiliario, Playa del Carmen</cite>
+</div>
+
+<!-- FAQ -->
+<h2 class="fw-bold mb-4 text-center"><i class="bi bi-question-circle me-2"></i>Preguntas Frecuentes</h2>
+<div class="accordion faq-plan mb-5" id="faqPlans">
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">¿Puedo contratar solo los planos sin la construcción?</button></h3>
+<div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqPlans"><div class="accordion-body">Sí, ofrecemos planos como servicio independiente. El juego completo residencial (6 disciplinas + renders) inicia en $800 USD. Incluye firma de DRO para tramitar tu licencia de construcción.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">¿Cuánto tiempo tardan en entregar los planos?</button></h3>
+<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqPlans"><div class="accordion-body">El tiempo estándar es de 2 semanas para el juego completo. Renders solos se entregan en 24 horas. Proyectos comerciales complejos pueden tomar 3 semanas.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">¿Qué es el DRO y por qué lo necesito?</button></h3>
+<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqPlans"><div class="accordion-body">El Director Responsable de Obra (DRO) es un profesional certificado que firma los planos y se hace corresponsable ante el municipio de que el proyecto cumple con la normativa vigente. Es obligatorio para obtener la licencia de construcción en Quintana Roo.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">¿Los planos sirven para tramitar la licencia de construcción?</button></h3>
+<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqPlans"><div class="accordion-body">Sí, nuestros planos se entregan con firma de DRO y cumplen con todos los requisitos del Reglamento de Construcción del municipio de Solidaridad (Playa del Carmen) y Tulum. Son el documento base para la solicitud de licencia de construcción.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">¿Diseñan para huracanes? ¿Qué norma siguen?</button></h3>
+<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqPlans"><div class="accordion-body">Sí. El cálculo estructural considera vientos de diseño para huracán categoría 5 (260+ km/h), zona sísmica B y suelo calcáreo tipo karst. Seguimos las Normas Técnicas Complementarias (NTC), NOM-031-ENER y el Manual de Diseño de Obras Civiles de la CFE para vientos.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">¿Entregan archivos editables (DWG)?</button></h3>
+<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqPlans"><div class="accordion-body">Sí. La entrega incluye archivos DWG (AutoCAD) editables, PDF imprimibles y, en proyectos comerciales, el modelo BIM en Revit. Todo queda de propiedad del cliente.</div></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- LEAD MAGNET -->
+<div class="lead-magnet mx-auto my-4" style="max-width:720px">
+  <div class="lm-badge"><i class="bi bi-file-earmark-bar-graph me-1"></i> Descarga Gratis</div>
+  <h4><i class="bi bi-file-earmark-pdf me-2"></i>Guía de Costos de Construcción 2026</h4>
+  <p class="lm-sub">Precios reales por m², costos de terreno, permisos, gastos ocultos. PDF de 196+ proyectos en la Riviera Maya.</p>
   <div class="lm-row">
     <input type="text" id="lmPhone" placeholder="Tu número de WhatsApp">
     <button class="btn-lm" onclick="(function(){var p=document.getElementById('lmPhone').value;var msg='Hola!%20Quiero%20la%20Guía%20de%20Costos%20de%20Construcción%202026';if(p)msg+='%0A'+encodeURIComponent(p);window.open('https://wa.me/529844525333?text='+msg,'_blank')})()"><i class="bi bi-download me-1"></i>Descargar Guía</button>
   </div>
 </div>
-<div class="trust-badges"><span class="trust-badge"><i class="bi bi-award"></i>18+ Años</span><span class="trust-badge"><i class="bi bi-building"></i>196+ Proyectos</span><span class="trust-badge"><i class="bi bi-shield-check"></i>Licencia</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Asegurados</span></div>
-<div class="cta-section rounded p-5 text-center">
-  <h3 class="text-white mb-3">Cotización Gratis</h3>
-  <p class="text-white-50 mb-4">Envía los detalles de tu proyecto. Respuesta en 24 horas.</p>
-  <a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Cotizar</a>
+
+<div class="trust-badges my-4"><span class="trust-badge"><i class="bi bi-award"></i>18+ Años</span><span class="trust-badge"><i class="bi bi-building"></i>196+ Proyectos</span><span class="trust-badge"><i class="bi bi-shield-check"></i>DRO Certificado</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Asegurados</span><span class="trust-badge"><i class="bi bi-patch-check"></i>ISO 9001</span></div>
+
+<div class="cta-section rounded p-5 text-center mx-auto my-4" style="max-width:720px">
+  <h3 class="text-white mb-3">Cotización Gratis de Planos</h3>
+  <p class="text-white-50 mb-4">Envíanos tu terreno y programa de necesidades. Respuesta en 24 horas.</p>
+  <a href="https://wa.me/529844525333?text=Hola!%20Quiero%20cotización%20de%20planos%20arquitectónicos" class="btn btn-cta btn-lg" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Cotizar por WhatsApp</a>
 </div>
-</div></div></div></section>
+
 <section class="py-5 bg-light" id="contact-form">
   <div class="container" style="max-width:720px">
     <h3 class="text-center fw-bold mb-4">Solicita una Cotización Gratis</h3>
     <form class="contact-form" action="https://formsubmit.co/constructionrecrea@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="[ES] Consulta Permisos — Recrea">
+      <input type="hidden" name="_subject" value="[ES] Consulta Planos Arquitectónicos — Recrea">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://construction-recrea.com/#contacto">
@@ -96,17 +634,29 @@
         <div class="col-md-6"><input type="text" class="form-control" name="name" placeholder="Nombre" required></div>
         <div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Correo electrónico" required></div>
         <div class="col-md-6"><input type="tel" class="form-control" name="phone" placeholder="Teléfono / WhatsApp"></div>
-        <div class="col-md-6"><select class="form-control" name="project_type"><option value="">Tipo de proyecto...</option><option>Construcción nueva</option><option>Remodelación</option><option>Comercial</option><option>Solo Permisos</option><option>Solo Planos</option><option>Hotel</option><option>Otro</option></select></div>
-        <div class="col-12"><textarea class="form-control" name="message" rows="3" placeholder="Cuéntanos sobre tu proyecto..."></textarea></div>
+        <div class="col-md-6"><select class="form-control" name="project_type"><option value="">Tipo de servicio...</option><option>Planos + Construcción</option><option>Solo Planos — Residencial</option><option>Solo Planos — Comercial</option><option>Solo Renders 3D</option><option>Evaluación Estructural</option><option>Otro</option></select></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="location" placeholder="Ubicación del terreno"></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="area" placeholder="m² de construcción aprox."></div>
+        <div class="col-12"><textarea class="form-control" name="message" rows="3" placeholder="Cuéntanos sobre tu proyecto: niveles, recámaras, uso, estilo..."></textarea></div>
         <div class="col-12 text-center"><button type="submit" class="btn btn-cta btn-lg"><i class="bi bi-send me-2"></i>Enviar Solicitud</button></div>
       </div>
     </form>
   </div>
 </section>
+
+<script>
+function showPlan(id,btn){
+  document.querySelectorAll('.plan-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.plan-detail').forEach(d=>d.classList.remove('active'));
+  document.getElementById('plan-'+id).classList.add('active');
+}
+</script>
+
 <footer class="footer"><div class="container"><div class="footer-bottom text-center"><p class="mb-0">&copy; 2008–2026 Recrea Construcción. Todos los derechos reservados. | <a href="/">Inicio</a> · <a href="/services/servicios.html">Servicios</a></p></div></div></footer>
 <a href="mailto:constructionrecrea@gmail.com" class="email-float" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});</script>
-<div class="wa-widget" id="waWidget"><div class="wa-chat-box" id="waChatBox"><div class="wa-chat-header"><div class="wa-avatar"><i class="bi bi-headset"></i></div><div><div class="wa-chat-name">Recrea Construcción</div><div class="wa-chat-status"><span class="wa-online-dot"></span> En línea — respuesta en &lt;2 min</div></div><button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button></div><div class="wa-chat-body"><div class="wa-message"><span>¡Hola! ¿Cómo podemos ayudarte?</span></div></div><div class="wa-quick-btns"><a href="https://wa.me/529844525333?text=Hola!%20Cotización" target="_blank" rel="noopener" class="wa-quick-btn">Cotización</a><a href="https://wa.me/529844525333?text=Hola!" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div></div><button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button></div>
+<div class="wa-widget" id="waWidget"><div class="wa-chat-box" id="waChatBox"><div class="wa-chat-header"><div class="wa-avatar"><i class="bi bi-headset"></i></div><div><div class="wa-chat-name">Recrea Construcción</div><div class="wa-chat-status"><span class="wa-online-dot"></span> En línea — respuesta en &lt;2 min</div></div><button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button></div><div class="wa-chat-body"><div class="wa-message"><span>¡Hola! ¿Necesitas planos arquitectónicos o renders 3D?</span></div></div><div class="wa-quick-btns"><a href="https://wa.me/529844525333?text=Hola!%20Quiero%20cotización%20de%20planos" target="_blank" rel="noopener" class="wa-quick-btn">Planos</a><a href="https://wa.me/529844525333?text=Hola!%20Quiero%20renders%203D" target="_blank" rel="noopener" class="wa-quick-btn">Renders 3D</a><a href="https://wa.me/529844525333?text=Hola!%20Cotización%20planos" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div></div><button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button></div>
 <script>(function(){var t=document.getElementById('waToggle'),b=document.getElementById('waChatBox'),c=document.getElementById('waClose'),i=document.getElementById('waIcon');if(!t||!b)return;var open=false;t.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open=!open;b.classList.toggle('open',open);if(i)i.className=open?'bi bi-x-lg':'bi bi-whatsapp';});if(c)c.addEventListener('click',function(e){e.stopPropagation();open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';});document.addEventListener('click',function(e){if(open&&!e.target.closest('#waWidget')){open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';}});})();</script>
 </body></html>
