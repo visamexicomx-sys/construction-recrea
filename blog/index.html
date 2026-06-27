@@ -33,6 +33,72 @@
   <link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/index.html">
   <link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/blog/index.html">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://construction-recrea.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog"}]}</script>
+
+<style>
+.blog-hero{background:linear-gradient(135deg,#0f1f2e 0%,#1a3a5c 50%,#0f3460 100%);padding:80px 0 60px;margin-top:56px;position:relative;overflow:hidden}
+.blog-hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:40%;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;opacity:.5}
+.blog-hero h1{font-size:2.8rem;font-weight:800;color:#fff}
+.blog-hero .lead{color:rgba(255,255,255,.75);font-size:1.15rem}
+.blog-stats{display:flex;gap:30px;margin-top:24px}
+.blog-stat{text-align:center}
+.blog-stat strong{color:#d4a843;font-size:1.8rem;display:block;font-weight:800}
+.blog-stat span{color:rgba(255,255,255,.6);font-size:.8rem;text-transform:uppercase;letter-spacing:.5px}
+.search-box{position:relative;max-width:500px;margin:30px auto 0}
+.search-box input{width:100%;padding:14px 20px 14px 48px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);border-radius:50px;color:#fff;font-size:1rem;transition:all .3s;backdrop-filter:blur(10px)}
+.search-box input::placeholder{color:rgba(255,255,255,.4)}
+.search-box input:focus{outline:none;border-color:#d4a843;background:rgba(255,255,255,.12)}
+.search-box i{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:1.1rem}
+.search-box .search-count{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:.8rem}
+.cat-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:20px 0}
+.cat-pill{border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:8px 18px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:6px;color:#495057;user-select:none}
+.cat-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.cat-pill.active{color:#fff;border-color:transparent;transform:translateY(-1px);box-shadow:0 4px 15px rgba(0,0,0,.15)}
+.cat-pill .pill-count{background:rgba(0,0,0,.08);border-radius:50px;padding:1px 8px;font-size:.75rem;font-weight:700}
+.cat-pill.active .pill-count{background:rgba(255,255,255,.25)}
+.blog-card{background:#fff;border-radius:16px;border:1px solid #e9ecef;transition:all .3s;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1);border-color:#d4a843}
+.blog-card .card-cat{font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.5px;text-transform:uppercase;display:inline-block}
+.blog-card .card-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.blog-card .card-title{font-size:1.05rem;font-weight:700;line-height:1.4;margin-bottom:8px;color:#1a1a2e}
+.blog-card .card-title:hover{color:#e8720c}
+.blog-card .card-desc{font-size:.88rem;color:#6c757d;line-height:1.5;flex:1}
+.blog-card .card-footer-custom{padding:16px 24px;border-top:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between}
+.blog-card .read-more{font-size:.85rem;font-weight:600;color:#e8720c;text-decoration:none;display:flex;align-items:center;gap:4px;transition:gap .2s}
+.blog-card:hover .read-more{gap:8px}
+.blog-card .card-badge{position:absolute;top:16px;right:16px}
+.featured-card{background:linear-gradient(135deg,#0f1f2e,#1a3a5c);border:none;position:relative;overflow:hidden}
+.featured-card::before{content:'⭐ Featured';position:absolute;top:16px;left:16px;background:#d4a843;color:#0f1f2e;font-size:.7rem;font-weight:800;padding:4px 12px;border-radius:50px;text-transform:uppercase;letter-spacing:.5px;z-index:2}
+.featured-card .card-body{position:relative;z-index:1}
+.featured-card .card-title{color:#fff;font-size:1.2rem}
+.featured-card .card-desc{color:rgba(255,255,255,.7)}
+.featured-card .card-cat{background:rgba(255,255,255,.15)!important;color:#fff!important}
+.featured-card .read-more{color:#d4a843}
+.featured-card .card-footer-custom{border-color:rgba(255,255,255,.1)}
+.cat-section-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #f0f0f0}
+.cat-section-header .cat-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.cat-section-header h2{font-size:1.3rem;font-weight:700;margin:0;color:#1a1a2e}
+.cat-section-header .cat-count{font-size:.8rem;color:#6c757d;margin-left:auto}
+.no-results{text-align:center;padding:60px 20px;color:#6c757d}
+.no-results i{font-size:3.5rem;margin-bottom:16px;display:block;color:#dee2e6}
+.view-toggle{display:flex;gap:4px;background:#f0f0f0;border-radius:8px;padding:3px}
+.view-toggle button{border:none;background:none;padding:6px 10px;border-radius:6px;color:#6c757d;cursor:pointer;transition:all .2s}
+.view-toggle button.active{background:#fff;color:#1a1a2e;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.list-view .blog-card{flex-direction:row}
+.list-view .blog-card .card-body{padding:16px 20px}
+.list-view .blog-card .card-title{font-size:.95rem;margin-bottom:4px}
+.list-view .blog-card .card-desc{display:none}
+.list-view .blog-card .card-footer-custom{display:none}
+.list-view .blog-card .card-cat{font-size:.65rem;padding:2px 8px}
+@media(max-width:768px){
+.blog-hero h1{font-size:1.8rem}
+.blog-stats{gap:16px}
+.blog-stat strong{font-size:1.3rem}
+.cat-pills{gap:6px}
+.cat-pill{padding:6px 12px;font-size:.8rem}
+.list-view .blog-card{flex-direction:column}
+}
+</style>
+
 </head>
 <body class="has-top-bar">
 <div class="top-cta-bar"><span>Free Quote — We respond in 2 min</span><a href="https://wa.me/529844525333?text=Hello!%20I%20want%20a%20free%20quote" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Get Quote</a></div>
@@ -68,581 +134,993 @@
 <div style="padding-top:116px"></div>
 <nav class="container mt-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/en/">Home</a></li><li class="breadcrumb-item active">Blog</li></ol></nav>
 
-<section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
+<section class="blog-hero">
+<div class="container position-relative" style="z-index:1">
+<div class="row align-items-center">
+<div class="col-lg-7">
+<h1><i class="bi bi-journal-richtext me-2"></i>Building Guides</h1>
+<p class="lead">Real numbers, real advice from 196+ projects across the Riviera Maya. Expert guides on costs, permits, ROI, and construction in Mexico.</p>
+<div class="blog-stats">
+<div class="blog-stat"><strong>69</strong><span>Guides</span></div>
+<div class="blog-stat"><strong>7</strong><span>Categories</span></div>
+<div class="blog-stat"><strong>196+</strong><span>Projects</span></div>
+<div class="blog-stat"><strong>18+</strong><span>Years</span></div>
+</div>
+</div>
+<div class="col-lg-5">
+<div class="search-box">
+<i class="bi bi-search"></i>
+<input type="text" id="searchInput" placeholder="Search guides..." oninput="searchArticles()">
+<span class="search-count" id="searchCount">69 articles</span>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-        <div class="text-center mb-5">
-          <div class="accent-line mx-auto"></div>
-          <h1 class="section-title">Building Guides & Cost Calculators</h1>
-          <p class="section-subtitle">Real numbers, real advice from 196+ projects across the Riviera Maya</p>
-        </div>
+<div class="container">
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3">
+<div class="flex-grow-1"><div class="cat-pills" id="catPills">
+<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>All<span class="pill-count">69</span></button>
+<button class="cat-pill" data-cat="cat-news" data-color="#dc3545" onclick="filterCat('cat-news',this)"><i class="bi bi-newspaper me-1"></i>News & Reports<span class="pill-count">7</span></button>
+<button class="cat-pill" data-cat="cat-costs" data-color="#198754" onclick="filterCat('cat-costs',this)"><i class="bi bi-calculator me-1"></i>Costs & ROI<span class="pill-count">5</span></button>
+<button class="cat-pill" data-cat="cat-trust" data-color="#6f42c1" onclick="filterCat('cat-trust',this)"><i class="bi bi-shield-check me-1"></i>Trust & Safety<span class="pill-count">4</span></button>
+<button class="cat-pill" data-cat="cat-process" data-color="#fd7e14" onclick="filterCat('cat-process',this)"><i class="bi bi-tools me-1"></i>Process & Technical<span class="pill-count">5</span></button>
+<button class="cat-pill" data-cat="cat-foreigners" data-color="#0d6efd" onclick="filterCat('cat-foreigners',this)"><i class="bi bi-globe me-1"></i>For Foreigners<span class="pill-count">7</span></button>
+<button class="cat-pill" data-cat="cat-practical" data-color="#20c997" onclick="filterCat('cat-practical',this)"><i class="bi bi-house-heart me-1"></i>Practical Guides<span class="pill-count">18</span></button>
+<button class="cat-pill" data-cat="cat-guides" data-color="#e8720c" onclick="filterCat('cat-guides',this)"><i class="bi bi-geo-alt me-1"></i>Construction Guides<span class="pill-count">23</span></button>
+</div>
+</div>
+<div class="view-toggle d-none d-md-flex">
+<button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button>
+<button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button>
+</div>
+</div>
+</div>
+<section class="py-4"><div class="container" id="articlesGrid">
+<div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>No articles found</h4><p>Try a different search term</p></div>
+<div class="cat-section" data-cat="cat-news">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>News & Reports</h2><span class="cat-count">7 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-news">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="construction market report — q3 2026" data-desc="material prices, labor costs, permits. costs +6–8% yoy. cement under pressure from maya train.">
+<a href="construction-market-report-q3-2026.html" class="text-decoration-none">
+<div class="blog-card featured-card" style="position:relative">
 
-        <div class="d-flex flex-wrap gap-2 justify-content-center mb-4 blog-nav">
-          <a href="#cat-news" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-newspaper me-1"></i>News</a>
-          <a href="#cat-costs" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-calculator me-1"></i>Costs & ROI</a>
-          <a href="#cat-trust" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-shield-check me-1"></i>Trust</a>
-          <a href="#cat-process" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-tools me-1"></i>Process</a>
-          <a href="#cat-foreigners" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-globe me-1"></i>For Foreigners</a>
-          <a href="#cat-practical" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-house-heart me-1"></i>Practical</a>
-          <a href="#cat-guides" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-geo-alt me-1"></i>Guides</a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">Construction Market Report — Q3 2026</h3>
+<p class="card-desc">Material prices, labor costs, permits. Costs +6–8% YoY. Cement under pressure from Maya Train.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="531 projects under construction in quintana roo: what it means for buyers" data-desc="official data: 27,800 new homes underway. tulum leads with 252 projects, playa del carmen 143. federal budget, population growth, and what it means for your build.">
+<a href="quintana-roo-construction-boom-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        <h3 class="mb-3" id="cat-news"><i class="bi bi-newspaper me-2"></i>Official News & Industry Reports</h3>
-        <div class="list-group mb-5">
-          <a href="construction-market-report-q3-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Construction Market Report — Q3 2026</h5>
-                <p class="text-muted mb-0">Material prices, labor costs, permits. Costs +6–8% YoY. Cement under pressure from Maya Train.</p>
-              </div>
-              <span class="badge bg-danger text-white ms-3">HOT</span>
-            </div>
-          </a>
-          <a href="quintana-roo-construction-boom-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">531 Projects Under Construction in Quintana Roo: What It Means for Buyers</h5>
-                <p class="text-muted mb-0">Official data: 27,800 new homes underway. Tulum leads with 252 projects, Playa del Carmen 143. Federal budget, population growth, and what it means for your build.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="maya-train-real-estate-impact.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Maya Train & Real Estate: How the Railway Is Reshaping the Riviera Maya</h5>
-                <p class="text-muted mb-0">Station locations, land expropriations, Cancun Financial District, and how construction costs and property values are shifting. Official progress data.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="quintana-roo-environmental-construction-laws-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">New Environmental Construction Laws in Quintana Roo 2026</h5>
-                <p class="text-muted mb-0">SEMA permits, real estate law reform, Puerto Morelos injunction precedent, municipal building codes. What you must know before breaking ground.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="playa-del-carmen-pdu-zoning-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Playa del Carmen PDU 2026: New Zoning Rules That Will Change What You Can Build</h5>
-                <p class="text-muted mb-0">Urban development plan 2026–2050: height limits, density changes, environmental requirements, bypass roads. Official update from Solidaridad municipality.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="tulum-real-estate-market-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Tulum Real Estate Market 2026: Airport, Maya Train & 26 Projects Under Investigation</h5>
-                <p class="text-muted mb-0">40% demand slowdown, condo oversupply, 26 projects investigated. Where the opportunities still are. Official market data and price forecasts.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="mexico-anti-money-laundering-real-estate-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Mexico's New Anti-Money Laundering Law 2026: What Property Buyers Must Know</h5>
-                <p class="text-muted mb-0">LFPIORPI reform: lower reporting thresholds, stricter ID, fideicomiso impact. More paperwork but better protection for legitimate buyers.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">531 Projects Under Construction in Quintana Roo: What It Means for Buyers</h3>
+<p class="card-desc">Official data: 27,800 new homes underway. Tulum leads with 252 projects, Playa del Carmen 143. Federal budget, population growth, and what it means for your build.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="maya train &amp; real estate: how the railway is reshaping the riviera maya" data-desc="station locations, land expropriations, cancun financial district, and how construction costs and property values are shifting. official progress data.">
+<a href="maya-train-real-estate-impact.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        <h3 class="mb-3" id="cat-costs"><i class="bi bi-calculator me-2"></i>Cost & ROI Guides</h3>
-        <div class="list-group mb-5">
-          <a href="construction-costs-playa-del-carmen-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Construction Costs in Playa del Carmen 2026: Complete Breakdown</h5>
-                <p class="text-muted mb-0">Cost per m² by build level, land prices by zone, total budget calculator, how to save 15–20%.</p>
-              </div>
-              <span class="badge bg-success ms-3">Most Read</span>
-            </div>
-          </a>
-          <a href="airbnb-roi-calculator-tulum-playa.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Airbnb ROI Calculator: Tulum & Playa del Carmen (2026)</h5>
-                <p class="text-muted mb-0">Real occupancy rates, nightly rates, expense breakdown. Full ROI example for a 2-bed villa.</p>
-              </div>
-              <span class="badge bg-primary ms-3">Calculator</span>
-            </div>
-          </a>
-          <a href="renovation-roi-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Best Renovations for ROI in Playa del Carmen (2026)</h5>
-            <p class="text-muted mb-0">Pool, rooftop, kitchen — which adds most value? Cost vs. value data from 196+ projects.</p>
-          </a>
-          <a href="build-vs-buy-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Build vs Buy in Riviera Maya: Which Saves You More?</h5>
-            <p class="text-muted mb-0">Side-by-side cost comparison. Why building saves 25–40%, and when buying makes sense.</p>
-          </a>
-          <a href="cost-build-house-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">How Much Does It Cost to Build a House in Tulum? (2026 Guide)</h5>
-            <p class="text-muted mb-0">Detailed breakdown of construction costs in Tulum. Per square meter pricing from a local contractor.</p>
-          </a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">Maya Train &amp; Real Estate: How the Railway Is Reshaping the Riviera Maya</h3>
+<p class="card-desc">Station locations, land expropriations, Cancun Financial District, and how construction costs and property values are shifting. Official progress data.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="new environmental construction laws in quintana roo 2026" data-desc="sema permits, real estate law reform, puerto morelos injunction precedent, municipal building codes. what you must know before breaking ground.">
+<a href="quintana-roo-environmental-construction-laws-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        <h3 class="mb-3" id="cat-trust"><i class="bi bi-shield-check me-2"></i>Trust & Safety</h3>
-        <div class="list-group mb-5">
-          <a href="red-flags-hiring-contractor-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">9 Red Flags When Hiring a Contractor in Mexico</h5>
-                <p class="text-muted mb-0">Warning signs, vetting checklist, what to demand in a contract. Don't get scammed.</p>
-              </div>
-              <span class="badge bg-danger ms-3">Must Read</span>
-            </div>
-          </a>
-          <a href="fideicomiso-foreigners-buy-property-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Fideicomiso: How Foreigners Buy & Build Property in Mexico</h5>
-            <p class="text-muted mb-0">Bank trust explained. Costs, step-by-step process, documents, scams to avoid.</p>
-          </a>
-          <a href="choose-construction-company-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">How to Choose a Construction Company in Riviera Maya</h5>
-            <p class="text-muted mb-0">What to look for when hiring a contractor in Playa del Carmen, Tulum, or Cancún.</p>
-          </a>
-          <a href="foreigners-build-house-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Can Foreigners Build a House in Mexico? Yes — Here's How</h5>
-            <p class="text-muted mb-0">Everything foreigners need to know about building property in Mexico.</p>
-          </a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">New Environmental Construction Laws in Quintana Roo 2026</h3>
+<p class="card-desc">SEMA permits, real estate law reform, Puerto Morelos injunction precedent, municipal building codes. What you must know before breaking ground.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="playa del carmen pdu 2026: new zoning rules that will change what you can build" data-desc="urban development plan 2026–2050: height limits, density changes, environmental requirements, bypass roads. official update from solidaridad municipality.">
+<a href="playa-del-carmen-pdu-zoning-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        <h3 class="mb-3" id="cat-process"><i class="bi bi-tools me-2"></i>Process & Technical</h3>
-        <div class="list-group mb-5">
-          <a href="construction-permits-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Construction Permits in Playa del Carmen: Complete Guide (2026)</h5>
-            <p class="text-muted mb-0">Requirements, costs, timeline, documents needed for building permits.</p>
-          </a>
-          <a href="hurricane-proof-construction.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Hurricane-Proof Construction in the Riviera Maya</h5>
-            <p class="text-muted mb-0">How to build hurricane-resistant in Cancún, Playa del Carmen, Tulum.</p>
-          </a>
-          <a href="home-renovation-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Home Renovation in Playa del Carmen: Costs, Ideas & Tips</h5>
-            <p class="text-muted mb-0">Cost per m², timeline, and what to know for renovations.</p>
-          </a>
-          <a href="commercial-construction-cancun.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Commercial Construction in Cancún & Riviera Maya</h5>
-            <p class="text-muted mb-0">Turnkey commercial builds — shops, restaurants, offices, hotels.</p>
-          </a>
-          <a href="airbnb-investment-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Building an Airbnb Investment Property in Tulum (2026 ROI Guide)</h5>
-            <p class="text-muted mb-0">Construction costs, rental income, ROI projections for Tulum Airbnb.</p>
-          </a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">Playa del Carmen PDU 2026: New Zoning Rules That Will Change What You Can Build</h3>
+<p class="card-desc">Urban development plan 2026–2050: height limits, density changes, environmental requirements, bypass roads. Official update from Solidaridad municipality.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="tulum real estate market 2026: airport, maya train &amp; 26 projects under investigation" data-desc="40% demand slowdown, condo oversupply, 26 projects investigated. where the opportunities still are. official market data and price forecasts.">
+<a href="tulum-real-estate-market-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        <h3 class="mb-3" id="cat-foreigners"><i class="bi bi-globe me-2"></i>For Foreigners</h3>
-        <div class="list-group mb-5">
-          <a href="foreigners-build-house-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Can Foreigners Build a House in Mexico? Yes — Here's How</h5><p class="text-muted mb-0">Legal requirements, fideicomiso, step-by-step process for non-Mexicans.</p></div><span class="badge bg-info text-white ms-3">Guide</span></div></a>
-          <a href="fideicomiso-foreigners-buy-property-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Fideicomiso: How Foreigners Buy &amp; Build Property in Mexico</h5><p class="text-muted mb-0">What it is, how much it costs, how it works. Complete bank trust guide.</p></div><span class="badge bg-info text-white ms-3">Guide</span></div></a>
-          <a href="remote-construction-management-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Remote Construction Management: Build from Abroad</h5><p class="text-muted mb-0">Daily reports, weekly video calls. 80% of clients build remotely.</p></div><span class="badge bg-info text-white ms-3">Guide</span></div></a>
-        </div>
-                <a href="smart-home-automation-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Smart Home Automation</h5>
-              <p class="text-muted mb-0">Home automation, smart lighting, security, HVAC. Packages from $2,500 USD.</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <a href="elevators-accessibility-homes-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Elevators & Accessibility</h5>
-              <p class="text-muted mb-0">Residential elevators, ramps, universal accessibility. From $18,000 USD.</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <a href="garages-parking-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Garages & Parking</h5>
-              <p class="text-muted mb-0">Design, costs per m², automatic gates. Covered garage from $650 USD/m².</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <a href="cisterns-water-storage-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Cisterns & Water Storage</h5>
-              <p class="text-muted mb-0">Types, capacities, pumping systems, rainwater harvesting. From $1,500 USD.</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <h3 class="mb-3" id="cat-practical"><i class="bi bi-house-heart me-2"></i>Practical Guides</h3>
-        <div class="list-group mb-5">
-          <a href="swimming-pools-riviera-maya-cost.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Swimming Pools in the Riviera Maya: Types, Cost & Maintenance</h5>
-                <p class="text-muted mb-0">How much does a pool cost in Playa del Carmen? Concrete, infinity, rooftop. Chukum finish, maintenance costs.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="rooftop-terrace-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Rooftop Terrace in Playa del Carmen: Cost, Ideas & ROI</h5>
-                <p class="text-muted mb-0">The best investment — adds $40–$80/night on Airbnb. Options from basic to full rooftop with pool.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="home-maintenance-costs-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Home Maintenance Costs in Mexico: Utilities, Taxes & Insurance</h5>
-                <p class="text-muted mb-0">Full breakdown: electricity, water, predial, insurance, pool, cleaning. ~$730 USD/month for a 150 m² home.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="hurricane-season-preparation-checklist.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Hurricane Season Preparation Checklist for Homeowners</h5>
-                <p class="text-muted mb-0">Shutters, generator, supplies, insurance. What to do 2 months before and 48 hours before a hurricane.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="smart-home-tropics-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Smart Home in the Tropics: Technology for Villas in Riviera Maya</h5>
-                <p class="text-muted mb-0">A/C automation, security, remote management. Packages from $2,700 USD. What to wire during construction.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="pool-construction-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Pool Construction in the Riviera Maya: Complete Guide 2026</h5>
-                <p class="text-muted mb-0">Types, costs $10K–$83K USD, chukum finish, permits, step-by-step process. 6–12 weeks.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="flooring-finishes-tropical-climate.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Flooring & Finishes for Tropical Climate</h5>
-              <p class="text-muted mb-0">Porcelain, travertine, chukum, microcement, tropical wood. Costs and room recommendations.</p></div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="air-conditioning-ventilation-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Air Conditioning & Ventilation in the Riviera Maya</h5>
-              <p class="text-muted mb-0">Mini split, VRF, ducted. Costs $450–$16.5K USD, brands, BTU sizing, electricity costs.</p></div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="home-security-systems-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Home Security Systems in the Riviera Maya</h5>
-              <p class="text-muted mb-0">CCTV, smart locks, hurricane shutters, alarms. Packages $1.4K–$19.4K USD.</p></div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="tropical-landscaping-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Tropical Landscaping in the Riviera Maya</h5>
-              <p class="text-muted mb-0">Native plants, irrigation, lighting. Gardens from $1,650 USD.</p></div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="outdoor-kitchens-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Outdoor Kitchens & Palapas in the Riviera Maya</h5>
-                <p class="text-muted mb-0">Design, costs ($3,500–$55,000 USD) and materials for outdoor kitchens and entertainment areas.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="lighting-design-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Lighting Design for Homes in the Riviera Maya</h5>
-                <p class="text-muted mb-0">LED, outdoor, landscape and smart lighting. Costs by zone and recommended brands.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="roofing-waterproofing-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Roofing & Waterproofing in the Riviera Maya</h5>
-                <p class="text-muted mb-0">Concrete slabs, green roofs, palapas. Waterproofing systems with 3–20 year warranties.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="windows-doors-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Windows & Doors for Tropical Climate</h5>
-                <p class="text-muted mb-0">Hurricane-rated, PVC, aluminum, hardwood. Laminated glazing and Miami-Dade certifications.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">Tulum Real Estate Market 2026: Airport, Maya Train &amp; 26 Projects Under Investigation</h3>
+<p class="card-desc">40% demand slowdown, condo oversupply, 26 projects investigated. Where the opportunities still are. Official market data and price forecasts.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="mexico's new anti-money laundering law 2026: what property buyers must know" data-desc="lfpiorpi reform: lower reporting thresholds, stricter id, fideicomiso impact. more paperwork but better protection for legitimate buyers.">
+<a href="mexico-anti-money-laundering-real-estate-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">News & Reports</span>
+<h3 class="card-title mt-2">Mexico's New Anti-Money Laundering Law 2026: What Property Buyers Must Know</h3>
+<p class="card-desc">LFPIORPI reform: lower reporting thresholds, stricter ID, fideicomiso impact. More paperwork but better protection for legitimate buyers.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-costs">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>Costs & ROI</h2><span class="cat-count">5 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-costs">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="construction costs in playa del carmen 2026: complete breakdown" data-desc="cost per m² by build level, land prices by zone, total budget calculator, how to save 15–20%.">
+<a href="construction-costs-playa-del-carmen-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-          <a href="solar-panels-homes-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Solar Panels for Homes in the Riviera Maya</h5><p class="text-muted mb-0">Costs ($4,500–$22,000 USD), brands, ROI and CFE regulations for residential solar.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-          <a href="septic-systems-water-treatment-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Septic Systems &amp; Water Treatment</h5><p class="text-muted mb-0">Biodigesters, treatment plants, costs and environmental regulations for the Riviera Maya.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-          <a href="concrete-types-construction-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Concrete Types for Construction</h5><p class="text-muted mb-0">Ready-mix, pumpable, self-compacting. Strengths f'c 200–400 and costs per m³.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-          <a href="insurance-warranties-construction-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Construction Insurance &amp; Warranties</h5><p class="text-muted mb-0">Builder's risk, structural warranties, performance bonds and buyer protection.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-        <h3 class="mb-3" id="cat-guides"><i class="bi bi-geo-alt me-2"></i>Construction Guides</h3>
-        <div class="list-group mb-5">
-          <a href="best-areas-build-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Best Areas to Build in Playa del Carmen (2026 Guide)</h5>
-                <p class="text-muted mb-0">Aldea Zamá, Ejidal, Colosio, Playacar — land prices, lifestyle, ROI per zone.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="construction-timeline-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Construction Timeline in the Riviera Maya: How Long Does It Take?</h5>
-                <p class="text-muted mb-0">8–14 months build, 2–4 months permits. Full phase-by-phase timeline.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="turnkey-construction-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Turnkey Construction in Playa del Carmen: What's Included</h5>
-                <p class="text-muted mb-0">One contract, one team, one price. From design to handover — what turnkey means.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="sustainable-construction-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Sustainable & Eco-Friendly Construction in Tulum</h5>
-                <p class="text-muted mb-0">Environmental rules, eco materials, solar, rainwater. Green building adds 20–40% to rentals.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="remote-construction-management-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Remote Construction Management: Build Your Mexico Home from Abroad</h5>
-                <p class="text-muted mb-0">Daily photo reports, weekly video calls. 80% of our clients build remotely.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="playa-del-carmen-vs-tulum-build-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Playa del Carmen vs Tulum: Where Should You Build?</h5>
-                <p class="text-muted mb-0">Land costs, regulations, Airbnb returns, permits — side by side comparison.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="kitchen-remodel-cost-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Kitchen Remodel Cost in Playa del Carmen (2026)</h5>
-                <p class="text-muted mb-0">$4,000–$35,000 USD. Budget, mid-range, premium breakdown with timeline.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-          <a href="bathroom-renovation-cost-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Bathroom Renovation Cost in Playa del Carmen (2026)</h5>
-                <p class="text-muted mb-0">$2,500–$22,000 USD. Budget to premium breakdown with tropical tips.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">New</span>
-            </div>
-          </a>
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Costs & ROI</span>
+<h3 class="card-title mt-2">Construction Costs in Playa del Carmen 2026: Complete Breakdown</h3>
+<p class="card-desc">Cost per m² by build level, land prices by zone, total budget calculator, how to save 15–20%.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="airbnb roi calculator: tulum &amp; playa del carmen (2026)" data-desc="real occupancy rates, nightly rates, expense breakdown. full roi example for a 2-bed villa.">
+<a href="airbnb-roi-calculator-tulum-playa.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        
-          <a href="buying-land-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">How to Buy Land in the Riviera Maya 2026</h5>
-                <p class="text-muted mb-0">Prices, ejido vs private, fideicomiso, best zones.</p>
-              </div>
-              <span class="badge bg-info text-white ms-3">Guide</span>
-            </div>
-          </a>
-          <a href="property-management-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Property Management in the Riviera Maya</h5>
-                <p class="text-muted mb-0">Airbnb management, rental income, maintenance.</p>
-              </div>
-              <span class="badge bg-success text-white ms-3">Investment</span>
-            </div>
-          </a>
-          <a href="interior-design-tropical-homes-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Interior Design for Tropical Homes</h5>
-                <p class="text-muted mb-0">Styles, materials, furniture, humidity-resistant solutions.</p>
-              </div>
-              <span class="badge bg-purple text-white ms-3">Design</span>
-            </div>
-          </a>
-          <a href="green-building-materials-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Green Building Materials in Mexico</h5>
-                <p class="text-muted mb-0">Bamboo, recycled concrete, rammed earth, green roofs.</p>
-              </div>
-              <span class="badge bg-success text-white ms-3">Eco</span>
-            </div>
-          </a>
-          <a href="foundation-types-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Foundation Types for the Riviera Maya</h5>
-                <p class="text-muted mb-0">Slab, mat, piles for limestone/karst terrain.</p>
-              </div>
-              <span class="badge bg-secondary text-white ms-3">Technical</span>
-            </div>
-          </a>
-          <a href="gated-community-construction-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Gated Community Construction</h5>
-                <p class="text-muted mb-0">Design, infrastructure, security, amenities, HOA.</p>
-              </div>
-              <span class="badge bg-primary text-white ms-3">Development</span>
-            </div>
-          </a>
-          <a href="condo-development-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Condo & Multi-Family Development</h5>
-                <p class="text-muted mb-0">4-50 units, pre-sale strategy, permits, ROI.</p>
-              </div>
-              <span class="badge bg-primary text-white ms-3">Development</span>
-            </div>
-          </a>
-          <a href="restaurant-bar-construction-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Restaurant & Bar Construction</h5>
-                <p class="text-muted mb-0">Kitchen design, permits, liquor license, costs.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Commercial</span>
-            </div>
-          </a>
-          <a href="plumbing-water-systems-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Plumbing & Water Systems</h5>
-                <p class="text-muted mb-0">Wells, cisterns, pumps, water treatment, drainage.</p>
-              </div>
-              <span class="badge bg-secondary text-white ms-3">Technical</span>
-            </div>
-          </a>
-          <a href="terrain-preparation-retaining-walls-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Terrain Prep & Retaining Walls</h5>
-                <p class="text-muted mb-0">Lot clearing, rock breaking, drainage, compaction.</p>
-              </div>
-              <span class="badge bg-secondary text-white ms-3">Technical</span>
-            </div>
-          </a>
-          <a href="cost-of-living-building-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Cost of Living While Building in Mexico</h5>
-                <p class="text-muted mb-0">Monthly costs: rent, food, transport, visa, internet.</p>
-              </div>
-              <span class="badge bg-info text-white ms-3">Guide</span>
-            </div>
-          </a>
-          <a href="construction-timeline-schedule-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Construction Timeline & Schedule</h5>
-                <p class="text-muted mb-0">Month-by-month: permits, foundation, finishes.</p>
-              </div>
-              <span class="badge bg-info text-white ms-3">Guide</span>
-            </div>
-          </a>
-          <a href="furniture-ffe-rental-properties-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Furniture & FF&E for Rental Properties</h5>
-                <p class="text-muted mb-0">Furnishing packages for Airbnb/hotels from $5,000.</p>
-              </div>
-              <span class="badge bg-success text-white ms-3">Investment</span>
-            </div>
-          </a>
-          <a href="tax-benefits-construction-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Tax Benefits for Construction in Mexico</h5>
-                <p class="text-muted mb-0">ISR deductions, depreciation, solar incentives.</p>
-              </div>
-              <span class="badge bg-dark text-white ms-3">Finance</span>
-            </div>
-          </a>
-          <a href="accessibility-universal-design-homes-mexico.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Accessibility & Universal Design</h5>
-                <p class="text-muted mb-0">Wheelchair-accessible, aging-in-place, ramps, elevators.</p>
-              </div>
-              <span class="badge bg-purple text-white ms-3">Design</span>
-            </div>
-          </a>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Costs & ROI</span>
+<h3 class="card-title mt-2">Airbnb ROI Calculator: Tulum &amp; Playa del Carmen (2026)</h3>
+<p class="card-desc">Real occupancy rates, nightly rates, expense breakdown. Full ROI example for a 2-bed villa.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="best renovations for roi in playa del carmen (2026)" data-desc="pool, rooftop, kitchen — which adds most value? cost vs. value data from 196+ projects.">
+<a href="renovation-roi-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        </div>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Costs & ROI</span>
+<h3 class="card-title mt-2">Best Renovations for ROI in Playa del Carmen (2026)</h3>
+<p class="card-desc">Pool, rooftop, kitchen — which adds most value? Cost vs. value data from 196+ projects.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="build vs buy in riviera maya: which saves you more?" data-desc="side-by-side cost comparison. why building saves 25–40%, and when buying makes sense.">
+<a href="build-vs-buy-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
 
-        <div class="trust-badges"><span class="trust-badge"><i class="bi bi-award"></i>18+ Years</span><span class="trust-badge"><i class="bi bi-building"></i>196+ Projects</span><span class="trust-badge"><i class="bi bi-shield-check"></i>Licensed</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Insured</span></div>
-<div class="lead-magnet">
-  <h3><i class="bi bi-file-earmark-pdf me-2"></i>Free: Construction Cost Guide 2026</h3>
-  <p>Real prices per m², land costs, permits, hidden fees. PDF from 196+ projects in the Riviera Maya.</p>
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Costs & ROI</span>
+<h3 class="card-title mt-2">Build vs Buy in Riviera Maya: Which Saves You More?</h3>
+<p class="card-desc">Side-by-side cost comparison. Why building saves 25–40%, and when buying makes sense.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="how much does it cost to build a house in tulum? (2026 guide)" data-desc="detailed breakdown of construction costs in tulum. per square meter pricing from a local contractor.">
+<a href="cost-build-house-tulum.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Costs & ROI</span>
+<h3 class="card-title mt-2">How Much Does It Cost to Build a House in Tulum? (2026 Guide)</h3>
+<p class="card-desc">Detailed breakdown of construction costs in Tulum. Per square meter pricing from a local contractor.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-trust">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(111,66,193,.08);color:#6f42c1"><i class="bi bi-shield-check"></i></div><h2>Trust & Safety</h2><span class="cat-count">4 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-trust">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-trust" data-title="9 red flags when hiring a contractor in mexico" data-desc="warning signs, vetting checklist, what to demand in a contract. don't get scammed.">
+<a href="red-flags-hiring-contractor-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Trust & Safety</span>
+<h3 class="card-title mt-2">9 Red Flags When Hiring a Contractor in Mexico</h3>
+<p class="card-desc">Warning signs, vetting checklist, what to demand in a contract. Don't get scammed.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-trust" data-title="fideicomiso: how foreigners buy &amp; build property in mexico" data-desc="bank trust explained. costs, step-by-step process, documents, scams to avoid.">
+<a href="fideicomiso-foreigners-buy-property-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Trust & Safety</span>
+<h3 class="card-title mt-2">Fideicomiso: How Foreigners Buy &amp; Build Property in Mexico</h3>
+<p class="card-desc">Bank trust explained. Costs, step-by-step process, documents, scams to avoid.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-trust" data-title="how to choose a construction company in riviera maya" data-desc="what to look for when hiring a contractor in playa del carmen, tulum, or cancún.">
+<a href="choose-construction-company-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Trust & Safety</span>
+<h3 class="card-title mt-2">How to Choose a Construction Company in Riviera Maya</h3>
+<p class="card-desc">What to look for when hiring a contractor in Playa del Carmen, Tulum, or Cancún.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-trust" data-title="can foreigners build a house in mexico? yes — here's how" data-desc="everything foreigners need to know about building property in mexico.">
+<a href="foreigners-build-house-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Trust & Safety</span>
+<h3 class="card-title mt-2">Can Foreigners Build a House in Mexico? Yes — Here's How</h3>
+<p class="card-desc">Everything foreigners need to know about building property in Mexico.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-process">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(253,126,20,.08);color:#fd7e14"><i class="bi bi-tools"></i></div><h2>Process & Technical</h2><span class="cat-count">5 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-process">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-process" data-title="construction permits in playa del carmen: complete guide (2026)" data-desc="requirements, costs, timeline, documents needed for building permits.">
+<a href="construction-permits-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Process & Technical</span>
+<h3 class="card-title mt-2">Construction Permits in Playa del Carmen: Complete Guide (2026)</h3>
+<p class="card-desc">Requirements, costs, timeline, documents needed for building permits.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-process" data-title="hurricane-proof construction in the riviera maya" data-desc="how to build hurricane-resistant in cancún, playa del carmen, tulum.">
+<a href="hurricane-proof-construction.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Process & Technical</span>
+<h3 class="card-title mt-2">Hurricane-Proof Construction in the Riviera Maya</h3>
+<p class="card-desc">How to build hurricane-resistant in Cancún, Playa del Carmen, Tulum.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-process" data-title="home renovation in playa del carmen: costs, ideas &amp; tips" data-desc="cost per m², timeline, and what to know for renovations.">
+<a href="home-renovation-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Process & Technical</span>
+<h3 class="card-title mt-2">Home Renovation in Playa del Carmen: Costs, Ideas &amp; Tips</h3>
+<p class="card-desc">Cost per m², timeline, and what to know for renovations.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-process" data-title="commercial construction in cancún &amp; riviera maya" data-desc="turnkey commercial builds — shops, restaurants, offices, hotels.">
+<a href="commercial-construction-cancun.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Process & Technical</span>
+<h3 class="card-title mt-2">Commercial Construction in Cancún &amp; Riviera Maya</h3>
+<p class="card-desc">Turnkey commercial builds — shops, restaurants, offices, hotels.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-process" data-title="building an airbnb investment property in tulum (2026 roi guide)" data-desc="construction costs, rental income, roi projections for tulum airbnb.">
+<a href="airbnb-investment-tulum.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Process & Technical</span>
+<h3 class="card-title mt-2">Building an Airbnb Investment Property in Tulum (2026 ROI Guide)</h3>
+<p class="card-desc">Construction costs, rental income, ROI projections for Tulum Airbnb.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-foreigners">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>For Foreigners</h2><span class="cat-count">7 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-foreigners">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="can foreigners build a house in mexico? yes — here's how" data-desc="legal requirements, fideicomiso, step-by-step process for non-mexicans.">
+<a href="foreigners-build-house-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Can Foreigners Build a House in Mexico? Yes — Here's How</h3>
+<p class="card-desc">Legal requirements, fideicomiso, step-by-step process for non-Mexicans.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="fideicomiso: how foreigners buy &amp; build property in mexico" data-desc="what it is, how much it costs, how it works. complete bank trust guide.">
+<a href="fideicomiso-foreigners-buy-property-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Fideicomiso: How Foreigners Buy &amp; Build Property in Mexico</h3>
+<p class="card-desc">What it is, how much it costs, how it works. Complete bank trust guide.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="remote construction management: build from abroad" data-desc="daily reports, weekly video calls. 80% of clients build remotely.">
+<a href="remote-construction-management-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Remote Construction Management: Build from Abroad</h3>
+<p class="card-desc">Daily reports, weekly video calls. 80% of clients build remotely.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="smart home automation" data-desc="home automation, smart lighting, security, hvac. packages from $2,500 usd.">
+<a href="smart-home-automation-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Smart Home Automation</h3>
+<p class="card-desc">Home automation, smart lighting, security, HVAC. Packages from $2,500 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="elevators &amp; accessibility" data-desc="residential elevators, ramps, universal accessibility. from $18,000 usd.">
+<a href="elevators-accessibility-homes-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Elevators &amp; Accessibility</h3>
+<p class="card-desc">Residential elevators, ramps, universal accessibility. From $18,000 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="garages &amp; parking" data-desc="design, costs per m², automatic gates. covered garage from $650 usd/m².">
+<a href="garages-parking-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Garages &amp; Parking</h3>
+<p class="card-desc">Design, costs per m², automatic gates. Covered garage from $650 USD/m².</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="cisterns &amp; water storage" data-desc="types, capacities, pumping systems, rainwater harvesting. from $1,500 usd.">
+<a href="cisterns-water-storage-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">For Foreigners</span>
+<h3 class="card-title mt-2">Cisterns &amp; Water Storage</h3>
+<p class="card-desc">Types, capacities, pumping systems, rainwater harvesting. From $1,500 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-practical">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>Practical Guides</h2><span class="cat-count">18 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-practical">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="swimming pools in the riviera maya: types, cost &amp; maintenance" data-desc="how much does a pool cost in playa del carmen? concrete, infinity, rooftop. chukum finish, maintenance costs.">
+<a href="swimming-pools-riviera-maya-cost.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Swimming Pools in the Riviera Maya: Types, Cost &amp; Maintenance</h3>
+<p class="card-desc">How much does a pool cost in Playa del Carmen? Concrete, infinity, rooftop. Chukum finish, maintenance costs.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="rooftop terrace in playa del carmen: cost, ideas &amp; roi" data-desc="the best investment — adds $40–$80/night on airbnb. options from basic to full rooftop with pool.">
+<a href="rooftop-terrace-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Rooftop Terrace in Playa del Carmen: Cost, Ideas &amp; ROI</h3>
+<p class="card-desc">The best investment — adds $40–$80/night on Airbnb. Options from basic to full rooftop with pool.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="home maintenance costs in mexico: utilities, taxes &amp; insurance" data-desc="full breakdown: electricity, water, predial, insurance, pool, cleaning. ~$730 usd/month for a 150 m² home.">
+<a href="home-maintenance-costs-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Home Maintenance Costs in Mexico: Utilities, Taxes &amp; Insurance</h3>
+<p class="card-desc">Full breakdown: electricity, water, predial, insurance, pool, cleaning. ~$730 USD/month for a 150 m² home.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="hurricane season preparation checklist for homeowners" data-desc="shutters, generator, supplies, insurance. what to do 2 months before and 48 hours before a hurricane.">
+<a href="hurricane-season-preparation-checklist.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Hurricane Season Preparation Checklist for Homeowners</h3>
+<p class="card-desc">Shutters, generator, supplies, insurance. What to do 2 months before and 48 hours before a hurricane.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="smart home in the tropics: technology for villas in riviera maya" data-desc="a/c automation, security, remote management. packages from $2,700 usd. what to wire during construction.">
+<a href="smart-home-tropics-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Smart Home in the Tropics: Technology for Villas in Riviera Maya</h3>
+<p class="card-desc">A/C automation, security, remote management. Packages from $2,700 USD. What to wire during construction.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="pool construction in the riviera maya: complete guide 2026" data-desc="types, costs $10k–$83k usd, chukum finish, permits, step-by-step process. 6–12 weeks.">
+<a href="pool-construction-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Pool Construction in the Riviera Maya: Complete Guide 2026</h3>
+<p class="card-desc">Types, costs $10K–$83K USD, chukum finish, permits, step-by-step process. 6–12 weeks.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="flooring &amp; finishes for tropical climate" data-desc="porcelain, travertine, chukum, microcement, tropical wood. costs and room recommendations.">
+<a href="flooring-finishes-tropical-climate.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Flooring &amp; Finishes for Tropical Climate</h3>
+<p class="card-desc">Porcelain, travertine, chukum, microcement, tropical wood. Costs and room recommendations.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="air conditioning &amp; ventilation in the riviera maya" data-desc="mini split, vrf, ducted. costs $450–$16.5k usd, brands, btu sizing, electricity costs.">
+<a href="air-conditioning-ventilation-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Air Conditioning &amp; Ventilation in the Riviera Maya</h3>
+<p class="card-desc">Mini split, VRF, ducted. Costs $450–$16.5K USD, brands, BTU sizing, electricity costs.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="home security systems in the riviera maya" data-desc="cctv, smart locks, hurricane shutters, alarms. packages $1.4k–$19.4k usd.">
+<a href="home-security-systems-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Home Security Systems in the Riviera Maya</h3>
+<p class="card-desc">CCTV, smart locks, hurricane shutters, alarms. Packages $1.4K–$19.4K USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="tropical landscaping in the riviera maya" data-desc="native plants, irrigation, lighting. gardens from $1,650 usd.">
+<a href="tropical-landscaping-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Tropical Landscaping in the Riviera Maya</h3>
+<p class="card-desc">Native plants, irrigation, lighting. Gardens from $1,650 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="outdoor kitchens &amp; palapas in the riviera maya" data-desc="design, costs ($3,500–$55,000 usd) and materials for outdoor kitchens and entertainment areas.">
+<a href="outdoor-kitchens-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Outdoor Kitchens &amp; Palapas in the Riviera Maya</h3>
+<p class="card-desc">Design, costs ($3,500–$55,000 USD) and materials for outdoor kitchens and entertainment areas.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="lighting design for homes in the riviera maya" data-desc="led, outdoor, landscape and smart lighting. costs by zone and recommended brands.">
+<a href="lighting-design-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Lighting Design for Homes in the Riviera Maya</h3>
+<p class="card-desc">LED, outdoor, landscape and smart lighting. Costs by zone and recommended brands.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="roofing &amp; waterproofing in the riviera maya" data-desc="concrete slabs, green roofs, palapas. waterproofing systems with 3–20 year warranties.">
+<a href="roofing-waterproofing-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Roofing &amp; Waterproofing in the Riviera Maya</h3>
+<p class="card-desc">Concrete slabs, green roofs, palapas. Waterproofing systems with 3–20 year warranties.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="windows &amp; doors for tropical climate" data-desc="hurricane-rated, pvc, aluminum, hardwood. laminated glazing and miami-dade certifications.">
+<a href="windows-doors-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Windows &amp; Doors for Tropical Climate</h3>
+<p class="card-desc">Hurricane-rated, PVC, aluminum, hardwood. Laminated glazing and Miami-Dade certifications.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="solar panels for homes in the riviera maya" data-desc="costs ($4,500–$22,000 usd), brands, roi and cfe regulations for residential solar.">
+<a href="solar-panels-homes-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Solar Panels for Homes in the Riviera Maya</h3>
+<p class="card-desc">Costs ($4,500–$22,000 USD), brands, ROI and CFE regulations for residential solar.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="septic systems &amp; water treatment" data-desc="biodigesters, treatment plants, costs and environmental regulations for the riviera maya.">
+<a href="septic-systems-water-treatment-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Septic Systems &amp; Water Treatment</h3>
+<p class="card-desc">Biodigesters, treatment plants, costs and environmental regulations for the Riviera Maya.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="concrete types for construction" data-desc="ready-mix, pumpable, self-compacting. strengths f'c 200–400 and costs per m³.">
+<a href="concrete-types-construction-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Concrete Types for Construction</h3>
+<p class="card-desc">Ready-mix, pumpable, self-compacting. Strengths f'c 200–400 and costs per m³.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-practical" data-title="construction insurance &amp; warranties" data-desc="builder's risk, structural warranties, performance bonds and buyer protection.">
+<a href="insurance-warranties-construction-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Practical Guides</span>
+<h3 class="card-title mt-2">Construction Insurance &amp; Warranties</h3>
+<p class="card-desc">Builder's risk, structural warranties, performance bonds and buyer protection.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-guides">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(232,114,12,.08);color:#e8720c"><i class="bi bi-geo-alt"></i></div><h2>Construction Guides</h2><span class="cat-count">23 articles</span></div>
+<div class="row g-3 mb-5" id="cards-cat-guides">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="best areas to build in playa del carmen (2026 guide)" data-desc="aldea zamá, ejidal, colosio, playacar — land prices, lifestyle, roi per zone.">
+<a href="best-areas-build-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Best Areas to Build in Playa del Carmen (2026 Guide)</h3>
+<p class="card-desc">Aldea Zamá, Ejidal, Colosio, Playacar — land prices, lifestyle, ROI per zone.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="construction timeline in the riviera maya: how long does it take?" data-desc="8–14 months build, 2–4 months permits. full phase-by-phase timeline.">
+<a href="construction-timeline-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Construction Timeline in the Riviera Maya: How Long Does It Take?</h3>
+<p class="card-desc">8–14 months build, 2–4 months permits. Full phase-by-phase timeline.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="turnkey construction in playa del carmen: what's included" data-desc="one contract, one team, one price. from design to handover — what turnkey means.">
+<a href="turnkey-construction-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Turnkey Construction in Playa del Carmen: What's Included</h3>
+<p class="card-desc">One contract, one team, one price. From design to handover — what turnkey means.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="sustainable &amp; eco-friendly construction in tulum" data-desc="environmental rules, eco materials, solar, rainwater. green building adds 20–40% to rentals.">
+<a href="sustainable-construction-tulum.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Sustainable &amp; Eco-Friendly Construction in Tulum</h3>
+<p class="card-desc">Environmental rules, eco materials, solar, rainwater. Green building adds 20–40% to rentals.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="remote construction management: build your mexico home from abroad" data-desc="daily photo reports, weekly video calls. 80% of our clients build remotely.">
+<a href="remote-construction-management-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Remote Construction Management: Build Your Mexico Home from Abroad</h3>
+<p class="card-desc">Daily photo reports, weekly video calls. 80% of our clients build remotely.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="playa del carmen vs tulum: where should you build?" data-desc="land costs, regulations, airbnb returns, permits — side by side comparison.">
+<a href="playa-del-carmen-vs-tulum-build-2026.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Playa del Carmen vs Tulum: Where Should You Build?</h3>
+<p class="card-desc">Land costs, regulations, Airbnb returns, permits — side by side comparison.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="kitchen remodel cost in playa del carmen (2026)" data-desc="$4,000–$35,000 usd. budget, mid-range, premium breakdown with timeline.">
+<a href="kitchen-remodel-cost-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Kitchen Remodel Cost in Playa del Carmen (2026)</h3>
+<p class="card-desc">$4,000–$35,000 USD. Budget, mid-range, premium breakdown with timeline.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="bathroom renovation cost in playa del carmen (2026)" data-desc="$2,500–$22,000 usd. budget to premium breakdown with tropical tips.">
+<a href="bathroom-renovation-cost-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Bathroom Renovation Cost in Playa del Carmen (2026)</h3>
+<p class="card-desc">$2,500–$22,000 USD. Budget to premium breakdown with tropical tips.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="how to buy land in the riviera maya 2026" data-desc="prices, ejido vs private, fideicomiso, best zones.">
+<a href="buying-land-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">How to Buy Land in the Riviera Maya 2026</h3>
+<p class="card-desc">Prices, ejido vs private, fideicomiso, best zones.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="property management in the riviera maya" data-desc="airbnb management, rental income, maintenance.">
+<a href="property-management-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Property Management in the Riviera Maya</h3>
+<p class="card-desc">Airbnb management, rental income, maintenance.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="interior design for tropical homes" data-desc="styles, materials, furniture, humidity-resistant solutions.">
+<a href="interior-design-tropical-homes-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Interior Design for Tropical Homes</h3>
+<p class="card-desc">Styles, materials, furniture, humidity-resistant solutions.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="green building materials in mexico" data-desc="bamboo, recycled concrete, rammed earth, green roofs.">
+<a href="green-building-materials-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Green Building Materials in Mexico</h3>
+<p class="card-desc">Bamboo, recycled concrete, rammed earth, green roofs.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="foundation types for the riviera maya" data-desc="slab, mat, piles for limestone/karst terrain.">
+<a href="foundation-types-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Foundation Types for the Riviera Maya</h3>
+<p class="card-desc">Slab, mat, piles for limestone/karst terrain.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="gated community construction" data-desc="design, infrastructure, security, amenities, hoa.">
+<a href="gated-community-construction-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Gated Community Construction</h3>
+<p class="card-desc">Design, infrastructure, security, amenities, HOA.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="condo &amp; multi-family development" data-desc="4-50 units, pre-sale strategy, permits, roi.">
+<a href="condo-development-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Condo &amp; Multi-Family Development</h3>
+<p class="card-desc">4-50 units, pre-sale strategy, permits, ROI.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="restaurant &amp; bar construction" data-desc="kitchen design, permits, liquor license, costs.">
+<a href="restaurant-bar-construction-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Restaurant &amp; Bar Construction</h3>
+<p class="card-desc">Kitchen design, permits, liquor license, costs.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="plumbing &amp; water systems" data-desc="wells, cisterns, pumps, water treatment, drainage.">
+<a href="plumbing-water-systems-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Plumbing &amp; Water Systems</h3>
+<p class="card-desc">Wells, cisterns, pumps, water treatment, drainage.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="terrain prep &amp; retaining walls" data-desc="lot clearing, rock breaking, drainage, compaction.">
+<a href="terrain-preparation-retaining-walls-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Terrain Prep &amp; Retaining Walls</h3>
+<p class="card-desc">Lot clearing, rock breaking, drainage, compaction.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="cost of living while building in mexico" data-desc="monthly costs: rent, food, transport, visa, internet.">
+<a href="cost-of-living-building-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Cost of Living While Building in Mexico</h3>
+<p class="card-desc">Monthly costs: rent, food, transport, visa, internet.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="construction timeline &amp; schedule" data-desc="month-by-month: permits, foundation, finishes.">
+<a href="construction-timeline-schedule-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Construction Timeline &amp; Schedule</h3>
+<p class="card-desc">Month-by-month: permits, foundation, finishes.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="furniture &amp; ff&amp;e for rental properties" data-desc="furnishing packages for airbnb/hotels from $5,000.">
+<a href="furniture-ffe-rental-properties-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Furniture &amp; FF&amp;E for Rental Properties</h3>
+<p class="card-desc">Furnishing packages for Airbnb/hotels from $5,000.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="tax benefits for construction in mexico" data-desc="isr deductions, depreciation, solar incentives.">
+<a href="tax-benefits-construction-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Tax Benefits for Construction in Mexico</h3>
+<p class="card-desc">ISR deductions, depreciation, solar incentives.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-guides" data-title="accessibility &amp; universal design" data-desc="wheelchair-accessible, aging-in-place, ramps, elevators.">
+<a href="accessibility-universal-design-homes-mexico.html" class="text-decoration-none">
+<div class="blog-card" style="position:relative">
+
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Construction Guides</span>
+<h3 class="card-title mt-2">Accessibility &amp; Universal Design</h3>
+<p class="card-desc">Wheelchair-accessible, aging-in-place, ramps, elevators.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Read guide <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+</div></section>
+
+<div class="lead-magnet mx-auto my-4" style="max-width:720px">
+  <div class="lm-badge"><i class="bi bi-file-earmark-bar-graph me-1"></i> Free Download</div>
+  <h4>Free Construction Cost Guide 2026</h4>
+  <p class="lm-sub">Real prices per m² in Playa del Carmen, Tulum, Cancún — updated monthly.</p>
   <div class="lm-row">
     <input type="text" id="lmPhone" placeholder="Your WhatsApp number">
     <button class="btn-lm" onclick="(function(){var p=document.getElementById('lmPhone').value;var msg='Hello!%20I%20want%20the%20free%20Construction%20Cost%20Guide%202026';if(p)msg+='%0AMy%20number:%20'+encodeURIComponent(p);window.open('https://wa.me/529844525333?text='+msg,'_blank')})()"><i class="bi bi-download me-1"></i>Get Free Guide</button>
   </div>
 </div>
 
-        <div class="cta-section rounded p-5 text-center">
-          <h3 class="text-white mb-3">Have a Question About Building in Mexico?</h3>
-          <p class="text-white-50 mb-4">18+ years experience, 196+ projects. We answer in 2 min.</p>
-          <a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Ask Us Anything</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
+<div class="cta-section rounded p-5 text-center mx-auto my-4" style="max-width:720px">
+  <h3 class="text-white mb-3">Have a Question About Building in Mexico?</h3>
+  <p class="text-white-50 mb-4">18+ years experience, 196+ projects. We answer in 2 min.</p>
+  <a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Ask Us Anything</a>
+</div>
 
 <section class="py-5 bg-light" id="contact-form">
   <div class="container" style="max-width:720px">
@@ -674,13 +1152,56 @@
   </div>
 </section>
 
-<div class="text-center py-3" style="background:#f8f9fa">
-  <a href="/certifications/" class="text-decoration-none d-inline-flex align-items-center gap-2 px-4 py-2 rounded-pill" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);border:1px solid #c8a96e;color:#333;transition:all .2s" onmouseover="this.style.background='#c8a96e';this.style.color='#fff'" onmouseout="this.style.background='#fff';this.style.color='#333'">
-    <i class="bi bi-patch-check-fill" style="color:#c8a96e;font-size:1.3rem"></i>
-    <span class="fw-bold">ISO 9001 · AISC · AWS · Miami-Dade</span>
-    <span class="text-muted small">View Certifications →</span>
-  </a>
-</div>
+<script>
+function filterCat(cat,btn){
+  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  btn.classList.add('active');
+  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
+  document.querySelectorAll('.cat-section').forEach(s=>{
+    if(cat==='all'||s.dataset.cat===cat){s.style.display=''}else{s.style.display='none'}
+  });
+  document.getElementById('searchInput').value='';
+  updateCount();
+}
+function searchArticles(){
+  var q=document.getElementById('searchInput').value.toLowerCase().trim();
+  var sections=document.querySelectorAll('.cat-section');
+  // Reset cat filter
+  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  document.querySelector('[data-cat="all"]').classList.add('active');
+  sections.forEach(s=>s.style.display='');
+  
+  var items=document.querySelectorAll('.article-item');
+  var shown=0;
+  items.forEach(item=>{
+    if(!q||item.dataset.title.includes(q)||item.dataset.desc.includes(q)){
+      item.style.display='';shown++
+    }else{item.style.display='none'}
+  });
+  // Hide empty sections
+  sections.forEach(s=>{
+    var visible=s.querySelectorAll('.article-item:not([style*="display: none"])').length;
+    if(visible===0&&q)s.style.display='none';
+  });
+  document.getElementById('searchCount').textContent=shown+' articles';
+  var nr=document.getElementById('noResults');
+  if(shown===0&&q){nr.style.display='block'}else{nr.style.display='none'}
+}
+function updateCount(){
+  var v=document.querySelectorAll('.article-item').length;
+  var shown=0;
+  document.querySelectorAll('.article-item').forEach(i=>{if(i.offsetParent!==null||getComputedStyle(i).display!=='none')shown++});
+  document.getElementById('searchCount').textContent=shown+' articles';
+}
+function toggleView(mode,btn){
+  var c=document.getElementById('articlesGrid');
+  document.querySelectorAll('.view-toggle button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(mode==='list')c.classList.add('list-view');else c.classList.remove('list-view');
+}
+document.addEventListener('DOMContentLoaded',function(){updateCount()});
+</script>
+
 <footer class="footer"><div class="container"><div class="footer-bottom text-center"><p class="mb-0">&copy; 2008–2026 Recrea Construction. All rights reserved. | <a href="/en/">Home</a> · <a href="./">Blog</a></p></div></div></footer>
 
 <a href="mailto:constructionrecrea@gmail.com" class="email-float" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>

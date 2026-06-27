@@ -46,572 +46,1020 @@
   <link rel="alternate" hreflang="zh" href="https://construction-recrea.com/blog-zh/index.html">
   <link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/blog/index.html">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://construction-recrea.com/ru/"}, {"@type": "ListItem", "position": 2, "name": "Блог"}]}</script>
+
+<style>
+.blog-hero{background:linear-gradient(135deg,#0f1f2e 0%,#1a3a5c 50%,#0f3460 100%);padding:80px 0 60px;margin-top:56px;position:relative;overflow:hidden}
+.blog-hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:40%;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;opacity:.5}
+.blog-hero h1{font-size:2.8rem;font-weight:800;color:#fff}
+.blog-hero .lead{color:rgba(255,255,255,.75);font-size:1.15rem}
+.blog-stats{display:flex;gap:30px;margin-top:24px}
+.blog-stat{text-align:center}
+.blog-stat strong{color:#d4a843;font-size:1.8rem;display:block;font-weight:800}
+.blog-stat span{color:rgba(255,255,255,.6);font-size:.8rem;text-transform:uppercase;letter-spacing:.5px}
+.search-box{position:relative;max-width:500px;margin:30px auto 0}
+.search-box input{width:100%;padding:14px 20px 14px 48px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);border-radius:50px;color:#fff;font-size:1rem;transition:all .3s;backdrop-filter:blur(10px)}
+.search-box input::placeholder{color:rgba(255,255,255,.4)}
+.search-box input:focus{outline:none;border-color:#d4a843;background:rgba(255,255,255,.12)}
+.search-box i{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:1.1rem}
+.search-box .search-count{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:.8rem}
+.cat-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:20px 0}
+.cat-pill{border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:8px 18px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:6px;color:#495057;user-select:none}
+.cat-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.cat-pill.active{color:#fff;border-color:transparent;transform:translateY(-1px);box-shadow:0 4px 15px rgba(0,0,0,.15)}
+.cat-pill .pill-count{background:rgba(0,0,0,.08);border-radius:50px;padding:1px 8px;font-size:.75rem;font-weight:700}
+.cat-pill.active .pill-count{background:rgba(255,255,255,.25)}
+.blog-card{background:#fff;border-radius:16px;border:1px solid #e9ecef;transition:all .3s;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1);border-color:#d4a843}
+.blog-card .card-cat{font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.5px;text-transform:uppercase;display:inline-block}
+.blog-card .card-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.blog-card .card-title{font-size:1.05rem;font-weight:700;line-height:1.4;margin-bottom:8px;color:#1a1a2e}
+.blog-card .card-title:hover{color:#e8720c}
+.blog-card .card-desc{font-size:.88rem;color:#6c757d;line-height:1.5;flex:1}
+.blog-card .card-footer-custom{padding:16px 24px;border-top:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between}
+.blog-card .read-more{font-size:.85rem;font-weight:600;color:#e8720c;text-decoration:none;display:flex;align-items:center;gap:4px;transition:gap .2s}
+.blog-card:hover .read-more{gap:8px}
+.cat-section-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #f0f0f0}
+.cat-section-header .cat-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.cat-section-header h2{font-size:1.3rem;font-weight:700;margin:0;color:#1a1a2e}
+.cat-section-header .cat-count{font-size:.8rem;color:#6c757d;margin-left:auto}
+.no-results{text-align:center;padding:60px 20px;color:#6c757d}
+.no-results i{font-size:3.5rem;margin-bottom:16px;display:block;color:#dee2e6}
+.view-toggle{display:flex;gap:4px;background:#f0f0f0;border-radius:8px;padding:3px}
+.view-toggle button{border:none;background:none;padding:6px 10px;border-radius:6px;color:#6c757d;cursor:pointer;transition:all .2s}
+.view-toggle button.active{background:#fff;color:#1a1a2e;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.list-view .blog-card{flex-direction:row}
+.list-view .blog-card .card-body{padding:16px 20px}
+.list-view .blog-card .card-title{font-size:.95rem;margin-bottom:4px}
+.list-view .blog-card .card-desc{display:none}
+.list-view .blog-card .card-footer-custom{display:none}
+.list-view .blog-card .card-cat{font-size:.65rem;padding:2px 8px}
+@media(max-width:768px){
+.blog-hero h1{font-size:1.8rem}
+.blog-stats{gap:16px}
+.blog-stat strong{font-size:1.3rem}
+.cat-pills{gap:6px}
+.cat-pill{padding:6px 12px;font-size:.8rem}
+.list-view .blog-card{flex-direction:column}
+}
+</style>
+
 </head>
 <body class="has-top-bar">
-<div class="top-cta-bar"><span>Бесплатная оценка — ответим за 2 мин</span><a href="https://wa.me/529844525333?text=Здравствуйте!%20Хочу%20бесплатную%20оценку" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Получить</a></div>
+<div class="top-cta-bar"><span>Бесплатная оценка — отвечаем за 2 мин</span><a href="https://wa.me/529844525333?text=Hello!%20I%20want%20a%20free%20quote" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Оценка</a></div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="/ru/">RECREA</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="/services/uslugi.html">Услуги</a></li>
-        <li class="nav-item"><a class="nav-link" href="/ru/#projects">Проекты</a></li>
-        <li class="nav-item"><a class="nav-link" href="/ru/#about">О нас</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/blog-ru/">Блог</a></li>
-        <li class="nav-item"><a class="nav-link" href="/noticias/">Новости</a></li>
-        <li class="nav-item"><a class="nav-link" href="/partners/ru.html">Partners</a></li>
-        <li class="nav-item"><a class="nav-link" href="/ru/#faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="/ru/#contact">Контакты</a></li>
-        <li class="nav-item dropdown ms-lg-2">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">RU</a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="/blog/">English</a></li>
-            <li><a class="dropdown-item" href="/blog-es/">Español</a></li>
-            <li><a class="dropdown-item" href="/blog-de/">Deutsch</a></li>
-            <li><a class="dropdown-item active" href="#">Русский</a></li>
-            <li><a class="dropdown-item" href="/blog-zh/">中文</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="container">
+<a class="navbar-brand fw-bold" href="/ru/">RECREA</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto align-items-center">
+<li class="nav-item"><a class="nav-link" href="/services/uslugi.html">Услуги</a></li>
+<li class="nav-item"><a class="nav-link" href="/ru/#projects">Проекты</a></li>
+<li class="nav-item"><a class="nav-link" href="/ru/#about">О нас</a></li>
+<li class="nav-item"><a class="nav-link" href="/certifications/">Сертификаты</a></li>
+<li class="nav-item"><a class="nav-link active" href="/blog-ru/">Блог</a></li>
+<li class="nav-item"><a class="nav-link" href="/noticias/">Новости</a></li>
+<li class="nav-item"><a class="nav-link" href="/ru/#faq">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" href="/ru/#contact">Контакты</a></li>
+<li class="nav-item dropdown ms-lg-2">
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">RU</a>
+<ul class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item active" href="#">Русский</a></li>
+<li><a class="dropdown-item" href="/blog/">English</a></li>
+<li><a class="dropdown-item" href="/blog-es/">Español</a></li>
+<li><a class="dropdown-item" href="/blog-de/">Deutsch</a></li>
+<li><a class="dropdown-item" href="/blog-zh/">中文</a></li>
+</ul></li></ul></div></div></nav>
 <div style="padding-top:116px"></div>
-<nav class="container mt-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/ru/">Главная</a></li><li class="breadcrumb-item active">Блог</li></ol></nav>
+<nav class="container mt-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/ru/">Home</a></li><li class="breadcrumb-item active">Блог</li></ol></nav>
 
-<section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
-
-        <div class="text-center mb-5">
-          <div class="accent-line mx-auto"></div>
-          <h1 class="section-title">Официальные новости и отчёты</h1>
-          <p class="section-subtitle">Актуальные данные из официальных источников о строительстве на Ривьере Майя</p>
-        </div>
-
-        <div class="d-flex flex-wrap gap-2 justify-content-center mb-4 blog-nav">
-          <a href="#cat-novosti" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-newspaper me-1"></i>Новости</a>
-          <a href="#cat-stoimost" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-calculator me-1"></i>Стоимость</a>
-          <a href="#cat-inostrantsy" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-globe me-1"></i>Иностранцам</a>
-          <a href="#cat-praktika" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-house-heart me-1"></i>Практические</a>
-          <a href="#cat-rukovodstva" class="btn btn-sm btn-outline-dark rounded-pill"><i class="bi bi-geo-alt me-1"></i>Руководства</a>
-        </div>
-
-        <h3 class="mb-3" id="cat-novosti"><i class="bi bi-newspaper me-2"></i>Официальные новости</h3>
-        <div class="list-group mb-5">
-          <a href="obzor-rynka-stroitelstva-q3-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Обзор рынка строительства — Q3 2026</h5>
-              <p class="text-muted mb-0">Цены на материалы, рабочая сила, разрешения. Рост +6–8% за год. Цемент под давлением Поезда Майя.</p></div>
-              <span class="badge bg-danger text-white ms-3">HOT</span>
-            </div>
-          </a>
-          <a href="stroitelnyy-bum-quintana-roo-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">531 проект на стадии строительства в Кинтана-Роо: что это значит для покупателей</h5>
-                <p class="text-muted mb-0">Официальные данные: 27 800 новых домов строятся. Тулум лидирует с 252 проектами, Плая-дель-Кармен — 143. Федеральный бюджет и рост населения.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="poezd-maya-vliyanie-na-nedvizhimost.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Поезд Майя и недвижимость: как железная дорога меняет Ривьеру Майя</h5>
-                <p class="text-muted mb-0">Расположение станций, экспроприация земель, Финансовый район Канкуна. Как меняются стоимость строительства и цены на недвижимость.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="ekologicheskie-zakony-stroitelstva-quintana-roo-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Новые экологические законы строительства в Кинтана-Роо 2026</h5>
-                <p class="text-muted mb-0">Разрешения SEMA, реформа закона о недвижимости, прецедент Пуэрто-Морелос, муниципальные строительные нормы.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="pdu-zonirovanie-playa-del-carmen-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">PDU Плая-дель-Кармен 2026: новые правила зонирования</h5>
-                <p class="text-muted mb-0">План городского развития 2026–2050: лимиты высотности, плотность, экологические требования, объездные дороги.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="rynok-nedvizhimosti-tulum-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Рынок недвижимости Тулума 2026: аэропорт, Поезд Майя и 26 проектов под следствием</h5>
-                <p class="text-muted mb-0">Спад спроса на 40%, перепроизводство квартир, 26 расследуемых проектов. Где ещё есть возможности. Прогнозы цен.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="zakon-protivodeystvie-otmyvaniyu-deneg-meksika-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Новый закон о противодействии отмыванию денег в Мексике 2026</h5>
-                <p class="text-muted mb-0">Реформа LFPIORPI: сниженные пороги отчётности, ужесточение идентификации, влияние на фидейкомисо. Больше бумаг — больше защиты.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-        </div>
-
-        <h3 class="mb-3" id="cat-stoimost"><i class="bi bi-calculator me-2"></i>Стоимость и ROI</h3>
-        <div class="list-group mb-5">
-          <a href="stoimost-stroitelstva-playa-del-carmen-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Стоимость строительства в Плайя-дель-Кармен (2026)</h5>
-            <p class="text-muted mb-0">Актуальные цены на строительство: жилое, коммерческое, люкс. Что влияет на бюджет.</p>
-          </a>
-          <a href="stoimost-stroitelstva-doma-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Сколько стоит построить дом в Тулуме? (2026)</h5>
-            <p class="text-muted mb-0">Цена за м², разбивка по этапам. Бюджет, средний, премиум варианты.</p>
-          </a>
-          <a href="remont-doma-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Ремонт дома в Плайя-дель-Кармен (2026)</h5>
-            <p class="text-muted mb-0">Кухня, ванная, бассейн, терраса — стоимость за м², сроки, материалы для тропиков.</p>
-          </a>
-          <a href="stoimost-remonta-kuhni-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Стоимость ремонта кухни</h5>
-              <p class="text-muted mb-0">$4,000–$35,000 USD. Бюджет, средний, премиум.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="stoimost-remonta-vannoj-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Стоимость ремонта ванной</h5>
-              <p class="text-muted mb-0">$2,500–$22,000 USD. От бюджетного до премиум.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="roi-remont-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Лучший ремонт для ROI в Плайя-дель-Кармен (2026)</h5>
-            <p class="text-muted mb-0">Бассейн, терраса, кухня — стоимость vs. добавленная ценность. Данные для Airbnb и перепродажи.</p>
-          </a>
-          <a href="bassejny-riviera-maya-stoimost.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Бассейны: типы, стоимость и обслуживание (2026)</h5>
-            <p class="text-muted mb-0">Бетонный, infinity, rooftop — цены, отделка чукум, ежемесячное обслуживание.</p>
-          </a>
-          <a href="terrasa-na-kryshe-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Терраса на крыше: лучшая инвестиция</h5>
-            <p class="text-muted mb-0">Варианты, стоимость, ROI для Airbnb. Пергола, мини-бассейн, барбекю.</p>
-          </a>
-          <a href="stoimost-soderzhaniya-doma-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Стоимость содержания дома в Мексике (2026)</h5>
-            <p class="text-muted mb-0">Электричество, вода, налог, страховка, бассейн, уборка — помесячная таблица.</p>
-          </a>
-          <a href="investicii-airbnb-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Инвестиции в Airbnb в Тулуме</h5>
-            <p class="text-muted mb-0">Доходность, спрос, стоимость управления. Стоит ли инвестировать.</p>
-          </a>
-          <a href="kalkulyator-roi-airbnb-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Калькулятор ROI Airbnb Тулум</h5>
-            <p class="text-muted mb-0">Расчёт окупаемости инвестиций в недвижимость для краткосрочной аренды.</p>
-          </a>
-          <a href="kommercheskoe-stroitelstvo-kankun.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Коммерческое строительство в Канкуне</h5>
-            <p class="text-muted mb-0">Магазины, рестораны, отели — нормы, стоимость, сроки.</p>
-          </a>
-        </div>
-
-        <h3 class="mb-3" id="cat-inostrantsy"><i class="bi bi-globe me-2"></i>Для иностранцев</h3>
-        <div class="list-group mb-5">
-          <a href="inostrantsy-stroitelstvo-doma-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Могут ли иностранцы построить дом в Мексике?</h5>
-            <p class="text-muted mb-0">Фидеикомисо, разрешения, пошаговый процесс. Как владеть недвижимостью в прибрежной зоне.</p>
-          </a>
-          <a href="fideikomiso-inostrantsy-pokupka-nedvizhimosti.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Фидеикомисо: как иностранцам покупать недвижимость</h5>
-            <p class="text-muted mb-0">Банковский траст, права владения, стоимость оформления, альтернативы.</p>
-          </a>
-          <a href="razresheniya-na-stroitelstvo-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Разрешения на строительство в Плайя-дель-Кармен</h5>
-            <p class="text-muted mb-0">Какие документы нужны, куда подавать, сроки. Пошаговый процесс.</p>
-          </a>
-        </div>
-
-                <a href="umnyj-dom-avtomatizaciya-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Умный дом и автоматизация</h5>
-              <p class="text-muted mb-0">Домотика, умное освещение, безопасность, климат. Пакеты от $2 500 USD.</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <a href="lifty-dostupnost-doma-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Лифты и доступность</h5>
-              <p class="text-muted mb-0">Жилые лифты, пандусы, универсальная доступность. От $18 000 USD.</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <a href="garazhi-parkovki-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Гаражи и парковки</h5>
-              <p class="text-muted mb-0">Проектирование, стоимость/м², автоматические ворота. Крытый гараж от $650 USD/м².</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <a href="cisterny-vodosnabzhenie-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-          <div class="d-flex justify-content-between align-items-start">
-            <div>
-              <h5 class="fw-bold mb-1">Цистерны и водоснабжение</h5>
-              <p class="text-muted mb-0">Типы, объёмы, насосы, сбор дождевой воды. От $1 500 USD.</p>
-            </div>
-            <span class="badge bg-warning text-dark ms-3">New</span>
-          </div>
-        </a>
-        <h3 class="mb-3" id="cat-praktika"><i class="bi bi-house-heart me-2"></i>Практические советы</h3>
-        <div class="list-group mb-5">
-          <a href="uraganostoykoe-stroitelstvo.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Ураганостойкое строительство в Ривьере-Майя</h5>
-            <p class="text-muted mb-0">Строительные нормы, железобетон, ударопрочные окна, штормовые ставни.</p>
-          </a>
-          <a href="krasnye-flagi-podryadchik-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">9 красных флагов при найме подрядчика</h5>
-            <p class="text-muted mb-0">Тревожные признаки, чек-лист контракта, как не попасть на мошенников.</p>
-          </a>
-          <a href="podgotovka-doma-sezon-uraganov.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Подготовка дома к сезону ураганов: чек-лист</h5>
-            <p class="text-muted mb-0">Ставни, генератор, запасы, страховка. Что делать за месяц и за 48 часов.</p>
-          </a>
-          <a href="umnyj-dom-tropiki-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Умный дом в тропиках</h5>
-            <p class="text-muted mb-0">Автоматизация кондиционеров, безопасность, удалённое управление. Пакеты от $50 000 MXN.</p>
-          </a>
-          <a href="stroitelstvo-bassejnov-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Строительство бассейнов: полное руководство 2026</h5>
-              <p class="text-muted mb-0">Типы, стоимость, отделка чукум, разрешения. 6–12 недель.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="poly-otdelka-tropicheskiy-klimat.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Полы и отделка для тропического климата</h5>
-              <p class="text-muted mb-0">Керамогранит, травертин, чукум, микроцемент, тропическое дерево.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="kondicionirovanie-ventilyaciya-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Кондиционирование и вентиляция</h5>
-              <p class="text-muted mb-0">Мини-сплит, VRF, канальная. Стоимость, марки, расчёт BTU.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="bezopasnost-doma-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Безопасность дома на Ривьере Майя</h5>
-              <p class="text-muted mb-0">Камеры, умные замки, ураганные ставни, сигнализация.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="landshaftnyy-dizayn-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Ландшафтный дизайн на Ривьере Майя</h5>
-              <p class="text-muted mb-0">Местные растения, полив, подсветка. Сады от $1,650 USD.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="letnyaya-kuhnya-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Летние кухни и палапы на Ривьере Майя</h5>
-              <p class="text-muted mb-0">Дизайн, стоимость ($3 500–$55 000 USD) и материалы для летних кухонь.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="osveshchenie-dizajn-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Дизайн освещения для домов на Ривьере Майя</h5>
-              <p class="text-muted mb-0">LED, наружное, ландшафтное и умное освещение. Стоимость по зонам.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="krysha-gidroizolyaciya-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Крыша и гидроизоляция на Ривьере Майя</h5>
-              <p class="text-muted mb-0">Бетонная плита, зелёная крыша, палапа. Системы гидроизоляции с гарантией 3–20 лет.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="okna-dveri-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Окна и двери для тропического климата</h5>
-              <p class="text-muted mb-0">Ураганостойкие, ПВХ, алюминий, дерево. Сертификации Miami-Dade.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-        </div>
-
-          <a href="solnechnye-paneli-doma-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Солнечные панели для домов на Ривьере Майя</h5><p class="text-muted mb-0">Стоимость ($4 500–$22 000 USD), бренды, окупаемость и нормативы CFE.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-          <a href="septik-ochistka-vody-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Септики и очистка воды</h5><p class="text-muted mb-0">Биодигестеры, очистные установки, стоимость и экологические нормы Ривьеры Майя.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-          <a href="tipy-betona-stroitelstvo-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Типы бетона для строительства</h5><p class="text-muted mb-0">Товарный, насосный, самоуплотняющийся. Марки f'c 200–400 и стоимость за м³.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-          <a href="strahovanie-garantii-stroitelstvo-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border"><div class="d-flex justify-content-between align-items-start"><div><h5 class="fw-bold mb-1">Страхование и гарантии строительства</h5><p class="text-muted mb-0">Строительное страхование, структурные гарантии, гарантии исполнения и защита покупателя.</p></div><span class="badge bg-warning text-dark ms-3">New</span></div></a>
-        <h3 class="mb-3" id="cat-rukovodstva"><i class="bi bi-geo-alt me-2"></i>Руководства по строительству</h3>
-        <div class="list-group mb-5">
-          <a href="luchshie-rajony-stroitelstva-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Лучшие районы для строительства в Плая-дель-Кармен</h5>
-              <p class="text-muted mb-0">Цены на землю, стиль жизни, ROI по районам.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="sroki-stroitelstva-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Сроки строительства на Ривьера-Майя</h5>
-              <p class="text-muted mb-0">8–14 месяцев строительства, 2–4 месяца на разрешения.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="stroitelstvo-pod-klyuch-playa-del-carmen.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Строительство под ключ в Плая-дель-Кармен</h5>
-              <p class="text-muted mb-0">Один контракт, одна команда, одна цена.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="ekologichnoe-stroitelstvo-tulum.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Экологичное строительство в Тулуме</h5>
-              <p class="text-muted mb-0">Экологические нормы, материалы, солнечная энергия.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="udalennoe-upravlenie-stroitelstvom-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Удалённое управление строительством</h5>
-              <p class="text-muted mb-0">Ежедневные фото, еженедельные видеозвонки. 80% строят удалённо.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="playa-del-carmen-vs-tulum-stroitelstvo-2026.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div><h5 class="fw-bold mb-1">Плая-дель-Кармен vs Тулум: где строить?</h5>
-              <p class="text-muted mb-0">Стоимость земли, нормы, доходность — сравнение.</p></div>
-              <span class="badge bg-warning text-dark ms-3">Новое</span>
-            </div>
-          </a>
-          <a href="stroit-ili-pokupat-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Строить или покупать на Ривьере-Майя?</h5>
-            <p class="text-muted mb-0">Сравнение стоимости, плюсы и минусы, для кого что лучше.</p>
-          </a>
-          <a href="vybrat-stroitelnuyu-kompaniyu-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <h5 class="fw-bold mb-1">Как выбрать строительную компанию</h5>
-            <p class="text-muted mb-0">Критерии выбора, вопросы подрядчику, гарантии, рекомендации.</p>
-          </a>
-        </div>
-
-        
-          <a href="pokupka-zemli-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Как купить землю на Ривьере Майя</h5>
-                <p class="text-muted mb-0">Цены, эхидо vs частная, фидеикомисо, лучшие зоны.</p>
-              </div>
-              <span class="badge bg-info text-white ms-3">Гид</span>
-            </div>
-          </a>
-          <a href="upravlenie-nedvizhimostyu-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Управление недвижимостью</h5>
-                <p class="text-muted mb-0">Airbnb управление, арендный доход, обслуживание.</p>
-              </div>
-              <span class="badge bg-success text-white ms-3">Инвестиции</span>
-            </div>
-          </a>
-          <a href="dizajn-interyera-tropicheskie-doma-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Дизайн интерьера тропических домов</h5>
-                <p class="text-muted mb-0">Стили, материалы, влагостойкие решения.</p>
-              </div>
-              <span class="badge bg-purple text-white ms-3">Дизайн</span>
-            </div>
-          </a>
-          <a href="ekologichnye-stroitelnye-materialy-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Экологичные строительные материалы</h5>
-                <p class="text-muted mb-0">Бамбук, переработанный бетон, зелёные крыши.</p>
-              </div>
-              <span class="badge bg-success text-white ms-3">Эко</span>
-            </div>
-          </a>
-          <a href="tipy-fundamentov-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Типы фундаментов</h5>
-                <p class="text-muted mb-0">Плита, сваи, кессоны для известняка.</p>
-              </div>
-              <span class="badge bg-secondary text-white ms-3">Техн.</span>
-            </div>
-          </a>
-          <a href="stroitelstvo-zakrytyh-poselkov-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Закрытые посёлки</h5>
-                <p class="text-muted mb-0">Проектирование, инфраструктура, безопасность.</p>
-              </div>
-              <span class="badge bg-primary text-white ms-3">Развитие</span>
-            </div>
-          </a>
-          <a href="stroitelstvo-kondominiumov-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Строительство кондоминиумов</h5>
-                <p class="text-muted mb-0">4-50 юнитов, предпродажи, ROI.</p>
-              </div>
-              <span class="badge bg-primary text-white ms-3">Развитие</span>
-            </div>
-          </a>
-          <a href="stroitelstvo-restoranov-barov-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Строительство ресторанов и баров</h5>
-                <p class="text-muted mb-0">Кухня, разрешения, лицензия на алкоголь.</p>
-              </div>
-              <span class="badge bg-warning text-dark ms-3">Коммерч.</span>
-            </div>
-          </a>
-          <a href="vodoprovod-vodosistemy-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Водопровод и водосистемы</h5>
-                <p class="text-muted mb-0">Скважины, цистерны, насосы, очистка.</p>
-              </div>
-              <span class="badge bg-secondary text-white ms-3">Техн.</span>
-            </div>
-          </a>
-          <a href="podgotovka-uchastka-podpornye-steny-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Подготовка участка и подпорные стены</h5>
-                <p class="text-muted mb-0">Расчистка, дробление камня, дренаж.</p>
-              </div>
-              <span class="badge bg-secondary text-white ms-3">Техн.</span>
-            </div>
-          </a>
-          <a href="stoimost-zhizni-stroitelstvo-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Стоимость жизни при строительстве</h5>
-                <p class="text-muted mb-0">Аренда, еда, транспорт, виза, интернет.</p>
-              </div>
-              <span class="badge bg-info text-white ms-3">Гид</span>
-            </div>
-          </a>
-          <a href="grafik-stroitelstva-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">График строительства</h5>
-                <p class="text-muted mb-0">Помесячно: разрешения, фундамент, отделка.</p>
-              </div>
-              <span class="badge bg-info text-white ms-3">Гид</span>
-            </div>
-          </a>
-          <a href="mebel-ffe-arendnaya-nedvizhimost-riviera-maya.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Мебель и FF&E для аренды</h5>
-                <p class="text-muted mb-0">Пакеты меблировки от $5,000.</p>
-              </div>
-              <span class="badge bg-success text-white ms-3">Инвестиции</span>
-            </div>
-          </a>
-          <a href="nalogovye-lgoty-stroitelstvo-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Налоговые льготы строительства</h5>
-                <p class="text-muted mb-0">Вычеты ISR, амортизация, солнечные стимулы.</p>
-              </div>
-              <span class="badge bg-dark text-white ms-3">Финансы</span>
-            </div>
-          </a>
-          <a href="dostupnost-universalnyj-dizajn-doma-meksika.html" class="list-group-item list-group-item-action p-4 mb-2 rounded border">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="fw-bold mb-1">Доступность и универсальный дизайн</h5>
-                <p class="text-muted mb-0">Инвалидная коляска, пожилые, пандусы.</p>
-              </div>
-              <span class="badge bg-purple text-white ms-3">Дизайн</span>
-            </div>
-          </a>
-
-        </div>
-
-        <div class="trust-badges"><span class="trust-badge"><i class="bi bi-award"></i>18+ лет</span><span class="trust-badge"><i class="bi bi-building"></i>196+ проектов</span><span class="trust-badge"><i class="bi bi-shield-check"></i>Лицензия</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Застрахованы</span></div>
-<div class="lead-magnet">
-  <h3><i class="bi bi-file-earmark-pdf me-2"></i>Бесплатно: Гид по стоимости строительства 2026</h3>
-  <p>Реальные цены за м², стоимость земли, разрешения, скрытые расходы. PDF из 196+ проектов на Ривьере Майя.</p>
-  <div class="lm-row">
-    <input type="text" id="lmPhone" placeholder="Ваш номер WhatsApp">
-    <button class="btn-lm" onclick="(function(){var p=document.getElementById('lmPhone').value;var msg='Hello!%20I%20want%20the%20free%20Construction%20Cost%20Guide%202026';if(p)msg+='%0AMy%20number:%20'+encodeURIComponent(p);window.open('https://wa.me/529844525333?text='+msg,'_blank')})()"><i class="bi bi-download me-1"></i>Получить гид</button>
-  </div>
+<section class="blog-hero">
+<div class="container position-relative" style="z-index:1">
+<div class="row align-items-center">
+<div class="col-lg-7">
+<h1><i class="bi bi-journal-richtext me-2"></i>Руководства</h1>
+<p class="lead">Реальные цифры, реальные советы по 196+ проектам на Ривьере Майя. Экспертные гиды по стоимости, разрешениям, ROI и строительству в Мексике.</p>
+<div class="blog-stats">
+<div class="blog-stat"><strong>66</strong><span>Статей</span></div>
+<div class="blog-stat"><strong>5</strong><span>Категорий</span></div>
+<div class="blog-stat"><strong>196+</strong><span>Проектов</span></div>
+<div class="blog-stat"><strong>18+</strong><span>Лет</span></div>
 </div>
-
-        <div class="cta-section rounded p-5 text-center">
-          <h3 class="text-white mb-3">Есть вопрос о строительстве в Мексике?</h3>
-          <p class="text-white-50 mb-4">18+ лет опыта, 196+ проектов. Отвечаем в течение 2 часов.</p>
-          <a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Задать вопрос</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
+</div>
+<div class="col-lg-5">
+<div class="search-box">
+<i class="bi bi-search"></i>
+<input type="text" id="searchInput" placeholder="Поиск статей..." oninput="searchArticles()">
+<span class="search-count" id="searchCount">66 статей</span>
+</div>
+</div>
+</div>
+</div>
 </section>
+<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3"><div class="flex-grow-1"><div class="cat-pills" id="catPills">
+<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>Все<span class="pill-count">66</span></button>
+<button class="cat-pill" data-cat="cat-novosti" data-color="#dc3545" onclick="filterCat('cat-novosti',this)"><i class="bi bi-newspaper me-1"></i>Официальные новости<span class="pill-count">7</span></button>
+<button class="cat-pill" data-cat="cat-stoimost" data-color="#198754" onclick="filterCat('cat-stoimost',this)"><i class="bi bi-calculator me-1"></i>Стоимость и ROI<span class="pill-count">12</span></button>
+<button class="cat-pill" data-cat="cat-inostrantsy" data-color="#0d6efd" onclick="filterCat('cat-inostrantsy',this)"><i class="bi bi-globe me-1"></i>Для иностранцев<span class="pill-count">7</span></button>
+<button class="cat-pill" data-cat="cat-praktika" data-color="#20c997" onclick="filterCat('cat-praktika',this)"><i class="bi bi-house-heart me-1"></i>Практические советы<span class="pill-count">17</span></button>
+<button class="cat-pill" data-cat="cat-rukovodstva" data-color="#e8720c" onclick="filterCat('cat-rukovodstva',this)"><i class="bi bi-geo-alt me-1"></i>Руководства по строительству<span class="pill-count">23</span></button>
+</div>
+</div><div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div></div></div>
+<section class="py-4"><div class="container" id="articlesGrid">
+<div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>Статьи не найдены</h4><p>Попробуйте другой поисковый запрос</p></div>
+<div class="cat-section" data-cat="cat-novosti">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>Официальные новости</h2><span class="cat-count">7 статей</span></div>
+<div class="row g-3 mb-5">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="обзор рынка строительства — q3 2026" data-desc="цены на материалы, рабочая сила, разрешения. рост +6–8% за год. цемент под давлением поезда майя.">
+<a href="obzor-rynka-stroitelstva-q3-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">Обзор рынка строительства — Q3 2026</h3>
+<p class="card-desc">Цены на материалы, рабочая сила, разрешения. Рост +6–8% за год. Цемент под давлением Поезда Майя.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="531 проект на стадии строительства в кинтана-роо: что это значит для покупателей" data-desc="официальные данные: 27 800 новых домов строятся. тулум лидирует с 252 проектами, плая-дель-кармен — 143. федеральный бюджет и рост населения.">
+<a href="stroitelnyy-bum-quintana-roo-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">531 проект на стадии строительства в Кинтана-Роо: что это значит для покупателей</h3>
+<p class="card-desc">Официальные данные: 27 800 новых домов строятся. Тулум лидирует с 252 проектами, Плая-дель-Кармен — 143. Федеральный бюджет и рост населения.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="поезд майя и недвижимость: как железная дорога меняет ривьеру майя" data-desc="расположение станций, экспроприация земель, финансовый район канкуна. как меняются стоимость строительства и цены на недвижимость.">
+<a href="poezd-maya-vliyanie-na-nedvizhimost.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">Поезд Майя и недвижимость: как железная дорога меняет Ривьеру Майя</h3>
+<p class="card-desc">Расположение станций, экспроприация земель, Финансовый район Канкуна. Как меняются стоимость строительства и цены на недвижимость.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="новые экологические законы строительства в кинтана-роо 2026" data-desc="разрешения sema, реформа закона о недвижимости, прецедент пуэрто-морелос, муниципальные строительные нормы.">
+<a href="ekologicheskie-zakony-stroitelstva-quintana-roo-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">Новые экологические законы строительства в Кинтана-Роо 2026</h3>
+<p class="card-desc">Разрешения SEMA, реформа закона о недвижимости, прецедент Пуэрто-Морелос, муниципальные строительные нормы.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="pdu плая-дель-кармен 2026: новые правила зонирования" data-desc="план городского развития 2026–2050: лимиты высотности, плотность, экологические требования, объездные дороги.">
+<a href="pdu-zonirovanie-playa-del-carmen-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">PDU Плая-дель-Кармен 2026: новые правила зонирования</h3>
+<p class="card-desc">План городского развития 2026–2050: лимиты высотности, плотность, экологические требования, объездные дороги.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="рынок недвижимости тулума 2026: аэропорт, поезд майя и 26 проектов под следствием" data-desc="спад спроса на 40%, перепроизводство квартир, 26 расследуемых проектов. где ещё есть возможности. прогнозы цен.">
+<a href="rynok-nedvizhimosti-tulum-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">Рынок недвижимости Тулума 2026: аэропорт, Поезд Майя и 26 проектов под следствием</h3>
+<p class="card-desc">Спад спроса на 40%, перепроизводство квартир, 26 расследуемых проектов. Где ещё есть возможности. Прогнозы цен.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="новый закон о противодействии отмыванию денег в мексике 2026" data-desc="реформа lfpiorpi: сниженные пороги отчётности, ужесточение идентификации, влияние на фидейкомисо. больше бумаг — больше защиты.">
+<a href="zakon-protivodeystvie-otmyvaniyu-deneg-meksika-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
+<h3 class="card-title mt-2">Новый закон о противодействии отмыванию денег в Мексике 2026</h3>
+<p class="card-desc">Реформа LFPIORPI: сниженные пороги отчётности, ужесточение идентификации, влияние на фидейкомисо. Больше бумаг — больше защиты.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-stoimost">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>Стоимость и ROI</h2><span class="cat-count">12 статей</span></div>
+<div class="row g-3 mb-5">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость строительства в плайя-дель-кармен (2026)" data-desc="актуальные цены на строительство: жилое, коммерческое, люкс. что влияет на бюджет.">
+<a href="stoimost-stroitelstva-playa-del-carmen-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Стоимость строительства в Плайя-дель-Кармен (2026)</h3>
+<p class="card-desc">Актуальные цены на строительство: жилое, коммерческое, люкс. Что влияет на бюджет.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="сколько стоит построить дом в тулуме? (2026)" data-desc="цена за м², разбивка по этапам. бюджет, средний, премиум варианты.">
+<a href="stoimost-stroitelstva-doma-tulum.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Сколько стоит построить дом в Тулуме? (2026)</h3>
+<p class="card-desc">Цена за м², разбивка по этапам. Бюджет, средний, премиум варианты.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="ремонт дома в плайя-дель-кармен (2026)" data-desc="кухня, ванная, бассейн, терраса — стоимость за м², сроки, материалы для тропиков.">
+<a href="remont-doma-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Ремонт дома в Плайя-дель-Кармен (2026)</h3>
+<p class="card-desc">Кухня, ванная, бассейн, терраса — стоимость за м², сроки, материалы для тропиков.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость ремонта кухни" data-desc="$4,000–$35,000 usd. бюджет, средний, премиум.">
+<a href="stoimost-remonta-kuhni-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Стоимость ремонта кухни</h3>
+<p class="card-desc">$4,000–$35,000 USD. Бюджет, средний, премиум.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость ремонта ванной" data-desc="$2,500–$22,000 usd. от бюджетного до премиум.">
+<a href="stoimost-remonta-vannoj-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Стоимость ремонта ванной</h3>
+<p class="card-desc">$2,500–$22,000 USD. От бюджетного до премиум.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="лучший ремонт для roi в плайя-дель-кармен (2026)" data-desc="бассейн, терраса, кухня — стоимость vs. добавленная ценность. данные для airbnb и перепродажи.">
+<a href="roi-remont-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Лучший ремонт для ROI в Плайя-дель-Кармен (2026)</h3>
+<p class="card-desc">Бассейн, терраса, кухня — стоимость vs. добавленная ценность. Данные для Airbnb и перепродажи.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="бассейны: типы, стоимость и обслуживание (2026)" data-desc="бетонный, infinity, rooftop — цены, отделка чукум, ежемесячное обслуживание.">
+<a href="bassejny-riviera-maya-stoimost.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Бассейны: типы, стоимость и обслуживание (2026)</h3>
+<p class="card-desc">Бетонный, infinity, rooftop — цены, отделка чукум, ежемесячное обслуживание.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="терраса на крыше: лучшая инвестиция" data-desc="варианты, стоимость, roi для airbnb. пергола, мини-бассейн, барбекю.">
+<a href="terrasa-na-kryshe-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Терраса на крыше: лучшая инвестиция</h3>
+<p class="card-desc">Варианты, стоимость, ROI для Airbnb. Пергола, мини-бассейн, барбекю.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость содержания дома в мексике (2026)" data-desc="электричество, вода, налог, страховка, бассейн, уборка — помесячная таблица.">
+<a href="stoimost-soderzhaniya-doma-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Стоимость содержания дома в Мексике (2026)</h3>
+<p class="card-desc">Электричество, вода, налог, страховка, бассейн, уборка — помесячная таблица.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="инвестиции в airbnb в тулуме" data-desc="доходность, спрос, стоимость управления. стоит ли инвестировать.">
+<a href="investicii-airbnb-tulum.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Инвестиции в Airbnb в Тулуме</h3>
+<p class="card-desc">Доходность, спрос, стоимость управления. Стоит ли инвестировать.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="калькулятор roi airbnb тулум" data-desc="расчёт окупаемости инвестиций в недвижимость для краткосрочной аренды.">
+<a href="kalkulyator-roi-airbnb-tulum.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Калькулятор ROI Airbnb Тулум</h3>
+<p class="card-desc">Расчёт окупаемости инвестиций в недвижимость для краткосрочной аренды.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="коммерческое строительство в канкуне" data-desc="магазины, рестораны, отели — нормы, стоимость, сроки.">
+<a href="kommercheskoe-stroitelstvo-kankun.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
+<h3 class="card-title mt-2">Коммерческое строительство в Канкуне</h3>
+<p class="card-desc">Магазины, рестораны, отели — нормы, стоимость, сроки.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-inostrantsy">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>Для иностранцев</h2><span class="cat-count">7 статей</span></div>
+<div class="row g-3 mb-5">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="могут ли иностранцы построить дом в мексике?" data-desc="фидеикомисо, разрешения, пошаговый процесс. как владеть недвижимостью в прибрежной зоне.">
+<a href="inostrantsy-stroitelstvo-doma-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Могут ли иностранцы построить дом в Мексике?</h3>
+<p class="card-desc">Фидеикомисо, разрешения, пошаговый процесс. Как владеть недвижимостью в прибрежной зоне.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="фидеикомисо: как иностранцам покупать недвижимость" data-desc="банковский траст, права владения, стоимость оформления, альтернативы.">
+<a href="fideikomiso-inostrantsy-pokupka-nedvizhimosti.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Фидеикомисо: как иностранцам покупать недвижимость</h3>
+<p class="card-desc">Банковский траст, права владения, стоимость оформления, альтернативы.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="разрешения на строительство в плайя-дель-кармен" data-desc="какие документы нужны, куда подавать, сроки. пошаговый процесс.">
+<a href="razresheniya-na-stroitelstvo-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Разрешения на строительство в Плайя-дель-Кармен</h3>
+<p class="card-desc">Какие документы нужны, куда подавать, сроки. Пошаговый процесс.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="умный дом и автоматизация" data-desc="домотика, умное освещение, безопасность, климат. пакеты от $2 500 usd.">
+<a href="umnyj-dom-avtomatizaciya-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Умный дом и автоматизация</h3>
+<p class="card-desc">Домотика, умное освещение, безопасность, климат. Пакеты от $2 500 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="лифты и доступность" data-desc="жилые лифты, пандусы, универсальная доступность. от $18 000 usd.">
+<a href="lifty-dostupnost-doma-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Лифты и доступность</h3>
+<p class="card-desc">Жилые лифты, пандусы, универсальная доступность. От $18 000 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="гаражи и парковки" data-desc="проектирование, стоимость/м², автоматические ворота. крытый гараж от $650 usd/м².">
+<a href="garazhi-parkovki-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Гаражи и парковки</h3>
+<p class="card-desc">Проектирование, стоимость/м², автоматические ворота. Крытый гараж от $650 USD/м².</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="цистерны и водоснабжение" data-desc="типы, объёмы, насосы, сбор дождевой воды. от $1 500 usd.">
+<a href="cisterny-vodosnabzhenie-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
+<h3 class="card-title mt-2">Цистерны и водоснабжение</h3>
+<p class="card-desc">Типы, объёмы, насосы, сбор дождевой воды. От $1 500 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-praktika">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>Практические советы</h2><span class="cat-count">17 статей</span></div>
+<div class="row g-3 mb-5">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="ураганостойкое строительство в ривьере-майя" data-desc="строительные нормы, железобетон, ударопрочные окна, штормовые ставни.">
+<a href="uraganostoykoe-stroitelstvo.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Ураганостойкое строительство в Ривьере-Майя</h3>
+<p class="card-desc">Строительные нормы, железобетон, ударопрочные окна, штормовые ставни.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="9 красных флагов при найме подрядчика" data-desc="тревожные признаки, чек-лист контракта, как не попасть на мошенников.">
+<a href="krasnye-flagi-podryadchik-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">9 красных флагов при найме подрядчика</h3>
+<p class="card-desc">Тревожные признаки, чек-лист контракта, как не попасть на мошенников.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="подготовка дома к сезону ураганов: чек-лист" data-desc="ставни, генератор, запасы, страховка. что делать за месяц и за 48 часов.">
+<a href="podgotovka-doma-sezon-uraganov.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Подготовка дома к сезону ураганов: чек-лист</h3>
+<p class="card-desc">Ставни, генератор, запасы, страховка. Что делать за месяц и за 48 часов.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="умный дом в тропиках" data-desc="автоматизация кондиционеров, безопасность, удалённое управление. пакеты от $50 000 mxn.">
+<a href="umnyj-dom-tropiki-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Умный дом в тропиках</h3>
+<p class="card-desc">Автоматизация кондиционеров, безопасность, удалённое управление. Пакеты от $50 000 MXN.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="строительство бассейнов: полное руководство 2026" data-desc="типы, стоимость, отделка чукум, разрешения. 6–12 недель.">
+<a href="stroitelstvo-bassejnov-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Строительство бассейнов: полное руководство 2026</h3>
+<p class="card-desc">Типы, стоимость, отделка чукум, разрешения. 6–12 недель.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="полы и отделка для тропического климата" data-desc="керамогранит, травертин, чукум, микроцемент, тропическое дерево.">
+<a href="poly-otdelka-tropicheskiy-klimat.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Полы и отделка для тропического климата</h3>
+<p class="card-desc">Керамогранит, травертин, чукум, микроцемент, тропическое дерево.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="кондиционирование и вентиляция" data-desc="мини-сплит, vrf, канальная. стоимость, марки, расчёт btu.">
+<a href="kondicionirovanie-ventilyaciya-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Кондиционирование и вентиляция</h3>
+<p class="card-desc">Мини-сплит, VRF, канальная. Стоимость, марки, расчёт BTU.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="безопасность дома на ривьере майя" data-desc="камеры, умные замки, ураганные ставни, сигнализация.">
+<a href="bezopasnost-doma-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Безопасность дома на Ривьере Майя</h3>
+<p class="card-desc">Камеры, умные замки, ураганные ставни, сигнализация.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="ландшафтный дизайн на ривьере майя" data-desc="местные растения, полив, подсветка. сады от $1,650 usd.">
+<a href="landshaftnyy-dizayn-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Ландшафтный дизайн на Ривьере Майя</h3>
+<p class="card-desc">Местные растения, полив, подсветка. Сады от $1,650 USD.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="летние кухни и палапы на ривьере майя" data-desc="дизайн, стоимость ($3 500–$55 000 usd) и материалы для летних кухонь.">
+<a href="letnyaya-kuhnya-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Летние кухни и палапы на Ривьере Майя</h3>
+<p class="card-desc">Дизайн, стоимость ($3 500–$55 000 USD) и материалы для летних кухонь.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="дизайн освещения для домов на ривьере майя" data-desc="led, наружное, ландшафтное и умное освещение. стоимость по зонам.">
+<a href="osveshchenie-dizajn-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Дизайн освещения для домов на Ривьере Майя</h3>
+<p class="card-desc">LED, наружное, ландшафтное и умное освещение. Стоимость по зонам.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="крыша и гидроизоляция на ривьере майя" data-desc="бетонная плита, зелёная крыша, палапа. системы гидроизоляции с гарантией 3–20 лет.">
+<a href="krysha-gidroizolyaciya-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Крыша и гидроизоляция на Ривьере Майя</h3>
+<p class="card-desc">Бетонная плита, зелёная крыша, палапа. Системы гидроизоляции с гарантией 3–20 лет.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="окна и двери для тропического климата" data-desc="ураганостойкие, пвх, алюминий, дерево. сертификации miami-dade.">
+<a href="okna-dveri-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Окна и двери для тропического климата</h3>
+<p class="card-desc">Ураганостойкие, ПВХ, алюминий, дерево. Сертификации Miami-Dade.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="солнечные панели для домов на ривьере майя" data-desc="стоимость ($4 500–$22 000 usd), бренды, окупаемость и нормативы cfe.">
+<a href="solnechnye-paneli-doma-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Солнечные панели для домов на Ривьере Майя</h3>
+<p class="card-desc">Стоимость ($4 500–$22 000 USD), бренды, окупаемость и нормативы CFE.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="септики и очистка воды" data-desc="биодигестеры, очистные установки, стоимость и экологические нормы ривьеры майя.">
+<a href="septik-ochistka-vody-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Септики и очистка воды</h3>
+<p class="card-desc">Биодигестеры, очистные установки, стоимость и экологические нормы Ривьеры Майя.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="типы бетона для строительства" data-desc="товарный, насосный, самоуплотняющийся. марки f'c 200–400 и стоимость за м³.">
+<a href="tipy-betona-stroitelstvo-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Типы бетона для строительства</h3>
+<p class="card-desc">Товарный, насосный, самоуплотняющийся. Марки f'c 200–400 и стоимость за м³.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="страхование и гарантии строительства" data-desc="строительное страхование, структурные гарантии, гарантии исполнения и защита покупателя.">
+<a href="strahovanie-garantii-stroitelstvo-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
+<h3 class="card-title mt-2">Страхование и гарантии строительства</h3>
+<p class="card-desc">Строительное страхование, структурные гарантии, гарантии исполнения и защита покупателя.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+<div class="cat-section" data-cat="cat-rukovodstva">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(232,114,12,.08);color:#e8720c"><i class="bi bi-geo-alt"></i></div><h2>Руководства по строительству</h2><span class="cat-count">23 статей</span></div>
+<div class="row g-3 mb-5">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="лучшие районы для строительства в плая-дель-кармен" data-desc="цены на землю, стиль жизни, roi по районам.">
+<a href="luchshie-rajony-stroitelstva-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Лучшие районы для строительства в Плая-дель-Кармен</h3>
+<p class="card-desc">Цены на землю, стиль жизни, ROI по районам.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="сроки строительства на ривьера-майя" data-desc="8–14 месяцев строительства, 2–4 месяца на разрешения.">
+<a href="sroki-stroitelstva-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Сроки строительства на Ривьера-Майя</h3>
+<p class="card-desc">8–14 месяцев строительства, 2–4 месяца на разрешения.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строительство под ключ в плая-дель-кармен" data-desc="один контракт, одна команда, одна цена.">
+<a href="stroitelstvo-pod-klyuch-playa-del-carmen.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Строительство под ключ в Плая-дель-Кармен</h3>
+<p class="card-desc">Один контракт, одна команда, одна цена.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="экологичное строительство в тулуме" data-desc="экологические нормы, материалы, солнечная энергия.">
+<a href="ekologichnoe-stroitelstvo-tulum.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Экологичное строительство в Тулуме</h3>
+<p class="card-desc">Экологические нормы, материалы, солнечная энергия.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="удалённое управление строительством" data-desc="ежедневные фото, еженедельные видеозвонки. 80% строят удалённо.">
+<a href="udalennoe-upravlenie-stroitelstvom-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Удалённое управление строительством</h3>
+<p class="card-desc">Ежедневные фото, еженедельные видеозвонки. 80% строят удалённо.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="плая-дель-кармен vs тулум: где строить?" data-desc="стоимость земли, нормы, доходность — сравнение.">
+<a href="playa-del-carmen-vs-tulum-stroitelstvo-2026.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Плая-дель-Кармен vs Тулум: где строить?</h3>
+<p class="card-desc">Стоимость земли, нормы, доходность — сравнение.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строить или покупать на ривьере-майя?" data-desc="сравнение стоимости, плюсы и минусы, для кого что лучше.">
+<a href="stroit-ili-pokupat-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Строить или покупать на Ривьере-Майя?</h3>
+<p class="card-desc">Сравнение стоимости, плюсы и минусы, для кого что лучше.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="как выбрать строительную компанию" data-desc="критерии выбора, вопросы подрядчику, гарантии, рекомендации.">
+<a href="vybrat-stroitelnuyu-kompaniyu-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Как выбрать строительную компанию</h3>
+<p class="card-desc">Критерии выбора, вопросы подрядчику, гарантии, рекомендации.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="как купить землю на ривьере майя" data-desc="цены, эхидо vs частная, фидеикомисо, лучшие зоны.">
+<a href="pokupka-zemli-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Как купить землю на Ривьере Майя</h3>
+<p class="card-desc">Цены, эхидо vs частная, фидеикомисо, лучшие зоны.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="управление недвижимостью" data-desc="airbnb управление, арендный доход, обслуживание.">
+<a href="upravlenie-nedvizhimostyu-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Управление недвижимостью</h3>
+<p class="card-desc">Airbnb управление, арендный доход, обслуживание.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="дизайн интерьера тропических домов" data-desc="стили, материалы, влагостойкие решения.">
+<a href="dizajn-interyera-tropicheskie-doma-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Дизайн интерьера тропических домов</h3>
+<p class="card-desc">Стили, материалы, влагостойкие решения.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="экологичные строительные материалы" data-desc="бамбук, переработанный бетон, зелёные крыши.">
+<a href="ekologichnye-stroitelnye-materialy-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Экологичные строительные материалы</h3>
+<p class="card-desc">Бамбук, переработанный бетон, зелёные крыши.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="типы фундаментов" data-desc="плита, сваи, кессоны для известняка.">
+<a href="tipy-fundamentov-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Типы фундаментов</h3>
+<p class="card-desc">Плита, сваи, кессоны для известняка.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="закрытые посёлки" data-desc="проектирование, инфраструктура, безопасность.">
+<a href="stroitelstvo-zakrytyh-poselkov-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Закрытые посёлки</h3>
+<p class="card-desc">Проектирование, инфраструктура, безопасность.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строительство кондоминиумов" data-desc="4-50 юнитов, предпродажи, roi.">
+<a href="stroitelstvo-kondominiumov-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Строительство кондоминиумов</h3>
+<p class="card-desc">4-50 юнитов, предпродажи, ROI.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строительство ресторанов и баров" data-desc="кухня, разрешения, лицензия на алкоголь.">
+<a href="stroitelstvo-restoranov-barov-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Строительство ресторанов и баров</h3>
+<p class="card-desc">Кухня, разрешения, лицензия на алкоголь.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="водопровод и водосистемы" data-desc="скважины, цистерны, насосы, очистка.">
+<a href="vodoprovod-vodosistemy-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Водопровод и водосистемы</h3>
+<p class="card-desc">Скважины, цистерны, насосы, очистка.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="подготовка участка и подпорные стены" data-desc="расчистка, дробление камня, дренаж.">
+<a href="podgotovka-uchastka-podpornye-steny-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Подготовка участка и подпорные стены</h3>
+<p class="card-desc">Расчистка, дробление камня, дренаж.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="стоимость жизни при строительстве" data-desc="аренда, еда, транспорт, виза, интернет.">
+<a href="stoimost-zhizni-stroitelstvo-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Стоимость жизни при строительстве</h3>
+<p class="card-desc">Аренда, еда, транспорт, виза, интернет.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="график строительства" data-desc="помесячно: разрешения, фундамент, отделка.">
+<a href="grafik-stroitelstva-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">График строительства</h3>
+<p class="card-desc">Помесячно: разрешения, фундамент, отделка.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="мебель и ff&amp;e для аренды" data-desc="пакеты меблировки от $5,000.">
+<a href="mebel-ffe-arendnaya-nedvizhimost-riviera-maya.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Мебель и FF&amp;E для аренды</h3>
+<p class="card-desc">Пакеты меблировки от $5,000.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="налоговые льготы строительства" data-desc="вычеты isr, амортизация, солнечные стимулы.">
+<a href="nalogovye-lgoty-stroitelstvo-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Налоговые льготы строительства</h3>
+<p class="card-desc">Вычеты ISR, амортизация, солнечные стимулы.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="доступность и универсальный дизайн" data-desc="инвалидная коляска, пожилые, пандусы.">
+<a href="dostupnost-universalnyj-dizajn-doma-meksika.html" class="text-decoration-none">
+<div class="blog-card">
+<div class="card-body">
+<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
+<h3 class="card-title mt-2">Доступность и универсальный дизайн</h3>
+<p class="card-desc">Инвалидная коляска, пожилые, пандусы.</p>
+</div>
+<div class="card-footer-custom">
+<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
+</div>
+</div></a></div>
+</div></div>
+</div></section>
+
+<div class="lead-magnet mx-auto my-4" style="max-width:720px">
+<div class="lm-badge"><i class="bi bi-file-earmark-bar-graph me-1"></i> Free Download</div>
+<h4>Бесплатный гид по стоимости строительства 2026</h4>
+<p class="lm-sub">Реальные цены за м² в Плая-дель-Кармен, Тулум, Канкун — обновляется ежемесячно.</p>
+<div class="lm-row">
+<input type="text" id="lmPhone" placeholder="Ваш номер WhatsApp">
+<button class="btn-lm" onclick="(function(){var p=document.getElementById('lmPhone').value;var msg='Привет!%20Хочу%20бесплатный%20гид%20по%20стоимости%20строительства%202026';if(p)msg+='%0A'+encodeURIComponent(p);window.open('https://wa.me/529844525333?text='+msg,'_blank')})()"><i class="bi bi-download me-1"></i>Скачать бесплатно</button>
+</div>
+</div>
+<div class="cta-section rounded p-5 text-center mx-auto my-4" style="max-width:720px">
+<h3 class="text-white mb-3">Есть вопросы о строительстве в Мексике?</h3>
+<p class="text-white-50 mb-4">18+ лет опыта, 196+ проектов. Отвечаем за 2 мин.</p>
+<a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Спросите нас</a>
+</div>
 
 <section class="py-5 bg-light" id="contact-form">
-  <div class="container" style="max-width:720px">
-    <h3 class="text-center fw-bold mb-4">Получите бесплатную оценку</h3>
-    <form class="contact-form" action="https://formsubmit.co/constructionrecrea@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="[RU] Новый запрос — Recrea Construction">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://construction-recrea.com/ru/#contact">
-      <input type="hidden" name="_autoresponse" value="Спасибо за обращение. Мы получили ваш запрос и ответим в течение 24 часов. — Команда Recrea Construction | +52 984 452 5333">
-      <input type="text" name="_honey" style="display:none">
-      <div class="row g-3">
-        <div class="col-md-6"><input type="text" class="form-control" name="name" placeholder="Имя" required></div>
-        <div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Email" required></div>
-        <div class="col-md-6"><input type="tel" class="form-control" name="phone" placeholder="Телефон / WhatsApp"></div>
-        <div class="col-md-6">
-          <select class="form-control" name="project_type">
-            <option value="">Тип проекта...</option>
-            <option>Новое строительство</option>
-            <option>Ремонт</option>
-            <option>Коммерческий</option>
-            <option>Другое</option>
-          </select>
-        </div>
-        <div class="col-12"><textarea class="form-control" name="message" rows="3" placeholder="Расскажите о вашем проекте..."></textarea></div>
-        <div class="col-12 text-center"><button type="submit" class="btn btn-cta btn-lg"><i class="bi bi-send me-2"></i>Отправить запрос</button></div>
-      </div>
-    </form>
-  </div>
+<div class="container" style="max-width:720px">
+<h3 class="text-center fw-bold mb-4">Бесплатная оценка</h3>
+<form class="contact-form" action="https://formsubmit.co/constructionrecrea@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="[RU] Новый запрос — Recrea Construction">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://construction-recrea.com/ru/#contact">
+<input type="hidden" name="_autoresponse" value="Спасибо за обращение. Мы получили ваш запрос и ответим в течение 24 часов. — Recrea Construction | +52 984 452 5333">
+<input type="text" name="_honey" style="display:none">
+<div class="row g-3">
+<div class="col-md-6"><input type="text" class="form-control" name="name" placeholder="Name" required></div>
+<div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Email" required></div>
+<div class="col-md-6"><input type="tel" class="form-control" name="phone" placeholder="Phone / WhatsApp"></div>
+<div class="col-md-6"><select class="form-control" name="project_type"><option value="">Project type...</option><option>New Construction</option><option>Renovation</option><option>Commercial</option><option>Other</option></select></div>
+<div class="col-12"><textarea class="form-control" name="message" rows="3" placeholder="..."></textarea></div>
+<div class="col-12 text-center"><button type="submit" class="btn btn-cta btn-lg"><i class="bi bi-send me-2"></i>Send</button></div>
+</div>
+</form>
+</div>
 </section>
 
-<div class="text-center py-3" style="background:#f8f9fa">
-  <a href="/certificaciones/" class="text-decoration-none d-inline-flex align-items-center gap-2 px-4 py-2 rounded-pill" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);border:1px solid #c8a96e;color:#333;transition:all .2s" onmouseover="this.style.background='#c8a96e';this.style.color='#fff'" onmouseout="this.style.background='#fff';this.style.color='#333'">
-    <i class="bi bi-patch-check-fill" style="color:#c8a96e;font-size:1.3rem"></i>
-    <span class="fw-bold">ISO 9001 · AISC · AWS · Miami-Dade</span>
-    <span class="text-muted small">Ver Certificaciones →</span>
-  </a>
-</div>
+<script>
+function filterCat(cat,btn){
+  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  btn.classList.add('active');
+  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
+  document.querySelectorAll('.cat-section').forEach(s=>{
+    if(cat==='all'||s.dataset.cat===cat){s.style.display=''}else{s.style.display='none'}
+  });
+  document.getElementById('searchInput').value='';
+  updateCount();
+}
+function searchArticles(){
+  var q=document.getElementById('searchInput').value.toLowerCase().trim();
+  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  document.querySelector('[data-cat="all"]').classList.add('active');
+  document.querySelectorAll('.cat-section').forEach(s=>s.style.display='');
+  var items=document.querySelectorAll('.article-item');
+  var shown=0;
+  items.forEach(item=>{
+    if(!q||item.dataset.title.includes(q)||item.dataset.desc.includes(q)){item.style.display='';shown++}else{item.style.display='none'}
+  });
+  document.querySelectorAll('.cat-section').forEach(s=>{
+    var v=s.querySelectorAll('.article-item:not([style*="display: none"])').length;
+    if(v===0&&q)s.style.display='none';
+  });
+  document.getElementById('searchCount').textContent=shown+' статей';
+  var nr=document.getElementById('noResults');
+  if(shown===0&&q){nr.style.display='block'}else{nr.style.display='none'}
+}
+function updateCount(){
+  var shown=0;
+  document.querySelectorAll('.article-item').forEach(i=>{if(getComputedStyle(i).display!=='none')shown++});
+  document.getElementById('searchCount').textContent=shown+' статей';
+}
+function toggleView(mode,btn){
+  var c=document.getElementById('articlesGrid');
+  document.querySelectorAll('.view-toggle button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(mode==='list')c.classList.add('list-view');else c.classList.remove('list-view');
+}
+document.addEventListener('DOMContentLoaded',function(){updateCount()});
+</script>
+
 <footer class="footer"><div class="container"><div class="footer-bottom text-center"><p class="mb-0">&copy; 2008–2026 Recrea Construction. Все права защищены. | <a href="/ru/">Главная</a> · <a href="/blog-ru/">Блог</a></p></div></div></footer>
 
 <a href="mailto:constructionrecrea+ru@gmail.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20Recrea%20Construction" class="email-float" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
