@@ -134,7 +134,7 @@
        I = (870, 484)    intersection of altitude HJ and horizontal through G
   -->
 
-  <g transform="translate(738.4,146) scale(0.8)">
+  <g transform="translate(738.4,124.4) scale(0.8)">
   <g filter="url(#glow_line)">
     <!-- E to H (hypotenuse = 1) -->
     <line x1="555" y1="780" x2="870" y2="140" stroke="white" stroke-width="2.2" stroke-linecap="round"/>

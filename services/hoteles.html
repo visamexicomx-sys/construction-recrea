@@ -16,14 +16,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="../css/style.min.css?v=6" rel="stylesheet">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Permisos y Licencias de Construcción en Playa del Carmen, Tulum", "provider": {"@type": "GeneralContractor", "name": "Recrea Construction", "telephone": "+52-984-452-5333", "address": {"@type": "PostalAddress", "addressLocality": "Playa del Carmen", "addressRegion": "Quintana Roo", "addressCountry": "MX"}}, "areaServed": ["Playa del Carmen", "Tulum", "Cancún", "Puerto Aventuras", "Akumal"], "description": "Construimos hoteles boutique y apart-hotels en la Riviera Maya. 6-30 habitaciones, del diseño al amueblado. Permisos, construcción, optimización Airbnb."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Construcción de Hoteles — Recrea Construction","provider":{"@type":"GeneralContractor","name":"Recrea Construction","telephone":"+52-984-452-5333","address":{"@type":"PostalAddress","addressLocality":"Playa del Carmen","addressRegion":"Quintana Roo","addressCountry":"MX"}},"areaServed":["Playa del Carmen","Tulum","Cancún","Puerto Aventuras","Akumal"],"description":"Construimos hoteles boutique y apart-hotels en la Riviera Maya. 6-30 habitaciones, del diseño al amueblado.","offers":{"@type":"AggregateOffer","lowPrice":"14000","highPrice":"40000","priceCurrency":"MXN","unitText":"por m²"}}</script>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Construcción de Hoteles en Playa del Carmen, Tulum | Recrea">
-  <meta property="og:description" content="Construimos hoteles boutique y apart-hotels en la Riviera Maya. 6-30 habitaciones, del diseño al amueblado. Permisos, construcción, optimización Airbnb.">
+  <meta property="og:description" content="Construimos hoteles boutique y apart-hotels en la Riviera Maya. 6-30 habitaciones, del diseño al amueblado.">
   <meta property="og:image" content="https://construction-recrea.com/img/og-wallpaper.png">
   <meta property="og:url" content="https://construction-recrea.com/services/hoteles.html">
   <meta property="og:site_name" content="Recrea Construction">
@@ -34,35 +34,572 @@
   <link rel="alternate" hreflang="ru" href="https://construction-recrea.com/services/oteli.html">
   <link rel="alternate" hreflang="zh" href="https://construction-recrea.com/services/jiudian-jianshe.html">
   <link rel="alternate" hreflang="x-default" href="https://construction-recrea.com/services/hotels.html">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://construction-recrea.com/"}, {"@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://construction-recrea.com/services/servicios.html"}, {"@type": "ListItem", "position": 3, "name": "Construcción de Hoteles"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://construction-recrea.com/"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://construction-recrea.com/services/servicios.html"},{"@type":"ListItem","position":3,"name":"Construcción de Hoteles"}]}</script>
+<style>
+.hotel-hero{background:linear-gradient(135deg,#0f1f2e 0%,#1a3a5c 50%,#0f3460 100%);padding:80px 0 60px;margin-top:56px;position:relative;overflow:hidden}
+.hotel-hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:50%;background:url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23ffffff' stroke-opacity='.04' fill='none'%3E%3Crect x='10' y='10' width='80' height='60' stroke-width='1'/%3E%3Crect x='10' y='80' width='80' height='60' stroke-width='1'/%3E%3Crect x='10' y='150' width='80' height='40' stroke-width='1'/%3E%3Crect x='100' y='10' width='80' height='90' stroke-width='1'/%3E%3Crect x='100' y='110' width='80' height='80' stroke-width='1'/%3E%3Cline x1='10' y1='40' x2='90' y2='40' stroke-width='.5'/%3E%3Cline x1='10' y1='110' x2='90' y2='110' stroke-width='.5'/%3E%3Cline x1='50' y1='10' x2='50' y2='190' stroke-width='.5'/%3E%3Cline x1='140' y1='10' x2='140' y2='190' stroke-width='.5'/%3E%3C/g%3E%3C/svg%3E") repeat;opacity:.6}
+.hotel-hero h1{font-size:2.6rem;font-weight:800;color:#fff}
+.hotel-hero .lead{color:rgba(255,255,255,.75);font-size:1.1rem}
+.hero-stats{display:flex;gap:24px;margin-top:20px;flex-wrap:wrap}
+.hero-stat{text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px 20px;min-width:100px;backdrop-filter:blur(8px)}
+.hero-stat strong{color:#d4a843;font-size:1.6rem;display:block;font-weight:800}
+.hero-stat span{color:rgba(255,255,255,.6);font-size:.78rem;text-transform:uppercase;letter-spacing:.5px}
+.hotel-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:32px 0 24px;padding:0}
+.hotel-tab{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.7);padding:10px 22px;border-radius:50px;cursor:pointer;font-size:.88rem;font-weight:600;transition:all .25s}
+.hotel-tab:hover{background:rgba(212,168,67,.15);color:#d4a843;border-color:rgba(212,168,67,.3)}
+.hotel-tab.active{background:#d4a843;color:#0f1f2e;border-color:#d4a843}
+.hotel-card{background:#fff;border-radius:16px;padding:32px;border:1px solid #e8e8e8;transition:all .3s;height:100%}
+.hotel-card:hover{box-shadow:0 12px 32px rgba(0,0,0,.08);transform:translateY(-4px)}
+.hotel-card h3{font-size:1.3rem;font-weight:700;margin-bottom:8px}
+.hotel-card .price-range{color:#d4a843;font-weight:700;font-size:1.1rem}
+.hotel-card .timeline{color:#6c757d;font-size:.85rem}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.spec-item{display:flex;align-items:center;gap:8px;font-size:.88rem;color:#444}
+.spec-item i{color:#d4a843;font-size:.8rem}
+.hotel-detail{display:none;background:#f8f9fa;border-radius:16px;padding:36px;margin-top:24px}
+.hotel-detail.active{display:block}
+.hotel-detail h3{font-weight:700;color:#1a3a5c}
+.deliverables{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:16px}
+.del-item{display:flex;align-items:center;gap:10px;background:#fff;padding:12px 16px;border-radius:10px;font-size:.88rem;border:1px solid #eee}
+.del-item i{color:#d4a843}
+.roi-table{width:100%;border-collapse:collapse;margin:24px 0}
+.roi-table th{background:#1a3a5c;color:#fff;padding:14px 16px;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px}
+.roi-table td{padding:14px 16px;border-bottom:1px solid #eee;font-size:.9rem}
+.roi-table tr:hover td{background:#f8f6f0}
+.roi-table .roi-highlight{color:#d4a843;font-weight:700}
+.price-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:32px 0}
+.price-card{background:#fff;border-radius:16px;padding:28px;border:2px solid #e8e8e8;text-align:center;position:relative;transition:all .3s}
+.price-card:hover{border-color:#d4a843;transform:translateY(-4px)}
+.price-card.featured{border-color:#d4a843;box-shadow:0 8px 24px rgba(212,168,67,.15)}
+.price-card .label{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:#6c757d;font-weight:700}
+.price-card .name{font-size:1.1rem;font-weight:700;margin:8px 0}
+.price-card .amount{font-size:2.2rem;font-weight:800;color:#1a3a5c}
+.price-card .unit{font-size:.78rem;color:#6c757d}
+.price-card ul{text-align:left;list-style:none;padding:0;margin:16px 0 0}
+.price-card ul li{padding:6px 0;font-size:.85rem;border-bottom:1px solid #f0f0f0}
+.price-card ul li::before{content:'✓';color:#d4a843;font-weight:700;margin-right:8px}
+.process-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:16px;margin:32px 0;text-align:center}
+.process-step-v{position:relative}
+.step-circle{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1a3a5c,#0f3460);color:#d4a843;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;margin:0 auto 10px;border:2px solid #d4a843}
+.process-step-v h6{font-size:.82rem;font-weight:700;margin-bottom:4px}
+.process-step-v small{font-size:.72rem;color:#6c757d}
+.faq-hotel .accordion-button{font-weight:600;font-size:.95rem;color:#1a3a5c}
+.faq-hotel .accordion-button:not(.collapsed){background:rgba(212,168,67,.08);color:#1a3a5c}
+.faq-hotel .accordion-body{font-size:.9rem;color:#555}
+.amenity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin:20px 0}
+.amenity-item{display:flex;align-items:center;gap:10px;padding:14px;background:#fff;border-radius:12px;border:1px solid #eee;font-size:.88rem;font-weight:500}
+.amenity-item i{color:#d4a843;font-size:1.2rem}
+.market-card{background:linear-gradient(135deg,#f8f6f0,#fff);border:1px solid #e8e0c8;border-radius:16px;padding:28px;margin:16px 0}
+.market-card h5{color:#1a3a5c;font-weight:700}
+.market-stat{display:inline-block;background:#1a3a5c;color:#d4a843;padding:6px 16px;border-radius:50px;font-weight:700;font-size:.9rem;margin:4px}
+.testimonial-mini{background:linear-gradient(135deg,#1a3a5c,#0f3460);border-radius:16px;padding:32px;margin:32px 0;color:#fff}
+.testimonial-mini blockquote{font-style:italic;font-size:1.05rem;opacity:.9;margin-bottom:12px}
+.testimonial-mini cite{color:#d4a843;font-size:.88rem}
+.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#d4a843;color:#0f1f2e;font-size:.68rem;font-weight:800;padding:4px 16px;border-radius:20px;text-transform:uppercase;letter-spacing:1px;white-space:nowrap}
+.compare-table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;margin:24px 0}
+.compare-table th{background:#1a3a5c;color:#fff;padding:14px;font-size:.82rem;text-transform:uppercase;letter-spacing:.5px;text-align:center}
+.compare-table td{padding:12px 14px;border-bottom:1px solid #eee;text-align:center;font-size:.88rem}
+.compare-table td:first-child{text-align:left;font-weight:600}
+.compare-table tr:hover td{background:#f8f6f0}
+.occ-bar{height:8px;border-radius:4px;background:#e9ecef;overflow:hidden;margin-top:6px}
+.occ-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#d4a843,#e8c060)}
+.zone-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0}
+.zone-card{background:#fff;border-radius:14px;padding:20px;border:1px solid #eee;text-align:center}
+.zone-card h6{font-weight:700;color:#1a3a5c;margin-bottom:4px}
+.zone-card .zone-price{color:#d4a843;font-weight:800;font-size:1.3rem}
+.zone-card small{color:#6c757d;font-size:.78rem}
+</style>
 </head>
 <body class="has-top-bar">
-<div class="top-cta-bar"><span>Cotización Gratis — Respondemos en 2 min</span><a href="https://wa.me/529844525333?text=Hola!%20Cotización" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div>
+<div class="top-cta-bar"><span>Cotización Gratis — Respondemos en 2 min</span><a href="https://wa.me/529844525333?text=Hola!%20Cotización%20hotel" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"><div class="container"><a class="navbar-brand fw-bold" href="/">RECREA</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navMenu"><ul class="navbar-nav ms-auto align-items-center"><li class="nav-item"><a class="nav-link active" href="/services/servicios.html">Servicios</a></li><li class="nav-item"><a class="nav-link" href="/#proyectos">Proyectos</a></li><li class="nav-item"><a class="nav-link" href="/#nosotros">Nosotros</a></li><li class="nav-item"><a class="nav-link" href="/certifications/">Certificaciones</a></li><li class="nav-item"><a class="nav-link" href="/blog-es/">Blog</a></li><li class="nav-item"><a class="nav-link" href="/noticias/">Noticias</a></li><li class="nav-item"><a class="nav-link" href="/partners/">Socios</a></li><li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li><li class="nav-item"><a class="nav-link" href="/#contacto">Contacto</a></li><li class="nav-item dropdown ms-lg-2"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ES</a><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="/en/">English</a></li><li><a class="dropdown-item active" href="#">Español</a></li><li><a class="dropdown-item" href="/de/">Deutsch</a></li><li><a class="dropdown-item" href="/ru/">Русский</a></li><li><a class="dropdown-item" href="/zh/">中文</a></li></ul></li></ul></div></div></nav>
-<div style="padding-top:116px"></div>
+
+<!-- HERO -->
+<section class="hotel-hero">
+<div class="container position-relative" style="z-index:2">
+<div class="row align-items-center">
+<div class="col-lg-7">
+  <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">Desarrollo Hotelero</span>
+  <h1>Construcción de Hoteles en la Riviera Maya</h1>
+  <p class="lead">Del diseño arquitectónico al amueblado final — hoteles boutique, apart-hotels y hostales llave en mano. 80%+ ocupación anual y ROI en 5–7 años.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>15+</strong><span>Hoteles</span></div>
+    <div class="hero-stat"><strong>80%+</strong><span>Ocupación</span></div>
+    <div class="hero-stat"><strong>5–7</strong><span>Años ROI</span></div>
+    <div class="hero-stat"><strong>100%</strong><span>Llave en mano</span></div>
+    <div class="hero-stat"><strong>$14K</strong><span>Desde MXN/m²</span></div>
+  </div>
+</div>
+<div class="col-lg-5 d-none d-lg-block text-center">
+  <svg viewBox="0 0 320 300" width="320" height="300" xmlns="http://www.w3.org/2000/svg">
+    <rect x="60" y="80" width="200" height="180" rx="6" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="2"/>
+    <rect x="60" y="80" width="200" height="30" rx="6" fill="rgba(212,168,67,.12)" stroke="rgba(212,168,67,.3)" stroke-width="1"/>
+    <text x="160" y="100" text-anchor="middle" fill="rgba(255,255,255,.5)" font-size="11" font-weight="600">HOTEL BOUTIQUE</text>
+    <rect x="80" y="125" width="40" height="30" rx="3" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+    <rect x="140" y="125" width="40" height="30" rx="3" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+    <rect x="200" y="125" width="40" height="30" rx="3" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+    <rect x="80" y="170" width="40" height="30" rx="3" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+    <rect x="140" y="170" width="40" height="30" rx="3" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+    <rect x="200" y="170" width="40" height="30" rx="3" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+    <rect x="80" y="215" width="160" height="30" rx="3" fill="rgba(212,168,67,.08)" stroke="rgba(212,168,67,.2)" stroke-width="1"/>
+    <text x="160" y="234" text-anchor="middle" fill="rgba(212,168,67,.6)" font-size="9">LOBBY · RESTAURANTE · BAR</text>
+    <circle cx="100" cy="140" r="6" fill="rgba(212,168,67,.3)"/>
+    <circle cx="160" cy="140" r="6" fill="rgba(212,168,67,.3)"/>
+    <circle cx="220" cy="140" r="6" fill="rgba(212,168,67,.3)"/>
+    <circle cx="100" cy="185" r="6" fill="rgba(212,168,67,.2)"/>
+    <circle cx="160" cy="185" r="6" fill="rgba(212,168,67,.2)"/>
+    <circle cx="220" cy="185" r="6" fill="rgba(212,168,67,.2)"/>
+    <line x1="60" y1="270" x2="260" y2="270" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+    <text x="160" y="288" text-anchor="middle" fill="rgba(255,255,255,.3)" font-size="9">PLAYA DEL CARMEN · TULUM · CANCÚN</text>
+  </svg>
+</div>
+</div>
+</div>
+</section>
+
 <nav class="container mt-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Inicio</a></li><li class="breadcrumb-item"><a href="/services/servicios.html">Servicios</a></li><li class="breadcrumb-item active">Construcción de Hoteles</li></ol></nav>
-<section class="py-5"><div class="container"><div class="row justify-content-center"><div class="col-lg-8">
-<h1>Construcción de Hoteles en la Riviera Maya</h1>
-<p class="lead">Construimos hoteles boutique y apart-hotels del diseño al amueblado. El boom turístico de la Riviera Maya significa 80%+ de ocupación — tu inversión hotelera se paga sola en 5–7 años.</p>
-<div class="row g-3 my-4">
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">15+</div><small class="text-muted">Hoteles construidos</small></div></div>
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">80%+</div><small class="text-muted">Ocupación promedio</small></div></div>
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">5–7</div><small class="text-muted">Años ROI</small></div></div>
-  <div class="col-6 col-md-3 text-center"><div class="p-3 bg-light rounded"><div class="fw-bold fs-4" style="color:var(--accent)">100%</div><small class="text-muted">Llave en mano</small></div></div>
+
+<!-- TABS: Hotel Types -->
+<section class="py-5">
+<div class="container">
+<h2 class="fw-bold text-center mb-2">Tipos de Proyecto Hotelero</h2>
+<p class="text-center text-muted mb-4">Selecciona el tipo de proyecto para ver especificaciones, costos y plazos</p>
+<div class="hotel-tabs justify-content-center" style="display:flex">
+  <button class="hotel-tab active" onclick="showHotel('all',this)">Todos</button>
+  <button class="hotel-tab" onclick="showHotel('boutique',this)">Boutique</button>
+  <button class="hotel-tab" onclick="showHotel('apart',this)">Apart-Hotel</button>
+  <button class="hotel-tab" onclick="showHotel('hostal',this)">Hostal</button>
+  <button class="hotel-tab" onclick="showHotel('remodelacion',this)">Remodelación</button>
 </div>
-<h2>Qué Construimos</h2>
-<div class="row g-3 mb-4">
-  <div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5 class="fw-bold"><i class="bi bi-door-open me-2" style="color:var(--accent)"></i>Hoteles Boutique</h5><p class="text-muted mb-1">6–30 habitaciones con diseño tropical único. Alberca, restaurante, bar, spa, rooftop.</p><p class="mb-0"><strong>Costo:</strong> $24,000–$40,000 MXN/m² · <strong>Plazo:</strong> 12–24 meses</p></div></div>
-  <div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5 class="fw-bold"><i class="bi bi-houses me-2" style="color:var(--accent)"></i>Apart-Hotels</h5><p class="text-muted mb-1">4–20 unidades independientes para Airbnb/Booking. Cocina, sala, terraza privada.</p><p class="mb-0"><strong>Costo:</strong> $18,000–$30,000 MXN/m² · <strong>Plazo:</strong> 10–18 meses</p></div></div>
-  <div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5 class="fw-bold"><i class="bi bi-shop me-2" style="color:var(--accent)"></i>Hostales y Hoteles Económicos</h5><p class="text-muted mb-1">Dormitorios, cuartos privados, áreas comunes. Para mochileros y nómadas digitales.</p><p class="mb-0"><strong>Costo:</strong> $14,000–$22,000 MXN/m² · <strong>Plazo:</strong> 8–14 meses</p></div></div>
-  <div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5 class="fw-bold"><i class="bi bi-arrow-repeat me-2" style="color:var(--accent)"></i>Remodelación de Hoteles</h5><p class="text-muted mb-1">Moderniza un hotel existente: habitaciones, lobby, alberca, restaurante. Mínimo tiempo de paro.</p><p class="mb-0"><strong>Costo:</strong> $8,000–$16,000 MXN/m² · <strong>Plazo:</strong> 4–10 meses</p></div></div>
+
+<!-- All view cards -->
+<div id="hotel-all" class="row g-4 mt-2">
+  <div class="col-md-6" data-type="boutique">
+    <div class="hotel-card">
+      <div class="d-flex align-items-center gap-3 mb-3"><div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#1a3a5c,#0f3460);display:flex;align-items:center;justify-content:center"><i class="bi bi-door-open text-warning fs-5"></i></div><div><h3 class="mb-0">Hotel Boutique</h3><span class="timeline"><i class="bi bi-clock me-1"></i>12–24 meses</span></div></div>
+      <p class="text-muted">6–30 habitaciones con diseño tropical único. Alberca, restaurante, bar, spa, rooftop.</p>
+      <div class="price-range">$24,000–$40,000 MXN/m²</div>
+      <div class="spec-grid">
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Diseño arquitectónico</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Alberca infinity</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Restaurante y bar</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Spa y wellness</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Rooftop terraza</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Amueblado completo</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6" data-type="apart">
+    <div class="hotel-card">
+      <div class="d-flex align-items-center gap-3 mb-3"><div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#1a3a5c,#0f3460);display:flex;align-items:center;justify-content:center"><i class="bi bi-houses text-warning fs-5"></i></div><div><h3 class="mb-0">Apart-Hotel</h3><span class="timeline"><i class="bi bi-clock me-1"></i>10–18 meses</span></div></div>
+      <p class="text-muted">4–20 unidades independientes para Airbnb/Booking. Cocina, sala, terraza privada.</p>
+      <div class="price-range">$18,000–$30,000 MXN/m²</div>
+      <div class="spec-grid">
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Unidades independientes</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cocina equipada</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Terraza privada</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Alberca común</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Optimización Airbnb</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Smart locks</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6" data-type="hostal">
+    <div class="hotel-card">
+      <div class="d-flex align-items-center gap-3 mb-3"><div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#1a3a5c,#0f3460);display:flex;align-items:center;justify-content:center"><i class="bi bi-shop text-warning fs-5"></i></div><div><h3 class="mb-0">Hostal / Hotel Económico</h3><span class="timeline"><i class="bi bi-clock me-1"></i>8–14 meses</span></div></div>
+      <p class="text-muted">Dormitorios, cuartos privados, áreas comunes. Mochileros y nómadas digitales.</p>
+      <div class="price-range">$14,000–$22,000 MXN/m²</div>
+      <div class="spec-grid">
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Dormitorios compartidos</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Habitaciones privadas</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Coworking area</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Cocina comunal</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Terraza social</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Lavandería</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6" data-type="remodelacion">
+    <div class="hotel-card">
+      <div class="d-flex align-items-center gap-3 mb-3"><div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#1a3a5c,#0f3460);display:flex;align-items:center;justify-content:center"><i class="bi bi-arrow-repeat text-warning fs-5"></i></div><div><h3 class="mb-0">Remodelación de Hotel</h3><span class="timeline"><i class="bi bi-clock me-1"></i>4–10 meses</span></div></div>
+      <p class="text-muted">Moderniza hotel existente: habitaciones, lobby, alberca, restaurante. Mínimo tiempo de paro.</p>
+      <div class="price-range">$8,000–$16,000 MXN/m²</div>
+      <div class="spec-grid">
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Renovación por fases</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Upgrade habitaciones</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Nuevo lobby/recepción</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Remodelación alberca</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Actualización eléctrica</div>
+        <div class="spec-item"><i class="bi bi-check-circle-fill"></i>Impermeabilización</div>
+      </div>
+    </div>
+  </div>
 </div>
-<h2>Retorno de Inversión</h2>
-<div class="table-responsive mb-4"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tipo</th><th>Unidades</th><th>Inversión</th><th>Ingreso Anual</th><th>ROI</th></tr></thead><tbody>
-<tr><td>Apart-Hotel (Tulum)</td><td>8 unidades</td><td>$350,000–$500,000</td><td>$60,000–$90,000</td><td>5–7 años</td></tr>
-<tr><td>Hotel Boutique (PDC)</td><td>12 habitaciones</td><td>$600,000–$900,000</td><td>$120,000–$180,000</td><td>5–6 años</td></tr>
-<tr><td>Hotel Boutique (Tulum)</td><td>20 habitaciones</td><td>$1.2M–$1.8M</td><td>$250,000–$400,000</td><td>4–6 años</td></tr>
-</tbody></table></div>
+
+<!-- Detail views (one per type) -->
+<div class="hotel-detail" id="detail-boutique">
+  <h3><i class="bi bi-door-open me-2" style="color:#d4a843"></i>Hotel Boutique — Especificaciones</h3>
+  <p class="text-muted">6–30 habitaciones con identidad arquitectónica única. Diseño tropical contemporáneo que maximiza la experiencia del huésped y el ingreso por habitación disponible (RevPAR).</p>
+  <div class="row g-4 mt-2">
+    <div class="col-md-6">
+      <h5 class="fw-bold">Áreas del Proyecto</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Habitaciones temáticas</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Suite presidencial</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Lobby / recepción</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Restaurante con cocina</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Bar / lounge</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Alberca infinity</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Spa / wellness</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Rooftop terraza</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Estacionamiento</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Cuartos de servicio</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Lavandería industrial</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Oficina administración</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h5 class="fw-bold">Especificaciones Técnicas</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Estructura anti-huracán Cat. 5</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Planta de emergencia</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Sistema contra incendios</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Cisterna 20,000+ litros</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Planta de tratamiento</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>HVAC central o mini-splits</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Paneles solares (opcional)</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Red WiFi profesional</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Smart locks por habitación</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>PMS hotelero integrado</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Iluminación arquitectónica</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Impermeabilización premium</div>
+      </div>
+    </div>
+  </div>
+  <div class="market-card mt-4">
+    <h5><i class="bi bi-graph-up-arrow me-2"></i>Datos del Mercado — Hotel Boutique</h5>
+    <p class="mb-2">RevPAR promedio en Playa del Carmen para boutiques de 4–5 estrellas:</p>
+    <div class="market-stat">$2,500–$4,500 MXN/noche</div>
+    <div class="market-stat">82% ocupación anual</div>
+    <div class="market-stat">ROI 5–6 años</div>
+  </div>
+</div>
+
+<div class="hotel-detail" id="detail-apart">
+  <h3><i class="bi bi-houses me-2" style="color:#d4a843"></i>Apart-Hotel — Especificaciones</h3>
+  <p class="text-muted">Unidades independientes diseñadas para máxima rentabilidad en plataformas de alquiler vacacional. Cada unidad opera como departamento completo con cocina y amenidades.</p>
+  <div class="row g-4 mt-2">
+    <div class="col-md-6">
+      <h5 class="fw-bold">Cada Unidad Incluye</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Cocina equipada completa</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Sala / comedor</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>1–2 recámaras</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Baño completo</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Terraza / balcón privado</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Closet amplio</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Smart TV + WiFi</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Smart lock con código</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h5 class="fw-bold">Áreas Comunes</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Alberca compartida</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Rooftop con asador</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Bicicletas disponibles</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Estacionamiento</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Bodega / storage</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Lavandería</div>
+      </div>
+      <div class="market-card mt-3">
+        <h5><i class="bi bi-airbnb me-2"></i>Optimización Airbnb</h5>
+        <p class="mb-1">Configuramos tus perfiles en Airbnb, Booking, VRBO. Fotografía profesional y precio dinámico.</p>
+        <div class="market-stat">$1,800–$3,500 MXN/noche</div>
+        <div class="market-stat">78% ocupación</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hotel-detail" id="detail-hostal">
+  <h3><i class="bi bi-shop me-2" style="color:#d4a843"></i>Hostal / Hotel Económico — Especificaciones</h3>
+  <p class="text-muted">Proyecto optimizado para nómadas digitales y mochileros. Bajo costo de construcción, alta demanda, operación simple. El segmento con mayor crecimiento en la Riviera Maya.</p>
+  <div class="row g-4 mt-2">
+    <div class="col-md-6">
+      <h5 class="fw-bold">Áreas del Proyecto</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Dormitorios 4–8 camas</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Habitaciones privadas</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Baños compartidos</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Cocina comunal</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Coworking con WiFi</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Terraza social</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Área de hamacas</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Lockers individuales</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h5 class="fw-bold">Ventajas del Modelo</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Menor inversión por cama</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Alta rotación de huéspedes</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Comunidad y reviews</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Operación con 2–3 staff</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Ingresos por bar/café</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>ROI 3–5 años</div>
+      </div>
+      <div class="market-card mt-3">
+        <h5><i class="bi bi-graph-up me-2"></i>Mercado de Hostales</h5>
+        <div class="market-stat">$400–$800 MXN/cama/noche</div>
+        <div class="market-stat">85%+ ocupación</div>
+        <div class="market-stat">ROI 3–5 años</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hotel-detail" id="detail-remodelacion">
+  <h3><i class="bi bi-arrow-repeat me-2" style="color:#d4a843"></i>Remodelación de Hotel — Especificaciones</h3>
+  <p class="text-muted">Renovación integral o por fases de hoteles existentes. Modernización sin perder ingresos — trabajamos por secciones para minimizar el tiempo de paro.</p>
+  <div class="row g-4 mt-2">
+    <div class="col-md-6">
+      <h5 class="fw-bold">Áreas de Intervención</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Habitaciones y suites</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Lobby y recepción</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Restaurante / cocina</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Alberca y deck</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Fachada exterior</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Baños de habitaciones</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Áreas de servicio</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Paisajismo</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h5 class="fw-bold">Upgrades Técnicos</h5>
+      <div class="deliverables">
+        <div class="del-item"><i class="bi bi-check-lg"></i>Actualización eléctrica</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Nuevo sistema HVAC</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Impermeabilización</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Refuerzo estructural</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Plomería completa</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Red WiFi profesional</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Pintura y acabados</div>
+        <div class="del-item"><i class="bi bi-check-lg"></i>Smart locks</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- AMENITIES -->
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="fw-bold text-center mb-4">Amenidades que Construimos</h2>
+<div class="amenity-grid">
+  <div class="amenity-item"><i class="bi bi-water"></i>Alberca infinity</div>
+  <div class="amenity-item"><i class="bi bi-cup-hot"></i>Restaurante y bar</div>
+  <div class="amenity-item"><i class="bi bi-heart-pulse"></i>Spa y wellness</div>
+  <div class="amenity-item"><i class="bi bi-binoculars"></i>Rooftop terraza</div>
+  <div class="amenity-item"><i class="bi bi-bicycle"></i>Gym / fitness</div>
+  <div class="amenity-item"><i class="bi bi-p-circle"></i>Estacionamiento</div>
+  <div class="amenity-item"><i class="bi bi-wifi"></i>WiFi profesional</div>
+  <div class="amenity-item"><i class="bi bi-lock"></i>Smart locks</div>
+  <div class="amenity-item"><i class="bi bi-sun"></i>Paneles solares</div>
+  <div class="amenity-item"><i class="bi bi-droplet"></i>Cisterna + bombeo</div>
+  <div class="amenity-item"><i class="bi bi-lightning"></i>Planta de emergencia</div>
+  <div class="amenity-item"><i class="bi bi-shield-check"></i>Sistema contra incendios</div>
+</div>
+</div>
+</section>
+
+<!-- ROI TABLE -->
+<section class="py-5">
+<div class="container">
+<h2 class="fw-bold text-center mb-2">Retorno de Inversión (ROI)</h2>
+<p class="text-center text-muted mb-4">Datos reales del mercado hotelero de la Riviera Maya 2024–2026</p>
+<div class="table-responsive">
+<table class="roi-table">
+  <thead><tr><th>Tipo</th><th>Unidades</th><th>Inversión</th><th>Ingreso Anual Est.</th><th>Ocupación</th><th>ROI</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Apart-Hotel (Tulum)</strong></td><td>8 unidades</td><td>$7M–$10M MXN</td><td>$1.2M–$1.8M MXN</td><td><div>78%</div><div class="occ-bar"><div class="occ-bar-fill" style="width:78%"></div></div></td><td class="roi-highlight">5–7 años</td></tr>
+    <tr><td><strong>Hotel Boutique (PDC)</strong></td><td>12 habitaciones</td><td>$12M–$18M MXN</td><td>$2.4M–$3.6M MXN</td><td><div>82%</div><div class="occ-bar"><div class="occ-bar-fill" style="width:82%"></div></div></td><td class="roi-highlight">5–6 años</td></tr>
+    <tr><td><strong>Hotel Boutique (Tulum)</strong></td><td>20 habitaciones</td><td>$24M–$36M MXN</td><td>$5M–$8M MXN</td><td><div>85%</div><div class="occ-bar"><div class="occ-bar-fill" style="width:85%"></div></div></td><td class="roi-highlight">4–6 años</td></tr>
+    <tr><td><strong>Hostal (PDC Centro)</strong></td><td>30 camas</td><td>$4M–$6M MXN</td><td>$1.5M–$2.5M MXN</td><td><div>88%</div><div class="occ-bar"><div class="occ-bar-fill" style="width:88%"></div></div></td><td class="roi-highlight">3–5 años</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- Zone cards -->
+<h3 class="fw-bold mt-5 mb-3 text-center">Costo de Construcción por Zona</h3>
+<div class="zone-cards">
+  <div class="zone-card">
+    <h6>Playa del Carmen</h6>
+    <div class="zone-price">$24K–$38K</div>
+    <small>MXN/m² · Boutique</small>
+    <div class="occ-bar mt-2"><div class="occ-bar-fill" style="width:82%"></div></div>
+    <small>82% ocupación</small>
+  </div>
+  <div class="zone-card">
+    <h6>Tulum</h6>
+    <div class="zone-price">$28K–$42K</div>
+    <small>MXN/m² · Boutique</small>
+    <div class="occ-bar mt-2"><div class="occ-bar-fill" style="width:85%"></div></div>
+    <small>85% ocupación</small>
+  </div>
+  <div class="zone-card">
+    <h6>Puerto Aventuras</h6>
+    <div class="zone-price">$22K–$34K</div>
+    <small>MXN/m² · Apart-Hotel</small>
+    <div class="occ-bar mt-2"><div class="occ-bar-fill" style="width:75%"></div></div>
+    <small>75% ocupación</small>
+  </div>
+  <div class="zone-card">
+    <h6>Cancún</h6>
+    <div class="zone-price">$26K–$40K</div>
+    <small>MXN/m² · Boutique</small>
+    <div class="occ-bar mt-2"><div class="occ-bar-fill" style="width:80%"></div></div>
+    <small>80% ocupación</small>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="fw-bold text-center mb-4">Comparativa de Paquetes</h2>
+<div class="table-responsive">
+<table class="compare-table">
+  <thead><tr><th>Incluido</th><th>Boutique</th><th>Apart-Hotel</th><th>Hostal</th><th>Remodelación</th></tr></thead>
+  <tbody>
+    <tr><td>Diseño arquitectónico</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Planos 6 disciplinas</td><td>✅</td><td>✅</td><td>✅</td><td>Parcial</td></tr>
+    <tr><td>Renders 3D</td><td>✅</td><td>✅</td><td>✅</td><td>Opcional</td></tr>
+    <tr><td>Permisos y licencias</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Construcción llave en mano</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Alberca</td><td>✅ Infinity</td><td>✅ Compartida</td><td>Opcional</td><td>✅ Remodelación</td></tr>
+    <tr><td>Restaurante / cocina</td><td>✅ Completo</td><td>Opcional</td><td>Comunal</td><td>✅ Remodelación</td></tr>
+    <tr><td>Spa / wellness</td><td>✅</td><td>Opcional</td><td>—</td><td>Opcional</td></tr>
+    <tr><td>Sistema contra incendios</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Amueblado completo</td><td>✅</td><td>✅</td><td>✅</td><td>Opcional</td></tr>
+    <tr><td>Setup Airbnb/Booking</td><td>Opcional</td><td>✅</td><td>✅</td><td>Opcional</td></tr>
+    <tr><td>Protección civil</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+  </tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="py-5">
+<div class="container">
+<h2 class="fw-bold text-center mb-4">Inversión por Tipo</h2>
+<div class="price-cards">
+  <div class="price-card">
+    <div class="label">HOSTAL</div>
+    <div class="name">Hotel Económico</div>
+    <div class="amount">$14,000</div>
+    <div class="unit">MXN/m² — desde</div>
+    <ul>
+      <li>30+ camas</li>
+      <li>Áreas comunes completas</li>
+      <li>Coworking integrado</li>
+      <li>Plazo: 8–14 meses</li>
+    </ul>
+    <a href="https://wa.me/529844525333?text=Hola!%20Cotización%20hostal" class="btn btn-outline-dark w-100 mt-3" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+  <div class="price-card">
+    <div class="label">APART-HOTEL</div>
+    <div class="name">Unidades Independientes</div>
+    <div class="amount">$18,000</div>
+    <div class="unit">MXN/m² — desde</div>
+    <ul>
+      <li>4–20 unidades completas</li>
+      <li>Cocina equipada por unidad</li>
+      <li>Setup Airbnb/Booking</li>
+      <li>Plazo: 10–18 meses</li>
+    </ul>
+    <a href="https://wa.me/529844525333?text=Hola!%20Cotización%20apart-hotel" class="btn btn-outline-dark w-100 mt-3" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+  <div class="price-card featured">
+    <div class="popular-badge">MÁS POPULAR</div>
+    <div class="label">BOUTIQUE</div>
+    <div class="name">Hotel de Diseño</div>
+    <div class="amount">$24,000</div>
+    <div class="unit">MXN/m² — desde</div>
+    <ul>
+      <li>6–30 habitaciones</li>
+      <li>Alberca, restaurante, spa</li>
+      <li>Amueblado completo</li>
+      <li>Plazo: 12–24 meses</li>
+    </ul>
+    <a href="https://wa.me/529844525333?text=Hola!%20Cotización%20hotel%20boutique" class="btn btn-cta w-100 mt-3" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+  <div class="price-card">
+    <div class="label">REMODELACIÓN</div>
+    <div class="name">Modernización</div>
+    <div class="amount">$8,000</div>
+    <div class="unit">MXN/m² — desde</div>
+    <ul>
+      <li>Renovación por fases</li>
+      <li>Mínimo tiempo de paro</li>
+      <li>Upgrade habitaciones</li>
+      <li>Plazo: 4–10 meses</li>
+    </ul>
+    <a href="https://wa.me/529844525333?text=Hola!%20Cotización%20remodelación%20hotel" class="btn btn-outline-dark w-100 mt-3" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="fw-bold text-center mb-4">Proceso de Construcción Hotelera</h2>
+<div class="process-flow">
+  <div class="process-step-v"><div class="step-circle">1</div><h6>Factibilidad</h6><small>Estudio de mercado y terreno</small></div>
+  <div class="process-step-v"><div class="step-circle">2</div><h6>Diseño</h6><small>Arquitectura y renders 3D</small></div>
+  <div class="process-step-v"><div class="step-circle">3</div><h6>Permisos</h6><small>Licencias y DRO</small></div>
+  <div class="process-step-v"><div class="step-circle">4</div><h6>Cimentación</h6><small>Estructura y obra negra</small></div>
+  <div class="process-step-v"><div class="step-circle">5</div><h6>Acabados</h6><small>Interiores y exteriores</small></div>
+  <div class="process-step-v"><div class="step-circle">6</div><h6>Instalaciones</h6><small>Eléctrica, hidráulica, HVAC</small></div>
+  <div class="process-step-v"><div class="step-circle">7</div><h6>Amueblado</h6><small>FF&E completo</small></div>
+  <div class="process-step-v"><div class="step-circle">8</div><h6>Entrega</h6><small>Protección civil y apertura</small></div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="py-5">
+<div class="container" style="max-width:800px">
+<div class="testimonial-mini">
+  <blockquote>"Recrea construyó nuestro apart-hotel de 8 unidades en Tulum en 14 meses. La calidad de los acabados y la optimización para Airbnb nos permitió alcanzar 82% de ocupación desde el primer trimestre."</blockquote>
+  <cite>— Alejandra R., Inversionista hotelera, Tulum</cite>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5 bg-light">
+<div class="container" style="max-width:800px">
+<h2 class="fw-bold text-center mb-4">Preguntas Frecuentes</h2>
+<div class="accordion faq-hotel" id="faqHotel">
+  <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fh1">¿Cuánto cuesta construir un hotel boutique en Playa del Carmen?</button></h2><div id="fh1" class="accordion-collapse collapse" data-bs-parent="#faqHotel"><div class="accordion-body">El costo varía de $24,000 a $40,000 MXN/m² dependiendo del nivel de acabados, amenidades y ubicación. Un hotel boutique de 12 habitaciones (aprox. 800 m²) implica una inversión de $12M–$18M MXN. Incluye diseño, permisos, construcción, instalaciones y amueblado.</div></div></div>
+  <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fh2">¿Qué permisos necesito para construir un hotel?</button></h2><div id="fh2" class="accordion-collapse collapse" data-bs-parent="#faqHotel"><div class="accordion-body">Licencia de construcción municipal, DRO (Director Responsable de Obra), Manifestación de Impacto Ambiental (MIA) ante SEMARNAT si es zona costera, permiso de Protección Civil, licencia de funcionamiento turístico (SECTUR), dictamen de uso de suelo hotelero, y alta ante SAT para facturación. Nosotros gestionamos todos los trámites.</div></div></div>
+  <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fh3">¿Es rentable invertir en un hotel en la Riviera Maya?</button></h2><div id="fh3" class="accordion-collapse collapse" data-bs-parent="#faqHotel"><div class="accordion-body">Sí. La Riviera Maya mantiene ocupación promedio de 80%+ anual, con temporada alta (diciembre–abril) arriba del 90%. El ROI típico es de 5–7 años para boutiques y 3–5 para hostales. El turismo en Quintana Roo creció 12% en 2025 y la tendencia se mantiene.</div></div></div>
+  <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fh4">¿Construyen para resistir huracanes?</button></h2><div id="fh4" class="accordion-collapse collapse" data-bs-parent="#faqHotel"><div class="accordion-body">Sí. Toda estructura hotelera se calcula para vientos de huracán categoría 5 (260+ km/h), zona sísmica B y suelo calcáreo tipo karst. Utilizamos concreto f'c=300 kg/cm², acero grado 42, y cumplimos con las NTC y el Manual de Diseño de Obras Civiles de la CFE.</div></div></div>
+  <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fh5">¿Incluyen amueblado y equipamiento (FF&E)?</button></h2><div id="fh5" class="accordion-collapse collapse" data-bs-parent="#faqHotel"><div class="accordion-body">Sí. El servicio llave en mano incluye FF&E (Furniture, Fixtures & Equipment): camas, muebles, blancos, amenidades de baño, cocina industrial (restaurante), equipos de alberca, iluminación decorativa, y equipamiento tecnológico (PMS, WiFi, smart locks). Entregamos listo para operar.</div></div></div>
+  <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fh6">¿Pueden construir un hotel para operar en Airbnb?</button></h2><div id="fh6" class="accordion-collapse collapse" data-bs-parent="#faqHotel"><div class="accordion-body">Sí. El modelo apart-hotel está diseñado específicamente para plataformas de alquiler vacacional: unidades independientes con cocina, smart locks para check-in automático, diseño fotogénico para listings, y configuración de perfiles en Airbnb, Booking y VRBO. Incluimos asesoría en precios dinámicos.</div></div></div>
+</div>
+</div>
+</section>
+
+<!-- LEAD MAGNET -->
+<section class="py-5">
+<div class="container" style="max-width:700px">
 <div class="lead-magnet">
   <h3><i class="bi bi-file-earmark-pdf me-2"></i>Gratis: Guía de Costos de Construcción 2026</h3>
   <p>Precios reales por m², costos de terreno, permisos, gastos ocultos. PDF de 196+ proyectos en la Riviera Maya.</p>
@@ -71,18 +608,24 @@
     <button class="btn-lm" onclick="(function(){var p=document.getElementById('lmPhone').value;var msg='Hola!%20Quiero%20la%20Guía%20de%20Costos%20de%20Construcción%202026';if(p)msg+='%0A'+encodeURIComponent(p);window.open('https://wa.me/529844525333?text='+msg,'_blank')})()"><i class="bi bi-download me-1"></i>Descargar Guía</button>
   </div>
 </div>
-<div class="trust-badges"><span class="trust-badge"><i class="bi bi-award"></i>18+ Años</span><span class="trust-badge"><i class="bi bi-building"></i>196+ Proyectos</span><span class="trust-badge"><i class="bi bi-shield-check"></i>Licencia</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Asegurados</span></div>
-<div class="cta-section rounded p-5 text-center">
-  <h3 class="text-white mb-3">Cotización Gratis</h3>
-  <p class="text-white-50 mb-4">Envía los detalles de tu proyecto. Respuesta en 24 horas.</p>
-  <a href="mailto:constructionrecrea@gmail.com" class="btn btn-cta btn-lg"><i class="bi bi-envelope me-2"></i>Cotizar</a>
+<div class="trust-badges"><span class="trust-badge"><i class="bi bi-award"></i>18+ Años</span><span class="trust-badge"><i class="bi bi-building"></i>196+ Proyectos</span><span class="trust-badge"><i class="bi bi-shield-check"></i>DRO Certificado</span><span class="trust-badge"><i class="bi bi-file-earmark-check"></i>Asegurados</span><span class="trust-badge"><i class="bi bi-patch-check"></i>ISO 9001</span></div>
 </div>
-</div></div></div></section>
+</section>
+
+<!-- CTA + FORM -->
+<div class="cta-section rounded-0 py-5 text-center">
+  <div class="container">
+    <h3 class="text-white mb-3">Cotización Gratis — Desarrollo Hotelero</h3>
+    <p class="text-white-50 mb-4">Envíanos tu terreno y concepto hotelero. Respuesta en 24 horas con estudio de factibilidad.</p>
+    <a href="https://wa.me/529844525333?text=Hola!%20Quiero%20cotización%20para%20construcción%20de%20hotel" class="btn btn-cta btn-lg" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Cotizar por WhatsApp</a>
+  </div>
+</div>
+
 <section class="py-5 bg-light" id="contact-form">
   <div class="container" style="max-width:720px">
     <h3 class="text-center fw-bold mb-4">Solicita una Cotización Gratis</h3>
     <form class="contact-form" action="https://formsubmit.co/constructionrecrea@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="[ES] Consulta Permisos — Recrea">
+      <input type="hidden" name="_subject" value="[ES] Consulta Hotel — Recrea">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://construction-recrea.com/#contacto">
@@ -92,17 +635,35 @@
         <div class="col-md-6"><input type="text" class="form-control" name="name" placeholder="Nombre" required></div>
         <div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Correo electrónico" required></div>
         <div class="col-md-6"><input type="tel" class="form-control" name="phone" placeholder="Teléfono / WhatsApp"></div>
-        <div class="col-md-6"><select class="form-control" name="project_type"><option value="">Tipo de proyecto...</option><option>Construcción nueva</option><option>Remodelación</option><option>Comercial</option><option>Solo Permisos</option><option>Solo Planos</option><option>Hotel</option><option>Otro</option></select></div>
-        <div class="col-12"><textarea class="form-control" name="message" rows="3" placeholder="Cuéntanos sobre tu proyecto..."></textarea></div>
+        <div class="col-md-6"><select class="form-control" name="hotel_type"><option value="">Tipo de hotel...</option><option>Hotel Boutique</option><option>Apart-Hotel</option><option>Hostal / Económico</option><option>Remodelación de Hotel</option><option>Otro</option></select></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="location" placeholder="Ubicación del terreno"></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="rooms" placeholder="Número de habitaciones / unidades"></div>
+        <div class="col-12"><textarea class="form-control" name="message" rows="3" placeholder="Cuéntanos sobre tu proyecto hotelero: concepto, niveles, amenidades, presupuesto estimado..."></textarea></div>
         <div class="col-12 text-center"><button type="submit" class="btn btn-cta btn-lg"><i class="bi bi-send me-2"></i>Enviar Solicitud</button></div>
       </div>
     </form>
   </div>
 </section>
+
 <footer class="footer"><div class="container"><div class="footer-bottom text-center"><p class="mb-0">&copy; 2008–2026 Recrea Construcción. Todos los derechos reservados. | <a href="/">Inicio</a> · <a href="/services/servicios.html">Servicios</a></p></div></div></footer>
-<a href="mailto:constructionrecrea@gmail.com" class="email-float" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});</script>
-<div class="wa-widget" id="waWidget"><div class="wa-chat-box" id="waChatBox"><div class="wa-chat-header"><div class="wa-avatar"><i class="bi bi-headset"></i></div><div><div class="wa-chat-name">Recrea Construcción</div><div class="wa-chat-status"><span class="wa-online-dot"></span> En línea — respuesta en &lt;2 min</div></div><button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button></div><div class="wa-chat-body"><div class="wa-message"><span>¡Hola! ¿Cómo podemos ayudarte?</span></div></div><div class="wa-quick-btns"><a href="https://wa.me/529844525333?text=Hola!%20Cotización" target="_blank" rel="noopener" class="wa-quick-btn">Cotización</a><a href="https://wa.me/529844525333?text=Hola!" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div></div><button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button></div>
+<script>
+window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});
+function showHotel(id,btn){
+  document.querySelectorAll('.hotel-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.hotel-detail').forEach(d=>d.classList.remove('active'));
+  var cards=document.querySelectorAll('#hotel-all [data-type]');
+  if(id==='all'){
+    cards.forEach(c=>c.style.display='');
+    document.getElementById('hotel-all').style.display='';
+  }else{
+    document.getElementById('hotel-all').style.display='none';
+    var detail=document.getElementById('detail-'+id);
+    if(detail)detail.classList.add('active');
+  }
+}
+</script>
+<div class="wa-widget" id="waWidget"><div class="wa-chat-box" id="waChatBox"><div class="wa-chat-header"><div class="wa-avatar"><i class="bi bi-headset"></i></div><div><div class="wa-chat-name">Recrea Construcción</div><div class="wa-chat-status"><span class="wa-online-dot"></span> En línea — respuesta en &lt;2 min</div></div><button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button></div><div class="wa-chat-body"><div class="wa-message"><span>¡Hola! ¿Necesitas construir un hotel?</span></div></div><div class="wa-quick-btns"><a href="https://wa.me/529844525333?text=Hola!%20Cotización%20hotel" target="_blank" rel="noopener" class="wa-quick-btn">Hotel</a><a href="https://wa.me/529844525333?text=Hola!%20Cotización%20apart-hotel" target="_blank" rel="noopener" class="wa-quick-btn">Apart-Hotel</a><a href="https://wa.me/529844525333?text=Hola!%20Cotización%20hotel" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Cotizar</a></div></div><button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button></div>
 <script>(function(){var t=document.getElementById('waToggle'),b=document.getElementById('waChatBox'),c=document.getElementById('waClose'),i=document.getElementById('waIcon');if(!t||!b)return;var open=false;t.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open=!open;b.classList.toggle('open',open);if(i)i.className=open?'bi bi-x-lg':'bi bi-whatsapp';});if(c)c.addEventListener('click',function(e){e.stopPropagation();open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';});document.addEventListener('click',function(e){if(open&&!e.target.closest('#waWidget')){open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';}});})();</script>
 </body></html>
