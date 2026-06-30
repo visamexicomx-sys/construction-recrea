@@ -3,3 +3,5 @@ Allow: /
 Disallow: /partners/
 
 Sitemap: https://construction-recrea.com/sitemap.xml
+
+# Crawl-delay: 1
