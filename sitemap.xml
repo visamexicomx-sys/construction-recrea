@@ -946,4 +946,16 @@
     <loc>https://construction-recrea.com/downloads/guide-couts-construction-2026.pdf</loc>
     <lastmod>2026-07-06</lastmod>
   </url>
+  <url>
+    <loc>https://construction-recrea.com/mapa-precios/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://construction-recrea.com/price-map/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
