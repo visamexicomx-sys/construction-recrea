@@ -173,4 +173,18 @@
 <script>window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});</script>
 <div class="wa-widget" id="waWidget"><div class="wa-chat-box" id="waChatBox"><div class="wa-chat-header"><div class="wa-avatar"><i class="bi bi-headset"></i></div><div><div class="wa-chat-name">Recrea</div><div class="wa-chat-status"><span class="wa-online-dot"></span> Online</div></div><button class="wa-close" id="waClose" aria-label="Close"><i class="bi bi-x-lg"></i></button></div><div class="wa-chat-body"><div class="wa-message"><span>Bonjour ! Comment pouvons-nous vous aider ?</span></div></div><div class="wa-quick-btns"><a href="https://wa.me/529844525333?text=Bonjour!%20Devis" target="_blank" rel="noopener" class="wa-quick-btn wa-quick-btn-main"><i class="bi bi-whatsapp me-1"></i>Devis</a></div></div><button class="whatsapp-float" id="waToggle" aria-label="WhatsApp"><i class="bi bi-whatsapp" id="waIcon"></i></button></div>
 <script>(function(){var t=document.getElementById('waToggle'),b=document.getElementById('waChatBox'),c=document.getElementById('waClose'),i=document.getElementById('waIcon');if(!t||!b)return;var open=false;t.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open=!open;b.classList.toggle('open',open);if(i)i.className=open?'bi bi-x-lg':'bi bi-whatsapp';});if(c)c.addEventListener('click',function(e){e.stopPropagation();open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';});document.addEventListener('click',function(e){if(open&&!e.target.closest('#waWidget')){open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';}});})();</script>
+<script>/* auto-count guides from same-dir article links */
+(function(){try{
+var seen={},n=0;
+document.querySelectorAll('a[href]').forEach(function(a){
+ var href=(a.getAttribute('href')||'').split(/[?#]/)[0];
+ if(/^[a-z0-9][a-z0-9-]*\.html$/i.test(href)&&href!=='index.html'&&!seen[href]){seen[href]=1;n++;}
+});
+if(!n)return;
+var s=document.querySelector('.blog-stat strong');if(s)s.textContent=n;
+var p=document.querySelector('.pill-count');if(p)p.textContent=n;
+var sub=document.querySelector('.section-subtitle');
+if(sub&&/^\s*\d+\s+(guides|gu\u00edas|guias)/i.test(sub.textContent))sub.innerHTML=sub.innerHTML.replace(/^(\s*)\d+/,'$1'+n);
+}catch(e){}})();
+</script>
 </body></html>
