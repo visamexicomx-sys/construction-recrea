@@ -49,3 +49,13 @@ hint: have locally. This is usually caused by another repository pushing to
 hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Generating 5 FULL blog articles for 2026-07-30...
+  + blog/coworking-space-construction-playa-del-carmen.html (245 lines)
+  + blog/plaza-comercial-construction-riviera-maya.html (245 lines)
+  + blog/school-construction-quintana-roo.html (245 lines)
+  + blog/hostel-construction-playa-del-carmen.html (246 lines)
+  + blog/apart-hotel-construction-riviera-maya.html (246 lines)
+  Sitemap: 799 URLs
+  IndexNow: 200
+
+Done! 5 articles. 44 topics remaining. Total: 20
