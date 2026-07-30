@@ -59,3 +59,18 @@ Generating 5 FULL blog articles for 2026-07-30...
   IndexNow: 200
 
 Done! 5 articles. 44 topics remaining. Total: 20
+[main 7fc4c3c] daily blog: 5 new SEO articles 2026-07-30
+ 8 files changed, 2123 insertions(+), 796 deletions(-)
+ create mode 100644 blog/apart-hotel-construction-riviera-maya.html
+ create mode 100644 blog/coworking-space-construction-playa-del-carmen.html
+ create mode 100644 blog/hostel-construction-playa-del-carmen.html
+ create mode 100644 blog/plaza-comercial-construction-riviera-maya.html
+ create mode 100644 blog/school-construction-quintana-roo.html
+To https://github.com/visamexicomx-sys/construction-recrea.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/visamexicomx-sys/construction-recrea.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
