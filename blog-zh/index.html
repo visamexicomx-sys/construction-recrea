@@ -104,6 +104,58 @@
 }
 </style>
 
+<style id="blogIndexStyle">
+.blog-hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:52px 0 40px;position:relative;overflow:hidden}
+.blog-hero:after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.18),transparent 70%)}
+.blog-hero h1{font-size:2.1rem;font-weight:800;margin-bottom:10px}
+.blog-hero .lead{color:rgba(255,255,255,.7);font-size:1rem;max-width:640px;margin-bottom:0}
+.blog-stats{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
+.blog-stat strong{display:block;font-size:1.5rem;font-weight:800;color:#d4a843;line-height:1.1}
+.blog-stat span{font-size:.78rem;color:rgba(255,255,255,.6)}
+.search-box{position:relative;max-width:500px;margin:26px auto 0}
+.search-box input{width:100%;padding:13px 20px 13px 46px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);border-radius:50px;color:#fff;font-size:.95rem;transition:all .3s}
+.search-box input::placeholder{color:rgba(255,255,255,.4)}
+.search-box input:focus{outline:none;border-color:#d4a843;background:rgba(255,255,255,.12)}
+.search-box i{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:1.05rem}
+.search-box .search-count{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:.78rem}
+.cat-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:18px 0}
+.cat-pill{border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:7px 16px;font-size:.83rem;font-weight:600;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:6px;color:#495057;user-select:none}
+.cat-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.cat-pill.active{background:#1a1a2e;color:#fff;border-color:transparent;box-shadow:0 4px 15px rgba(0,0,0,.15)}
+.cat-pill .pill-count{background:rgba(0,0,0,.08);border-radius:50px;padding:1px 8px;font-size:.72rem;font-weight:700}
+.cat-pill.active .pill-count{background:rgba(255,255,255,.25)}
+.cat-section-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #f0f0f0}
+.cat-section-header .cat-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex:0 0 auto}
+.cat-section-header h2{font-size:1.2rem;font-weight:700;margin:0;color:#1a1a2e}
+.cat-section-header .cat-count{font-size:.8rem;color:#6c757d;margin-left:auto;white-space:nowrap}
+/* uniform cards: the anchor must stretch, or cards in a row grow unevenly */
+.article-item>a{display:block;height:100%}
+.blog-card{background:#fff;border-radius:16px;border:1px solid #e9ecef;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1);border-color:#d4a843}
+.blog-card .card-body{padding:20px 20px 14px;flex:1;display:flex;flex-direction:column}
+.blog-card .card-cat{font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:50px;letter-spacing:.4px;text-transform:uppercase;display:inline-block;align-self:flex-start}
+.blog-card .card-title{font-size:1rem;font-weight:700;line-height:1.35;margin:10px 0 7px;color:#1a1a2e;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.blog-card:hover .card-title{color:#e8720c}
+.blog-card .card-desc{font-size:.85rem;color:#6c757d;line-height:1.5;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:3.8em}
+.blog-card .card-footer-custom{padding:12px 20px;border-top:1px solid #f0f0f0;margin-top:auto}
+.blog-card .read-more{font-size:.83rem;font-weight:600;color:#e8720c;display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
+.blog-card:hover .read-more{gap:9px}
+.article-item.extra{display:none}
+.cat-section.expanded .article-item.extra{display:block}
+.show-all{display:block;margin:14px auto 0;border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:8px 22px;font-size:.85rem;font-weight:600;color:#495057;cursor:pointer;transition:all .2s}
+.show-all:hover{border-color:#d4a843;color:#1a1a2e}
+.cat-section.expanded .show-all{display:none}
+.no-results{text-align:center;padding:60px 20px;color:#6c757d}
+.no-results i{font-size:3.4rem;margin-bottom:14px;display:block;color:#dee2e6}
+.view-toggle{display:flex;gap:4px;background:#f0f0f0;border-radius:8px;padding:3px}
+.view-toggle button{border:none;background:none;padding:6px 10px;border-radius:6px;color:#6c757d;cursor:pointer;transition:all .2s}
+.view-toggle button.active{background:#fff;color:#1a1a2e;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.list-view .blog-card .card-desc,.list-view .blog-card .card-footer-custom{display:none}
+.list-view .blog-card .card-title{font-size:.93rem;min-height:0;-webkit-line-clamp:2}
+.list-view .blog-card .card-body{padding:13px 16px}
+.list-view .blog-card .card-cat{font-size:.62rem;padding:2px 8px}
+@media(max-width:768px){.blog-hero{padding:34px 0 28px}.blog-hero h1{font-size:1.6rem}.blog-stats{gap:16px}.blog-stat strong{font-size:1.25rem}.cat-pills{gap:6px;padding:12px 0}.cat-pill{padding:6px 12px;font-size:.78rem}.blog-card .card-title{font-size:.95rem}}
+</style>
 </head>
 <body class="has-top-bar">
 <div class="top-cta-bar"><span>免费报价 — 2分钟内回复</span><a href="https://wa.me/529844525333?text=Hello!%20I%20want%20a%20free%20quote" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>报价</a></div>
@@ -130,926 +182,260 @@
 <div class="row align-items-center">
 <div class="col-lg-7">
 <h1><i class="bi bi-journal-richtext me-2"></i>建筑指南</h1>
-<p class="lead">来自里维埃拉玛雅196+个项目的真实数据和专业建议。关于成本、许可证、投资回报率和墨西哥建筑的专家指南。</p>
+<p class="lead">来自里维埃拉玛雅196+个项目的真实数据：造价、许可、投资回报与在墨西哥建房。</p>
 <div class="blog-stats">
-<div class="blog-stat"><strong>81</strong><span>指南</span></div>
-<div class="blog-stat"><strong>5</strong><span>分类</span></div>
+<div class="blog-stat"><strong>97</strong><span>指南</span></div>
+<div class="blog-stat"><strong>6</strong><span>分类</span></div>
 <div class="blog-stat"><strong>196+</strong><span>项目</span></div>
 <div class="blog-stat"><strong>18+</strong><span>年经验</span></div>
-</div>
-</div>
-<div class="col-lg-5">
-<div class="search-box">
+</div></div>
+<div class="col-lg-5"><div class="search-box">
 <i class="bi bi-search"></i>
-<input type="text" id="searchInput" placeholder="搜索指南..." oninput="searchArticles()">
-<span class="search-count" id="searchCount">51 篇文章</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3"><div class="flex-grow-1"><div class="cat-pills" id="catPills">
-<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>全部<span class="pill-count">81</span></button>
-<button class="cat-pill" data-cat="cat-xinwen" data-color="#dc3545" onclick="filterCat('cat-xinwen',this)"><i class="bi bi-newspaper me-1"></i>官方新闻<span class="pill-count">7</span></button>
-<button class="cat-pill" data-cat="cat-feiyong" data-color="#198754" onclick="filterCat('cat-feiyong',this)"><i class="bi bi-calculator me-1"></i>费用与装修<span class="pill-count">2</span></button>
-<button class="cat-pill" data-cat="cat-waiguoren" data-color="#0d6efd" onclick="filterCat('cat-waiguoren',this)"><i class="bi bi-globe me-1"></i>外国买家指南<span class="pill-count">7</span></button>
-<button class="cat-pill" data-cat="cat-shiyong" data-color="#20c997" onclick="filterCat('cat-shiyong',this)"><i class="bi bi-house-heart me-1"></i>实用建议<span class="pill-count">14</span></button>
-<button class="cat-pill" data-cat="cat-zhinan" data-color="#e8720c" onclick="filterCat('cat-zhinan',this)"><i class="bi bi-geo-alt me-1"></i>建筑指南<span class="pill-count">21</span></button>
-</div>
-</div><div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div></div></div>
+<input type="text" id="searchInput" placeholder="搜索指南…" oninput="searchArticles()">
+<span class="search-count" id="searchCount">97 篇</span>
+</div></div></div></div></section>
+<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3">
+<div class="flex-grow-1"><div class="cat-pills" id="catPills">
+<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>全部<span class="pill-count">97</span></button>
+<button class="cat-pill" data-cat="cat-news" data-color="#dc3545" onclick="filterCat('cat-news',this)"><i class="bi bi-newspaper me-1"></i>新闻与市场<span class="pill-count">6</span></button>
+<button class="cat-pill" data-cat="cat-costs" data-color="#198754" onclick="filterCat('cat-costs',this)"><i class="bi bi-calculator me-1"></i>造价与回报<span class="pill-count">23</span></button>
+<button class="cat-pill" data-cat="cat-permits" data-color="#fd7e14" onclick="filterCat('cat-permits',this)"><i class="bi bi-file-earmark-text me-1"></i>许可与流程<span class="pill-count">13</span></button>
+<button class="cat-pill" data-cat="cat-foreigners" data-color="#0d6efd" onclick="filterCat('cat-foreigners',this)"><i class="bi bi-globe me-1"></i>外国买家<span class="pill-count">5</span></button>
+<button class="cat-pill" data-cat="cat-build" data-color="#6f42c1" onclick="filterCat('cat-build',this)"><i class="bi bi-tools me-1"></i>施工与技术<span class="pill-count">30</span></button>
+<button class="cat-pill" data-cat="cat-home" data-color="#20c997" onclick="filterCat('cat-home',this)"><i class="bi bi-house-heart me-1"></i>设计与生活<span class="pill-count">20</span></button>
+</div></div>
+<div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div>
+</div></div>
 <section class="py-4"><div class="container" id="articlesGrid">
-<div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>未找到文章</h4><p>请尝试其他搜索词</p></div>
-<div class="cat-section" data-cat="cat-xinwen">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>官方新闻</h2><span class="cat-count">7 篇文章</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在坎昆建一栋房子要多少钱 2026" data-desc="2026年在坎昆建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.50m–$3.07m 比索。">
-<a href="cancun-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在坎昆建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在坎昆建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.50M–$3.07M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在阿文图拉斯港建一栋房子要多少钱 2026" data-desc="2026年在阿文图拉斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.81m–$3.46m 比索。">
-<a href="puerto-aventuras-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在阿文图拉斯港建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在阿文图拉斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.81M–$3.46M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在阿库马尔建一栋房子要多少钱 2026" data-desc="2026年在阿库马尔建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.91m–$3.58m 比索。">
-<a href="akumal-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在阿库马尔建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在阿库马尔建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.91M–$3.58M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在莫雷洛斯港建一栋房子要多少钱 2026" data-desc="2026年在莫雷洛斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.60m–$3.20m 比索。">
-<a href="puerto-morelos-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在莫雷洛斯港建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在莫雷洛斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.60M–$3.20M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在playacar建一栋房子要多少钱 2026" data-desc="2026年在playacar建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.25m–$4m 比索。">
-<a href="playacar-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在Playacar建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在Playacar建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.25M–$4M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在玛雅科巴建一栋房子要多少钱 2026" data-desc="2026年在玛雅科巴建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.69m–$4.54m 比索。">
-<a href="mayakoba-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在玛雅科巴建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在玛雅科巴建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.69M–$4.54M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在aldea zamá建一栋房子要多少钱 2026" data-desc="2026年在aldea zamá建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.12m–$3.84m 比索。">
-<a href="aldea-zama-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在Aldea Zamá建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在Aldea Zamá建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.12M–$3.84M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在corasol建一栋房子要多少钱 2026" data-desc="2026年在corasol建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.38m–$4.16m 比索。">
-<a href="corasol-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在Corasol建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在Corasol建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.38M–$4.16M 比索。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="里维埃拉玛雅每平方米建筑造价 2026 | 价格指南" data-desc="2026年里维埃拉玛雅每平方米建造要多少钱？按装修档次列出普拉亚德尔卡曼、图卢姆和坎昆的真实价格区间。">
-<a href="mei-pingfangmi-jianzhu-chengben-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">里维埃拉玛雅每平方米建筑造价 2026 | 价格指南</h3><p class="card-desc">2026年里维埃拉玛雅每平方米建造要多少钱？按装修档次列出普拉亚德尔卡曼、图卢姆和坎昆的真实价格区间。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在普拉亚德尔卡曼建一栋房子要多少钱 2026" data-desc="2026年在普拉亚德尔卡曼建房要多少钱？150平米住宅的完整分阶段预算、工期与包含内容。">
-<a href="playa-del-carmen-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在普拉亚德尔卡曼建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在普拉亚德尔卡曼建房要多少钱？150平米住宅的完整分阶段预算、工期与包含内容。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在图卢姆建一栋豪华别墅要多少钱 2026 | 投资指南" data-desc="2026年在图卢姆建一栋豪华别墅要多少钱？高端别墅的真实预算、装修、配套与投资回报。">
-<a href="tulum-haohua-bieshu-jianzhu-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价</span>
-<h3 class="card-title mt-2">在图卢姆建一栋豪华别墅要多少钱 2026 | 投资指南</h3><p class="card-desc">2026年在图卢姆建一栋豪华别墅要多少钱？高端别墅的真实预算、装修、配套与投资回报。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="建造casita客房出租创收（2026）" data-desc="在地块上加建可出租casita：费用$30,000–$70,000美元，airbnb月入$600–1,800。许可、区划与设计。把闲置土地变现金流。">
-<a href="tulum-jianzhu-xukezheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">2026年图卢姆建筑许可证</h3><p class="card-desc">2026年图卢姆建筑许可证：SEMA环境许可、市政许可证、DRO、清林、费用与工期。每位建房者都需了解。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="cancun-jianzhu-xukezheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">2026年坎昆建筑许可证</h3><p class="card-desc">2026年坎昆建筑许可证：建筑许可、土地用途、民防、CFE、酒店区（FONATUR）规则、住宅与商业的费用与工期。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="playa-del-carmen-shenghuo-chengben-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">2026年普拉亚德尔卡门生活成本</h3><p class="card-desc">2026年普拉亚德尔卡门生活成本：房租、饮食、水电及单身、夫妻和家庭的真实月度预算。以及为何许多人选择自建。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="playa-del-carmen-tulum-tudi-jiage-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">2026年普拉亚德尔卡门与图卢姆地价</h3><p class="card-desc">2026年普拉亚德尔卡门与图卢姆地价：各区域每平米真实价格——Centro、Playacar、Corasol、Aldea Zamá、La Veleta。建房前购地指南。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="riviera-maya-fangchan-zengzhi-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">2026年里维埃拉玛雅房地产增值</h3><p class="card-desc">2026年里维埃拉玛雅房地产增值：普拉亚德尔卡门、图卢姆和坎昆的年度价值增长、驱动因素，以及为何自建能最大化回报。</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="casita-keyi-chuzu-shouru.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">建造casita客房出租创收（2026）</h3><p class="card-desc">在地块上加建可出租casita：费用$30,000–$70,000美元，Airbnb月入$600–1,800。许可、区划与设计。把闲置土地变现金流。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="chukum灰泥完整指南（费用与保养，2026）" data-desc="chukum——玛雅防水灰泥：是什么、2026真实每平方米费用、用在哪、颜色、封闭与保养。图卢姆建筑的标志饰面。">
-<a href="chukum-yiliao-zhinan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">Chukum灰泥完整指南（费用与保养，2026）</h3><p class="card-desc">Chukum——玛雅防水灰泥：是什么、2026真实每平方米费用、用在哪、颜色、封闭与保养。图卢姆建筑的标志饰面。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="为墨西哥建房进口家具与材料（2026）" data-desc="该进口还是本地买？关税、16% iva、运费、menaje de casa免税，以及为里维埃拉玛雅住宅哪些值得进口、哪些本地采购。">
-<a href="jinkou-jiaju-cailiao-moxige.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">为墨西哥建房进口家具与材料（2026）</h3><p class="card-desc">该进口还是本地买？关税、16% IVA、运费、menaje de casa免税，以及为里维埃拉玛雅住宅哪些值得进口、哪些本地采购。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="里维埃拉玛雅离网自给住宅建造（2026）" data-desc="建造完全自给的离网住宅：太阳能+电池、雨水+水井+反渗透、生物消化器、备用发电机。图卢姆和丛林地块的真实系统配置与费用。">
-<a href="moxige-liwang-zizu-zhuzhai.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">新</span>
-<h3 class="card-title mt-2">里维埃拉玛雅离网自给住宅建造（2026）</h3><p class="card-desc">建造完全自给的离网住宅：太阳能+电池、雨水+水井+反渗透、生物消化器、备用发电机。图卢姆和丛林地块的真实系统配置与费用。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="移居普拉亚德尔卡门：2026完整指南" data-desc="移居指南：签证、生活成本（每月$850–$3,300）、社区、学校、医疗、网络——以及为什么住满两年后建房胜过租房。">
-<a href="banjia-dao-playa-del-carmen-zhinan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新</span>
-<h3 class="card-title mt-2">移居普拉亚德尔卡门：2026完整指南</h3><p class="card-desc">移居指南：签证、生活成本（每月$850–$3,300）、社区、学校、医疗、网络——以及为什么住满两年后建房胜过租房。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在里维埃拉玛雅建养老房：完整计划（2026）" data-desc="墨西哥养老：单层适老住宅$120,000–$200,000美元，每月生活费$1,500–2,500，医疗比美国便宜50–70%。">
-<a href="moxige-yanglao-fangwu-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新</span>
-<h3 class="card-title mt-2">在里维埃拉玛雅建养老房：完整计划（2026）</h3><p class="card-desc">墨西哥养老：单层适老住宅$120,000–$200,000美元，每月生活费$1,500–2,500，医疗比美国便宜50–70%。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="palapa棕榈亭建造指南：费用、维护、许可（2026）" data-desc="完整palapa指南：2026年各尺寸真实费用、huano棕榈vs zacate草、硬木结构、5–8年维护周期、许可与防火。">
-<a href="palapa-maocao-ting-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新</span>
-<h3 class="card-title mt-2">Palapa棕榈亭建造指南：费用、维护、许可（2026）</h3><p class="card-desc">完整Palapa指南：2026年各尺寸真实费用、huano棕榈vs zacate草、硬木结构、5–8年维护周期、许可与防火。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在天然井（cenote）旁建房：规则、风险与机遇" data-desc="地块上有天然井：法律地位、退距、地球物理勘测、喀斯特地基风险、sema许可——以及天然井如何让地价增值30–50%。">
-<a href="senote-pangbian-jianzhu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新</span>
-<h3 class="card-title mt-2">在天然井（Cenote）旁建房：规则、风险与机遇</h3><p class="card-desc">地块上有天然井：法律地位、退距、地球物理勘测、喀斯特地基风险、SEMA许可——以及天然井如何让地价增值30–50%。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在图卢姆建精品酒店：成本、许可、回报（2026）" data-desc="精品酒店建造：每间客房$80,000–$150,000美元，工期14–20个月，sema和旅游许可，入住率经济学与12–18%回报目标。">
-<a href="tulum-jingpin-jiudian-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新</span>
-<h3 class="card-title mt-2">在图卢姆建精品酒店：成本、许可、回报（2026）</h3><p class="card-desc">精品酒店建造：每间客房$80,000–$150,000美元，工期14–20个月，SEMA和旅游许可，入住率经济学与12–18%回报目标。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="普拉亚德尔卡门定制住宅设计（2026）" data-desc="建筑设计30,000–80,000 mxn，热带风格，10–16周流程，3d渲染远程决策。">
-<a href="dingzhi-zhuzhai-sheji-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门定制住宅设计（2026）</h3><p class="card-desc">建筑设计30,000–80,000 MXN，热带风格，10–16周流程，3D渲染远程决策。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="里维埃拉玛雅防飓风建筑" data-desc="抗5级飓风建造：钢筋混凝土、抗冲击门窗、通长钢筋。仅多花5–10%。">
-<a href="fangjufeng-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">里维埃拉玛雅防飓风建筑</h3><p class="card-desc">抗5级飓风建造：钢筋混凝土、抗冲击门窗、通长钢筋。仅多花5–10%。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="普拉亚德尔卡门回报最高的翻新项目（2026）" data-desc="哪种翻新最赚：泳池（100–150%回报）、屋顶露台、厨房、卫生间。增值和airbnb收入表。">
-<a href="fanxin-touzi-huibao-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门回报最高的翻新项目（2026）</h3><p class="card-desc">哪种翻新最赚：泳池（100–150%回报）、屋顶露台、厨房、卫生间。增值和Airbnb收入表。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="里维埃拉玛雅海滨住宅建造：2026成本" data-desc="海滨一线：25,000–45,000 mxn/m²（+20–40%），zofemat特许权，船级材料，防侵蚀。">
-<a href="haibin-zhuzhai-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">里维埃拉玛雅海滨住宅建造：2026成本</h3><p class="card-desc">海滨一线：25,000–45,000 MXN/m²（+20–40%），ZOFEMAT特许权，船级材料，防侵蚀。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="墨西哥房屋飓风季准备清单（2026）" data-desc="飓风季：6月1日–11月30日。完整清单：结构检查、电气、文件、保险、物资。">
-<a href="jufeng-jijie-zhunbei-qingdan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">墨西哥房屋飓风季准备清单（2026）</h3><p class="card-desc">飓风季：6月1日–11月30日。完整清单：结构检查、电气、文件、保险、物资。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="坎昆及里维埃拉玛雅商业建筑（2026）" data-desc="办公、商铺、餐厅、酒店：每平方米价格、许可（sema、cofepris、民防）、工期。外国人sa de cv架构。">
-<a href="kancun-shangye-jianzhu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">坎昆及里维埃拉玛雅商业建筑（2026）</h3><p class="card-desc">办公、商铺、餐厅、酒店：每平方米价格、许可（SEMA、COFEPRIS、民防）、工期。外国人SA de CV架构。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="里维埃拉玛雅两层住宅：成本与户型" data-desc="每平方米+15–25%，但省一半土地。抗飓风结构、理想户型、电梯预留。">
-<a href="liangceng-zhuzhai-jianzao-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">里维埃拉玛雅两层住宅：成本与户型</h3><p class="card-desc">每平方米+15–25%，但省一半土地。抗飓风结构、理想户型、电梯预留。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="墨西哥房屋维护费用：水电与税费2026" data-desc="cfe电费、水、燃气、网络、predial房产税、fideicomiso：150m²带泳池440–830美元/月——比迈阿密便宜3–5倍。">
-<a href="moxige-fangwu-weihu-feiyong.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">墨西哥房屋维护费用：水电与税费2026</h3><p class="card-desc">CFE电费、水、燃气、网络、predial房产税、fideicomiso：150m²带泳池440–830美元/月——比迈阿密便宜3–5倍。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="普拉亚德尔卡门房屋翻新：费用与创意（2026）" data-desc="2026年翻新费用：厨房、卫生间、整屋每平方米。泳池、屋顶露台、户外厨房、防飓风加固。">
-<a href="playa-del-carmen-fangwu-fanxin.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门房屋翻新：费用与创意（2026）</h3><p class="card-desc">2026年翻新费用：厨房、卫生间、整屋每平方米。泳池、屋顶露台、户外厨房、防飓风加固。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="普拉亚德尔卡门建筑许可证：完整指南（2026）" data-desc="所有建筑许可：施工许可、土地用途、环评、所需文件、时限和费用。solidaridad市政流程。">
-<a href="playa-del-carmen-jianzhu-xukezheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门建筑许可证：完整指南（2026）</h3><p class="card-desc">所有建筑许可：施工许可、土地用途、环评、所需文件、时限和费用。Solidaridad市政流程。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="playacar豪华别墅建造：2026高端指南" data-desc="25,000–50,000 mxn/m²：进口装修、无边泳池、智能家居。250m²别墅：35–70万美元（不含地）。">
-<a href="playacar-haohua-bieshu-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">Playacar豪华别墅建造：2026高端指南</h3><p class="card-desc">25,000–50,000 MXN/m²：进口装修、无边泳池、智能家居。250m²别墅：35–70万美元（不含地）。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="热带智能家居：2026别墅科技指南" data-desc="80%+湿度、停电、盐雾：适应气候的智能家居。漏水传感器、ups，每月省2,000–6,000 mxn。">
-<a href="redai-zhineng-jiaju-bieshu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">热带智能家居：2026别墅科技指南</h3><p class="card-desc">80%+湿度、停电、盐雾：适应气候的智能家居。漏水传感器、UPS，每月省2,000–6,000 MXN。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="如何选择里维埃拉玛雅的建筑公司（2026）" data-desc="选择可靠承包商：本地经验、dro、自有团队、作品集、危险信号。保护您的投资。">
-<a href="ruhe-xuanze-jianzhu-gongsi.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">如何选择里维埃拉玛雅的建筑公司（2026）</h3><p class="card-desc">选择可靠承包商：本地经验、DRO、自有团队、作品集、危险信号。保护您的投资。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在图卢姆建airbnb投资房：成本与回报（2026）" data-desc="在图卢姆建什么最赚钱：户型配置、建造成本、每晚房价、入住率和真实年收入。">
-<a href="tulum-airbnb-touzi-jianfang.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">在图卢姆建Airbnb投资房：成本与回报（2026）</h3><p class="card-desc">在图卢姆建什么最赚钱：户型配置、建造成本、每晚房价、入住率和真实年收入。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="在图卢姆建房要多少钱？（2026指南）" data-desc="图卢姆建筑成本详解：每平方米价格、土地、sema许可、工期。本地建筑公司的真实数据。">
-<a href="tulum-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">在图卢姆建房要多少钱？（2026指南）</h3><p class="card-desc">图卢姆建筑成本详解：每平方米价格、土地、SEMA许可、工期。本地建筑公司的真实数据。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="图卢姆小户型住宅：100m²以下建造（2026）" data-desc="80–100m²：建造160万–250万mxn。含地和sema全包：250万起。聪明设计，airbnb净回报8–12%。">
-<a href="tulum-xiaohuxing-zhuzhai.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">图卢姆小户型住宅：100m²以下建造（2026）</h3><p class="card-desc">80–100m²：建造160万–250万MXN。含地和SEMA全包：250万起。聪明设计，Airbnb净回报8–12%。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="普拉亚德尔卡门屋顶露台：费用、创意、回报（2026）" data-desc="平屋顶变露台：基础6,500美元起，凉亭、小泳池、按摩池。airbnb每晚+40–80美元，一年内回本。">
-<a href="wuding-lutai-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门屋顶露台：费用、创意、回报（2026）</h3><p class="card-desc">平屋顶变露台：基础6,500美元起，凉亭、小泳池、按摩池。Airbnb每晚+40–80美元，一年内回本。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="里维埃拉玛雅泳池：类型、费用、维护（2026）" data-desc="混凝土泳池、无边泳池、屋顶泳池：2026年费用6,500–67,000美元，预算分配，维护。房产增值2–3万美元。">
-<a href="yongchi-leixing-chengben-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">指南</span>
-<h3 class="card-title mt-2">里维埃拉玛雅泳池：类型、费用、维护（2026）</h3><p class="card-desc">混凝土泳池、无边泳池、屋顶泳池：2026年费用6,500–67,000美元，预算分配，维护。房产增值2–3万美元。…</p></div>
-<div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-feiyong" data-title="2026年普拉亚德尔卡门建筑成本" data-desc="各标准每平方米价格、土地价格、总预算案例、省钱技巧。">
-<a href="playa-del-carmen-jianzhu-chengben-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">费用与投资</span>
-<h3 class="card-title mt-2">2026年普拉亚德尔卡门建筑成本</h3>
-<p class="card-desc">各标准每平方米价格、土地价格、总预算案例、省钱技巧。</p>
+<div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>未找到文章</h4><p>请尝试其他关键词</p></div>
+<div class="cat-section" data-cat="cat-news">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>新闻与市场</h2><span class="cat-count">6 篇</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="2026年普拉亚德尔卡门与图卢姆地价（每平米）" data-desc="2026年普拉亚德尔卡门与图卢姆地价：各区域每平米真实价格——centro、playacar、corasol、aldea zamá、la veleta。建房前购地指南。">
+<a href="playa-del-carmen-tulum-tudi-jiage-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新闻与市场</span><h3 class="card-title">2026年普拉亚德尔卡门与图卢姆地价（每平米）</h3><p class="card-desc">2026年普拉亚德尔卡门与图卢姆地价：各区域每平米真实价格——Centro、Playacar、Corasol、Aldea Zamá、La Veleta。建房前购地指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="2026年里维埃拉玛雅房地产增值：数据解析" data-desc="2026年里维埃拉玛雅房地产增值：普拉亚德尔卡门、图卢姆和坎昆的年度价值增长、驱动因素，以及为何自建能最大化回报。">
+<a href="riviera-maya-fangchan-zengzhi-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新闻与市场</span><h3 class="card-title">2026年里维埃拉玛雅房地产增值：数据解析</h3><p class="card-desc">2026年里维埃拉玛雅房地产增值：普拉亚德尔卡门、图卢姆和坎昆的年度价值增长、驱动因素，以及为何自建能最大化回报。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="图卢姆房地产市场2026：机场、玛雅列车与26个被调查项目" data-desc="2026年图卢姆房地产市场分析。机场影响、玛雅列车、需求下降40%、26个被调查项目、价格预测。面向购房者和建设者的官方数据。">
+<a href="tulum-fangdichan-shichang-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新闻与市场</span><h3 class="card-title">图卢姆房地产市场2026：机场、玛雅列车与26个被调查项目</h3><p class="card-desc">2026年图卢姆房地产市场分析。机场影响、玛雅列车、需求下降40%、26个被调查项目、价格预测。面向购房者和建设者的官方数据。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="玛雅列车与房地产：铁路如何重塑里维埃拉玛雅的建筑格局" data-desc="玛雅列车如何影响普拉亚德尔卡门、图卢姆和坎昆的房产价值、建筑需求和土地价格。进展、车站和投资机会的官方数据。">
+<a href="maya-lieche-fangdichan-yingxiang.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新闻与市场</span><h3 class="card-title">玛雅列车与房地产：铁路如何重塑里维埃拉玛雅的建筑格局</h3><p class="card-desc">玛雅列车如何影响普拉亚德尔卡门、图卢姆和坎昆的房产价值、建筑需求和土地价格。进展、车站和投资机会的官方数据。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="里维埃拉玛雅建筑市场报告 — 2026年第三季度" data-desc="普拉亚德尔卡门、图卢姆和坎昆的材料价格、劳动力成本、许可时间和建筑市场趋势。2026年第三季度。">
+<a href="jianzhu-shichang-baogao-q3-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新闻与市场</span><h3 class="card-title">里维埃拉玛雅建筑市场报告 — 2026年第三季度</h3><p class="card-desc">普拉亚德尔卡门、图卢姆和坎昆的材料价格、劳动力成本、许可时间和建筑市场趋势。2026年第三季度。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="金塔纳罗奥州531个在建项目：2026年购房者须知" data-desc="官方数据：金塔纳罗奥州531个房地产项目在建，新增27,800套住房。图卢姆以252个项目领先，普拉亚德尔卡门143个。购房者和投资者须知。">
+<a href="quintana-roo-jianzhu-fanrong-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">新闻与市场</span><h3 class="card-title">金塔纳罗奥州531个在建项目：2026年购房者须知</h3><p class="card-desc">官方数据：金塔纳罗奥州531个房地产项目在建，新增27,800套住房。图卢姆以252个项目领先，普拉亚德尔卡门143个。购房者和投资者须知。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+</div>
+<div class="cat-section" data-cat="cat-costs">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>造价与回报</h2><span class="cat-count">23 篇</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="2026年普拉亚德尔卡门建筑成本：每平方米价格" data-desc="2026年普拉亚德尔卡门每平方米建筑成本详解：经济型、中档、豪华建造价格，土地价格，许可证费用，工期。免费报价。">
+<a href="playa-del-carmen-jianzhu-chengben-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">2026年普拉亚德尔卡门建筑成本：每平方米价格</h3><p class="card-desc">2026年普拉亚德尔卡门每平方米建筑成本详解：经济型、中档、豪华建造价格，土地价格，许可证费用，工期。免费报价。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="2026年普拉亚德尔卡门生活成本：每月预算" data-desc="2026年普拉亚德尔卡门生活成本：房租、饮食、水电及单身、夫妻和家庭的真实月度预算。以及为何许多人选择自建。">
+<a href="playa-del-carmen-shenghuo-chengben-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">2026年普拉亚德尔卡门生活成本：每月预算</h3><p class="card-desc">2026年普拉亚德尔卡门生活成本：房租、饮食、水电及单身、夫妻和家庭的真实月度预算。以及为何许多人选择自建。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="airbnb投资回报计算器：图卢姆和普拉亚 2026" data-desc="2026年真实airbnb收益数据：每晚房价、入住率、图卢姆别墅完整roi计算。自建而非购买，回报率从7–9%提升至12–18%。">
+<a href="airbnb-roi-jisuanqi-tulum-playa.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">Airbnb投资回报计算器：图卢姆和普拉亚 2026</h3><p class="card-desc">2026年真实Airbnb收益数据：每晚房价、入住率、图卢姆别墅完整ROI计算。自建而非购买，回报率从7–9%提升至12–18%。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在aldea zamá建一栋房子要多少钱 2026" data-desc="2026年在aldea zamá建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.12m–$3.84m 比索。">
+<a href="aldea-zama-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在Aldea Zamá建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在Aldea Zamá建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.12M–$3.84M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在corasol建一栋房子要多少钱 2026" data-desc="2026年在corasol建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.38m–$4.16m 比索。">
+<a href="corasol-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在Corasol建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在Corasol建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.38M–$4.16M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在playacar建一栋房子要多少钱 2026" data-desc="2026年在playacar建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.25m–$4m 比索。">
+<a href="playacar-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在Playacar建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在Playacar建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.25M–$4M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在图卢姆建airbnb投资房：成本与回报（2026）" data-desc="在图卢姆建什么最赚钱：户型配置、建造成本、每晚房价、入住率和真实年收入。">
+<a href="tulum-airbnb-touzi-jianfang.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在图卢姆建Airbnb投资房：成本与回报（2026）</h3><p class="card-desc">在图卢姆建什么最赚钱：户型配置、建造成本、每晚房价、入住率和真实年收入。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在图卢姆建一栋房子要多少钱 2026" data-desc="2026年在图卢姆建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.73m–$3.36m 比索。">
+<a href="tulum-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在图卢姆建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在图卢姆建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.73M–$3.36M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在图卢姆建一栋豪华别墅要多少钱 2026" data-desc="2026年在图卢姆建一栋豪华别墅要多少钱？高端别墅的真实预算、装修、配套与投资回报。">
+<a href="tulum-haohua-bieshu-jianzhu-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在图卢姆建一栋豪华别墅要多少钱 2026</h3><p class="card-desc">2026年在图卢姆建一栋豪华别墅要多少钱？高端别墅的真实预算、装修、配套与投资回报。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在坎昆建一栋房子要多少钱 2026" data-desc="2026年在坎昆建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.50m–$3.07m 比索。">
+<a href="cancun-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在坎昆建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在坎昆建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.50M–$3.07M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在墨西哥建房期间的生活费用 2026" data-desc="建筑期间外籍人士月度费用：租金、餐饮、交通、签证、网络。">
+<a href="jianzhu-qijian-shenghuo-feiyong-moxige.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在墨西哥建房期间的生活费用 2026</h3><p class="card-desc">建筑期间外籍人士月度费用：租金、餐饮、交通、签证、网络。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="在普拉亚德尔卡曼建一栋房子要多少钱 2026" data-desc="2026年在普拉亚德尔卡曼建房要多少钱？150平米住宅的完整分阶段预算、工期与包含内容。">
+<a href="playa-del-carmen-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在普拉亚德尔卡曼建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在普拉亚德尔卡曼建房要多少钱？150平米住宅的完整分阶段预算、工期与包含内容。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="在玛雅科巴建一栋房子要多少钱 2026" data-desc="2026年在玛雅科巴建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.69m–$4.54m 比索。">
+<a href="mayakoba-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在玛雅科巴建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在玛雅科巴建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $3.69M–$4.54M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="在莫雷洛斯港建一栋房子要多少钱 2026" data-desc="2026年在莫雷洛斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.60m–$3.20m 比索。">
+<a href="puerto-morelos-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在莫雷洛斯港建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在莫雷洛斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.60M–$3.20M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="在阿库马尔建一栋房子要多少钱 2026" data-desc="2026年在阿库马尔建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.91m–$3.58m 比索。">
+<a href="akumal-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在阿库马尔建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在阿库马尔建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.91M–$3.58M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="在阿文图拉斯港建一栋房子要多少钱 2026" data-desc="2026年在阿文图拉斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.81m–$3.46m 比索。">
+<a href="puerto-aventuras-jianfang-chengben.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">在阿文图拉斯港建一栋房子要多少钱 2026</h3><p class="card-desc">2026年在阿文图拉斯港建房要多少钱？按面积的真实交钥匙预算、本地因素与工期。通常 $2.81M–$3.46M 比索。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="墨西哥建筑税收优惠 2026" data-desc="isr抵扣、折旧、太阳能激励、immex、自由贸易区。房产投资者税务策略。">
+<a href="jianzhu-shuishou-youhui-moxige.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">墨西哥建筑税收优惠 2026</h3><p class="card-desc">ISR抵扣、折旧、太阳能激励、IMMEX、自由贸易区。房产投资者税务策略。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="墨西哥房屋维护费用：水电与税费2026" data-desc="cfe电费、水、燃气、网络、predial房产税、fideicomiso：150m²带泳池440–830美元/月——比迈阿密便宜3–5倍。">
+<a href="moxige-fangwu-weihu-feiyong.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">墨西哥房屋维护费用：水电与税费2026</h3><p class="card-desc">CFE电费、水、燃气、网络、predial房产税、fideicomiso：150m²带泳池440–830美元/月——比迈阿密便宜3–5倍。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="普拉亚德尔卡门厨房改造费用（2026）" data-desc="普拉亚德尔卡门厨房改造：$4,000-$35,000美元。经济、中档、高端价格指南。">
+<a href="playa-del-carmen-chufang-zhuangxiu-feiyong.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">普拉亚德尔卡门厨房改造费用（2026）</h3><p class="card-desc">普拉亚德尔卡门厨房改造：$4,000-$35,000美元。经济、中档、高端价格指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="普拉亚德尔卡门回报最高的翻新项目（2026）" data-desc="哪种翻新最赚：泳池（100–150%回报）、屋顶露台、厨房、卫生间。增值和airbnb收入表。">
+<a href="fanxin-touzi-huibao-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">普拉亚德尔卡门回报最高的翻新项目（2026）</h3><p class="card-desc">哪种翻新最赚：泳池（100–150%回报）、屋顶露台、厨房、卫生间。增值和Airbnb收入表。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="普拉亚德尔卡门浴室翻新费用（2026）" data-desc="普拉亚德尔卡门浴室翻新：$2,500-$22,000美元。经济到高端价格指南。">
+<a href="playa-del-carmen-yushi-zhuangxiu-feiyong.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">普拉亚德尔卡门浴室翻新费用（2026）</h3><p class="card-desc">普拉亚德尔卡门浴室翻新：$2,500-$22,000美元。经济到高端价格指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="里维埃拉玛雅每平方米建筑造价 2026" data-desc="2026年里维埃拉玛雅每平方米建造要多少钱？按装修档次列出普拉亚德尔卡曼、图卢姆和坎昆的真实价格区间。">
+<a href="mei-pingfangmi-jianzhu-chengben-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">里维埃拉玛雅每平方米建筑造价 2026</h3><p class="card-desc">2026年里维埃拉玛雅每平方米建造要多少钱？按装修档次列出普拉亚德尔卡曼、图卢姆和坎昆的真实价格区间。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="里维埃拉玛雅泳池：类型、费用、维护（2026）" data-desc="混凝土泳池、无边泳池、屋顶泳池：2026年费用6,500–67,000美元，预算分配，维护。房产增值2–3万美元。">
+<a href="yongchi-leixing-chengben-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">造价与回报</span><h3 class="card-title">里维埃拉玛雅泳池：类型、费用、维护（2026）</h3><p class="card-desc">混凝土泳池、无边泳池、屋顶泳池：2026年费用6,500–67,000美元，预算分配，维护。房产增值2–3万美元。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">显示全部 (23) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-permits">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(253,126,20,.08);color:#fd7e14"><i class="bi bi-file-earmark-text"></i></div><h2>许可与流程</h2><span class="cat-count">13 篇</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="2026年图卢姆建筑许可证：分步完整指南" data-desc="2026年图卢姆建筑许可证：sema环境许可、市政许可证、dro、清林、费用与工期。每位建房者都需了解。">
+<a href="tulum-jianzhu-xukezheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">2026年图卢姆建筑许可证：分步完整指南</h3><p class="card-desc">2026年图卢姆建筑许可证：SEMA环境许可、市政许可证、DRO、清林、费用与工期。每位建房者都需了解。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="2026年坎昆建筑许可证：分步指南" data-desc="2026年坎昆建筑许可证：建筑许可、土地用途、民防、cfe、酒店区（fonatur）规则、住宅与商业的费用与工期。">
+<a href="cancun-jianzhu-xukezheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">2026年坎昆建筑许可证：分步指南</h3><p class="card-desc">2026年坎昆建筑许可证：建筑许可、土地用途、民防、CFE、酒店区（FONATUR）规则、住宅与商业的费用与工期。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="2026年金塔纳罗奥州新环境建筑法规：建设者必知事项" data-desc="2026年金塔纳罗奥州新环境建筑法规。sema许可证、房地产法改革、各市镇建筑规范。普拉亚德尔卡门、图卢姆、坎昆的官方要求。">
+<a href="quintana-roo-huanjing-jianzhu-fagui-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">2026年金塔纳罗奥州新环境建筑法规：建设者必知事项</h3><p class="card-desc">2026年金塔纳罗奥州新环境建筑法规。SEMA许可证、房地产法改革、各市镇建筑规范。普拉亚德尔卡门、图卢姆、坎昆的官方要求。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="在墨西哥雇用承包商的9个危险信号" data-desc="如何识别墨西哥不可靠的建筑承包商：9个危险信号、审查清单、正规承包商应提供的服务。18年经验总结。">
+<a href="guyong-chengbaoshang-weixian-xinhao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">在墨西哥雇用承包商的9个危险信号</h3><p class="card-desc">如何识别墨西哥不可靠的建筑承包商：9个危险信号、审查清单、正规承包商应提供的服务。18年经验总结。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="墨西哥2026年新反洗钱法：房产买家须知" data-desc="墨西哥2026年反洗钱改革影响所有房地产交易。新的报告门槛、更严格的身份要求、信托变更。外国买家须知。">
+<a href="moxige-fan-xiqian-fangdichan-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">墨西哥2026年新反洗钱法：房产买家须知</h3><p class="card-desc">墨西哥2026年反洗钱改革影响所有房地产交易。新的报告门槛、更严格的身份要求、信托变更。外国买家须知。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="墨西哥远程施工管理：从海外建造您的家（2026）" data-desc="从美国、加拿大或欧洲建造您的墨西哥房屋。每日照片报告、每周视频通话。80%的客户远程建造。">
+<a href="moxige-yuancheng-jianzhu-guanli.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">墨西哥远程施工管理：从海外建造您的家（2026）</h3><p class="card-desc">从美国、加拿大或欧洲建造您的墨西哥房屋。每日照片报告、每周视频通话。80%的客户远程建造。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="如何选择里维埃拉玛雅的建筑公司（2026）" data-desc="选择可靠承包商：本地经验、dro、自有团队、作品集、危险信号。保护您的投资。">
+<a href="ruhe-xuanze-jianzhu-gongsi.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">如何选择里维埃拉玛雅的建筑公司（2026）</h3><p class="card-desc">选择可靠承包商：本地经验、DRO、自有团队、作品集、危险信号。保护您的投资。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="普拉亚德尔卡门pdu 2026：将改变您可建内容的新分区规则" data-desc="普拉亚德尔卡门新城市发展计划（pdu 2026-2050）改变了分区、高度限制、容积率和环保要求。建设者和投资者须知的官方更新。">
+<a href="playa-del-carmen-pdu-guihua-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">普拉亚德尔卡门PDU 2026：将改变您可建内容的新分区规则</h3><p class="card-desc">普拉亚德尔卡门新城市发展计划（PDU 2026-2050）改变了分区、高度限制、容积率和环保要求。建设者和投资者须知的官方更新。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="普拉亚德尔卡门建筑许可证：完整指南（2026）" data-desc="所有建筑许可：施工许可、土地用途、环评、所需文件、时限和费用。solidaridad市政流程。">
+<a href="playa-del-carmen-jianzhu-xukezheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">普拉亚德尔卡门建筑许可证：完整指南（2026）</h3><p class="card-desc">所有建筑许可：施工许可、土地用途、环评、所需文件、时限和费用。Solidaridad市政流程。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="里维埃拉玛雅建筑保险与保修 2026" data-desc="建筑工程保险、结构保修、履约保证和买方保护。普拉亚德尔卡门和图卢姆指南。">
+<a href="baoxian-danbao-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">里维埃拉玛雅建筑保险与保修 2026</h3><p class="card-desc">建筑工程保险、结构保修、履约保证和买方保护。普拉亚德尔卡门和图卢姆指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="里维埃拉玛雅建筑工期时间表 2026" data-desc="逐月施工时间表：许可证、基础、结构、装修。建造住宅/别墅/酒店需要多长时间。">
+<a href="jianzhu-shijianbiao-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">里维埃拉玛雅建筑工期时间表 2026</h3><p class="card-desc">逐月施工时间表：许可证、基础、结构、装修。建造住宅/别墅/酒店需要多长时间。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="里维埃拉玛雅建筑时间表：逐周指南（2026）" data-desc="在普拉亚德尔卡门或图卢姆建房需要多长时间？10-16个月。逐周时间表。">
+<a href="riviera-maya-jianzhu-shijian.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">里维埃拉玛雅建筑时间表：逐周指南（2026）</h3><p class="card-desc">在普拉亚德尔卡门或图卢姆建房需要多长时间？10-16个月。逐周时间表。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-permits" data-title="里维埃拉玛雅：自建vs购买，哪个更划算？2026对比" data-desc="自建比购买同等质量的现房节省25–40%。完整成本对比、隐藏费用、图卢姆真实案例。2026年数据。">
+<a href="zijian-vs-goumai-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">许可与流程</span><h3 class="card-title">里维埃拉玛雅：自建vs购买，哪个更划算？2026对比</h3><p class="card-desc">自建比购买同等质量的现房节省25–40%。完整成本对比、隐藏费用、图卢姆真实案例。2026年数据。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">显示全部 (13) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-foreigners">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>外国买家</h2><span class="cat-count">5 篇</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="fideicomiso银行信托：外国人在墨西哥购房指南 2026" data-desc="什么是fideicomiso、费用、流程、银行选择。外国人在里维埃拉玛雅购买房产的完整信托指南。">
+<a href="xintuoqi-waiguoren-moxige-fangchan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家</span><h3 class="card-title">Fideicomiso银行信托：外国人在墨西哥购房指南 2026</h3><p class="card-desc">什么是Fideicomiso、费用、流程、银行选择。外国人在里维埃拉玛雅购买房产的完整信托指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="在里维埃拉玛雅建养老房：完整计划（2026）" data-desc="墨西哥养老：单层适老住宅$120,000–$200,000美元，每月生活费$1,500–2,500，医疗比美国便宜50–70%。">
+<a href="moxige-yanglao-fangwu-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家</span><h3 class="card-title">在里维埃拉玛雅建养老房：完整计划（2026）</h3><p class="card-desc">墨西哥养老：单层适老住宅$120,000–$200,000美元，每月生活费$1,500–2,500，医疗比美国便宜50–70%。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="外国人在墨西哥建房完整指南 2026" data-desc="法律要求、银行信托、逐步流程。外国人在普拉亚德尔卡门和里维埃拉玛雅建房须知。">
+<a href="waiguoren-zai-moxige-jianzhu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家</span><h3 class="card-title">外国人在墨西哥建房完整指南 2026</h3><p class="card-desc">法律要求、银行信托、逐步流程。外国人在普拉亚德尔卡门和里维埃拉玛雅建房须知。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="如何在里维埃拉玛雅购买土地 2026" data-desc="土地价格、公共用地vs私有地、尽职调查、信托、最佳购买区域。">
+<a href="goumai-tudi-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家</span><h3 class="card-title">如何在里维埃拉玛雅购买土地 2026</h3><p class="card-desc">土地价格、公共用地vs私有地、尽职调查、信托、最佳购买区域。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="移居普拉亚德尔卡门：2026完整指南" data-desc="移居指南：签证、生活成本（每月$850–$3,300）、社区、学校、医疗、网络——以及为什么住满两年后建房胜过租房。">
+<a href="banjia-dao-playa-del-carmen-zhinan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家</span><h3 class="card-title">移居普拉亚德尔卡门：2026完整指南</h3><p class="card-desc">移居指南：签证、生活成本（每月$850–$3,300）、社区、学校、医疗、网络——以及为什么住满两年后建房胜过租房。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+</div>
+<div class="cat-section" data-cat="cat-build">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(111,66,193,.08);color:#6f42c1"><i class="bi bi-tools"></i></div><h2>施工与技术</h2><span class="cat-count">30 篇</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="chukum灰泥完整指南（费用与保养，2026）" data-desc="chukum——玛雅防水灰泥：是什么、2026真实每平方米费用、用在哪、颜色、封闭与保养。图卢姆建筑的标志饰面。">
+<a href="chukum-yiliao-zhinan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">Chukum灰泥完整指南（费用与保养，2026）</h3><p class="card-desc">Chukum——玛雅防水灰泥：是什么、2026真实每平方米费用、用在哪、颜色、封闭与保养。图卢姆建筑的标志饰面。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="playacar豪华别墅建造：2026高端指南" data-desc="25,000–50,000 mxn/m²：进口装修、无边泳池、智能家居。250m²别墅：35–70万美元（不含地）。">
+<a href="playacar-haohua-bieshu-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">Playacar豪华别墅建造：2026高端指南</h3><p class="card-desc">25,000–50,000 MXN/m²：进口装修、无边泳池、智能家居。250m²别墅：35–70万美元（不含地）。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="图卢姆可持续建设：生态建筑指南（2026）" data-desc="图卢姆可持续建设：环保法规、生态材料、太阳能。绿色建筑可提高租金20-40%。">
+<a href="tulum-kechixu-jianzhu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">图卢姆可持续建设：生态建筑指南（2026）</h3><p class="card-desc">图卢姆可持续建设：环保法规、生态材料、太阳能。绿色建筑可提高租金20-40%。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="图卢姆小户型住宅：100m²以下建造（2026）" data-desc="80–100m²：建造160万–250万mxn。含地和sema全包：250万起。聪明设计，airbnb净回报8–12%。">
+<a href="tulum-xiaohuxing-zhuzhai.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">图卢姆小户型住宅：100m²以下建造（2026）</h3><p class="card-desc">80–100m²：建造160万–250万MXN。含地和SEMA全包：250万起。聪明设计，Airbnb净回报8–12%。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="在图卢姆建精品酒店：成本、许可、回报（2026）" data-desc="精品酒店建造：每间客房$80,000–$150,000美元，工期14–20个月，sema和旅游许可，入住率经济学与12–18%回报目标。">
+<a href="tulum-jingpin-jiudian-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">在图卢姆建精品酒店：成本、许可、回报（2026）</h3><p class="card-desc">精品酒店建造：每间客房$80,000–$150,000美元，工期14–20个月，SEMA和旅游许可，入住率经济学与12–18%回报目标。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="在天然井（cenote）旁建房：规则、风险与机遇" data-desc="地块上有天然井：法律地位、退距、地球物理勘测、喀斯特地基风险、sema许可——以及天然井如何让地价增值30–50%。">
+<a href="senote-pangbian-jianzhu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">在天然井（Cenote）旁建房：规则、风险与机遇</h3><p class="card-desc">地块上有天然井：法律地位、退距、地球物理勘测、喀斯特地基风险、SEMA许可——以及天然井如何让地价增值30–50%。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="坎昆及里维埃拉玛雅商业建筑（2026）| recrea" data-desc="办公、商铺、餐厅、酒店：每平方米价格、许可（sema、cofepris、民防）、工期。外国人sa de cv架构。">
+<a href="kancun-shangye-jianzhu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">坎昆及里维埃拉玛雅商业建筑（2026）| Recrea</h3><p class="card-desc">办公、商铺、餐厅、酒店：每平方米价格、许可（SEMA、COFEPRIS、民防）、工期。外国人SA de CV架构。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="墨西哥房屋飓风季准备清单（2026）| recrea" data-desc="飓风季：6月1日–11月30日。完整清单：结构检查、电气、文件、保险、物资。">
+<a href="jufeng-jijie-zhunbei-qingdan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">墨西哥房屋飓风季准备清单（2026）| Recrea</h3><p class="card-desc">飓风季：6月1日–11月30日。完整清单：结构检查、电气、文件、保险、物资。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="墨西哥环保建筑材料 2026" data-desc="里维埃拉玛雅可持续建材：竹子、再生混凝土、夯土、绿色屋顶、本地石材。">
+<a href="huanbao-jiancai-moxige.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">墨西哥环保建筑材料 2026</h3><p class="card-desc">里维埃拉玛雅可持续建材：竹子、再生混凝土、夯土、绿色屋顶、本地石材。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="建造casita客房出租创收（2026）" data-desc="在地块上加建可出租casita：费用$30,000–$70,000美元，airbnb月入$600–1,800。许可、区划与设计。把闲置土地变现金流。">
+<a href="casita-keyi-chuzu-shouru.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">建造casita客房出租创收（2026）</h3><p class="card-desc">在地块上加建可出租casita：费用$30,000–$70,000美元，Airbnb月入$600–1,800。许可、区划与设计。把闲置土地变现金流。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="普拉亚德尔卡门 vs 图卢姆：2026年在哪里建造？" data-desc="普拉亚德尔卡门与图卢姆对比：土地成本、建筑法规、airbnb回报。">
+<a href="playa-del-carmen-vs-tulum-jianzhu-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">普拉亚德尔卡门 vs 图卢姆：2026年在哪里建造？</h3><p class="card-desc">普拉亚德尔卡门与图卢姆对比：土地成本、建筑法规、Airbnb回报。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="普拉亚德尔卡门和图卢姆交钥匙建设（2026）" data-desc="交钥匙建设：设计、许可、建造、装修——一家公司。每平方米$800起。免费咨询。">
+<a href="playa-del-carmen-jiaoyao-gongcheng.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">普拉亚德尔卡门和图卢姆交钥匙建设（2026）</h3><p class="card-desc">交钥匙建设：设计、许可、建造、装修——一家公司。每平方米$800起。免费咨询。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="普拉亚德尔卡门最佳建筑区域：社区指南（2026）" data-desc="普拉亚德尔卡门最佳建筑社区：土地成本、分区、投资回报率。playacar、centro、ejidal。">
+<a href="playa-del-carmen-zuijia-jianzhu-quyu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">普拉亚德尔卡门最佳建筑区域：社区指南（2026）</h3><p class="card-desc">普拉亚德尔卡门最佳建筑社区：土地成本、分区、投资回报率。Playacar、Centro、Ejidal。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="热带建筑管道和供水系统" data-desc="供水、打井、蓄水池、水泵、水处理、排水系统。">
+<a href="guandao-gongshui-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">热带建筑管道和供水系统</h3><p class="card-desc">供水、打井、蓄水池、水泵、水处理、排水系统。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅两层住宅：成本与户型" data-desc="每平方米+15–25%，但省一半土地。抗飓风结构、理想户型、电梯预留。">
+<a href="liangceng-zhuzhai-jianzao-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅两层住宅：成本与户型</h3><p class="card-desc">每平方米+15–25%，但省一半土地。抗飓风结构、理想户型、电梯预留。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅住宅与酒店海水淡化系统 2026" data-desc="里维埃拉玛雅住宅、商业和酒店物业海水淡化和水处理系统完整指南。普拉亚德尔卡门、图鲁姆、坎昆。费用、类型、安装、许可、维护。">
+<a href="haishuihuahua-xitong-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅住宅与酒店海水淡化系统 2026</h3><p class="card-desc">里维埃拉玛雅住宅、商业和酒店物业海水淡化和水处理系统完整指南。普拉亚德尔卡门、图鲁姆、坎昆。费用、类型、安装、许可、维护。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅住宅太阳能板 2026" data-desc="普拉亚德尔卡门、图卢姆和坎昆住宅太阳能板的成本、品牌、投资回报和法规。真实电费节省。">
+<a href="taiyangneng-dianchi-zhuzhai-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅住宅太阳能板 2026</h3><p class="card-desc">普拉亚德尔卡门、图卢姆和坎昆住宅太阳能板的成本、品牌、投资回报和法规。真实电费节省。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅公寓开发" data-desc="建造公寓和多户住宅。4-50个单元，预售策略，许可证，roi分析。">
+<a href="gongyukaifa-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅公寓开发</h3><p class="card-desc">建造公寓和多户住宅。4-50个单元，预售策略，许可证，ROI分析。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅化粪池与水处理 2026" data-desc="化粪池类型、污水处理设施、成本和环保法规。普拉亚德尔卡门和图卢姆建设指南。">
+<a href="huafen-chi-shuichuli-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅化粪池与水处理 2026</h3><p class="card-desc">化粪池类型、污水处理设施、成本和环保法规。普拉亚德尔卡门和图卢姆建设指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅场地准备和挡土墙" data-desc="场地清理、碎石、挡土墙、排水、填方、压实。喀斯特地形解决方案。">
+<a href="changdi-zhunbei-dangtuqiang-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅场地准备和挡土墙</h3><p class="card-desc">场地清理、碎石、挡土墙、排水、填方、压实。喀斯特地形解决方案。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅封闭社区建设" data-desc="设计和建造封闭社区和私人开发项目。基础设施、安全、配套设施。">
+<a href="fengbi-shequ-jianshe-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅封闭社区建设</h3><p class="card-desc">设计和建造封闭社区和私人开发项目。基础设施、安全、配套设施。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅屋顶与防水 2026" data-desc="屋顶类型、防水材料、费用和维护——普拉亚德尔卡门和图卢姆热带气候指南。">
+<a href="wuding-fangshui-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅屋顶与防水 2026</h3><p class="card-desc">屋顶类型、防水材料、费用和维护——普拉亚德尔卡门和图卢姆热带气候指南。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅建筑地基类型 2026" data-desc="石灰岩/喀斯特地形基础方案：筏板、条形、桩基、沉箱。土力学、地下水位、成本。">
+<a href="dijijichu-leixing-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅建筑地基类型 2026</h3><p class="card-desc">石灰岩/喀斯特地形基础方案：筏板、条形、桩基、沉箱。土力学、地下水位、成本。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅建筑混凝土类型 2026" data-desc="商品混凝土、泵送混凝土、自密实混凝土。强度等级、每立方米成本和热带气候建议。">
+<a href="hunningtu-leixing-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅建筑混凝土类型 2026</h3><p class="card-desc">商品混凝土、泵送混凝土、自密实混凝土。强度等级、每立方米成本和热带气候建议。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅海滨住宅建造：2026成本" data-desc="海滨一线：25,000–45,000 mxn/m²（+20–40%），zofemat特许权，船级材料，防侵蚀。">
+<a href="haibin-zhuzhai-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅海滨住宅建造：2026成本</h3><p class="card-desc">海滨一线：25,000–45,000 MXN/m²（+20–40%），ZOFEMAT特许权，船级材料，防侵蚀。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅离网自给住宅建造（2026）" data-desc="建造完全自给的离网住宅：太阳能+电池、雨水+水井+反渗透、生物消化器、备用发电机。图卢姆和丛林地块的真实系统配置与费用。">
+<a href="moxige-liwang-zizu-zhuzhai.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅离网自给住宅建造（2026）</h3><p class="card-desc">建造完全自给的离网住宅：太阳能+电池、雨水+水井+反渗透、生物消化器、备用发电机。图卢姆和丛林地块的真实系统配置与费用。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅空调和通风指南 2026" data-desc="迷你分体、vrf、交叉通风。普拉亚德尔卡门和图卢姆住宅的成本、品牌和btu计算。">
+<a href="kongtiao-tongfeng-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅空调和通风指南 2026</h3><p class="card-desc">迷你分体、VRF、交叉通风。普拉亚德尔卡门和图卢姆住宅的成本、品牌和BTU计算。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅蓄水池与供水系统 2026" data-desc="蓄水池类型、容量、费用和泵送系统。玩家卡门、图卢姆和坎昆住宅和建筑。">
+<a href="xushui-chi-gongshui-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅蓄水池与供水系统 2026</h3><p class="card-desc">蓄水池类型、容量、费用和泵送系统。玩家卡门、图卢姆和坎昆住宅和建筑。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅防飓风建筑" data-desc="抗5级飓风建造：钢筋混凝土、抗冲击门窗、通长钢筋。仅多花5–10%。">
+<a href="fangjufeng-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅防飓风建筑</h3><p class="card-desc">抗5级飓风建造：钢筋混凝土、抗冲击门窗、通长钢筋。仅多花5–10%。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="里维埃拉玛雅餐厅和酒吧建设" data-desc="建造餐厅、酒吧、海滩俱乐部。厨房设计、许可证、酒类执照，起价$800/m²。">
+<a href="canting-jiudian-jianshe-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">施工与技术</span><h3 class="card-title">里维埃拉玛雅餐厅和酒吧建设</h3><p class="card-desc">建造餐厅、酒吧、海滩俱乐部。厨房设计、许可证、酒类执照，起价$800/m²。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">显示全部 (30) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-home">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>设计与生活</h2><span class="cat-count">20 篇</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="palapa棕榈亭建造指南：费用、维护、许可（2026）" data-desc="完整palapa指南：2026年各尺寸真实费用、huano棕榈vs zacate草、硬木结构、5–8年维护周期、许可与防火。">
+<a href="palapa-maocao-ting-jianzao.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">Palapa棕榈亭建造指南：费用、维护、许可（2026）</h3><p class="card-desc">完整Palapa指南：2026年各尺寸真实费用、huano棕榈vs zacate草、硬木结构、5–8年维护周期、许可与防火。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="为墨西哥建房进口家具与材料（2026）" data-desc="该进口还是本地买？关税、16% iva、运费、menaje de casa免税，以及为里维埃拉玛雅住宅哪些值得进口、哪些本地采购。">
+<a href="jinkou-jiaju-cailiao-moxige.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">为墨西哥建房进口家具与材料（2026）</h3><p class="card-desc">该进口还是本地买？关税、16% IVA、运费、menaje de casa免税，以及为里维埃拉玛雅住宅哪些值得进口、哪些本地采购。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="墨西哥住宅无障碍通用设计" data-desc="轮椅无障碍住宅、适老化设计、坡道、宽门、无障碍淋浴、电梯。">
+<a href="wuzhangai-tongyong-sheji-zhuzhai-moxige.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">墨西哥住宅无障碍通用设计</h3><p class="card-desc">轮椅无障碍住宅、适老化设计、坡道、宽门、无障碍淋浴、电梯。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="普拉亚德尔卡门定制住宅设计（2026）| recrea" data-desc="建筑设计30,000–80,000 mxn，热带风格，10–16周流程，3d渲染远程决策。">
+<a href="dingzhi-zhuzhai-sheji-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">普拉亚德尔卡门定制住宅设计（2026）| Recrea</h3><p class="card-desc">建筑设计30,000–80,000 MXN，热带风格，10–16周流程，3D渲染远程决策。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="普拉亚德尔卡门屋顶露台：费用、创意、回报（2026）" data-desc="平屋顶变露台：基础6,500美元起，凉亭、小泳池、按摩池。airbnb每晚+40–80美元，一年内回本。">
+<a href="wuding-lutai-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">普拉亚德尔卡门屋顶露台：费用、创意、回报（2026）</h3><p class="card-desc">平屋顶变露台：基础6,500美元起，凉亭、小泳池、按摩池。Airbnb每晚+40–80美元，一年内回本。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="普拉亚德尔卡门房屋翻新：费用与创意（2026）" data-desc="2026年翻新费用：厨房、卫生间、整屋每平方米。泳池、屋顶露台、户外厨房、防飓风加固。">
+<a href="playa-del-carmen-fangwu-fanxin.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">普拉亚德尔卡门房屋翻新：费用与创意（2026）</h3><p class="card-desc">2026年翻新费用：厨房、卫生间、整屋每平方米。泳池、屋顶露台、户外厨房、防飓风加固。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="热带智能家居：2026别墅科技指南" data-desc="80%+湿度、停电、盐雾：适应气候的智能家居。漏水传感器、ups，每月省2,000–6,000 mxn。">
+<a href="redai-zhineng-jiaju-bieshu.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">热带智能家居：2026别墅科技指南</h3><p class="card-desc">80%+湿度、停电、盐雾：适应气候的智能家居。漏水传感器、UPS，每月省2,000–6,000 MXN。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="热带气候地面材料指南：里维埃拉玛雅 2026" data-desc="热带住宅最佳地板选择。瓷砖、天然石材、chukum、微水泥。普拉亚德尔卡门和图卢姆的价格和建议。">
+<a href="redai-dimiancailiao-zhinan.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">热带气候地面材料指南：里维埃拉玛雅 2026</h3><p class="card-desc">热带住宅最佳地板选择。瓷砖、天然石材、chukum、微水泥。普拉亚德尔卡门和图卢姆的价格和建议。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="热带气候门窗选择：里维埃拉玛雅 2026" data-desc="抗飓风门窗、pvc、铝合金、木材。普拉亚德尔卡门和图卢姆的费用、品牌和规格。">
+<a href="menchuang-xuanze-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">热带气候门窗选择：里维埃拉玛雅 2026</h3><p class="card-desc">抗飓风门窗、PVC、铝合金、木材。普拉亚德尔卡门和图卢姆的费用、品牌和规格。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="里维埃拉玛雅住宅安全系统 2026" data-desc="摄像头、智能锁、飓风百叶窗、报警系统。普拉亚德尔卡门和图卢姆的安全系统成本。">
+<a href="zhuzhai-anquan-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅住宅安全系统 2026</h3><p class="card-desc">摄像头、智能锁、飓风百叶窗、报警系统。普拉亚德尔卡门和图卢姆的安全系统成本。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="里维埃拉玛雅住宅照明设计 2026" data-desc="led、户外、景观和智能照明。普拉亚德尔卡门和图卢姆的费用、品牌和节能方案。">
+<a href="zhaoming-sheji-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅住宅照明设计 2026</h3><p class="card-desc">LED、户外、景观和智能照明。普拉亚德尔卡门和图卢姆的费用、品牌和节能方案。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="里维埃拉玛雅住宅电梯与无障碍设施 2026" data-desc="住宅电梯、坡道、无障碍设计。玩家卡门住宅和建筑的费用、类型和法规。">
+<a href="dianti-wuzhangai-zhuzhai-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅住宅电梯与无障碍设施 2026</h3><p class="card-desc">住宅电梯、坡道、无障碍设计。玩家卡门住宅和建筑的费用、类型和法规。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅出租房产家具和ff&amp;e" data-desc="airbnb/酒店配套方案：家具、电器、床品、装饰。热带级防潮。起价$5,000/套。">
+<a href="jiaju-ffe-chuzu-fangchan-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅出租房产家具和FF&amp;E</h3><p class="card-desc">Airbnb/酒店配套方案：家具、电器、床品、装饰。热带级防潮。起价$5,000/套。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅户外厨房和帕拉帕 2026" data-desc="普拉亚德尔卡门和图卢姆户外厨房、帕拉帕和娱乐区的设计、成本和材料。">
+<a href="huwai-chufang-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅户外厨房和帕拉帕 2026</h3><p class="card-desc">普拉亚德尔卡门和图卢姆户外厨房、帕拉帕和娱乐区的设计、成本和材料。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅智能家居自动化 2026" data-desc="智能家居系统、灯光控制、智能安防、自动化空调。玩家卡门和图卢姆住宅的费用和品牌。">
+<a href="zhineng-jiaju-zidonghua-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅智能家居自动化 2026</h3><p class="card-desc">智能家居系统、灯光控制、智能安防、自动化空调。玩家卡门和图卢姆住宅的费用和品牌。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅泳池建造完整指南 2026" data-desc="里维埃拉玛雅泳池建造完整指南。类型、成本、chukum饰面、许可证、施工流程。普拉亚德尔卡门、图卢姆、坎昆。">
+<a href="youyongchi-jianzhu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅泳池建造完整指南 2026</h3><p class="card-desc">里维埃拉玛雅泳池建造完整指南。类型、成本、chukum饰面、许可证、施工流程。普拉亚德尔卡门、图卢姆、坎昆。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅热带住宅室内设计" data-desc="热带室内设计风格、材料、家具、色彩方案。">
+<a href="redai-shineisheji-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅热带住宅室内设计</h3><p class="card-desc">热带室内设计风格、材料、家具、色彩方案。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅热带园林设计 2026" data-desc="本地植物、灌溉、热带花园成本。普拉亚德尔卡门和图卢姆的户外设计。">
+<a href="redai-yuanlin-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅热带园林设计 2026</h3><p class="card-desc">本地植物、灌溉、热带花园成本。普拉亚德尔卡门和图卢姆的户外设计。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅物业管理 2026" data-desc="物业管理服务、租金收入优化、airbnb管理、维护成本。">
+<a href="wuye-guanli-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅物业管理 2026</h3><p class="card-desc">物业管理服务、租金收入优化、Airbnb管理、维护成本。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="里维埃拉玛雅车库与停车场 2026" data-desc="设计、每平米费用、材料和法规。玩家卡门住宅车库和商业停车场。">
+<a href="chewei-tingche-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">设计与生活</span><h3 class="card-title">里维埃拉玛雅车库与停车场 2026</h3><p class="card-desc">设计、每平米费用、材料和法规。玩家卡门住宅车库和商业停车场。</p></div><div class="card-footer-custom"><span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">显示全部 (20) <i class="bi bi-chevron-down"></i></button>
 </div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="雇用承包商的9个危险信号" data-desc="预付款陷阱、无证经营、签约前审查清单。">
-<a href="guyong-chengbaoshang-weixian-xinhao.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">雇用承包商的9个危险信号</h3>
-<p class="card-desc">预付款陷阱、无证经营、签约前审查清单。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-feiyong" data-title="airbnb投资回报计算器：图卢姆和普拉亚" data-desc="每晚房价、入住率、完整roi案例：净回报率9.7%。">
-<a href="airbnb-roi-jisuanqi-tulum-playa.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">费用与投资</span>
-<h3 class="card-title mt-2">Airbnb投资回报计算器：图卢姆和普拉亚</h3>
-<p class="card-desc">每晚房价、入住率、完整ROI案例：净回报率9.7%。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-feiyong" data-title="自建vs购买：哪个更划算？" data-desc="自建节省25–40%。完整成本对比及隐藏费用。">
-<a href="zijian-vs-goumai-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">费用与投资</span>
-<h3 class="card-title mt-2">自建vs购买：哪个更划算？</h3>
-<p class="card-desc">自建节省25–40%。完整成本对比及隐藏费用。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="建筑市场报告 — 2026年第三季度" data-desc="材料价格、劳动力成本、许可审批。成本同比+6–8%。水泥受玛雅列车需求压力。">
-<a href="jianzhu-shichang-baogao-q3-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">建筑市场报告 — 2026年第三季度</h3>
-<p class="card-desc">材料价格、劳动力成本、许可审批。成本同比+6–8%。水泥受玛雅列车需求压力。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="金塔纳罗奥州531个在建项目：购房者须知" data-desc="官方数据：27,800套新住房在建。图卢姆以252个项目领先，普拉亚德尔卡门143个。联邦预算与人口增长。">
-<a href="quintana-roo-jianzhu-fanrong-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">金塔纳罗奥州531个在建项目：购房者须知</h3>
-<p class="card-desc">官方数据：27,800套新住房在建。图卢姆以252个项目领先，普拉亚德尔卡门143个。联邦预算与人口增长。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="玛雅列车与房地产：铁路如何重塑里维埃拉玛雅" data-desc="车站位置、土地征收、坎昆金融区。建筑成本和房产价格如何变化。">
-<a href="maya-lieche-fangdichan-yingxiang.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">玛雅列车与房地产：铁路如何重塑里维埃拉玛雅</h3>
-<p class="card-desc">车站位置、土地征收、坎昆金融区。建筑成本和房产价格如何变化。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="2026年金塔纳罗奥州新环境建筑法规" data-desc="sema许可证、房地产法改革、莫雷洛斯港先例、市镇建筑规范。">
-<a href="quintana-roo-huanjing-jianzhu-fagui-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">2026年金塔纳罗奥州新环境建筑法规</h3>
-<p class="card-desc">SEMA许可证、房地产法改革、莫雷洛斯港先例、市镇建筑规范。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="普拉亚德尔卡门pdu 2026：新分区规则" data-desc="城市发展计划2026-2050：高度限制、容积率、环保要求、绕城公路。">
-<a href="playa-del-carmen-pdu-guihua-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门PDU 2026：新分区规则</h3>
-<p class="card-desc">城市发展计划2026-2050：高度限制、容积率、环保要求、绕城公路。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="图卢姆房地产市场2026：机场、玛雅列车与26个被调查项目" data-desc="需求下降40%、公寓过剩、26个项目被调查。哪里仍有机会。价格预测。">
-<a href="tulum-fangdichan-shichang-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">图卢姆房地产市场2026：机场、玛雅列车与26个被调查项目</h3>
-<p class="card-desc">需求下降40%、公寓过剩、26个项目被调查。哪里仍有机会。价格预测。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-xinwen" data-title="墨西哥2026年新反洗钱法" data-desc="lfpiorpi改革：降低报告门槛、加强身份识别、对信托的影响。更多文件 — 更多保障。">
-<a href="moxige-fan-xiqian-fangdichan-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">官方新闻</span>
-<h3 class="card-title mt-2">墨西哥2026年新反洗钱法</h3>
-<p class="card-desc">LFPIORPI改革：降低报告门槛、加强身份识别、对信托的影响。更多文件 — 更多保障。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-feiyong">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>费用与装修</h2><span class="cat-count">2 篇文章</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-feiyong" data-title="厨房改造费用" data-desc="$4,000-$35,000美元。经济到高端。">
-<a href="playa-del-carmen-chufang-zhuangxiu-feiyong.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">费用与装修</span>
-<h3 class="card-title mt-2">厨房改造费用</h3>
-<p class="card-desc">$4,000-$35,000美元。经济到高端。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-feiyong" data-title="浴室翻新费用" data-desc="$2,500-$22,000美元。经济到高端。">
-<a href="playa-del-carmen-yushi-zhuangxiu-feiyong.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">费用与装修</span>
-<h3 class="card-title mt-2">浴室翻新费用</h3>
-<p class="card-desc">$2,500-$22,000美元。经济到高端。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-waiguoren">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>外国买家指南</h2><span class="cat-count">7 篇文章</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="外国人在墨西哥建房完整指南" data-desc="法律要求、银行信托、逐步流程。外国人建房须知。">
-<a href="waiguoren-zai-moxige-jianzhu.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">外国人在墨西哥建房完整指南</h3>
-<p class="card-desc">法律要求、银行信托、逐步流程。外国人建房须知。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="fideicomiso银行信托：外国人购房指南" data-desc="什么是信托、费用、流程。完整银行信托指南。">
-<a href="xintuoqi-waiguoren-moxige-fangchan.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">Fideicomiso银行信托：外国人购房指南</h3>
-<p class="card-desc">什么是信托、费用、流程。完整银行信托指南。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="远程施工管理：从国外建造" data-desc="每日报告、每周视频会议。80%客户远程建造。">
-<a href="moxige-yuancheng-jianzhu-guanli.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">远程施工管理：从国外建造</h3>
-<p class="card-desc">每日报告、每周视频会议。80%客户远程建造。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="智能家居自动化" data-desc="智能灯光、安防、气候控制。套餐从$2,500美元起。">
-<a href="zhineng-jiaju-zidonghua-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">智能家居自动化</h3>
-<p class="card-desc">智能灯光、安防、气候控制。套餐从$2,500美元起。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="住宅电梯与无障碍设施" data-desc="住宅电梯、坡道、无障碍设计。安装从$18,000美元起。">
-<a href="dianti-wuzhangai-zhuzhai-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">住宅电梯与无障碍设施</h3>
-<p class="card-desc">住宅电梯、坡道、无障碍设计。安装从$18,000美元起。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="车库与停车场" data-desc="设计、费用/m²、自动门。有顶车库从$650美元/m²起。">
-<a href="chewei-tingche-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">车库与停车场</h3>
-<p class="card-desc">设计、费用/m²、自动门。有顶车库从$650美元/m²起。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-waiguoren" data-title="蓄水池与供水系统" data-desc="类型、容量、泵送、雨水收集。从$1,500美元起。">
-<a href="xushui-chi-gongshui-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">外国买家指南</span>
-<h3 class="card-title mt-2">蓄水池与供水系统</h3>
-<p class="card-desc">类型、容量、泵送、雨水收集。从$1,500美元起。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-shiyong">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>实用建议</h2><span class="cat-count">14 篇文章</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="泳池建造完整指南 2026" data-desc="类型、成本、chukum饰面、许可证。6–12周。">
-<a href="youyongchi-jianzhu-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">泳池建造完整指南 2026</h3>
-<p class="card-desc">类型、成本、chukum饰面、许可证。6–12周。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="热带气候地面材料指南" data-desc="瓷砖、天然石材、chukum、微水泥、热带木材。">
-<a href="redai-dimiancailiao-zhinan.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">热带气候地面材料指南</h3>
-<p class="card-desc">瓷砖、天然石材、chukum、微水泥、热带木材。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="空调和通风指南" data-desc="迷你分体、vrf、风管式。成本、品牌、btu计算。">
-<a href="kongtiao-tongfeng-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">空调和通风指南</h3>
-<p class="card-desc">迷你分体、VRF、风管式。成本、品牌、BTU计算。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="住宅安全系统" data-desc="摄像头、智能锁、飓风防护、报警系统。">
-<a href="zhuzhai-anquan-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">住宅安全系统</h3>
-<p class="card-desc">摄像头、智能锁、飓风防护、报警系统。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="热带园林设计" data-desc="本地植物、灌溉、照明。花园从$1,650 usd起。">
-<a href="redai-yuanlin-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">热带园林设计</h3>
-<p class="card-desc">本地植物、灌溉、照明。花园从$1,650 USD起。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="里维埃拉玛雅户外厨房和帕拉帕" data-desc="设计、费用（$3,500–$55,000 usd）和户外厨房材料。">
-<a href="huwai-chufang-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">里维埃拉玛雅户外厨房和帕拉帕</h3>
-<p class="card-desc">设计、费用（$3,500–$55,000 USD）和户外厨房材料。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="里维埃拉玛雅住宅照明设计" data-desc="led、户外、景观和智能照明。各区域费用和推荐品牌。">
-<a href="zhaoming-sheji-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">里维埃拉玛雅住宅照明设计</h3>
-<p class="card-desc">LED、户外、景观和智能照明。各区域费用和推荐品牌。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="里维埃拉玛雅屋顶与防水" data-desc="混凝土板、绿色屋顶、帕拉帕。3–20年质保防水系统。">
-<a href="wuding-fangshui-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">里维埃拉玛雅屋顶与防水</h3>
-<p class="card-desc">混凝土板、绿色屋顶、帕拉帕。3–20年质保防水系统。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="热带气候门窗选择" data-desc="抗飓风、pvc、铝合金、硬木。夹层玻璃和miami-dade认证。">
-<a href="menchuang-xuanze-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">热带气候门窗选择</h3>
-<p class="card-desc">抗飓风、PVC、铝合金、硬木。夹层玻璃和Miami-Dade认证。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="里维埃拉玛雅住宅太阳能板" data-desc="成本（$4,500–$22,000美元）、品牌、投资回报和cfe法规。">
-<a href="taiyangneng-dianchi-zhuzhai-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">里维埃拉玛雅住宅太阳能板</h3>
-<p class="card-desc">成本（$4,500–$22,000美元）、品牌、投资回报和CFE法规。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="化粪池与水处理" data-desc="生物消化器、污水处理设施、成本和里维埃拉玛雅环保法规。">
-<a href="huafen-chi-shuichuli-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">化粪池与水处理</h3>
-<p class="card-desc">生物消化器、污水处理设施、成本和里维埃拉玛雅环保法规。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="建筑混凝土类型" data-desc="商品、泵送、自密实混凝土。强度f'c 200–400和每立方米成本。">
-<a href="hunningtu-leixing-jianzhu-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">建筑混凝土类型</h3>
-<p class="card-desc">商品、泵送、自密实混凝土。强度f'c 200–400和每立方米成本。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="建筑保险与保修" data-desc="工程一切险、结构保修、履约保证和买方保护。">
-<a href="baoxian-danbao-jianzhu-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">建筑保险与保修</h3>
-<p class="card-desc">工程一切险、结构保修、履约保证和买方保护。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-shiyong" data-title="海水淡化水处理系统住宅酒店里维埃拉玛雅" data-desc="反渗透水处理费用安装维护许可">
-<a href="haishuihuahua-xitong-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card" style="position:relative">
-
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">实用建议</span>
-<h3 class="card-title mt-2">住宅和酒店海水淡化与水处理系统</h3>
-<p class="card-desc">完整指南：反渗透、软水器、紫外线杀菌。费用从$8,000墨西哥比索起。各区域水质数据。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-zhinan">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(232,114,12,.08);color:#e8720c"><i class="bi bi-geo-alt"></i></div><h2>建筑指南</h2><span class="cat-count">21 篇文章</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="普拉亚德尔卡门最佳建筑区域" data-desc="各区域土地价格、生活方式、投资回报率。">
-<a href="playa-del-carmen-zuijia-jianzhu-quyu.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门最佳建筑区域</h3>
-<p class="card-desc">各区域土地价格、生活方式、投资回报率。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="里维埃拉玛雅建筑时间表" data-desc="8-14个月建设，2-4个月许可证。">
-<a href="riviera-maya-jianzhu-shijian.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">里维埃拉玛雅建筑时间表</h3>
-<p class="card-desc">8-14个月建设，2-4个月许可证。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="普拉亚德尔卡门交钥匙工程" data-desc="一份合同、一个团队、一个价格。">
-<a href="playa-del-carmen-jiaoyao-gongcheng.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门交钥匙工程</h3>
-<p class="card-desc">一份合同、一个团队、一个价格。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="图卢姆可持续建设" data-desc="环保法规、生态材料、太阳能。">
-<a href="tulum-kechixu-jianzhu.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">图卢姆可持续建设</h3>
-<p class="card-desc">环保法规、生态材料、太阳能。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="墨西哥远程施工管理" data-desc="每日照片报告、每周视频通话。">
-<a href="moxige-yuancheng-jianzhu-guanli.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">墨西哥远程施工管理</h3>
-<p class="card-desc">每日照片报告、每周视频通话。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="普拉亚德尔卡门 vs 图卢姆" data-desc="土地成本、法规、airbnb回报对比。">
-<a href="playa-del-carmen-vs-tulum-jianzhu-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">普拉亚德尔卡门 vs 图卢姆</h3>
-<p class="card-desc">土地成本、法规、Airbnb回报对比。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="如何购买土地 2026" data-desc="价格、公共用地vs私有地、信托、最佳区域。">
-<a href="goumai-tudi-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">如何购买土地 2026</h3>
-<p class="card-desc">价格、公共用地vs私有地、信托、最佳区域。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="物业管理" data-desc="airbnb管理、租金收入、维护。">
-<a href="wuye-guanli-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">物业管理</h3>
-<p class="card-desc">Airbnb管理、租金收入、维护。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="热带住宅室内设计" data-desc="风格、材料、防潮方案。">
-<a href="redai-shineisheji-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">热带住宅室内设计</h3>
-<p class="card-desc">风格、材料、防潮方案。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="环保建筑材料" data-desc="竹子、再生混凝土、夯土、绿色屋顶。">
-<a href="huanbao-jiancai-moxige.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">环保建筑材料</h3>
-<p class="card-desc">竹子、再生混凝土、夯土、绿色屋顶。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="地基类型" data-desc="筏板、桩基、沉箱——喀斯特地形。">
-<a href="dijijichu-leixing-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">地基类型</h3>
-<p class="card-desc">筏板、桩基、沉箱——喀斯特地形。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="封闭社区建设" data-desc="设计、基础设施、安全、配套。">
-<a href="fengbi-shequ-jianshe-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">封闭社区建设</h3>
-<p class="card-desc">设计、基础设施、安全、配套。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="公寓开发" data-desc="4-50单元，预售策略，roi分析。">
-<a href="gongyukaifa-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">公寓开发</h3>
-<p class="card-desc">4-50单元，预售策略，ROI分析。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="餐厅和酒吧建设" data-desc="厨房设计、许可证、酒类执照。">
-<a href="canting-jiudian-jianshe-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">餐厅和酒吧建设</h3>
-<p class="card-desc">厨房设计、许可证、酒类执照。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="管道和供水系统" data-desc="打井、蓄水池、水泵、水处理。">
-<a href="guandao-gongshui-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">管道和供水系统</h3>
-<p class="card-desc">打井、蓄水池、水泵、水处理。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="场地准备和挡土墙" data-desc="清理、碎石、排水、压实。">
-<a href="changdi-zhunbei-dangtuqiang-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">场地准备和挡土墙</h3>
-<p class="card-desc">清理、碎石、排水、压实。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="建房期间生活费用" data-desc="月度费用：租金、餐饮、交通。">
-<a href="jianzhu-qijian-shenghuo-feiyong-moxige.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">建房期间生活费用</h3>
-<p class="card-desc">月度费用：租金、餐饮、交通。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="建筑工期时间表" data-desc="逐月：许可证、基础、装修。">
-<a href="jianzhu-shijianbiao-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">建筑工期时间表</h3>
-<p class="card-desc">逐月：许可证、基础、装修。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="出租房产家具和ff&amp;e" data-desc="配套方案起价$5,000。">
-<a href="jiaju-ffe-chuzu-fangchan-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">出租房产家具和FF&amp;E</h3>
-<p class="card-desc">配套方案起价$5,000。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="建筑税收优惠" data-desc="isr抵扣、折旧、太阳能激励。">
-<a href="jianzhu-shuishou-youhui-moxige.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">建筑税收优惠</h3>
-<p class="card-desc">ISR抵扣、折旧、太阳能激励。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-zhinan" data-title="无障碍通用设计" data-desc="轮椅无障碍、适老化、坡道。">
-<a href="wuzhangai-tongyong-sheji-zhuzhai-moxige.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">建筑指南</span>
-<h3 class="card-title mt-2">无障碍通用设计</h3>
-<p class="card-desc">轮椅无障碍、适老化、坡道。</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">阅读指南 <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
 </div></section>
 
 <div class="lead-magnet mx-auto my-4" style="max-width:720px">
@@ -1088,50 +474,6 @@
 </form>
 </div>
 </section>
-
-<script>
-function filterCat(cat,btn){
-  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
-  btn.classList.add('active');
-  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
-  document.querySelectorAll('.cat-section').forEach(s=>{
-    if(cat==='all'||s.dataset.cat===cat){s.style.display=''}else{s.style.display='none'}
-  });
-  document.getElementById('searchInput').value='';
-  updateCount();
-}
-function searchArticles(){
-  var q=document.getElementById('searchInput').value.toLowerCase().trim();
-  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
-  document.querySelector('[data-cat="all"]').classList.add('active');
-  document.querySelectorAll('.cat-section').forEach(s=>s.style.display='');
-  var items=document.querySelectorAll('.article-item');
-  var shown=0;
-  items.forEach(item=>{
-    if(!q||item.dataset.title.includes(q)||item.dataset.desc.includes(q)){item.style.display='';shown++}else{item.style.display='none'}
-  });
-  document.querySelectorAll('.cat-section').forEach(s=>{
-    var v=s.querySelectorAll('.article-item:not([style*="display: none"])').length;
-    if(v===0&&q)s.style.display='none';
-  });
-  document.getElementById('searchCount').textContent=shown+' 篇文章';
-  var nr=document.getElementById('noResults');
-  if(shown===0&&q){nr.style.display='block'}else{nr.style.display='none'}
-}
-function updateCount(){
-  var shown=0;
-  document.querySelectorAll('.article-item').forEach(i=>{if(getComputedStyle(i).display!=='none')shown++});
-  document.getElementById('searchCount').textContent=shown+' 篇文章';
-}
-function toggleView(mode,btn){
-  var c=document.getElementById('articlesGrid');
-  document.querySelectorAll('.view-toggle button').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  if(mode==='list')c.classList.add('list-view');else c.classList.remove('list-view');
-}
-document.addEventListener('DOMContentLoaded',function(){updateCount()});
-</script>
-
 
 <section class="faq-section" style="padding:2rem 1rem"><div style="max-width:820px;margin:0 auto"><h2 class="section-title">常见问题</h2>
 <div class="faq">
@@ -1183,6 +525,54 @@ var p=document.querySelector('.pill-count');if(p)p.textContent=n;
 var sub=document.querySelector('.section-subtitle');
 if(sub&&/^\s*\d+\s+(guides|gu\u00edas|guias)/i.test(sub.textContent))sub.innerHTML=sub.innerHTML.replace(/^(\s*)\d+/,'$1'+n);
 }catch(e){}})();
+</script>
+<script id="blogIndexScript">
+function filterCat(cat,btn){
+  document.querySelectorAll('.cat-pill').forEach(function(p){p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  btn.classList.add('active');
+  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
+  document.querySelectorAll('.article-item').forEach(function(i){i.style.display=''});
+  document.querySelectorAll('.cat-section').forEach(function(s){
+    var on=(cat==='all'||s.dataset.cat===cat);
+    s.style.display=on?'':'none';
+    s.classList.toggle('expanded',on&&cat!=='all');
+  });
+  document.getElementById('searchInput').value='';
+  document.getElementById('noResults').style.display='none';
+  updateCount();
+}
+function searchArticles(){
+  var q=document.getElementById('searchInput').value.toLowerCase().trim();
+  document.querySelectorAll('.cat-pill').forEach(function(p){p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  var ap=document.querySelector('.cat-pill[data-cat="all"]');if(ap)ap.classList.add('active');
+  var shown=0;
+  document.querySelectorAll('.article-item').forEach(function(item){
+    var hit=!q||item.dataset.title.indexOf(q)>-1||item.dataset.desc.indexOf(q)>-1;
+    item.style.display=hit?'':'none';
+    if(hit)shown++;
+  });
+  document.querySelectorAll('.cat-section').forEach(function(s){
+    s.classList.toggle('expanded',!!q);
+    var v=0;s.querySelectorAll('.article-item').forEach(function(i){if(i.style.display!=='none')v++});
+    s.style.display=(q&&!v)?'none':'';
+  });
+  document.getElementById('noResults').style.display=(q&&!shown)?'block':'none';
+  setCount(shown);
+}
+function setCount(n){var e=document.getElementById('searchCount');if(e)e.textContent=n+' 篇'}
+function updateCount(){
+  var n=0;document.querySelectorAll('.cat-section').forEach(function(s){
+    if(s.style.display!=='none')n+=s.querySelectorAll('.article-item').length});
+  setCount(n);
+}
+function showAll(btn){btn.closest('.cat-section').classList.add('expanded')}
+function toggleView(mode,btn){
+  var c=document.getElementById('articlesGrid');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  c.classList.toggle('list-view',mode==='list');
+}
+document.addEventListener('DOMContentLoaded',updateCount);
 </script>
 </body>
 </html>

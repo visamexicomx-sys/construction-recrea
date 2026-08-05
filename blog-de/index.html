@@ -104,6 +104,58 @@
 }
 </style>
 
+<style id="blogIndexStyle">
+.blog-hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:52px 0 40px;position:relative;overflow:hidden}
+.blog-hero:after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.18),transparent 70%)}
+.blog-hero h1{font-size:2.1rem;font-weight:800;margin-bottom:10px}
+.blog-hero .lead{color:rgba(255,255,255,.7);font-size:1rem;max-width:640px;margin-bottom:0}
+.blog-stats{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
+.blog-stat strong{display:block;font-size:1.5rem;font-weight:800;color:#d4a843;line-height:1.1}
+.blog-stat span{font-size:.78rem;color:rgba(255,255,255,.6)}
+.search-box{position:relative;max-width:500px;margin:26px auto 0}
+.search-box input{width:100%;padding:13px 20px 13px 46px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);border-radius:50px;color:#fff;font-size:.95rem;transition:all .3s}
+.search-box input::placeholder{color:rgba(255,255,255,.4)}
+.search-box input:focus{outline:none;border-color:#d4a843;background:rgba(255,255,255,.12)}
+.search-box i{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:1.05rem}
+.search-box .search-count{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:.78rem}
+.cat-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:18px 0}
+.cat-pill{border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:7px 16px;font-size:.83rem;font-weight:600;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:6px;color:#495057;user-select:none}
+.cat-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.cat-pill.active{background:#1a1a2e;color:#fff;border-color:transparent;box-shadow:0 4px 15px rgba(0,0,0,.15)}
+.cat-pill .pill-count{background:rgba(0,0,0,.08);border-radius:50px;padding:1px 8px;font-size:.72rem;font-weight:700}
+.cat-pill.active .pill-count{background:rgba(255,255,255,.25)}
+.cat-section-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #f0f0f0}
+.cat-section-header .cat-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex:0 0 auto}
+.cat-section-header h2{font-size:1.2rem;font-weight:700;margin:0;color:#1a1a2e}
+.cat-section-header .cat-count{font-size:.8rem;color:#6c757d;margin-left:auto;white-space:nowrap}
+/* uniform cards: the anchor must stretch, or cards in a row grow unevenly */
+.article-item>a{display:block;height:100%}
+.blog-card{background:#fff;border-radius:16px;border:1px solid #e9ecef;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1);border-color:#d4a843}
+.blog-card .card-body{padding:20px 20px 14px;flex:1;display:flex;flex-direction:column}
+.blog-card .card-cat{font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:50px;letter-spacing:.4px;text-transform:uppercase;display:inline-block;align-self:flex-start}
+.blog-card .card-title{font-size:1rem;font-weight:700;line-height:1.35;margin:10px 0 7px;color:#1a1a2e;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.blog-card:hover .card-title{color:#e8720c}
+.blog-card .card-desc{font-size:.85rem;color:#6c757d;line-height:1.5;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:3.8em}
+.blog-card .card-footer-custom{padding:12px 20px;border-top:1px solid #f0f0f0;margin-top:auto}
+.blog-card .read-more{font-size:.83rem;font-weight:600;color:#e8720c;display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
+.blog-card:hover .read-more{gap:9px}
+.article-item.extra{display:none}
+.cat-section.expanded .article-item.extra{display:block}
+.show-all{display:block;margin:14px auto 0;border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:8px 22px;font-size:.85rem;font-weight:600;color:#495057;cursor:pointer;transition:all .2s}
+.show-all:hover{border-color:#d4a843;color:#1a1a2e}
+.cat-section.expanded .show-all{display:none}
+.no-results{text-align:center;padding:60px 20px;color:#6c757d}
+.no-results i{font-size:3.4rem;margin-bottom:14px;display:block;color:#dee2e6}
+.view-toggle{display:flex;gap:4px;background:#f0f0f0;border-radius:8px;padding:3px}
+.view-toggle button{border:none;background:none;padding:6px 10px;border-radius:6px;color:#6c757d;cursor:pointer;transition:all .2s}
+.view-toggle button.active{background:#fff;color:#1a1a2e;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.list-view .blog-card .card-desc,.list-view .blog-card .card-footer-custom{display:none}
+.list-view .blog-card .card-title{font-size:.93rem;min-height:0;-webkit-line-clamp:2}
+.list-view .blog-card .card-body{padding:13px 16px}
+.list-view .blog-card .card-cat{font-size:.62rem;padding:2px 8px}
+@media(max-width:768px){.blog-hero{padding:34px 0 28px}.blog-hero h1{font-size:1.6rem}.blog-stats{gap:16px}.blog-stat strong{font-size:1.25rem}.cat-pills{gap:6px;padding:12px 0}.cat-pill{padding:6px 12px;font-size:.78rem}.blog-card .card-title{font-size:.95rem}}
+</style>
 </head>
 <body class="has-top-bar">
 <div class="top-cta-bar"><span>Kostenloses Angebot — Antwort in 2 Min</span><a href="https://wa.me/529844525333?text=Hello!%20I%20want%20a%20free%20quote" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Angebot</a></div>
@@ -129,915 +181,258 @@
 <div class="container position-relative" style="z-index:1">
 <div class="row align-items-center">
 <div class="col-lg-7">
-<h1><i class="bi bi-journal-richtext me-2"></i>Bauführer</h1>
-<p class="lead">Echte Zahlen, echte Beratung aus 196+ Projekten an der Riviera Maya. Expertenleitfäden zu Kosten, Genehmigungen, ROI und Bauen in Mexiko.</p>
+<h1><i class="bi bi-journal-richtext me-2"></i>Bau-Leitfäden</h1>
+<p class="lead">Echte Zahlen aus 196+ Projekten in der Riviera Maya. Kosten, Genehmigungen, ROI und Bauen in Mexiko.</p>
 <div class="blog-stats">
-<div class="blog-stat"><strong>80</strong><span>Führer</span></div>
-<div class="blog-stat"><strong>5</strong><span>Kategorien</span></div>
+<div class="blog-stat"><strong>96</strong><span>Leitfäden</span></div>
+<div class="blog-stat"><strong>6</strong><span>Kategorien</span></div>
 <div class="blog-stat"><strong>196+</strong><span>Projekte</span></div>
 <div class="blog-stat"><strong>18+</strong><span>Jahre</span></div>
-</div>
-</div>
-<div class="col-lg-5">
-<div class="search-box">
+</div></div>
+<div class="col-lg-5"><div class="search-box">
 <i class="bi bi-search"></i>
-<input type="text" id="searchInput" placeholder="Führer suchen..." oninput="searchArticles()">
-<span class="search-count" id="searchCount">50 Artikel</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3"><div class="flex-grow-1"><div class="cat-pills" id="catPills">
-<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>Alle<span class="pill-count">80</span></button>
-<button class="cat-pill" data-cat="cat-nachrichten" data-color="#dc3545" onclick="filterCat('cat-nachrichten',this)"><i class="bi bi-newspaper me-1"></i>Offizielle Nachrichten<span class="pill-count">7</span></button>
-<button class="cat-pill" data-cat="cat-kosten" data-color="#198754" onclick="filterCat('cat-kosten',this)"><i class="bi bi-calculator me-1"></i>Kosten & Renovierung<span class="pill-count">2</span></button>
-<button class="cat-pill" data-cat="cat-auslaender" data-color="#0d6efd" onclick="filterCat('cat-auslaender',this)"><i class="bi bi-globe me-1"></i>Für Ausländer<span class="pill-count">7</span></button>
-<button class="cat-pill" data-cat="cat-praktisch" data-color="#20c997" onclick="filterCat('cat-praktisch',this)"><i class="bi bi-house-heart me-1"></i>Praktische Tipps<span class="pill-count">14</span></button>
-<button class="cat-pill" data-cat="cat-baufuehrer" data-color="#e8720c" onclick="filterCat('cat-baufuehrer',this)"><i class="bi bi-geo-alt me-1"></i>Bauführer<span class="pill-count">20</span></button>
-</div>
-</div><div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div></div></div>
+<input type="text" id="searchInput" placeholder="Leitfäden suchen…" oninput="searchArticles()">
+<span class="search-count" id="searchCount">96 Artikel</span>
+</div></div></div></div></section>
+<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3">
+<div class="flex-grow-1"><div class="cat-pills" id="catPills">
+<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>Alle<span class="pill-count">96</span></button>
+<button class="cat-pill" data-cat="cat-news" data-color="#dc3545" onclick="filterCat('cat-news',this)"><i class="bi bi-newspaper me-1"></i>Nachrichten & Markt<span class="pill-count">6</span></button>
+<button class="cat-pill" data-cat="cat-costs" data-color="#198754" onclick="filterCat('cat-costs',this)"><i class="bi bi-calculator me-1"></i>Kosten & ROI<span class="pill-count">25</span></button>
+<button class="cat-pill" data-cat="cat-permits" data-color="#fd7e14" onclick="filterCat('cat-permits',this)"><i class="bi bi-file-earmark-text me-1"></i>Genehmigungen & Ablauf<span class="pill-count">12</span></button>
+<button class="cat-pill" data-cat="cat-foreigners" data-color="#0d6efd" onclick="filterCat('cat-foreigners',this)"><i class="bi bi-globe me-1"></i>Für Ausländer<span class="pill-count">4</span></button>
+<button class="cat-pill" data-cat="cat-build" data-color="#6f42c1" onclick="filterCat('cat-build',this)"><i class="bi bi-tools me-1"></i>Bau & Technik<span class="pill-count">30</span></button>
+<button class="cat-pill" data-cat="cat-home" data-color="#20c997" onclick="filterCat('cat-home',this)"><i class="bi bi-house-heart me-1"></i>Design & Wohnen<span class="pill-count">19</span></button>
+</div></div>
+<div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div>
+</div></div>
 <section class="py-4"><div class="container" id="articlesGrid">
 <div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>Keine Artikel gefunden</h4><p>Versuchen Sie einen anderen Suchbegriff</p></div>
-<div class="cat-section" data-cat="cat-nachrichten">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>Offizielle Nachrichten</h2><span class="cat-count">7 Artikel</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in cancún 2026 | preisführer" data-desc="was kostet ein hausbau in cancún 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.50m–$3.07m mxn.">
-<a href="hausbau-kosten-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in Cancún 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in Cancún 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $2.50M–$3.07M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.81m–$3.46m mxn.">
-<a href="hausbau-kosten-puerto-aventuras.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $2.81M–$3.46M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.91m–$3.58m mxn.">
-<a href="hausbau-kosten-akumal.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $2.91M–$3.58M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.60m–$3.20m mxn.">
-<a href="hausbau-kosten-puerto-morelos.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $2.60M–$3.20M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.25m–$4m mxn.">
-<a href="hausbau-kosten-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $3.25M–$4M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.69m–$4.54m mxn.">
-<a href="hausbau-kosten-mayakoba.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $3.69M–$4.54M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.12m–$3.84m mxn.">
-<a href="hausbau-kosten-aldea-zama.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $3.12M–$3.84M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in none 2026 | preisführer" data-desc="was kostet ein hausbau in none 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.38m–$4.16m mxn.">
-<a href="hausbau-kosten-corasol.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in None 2026 | Preisführer</h3><p class="card-desc">Was kostet ein Hausbau in None 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan. Typisch $3.38M–$4.16M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="baukosten pro quadratmeter riviera maya 2026 | preisführer" data-desc="was kostet der quadratmeter bau in riviera maya 2026? reale preisspannen nach ausbaustufe für playa del carmen, tulum und cancún.">
-<a href="baukosten-pro-quadratmeter-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Baukosten pro Quadratmeter Riviera Maya 2026 | Preisführer</h3><p class="card-desc">Was kostet der Quadratmeter Bau in Riviera Maya 2026? Reale Preisspannen nach Ausbaustufe für Playa del Carmen, Tulum und Cancún.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in playa del carmen 2026 | übersicht" data-desc="was kostet der hausbau in playa del carmen 2026? vollständiges budget nach phasen für ein 150-m²-haus, zeitplan und leistungsumfang.">
-<a href="hausbau-kosten-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet ein Hausbau in Playa del Carmen 2026 | Übersicht</h3><p class="card-desc">Was kostet der Hausbau in Playa del Carmen 2026? Vollständiges Budget nach Phasen für ein 150-m²-Haus, Zeitplan und Leistungsumfang.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet eine luxusvilla in tulum 2026 | investoren-guide" data-desc="was kostet der bau einer luxusvilla in tulum 2026? reale budgets, ausstattung, annehmlichkeiten und roi für hochwertige villen.">
-<a href="luxusvilla-baukosten-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten</span>
-<h3 class="card-title mt-2">Was Kostet eine Luxusvilla in Tulum 2026 | Investoren-Guide</h3><p class="card-desc">Was kostet der Bau einer Luxusvilla in Tulum 2026? Reale Budgets, Ausstattung, Annehmlichkeiten und ROI für hochwertige Villen.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="autarkes haus bauen an der riviera maya (2026)" data-desc="bauen sie ein voll autarkes off-grid-haus: solar + batterie, regenwasser + brunnen + umkehrosmose, b">
-<a href="baugenehmigungen-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Baugenehmigungen in Tulum (2026)</h3><p class="card-desc">Baugenehmigungen in Tulum 2026: SEMA-Umweltgenehmigung, kommunale Lizenz, DRO, Rodung, Kosten und Dauer. Was jeder Bauherr wissen muss.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="baugenehmigungen-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Baugenehmigungen in Cancún (2026)</h3><p class="card-desc">Baugenehmigungen in Cancún 2026: Baulizenz, Flächennutzung, Zivilschutz, CFE, Hotelzone (FONATUR), Kosten und Dauer für Wohn- und Gewerbebau.</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="lebenshaltungskosten-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Lebenshaltungskosten in Playa del Carmen (2026)</h3><p class="card-desc">Lebenshaltungskosten in Playa del Carmen 2026: Miete, Essen, Nebenkosten und reale Budgets für Singles, Paare und Familien. Und warum viele lieber bau…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="grundstueckspreise-playa-del-carmen-tulum-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Grundstückspreise in Playa del Carmen &amp; Tulum (2026)</h3><p class="card-desc">Grundstückspreise in Playa del Carmen und Tulum 2026: realer Preis pro m² nach Zone — Centro, Playacar, Corasol, Aldea Zamá, La Veleta. Ratgeber vor d…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="wertsteigerung-immobilien-riviera-maya-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Wertsteigerung von Immobilien in der Riviera Maya (2026)</h3><p class="card-desc">Wertsteigerung von Immobilien in der Riviera Maya 2026: jährliches Wertwachstum in Playa del Carmen, Tulum und Cancún, Treiber und warum Bauen die Ren…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="autarkes-haus-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Autarkes Haus bauen an der Riviera Maya (2026)</h3><p class="card-desc">Bauen Sie ein voll autarkes Off-Grid-Haus: Solar + Batterie, Regenwasser + Brunnen + Umkehrosmose, B…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="casita (gästehaus) für mieteinnahmen bauen (2026)" data-desc="ergänzen sie ihr grundstück um eine vermietbare casita: kosten $30.000–$70.000 usd, ertrag $600–1.80">
-<a href="casita-gaestehaus-mieteinnahmen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Casita (Gästehaus) für Mieteinnahmen bauen (2026)</h3><p class="card-desc">Ergänzen Sie Ihr Grundstück um eine vermietbare Casita: Kosten $30.000–$70.000 USD, Ertrag $600–1.80…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="chukum-oberfläche: der komplette leitfaden (kosten 2026)" data-desc="chukum, der wasserdichte maya-putz: was er ist, reale kosten 2026 pro m², einsatz, farben, versiegel">
-<a href="chukum-oberflaeche-leitfaden.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Chukum-Oberfläche: der komplette Leitfaden (Kosten 2026)</h3><p class="card-desc">Chukum, der wasserdichte Maya-Putz: was er ist, reale Kosten 2026 pro m², Einsatz, Farben, Versiegel…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="möbel &amp; materialien für ihren mexiko-bau importieren (2026)" data-desc="importieren oder lokal kaufen? zölle, 16% iva, versandkosten, menaje-de-casa-befreiung und was sich ">
-<a href="moebel-materialien-nach-mexiko-importieren.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Neu</span>
-<h3 class="card-title mt-2">Möbel &amp; Materialien für Ihren Mexiko-Bau importieren (2026)</h3><p class="card-desc">Importieren oder lokal kaufen? Zölle, 16% IVA, Versandkosten, Menaje-de-Casa-Befreiung und was sich …</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="auswandern nach playa del carmen: der komplett-leitfaden 2026" data-desc="umzugs-leitfaden: visa, lebenskosten ($850–$3.300/monat), viertel, schulen, gesundheit, internet — u">
-<a href="auswandern-playa-del-carmen-leitfaden.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Neu</span>
-<h3 class="card-title mt-2">Auswandern nach Playa del Carmen: der Komplett-Leitfaden 2026</h3><p class="card-desc">Umzugs-Leitfaden: Visa, Lebenskosten ($850–$3.300/Monat), Viertel, Schulen, Gesundheit, Internet — u…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="bauen an einer cenote: regeln, risiken &amp; chancen (2026)" data-desc="eine cenote auf dem grundstück: rechtsstatus, abstände, geophysikalische studien, fundamentrisiken i">
-<a href="bauen-am-cenote-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Neu</span>
-<h3 class="card-title mt-2">Bauen an einer Cenote: Regeln, Risiken &amp; Chancen (2026)</h3><p class="card-desc">Eine Cenote auf dem Grundstück: Rechtsstatus, Abstände, geophysikalische Studien, Fundamentrisiken i…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="boutique-hotel in tulum bauen: kosten, roi (2026)" data-desc="hotelbau: $80.000–$150.000 usd pro zimmer, 14–20 monate, sema- und tourismusgenehmigungen, auslastun">
-<a href="boutique-hotel-bauen-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Neu</span>
-<h3 class="card-title mt-2">Boutique-Hotel in Tulum bauen: Kosten, ROI (2026)</h3><p class="card-desc">Hotelbau: $80.000–$150.000 USD pro Zimmer, 14–20 Monate, SEMA- und Tourismusgenehmigungen, Auslastun…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="palapa-bau: kosten, wartung, genehmigungen (2026)" data-desc="kompletter palapa-leitfaden: reale kosten 2026 nach größe, huano vs. zacate, hartholzstruktur, wartu">
-<a href="palapa-bau-leitfaden.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Neu</span>
-<h3 class="card-title mt-2">Palapa-Bau: Kosten, Wartung, Genehmigungen (2026)</h3><p class="card-desc">Kompletter Palapa-Leitfaden: reale Kosten 2026 nach Größe, Huano vs. Zacate, Hartholzstruktur, Wartu…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="ihr ruhestandshaus an der riviera maya bauen (2026)" data-desc="ruhestand in mexiko: barrierefreies eingeschossiges haus für $120.000–$200.000 usd, leben ab $1.500–">
-<a href="ruhestandshaus-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Neu</span>
-<h3 class="card-title mt-2">Ihr Ruhestandshaus an der Riviera Maya bauen (2026)</h3><p class="card-desc">Ruhestand in Mexiko: barrierefreies eingeschossiges Haus für $120.000–$200.000 USD, Leben ab $1.500–…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="airbnb-immobilie in tulum bauen: kosten &amp; roi (2026)" data-desc="was in tulum für maximale mieteinnahmen bauen: konfigurationen, baukosten, nachtpreise, auslastung und re">
-<a href="airbnb-investment-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Airbnb-Immobilie in Tulum bauen: Kosten &amp; ROI (2026)</h3><p class="card-desc">Was in Tulum für maximale Mieteinnahmen bauen: Konfigurationen, Baukosten, Nachtpreise, Auslastung und re…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="baugenehmigungen in playa del carmen: leitfaden 2026" data-desc="alle genehmigungen: baulizenz, flächennutzung, umweltprüfung, unterlagen, fristen und kosten in der gemei">
-<a href="baugenehmigungen-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Baugenehmigungen in Playa del Carmen: Leitfaden 2026</h3><p class="card-desc">Alle Genehmigungen: Baulizenz, Flächennutzung, Umweltprüfung, Unterlagen, Fristen und Kosten in der Gemei…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="bauunternehmen an der riviera maya richtig wählen (2026)" data-desc="so finden sie einen zuverlässigen bauunternehmer: lokale erfahrung, dro, eigene teams, portfolio, warnsig">
-<a href="bauunternehmen-waehlen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Bauunternehmen an der Riviera Maya richtig wählen (2026)</h3><p class="card-desc">So finden Sie einen zuverlässigen Bauunternehmer: lokale Erfahrung, DRO, eigene Teams, Portfolio, Warnsig…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="dachterrasse in playa del carmen: kosten, ideen, roi (2026)" data-desc="flachdach zum rooftop: basisterrasse ab 6.500 usd, pergola, plunge-pool, jacuzzi. +40–80 usd/nacht auf ai">
-<a href="dachterrasse-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Dachterrasse in Playa del Carmen: Kosten, Ideen, ROI (2026)</h3><p class="card-desc">Flachdach zum Rooftop: Basisterrasse ab 6.500 USD, Pergola, Plunge-Pool, Jacuzzi. +40–80 USD/Nacht auf Ai…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="gewerbebau in cancún &amp; riviera maya (2026)" data-desc="büros, läden, restaurants, hotels: preise pro m², genehmigungen (sema, cofepris, protección civil), frist">
-<a href="gewerbebau-cancun-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Gewerbebau in Cancún &amp; Riviera Maya (2026)</h3><p class="card-desc">Büros, Läden, Restaurants, Hotels: Preise pro m², Genehmigungen (SEMA, COFEPRIS, Protección Civil), Frist…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="haus-unterhaltskosten in mexiko: nebenkosten &amp; steuern 2026" data-desc="cfe-strom, wasser, gas, internet, predial, fideicomiso: 440–830 usd/monat für 150 m² mit pool — 3–5× güns">
-<a href="haus-unterhaltskosten-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Haus-Unterhaltskosten in Mexiko: Nebenkosten &amp; Steuern 2026</h3><p class="card-desc">CFE-Strom, Wasser, Gas, Internet, Predial, Fideicomiso: 440–830 USD/Monat für 150 m² mit Pool — 3–5× güns…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="was kostet ein hausbau in tulum? (leitfaden 2026)" data-desc="baukosten in tulum im detail: preis pro m², grundstück, sema-genehmigung, zeitplan. reale zahlen eines lo">
-<a href="hausbau-kosten-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Was kostet ein Hausbau in Tulum? (Leitfaden 2026)</h3><p class="card-desc">Baukosten in Tulum im Detail: Preis pro m², Grundstück, SEMA-Genehmigung, Zeitplan. Reale Zahlen eines lo…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="hausrenovierung in playa del carmen: kosten &amp; ideen (2026)" data-desc="renovierungskosten 2026: küche, bad, komplettsanierung pro m². pool, rooftop, außenküche, hurrikan-nachrü">
-<a href="hausrenovierung-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Hausrenovierung in Playa del Carmen: Kosten &amp; Ideen (2026)</h3><p class="card-desc">Renovierungskosten 2026: Küche, Bad, Komplettsanierung pro m². Pool, Rooftop, Außenküche, Hurrikan-Nachrü…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="hurrikan-saison: checkliste für ihr haus in mexiko (2026)" data-desc="saison: 1. juni – 30. november. komplette checkliste: struktur, elektrik, dokumente, versicherung, vorrät">
-<a href="hurrikan-saison-checkliste-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Hurrikan-Saison: Checkliste für Ihr Haus in Mexiko (2026)</h3><p class="card-desc">Saison: 1. Juni – 30. November. Komplette Checkliste: Struktur, Elektrik, Dokumente, Versicherung, Vorrät…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="hurrikansicheres bauen an der riviera maya" data-desc="kategorie-5-fest bauen: stahlbeton, impaktfenster, durchgehende bewehrung. mehrkosten nur 5–10%.">
-<a href="hurrikansicheres-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Hurrikansicheres Bauen an der Riviera Maya</h3><p class="card-desc">Kategorie-5-fest bauen: Stahlbeton, Impaktfenster, durchgehende Bewehrung. Mehrkosten nur 5–10%.…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="individuelles hausdesign in playa del carmen (2026)" data-desc="architektenpläne 30.000–80.000 mxn, tropenstile, prozess 10–16 wochen, 3d-renderings für fernentscheidung">
-<a href="individuelles-hausdesign-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Individuelles Hausdesign in Playa del Carmen (2026)</h3><p class="card-desc">Architektenpläne 30.000–80.000 MXN, Tropenstile, Prozess 10–16 Wochen, 3D-Renderings für Fernentscheidung…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="kleines haus in tulum: unter 100 m² bauen (2026)" data-desc="80–100 m²: 1,6–2,5 mio. mxn bau. komplett mit grundstück und sema: ab 2,5 mio. cleveres design, 8–12% air">
-<a href="kleines-haus-tulum-budget.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Kleines Haus in Tulum: unter 100 m² bauen (2026)</h3><p class="card-desc">80–100 m²: 1,6–2,5 Mio. MXN Bau. Komplett mit Grundstück und SEMA: ab 2,5 Mio. Cleveres Design, 8–12% Air…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="luxusvilla in playacar bauen: premium-leitfaden 2026" data-desc="25.000–50.000 mxn/m²: importausstattung, infinity-pool, smart home. villa 250 m²: 350–700k usd ohne grund">
-<a href="luxusvilla-bauen-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Luxusvilla in Playacar bauen: Premium-Leitfaden 2026</h3><p class="card-desc">25.000–50.000 MXN/m²: Importausstattung, Infinity-Pool, Smart Home. Villa 250 m²: 350–700k USD ohne Grund…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="pools an der riviera maya: typen, kosten, pflege (2026)" data-desc="betonpool, infinity, rooftop: kosten 2026 von 6.500 bis 67.000 usd, budgetverteilung, pflege. +20–30k usd">
-<a href="pools-riviera-maya-kosten.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Pools an der Riviera Maya: Typen, Kosten, Pflege (2026)</h3><p class="card-desc">Betonpool, Infinity, Rooftop: Kosten 2026 von 6.500 bis 67.000 USD, Budgetverteilung, Pflege. +20–30k USD…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="die besten renovierungen für roi in playa del carmen (2026)" data-desc="welche renovierung bringt am meisten: pool (100–150% roi), rooftop, küche, bad. wertzuwachs- und airbnb-t">
-<a href="renovierung-roi-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Die besten Renovierungen für ROI in Playa del Carmen (2026)</h3><p class="card-desc">Welche Renovierung bringt am meisten: Pool (100–150% ROI), Rooftop, Küche, Bad. Wertzuwachs- und Airbnb-T…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="smart home in den tropen: villa-technik 2026" data-desc="80%+ luftfeuchte, stromausfälle, salzluft: domotik fürs klima. lecksensoren, usv, 2.000–6.000 mxn/monat e">
-<a href="smart-home-tropen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Smart Home in den Tropen: Villa-Technik 2026</h3><p class="card-desc">80%+ Luftfeuchte, Stromausfälle, Salzluft: Domotik fürs Klima. Lecksensoren, USV, 2.000–6.000 MXN/Monat E…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="strandhaus bauen an der riviera maya: kosten 2026" data-desc="erste strandlinie: 25.000–45.000 mxn/m² (+20–40%), zofemat-konzession, marinematerialien, erosionsschutz.">
-<a href="strandhaus-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Strandhaus bauen an der Riviera Maya: Kosten 2026</h3><p class="card-desc">Erste Strandlinie: 25.000–45.000 MXN/m² (+20–40%), ZOFEMAT-Konzession, Marinematerialien, Erosionsschutz.…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="zweistöckiges haus an der riviera maya: kosten &amp; grundrisse" data-desc="+15–25% pro m², aber halbes grundstück. hurrikanfeste statik, idealer grundriss, aufzugsvorbereitung.">
-<a href="zweistoeckiges-haus-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Leitfaden</span>
-<h3 class="card-title mt-2">Zweistöckiges Haus an der Riviera Maya: Kosten &amp; Grundrisse</h3><p class="card-desc">+15–25% pro m², aber halbes Grundstück. Hurrikanfeste Statik, idealer Grundriss, Aufzugsvorbereitung.…</p></div>
-<div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-kosten" data-title="baukosten playa del carmen 2026" data-desc="preise pro m² nach baustandard, grundstückspreise, gesamtbudget, spartipps.">
-<a href="baukosten-playa-del-carmen-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & Renovierung</span>
-<h3 class="card-title mt-2">Baukosten Playa del Carmen 2026</h3>
-<p class="card-desc">Preise pro m² nach Baustandard, Grundstückspreise, Gesamtbudget, Spartipps.</p>
+<div class="cat-section" data-cat="cat-news">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>Nachrichten & Markt</h2><span class="cat-count">6 Artikel</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="531 bauprojekte in quintana roo: was das fuer kaeufer 2026 bedeutet" data-desc="offizielle daten: 531 immobilienprojekte in quintana roo mit 27.800 neuen wohnungen. tulum fuehrt mit 252 projekten, playa del carmen mit 143. was kaeufer...">
+<a href="bauboom-quintana-roo-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Nachrichten & Markt</span><h3 class="card-title">531 Bauprojekte in Quintana Roo: Was das fuer Kaeufer 2026 bedeutet</h3><p class="card-desc">Offizielle Daten: 531 Immobilienprojekte in Quintana Roo mit 27.800 neuen Wohnungen. Tulum fuehrt mit 252 Projekten…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="baumarktbericht riviera maya — q3 2026" data-desc="materialpreise, arbeitskosten, genehmigungszeiten und baumarkttrends in playa del carmen, tulum und cancún. drittes quartal 2026.">
+<a href="baumarktbericht-q3-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Nachrichten & Markt</span><h3 class="card-title">Baumarktbericht Riviera Maya — Q3 2026</h3><p class="card-desc">Materialpreise, Arbeitskosten, Genehmigungszeiten und Baumarkttrends in Playa del Carmen, Tulum und Cancún. Drittes…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="grundstückspreise in playa del carmen &amp; tulum 2026 (pro m²)" data-desc="grundstückspreise in playa del carmen und tulum 2026: realer preis pro m² nach zone — centro, playacar, corasol, aldea zamá, la veleta. ratgeber vor dem bauen.">
+<a href="grundstueckspreise-playa-del-carmen-tulum-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Nachrichten & Markt</span><h3 class="card-title">Grundstückspreise in Playa del Carmen &amp; Tulum 2026 (pro m²)</h3><p class="card-desc">Grundstückspreise in Playa del Carmen und Tulum 2026: realer Preis pro m² nach Zone — Centro, Playacar, Corasol…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="immobilienmarkt tulum 2026: flughafen &amp; maya-zug" data-desc="analyse des immobilienmarkts tulum 2026. flughafenauswirkung, maya-zug, 40 % nachfragerueckgang, 26 projekte unter ermittlung, preisprognosen. offizielle...">
+<a href="immobilienmarkt-tulum-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Nachrichten & Markt</span><h3 class="card-title">Immobilienmarkt Tulum 2026: Flughafen &amp; Maya-Zug</h3><p class="card-desc">Analyse des Immobilienmarkts Tulum 2026. Flughafenauswirkung, Maya-Zug, 40 % Nachfragerueckgang, 26 Projekte unter…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="maya-zug &amp; immobilien: wie die eisenbahn die riviera maya verändert" data-desc="wie der maya-zug immobilienwerte, baunachfrage und grundstückspreise in playa del carmen, tulum und cancún beeinflusst. offizielle fortschrittsdaten.">
+<a href="maya-zug-immobilien-auswirkung.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Nachrichten & Markt</span><h3 class="card-title">Maya-Zug &amp; Immobilien: Wie die Eisenbahn die Riviera Maya verändert</h3><p class="card-desc">Wie der Maya-Zug Immobilienwerte, Baunachfrage und Grundstückspreise in Playa del Carmen, Tulum und Cancún…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="wertsteigerung von immobilien in der riviera maya 2026" data-desc="wertsteigerung von immobilien in der riviera maya 2026: jährliches wertwachstum in playa del carmen, tulum und cancún, treiber und warum bauen die rendite maximiert.">
+<a href="wertsteigerung-immobilien-riviera-maya-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Nachrichten & Markt</span><h3 class="card-title">Wertsteigerung von Immobilien in der Riviera Maya 2026</h3><p class="card-desc">Wertsteigerung von Immobilien in der Riviera Maya 2026: jährliches Wertwachstum in Playa del Carmen, Tulum und…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+</div>
+<div class="cat-section" data-cat="cat-costs">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>Kosten & ROI</h2><span class="cat-count">25 Artikel</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="airbnb-immobilie in tulum bauen: kosten &amp; roi (2026)" data-desc="was in tulum für maximale mieteinnahmen bauen: konfigurationen, baukosten, nachtpreise, auslastung und reale jahreserträge.">
+<a href="airbnb-investment-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Airbnb-Immobilie in Tulum bauen: Kosten &amp; ROI (2026)</h3><p class="card-desc">Was in Tulum für maximale Mieteinnahmen bauen: Konfigurationen, Baukosten, Nachtpreise, Auslastung und reale…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="airbnb-roi-rechner: tulum &amp; playa del carmen 2026" data-desc="reale airbnb-renditen 2026: übernachtungspreise, auslastung, komplettes roi-beispiel für eine villa in tulum. bauen statt kaufen = 12–18 % rendite.">
+<a href="airbnb-roi-rechner-tulum-playa.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Airbnb-ROI-Rechner: Tulum &amp; Playa del Carmen 2026</h3><p class="card-desc">Reale Airbnb-Renditen 2026: Übernachtungspreise, Auslastung, komplettes ROI-Beispiel für eine Villa in Tulum. Bauen…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="ausländer: hausbau in mexiko — kompletter leitfaden 2026" data-desc="rechtliche voraussetzungen, fideicomiso, schritt-für-schritt-anleitung für nicht-mexikaner die in der riviera maya bauen möchten.">
+<a href="auslaender-hausbau-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Ausländer: Hausbau in Mexiko — Kompletter Leitfaden 2026</h3><p class="card-desc">Rechtliche Voraussetzungen, Fideicomiso, Schritt-für-Schritt-Anleitung für Nicht-Mexikaner die in der Riviera Maya…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="badezimmer-renovierung kosten playa del carmen (2026)" data-desc="badezimmerrenovierung in playa del carmen: $2.500-$22.000 usd. budget bis premium preisführer.">
+<a href="badezimmer-renovierung-kosten-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Badezimmer-Renovierung Kosten Playa del Carmen (2026)</h3><p class="card-desc">Badezimmerrenovierung in Playa del Carmen: $2.500-$22.000 USD. Budget bis Premium Preisführer.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="baukosten playa del carmen 2026: preise pro m²" data-desc="exakte baukosten pro m² in playa del carmen 2026. budget-, mittelklasse- und luxusbau. grundstückspreise, genehmigungen, zeitplan. kostenloses angebot.">
+<a href="baukosten-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Baukosten Playa del Carmen 2026: Preise pro m²</h3><p class="card-desc">Exakte Baukosten pro m² in Playa del Carmen 2026. Budget-, Mittelklasse- und Luxusbau. Grundstückspreise…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="baukosten pro quadratmeter riviera maya 2026" data-desc="was kostet der quadratmeter bau in riviera maya 2026? reale preisspannen nach ausbaustufe für playa del carmen, tulum und cancún.">
+<a href="baukosten-pro-quadratmeter-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Baukosten pro Quadratmeter Riviera Maya 2026</h3><p class="card-desc">Was kostet der Quadratmeter Bau in Riviera Maya 2026? Reale Preisspannen nach Ausbaustufe für Playa del Carmen, Tulum…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="die besten renovierungen für roi in playa del carmen (2026)" data-desc="welche renovierung bringt am meisten: pool (100–150% roi), rooftop, küche, bad. wertzuwachs- und airbnb-tabellen.">
+<a href="renovierung-roi-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Die besten Renovierungen für ROI in Playa del Carmen (2026)</h3><p class="card-desc">Welche Renovierung bringt am meisten: Pool (100–150% ROI), Rooftop, Küche, Bad. Wertzuwachs- und Airbnb-Tabellen.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="haus-unterhaltskosten in mexiko: nebenkosten &amp; steuern 2026" data-desc="cfe-strom, wasser, gas, internet, predial, fideicomiso: 440–830 usd/monat für 150 m² mit pool — 3–5× günstiger als miami.">
+<a href="haus-unterhaltskosten-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Haus-Unterhaltskosten in Mexiko: Nebenkosten &amp; Steuern 2026</h3><p class="card-desc">CFE-Strom, Wasser, Gas, Internet, Predial, Fideicomiso: 440–830 USD/Monat für 150 m² mit Pool — 3–5× günstiger als…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="kleines haus in tulum: unter 100 m² bauen (2026)" data-desc="80–100 m²: 1,6–2,5 mio. mxn bau. komplett mit grundstück und sema: ab 2,5 mio. cleveres design, 8–12% airbnb-rendite.">
+<a href="kleines-haus-tulum-budget.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Kleines Haus in Tulum: unter 100 m² bauen (2026)</h3><p class="card-desc">80–100 m²: 1,6–2,5 Mio. MXN Bau. Komplett mit Grundstück und SEMA: ab 2,5 Mio. Cleveres Design, 8–12% Airbnb-Rendite.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="küchenrenovierung kosten in playa del carmen (2026)" data-desc="küchenrenovierung in playa del carmen: $4.000-$35.000 usd. budget, mittelklasse, premium preisführer.">
+<a href="kuechenrenovierung-kosten-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Küchenrenovierung Kosten in Playa del Carmen (2026)</h3><p class="card-desc">Küchenrenovierung in Playa del Carmen: $4.000-$35.000 USD. Budget, Mittelklasse, Premium Preisführer.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="lebenshaltungskosten beim bauen in mexiko 2026" data-desc="monatliche kosten für expats während des baus: miete, essen, transport, visum, internet.">
+<a href="lebenshaltungskosten-bauen-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Lebenshaltungskosten beim Bauen in Mexiko 2026</h3><p class="card-desc">Monatliche Kosten für Expats während des Baus: Miete, Essen, Transport, Visum, Internet.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="lebenshaltungskosten in playa del carmen 2026: monatsbudget" data-desc="lebenshaltungskosten in playa del carmen 2026: miete, essen, nebenkosten und reale budgets für singles, paare und familien. und warum viele lieber bauen.">
+<a href="lebenshaltungskosten-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Lebenshaltungskosten in Playa del Carmen 2026: Monatsbudget</h3><p class="card-desc">Lebenshaltungskosten in Playa del Carmen 2026: Miete, Essen, Nebenkosten und reale Budgets für Singles, Paare und…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="pools an der riviera maya: typen, kosten, pflege (2026)" data-desc="betonpool, infinity, rooftop: kosten 2026 von 6.500 bis 67.000 usd, budgetverteilung, pflege. +20–30k usd objektwert.">
+<a href="pools-riviera-maya-kosten.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Pools an der Riviera Maya: Typen, Kosten, Pflege (2026)</h3><p class="card-desc">Betonpool, Infinity, Rooftop: Kosten 2026 von 6.500 bis 67.000 USD, Budgetverteilung, Pflege. +20–30k USD Objektwert.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="steuervorteile beim bau in mexiko 2026" data-desc="isr-abzüge, abschreibung, solaranreize, immex, freihandelszonen. steuerstrategien für investoren in mexiko.">
+<a href="steuervorteile-bau-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Steuervorteile beim Bau in Mexiko 2026</h3><p class="card-desc">ISR-Abzüge, Abschreibung, Solaranreize, IMMEX, Freihandelszonen. Steuerstrategien für Investoren in Mexiko.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in akumal 2026" data-desc="was kostet ein hausbau in akumal 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.91m–$3.58m mxn.">
+<a href="hausbau-kosten-akumal.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Akumal 2026</h3><p class="card-desc">Was kostet ein Hausbau in Akumal 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in aldea zamá 2026" data-desc="was kostet ein hausbau in aldea zamá 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.12m–$3.84m mxn.">
+<a href="hausbau-kosten-aldea-zama.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Aldea Zamá 2026</h3><p class="card-desc">Was kostet ein Hausbau in Aldea Zamá 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in cancún 2026" data-desc="was kostet ein hausbau in cancún 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.50m–$3.07m mxn.">
+<a href="hausbau-kosten-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Cancún 2026</h3><p class="card-desc">Was kostet ein Hausbau in Cancún 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in corasol 2026" data-desc="was kostet ein hausbau in corasol 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.38m–$4.16m mxn.">
+<a href="hausbau-kosten-corasol.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Corasol 2026</h3><p class="card-desc">Was kostet ein Hausbau in Corasol 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in mayakoba 2026" data-desc="was kostet ein hausbau in mayakoba 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.69m–$4.54m mxn.">
+<a href="hausbau-kosten-mayakoba.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Mayakoba 2026</h3><p class="card-desc">Was kostet ein Hausbau in Mayakoba 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in playa del carmen 2026" data-desc="was kostet der hausbau in playa del carmen 2026? vollständiges budget nach phasen für ein 150-m²-haus, zeitplan und leistungsumfang.">
+<a href="hausbau-kosten-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Playa del Carmen 2026</h3><p class="card-desc">Was kostet der Hausbau in Playa del Carmen 2026? Vollständiges Budget nach Phasen für ein 150-m²-Haus, Zeitplan und…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in playacar 2026" data-desc="was kostet ein hausbau in playacar 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $3.25m–$4m mxn.">
+<a href="hausbau-kosten-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Playacar 2026</h3><p class="card-desc">Was kostet ein Hausbau in Playacar 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in puerto aventuras 2026" data-desc="was kostet ein hausbau in puerto aventuras 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.81m–$3.46m mxn.">
+<a href="hausbau-kosten-puerto-aventuras.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Puerto Aventuras 2026</h3><p class="card-desc">Was kostet ein Hausbau in Puerto Aventuras 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in puerto morelos 2026" data-desc="was kostet ein hausbau in puerto morelos 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.60m–$3.20m mxn.">
+<a href="hausbau-kosten-puerto-morelos.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Puerto Morelos 2026</h3><p class="card-desc">Was kostet ein Hausbau in Puerto Morelos 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet ein hausbau in tulum 2026" data-desc="was kostet ein hausbau in tulum 2026? reale schlüsselfertige budgets nach größe, lokale faktoren und zeitplan. typisch $2.73m–$3.36m mxn.">
+<a href="hausbau-kosten-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet ein Hausbau in Tulum 2026</h3><p class="card-desc">Was kostet ein Hausbau in Tulum 2026? Reale schlüsselfertige Budgets nach Größe, lokale Faktoren und Zeitplan…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="was kostet eine luxusvilla in tulum 2026" data-desc="was kostet der bau einer luxusvilla in tulum 2026? reale budgets, ausstattung, annehmlichkeiten und roi für hochwertige villen.">
+<a href="luxusvilla-baukosten-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & ROI</span><h3 class="card-title">Was Kostet eine Luxusvilla in Tulum 2026</h3><p class="card-desc">Was kostet der Bau einer Luxusvilla in Tulum 2026? Reale Budgets, Ausstattung, Annehmlichkeiten und ROI für…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Alle anzeigen (25) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-permits">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(253,126,20,.08);color:#fd7e14"><i class="bi bi-file-earmark-text"></i></div><h2>Genehmigungen & Ablauf</h2><span class="cat-count">12 Artikel</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="9 warnsignale bei bauunternehmen in mexiko" data-desc="woran sie unseriöse bauunternehmer in mexiko erkennen: 9 warnsignale, prüf-checkliste und was ein seriöser anbieter leistet. aus 18 jahren erfahrung.">
+<a href="warnsignale-bauunternehmer-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">9 Warnsignale bei Bauunternehmen in Mexiko</h3><p class="card-desc">Woran Sie unseriöse Bauunternehmer in Mexiko erkennen: 9 Warnsignale, Prüf-Checkliste und was ein seriöser Anbieter…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="bauen oder kaufen an der riviera maya? vergleich 2026" data-desc="bauen spart 25–40 % gegenüber dem kauf eines fertigen hauses gleicher qualität. kompletter kostenvergleich, versteckte kosten, reale beispiele aus tulum.">
+<a href="bauen-oder-kaufen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Bauen oder Kaufen an der Riviera Maya? Vergleich 2026</h3><p class="card-desc">Bauen spart 25–40 % gegenüber dem Kauf eines fertigen Hauses gleicher Qualität. Kompletter Kostenvergleich…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="baugenehmigungen in cancún 2026: schritt-für-schritt-anleitung" data-desc="baugenehmigungen in cancún 2026: baulizenz, flächennutzung, zivilschutz, cfe, hotelzone (fonatur), kosten und dauer für wohn- und gewerbebau.">
+<a href="baugenehmigungen-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Baugenehmigungen in Cancún 2026: Schritt-für-Schritt-Anleitung</h3><p class="card-desc">Baugenehmigungen in Cancún 2026: Baulizenz, Flächennutzung, Zivilschutz, CFE, Hotelzone (FONATUR), Kosten und Dauer…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="baugenehmigungen in playa del carmen: leitfaden 2026" data-desc="alle genehmigungen: baulizenz, flächennutzung, umweltprüfung, unterlagen, fristen und kosten in der gemeinde solidaridad.">
+<a href="baugenehmigungen-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Baugenehmigungen in Playa del Carmen: Leitfaden 2026</h3><p class="card-desc">Alle Genehmigungen: Baulizenz, Flächennutzung, Umweltprüfung, Unterlagen, Fristen und Kosten in der Gemeinde…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="baugenehmigungen in tulum 2026: schritt-für-schritt-anleitung" data-desc="baugenehmigungen in tulum 2026: sema-umweltgenehmigung, kommunale lizenz, dro, rodung, kosten und dauer. was jeder bauherr wissen muss.">
+<a href="baugenehmigungen-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Baugenehmigungen in Tulum 2026: Schritt-für-Schritt-Anleitung</h3><p class="card-desc">Baugenehmigungen in Tulum 2026: SEMA-Umweltgenehmigung, kommunale Lizenz, DRO, Rodung, Kosten und Dauer. Was jeder…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="bauunternehmen an der riviera maya richtig wählen (2026)" data-desc="so finden sie einen zuverlässigen bauunternehmer: lokale erfahrung, dro, eigene teams, portfolio, warnsignale.">
+<a href="bauunternehmen-waehlen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Bauunternehmen an der Riviera Maya richtig wählen (2026)</h3><p class="card-desc">So finden Sie einen zuverlässigen Bauunternehmer: lokale Erfahrung, DRO, eigene Teams, Portfolio, Warnsignale.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="bauversicherungen und garantien an der riviera maya 2026" data-desc="bauleistungsversicherung, strukturgarantien, erfüllungsbürgschaften und käuferschutz in playa del carmen und tulum.">
+<a href="versicherungen-garantien-bau-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Bauversicherungen und Garantien an der Riviera Maya 2026</h3><p class="card-desc">Bauleistungsversicherung, Strukturgarantien, Erfüllungsbürgschaften und Käuferschutz in Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="bauzeitplan an der riviera maya 2026" data-desc="monat-für-monat bauzeitplan: genehmigungen, fundament, rohbau, ausbau. bauzeit für haus, villa, hotel.">
+<a href="bauzeitplan-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Bauzeitplan an der Riviera Maya 2026</h3><p class="card-desc">Monat-für-Monat Bauzeitplan: Genehmigungen, Fundament, Rohbau, Ausbau. Bauzeit für Haus, Villa, Hotel.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="fernverwaltung hausbau in mexiko: bauen aus dem ausland (2026)" data-desc="bauen sie ihr haus in mexiko von deutschland aus. tägliche fotos, wöchentliche videoanrufe. 80% unserer kunden bauen remote.">
+<a href="fernverwaltung-bau-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Fernverwaltung Hausbau in Mexiko: Bauen aus dem Ausland (2026)</h3><p class="card-desc">Bauen Sie Ihr Haus in Mexiko von Deutschland aus. Tägliche Fotos, wöchentliche Videoanrufe. 80% unserer Kunden bauen…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="mexikos geldwaeschegesetz 2026: was kaeufer wissen muessen" data-desc="mexikos geldwaeschereform 2026 betrifft alle immobilientransaktionen. neue meldeschwellen, strengere identifizierungsanforderungen, fideicomiso-aenderungen....">
+<a href="geldwaesche-gesetz-mexiko-immobilien-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Mexikos Geldwaeschegesetz 2026: Was Kaeufer wissen muessen</h3><p class="card-desc">Mexikos Geldwaeschereform 2026 betrifft alle Immobilientransaktionen. Neue Meldeschwellen, strengere…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="pdu playa del carmen 2026: neue zonierungsregeln" data-desc="playa del carmens neuer stadtentwicklungsplan (pdu 2026–2050) aendert zonierung, hoehenbegrenzungen, dichte und umweltanforderungen. offizielles update fuer...">
+<a href="pdu-zonierung-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">PDU Playa del Carmen 2026: Neue Zonierungsregeln</h3><p class="card-desc">Playa del Carmens neuer Stadtentwicklungsplan (PDU 2026–2050) aendert Zonierung, Hoehenbegrenzungen, Dichte und…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="umwelt-baugesetze in quintana roo 2026 erklaert" data-desc="neue umwelt-bauvorschriften in quintana roo 2026. sema-genehmigungen, reform des immobiliengesetzes, kommunale bauordnungen. offizielle anforderungen fuer...">
+<a href="umwelt-baugesetze-quintana-roo-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Genehmigungen & Ablauf</span><h3 class="card-title">Umwelt-Baugesetze in Quintana Roo 2026 erklaert</h3><p class="card-desc">Neue Umwelt-Bauvorschriften in Quintana Roo 2026. SEMA-Genehmigungen, Reform des Immobiliengesetzes, kommunale…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
 </div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
+<div class="cat-section" data-cat="cat-foreigners">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>Für Ausländer</h2><span class="cat-count">4 Artikel</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="auswandern nach playa del carmen: der komplett-leitfaden 2026" data-desc="umzugs-leitfaden: visa, lebenskosten ($850–$3.300/monat), viertel, schulen, gesundheit, internet — und warum bauen ab jahr zwei das mieten schlägt.">
+<a href="auswandern-playa-del-carmen-leitfaden.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span><h3 class="card-title">Auswandern nach Playa del Carmen: der Komplett-Leitfaden 2026</h3><p class="card-desc">Umzugs-Leitfaden: Visa, Lebenskosten ($850–$3.300/Monat), Viertel, Schulen, Gesundheit, Internet — und warum Bauen ab…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="fideicomiso für ausländer: eigentum in mexiko kaufen 2026" data-desc="was ist ein fideicomiso, kosten, ablauf, banken. kompletter leitfaden zum banktreuhand für immobilienkauf in der riviera maya.">
+<a href="fideicomiso-auslaender-eigentum-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span><h3 class="card-title">Fideicomiso für Ausländer: Eigentum in Mexiko kaufen 2026</h3><p class="card-desc">Was ist ein Fideicomiso, Kosten, Ablauf, Banken. Kompletter Leitfaden zum Banktreuhand für Immobilienkauf in der…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="grundstück kaufen riviera maya 2026" data-desc="grundstückspreise, ejido vs. privatland, due diligence, fideicomiso, beste zonen an der riviera maya.">
+<a href="grundstueck-kaufen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span><h3 class="card-title">Grundstück kaufen Riviera Maya 2026</h3><p class="card-desc">Grundstückspreise, Ejido vs. Privatland, Due Diligence, Fideicomiso, beste Zonen an der Riviera Maya.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="ihr ruhestandshaus an der riviera maya bauen (2026)" data-desc="ruhestand in mexiko: barrierefreies eingeschossiges haus für $120.000–$200.000 usd, leben ab $1.500–2.500/monat, gesundheit 50–70% günstiger.">
+<a href="ruhestandshaus-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span><h3 class="card-title">Ihr Ruhestandshaus an der Riviera Maya bauen (2026)</h3><p class="card-desc">Ruhestand in Mexiko: barrierefreies eingeschossiges Haus für $120.000–$200.000 USD, Leben ab $1.500–2.500/Monat…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+</div>
+<div class="cat-section" data-cat="cat-build">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(111,66,193,.08);color:#6f42c1"><i class="bi bi-tools"></i></div><h2>Bau & Technik</h2><span class="cat-count">30 Artikel</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="autarkes haus bauen an der riviera maya (2026)" data-desc="bauen sie ein voll autarkes off-grid-haus: solar + batterie, regenwasser + brunnen + umkehrosmose, biodigester, notstromaggregat. reale auslegung und kosten für tulum.">
+<a href="autarkes-haus-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Autarkes Haus bauen an der Riviera Maya (2026)</h3><p class="card-desc">Bauen Sie ein voll autarkes Off-Grid-Haus: Solar + Batterie, Regenwasser + Brunnen + Umkehrosmose, Biodigester…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="bauen an einer cenote: regeln, risiken &amp; chancen (2026)" data-desc="eine cenote auf dem grundstück: rechtsstatus, abstände, geophysikalische studien, fundamentrisiken im karst, sema — und wie eine cenote 30–50% wert bringt.">
+<a href="bauen-am-cenote-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Bauen an einer Cenote: Regeln, Risiken &amp; Chancen (2026)</h3><p class="card-desc">Eine Cenote auf dem Grundstück: Rechtsstatus, Abstände, geophysikalische Studien, Fundamentrisiken im Karst, SEMA…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="beste gebiete zum bauen in playa del carmen (2026)" data-desc="beste viertel zum bauen in playa del carmen: grundstückskosten, zonierung, roi. playacar, centro, ejidal.">
+<a href="beste-gebiete-bauen-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Beste Gebiete zum Bauen in Playa del Carmen (2026)</h3><p class="card-desc">Beste Viertel zum Bauen in Playa del Carmen: Grundstückskosten, Zonierung, ROI. Playacar, Centro, Ejidal.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="betonarten für den bau an der riviera maya 2026" data-desc="transportbeton, pumpbeton, selbstverdichtender beton. festigkeiten, kosten pro m³ und empfehlungen für tropisches klima.">
+<a href="betonarten-bau-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Betonarten für den Bau an der Riviera Maya 2026</h3><p class="card-desc">Transportbeton, Pumpbeton, selbstverdichtender Beton. Festigkeiten, Kosten pro m³ und Empfehlungen für tropisches…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="boutique-hotel in tulum bauen: kosten, roi (2026)" data-desc="hotelbau: $80.000–$150.000 usd pro zimmer, 14–20 monate, sema- und tourismusgenehmigungen, auslastungsökonomie, 12–18% roi.">
+<a href="boutique-hotel-bauen-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Boutique-Hotel in Tulum bauen: Kosten, ROI (2026)</h3><p class="card-desc">Hotelbau: $80.000–$150.000 USD pro Zimmer, 14–20 Monate, SEMA- und Tourismusgenehmigungen, Auslastungsökonomie…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="casita (gästehaus) für mieteinnahmen bauen (2026)" data-desc="ergänzen sie ihr grundstück um eine vermietbare casita: kosten $30.000–$70.000 usd, ertrag $600–1.800/monat auf airbnb. genehmigungen, zonierung, design.">
+<a href="casita-gaestehaus-mieteinnahmen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Casita (Gästehaus) für Mieteinnahmen bauen (2026)</h3><p class="card-desc">Ergänzen Sie Ihr Grundstück um eine vermietbare Casita: Kosten $30.000–$70.000 USD, Ertrag $600–1.800/Monat auf…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="chukum-oberfläche: der komplette leitfaden (kosten 2026)" data-desc="chukum, der wasserdichte maya-putz: was er ist, reale kosten 2026 pro m², einsatz, farben, versiegelung und pflege. das signature-finish von tulum.">
+<a href="chukum-oberflaeche-leitfaden.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Chukum-Oberfläche: der komplette Leitfaden (Kosten 2026)</h3><p class="card-desc">Chukum, der wasserdichte Maya-Putz: was er ist, reale Kosten 2026 pro m², Einsatz, Farben, Versiegelung und Pflege…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="dach &amp; abdichtung an der riviera maya 2026" data-desc="dachtypen, abdichtungsmaterialien, kosten und wartung für das tropische klima von playa del carmen und tulum.">
+<a href="dach-abdichtung-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Dach &amp; Abdichtung an der Riviera Maya 2026</h3><p class="card-desc">Dachtypen, Abdichtungsmaterialien, Kosten und Wartung für das tropische Klima von Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="eigentumswohnungsbau an der riviera maya" data-desc="eigentumswohnungen und mehrfamilienhäuser bauen. 4-50 einheiten, vorverkaufsstrategie, genehmigungen, roi-analyse.">
+<a href="eigentumswohnung-bau-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Eigentumswohnungsbau an der Riviera Maya</h3><p class="card-desc">Eigentumswohnungen und Mehrfamilienhäuser bauen. 4-50 Einheiten, Vorverkaufsstrategie, Genehmigungen, ROI-Analyse.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="entsalzungsanlagen für häuser &amp; hotels an der riviera maya 2026" data-desc="kompletter leitfaden für entsalzungs- und wasseraufbereitungsanlagen für wohn-, gewerbe- und hotelimmobilien in playa del carmen, tulum, cancún.">
+<a href="entsalzungsanlagen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Entsalzungsanlagen für Häuser &amp; Hotels an der Riviera Maya 2026</h3><p class="card-desc">Kompletter Leitfaden für Entsalzungs- und Wasseraufbereitungsanlagen für Wohn-, Gewerbe- und Hotelimmobilien in Playa…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="fundamenttypen für den bau an der riviera maya 2026" data-desc="fundamentoptionen für kalkstein-terrain: platte, streifenfundament, pfähle, senkkästen. baugrundmechanik, kosten.">
+<a href="fundamenttypen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Fundamenttypen für den Bau an der Riviera Maya 2026</h3><p class="card-desc">Fundamentoptionen für Kalkstein-Terrain: Platte, Streifenfundament, Pfähle, Senkkästen. Baugrundmechanik, Kosten.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="geländevorbereitung &amp; stützmauern an der riviera maya" data-desc="rodung, felsbrechen, stützmauern, entwässerung, auffüllung, verdichtung für karstgelände.">
+<a href="gelaendevorbereitung-stuetzmauern-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Geländevorbereitung &amp; Stützmauern an der Riviera Maya</h3><p class="card-desc">Rodung, Felsbrechen, Stützmauern, Entwässerung, Auffüllung, Verdichtung für Karstgelände.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="gewerbebau in cancún &amp; riviera maya (2026)" data-desc="büros, läden, restaurants, hotels: preise pro m², genehmigungen (sema, cofepris, protección civil), fristen. sa de cv für ausländer.">
+<a href="gewerbebau-cancun-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Gewerbebau in Cancún &amp; Riviera Maya (2026)</h3><p class="card-desc">Büros, Läden, Restaurants, Hotels: Preise pro m², Genehmigungen (SEMA, COFEPRIS, Protección Civil), Fristen. SA de CV…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="hurrikan-saison: checkliste für ihr haus in mexiko (2026)" data-desc="saison: 1. juni – 30. november. komplette checkliste: struktur, elektrik, dokumente, versicherung, vorräte.">
+<a href="hurrikan-saison-checkliste-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Hurrikan-Saison: Checkliste für Ihr Haus in Mexiko (2026)</h3><p class="card-desc">Saison: 1. Juni – 30. November. Komplette Checkliste: Struktur, Elektrik, Dokumente, Versicherung, Vorräte.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="hurrikansicheres bauen an der riviera maya" data-desc="kategorie-5-fest bauen: stahlbeton, impaktfenster, durchgehende bewehrung. mehrkosten nur 5–10%.">
+<a href="hurrikansicheres-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Hurrikansicheres Bauen an der Riviera Maya</h3><p class="card-desc">Kategorie-5-fest bauen: Stahlbeton, Impaktfenster, durchgehende Bewehrung. Mehrkosten nur 5–10%.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="individuelles hausdesign in playa del carmen (2026)" data-desc="architektenpläne 30.000–80.000 mxn, tropenstile, prozess 10–16 wochen, 3d-renderings für fernentscheidungen.">
+<a href="individuelles-hausdesign-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Individuelles Hausdesign in Playa del Carmen (2026)</h3><p class="card-desc">Architektenpläne 30.000–80.000 MXN, Tropenstile, Prozess 10–16 Wochen, 3D-Renderings für Fernentscheidungen.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="klimaanlage und lüftung an der riviera maya 2026" data-desc="mini split, vrf, querlüftung. kosten, marken und btu-berechnung für häuser in playa del carmen und tulum.">
+<a href="klimaanlage-lueftung-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Klimaanlage und Lüftung an der Riviera Maya 2026</h3><p class="card-desc">Mini Split, VRF, Querlüftung. Kosten, Marken und BTU-Berechnung für Häuser in Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="kläranlagen und abwasserbehandlung an der riviera maya 2026" data-desc="klärgruben, kläranlagen, kosten und umweltvorschriften für den bau in playa del carmen und tulum.">
+<a href="klaeranlage-abwasser-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Kläranlagen und Abwasserbehandlung an der Riviera Maya 2026</h3><p class="card-desc">Klärgruben, Kläranlagen, Kosten und Umweltvorschriften für den Bau in Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="luxusvilla in playacar bauen: premium-leitfaden 2026" data-desc="25.000–50.000 mxn/m²: importausstattung, infinity-pool, smart home. villa 250 m²: 350–700k usd ohne grundstück.">
+<a href="luxusvilla-bauen-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Luxusvilla in Playacar bauen: Premium-Leitfaden 2026</h3><p class="card-desc">25.000–50.000 MXN/m²: Importausstattung, Infinity-Pool, Smart Home. Villa 250 m²: 350–700k USD ohne Grundstück.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="nachhaltiges bauen in tulum: öko-leitfaden (2026)" data-desc="nachhaltiges bauen in tulum: umweltregeln, öko-materialien, solar. grünes bauen steigert mieteinnahmen um 20-40%.">
+<a href="nachhaltiges-bauen-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Nachhaltiges Bauen in Tulum: Öko-Leitfaden (2026)</h3><p class="card-desc">Nachhaltiges Bauen in Tulum: Umweltregeln, Öko-Materialien, Solar. Grünes Bauen steigert Mieteinnahmen um 20-40%.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="playa del carmen vs tulum: wo bauen 2026?" data-desc="playa del carmen vs tulum: grundstückskosten, bauvorschriften, airbnb-renditen im vergleich.">
+<a href="playa-del-carmen-vs-tulum-bauen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Playa del Carmen vs Tulum: Wo bauen 2026?</h3><p class="card-desc">Playa del Carmen vs Tulum: Grundstückskosten, Bauvorschriften, Airbnb-Renditen im Vergleich.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="restaurant &amp; bar bau an der riviera maya" data-desc="restaurants, bars, beach clubs bauen. küchendesign, genehmigungen, alkohollizenz, kosten ab $800/m².">
+<a href="restaurant-bar-bau-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Restaurant &amp; Bar Bau an der Riviera Maya</h3><p class="card-desc">Restaurants, Bars, Beach Clubs bauen. Küchendesign, Genehmigungen, Alkohollizenz, Kosten ab $800/m².</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="sanitär &amp; wassersysteme für tropischen bau" data-desc="wasserversorgung, brunnenbau, zisternen, pumpen, wasseraufbereitung, entwässerung für die riviera maya.">
+<a href="sanitaer-wassersysteme-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Sanitär &amp; Wassersysteme für tropischen Bau</h3><p class="card-desc">Wasserversorgung, Brunnenbau, Zisternen, Pumpen, Wasseraufbereitung, Entwässerung für die Riviera Maya.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="schlüsselfertiges bauen in playa del carmen &amp; tulum (2026)" data-desc="schlüsselfertig bauen: entwurf, genehmigungen, bau, ausbau — ein unternehmen. ab $800/m². kostenlose beratung.">
+<a href="schluesselfertig-bauen-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Schlüsselfertiges Bauen in Playa del Carmen &amp; Tulum (2026)</h3><p class="card-desc">Schlüsselfertig bauen: Entwurf, Genehmigungen, Bau, Ausbau — ein Unternehmen. Ab $800/m². Kostenlose Beratung.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="solaranlagen für häuser an der riviera maya 2026" data-desc="kosten, marken, roi und vorschriften für solaranlagen in playa del carmen, tulum und cancún. echte stromeinsparungen.">
+<a href="solaranlagen-haeuser-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Solaranlagen für Häuser an der Riviera Maya 2026</h3><p class="card-desc">Kosten, Marken, ROI und Vorschriften für Solaranlagen in Playa del Carmen, Tulum und Cancún. Echte Stromeinsparungen.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="strandhaus bauen an der riviera maya: kosten 2026" data-desc="erste strandlinie: 25.000–45.000 mxn/m² (+20–40%), zofemat-konzession, marinematerialien, erosionsschutz.">
+<a href="strandhaus-bauen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Strandhaus bauen an der Riviera Maya: Kosten 2026</h3><p class="card-desc">Erste Strandlinie: 25.000–45.000 MXN/m² (+20–40%), ZOFEMAT-Konzession, Marinematerialien, Erosionsschutz.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="wohnanlage bau an der riviera maya" data-desc="planung und bau geschlossener wohnanlagen. infrastruktur, sicherheit, ausstattung, verwaltung.">
+<a href="wohnanlage-bau-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Wohnanlage Bau an der Riviera Maya</h3><p class="card-desc">Planung und Bau geschlossener Wohnanlagen. Infrastruktur, Sicherheit, Ausstattung, Verwaltung.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="zisternen und wasserversorgung an der riviera maya 2026" data-desc="zisternentypen, kapazitäten, kosten und pumpsysteme für häuser und gebäude in playa del carmen, tulum und cancún.">
+<a href="zisternen-wasserversorgung-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Zisternen und Wasserversorgung an der Riviera Maya 2026</h3><p class="card-desc">Zisternentypen, Kapazitäten, Kosten und Pumpsysteme für Häuser und Gebäude in Playa del Carmen, Tulum und Cancún.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="zweistöckiges haus an der riviera maya: kosten &amp; grundrisse" data-desc="+15–25% pro m², aber halbes grundstück. hurrikanfeste statik, idealer grundriss, aufzugsvorbereitung.">
+<a href="zweistoeckiges-haus-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Zweistöckiges Haus an der Riviera Maya: Kosten &amp; Grundrisse</h3><p class="card-desc">+15–25% pro m², aber halbes Grundstück. Hurrikanfeste Statik, idealer Grundriss, Aufzugsvorbereitung.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="ökologische baumaterialien in mexiko 2026" data-desc="nachhaltige baumaterialien für die riviera maya: bambus, recycling-beton, stampflehm, gründächer, lokaler stein.">
+<a href="oekologische-baumaterialien-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Bau & Technik</span><h3 class="card-title">Ökologische Baumaterialien in Mexiko 2026</h3><p class="card-desc">Nachhaltige Baumaterialien für die Riviera Maya: Bambus, Recycling-Beton, Stampflehm, Gründächer, lokaler Stein.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Alle anzeigen (30) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-home">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>Design & Wohnen</h2><span class="cat-count">19 Artikel</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="aufzüge und barrierefreiheit an der riviera maya 2026" data-desc="wohnaufzüge, rampen, universelle barrierefreiheit. kosten, typen und vorschriften für häuser und gebäude in playa del carmen.">
+<a href="aufzuege-barrierefreiheit-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Aufzüge und Barrierefreiheit an der Riviera Maya 2026</h3><p class="card-desc">Wohnaufzüge, Rampen, universelle Barrierefreiheit. Kosten, Typen und Vorschriften für Häuser und Gebäude in Playa del…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="aussenküchen &amp; palapas an der riviera maya 2026" data-desc="design, kosten und materialien für aussenküchen, palapas und unterhaltungsbereiche in playa del carmen und tulum.">
+<a href="aussenkuechen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Aussenküchen &amp; Palapas an der Riviera Maya 2026</h3><p class="card-desc">Design, Kosten und Materialien für Aussenküchen, Palapas und Unterhaltungsbereiche in Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="barrierefreiheit &amp; universelles design in mexiko" data-desc="rollstuhlgerechte häuser, altersgerechtes design, rampen, breite türen, bodengleiche duschen, aufzüge.">
+<a href="barrierefreiheit-universelles-design-mexiko.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Barrierefreiheit &amp; universelles Design in Mexiko</h3><p class="card-desc">Rollstuhlgerechte Häuser, altersgerechtes Design, Rampen, breite Türen, bodengleiche Duschen, Aufzüge.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="beleuchtungsdesign für häuser an der riviera maya 2026" data-desc="led, aussen-, landschafts- und smart-beleuchtung. kosten, marken und energieeinsparung für playa del carmen und tulum.">
+<a href="beleuchtung-design-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Beleuchtungsdesign für Häuser an der Riviera Maya 2026</h3><p class="card-desc">LED, Aussen-, Landschafts- und Smart-Beleuchtung. Kosten, Marken und Energieeinsparung für Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="bodenbeläge für tropisches klima: riviera maya ratgeber 2026" data-desc="beste bodenbeläge für tropische häuser. porzellanfliesen, naturstein, chukum, mikrozement. kosten für playa del carmen und tulum.">
+<a href="bodenbelaege-tropisches-klima.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Bodenbeläge für tropisches Klima: Riviera Maya Ratgeber 2026</h3><p class="card-desc">Beste Bodenbeläge für tropische Häuser. Porzellanfliesen, Naturstein, Chukum, Mikrozement. Kosten für Playa del…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="dachterrasse in playa del carmen: kosten, ideen, roi (2026)" data-desc="flachdach zum rooftop: basisterrasse ab 6.500 usd, pergola, plunge-pool, jacuzzi. +40–80 usd/nacht auf airbnb, amortisiert in unter einem jahr.">
+<a href="dachterrasse-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Dachterrasse in Playa del Carmen: Kosten, Ideen, ROI (2026)</h3><p class="card-desc">Flachdach zum Rooftop: Basisterrasse ab 6.500 USD, Pergola, Plunge-Pool, Jacuzzi. +40–80 USD/Nacht auf Airbnb…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="fenster &amp; türen für tropisches klima: riviera maya 2026" data-desc="hurrikanfeste fenster, pvc, aluminium, holz. kosten, marken und spezifikationen für playa del carmen und tulum.">
+<a href="fenster-tueren-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Fenster &amp; Türen für tropisches Klima: Riviera Maya 2026</h3><p class="card-desc">Hurrikanfeste Fenster, PVC, Aluminium, Holz. Kosten, Marken und Spezifikationen für Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="garagen und stellplätze an der riviera maya 2026" data-desc="entwurf, kosten pro m², materialien und vorschriften für garagen und parkplätze in playa del carmen.">
+<a href="garagen-stellplaetze-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Garagen und Stellplätze an der Riviera Maya 2026</h3><p class="card-desc">Entwurf, Kosten pro m², Materialien und Vorschriften für Garagen und Parkplätze in Playa del Carmen.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="hausrenovierung in playa del carmen: kosten &amp; ideen (2026)" data-desc="renovierungskosten 2026: küche, bad, komplettsanierung pro m². pool, rooftop, außenküche, hurrikan-nachrüstung.">
+<a href="hausrenovierung-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Hausrenovierung in Playa del Carmen: Kosten &amp; Ideen (2026)</h3><p class="card-desc">Renovierungskosten 2026: Küche, Bad, Komplettsanierung pro m². Pool, Rooftop, Außenküche, Hurrikan-Nachrüstung.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="hausverwaltung an der riviera maya 2026" data-desc="hausverwaltung, mieteinnahmen-optimierung, airbnb-management, wartungskosten in playa del carmen und tulum.">
+<a href="hausverwaltung-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Hausverwaltung an der Riviera Maya 2026</h3><p class="card-desc">Hausverwaltung, Mieteinnahmen-Optimierung, Airbnb-Management, Wartungskosten in Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="inneneinrichtung für tropische häuser an der riviera maya" data-desc="tropische inneneinrichtungsstile, materialien, möbel, farbpaletten für häuser an der riviera maya.">
+<a href="inneneinrichtung-tropische-haeuser-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Inneneinrichtung für tropische Häuser an der Riviera Maya</h3><p class="card-desc">Tropische Inneneinrichtungsstile, Materialien, Möbel, Farbpaletten für Häuser an der Riviera Maya.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="möbel &amp; ff&amp;e für mietobjekte an der riviera maya" data-desc="einrichtungspakete für airbnb/hotel: möbel, geräte, bettwäsche, deko. tropentauglich, feuchtigkeitsbeständig.">
+<a href="moebel-ffe-mietobjekte-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Möbel &amp; FF&amp;E für Mietobjekte an der Riviera Maya</h3><p class="card-desc">Einrichtungspakete für Airbnb/Hotel: Möbel, Geräte, Bettwäsche, Deko. Tropentauglich, feuchtigkeitsbeständig.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="möbel &amp; materialien für ihren mexiko-bau importieren (2026)" data-desc="importieren oder lokal kaufen? zölle, 16% iva, versandkosten, menaje-de-casa-befreiung und was sich für ihr riviera-maya-haus lohnt.">
+<a href="moebel-materialien-nach-mexiko-importieren.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Möbel &amp; Materialien für Ihren Mexiko-Bau importieren (2026)</h3><p class="card-desc">Importieren oder lokal kaufen? Zölle, 16% IVA, Versandkosten, Menaje-de-Casa-Befreiung und was sich für Ihr…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="palapa-bau: kosten, wartung, genehmigungen (2026)" data-desc="kompletter palapa-leitfaden: reale kosten 2026 nach größe, huano vs. zacate, hartholzstruktur, wartungszyklus 5–8 jahre, genehmigungen.">
+<a href="palapa-bau-leitfaden.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Palapa-Bau: Kosten, Wartung, Genehmigungen (2026)</h3><p class="card-desc">Kompletter Palapa-Leitfaden: reale Kosten 2026 nach Größe, Huano vs. Zacate, Hartholzstruktur, Wartungszyklus 5–8…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="schwimmbadbau an der riviera maya: vollständiger leitfaden 2026" data-desc="vollständiger leitfaden zum schwimmbadbau an der riviera maya. typen, kosten, chukum-finish, genehmigungen, schritt-für-schritt-prozess.">
+<a href="schwimmbadbau-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Schwimmbadbau an der Riviera Maya: Vollständiger Leitfaden 2026</h3><p class="card-desc">Vollständiger Leitfaden zum Schwimmbadbau an der Riviera Maya. Typen, Kosten, Chukum-Finish, Genehmigungen…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="sicherheitssysteme für häuser an der riviera maya 2026" data-desc="kameras, smart locks, hurrikan-rollläden, alarmanlagen. kosten für playa del carmen und tulum.">
+<a href="sicherheitssysteme-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Sicherheitssysteme für Häuser an der Riviera Maya 2026</h3><p class="card-desc">Kameras, Smart Locks, Hurrikan-Rollläden, Alarmanlagen. Kosten für Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="smart home automatisierung an der riviera maya 2026" data-desc="hausautomationssysteme, lichtsteuerung, smart-sicherheit, automatisierte klimaanlage. kosten und marken für häuser in playa del carmen und tulum.">
+<a href="smart-home-automatisierung-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Smart Home Automatisierung an der Riviera Maya 2026</h3><p class="card-desc">Hausautomationssysteme, Lichtsteuerung, Smart-Sicherheit, automatisierte Klimaanlage. Kosten und Marken für Häuser in…</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="smart home in den tropen: villa-technik 2026" data-desc="80%+ luftfeuchte, stromausfälle, salzluft: domotik fürs klima. lecksensoren, usv, 2.000–6.000 mxn/monat ersparnis.">
+<a href="smart-home-tropen-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Smart Home in den Tropen: Villa-Technik 2026</h3><p class="card-desc">80%+ Luftfeuchte, Stromausfälle, Salzluft: Domotik fürs Klima. Lecksensoren, USV, 2.000–6.000 MXN/Monat Ersparnis.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="tropische gartengestaltung an der riviera maya 2026" data-desc="einheimische pflanzen, bewässerung, kosten für tropische gärten in playa del carmen und tulum.">
+<a href="tropische-gartengestaltung-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Design & Wohnen</span><h3 class="card-title">Tropische Gartengestaltung an der Riviera Maya 2026</h3><p class="card-desc">Einheimische Pflanzen, Bewässerung, Kosten für tropische Gärten in Playa del Carmen und Tulum.</p></div><div class="card-footer-custom"><span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Alle anzeigen (19) <i class="bi bi-chevron-down"></i></button>
 </div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="9 warnsignale bei bauunternehmen in mexiko" data-desc="vorkasse-fallen, fehlende lizenzen, prüf-checkliste vor der unterschrift.">
-<a href="warnsignale-bauunternehmer-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">9 Warnsignale bei Bauunternehmen in Mexiko</h3>
-<p class="card-desc">Vorkasse-Fallen, fehlende Lizenzen, Prüf-Checkliste vor der Unterschrift.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-kosten" data-title="airbnb-roi-rechner: tulum & playa 2026" data-desc="übernachtungspreise, auslastung, komplettes roi-beispiel mit 9,7 % nettorendite.">
-<a href="airbnb-roi-rechner-tulum-playa.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & Renovierung</span>
-<h3 class="card-title mt-2">Airbnb-ROI-Rechner: Tulum & Playa 2026</h3>
-<p class="card-desc">Übernachtungspreise, Auslastung, komplettes ROI-Beispiel mit 9,7 % Nettorendite.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-kosten" data-title="bauen oder kaufen an der riviera maya?" data-desc="bauen spart 25–40 %. kompletter kostenvergleich mit versteckten kosten.">
-<a href="bauen-oder-kaufen-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & Renovierung</span>
-<h3 class="card-title mt-2">Bauen oder Kaufen an der Riviera Maya?</h3>
-<p class="card-desc">Bauen spart 25–40 %. Kompletter Kostenvergleich mit versteckten Kosten.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="baumarktbericht — q3 2026" data-desc="materialpreise, arbeitskosten, genehmigungen. kosten +6–8% im jahresvergleich.">
-<a href="baumarktbericht-q3-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">Baumarktbericht — Q3 2026</h3>
-<p class="card-desc">Materialpreise, Arbeitskosten, Genehmigungen. Kosten +6–8% im Jahresvergleich.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="531 bauprojekte in quintana roo: was das fuer kaeufer bedeutet" data-desc="offizielle daten: 27.800 neue wohnungen im bau. tulum fuehrt mit 252 projekten, playa del carmen — 143. bundeshaushalt und bevoelkerungswachstum.">
-<a href="bauboom-quintana-roo-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">531 Bauprojekte in Quintana Roo: Was das fuer Kaeufer bedeutet</h3>
-<p class="card-desc">Offizielle Daten: 27.800 neue Wohnungen im Bau. Tulum fuehrt mit 252 Projekten, Playa del Carmen — 143. Bundeshaushalt und Bevoelkerungswachstum.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="maya-zug und immobilien: wie die eisenbahn die riviera maya veraendert" data-desc="bahnhofsstandorte, landenteignungen, finanzdistrikt cancun. wie sich baukosten und immobilienpreise veraendern.">
-<a href="maya-zug-immobilien-auswirkung.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">Maya-Zug und Immobilien: Wie die Eisenbahn die Riviera Maya veraendert</h3>
-<p class="card-desc">Bahnhofsstandorte, Landenteignungen, Finanzdistrikt Cancun. Wie sich Baukosten und Immobilienpreise veraendern.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="neue umwelt-baugesetze in quintana roo 2026" data-desc="sema-genehmigungen, reform des immobiliengesetzes, praezedenfall puerto morelos, kommunale bauordnungen.">
-<a href="umwelt-baugesetze-quintana-roo-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">Neue Umwelt-Baugesetze in Quintana Roo 2026</h3>
-<p class="card-desc">SEMA-Genehmigungen, Reform des Immobiliengesetzes, Praezedenfall Puerto Morelos, kommunale Bauordnungen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="pdu playa del carmen 2026: neue zonierungsregeln" data-desc="stadtentwicklungsplan 2026–2050: hoehenbegrenzungen, dichte, umweltanforderungen, umgehungsstrassen.">
-<a href="pdu-zonierung-playa-del-carmen-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">PDU Playa del Carmen 2026: Neue Zonierungsregeln</h3>
-<p class="card-desc">Stadtentwicklungsplan 2026–2050: Hoehenbegrenzungen, Dichte, Umweltanforderungen, Umgehungsstrassen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="immobilienmarkt tulum 2026: flughafen, maya-zug und 26 projekte unter ermittlung" data-desc="40 % nachfragerueckgang, ueberangebot an wohnungen, 26 ermittelte projekte. wo noch chancen bestehen. preisprognosen.">
-<a href="immobilienmarkt-tulum-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">Immobilienmarkt Tulum 2026: Flughafen, Maya-Zug und 26 Projekte unter Ermittlung</h3>
-<p class="card-desc">40 % Nachfragerueckgang, Ueberangebot an Wohnungen, 26 ermittelte Projekte. Wo noch Chancen bestehen. Preisprognosen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-nachrichten" data-title="mexikos neues geldwaeschegesetz 2026: was immobilienkaeufer wissen muessen" data-desc="lfpiorpi-reform: niedrigere meldeschwellen, strengere identifizierung, auswirkung auf fideicomiso. mehr papiere — mehr schutz.">
-<a href="geldwaesche-gesetz-mexiko-immobilien-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Offizielle Nachrichten</span>
-<h3 class="card-title mt-2">Mexikos neues Geldwaeschegesetz 2026: Was Immobilienkaeufer wissen muessen</h3>
-<p class="card-desc">LFPIORPI-Reform: niedrigere Meldeschwellen, strengere Identifizierung, Auswirkung auf Fideicomiso. Mehr Papiere — mehr Schutz.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-kosten">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>Kosten & Renovierung</h2><span class="cat-count">2 Artikel</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-kosten" data-title="küchenrenovierung kosten playa del carmen" data-desc="$4.000–$35.000 usd. budget bis premium.">
-<a href="kuechenrenovierung-kosten-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & Renovierung</span>
-<h3 class="card-title mt-2">Küchenrenovierung Kosten Playa del Carmen</h3>
-<p class="card-desc">$4.000–$35.000 USD. Budget bis Premium.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-kosten" data-title="badezimmer-renovierung kosten playa del carmen" data-desc="$2.500–$22.000 usd. budget bis premium.">
-<a href="badezimmer-renovierung-kosten-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Kosten & Renovierung</span>
-<h3 class="card-title mt-2">Badezimmer-Renovierung Kosten Playa del Carmen</h3>
-<p class="card-desc">$2.500–$22.000 USD. Budget bis Premium.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-auslaender">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>Für Ausländer</h2><span class="cat-count">7 Artikel</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="ausländer: hausbau in mexiko" data-desc="rechtliche voraussetzungen, fideicomiso, schritt-für-schritt für nicht-mexikaner.">
-<a href="auslaender-hausbau-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Ausländer: Hausbau in Mexiko</h3>
-<p class="card-desc">Rechtliche Voraussetzungen, Fideicomiso, Schritt-für-Schritt für Nicht-Mexikaner.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="fideicomiso: eigentum kaufen als ausländer" data-desc="was es ist, kosten, ablauf. kompletter banktreuhand-leitfaden.">
-<a href="fideicomiso-auslaender-eigentum-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Fideicomiso: Eigentum kaufen als Ausländer</h3>
-<p class="card-desc">Was es ist, Kosten, Ablauf. Kompletter Banktreuhand-Leitfaden.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="fernverwaltung: bauen aus der ferne" data-desc="tägliche berichte, wöchentliche videoanrufe. 80% bauen remote.">
-<a href="fernverwaltung-bau-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Fernverwaltung: Bauen aus der Ferne</h3>
-<p class="card-desc">Tägliche Berichte, wöchentliche Videoanrufe. 80% bauen remote.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="smart home automatisierung" data-desc="hausautomation, beleuchtung, sicherheit, klima. pakete ab $2.500 usd.">
-<a href="smart-home-automatisierung-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Smart Home Automatisierung</h3>
-<p class="card-desc">Hausautomation, Beleuchtung, Sicherheit, Klima. Pakete ab $2.500 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="aufzüge und barrierefreiheit" data-desc="wohnaufzüge, rampen, universelle barrierefreiheit. ab $18.000 usd.">
-<a href="aufzuege-barrierefreiheit-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Aufzüge und Barrierefreiheit</h3>
-<p class="card-desc">Wohnaufzüge, Rampen, universelle Barrierefreiheit. Ab $18.000 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="garagen und stellplätze" data-desc="entwurf, kosten/m², automatische tore. überdachte garage ab $650 usd/m².">
-<a href="garagen-stellplaetze-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Garagen und Stellplätze</h3>
-<p class="card-desc">Entwurf, Kosten/m², automatische Tore. Überdachte Garage ab $650 USD/m².</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-auslaender" data-title="zisternen und wasserversorgung" data-desc="typen, kapazitäten, pumpen, regenwassernutzung. ab $1.500 usd.">
-<a href="zisternen-wasserversorgung-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Für Ausländer</span>
-<h3 class="card-title mt-2">Zisternen und Wasserversorgung</h3>
-<p class="card-desc">Typen, Kapazitäten, Pumpen, Regenwassernutzung. Ab $1.500 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-praktisch">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>Praktische Tipps</h2><span class="cat-count">14 Artikel</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="schwimmbadbau: komplettanleitung 2026" data-desc="typen, kosten, chukum-finish, genehmigungen. 6–12 wochen.">
-<a href="schwimmbadbau-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Schwimmbadbau: Komplettanleitung 2026</h3>
-<p class="card-desc">Typen, Kosten, Chukum-Finish, Genehmigungen. 6–12 Wochen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="bodenbeläge für tropisches klima" data-desc="porzellan, travertin, chukum, mikrozement, tropenholz.">
-<a href="bodenbelaege-tropisches-klima.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Bodenbeläge für tropisches Klima</h3>
-<p class="card-desc">Porzellan, Travertin, Chukum, Mikrozement, Tropenholz.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="klimaanlage und lüftung" data-desc="mini split, vrf, kosten, marken, btu-berechnung.">
-<a href="klimaanlage-lueftung-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Klimaanlage und Lüftung</h3>
-<p class="card-desc">Mini Split, VRF, Kosten, Marken, BTU-Berechnung.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="sicherheitssysteme für häuser" data-desc="kameras, smart locks, hurrikanschutz, alarmanlagen.">
-<a href="sicherheitssysteme-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Sicherheitssysteme für Häuser</h3>
-<p class="card-desc">Kameras, Smart Locks, Hurrikanschutz, Alarmanlagen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="tropische gartengestaltung" data-desc="einheimische pflanzen, bewässerung, beleuchtung.">
-<a href="tropische-gartengestaltung-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Tropische Gartengestaltung</h3>
-<p class="card-desc">Einheimische Pflanzen, Bewässerung, Beleuchtung.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="aussenküchen &amp; palapas an der riviera maya" data-desc="design, kosten ($3.500–$55.000 usd) und materialien für aussenküchen.">
-<a href="aussenkuechen-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Aussenküchen &amp; Palapas an der Riviera Maya</h3>
-<p class="card-desc">Design, Kosten ($3.500–$55.000 USD) und Materialien für Aussenküchen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="beleuchtungsdesign für häuser an der riviera maya" data-desc="led, aussen-, landschafts- und smart-beleuchtung. kosten und marken.">
-<a href="beleuchtung-design-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Beleuchtungsdesign für Häuser an der Riviera Maya</h3>
-<p class="card-desc">LED, Aussen-, Landschafts- und Smart-Beleuchtung. Kosten und Marken.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="dach &amp; abdichtung an der riviera maya" data-desc="betondecke, gründach, palapa. abdichtungssysteme mit 3–20 jahren garantie.">
-<a href="dach-abdichtung-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Dach &amp; Abdichtung an der Riviera Maya</h3>
-<p class="card-desc">Betondecke, Gründach, Palapa. Abdichtungssysteme mit 3–20 Jahren Garantie.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="fenster &amp; türen für tropisches klima" data-desc="hurrikansichere fenster, pvc, aluminium, hartholz. miami-dade-zertifizierungen.">
-<a href="fenster-tueren-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Fenster &amp; Türen für tropisches Klima</h3>
-<p class="card-desc">Hurrikansichere Fenster, PVC, Aluminium, Hartholz. Miami-Dade-Zertifizierungen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="solaranlagen für häuser an der riviera maya" data-desc="kosten ($4.500–$22.000 usd), marken, roi und cfe-vorschriften für solarenergie.">
-<a href="solaranlagen-haeuser-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Solaranlagen für Häuser an der Riviera Maya</h3>
-<p class="card-desc">Kosten ($4.500–$22.000 USD), Marken, ROI und CFE-Vorschriften für Solarenergie.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="kläranlagen und abwasserbehandlung" data-desc="biodigester, kläranlagen, kosten und umweltvorschriften für die riviera maya.">
-<a href="klaeranlage-abwasser-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Kläranlagen und Abwasserbehandlung</h3>
-<p class="card-desc">Biodigester, Kläranlagen, Kosten und Umweltvorschriften für die Riviera Maya.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="betonarten für den bau" data-desc="transport-, pump-, selbstverdichtender beton. festigkeiten f'c 200–400 und kosten pro m³.">
-<a href="betonarten-bau-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Betonarten für den Bau</h3>
-<p class="card-desc">Transport-, Pump-, selbstverdichtender Beton. Festigkeiten f'c 200–400 und Kosten pro m³.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="bauversicherungen und garantien" data-desc="bauleistungsversicherung, strukturgarantien, erfüllungsbürgschaften und käuferschutz.">
-<a href="versicherungen-garantien-bau-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Bauversicherungen und Garantien</h3>
-<p class="card-desc">Bauleistungsversicherung, Strukturgarantien, Erfüllungsbürgschaften und Käuferschutz.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktisch" data-title="entsalzungsanlagen wasseraufbereitung häuser hotels riviera maya" data-desc="umkehrosmose wasserbehandlung kosten installation wartung genehmigungen">
-<a href="entsalzungsanlagen-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card" style="position:relative">
-
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Praktische Tipps</span>
-<h3 class="card-title mt-2">Entsalzungs- &amp; Wasseraufbereitungsanlagen für Häuser &amp; Hotels</h3>
-<p class="card-desc">Kompletter Leitfaden: Umkehrosmose, Enthärter, UV-Sterilisation. Kosten ab $8.000 MXN. Wasserqualität nach Zone.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-baufuehrer">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(232,114,12,.08);color:#e8720c"><i class="bi bi-geo-alt"></i></div><h2>Bauführer</h2><span class="cat-count">20 Artikel</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="beste gebiete zum bauen in playa del carmen" data-desc="grundstückspreise, lebensstil, roi pro zone.">
-<a href="beste-gebiete-bauen-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Beste Gebiete zum Bauen in Playa del Carmen</h3>
-<p class="card-desc">Grundstückspreise, Lebensstil, ROI pro Zone.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="bauzeitplan riviera maya" data-desc="8–14 monate bau, 2–4 monate genehmigungen.">
-<a href="bauzeitplan-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Bauzeitplan Riviera Maya</h3>
-<p class="card-desc">8–14 Monate Bau, 2–4 Monate Genehmigungen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="schlüsselfertig bauen in playa del carmen" data-desc="ein vertrag, ein team, ein preis.">
-<a href="schluesselfertig-bauen-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Schlüsselfertig Bauen in Playa del Carmen</h3>
-<p class="card-desc">Ein Vertrag, ein Team, ein Preis.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="nachhaltiges bauen in tulum" data-desc="umweltregeln, öko-materialien, solar.">
-<a href="nachhaltiges-bauen-tulum.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Nachhaltiges Bauen in Tulum</h3>
-<p class="card-desc">Umweltregeln, Öko-Materialien, Solar.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="fernverwaltung: bauen aus der ferne" data-desc="tägliche fotos, wöchentliche videoanrufe.">
-<a href="fernverwaltung-bau-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Fernverwaltung: Bauen aus der Ferne</h3>
-<p class="card-desc">Tägliche Fotos, wöchentliche Videoanrufe.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="playa del carmen vs tulum: wo bauen?" data-desc="grundstückskosten, vorschriften, airbnb-renditen.">
-<a href="playa-del-carmen-vs-tulum-bauen-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Playa del Carmen vs Tulum: Wo bauen?</h3>
-<p class="card-desc">Grundstückskosten, Vorschriften, Airbnb-Renditen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="grundstück kaufen riviera maya 2026" data-desc="preise, ejido vs privat, fideicomiso, beste zonen.">
-<a href="grundstueck-kaufen-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Grundstück kaufen Riviera Maya 2026</h3>
-<p class="card-desc">Preise, Ejido vs Privat, Fideicomiso, beste Zonen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="hausverwaltung riviera maya" data-desc="airbnb-management, mieteinnahmen, wartung.">
-<a href="hausverwaltung-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Hausverwaltung Riviera Maya</h3>
-<p class="card-desc">Airbnb-Management, Mieteinnahmen, Wartung.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="inneneinrichtung tropische häuser" data-desc="stile, materialien, feuchtigkeitsbeständig.">
-<a href="inneneinrichtung-tropische-haeuser-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Inneneinrichtung tropische Häuser</h3>
-<p class="card-desc">Stile, Materialien, feuchtigkeitsbeständig.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="ökologische baumaterialien" data-desc="bambus, recycling-beton, stampflehm, gründächer.">
-<a href="oekologische-baumaterialien-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Ökologische Baumaterialien</h3>
-<p class="card-desc">Bambus, Recycling-Beton, Stampflehm, Gründächer.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="fundamenttypen riviera maya" data-desc="platte, pfähle für kalkstein-terrain.">
-<a href="fundamenttypen-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Fundamenttypen Riviera Maya</h3>
-<p class="card-desc">Platte, Pfähle für Kalkstein-Terrain.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="wohnanlage bau" data-desc="planung, infrastruktur, sicherheit, verwaltung.">
-<a href="wohnanlage-bau-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Wohnanlage Bau</h3>
-<p class="card-desc">Planung, Infrastruktur, Sicherheit, Verwaltung.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="eigentumswohnungsbau" data-desc="4-50 einheiten, vorverkauf, genehmigungen.">
-<a href="eigentumswohnung-bau-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Eigentumswohnungsbau</h3>
-<p class="card-desc">4-50 Einheiten, Vorverkauf, Genehmigungen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="restaurant &amp; bar bau" data-desc="küche, genehmigungen, alkohollizenz, kosten.">
-<a href="restaurant-bar-bau-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Restaurant &amp; Bar Bau</h3>
-<p class="card-desc">Küche, Genehmigungen, Alkohollizenz, Kosten.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="sanitär &amp; wassersysteme" data-desc="brunnen, zisternen, pumpen, aufbereitung.">
-<a href="sanitaer-wassersysteme-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Sanitär &amp; Wassersysteme</h3>
-<p class="card-desc">Brunnen, Zisternen, Pumpen, Aufbereitung.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="geländevorbereitung &amp; stützmauern" data-desc="rodung, felsbrechen, entwässerung.">
-<a href="gelaendevorbereitung-stuetzmauern-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Geländevorbereitung &amp; Stützmauern</h3>
-<p class="card-desc">Rodung, Felsbrechen, Entwässerung.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="lebenshaltungskosten beim bauen" data-desc="monatliche kosten: miete, essen, transport.">
-<a href="lebenshaltungskosten-bauen-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Lebenshaltungskosten beim Bauen</h3>
-<p class="card-desc">Monatliche Kosten: Miete, Essen, Transport.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="möbel &amp; ff&amp;e für mietobjekte" data-desc="einrichtungspakete ab $5.000.">
-<a href="moebel-ffe-mietobjekte-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Möbel &amp; FF&amp;E für Mietobjekte</h3>
-<p class="card-desc">Einrichtungspakete ab $5.000.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="steuervorteile bau mexiko" data-desc="isr-abzüge, abschreibung, solaranreize.">
-<a href="steuervorteile-bau-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Steuervorteile Bau Mexiko</h3>
-<p class="card-desc">ISR-Abzüge, Abschreibung, Solaranreize.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-baufuehrer" data-title="barrierefreiheit &amp; universelles design" data-desc="rollstuhlgerecht, altersgerecht, rampen.">
-<a href="barrierefreiheit-universelles-design-mexiko.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Bauführer</span>
-<h3 class="card-title mt-2">Barrierefreiheit &amp; universelles Design</h3>
-<p class="card-desc">Rollstuhlgerecht, altersgerecht, Rampen.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Leitfaden lesen <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
 </div></section>
 
 <div class="lead-magnet mx-auto my-4" style="max-width:720px">
@@ -1076,50 +471,6 @@
 </form>
 </div>
 </section>
-
-<script>
-function filterCat(cat,btn){
-  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
-  btn.classList.add('active');
-  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
-  document.querySelectorAll('.cat-section').forEach(s=>{
-    if(cat==='all'||s.dataset.cat===cat){s.style.display=''}else{s.style.display='none'}
-  });
-  document.getElementById('searchInput').value='';
-  updateCount();
-}
-function searchArticles(){
-  var q=document.getElementById('searchInput').value.toLowerCase().trim();
-  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
-  document.querySelector('[data-cat="all"]').classList.add('active');
-  document.querySelectorAll('.cat-section').forEach(s=>s.style.display='');
-  var items=document.querySelectorAll('.article-item');
-  var shown=0;
-  items.forEach(item=>{
-    if(!q||item.dataset.title.includes(q)||item.dataset.desc.includes(q)){item.style.display='';shown++}else{item.style.display='none'}
-  });
-  document.querySelectorAll('.cat-section').forEach(s=>{
-    var v=s.querySelectorAll('.article-item:not([style*="display: none"])').length;
-    if(v===0&&q)s.style.display='none';
-  });
-  document.getElementById('searchCount').textContent=shown+' Artikel';
-  var nr=document.getElementById('noResults');
-  if(shown===0&&q){nr.style.display='block'}else{nr.style.display='none'}
-}
-function updateCount(){
-  var shown=0;
-  document.querySelectorAll('.article-item').forEach(i=>{if(getComputedStyle(i).display!=='none')shown++});
-  document.getElementById('searchCount').textContent=shown+' Artikel';
-}
-function toggleView(mode,btn){
-  var c=document.getElementById('articlesGrid');
-  document.querySelectorAll('.view-toggle button').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  if(mode==='list')c.classList.add('list-view');else c.classList.remove('list-view');
-}
-document.addEventListener('DOMContentLoaded',function(){updateCount()});
-</script>
-
 
 <section class="faq-section" style="padding:2rem 1rem"><div style="max-width:820px;margin:0 auto"><h2 class="section-title">Häufige Fragen</h2>
 <div class="faq">
@@ -1171,6 +522,54 @@ var p=document.querySelector('.pill-count');if(p)p.textContent=n;
 var sub=document.querySelector('.section-subtitle');
 if(sub&&/^\s*\d+\s+(guides|gu\u00edas|guias)/i.test(sub.textContent))sub.innerHTML=sub.innerHTML.replace(/^(\s*)\d+/,'$1'+n);
 }catch(e){}})();
+</script>
+<script id="blogIndexScript">
+function filterCat(cat,btn){
+  document.querySelectorAll('.cat-pill').forEach(function(p){p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  btn.classList.add('active');
+  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
+  document.querySelectorAll('.article-item').forEach(function(i){i.style.display=''});
+  document.querySelectorAll('.cat-section').forEach(function(s){
+    var on=(cat==='all'||s.dataset.cat===cat);
+    s.style.display=on?'':'none';
+    s.classList.toggle('expanded',on&&cat!=='all');
+  });
+  document.getElementById('searchInput').value='';
+  document.getElementById('noResults').style.display='none';
+  updateCount();
+}
+function searchArticles(){
+  var q=document.getElementById('searchInput').value.toLowerCase().trim();
+  document.querySelectorAll('.cat-pill').forEach(function(p){p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  var ap=document.querySelector('.cat-pill[data-cat="all"]');if(ap)ap.classList.add('active');
+  var shown=0;
+  document.querySelectorAll('.article-item').forEach(function(item){
+    var hit=!q||item.dataset.title.indexOf(q)>-1||item.dataset.desc.indexOf(q)>-1;
+    item.style.display=hit?'':'none';
+    if(hit)shown++;
+  });
+  document.querySelectorAll('.cat-section').forEach(function(s){
+    s.classList.toggle('expanded',!!q);
+    var v=0;s.querySelectorAll('.article-item').forEach(function(i){if(i.style.display!=='none')v++});
+    s.style.display=(q&&!v)?'none':'';
+  });
+  document.getElementById('noResults').style.display=(q&&!shown)?'block':'none';
+  setCount(shown);
+}
+function setCount(n){var e=document.getElementById('searchCount');if(e)e.textContent=n+' Artikel'}
+function updateCount(){
+  var n=0;document.querySelectorAll('.cat-section').forEach(function(s){
+    if(s.style.display!=='none')n+=s.querySelectorAll('.article-item').length});
+  setCount(n);
+}
+function showAll(btn){btn.closest('.cat-section').classList.add('expanded')}
+function toggleView(mode,btn){
+  var c=document.getElementById('articlesGrid');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  c.classList.toggle('list-view',mode==='list');
+}
+document.addEventListener('DOMContentLoaded',updateCount);
 </script>
 </body>
 </html>

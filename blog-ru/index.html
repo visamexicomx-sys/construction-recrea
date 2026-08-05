@@ -104,6 +104,58 @@
 }
 </style>
 
+<style id="blogIndexStyle">
+.blog-hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:52px 0 40px;position:relative;overflow:hidden}
+.blog-hero:after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.18),transparent 70%)}
+.blog-hero h1{font-size:2.1rem;font-weight:800;margin-bottom:10px}
+.blog-hero .lead{color:rgba(255,255,255,.7);font-size:1rem;max-width:640px;margin-bottom:0}
+.blog-stats{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
+.blog-stat strong{display:block;font-size:1.5rem;font-weight:800;color:#d4a843;line-height:1.1}
+.blog-stat span{font-size:.78rem;color:rgba(255,255,255,.6)}
+.search-box{position:relative;max-width:500px;margin:26px auto 0}
+.search-box input{width:100%;padding:13px 20px 13px 46px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);border-radius:50px;color:#fff;font-size:.95rem;transition:all .3s}
+.search-box input::placeholder{color:rgba(255,255,255,.4)}
+.search-box input:focus{outline:none;border-color:#d4a843;background:rgba(255,255,255,.12)}
+.search-box i{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:1.05rem}
+.search-box .search-count{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:.78rem}
+.cat-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:18px 0}
+.cat-pill{border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:7px 16px;font-size:.83rem;font-weight:600;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:6px;color:#495057;user-select:none}
+.cat-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.cat-pill.active{background:#1a1a2e;color:#fff;border-color:transparent;box-shadow:0 4px 15px rgba(0,0,0,.15)}
+.cat-pill .pill-count{background:rgba(0,0,0,.08);border-radius:50px;padding:1px 8px;font-size:.72rem;font-weight:700}
+.cat-pill.active .pill-count{background:rgba(255,255,255,.25)}
+.cat-section-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #f0f0f0}
+.cat-section-header .cat-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex:0 0 auto}
+.cat-section-header h2{font-size:1.2rem;font-weight:700;margin:0;color:#1a1a2e}
+.cat-section-header .cat-count{font-size:.8rem;color:#6c757d;margin-left:auto;white-space:nowrap}
+/* uniform cards: the anchor must stretch, or cards in a row grow unevenly */
+.article-item>a{display:block;height:100%}
+.blog-card{background:#fff;border-radius:16px;border:1px solid #e9ecef;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1);border-color:#d4a843}
+.blog-card .card-body{padding:20px 20px 14px;flex:1;display:flex;flex-direction:column}
+.blog-card .card-cat{font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:50px;letter-spacing:.4px;text-transform:uppercase;display:inline-block;align-self:flex-start}
+.blog-card .card-title{font-size:1rem;font-weight:700;line-height:1.35;margin:10px 0 7px;color:#1a1a2e;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.blog-card:hover .card-title{color:#e8720c}
+.blog-card .card-desc{font-size:.85rem;color:#6c757d;line-height:1.5;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:3.8em}
+.blog-card .card-footer-custom{padding:12px 20px;border-top:1px solid #f0f0f0;margin-top:auto}
+.blog-card .read-more{font-size:.83rem;font-weight:600;color:#e8720c;display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
+.blog-card:hover .read-more{gap:9px}
+.article-item.extra{display:none}
+.cat-section.expanded .article-item.extra{display:block}
+.show-all{display:block;margin:14px auto 0;border:2px solid #dee2e6;background:#fff;border-radius:50px;padding:8px 22px;font-size:.85rem;font-weight:600;color:#495057;cursor:pointer;transition:all .2s}
+.show-all:hover{border-color:#d4a843;color:#1a1a2e}
+.cat-section.expanded .show-all{display:none}
+.no-results{text-align:center;padding:60px 20px;color:#6c757d}
+.no-results i{font-size:3.4rem;margin-bottom:14px;display:block;color:#dee2e6}
+.view-toggle{display:flex;gap:4px;background:#f0f0f0;border-radius:8px;padding:3px}
+.view-toggle button{border:none;background:none;padding:6px 10px;border-radius:6px;color:#6c757d;cursor:pointer;transition:all .2s}
+.view-toggle button.active{background:#fff;color:#1a1a2e;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.list-view .blog-card .card-desc,.list-view .blog-card .card-footer-custom{display:none}
+.list-view .blog-card .card-title{font-size:.93rem;min-height:0;-webkit-line-clamp:2}
+.list-view .blog-card .card-body{padding:13px 16px}
+.list-view .blog-card .card-cat{font-size:.62rem;padding:2px 8px}
+@media(max-width:768px){.blog-hero{padding:34px 0 28px}.blog-hero h1{font-size:1.6rem}.blog-stats{gap:16px}.blog-stat strong{font-size:1.25rem}.cat-pills{gap:6px;padding:12px 0}.cat-pill{padding:6px 12px;font-size:.78rem}.blog-card .card-title{font-size:.95rem}}
+</style>
 </head>
 <body class="has-top-bar">
 <div class="top-cta-bar"><span>Бесплатная оценка — отвечаем за 2 мин</span><a href="https://wa.me/529844525333?text=Hello!%20I%20want%20a%20free%20quote" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Оценка</a></div>
@@ -129,1076 +181,289 @@
 <div class="container position-relative" style="z-index:1">
 <div class="row align-items-center">
 <div class="col-lg-7">
-<h1><i class="bi bi-journal-richtext me-2"></i>Руководства</h1>
-<p class="lead">Реальные цифры, реальные советы по 196+ проектам на Ривьере Майя. Экспертные гиды по стоимости, разрешениям, ROI и строительству в Мексике.</p>
+<h1><i class="bi bi-journal-richtext me-2"></i>Гиды по строительству</h1>
+<p class="lead">Реальные цифры из 196+ проектов на Ривьере-Майя. Стоимость, разрешения, ROI и строительство в Мексике.</p>
 <div class="blog-stats">
-<div class="blog-stat"><strong>94</strong><span>Статей</span></div>
-<div class="blog-stat"><strong>5</strong><span>Категорий</span></div>
+<div class="blog-stat"><strong>111</strong><span>Гидов</span></div>
+<div class="blog-stat"><strong>6</strong><span>Категорий</span></div>
 <div class="blog-stat"><strong>196+</strong><span>Проектов</span></div>
 <div class="blog-stat"><strong>18+</strong><span>Лет</span></div>
-</div>
-</div>
-<div class="col-lg-5">
-<div class="search-box">
+</div></div>
+<div class="col-lg-5"><div class="search-box">
 <i class="bi bi-search"></i>
-<input type="text" id="searchInput" placeholder="Поиск статей..." oninput="searchArticles()">
-<span class="search-count" id="searchCount">67 статей</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3"><div class="flex-grow-1"><div class="cat-pills" id="catPills">
-<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>Все<span class="pill-count">94</span></button>
-<button class="cat-pill" data-cat="cat-novosti" data-color="#dc3545" onclick="filterCat('cat-novosti',this)"><i class="bi bi-newspaper me-1"></i>Официальные новости<span class="pill-count">7</span></button>
-<button class="cat-pill" data-cat="cat-stoimost" data-color="#198754" onclick="filterCat('cat-stoimost',this)"><i class="bi bi-calculator me-1"></i>Стоимость и ROI<span class="pill-count">12</span></button>
-<button class="cat-pill" data-cat="cat-inostrantsy" data-color="#0d6efd" onclick="filterCat('cat-inostrantsy',this)"><i class="bi bi-globe me-1"></i>Для иностранцев<span class="pill-count">7</span></button>
-<button class="cat-pill" data-cat="cat-praktika" data-color="#20c997" onclick="filterCat('cat-praktika',this)"><i class="bi bi-house-heart me-1"></i>Практические советы<span class="pill-count">18</span></button>
-<button class="cat-pill" data-cat="cat-rukovodstva" data-color="#e8720c" onclick="filterCat('cat-rukovodstva',this)"><i class="bi bi-geo-alt me-1"></i>Руководства по строительству<span class="pill-count">23</span></button>
-</div>
-</div><div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div></div></div>
+<input type="text" id="searchInput" placeholder="Поиск по гидам…" oninput="searchArticles()">
+<span class="search-count" id="searchCount">111 статей</span>
+</div></div></div></div></section>
+<div class="container"><div class="d-flex align-items-center justify-content-between flex-wrap gap-2 py-3">
+<div class="flex-grow-1"><div class="cat-pills" id="catPills">
+<button class="cat-pill active" data-cat="all" onclick="filterCat('all',this)"><i class="bi bi-grid-3x3-gap me-1"></i>Все<span class="pill-count">111</span></button>
+<button class="cat-pill" data-cat="cat-news" data-color="#dc3545" onclick="filterCat('cat-news',this)"><i class="bi bi-newspaper me-1"></i>Новости и рынок<span class="pill-count">7</span></button>
+<button class="cat-pill" data-cat="cat-costs" data-color="#198754" onclick="filterCat('cat-costs',this)"><i class="bi bi-calculator me-1"></i>Стоимость и ROI<span class="pill-count">25</span></button>
+<button class="cat-pill" data-cat="cat-permits" data-color="#fd7e14" onclick="filterCat('cat-permits',this)"><i class="bi bi-file-earmark-text me-1"></i>Разрешения и процесс<span class="pill-count">14</span></button>
+<button class="cat-pill" data-cat="cat-foreigners" data-color="#0d6efd" onclick="filterCat('cat-foreigners',this)"><i class="bi bi-globe me-1"></i>Для иностранцев<span class="pill-count">5</span></button>
+<button class="cat-pill" data-cat="cat-build" data-color="#6f42c1" onclick="filterCat('cat-build',this)"><i class="bi bi-tools me-1"></i>Стройка и техника<span class="pill-count">33</span></button>
+<button class="cat-pill" data-cat="cat-home" data-color="#20c997" onclick="filterCat('cat-home',this)"><i class="bi bi-house-heart me-1"></i>Дизайн и дом<span class="pill-count">27</span></button>
+</div></div>
+<div class="view-toggle d-none d-md-flex"><button class="active" onclick="toggleView('grid',this)" title="Grid"><i class="bi bi-grid-3x3-gap"></i></button><button onclick="toggleView('list',this)" title="List"><i class="bi bi-list-ul"></i></button></div>
+</div></div>
 <section class="py-4"><div class="container" id="articlesGrid">
-<div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>Статьи не найдены</h4><p>Попробуйте другой поисковый запрос</p></div>
-<div class="cat-section" data-cat="cat-novosti">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>Официальные новости</h2><span class="cat-count">7 статей</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в канкуне 2026" data-desc="сколько стоит построить дом в канкуне в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.50m–$3.07m mxn.">
-<a href="skolko-stoit-postroit-dom-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в Канкуне 2026</h3><p class="card-desc">Сколько стоит построить дом в Канкуне в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $2.50M–$3.07M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.81m–$3.46m mxn.">
-<a href="skolko-stoit-postroit-dom-puerto-aventuras.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $2.81M–$3.46M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в акумале 2026" data-desc="сколько стоит построить дом в акумале в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.91m–$3.58m mxn.">
-<a href="skolko-stoit-postroit-dom-akumal.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в Акумале 2026</h3><p class="card-desc">Сколько стоит построить дом в Акумале в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $2.91M–$3.58M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.60m–$3.20m mxn.">
-<a href="skolko-stoit-postroit-dom-puerto-morelos.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $2.60M–$3.20M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.73m–$3.36m mxn.">
-<a href="skolko-stoit-postroit-dom-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $2.73M–$3.36M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.25m–$4m mxn.">
-<a href="skolko-stoit-postroit-dom-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $3.25M–$4M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.69m–$4.54m mxn.">
-<a href="skolko-stoit-postroit-dom-mayakoba.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $3.69M–$4.54M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.12m–$3.84m mxn.">
-<a href="skolko-stoit-postroit-dom-aldea-zama.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $3.12M–$3.84M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в none 2026" data-desc="сколько стоит построить дом в none в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.38m–$4.16m mxn.">
-<a href="skolko-stoit-postroit-dom-corasol.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в None 2026</h3><p class="card-desc">Сколько стоит построить дом в None в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно $3.38M–$4.16M MXN.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="цена за квадратный метр строительства в ривьера-майя 2026" data-desc="сколько стоит построить квадратный метр в ривьера-майя в 2026? реальные диапазоны цен по уровням отделки для плайя-дель-кармен, тулума и канкуна.">
-<a href="cena-za-kvadratny-metr-stroitelstva-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Цена за Квадратный Метр Строительства в Ривьера-Майя 2026</h3><p class="card-desc">Сколько стоит построить квадратный метр в Ривьера-Майя в 2026? Реальные диапазоны цен по уровням отделки для Плайя-дель-Кармен, Тулума и Канкуна.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить дом в плайя-дель-кармен 2026" data-desc="сколько стоит построить дом в плайя-дель-кармен в 2026? полная смета по этапам для дома 150 м², сроки и что входит.">
-<a href="skolko-stoit-postroit-dom-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Дом в Плайя-дель-Кармен 2026</h3><p class="card-desc">Сколько стоит построить дом в Плайя-дель-Кармен в 2026? Полная смета по этапам для дома 150 м², сроки и что входит.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="сколько стоит построить виллу люкс в тулуме 2026" data-desc="сколько стоит построить виллу класса люкс в тулуме в 2026? реальные бюджеты, отделка, удобства и roi для вилл высокого класса.">
-<a href="stoimost-stroitelstva-villy-lyuks-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость</span>
-<h3 class="card-title mt-2">Сколько Стоит Построить Виллу Люкс в Тулуме 2026</h3><p class="card-desc">Сколько стоит построить виллу класса люкс в Тулуме в 2026? Реальные бюджеты, отделка, удобства и ROI для вилл высокого класса.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="автономный дом (off-grid) на ривьере майя (2026)" data-desc="постройте полностью автономный дом: солнце + батарея, дождь + скважина + осмос, биодигестер, резервн">
-<a href="razresheniya-na-stroitelstvo-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Разрешения на строительство в Тулуме (2026)</h3><p class="card-desc">Разрешения на строительство в Тулуме 2026: экоразрешение SEMA, муниципальная лицензия, DRO, расчистка, стоимость и сроки. Что нужно каждому.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="razresheniya-na-stroitelstvo-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Разрешения на строительство в Канкуне (2026)</h3><p class="card-desc">Разрешения на строительство в Канкуне 2026: лицензия, назначение земли, Гражданская защита, CFE, правила отельной зоны (FONATUR), стоимость и сроки.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="stoimost-zhizni-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Стоимость жизни в Плая-дель-Кармен (2026)</h3><p class="card-desc">Стоимость жизни в Плая-дель-Кармен 2026: аренда, еда, коммуналка и реальные бюджеты для одного, пары и семьи. И почему многие решают строить.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="ceny-na-zemlyu-playa-del-carmen-tulum-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Цены на землю в Плая-дель-Кармен и Тулуме (2026)</h3><p class="card-desc">Цены на землю в Плая-дель-Кармен и Тулуме 2026: реальная цена за м² по районам — Centro, Playacar, Corasol, Aldea Zamá, La Veleta. Гид перед стройкой.</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="rost-stoimosti-nedvizhimosti-riviera-maya-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Рост стоимости недвижимости на Ривьере Майя (2026)</h3><p class="card-desc">Рост стоимости недвижимости на Ривьере Майя 2026: годовой прирост в Плая-дель-Кармен, Тулуме и Канкуне, что его движет и почему строительство максимиз…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a>
-<a href="avtonomnyy-dom-off-grid-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Автономный дом (off-grid) на Ривьере Майя (2026)</h3><p class="card-desc">Постройте полностью автономный дом: солнце + батарея, дождь + скважина + осмос, биодигестер, резервн…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="чукум: полный гид по отделке (цены и уход, 2026)" data-desc="чукум — майянская водостойкая штукатурка: что это, реальные цены 2026 за м², где применять, цвета, г">
-<a href="chukum-otdelka-gid.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Чукум: полный гид по отделке (цены и уход, 2026)</h3><p class="card-desc">Чукум — майянская водостойкая штукатурка: что это, реальные цены 2026 за м², где применять, цвета, г…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="гостевой домик (casita) под аренду на ривьере майя (2026)" data-desc="добавьте на участок арендную casita: цена $30 000–70 000 usd, доход $600–1 800/мес на airbnb. разреш">
-<a href="gostevoy-domik-casita-arenda.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Гостевой домик (casita) под аренду на Ривьере Майя (2026)</h3><p class="card-desc">Добавьте на участок арендную casita: цена $30 000–70 000 USD, доход $600–1 800/мес на Airbnb. Разреш…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="ввоз мебели и материалов для стройки в мексике (2026)" data-desc="ввозить или купить местное? пошлины, 16% iva, стоимость доставки, льгота menaje de casa и что выгодн">
-<a href="vvoz-mebeli-materialov-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(200,169,110,.15);color:#a07c1e">Новое</span>
-<h3 class="card-title mt-2">Ввоз мебели и материалов для стройки в Мексике (2026)</h3><p class="card-desc">Ввозить или купить местное? Пошлины, 16% IVA, стоимость доставки, льгота menaje de casa и что выгодн…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="дом для пенсии на ривьере майя: полный план (2026)" data-desc="пенсия в мексике: одноуровневый дом «на всю жизнь» за $120 000–200 000 usd, жизнь от $1 500–2 500/ме">
-<a href="dom-dlya-pensii-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новое</span>
-<h3 class="card-title mt-2">Дом для пенсии на Ривьере Майя: полный план (2026)</h3><p class="card-desc">Пенсия в Мексике: одноуровневый дом «на всю жизнь» за $120 000–200 000 USD, жизнь от $1 500–2 500/ме…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="строительство палапы: цены, уход, разрешения (2026)" data-desc="полный гид по палапам: реальные цены 2026 по размерам, уано vs сакате, каркас из твёрдых пород, цикл">
-<a href="palapa-stroitelstvo-gid.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новое</span>
-<h3 class="card-title mt-2">Строительство палапы: цены, уход, разрешения (2026)</h3><p class="card-desc">Полный гид по палапам: реальные цены 2026 по размерам, уано vs сакате, каркас из твёрдых пород, цикл…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="переезд в плая-дель-кармен: полный гид 2026" data-desc="гид по переезду: визы, стоимость жизни ($850–3 300/мес), районы, школы, медицина, интернет — и почем">
-<a href="pereezd-v-playa-del-carmen-gid.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новое</span>
-<h3 class="card-title mt-2">Переезд в Плая-дель-Кармен: полный гид 2026</h3><p class="card-desc">Гид по переезду: визы, стоимость жизни ($850–3 300/мес), районы, школы, медицина, интернет — и почем…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="строительство бутик-отеля в тулуме: цены и roi (2026)" data-desc="бутик-отель: $80 000–150 000 usd за номер, 14–20 месяцев, разрешения sema и туристические, экономика">
-<a href="stroitelstvo-butik-otelya-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новое</span>
-<h3 class="card-title mt-2">Строительство бутик-отеля в Тулуме: цены и ROI (2026)</h3><p class="card-desc">Бутик-отель: $80 000–150 000 USD за номер, 14–20 месяцев, разрешения SEMA и туристические, экономика…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="строительство рядом с сенотом: правила, риски, возможности" data-desc="сенот на участке: правовой статус, отступы, геофизика, риски фундамента в карсте, sema — и как сенот">
-<a href="stroitelstvo-ryadom-s-senotom.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новое</span>
-<h3 class="card-title mt-2">Строительство рядом с сенотом: правила, риски, возможности</h3><p class="card-desc">Сенот на участке: правовой статус, отступы, геофизика, риски фундамента в карсте, SEMA — и как сенот…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="цистерны и запас воды на ривьере майя (2026)" data-desc="capa нестабильна: цистерна обязательна по нормам и даёт воду 24/7. расчёт объёма, цены, сбор дождевой вод">
-<a href="cisterny-zapas-vody-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Цистерны и запас воды на Ривьере Майя (2026)</h3><p class="card-desc">CAPA нестабильна: цистерна обязательна по нормам и даёт воду 24/7. Расчёт объёма, цены, сбор дождевой вод…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="дизайн освещения дома на ривьере майя (2026)" data-desc="led повсюду (−40–60% электричества), температуры света, уличное ip65, естественный свет и закладка умного">
-<a href="dizayn-osveshcheniya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Дизайн освещения дома на Ривьере Майя (2026)</h3><p class="card-desc">LED повсюду (−40–60% электричества), температуры света, уличное IP65, естественный свет и закладка умного…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="двухэтажный дом на ривьере майя: цены и планировки" data-desc="+15–25% за м², но вдвое меньше участка. ураганостойкий конструктив, идеальная планировка, закладка лифта.">
-<a href="dvuhetazhnyy-dom-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Двухэтажный дом на Ривьере Майя: цены и планировки</h3><p class="card-desc">+15–25% за м², но вдвое меньше участка. Ураганостойкий конструктив, идеальная планировка, закладка лифта.…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="гаражи и парковка на ривьере майя (2026)" data-desc="навес 60 000–150 000 mxn, закрытый гараж 150 000–400 000. требование муниципалитета, защита от uv и урага">
-<a href="garazhi-parkovka-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Гаражи и парковка на Ривьере Майя (2026)</h3><p class="card-desc">Навес 60 000–150 000 MXN, закрытый гараж 150 000–400 000. Требование муниципалитета, защита от UV и урага…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="кровля и гидроизоляция на ривьере майя (2026)" data-desc="1 200 мм осадков, жёсткое солнце, ураганы 5 категории: бетонная плита + двухслойная гидроизоляция. цены з">
-<a href="krovlya-gidroizolyaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Кровля и гидроизоляция на Ривьере Майя (2026)</h3><p class="card-desc">1 200 мм осадков, жёсткое солнце, ураганы 5 категории: бетонная плита + двухслойная гидроизоляция. Цены з…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="летние кухни и палапы на ривьере майя (2026)" data-desc="летняя кухня от 80 000 до 800 000+ mxn: столешницы, крыша палапа или пергола, техника из морской нержавей">
-<a href="letnie-kuhni-palapy-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Летние кухни и палапы на Ривьере Майя (2026)</h3><p class="card-desc">Летняя кухня от 80 000 до 800 000+ MXN: столешницы, крыша палапа или пергола, техника из морской нержавей…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="маленький дом в тулуме: строительство до 100 м² (2026)" data-desc="80–100 м²: 1,6–2,5 млн mxn стройка. всё включено с участком и sema: от 2,5 млн. умный дизайн и доходность">
-<a href="malenkiy-dom-tulum-byudzhet.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Маленький дом в Тулуме: строительство до 100 м² (2026)</h3><p class="card-desc">80–100 м²: 1,6–2,5 млн MXN стройка. Всё включено с участком и SEMA: от 2,5 млн. Умный дизайн и доходность…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="окна и двери для тропического климата (2026)" data-desc="алюминиевые ударопрочные окна с сертификацией, цены за м², двери, раздвижные и складные стеклянные стены.">
-<a href="okna-dveri-tropicheskiy-klimat.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Окна и двери для тропического климата (2026)</h3><p class="card-desc">Алюминиевые ударопрочные окна с сертификацией, цены за м², двери, раздвижные и складные стеклянные стены.…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="отчёт рынка строительства — ривьера майя, 3 кв. 2026" data-desc="цемент +8%, рабочая сила +12–15%, бетон 2 800–3 500 mxn/м³. рост цен на жильё 8–20%/год. зоны роста и про">
-<a href="otchet-rynka-stroitelstva-q3-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Отчёт рынка строительства — Ривьера Майя, 3 кв. 2026</h3><p class="card-desc">Цемент +8%, рабочая сила +12–15%, бетон 2 800–3 500 MXN/м³. Рост цен на жильё 8–20%/год. Зоны роста и про…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="проект дома на заказ в плая-дель-кармен (2026)" data-desc="архитектурный проект 30 000–80 000 mxn, тропические стили, процесс 10–16 недель, 3d-рендеры для решений н">
-<a href="proekt-doma-na-zakaz-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Проект дома на заказ в Плая-дель-Кармен (2026)</h3><p class="card-desc">Архитектурный проект 30 000–80 000 MXN, тропические стили, процесс 10–16 недель, 3D-рендеры для решений н…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="септики и очистка стоков на ривьере майя (2026)" data-desc="биодигестер, септик или биоплато: цены, обслуживание, требования sema. защита водоносного слоя и сенотов ">
-<a href="septiki-ochistka-vody-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Септики и очистка стоков на Ривьере Майя (2026)</h3><p class="card-desc">Биодигестер, септик или биоплато: цены, обслуживание, требования SEMA. Защита водоносного слоя и сенотов …</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="системы безопасности дома на ривьере майя (2026)" data-desc="ip-камеры, сигнализация, умные замки, мониторинг: полный пакет 30 000–80 000 mxn. закладка при стройке — ">
-<a href="sistemy-bezopasnosti-doma-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Системы безопасности дома на Ривьере Майя (2026)</h3><p class="card-desc">IP-камеры, сигнализация, умные замки, мониторинг: полный пакет 30 000–80 000 MXN. Закладка при стройке — …</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="солнечные панели для дома на ривьере майя: цены 2026" data-desc="5,5–6,2 часа пикового солнца в день: окупаемость 3–6 лет. цены установок, net metering cfe, ураганостойко">
-<a href="solnechnye-paneli-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Солнечные панели для дома на Ривьере Майя: цены 2026</h3><p class="card-desc">5,5–6,2 часа пикового солнца в день: окупаемость 3–6 лет. Цены установок, net metering CFE, ураганостойко…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="страхование и гарантии строительства (2026)" data-desc="страховка дома 12 000–30 000 mxn/год, страхование стройки, гарантии recrea (1/5/10 лет), пункты договора,">
-<a href="strahovanie-garantii-stroitelstvo.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Страхование и гарантии строительства (2026)</h3><p class="card-desc">Страховка дома 12 000–30 000 MXN/год, страхование стройки, гарантии Recrea (1/5/10 лет), пункты договора,…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="строительство дома у моря на ривьере майя: цены 2026" data-desc="первая линия: 25 000–45 000 mxn/м² (+20–40%), концессия zofemat, морские материалы, защита от эрозии.">
-<a href="stroitelstvo-doma-u-morya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Строительство дома у моря на Ривьере Майя: цены 2026</h3><p class="card-desc">Первая линия: 25 000–45 000 MXN/м² (+20–40%), концессия ZOFEMAT, морские материалы, защита от эрозии.…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="строительство виллы люкс в playacar (2026)" data-desc="25 000–50 000 mxn/м²: импортная отделка, инфинити-бассейн, умный дом. вилла 250 м²: 350–700 тыс. usd без ">
-<a href="stroitelstvo-villy-lyuks-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Строительство виллы люкс в Playacar (2026)</h3><p class="card-desc">25 000–50 000 MXN/м²: импортная отделка, инфинити-бассейн, умный дом. Вилла 250 м²: 350–700 тыс. USD без …</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="тропический ландшафт на ривьере майя (2026)" data-desc="сады от 30 000 до 500 000+ mxn: местные растения, капельный полив, альтернативы газону, защита от комаров">
-<a href="tropicheskiy-landshaft-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Тропический ландшафт на Ривьере Майя (2026)</h3><p class="card-desc">Сады от 30 000 до 500 000+ MXN: местные растения, капельный полив, альтернативы газону, защита от комаров…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="all" data-title="умный дом на ривьере майя: автоматизация (2026)" data-desc="кондиционер удалённо, умные замки для airbnb, датчики протечек, камеры. бюджеты 15 000–200 000 mxn. закла">
-<a href="umnyy-dom-avtomatizaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Гид</span>
-<h3 class="card-title mt-2">Умный дом на Ривьере Майя: автоматизация (2026)</h3><p class="card-desc">Кондиционер удалённо, умные замки для Airbnb, датчики протечек, камеры. Бюджеты 15 000–200 000 MXN. Закла…</p></div>
-<div class="card-footer-custom"><span class="read-more">Читать статью <i class="bi bi-arrow-right"></i></span></div></div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="обзор рынка строительства — q3 2026" data-desc="цены на материалы, рабочая сила, разрешения. рост +6–8% за год. цемент под давлением поезда майя.">
-<a href="obzor-rynka-stroitelstva-q3-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">Обзор рынка строительства — Q3 2026</h3>
-<p class="card-desc">Цены на материалы, рабочая сила, разрешения. Рост +6–8% за год. Цемент под давлением Поезда Майя.</p>
+<div id="noResults" style="display:none" class="no-results"><i class="bi bi-search"></i><h4>Статьи не найдены</h4><p>Попробуйте другой запрос</p></div>
+<div class="cat-section" data-cat="cat-news">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(220,53,69,.08);color:#dc3545"><i class="bi bi-newspaper"></i></div><h2>Новости и рынок</h2><span class="cat-count">7 статей</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="обзор рынка строительства ривьера майя — q3 2026" data-desc="цены на материалы, стоимость рабочей силы, сроки разрешений и тенденции рынка строительства в плая-дель-кармен, тулуме и канкуне. третий квартал 2026.">
+<a href="obzor-rynka-stroitelstva-q3-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Обзор рынка строительства Ривьера Майя — Q3 2026</h3><p class="card-desc">Цены на материалы, стоимость рабочей силы, сроки разрешений и тенденции рынка строительства в Плая-дель-Кармен…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="отчёт рынка строительства — ривьера майя, 3 кв. 2026" data-desc="цемент +8%, рабочая сила +12–15%, бетон 2 800–3 500 mxn/м³. рост цен на жильё 8–20%/год. зоны роста и прогноз квартала.">
+<a href="otchet-rynka-stroitelstva-q3-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Отчёт рынка строительства — Ривьера Майя, 3 кв. 2026</h3><p class="card-desc">Цемент +8%, рабочая сила +12–15%, бетон 2 800–3 500 MXN/м³. Рост цен на жильё 8–20%/год. Зоны роста и прогноз…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="поезд майя и недвижимость: влияние на ривьеру майя" data-desc="как поезд майя влияет на стоимость недвижимости, спрос на строительство и цены на землю в плая-дель-кармен, тулуме и канкуне. официальные данные о ходе...">
+<a href="poezd-maya-vliyanie-na-nedvizhimost.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Поезд Майя и недвижимость: влияние на Ривьеру Майя</h3><p class="card-desc">Как Поезд Майя влияет на стоимость недвижимости, спрос на строительство и цены на землю в Плая-дель-Кармен, Тулуме и…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="рост стоимости недвижимости на ривьере майя 2026" data-desc="рост стоимости недвижимости на ривьере майя 2026: годовой прирост в плая-дель-кармен, тулуме и канкуне, что его движет и почему строительство максимизирует доход.">
+<a href="rost-stoimosti-nedvizhimosti-riviera-maya-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Рост стоимости недвижимости на Ривьере Майя 2026</h3><p class="card-desc">Рост стоимости недвижимости на Ривьере Майя 2026: годовой прирост в Плая-дель-Кармен, Тулуме и Канкуне, что его…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="рынок недвижимости тулума 2026: аэропорт и поезд майя" data-desc="анализ рынка недвижимости тулума 2026. влияние аэропорта, спад спроса на 40%, 26 проектов под расследованием, прогнозы цен. официальные данные для...">
+<a href="rynok-nedvizhimosti-tulum-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Рынок недвижимости Тулума 2026: аэропорт и Поезд Майя</h3><p class="card-desc">Анализ рынка недвижимости Тулума 2026. Влияние аэропорта, спад спроса на 40%, 26 проектов под расследованием…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="строительный бум в кинтана-роо: 531 проект в 2026" data-desc="официальные данные: 531 жилой комплекс строится в кинтана-роо, 27 800 новых домов. тулум лидирует с 252 проектами, плая-дель-кармен — 143. что нужно знать...">
+<a href="stroitelnyy-bum-quintana-roo-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Строительный бум в Кинтана-Роо: 531 проект в 2026</h3><p class="card-desc">Официальные данные: 531 жилой комплекс строится в Кинтана-Роо, 27 800 новых домов. Тулум лидирует с 252 проектами…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-news" data-title="цены на землю в плая-дель-кармен и тулуме 2026 (за м²)" data-desc="цены на землю в плая-дель-кармен и тулуме 2026: реальная цена за м² по районам — centro, playacar, corasol, aldea zamá, la veleta. гид перед стройкой.">
+<a href="ceny-na-zemlyu-playa-del-carmen-tulum-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Новости и рынок</span><h3 class="card-title">Цены на землю в Плая-дель-Кармен и Тулуме 2026 (за м²)</h3><p class="card-desc">Цены на землю в Плая-дель-Кармен и Тулуме 2026: реальная цена за м² по районам — Centro, Playacar, Corasol, Aldea…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+</div>
+<div class="cat-section" data-cat="cat-costs">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>Стоимость и ROI</h2><span class="cat-count">25 статей</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="бассейны на ривьере-майя: типы, стоимость, обслуживание (2026)" data-desc="сколько стоит бассейн в плайя-дель-кармен и тулуме? типы бассейнов, материалы, обслуживание. цены от подрядчика с 196+ проектами.">
+<a href="bassejny-riviera-maya-stoimost.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Бассейны на Ривьере-Майя: типы, стоимость, обслуживание (2026)</h3><p class="card-desc">Сколько стоит бассейн в Плайя-дель-Кармен и Тулуме? Типы бассейнов, материалы, обслуживание. Цены от подрядчика с…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="инвестиции в airbnb в тулуме: стоимость и roi (2026)" data-desc="стоит ли строить airbnb в тулуме? стоимость строительства, доход от аренды, прогнозы roi. реальные цифры от местного подрядчика.">
+<a href="investicii-airbnb-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Инвестиции в Airbnb в Тулуме: стоимость и ROI (2026)</h3><p class="card-desc">Стоит ли строить Airbnb в Тулуме? Стоимость строительства, доход от аренды, прогнозы ROI. Реальные цифры от местного…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="калькулятор roi airbnb: тулум и плая-дель-кармен 2026" data-desc="реальные данные о доходах airbnb в тулуме, плая-дель-кармен, канкуне. заполняемость, цены за ночь, расходы, чистый roi. строить или покупать для аренды.">
+<a href="kalkulyator-roi-airbnb-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Калькулятор ROI Airbnb: Тулум и Плая-дель-Кармен 2026</h3><p class="card-desc">Реальные данные о доходах Airbnb в Тулуме, Плая-дель-Кармен, Канкуне. Заполняемость, цены за ночь, расходы, чистый…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="лучший ремонт для roi в плайя-дель-кармен (2026)" data-desc="какой ремонт даёт лучший roi в плайя-дель-кармен? кухня, ванная, бассейн, терраса — стоимость vs. добавленная ценность. данные 196+ проектов.">
+<a href="roi-remont-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Лучший ремонт для ROI в Плайя-дель-Кармен (2026)</h3><p class="card-desc">Какой ремонт даёт лучший ROI в Плайя-дель-Кармен? Кухня, ванная, бассейн, терраса — стоимость vs. добавленная…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="маленький дом в тулуме: строительство до 100 м² (2026)" data-desc="80–100 м²: 1,6–2,5 млн mxn стройка. всё включено с участком и sema: от 2,5 млн. умный дизайн и доходность airbnb 8–12%.">
+<a href="malenkiy-dom-tulum-byudzhet.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Маленький дом в Тулуме: строительство до 100 м² (2026)</h3><p class="card-desc">80–100 м²: 1,6–2,5 млн MXN стройка. Всё включено с участком и SEMA: от 2,5 млн. Умный дизайн и доходность Airbnb…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="налоговые льготы строительства в мексике 2026" data-desc="вычеты isr, амортизация, солнечные стимулы, immex, свободные зоны. налоговые стратегии для инвесторов.">
+<a href="nalogovye-lgoty-stroitelstvo-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Налоговые льготы строительства в Мексике 2026</h3><p class="card-desc">Вычеты ISR, амортизация, солнечные стимулы, IMMEX, свободные зоны. Налоговые стратегии для инвесторов.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="сколько стоит построить виллу люкс в тулуме 2026" data-desc="сколько стоит построить виллу класса люкс в тулуме в 2026? реальные бюджеты, отделка, удобства и roi для вилл высокого класса.">
+<a href="stoimost-stroitelstva-villy-lyuks-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Виллу Люкс в Тулуме 2026</h3><p class="card-desc">Сколько стоит построить виллу класса люкс в Тулуме в 2026? Реальные бюджеты, отделка, удобства и ROI для вилл…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="сколько стоит построить дом в акумале 2026" data-desc="сколько стоит построить дом в акумале в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.91m–$3.58m mxn.">
+<a href="skolko-stoit-postroit-dom-akumal.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Акумале 2026</h3><p class="card-desc">Сколько стоит построить дом в Акумале в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="сколько стоит построить дом в альдеа-зама 2026" data-desc="сколько стоит построить дом в альдеа-зама в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.12m–$3.84m mxn.">
+<a href="skolko-stoit-postroit-dom-aldea-zama.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Альдеа-Зама 2026</h3><p class="card-desc">Сколько стоит построить дом в Альдеа-Зама в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="сколько стоит построить дом в канкуне 2026" data-desc="сколько стоит построить дом в канкуне в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.50m–$3.07m mxn.">
+<a href="skolko-stoit-postroit-dom-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Канкуне 2026</h3><p class="card-desc">Сколько стоит построить дом в Канкуне в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="сколько стоит построить дом в корасоле 2026" data-desc="сколько стоит построить дом в корасоле в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.38m–$4.16m mxn.">
+<a href="skolko-stoit-postroit-dom-corasol.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Корасоле 2026</h3><p class="card-desc">Сколько стоит построить дом в Корасоле в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-costs" data-title="сколько стоит построить дом в майякобе 2026" data-desc="сколько стоит построить дом в майякобе в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.69m–$4.54m mxn.">
+<a href="skolko-stoit-postroit-dom-mayakoba.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Майякобе 2026</h3><p class="card-desc">Сколько стоит построить дом в Майякобе в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="сколько стоит построить дом в плайя-дель-кармен 2026" data-desc="сколько стоит построить дом в плайя-дель-кармен в 2026? полная смета по этапам для дома 150 м², сроки и что входит.">
+<a href="skolko-stoit-postroit-dom-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Плайя-дель-Кармен 2026</h3><p class="card-desc">Сколько стоит построить дом в Плайя-дель-Кармен в 2026? Полная смета по этапам для дома 150 м², сроки и что входит.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="сколько стоит построить дом в плаякаре 2026" data-desc="сколько стоит построить дом в плаякаре в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $3.25m–$4m mxn.">
+<a href="skolko-stoit-postroit-dom-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Плаякаре 2026</h3><p class="card-desc">Сколько стоит построить дом в Плаякаре в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="сколько стоит построить дом в пуэрто-авентурас 2026" data-desc="сколько стоит построить дом в пуэрто-авентурас в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.81m–$3.46m mxn.">
+<a href="skolko-stoit-postroit-dom-puerto-aventuras.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Пуэрто-Авентурас 2026</h3><p class="card-desc">Сколько стоит построить дом в Пуэрто-Авентурас в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="сколько стоит построить дом в пуэрто-морелос 2026" data-desc="сколько стоит построить дом в пуэрто-морелос в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.60m–$3.20m mxn.">
+<a href="skolko-stoit-postroit-dom-puerto-morelos.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Пуэрто-Морелос 2026</h3><p class="card-desc">Сколько стоит построить дом в Пуэрто-Морелос в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="сколько стоит построить дом в тулуме 2026" data-desc="сколько стоит построить дом в тулуме в 2026? реальные сметы под ключ по площади, локальные факторы и сроки. обычно $2.73m–$3.36m mxn.">
+<a href="skolko-stoit-postroit-dom-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько Стоит Построить Дом в Тулуме 2026</h3><p class="card-desc">Сколько стоит построить дом в Тулуме в 2026? Реальные сметы под ключ по площади, локальные факторы и сроки. Обычно…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="сколько стоит построить дом в тулуме? (руководство 2026)" data-desc="подробная разбивка стоимости строительства в тулуме, мексика. цена за квадратный метр от местного подрядчика.">
+<a href="stoimost-stroitelstva-doma-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Сколько стоит построить дом в Тулуме? (руководство 2026)</h3><p class="card-desc">Подробная разбивка стоимости строительства в Тулуме, Мексика. Цена за квадратный метр от местного подрядчика.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="стоимость жизни в плая-дель-кармен 2026: бюджет в месяц" data-desc="стоимость жизни в плая-дель-кармен 2026: аренда, еда, коммуналка и реальные бюджеты для одного, пары и семьи. и почему многие решают строить.">
+<a href="stoimost-zhizni-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Стоимость жизни в Плая-дель-Кармен 2026: бюджет в месяц</h3><p class="card-desc">Стоимость жизни в Плая-дель-Кармен 2026: аренда, еда, коммуналка и реальные бюджеты для одного, пары и семьи. И…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="стоимость жизни во время строительства в мексике 2026" data-desc="ежемесячные расходы для экспатов во время строительства: аренда, еда, транспорт, виза, интернет.">
+<a href="stoimost-zhizni-stroitelstvo-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Стоимость жизни во время строительства в Мексике 2026</h3><p class="card-desc">Ежемесячные расходы для экспатов во время строительства: аренда, еда, транспорт, виза, интернет.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="стоимость ремонта ванной в плая-дель-кармен (2026)" data-desc="ремонт ванной в плая-дель-кармен: $2,500-$22,000 usd. от бюджетного до премиум.">
+<a href="stoimost-remonta-vannoj-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Стоимость ремонта ванной в Плая-дель-Кармен (2026)</h3><p class="card-desc">Ремонт ванной в Плая-дель-Кармен: $2,500-$22,000 USD. От бюджетного до премиум.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="стоимость ремонта кухни в плая-дель-кармен (2026)" data-desc="ремонт кухни в плая-дель-кармен: $4,000-$35,000 usd. бюджет, средний, премиум с расценками.">
+<a href="stoimost-remonta-kuhni-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Стоимость ремонта кухни в Плая-дель-Кармен (2026)</h3><p class="card-desc">Ремонт кухни в Плая-дель-Кармен: $4,000-$35,000 USD. Бюджет, средний, премиум с расценками.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="стоимость содержания дома в мексике: гид 2026" data-desc="сколько стоит содержать дом в плайя-дель-кармен или тулуме? электричество, вода, налог на недвижимость, страховка, охрана, бассейн. полный расклад.">
+<a href="stoimost-soderzhaniya-doma-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Стоимость содержания дома в Мексике: гид 2026</h3><p class="card-desc">Сколько стоит содержать дом в Плайя-дель-Кармен или Тулуме? Электричество, вода, налог на недвижимость, страховка…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="стоимость строительства в плая-дель-кармен 2026: полная разбивка цен" data-desc="точная стоимость строительства за м² в плая-дель-кармен на 2026 год. бюджетное, среднее, элитное строительство. цены на землю, разрешения, сроки.">
+<a href="stoimost-stroitelstva-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Стоимость строительства в Плая-дель-Кармен 2026: полная разбивка цен</h3><p class="card-desc">Точная стоимость строительства за м² в Плая-дель-Кармен на 2026 год. Бюджетное, среднее, элитное строительство. Цены…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-costs" data-title="цена за квадратный метр строительства в ривьера-майя 2026" data-desc="сколько стоит построить квадратный метр в ривьера-майя в 2026? реальные диапазоны цен по уровням отделки для плайя-дель-кармен, тулума и канкуна.">
+<a href="cena-za-kvadratny-metr-stroitelstva-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span><h3 class="card-title">Цена за Квадратный Метр Строительства в Ривьера-Майя 2026</h3><p class="card-desc">Сколько стоит построить квадратный метр в Ривьера-Майя в 2026? Реальные диапазоны цен по уровням отделки для…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Показать все (25) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-permits">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(253,126,20,.08);color:#fd7e14"><i class="bi bi-file-earmark-text"></i></div><h2>Разрешения и процесс</h2><span class="cat-count">14 статей</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="9 красных флагов при найме подрядчика в мексике (не попадитесь)" data-desc="как избежать недобросовестных подрядчиков в плайя-дель-кармен, тулуме, канкуне. 9 тревожных признаков, что проверить, чек-лист контракта.">
+<a href="krasnye-flagi-podryadchik-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">9 красных флагов при найме подрядчика в Мексике (не попадитесь)</h3><p class="card-desc">Как избежать недобросовестных подрядчиков в Плайя-дель-Кармен, Тулуме, Канкуне. 9 тревожных признаков, что проверить…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="pdu плая-дель-кармен 2026: новые правила зонирования" data-desc="новый план градостроительного развития плая-дель-кармен (pdu 2026–2050) меняет зонирование, лимиты высотности, плотность и экологические требования....">
+<a href="pdu-zonirovanie-playa-del-carmen-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">PDU Плая-дель-Кармен 2026: новые правила зонирования</h3><p class="card-desc">Новый план градостроительного развития Плая-дель-Кармен (PDU 2026–2050) меняет зонирование, лимиты высотности…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="график строительства на ривьере майя 2026" data-desc="помесячный график: разрешения, фундамент, каркас, отделка. сколько времени строить дом, виллу, отель.">
+<a href="grafik-stroitelstva-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">График строительства на Ривьере Майя 2026</h3><p class="card-desc">Помесячный график: разрешения, фундамент, каркас, отделка. Сколько времени строить дом, виллу, отель.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="закон об отмывании денег в мексике 2026: гид покупателя" data-desc="реформа закона о противодействии отмыванию денег в мексике 2026. новые пороги отчётности, ужесточение идентификации, влияние на фидейкомисо. что нужно знать...">
+<a href="zakon-protivodeystvie-otmyvaniyu-deneg-meksika-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Закон об отмывании денег в Мексике 2026: гид покупателя</h3><p class="card-desc">Реформа закона о противодействии отмыванию денег в Мексике 2026. Новые пороги отчётности, ужесточение идентификации…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="как выбрать строительную компанию в ривьера-майя (2026)" data-desc="на что обращать внимание при найме подрядчика в плая-дель-кармен, тулуме или канкуне. чек-лист и красные флаги.">
+<a href="vybrat-stroitelnuyu-kompaniyu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Как выбрать строительную компанию в Ривьера-Майя (2026)</h3><p class="card-desc">На что обращать внимание при найме подрядчика в Плая-дель-Кармен, Тулуме или Канкуне. Чек-лист и красные флаги.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="разрешения на строительство в канкуне 2026: пошаговый гид" data-desc="разрешения на строительство в канкуне 2026: лицензия, назначение земли, гражданская защита, cfe, правила отельной зоны (fonatur), стоимость и сроки.">
+<a href="razresheniya-na-stroitelstvo-cancun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Разрешения на строительство в Канкуне 2026: пошаговый гид</h3><p class="card-desc">Разрешения на строительство в Канкуне 2026: лицензия, назначение земли, Гражданская защита, CFE, правила отельной…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="разрешения на строительство в плая-дель-кармен (2026)" data-desc="как получить разрешения на строительство в плая-дель-кармен. требования, стоимость, сроки и необходимые документы.">
+<a href="razresheniya-na-stroitelstvo-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Разрешения на строительство в Плая-дель-Кармен (2026)</h3><p class="card-desc">Как получить разрешения на строительство в Плая-дель-Кармен. Требования, стоимость, сроки и необходимые документы.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="разрешения на строительство в тулуме 2026: пошаговый гид" data-desc="разрешения на строительство в тулуме 2026: экоразрешение sema, муниципальная лицензия, dro, расчистка, стоимость и сроки. что нужно каждому.">
+<a href="razresheniya-na-stroitelstvo-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Разрешения на строительство в Тулуме 2026: пошаговый гид</h3><p class="card-desc">Разрешения на строительство в Тулуме 2026: экоразрешение SEMA, муниципальная лицензия, DRO, расчистка, стоимость и…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="сроки строительства в ривьера-майя: понедельный план (2026)" data-desc="сколько времени строить дом в плая-дель-кармен или тулуме? 10-16 месяцев. подробный график.">
+<a href="sroki-stroitelstva-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Сроки строительства в Ривьера-Майя: понедельный план (2026)</h3><p class="card-desc">Сколько времени строить дом в Плая-дель-Кармен или Тулуме? 10-16 месяцев. Подробный график.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="страхование и гарантии строительства (2026)" data-desc="страховка дома 12 000–30 000 mxn/год, страхование стройки, гарантии recrea (1/5/10 лет), пункты договора, защита от брошенной стройки.">
+<a href="strahovanie-garantii-stroitelstvo.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Страхование и гарантии строительства (2026)</h3><p class="card-desc">Страховка дома 12 000–30 000 MXN/год, страхование стройки, гарантии Recrea (1/5/10 лет), пункты договора, защита от…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="страхование и гарантии строительства на ривьере майя 2026" data-desc="страхование строительных работ, структурные гарантии, гарантии исполнения и защита покупателя в плая-дель-кармен и тулуме.">
+<a href="strahovanie-garantii-stroitelstvo-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Страхование и гарантии строительства на Ривьере Майя 2026</h3><p class="card-desc">Страхование строительных работ, структурные гарантии, гарантии исполнения и защита покупателя в Плая-дель-Кармен и…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-permits" data-title="строить или покупать в ривьера-майя: что выгоднее? (сравнение 2026)" data-desc="строить или покупать в плая-дель-кармен, тулуме, канкуне? сравнение стоимости, плюсы и минусы, когда каждый вариант имеет смысл.">
+<a href="stroit-ili-pokupat-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Строить или покупать в Ривьера-Майя: что выгоднее? (Сравнение 2026)</h3><p class="card-desc">Строить или покупать в Плая-дель-Кармен, Тулуме, Канкуне? Сравнение стоимости, плюсы и минусы, когда каждый вариант…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-permits" data-title="удалённое управление строительством в мексике (2026)" data-desc="постройте дом в мексике из сша, канады или европы. ежедневные фото, еженедельные видеозвонки. 80% клиентов строят удалённо.">
+<a href="udalennoe-upravlenie-stroitelstvom-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Удалённое управление строительством в Мексике (2026)</h3><p class="card-desc">Постройте дом в Мексике из США, Канады или Европы. Ежедневные фото, еженедельные видеозвонки. 80% клиентов строят…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-permits" data-title="экологические законы строительства в кинтана-роо 2026" data-desc="новые экологические требования к строительству в кинтана-роо 2026. разрешения sema, реформа закона о недвижимости, строительные нормы по муниципалитетам....">
+<a href="ekologicheskie-zakony-stroitelstva-quintana-roo-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(253,126,20,.08);color:#fd7e14">Разрешения и процесс</span><h3 class="card-title">Экологические законы строительства в Кинтана-Роо 2026</h3><p class="card-desc">Новые экологические требования к строительству в Кинтана-Роо 2026. Разрешения SEMA, реформа закона о недвижимости…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Показать все (14) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-foreigners">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>Для иностранцев</h2><span class="cat-count">5 статей</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="дом для пенсии на ривьере майя: полный план (2026)" data-desc="пенсия в мексике: одноуровневый дом «на всю жизнь» за $120 000–200 000 usd, жизнь от $1 500–2 500/мес, медицина на 50–70% дешевле сша.">
+<a href="dom-dlya-pensii-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span><h3 class="card-title">Дом для пенсии на Ривьере Майя: полный план (2026)</h3><p class="card-desc">Пенсия в Мексике: одноуровневый дом «на всю жизнь» за $120 000–200 000 USD, жизнь от $1 500–2 500/мес, медицина на…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="как купить землю на ривьере майя 2026" data-desc="цены на землю, эхидо vs частная, due diligence, фидеикомисо, лучшие зоны ривьера майя.">
+<a href="pokupka-zemli-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span><h3 class="card-title">Как купить землю на Ривьере Майя 2026</h3><p class="card-desc">Цены на землю, эхидо vs частная, due diligence, фидеикомисо, лучшие зоны Ривьера Майя.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="могут ли иностранцы построить дом в мексике? да — вот как" data-desc="всё, что нужно знать иностранцам о строительстве недвижимости в мексике. фидеикомисо, разрешения, стоимость, пошаговое руководство.">
+<a href="inostrantsy-stroitelstvo-doma-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span><h3 class="card-title">Могут ли иностранцы построить дом в Мексике? Да — вот как</h3><p class="card-desc">Всё, что нужно знать иностранцам о строительстве недвижимости в Мексике. Фидеикомисо, разрешения, стоимость…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="переезд в плая-дель-кармен: полный гид 2026" data-desc="гид по переезду: визы, стоимость жизни ($850–3 300/мес), районы, школы, медицина, интернет — и почему после второго года строить выгоднее, чем снимать.">
+<a href="pereezd-v-playa-del-carmen-gid.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span><h3 class="card-title">Переезд в Плая-дель-Кармен: полный гид 2026</h3><p class="card-desc">Гид по переезду: визы, стоимость жизни ($850–3 300/мес), районы, школы, медицина, интернет — и почему после второго…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-foreigners" data-title="фидеикомисо в мексике: покупка и строительство (2026)" data-desc="полное руководство по фидеикомисо (банковскому трасту) для иностранцев, покупающих или строящих недвижимость в мексике. стоимость, процесс, сроки, документы.">
+<a href="fideikomiso-inostrantsy-pokupka-nedvizhimosti.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span><h3 class="card-title">Фидеикомисо в Мексике: покупка и строительство (2026)</h3><p class="card-desc">Полное руководство по фидеикомисо (банковскому трасту) для иностранцев, покупающих или строящих недвижимость в…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+</div>
+<div class="cat-section" data-cat="cat-build">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(111,66,193,.08);color:#6f42c1"><i class="bi bi-tools"></i></div><h2>Стройка и техника</h2><span class="cat-count">33 статей</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="автономный дом (off-grid) на ривьере майя (2026)" data-desc="постройте полностью автономный дом: солнце + батарея, дождь + скважина + осмос, биодигестер, резервный генератор. реальный расчёт систем и цены для тулума.">
+<a href="avtonomnyy-dom-off-grid-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Автономный дом (off-grid) на Ривьере Майя (2026)</h3><p class="card-desc">Постройте полностью автономный дом: солнце + батарея, дождь + скважина + осмос, биодигестер, резервный генератор…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="водопровод и водосистемы для тропического строительства" data-desc="водоснабжение, бурение скважин, цистерны, насосы, водоочистка, дренаж для домов на ривьере майя.">
+<a href="vodoprovod-vodosistemy-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Водопровод и водосистемы для тропического строительства</h3><p class="card-desc">Водоснабжение, бурение скважин, цистерны, насосы, водоочистка, дренаж для домов на Ривьере Майя.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="гостевой домик (casita) под аренду на ривьере майя (2026)" data-desc="добавьте на участок арендную casita: цена $30 000–70 000 usd, доход $600–1 800/мес на airbnb. разрешения, зонирование, дизайн. превратите свободную землю в поток.">
+<a href="gostevoy-domik-casita-arenda.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Гостевой домик (casita) под аренду на Ривьере Майя (2026)</h3><p class="card-desc">Добавьте на участок арендную casita: цена $30 000–70 000 USD, доход $600–1 800/мес на Airbnb. Разрешения…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="двухэтажный дом на ривьере майя: цены и планировки" data-desc="+15–25% за м², но вдвое меньше участка. ураганостойкий конструктив, идеальная планировка, закладка лифта.">
+<a href="dvuhetazhnyy-dom-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Двухэтажный дом на Ривьере Майя: цены и планировки</h3><p class="card-desc">+15–25% за м², но вдвое меньше участка. Ураганостойкий конструктив, идеальная планировка, закладка лифта.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="коммерческое строительство в канкуне и ривьера-майя" data-desc="коммерческое строительство в канкуне, плая-дель-кармен и тулуме. строительство под ключ: рестораны, магазины, офисы, бутик-отели.">
+<a href="kommercheskoe-stroitelstvo-kankun.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Коммерческое строительство в Канкуне и Ривьера-Майя</h3><p class="card-desc">Коммерческое строительство в Канкуне, Плая-дель-Кармен и Тулуме. Строительство под ключ: рестораны, магазины, офисы…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="кондиционирование и вентиляция на ривьере майя (2026)" data-desc="инверторные сплиты: цены установки и электричества, перекрёстная вентиляция (−40–60% работы кондиционера), обслуживание при солёном воздухе.">
+<a href="kondicionirovanie-ventilyaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Кондиционирование и вентиляция на Ривьере Майя (2026)</h3><p class="card-desc">Инверторные сплиты: цены установки и электричества, перекрёстная вентиляция (−40–60% работы кондиционера)…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="кровля и гидроизоляция на ривьере майя (2026)" data-desc="1 200 мм осадков, жёсткое солнце, ураганы 5 категории: бетонная плита + двухслойная гидроизоляция. цены за м², сроки службы, причины протечек.">
+<a href="krovlya-gidroizolyaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Кровля и гидроизоляция на Ривьере Майя (2026)</h3><p class="card-desc">1 200 мм осадков, жёсткое солнце, ураганы 5 категории: бетонная плита + двухслойная гидроизоляция. Цены за м², сроки…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="крыша и гидроизоляция на ривьере майя 2026" data-desc="типы крыш, гидроизоляционные материалы, стоимость и обслуживание для тропического климата плая-дель-кармен и тулума.">
+<a href="krysha-gidroizolyaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Крыша и гидроизоляция на Ривьере Майя 2026</h3><p class="card-desc">Типы крыш, гидроизоляционные материалы, стоимость и обслуживание для тропического климата Плая-дель-Кармен и Тулума.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="лучшие районы для строительства в плая-дель-кармен 2026" data-desc="лучшие районы для строительства в плая-дель-кармен: стоимость земли, зонирование, roi. плайякар, центр, эхидаль.">
+<a href="luchshie-rajony-stroitelstva-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Лучшие районы для строительства в Плая-дель-Кармен 2026</h3><p class="card-desc">Лучшие районы для строительства в Плая-дель-Кармен: стоимость земли, зонирование, ROI. Плайякар, Центр, Эхидаль.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="плая-дель-кармен vs тулум: где строить в 2026?" data-desc="плая-дель-кармен или тулум: стоимость земли, строительные нормы, доходность airbnb — сравнение.">
+<a href="playa-del-carmen-vs-tulum-stroitelstvo-2026.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Плая-дель-Кармен vs Тулум: где строить в 2026?</h3><p class="card-desc">Плая-дель-Кармен или Тулум: стоимость земли, строительные нормы, доходность Airbnb — сравнение.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="подготовка дома к сезону ураганов в мексике: чек-лист 2026" data-desc="как подготовить дом к ураганному сезону в кинтана-роо. чек-лист: ставни, генератор, запасы, страховка. когда начинать подготовку.">
+<a href="podgotovka-doma-sezon-uraganov.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Подготовка дома к сезону ураганов в Мексике: чек-лист 2026</h3><p class="card-desc">Как подготовить дом к ураганному сезону в Кинтана-Роо. Чек-лист: ставни, генератор, запасы, страховка. Когда начинать…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-build" data-title="подготовка участка и подпорные стены на ривьере майя" data-desc="расчистка, дробление камня, подпорные стены, дренаж, засыпка, уплотнение для карстового грунта.">
+<a href="podgotovka-uchastka-podpornye-steny-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Подготовка участка и подпорные стены на Ривьере Майя</h3><p class="card-desc">Расчистка, дробление камня, подпорные стены, дренаж, засыпка, уплотнение для карстового грунта.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="проект дома на заказ в плая-дель-кармен (2026)" data-desc="архитектурный проект 30 000–80 000 mxn, тропические стили, процесс 10–16 недель, 3d-рендеры для решений на расстоянии.">
+<a href="proekt-doma-na-zakaz-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Проект дома на заказ в Плая-дель-Кармен (2026)</h3><p class="card-desc">Архитектурный проект 30 000–80 000 MXN, тропические стили, процесс 10–16 недель, 3D-рендеры для решений на расстоянии.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="септики и очистка воды на ривьере майя 2026" data-desc="типы септиков, очистные установки, стоимость и экологические нормы для строительства в плая-дель-кармен и тулуме.">
+<a href="septik-ochistka-vody-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Септики и очистка воды на Ривьере Майя 2026</h3><p class="card-desc">Типы септиков, очистные установки, стоимость и экологические нормы для строительства в Плая-дель-Кармен и Тулуме.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="септики и очистка стоков на ривьере майя (2026)" data-desc="биодигестер, септик или биоплато: цены, обслуживание, требования sema. защита водоносного слоя и сенотов — обязанность по закону.">
+<a href="septiki-ochistka-vody-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Септики и очистка стоков на Ривьере Майя (2026)</h3><p class="card-desc">Биодигестер, септик или биоплато: цены, обслуживание, требования SEMA. Защита водоносного слоя и сенотов…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="системы опреснения воды для домов и отелей на ривьере майя 2026" data-desc="полное руководство по системам опреснения и очистки воды для жилых, коммерческих и гостиничных объектов в плая-дель-кармен, тулуме, канкуне.">
+<a href="sistemy-opresneniya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Системы опреснения воды для домов и отелей на Ривьере Майя 2026</h3><p class="card-desc">Полное руководство по системам опреснения и очистки воды для жилых, коммерческих и гостиничных объектов в…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="солнечные панели для дома на ривьере майя: цены 2026" data-desc="5,5–6,2 часа пикового солнца в день: окупаемость 3–6 лет. цены установок, net metering cfe, ураганостойкость, аккумуляторы.">
+<a href="solnechnye-paneli-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Солнечные панели для дома на Ривьере Майя: цены 2026</h3><p class="card-desc">5,5–6,2 часа пикового солнца в день: окупаемость 3–6 лет. Цены установок, net metering CFE, ураганостойкость…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="солнечные панели для домов на ривьере майя 2026" data-desc="стоимость, бренды, окупаемость и нормативы солнечных панелей для жилых домов в плая-дель-кармен, тулуме и канкуне.">
+<a href="solnechnye-paneli-doma-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Солнечные панели для домов на Ривьере Майя 2026</h3><p class="card-desc">Стоимость, бренды, окупаемость и нормативы солнечных панелей для жилых домов в Плая-дель-Кармен, Тулуме и Канкуне.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство бутик-отеля в тулуме: цены и roi (2026)" data-desc="бутик-отель: $80 000–150 000 usd за номер, 14–20 месяцев, разрешения sema и туристические, экономика загрузки и roi 12–18%.">
+<a href="stroitelstvo-butik-otelya-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство бутик-отеля в Тулуме: цены и ROI (2026)</h3><p class="card-desc">Бутик-отель: $80 000–150 000 USD за номер, 14–20 месяцев, разрешения SEMA и туристические, экономика загрузки и ROI…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство виллы люкс в playacar (2026)" data-desc="25 000–50 000 mxn/м²: импортная отделка, инфинити-бассейн, умный дом. вилла 250 м²: 350–700 тыс. usd без участка. правила и сроки playacar.">
+<a href="stroitelstvo-villy-lyuks-playacar.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство виллы люкс в Playacar (2026)</h3><p class="card-desc">25 000–50 000 MXN/м²: импортная отделка, инфинити-бассейн, умный дом. Вилла 250 м²: 350–700 тыс. USD без участка…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство дома у моря на ривьере майя: цены 2026" data-desc="первая линия: 25 000–45 000 mxn/м² (+20–40%), концессия zofemat, морские материалы, защита от эрозии.">
+<a href="stroitelstvo-doma-u-morya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство дома у моря на Ривьере Майя: цены 2026</h3><p class="card-desc">Первая линия: 25 000–45 000 MXN/м² (+20–40%), концессия ZOFEMAT, морские материалы, защита от эрозии.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство закрытых посёлков на ривьере майя" data-desc="проектирование и строительство закрытых жилых комплексов. инфраструктура, безопасность, удобства.">
+<a href="stroitelstvo-zakrytyh-poselkov-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство закрытых посёлков на Ривьере Майя</h3><p class="card-desc">Проектирование и строительство закрытых жилых комплексов. Инфраструктура, безопасность, удобства.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство кондоминиумов на ривьере майя" data-desc="строительство кондоминиумов и многоквартирных домов. 4-50 юнитов, стратегия предпродаж, разрешения, анализ roi.">
+<a href="stroitelstvo-kondominiumov-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство кондоминиумов на Ривьере Майя</h3><p class="card-desc">Строительство кондоминиумов и многоквартирных домов. 4-50 юнитов, стратегия предпродаж, разрешения, анализ ROI.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство под ключ в плая-дель-кармен и тулуме (2026)" data-desc="строительство под ключ: проект, разрешения, строительство, отделка. одна компания. от $800/м². бесплатная консультация.">
+<a href="stroitelstvo-pod-klyuch-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство под ключ в Плая-дель-Кармен и Тулуме (2026)</h3><p class="card-desc">Строительство под ключ: проект, разрешения, строительство, отделка. Одна компания. От $800/м². Бесплатная…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство ресторанов и баров на ривьере майя" data-desc="строительство ресторанов, баров, пляжных клубов. дизайн кухни, разрешения, лицензия на алкоголь, от $800/м².">
+<a href="stroitelstvo-restoranov-barov-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство ресторанов и баров на Ривьере Майя</h3><p class="card-desc">Строительство ресторанов, баров, пляжных клубов. Дизайн кухни, разрешения, лицензия на алкоголь, от $800/м².</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="строительство рядом с сенотом: правила, риски, возможности" data-desc="сенот на участке: правовой статус, отступы, геофизика, риски фундамента в карсте, sema — и как сенот добавляет 30–50% к стоимости.">
+<a href="stroitelstvo-ryadom-s-senotom.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Строительство рядом с сенотом: правила, риски, возможности</h3><p class="card-desc">Сенот на участке: правовой статус, отступы, геофизика, риски фундамента в карсте, SEMA — и как сенот добавляет 30–50%…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="типы бетона для строительства на ривьере майя (2026)" data-desc="товарный, торкрет, лёгкий бетон: требуемые марки f’c, цены за м³, уход в жару, защита арматуры от солёного воздуха.">
+<a href="tipy-betona-stroitelstvo-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Типы бетона для строительства на Ривьере Майя (2026)</h3><p class="card-desc">Товарный, торкрет, лёгкий бетон: требуемые марки f’c, цены за м³, уход в жару, защита арматуры от солёного воздуха.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="типы фундаментов для строительства на ривьере майя 2026" data-desc="варианты фундаментов для известнякового грунта: плита, ленточный, сваи, кессоны. механика грунтов, уровень воды, стоимость.">
+<a href="tipy-fundamentov-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Типы фундаментов для строительства на Ривьере Майя 2026</h3><p class="card-desc">Варианты фундаментов для известнякового грунта: плита, ленточный, сваи, кессоны. Механика грунтов, уровень воды…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="ураганостойкое строительство в ривьере-майя" data-desc="как построить дом, устойчивый к ураганам, в канкуне, плайя-дель-кармен или тулуме. строительные нормы, техники, материалы.">
+<a href="uraganostoykoe-stroitelstvo.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Ураганостойкое строительство в Ривьере-Майя</h3><p class="card-desc">Как построить дом, устойчивый к ураганам, в Канкуне, Плайя-дель-Кармен или Тулуме. Строительные нормы, техники…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="цистерны и водоснабжение на ривьере майя 2026" data-desc="типы цистерн, объёмы, стоимость и насосные системы для домов и зданий в плая-дель-кармен, тулуме и канкуне.">
+<a href="cisterny-vodosnabzhenie-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Цистерны и водоснабжение на Ривьере Майя 2026</h3><p class="card-desc">Типы цистерн, объёмы, стоимость и насосные системы для домов и зданий в Плая-дель-Кармен, Тулуме и Канкуне.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="цистерны и запас воды на ривьере майя (2026)" data-desc="capa нестабильна: цистерна обязательна по нормам и даёт воду 24/7. расчёт объёма, цены, сбор дождевой воды, фильтрация.">
+<a href="cisterny-zapas-vody-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Цистерны и запас воды на Ривьере Майя (2026)</h3><p class="card-desc">CAPA нестабильна: цистерна обязательна по нормам и даёт воду 24/7. Расчёт объёма, цены, сбор дождевой воды…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="экологичное строительство в тулуме: гид (2026)" data-desc="устойчивое строительство в тулуме: экологические нормы, материалы, солнечная энергия. зелёное строительство +20-40% к аренде.">
+<a href="ekologichnoe-stroitelstvo-tulum.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Экологичное строительство в Тулуме: гид (2026)</h3><p class="card-desc">Устойчивое строительство в Тулуме: экологические нормы, материалы, солнечная энергия. Зелёное строительство +20-40% к…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-build" data-title="экологичные строительные материалы в мексике 2026" data-desc="экологичные материалы для ривьеры майя: бамбук, переработанный бетон, утрамбованная земля, зелёные крыши.">
+<a href="ekologichnye-stroitelnye-materialy-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(111,66,193,.08);color:#6f42c1">Стройка и техника</span><h3 class="card-title">Экологичные строительные материалы в Мексике 2026</h3><p class="card-desc">Экологичные материалы для Ривьеры Майя: бамбук, переработанный бетон, утрамбованная земля, зелёные крыши.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Показать все (33) <i class="bi bi-chevron-down"></i></button>
+</div>
+<div class="cat-section" data-cat="cat-home">
+<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>Дизайн и дом</h2><span class="cat-count">27 статей</span></div>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="безопасность дома на ривьере майя 2026" data-desc="камеры, умные замки, ураганные ставни, сигнализация. стоимость систем безопасности для плая-дель-кармен и тулум.">
+<a href="bezopasnost-doma-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Безопасность дома на Ривьере Майя 2026</h3><p class="card-desc">Камеры, умные замки, ураганные ставни, сигнализация. Стоимость систем безопасности для Плая-дель-Кармен и Тулум.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="ввоз мебели и материалов для стройки в мексике (2026)" data-desc="ввозить или купить местное? пошлины, 16% iva, стоимость доставки, льгота menaje de casa и что выгодно везти, а что брать в мексике для дома на ривьере майя.">
+<a href="vvoz-mebeli-materialov-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Ввоз мебели и материалов для стройки в Мексике (2026)</h3><p class="card-desc">Ввозить или купить местное? Пошлины, 16% IVA, стоимость доставки, льгота menaje de casa и что выгодно везти, а что…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="гаражи и парковка на ривьере майя (2026)" data-desc="навес 60 000–150 000 mxn, закрытый гараж 150 000–400 000. требование муниципалитета, защита от uv и ураганов, +5–15% к стоимости.">
+<a href="garazhi-parkovka-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Гаражи и парковка на Ривьере Майя (2026)</h3><p class="card-desc">Навес 60 000–150 000 MXN, закрытый гараж 150 000–400 000. Требование муниципалитета, защита от UV и ураганов, +5–15%…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="гаражи и парковки на ривьере майя 2026" data-desc="проектирование, стоимость за м², материалы и нормативы для жилых гаражей и коммерческих парковок в плая-дель-кармен.">
+<a href="garazhi-parkovki-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Гаражи и парковки на Ривьере Майя 2026</h3><p class="card-desc">Проектирование, стоимость за м², материалы и нормативы для жилых гаражей и коммерческих парковок в Плая-дель-Кармен.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="дизайн интерьера тропических домов на ривьере майя" data-desc="тропический дизайн интерьера, материалы, мебель, цветовые палитры для домов на ривьере майя.">
+<a href="dizajn-interyera-tropicheskie-doma-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Дизайн интерьера тропических домов на Ривьере Майя</h3><p class="card-desc">Тропический дизайн интерьера, материалы, мебель, цветовые палитры для домов на Ривьере Майя.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="дизайн освещения для домов на ривьере майя 2026" data-desc="led, наружное, ландшафтное и умное освещение. стоимость, бренды и энергосбережение для плая-дель-кармен и тулума.">
+<a href="osveshchenie-dizajn-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Дизайн освещения для домов на Ривьере Майя 2026</h3><p class="card-desc">LED, наружное, ландшафтное и умное освещение. Стоимость, бренды и энергосбережение для Плая-дель-Кармен и Тулума.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="дизайн освещения дома на ривьере майя (2026)" data-desc="led повсюду (−40–60% электричества), температуры света, уличное ip65, естественный свет и закладка умного освещения. цены 2026.">
+<a href="dizayn-osveshcheniya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Дизайн освещения дома на Ривьере Майя (2026)</h3><p class="card-desc">LED повсюду (−40–60% электричества), температуры света, уличное IP65, естественный свет и закладка умного освещения…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="доступность и универсальный дизайн домов в мексике" data-desc="дома для инвалидных колясок, дизайн для пожилых, пандусы, широкие проёмы, душевые без порога, лифты.">
+<a href="dostupnost-universalnyj-dizajn-doma-meksika.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Доступность и универсальный дизайн домов в Мексике</h3><p class="card-desc">Дома для инвалидных колясок, дизайн для пожилых, пандусы, широкие проёмы, душевые без порога, лифты.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="ландшафтный дизайн на ривьере майя 2026" data-desc="местные растения, полив, стоимость тропического сада в плая-дель-кармен и тулум.">
+<a href="landshaftnyy-dizayn-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Ландшафтный дизайн на Ривьере Майя 2026</h3><p class="card-desc">Местные растения, полив, стоимость тропического сада в Плая-дель-Кармен и Тулум.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="летние кухни и палапы на ривьере майя (2026)" data-desc="летняя кухня от 80 000 до 800 000+ mxn: столешницы, крыша палапа или пергола, техника из морской нержавейки. +20–40 usd/ночь на airbnb.">
+<a href="letnie-kuhni-palapy-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Летние кухни и палапы на Ривьере Майя (2026)</h3><p class="card-desc">Летняя кухня от 80 000 до 800 000+ MXN: столешницы, крыша палапа или пергола, техника из морской нержавейки. +20–40…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="летние кухни и палапы на ривьере майя 2026" data-desc="дизайн, стоимость и материалы для летних кухонь, палап и зон отдыха в плая-дель-кармен и тулуме.">
+<a href="letnyaya-kuhnya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Летние кухни и палапы на Ривьере Майя 2026</h3><p class="card-desc">Дизайн, стоимость и материалы для летних кухонь, палап и зон отдыха в Плая-дель-Кармен и Тулуме.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item" data-cat="cat-home" data-title="лифты и доступность в домах ривьеры майя (2026)" data-desc="домашний лифт от 350 000 mxn, подъёмник для кресла, лестничный подъёмник. +8–12% к стоимости дома, обязателен от 3 этажей.">
+<a href="lifty-dostupnost-doma-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Лифты и доступность в домах Ривьеры Майя (2026)</h3><p class="card-desc">Домашний лифт от 350 000 MXN, подъёмник для кресла, лестничный подъёмник. +8–12% к стоимости дома, обязателен от 3…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="мебель и ff&amp;e для арендной недвижимости на ривьере майя" data-desc="пакеты меблировки для airbnb/отелей: мебель, техника, бельё, декор. тропический класс. от $5,000/юнит.">
+<a href="mebel-ffe-arendnaya-nedvizhimost-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Мебель и FF&amp;E для арендной недвижимости на Ривьере Майя</h3><p class="card-desc">Пакеты меблировки для Airbnb/отелей: мебель, техника, бельё, декор. Тропический класс. От $5,000/юнит.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="окна и двери для тропического климата (2026)" data-desc="алюминиевые ударопрочные окна с сертификацией, цены за м², двери, раздвижные и складные стеклянные стены. 15–25% бюджета отделки.">
+<a href="okna-dveri-tropicheskiy-klimat.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Окна и двери для тропического климата (2026)</h3><p class="card-desc">Алюминиевые ударопрочные окна с сертификацией, цены за м², двери, раздвижные и складные стеклянные стены. 15–25%…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="окна и двери для тропического климата: ривьера майя 2026" data-desc="ураганостойкие окна, пвх, алюминий, дерево. стоимость, бренды и характеристики для плая-дель-кармен и тулума.">
+<a href="okna-dveri-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Окна и двери для тропического климата: Ривьера Майя 2026</h3><p class="card-desc">Ураганостойкие окна, ПВХ, алюминий, дерево. Стоимость, бренды и характеристики для Плая-дель-Кармен и Тулума.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="полы и отделка для тропического климата (2026)" data-desc="керамогранит, полированный бетон, травертин, тропическая древесина, плитка pasta: цены за м² с укладкой и почему полы трескаются.">
+<a href="poly-otdelka-tropicheskiy-klimat.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Полы и отделка для тропического климата (2026)</h3><p class="card-desc">Керамогранит, полированный бетон, травертин, тропическая древесина, плитка pasta: цены за м² с укладкой и почему полы…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="ремонт дома в плайя-дель-кармен: стоимость, идеи и советы (2026)" data-desc="планируете ремонт дома в плайя-дель-кармен? стоимость за м², сроки и что нужно знать. кухня, ванная, бассейн.">
+<a href="remont-doma-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Ремонт дома в Плайя-дель-Кармен: стоимость, идеи и советы (2026)</h3><p class="card-desc">Планируете ремонт дома в Плайя-дель-Кармен? Стоимость за м², сроки и что нужно знать. Кухня, ванная, бассейн.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="системы безопасности дома на ривьере майя (2026)" data-desc="ip-камеры, сигнализация, умные замки, мониторинг: полный пакет 30 000–80 000 mxn. закладка при стройке — вдвое дешевле.">
+<a href="sistemy-bezopasnosti-doma-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Системы безопасности дома на Ривьере Майя (2026)</h3><p class="card-desc">IP-камеры, сигнализация, умные замки, мониторинг: полный пакет 30 000–80 000 MXN. Закладка при стройке — вдвое…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="строительство бассейнов на ривьере майя: полное руководство 2026" data-desc="полное руководство по строительству бассейнов на ривьере майя. типы, стоимость, отделка чукум, разрешения, пошаговый процесс. плая-дель-кармен, тулум, канкун.">
+<a href="stroitelstvo-bassejnov-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Строительство бассейнов на Ривьере Майя: Полное руководство 2026</h3><p class="card-desc">Полное руководство по строительству бассейнов на Ривьере Майя. Типы, стоимость, отделка чукум, разрешения, пошаговый…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="строительство палапы: цены, уход, разрешения (2026)" data-desc="полный гид по палапам: реальные цены 2026 по размерам, уано vs сакате, каркас из твёрдых пород, цикл ухода 5–8 лет, разрешения.">
+<a href="palapa-stroitelstvo-gid.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Строительство палапы: цены, уход, разрешения (2026)</h3><p class="card-desc">Полный гид по палапам: реальные цены 2026 по размерам, уано vs сакате, каркас из твёрдых пород, цикл ухода 5–8 лет…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="терраса на крыше в плайя-дель-кармен: стоимость, идеи, roi (2026)" data-desc="терраса на крыше — лучшая инвестиция в плайя-дель-кармен. стоимость, варианты, пергола, джакузи, бар. увеличение дохода от airbnb на $40–$80 за ночь.">
+<a href="terrasa-na-kryshe-playa-del-carmen.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Терраса на крыше в Плайя-дель-Кармен: стоимость, идеи, ROI (2026)</h3><p class="card-desc">Терраса на крыше — лучшая инвестиция в Плайя-дель-Кармен. Стоимость, варианты, пергола, джакузи, бар. Увеличение…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="тропический ландшафт на ривьере майя (2026)" data-desc="сады от 30 000 до 500 000+ mxn: местные растения, капельный полив, альтернативы газону, защита от комаров.">
+<a href="tropicheskiy-landshaft-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Тропический ландшафт на Ривьере Майя (2026)</h3><p class="card-desc">Сады от 30 000 до 500 000+ MXN: местные растения, капельный полив, альтернативы газону, защита от комаров.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="умный дом в тропиках: технологии для вилл на ривьере-майя (2026)" data-desc="умный дом в плайя-дель-кармен и тулуме: автоматизация кондиционирования, освещения, безопасности. удалённое управление для владельцев за рубежом.">
+<a href="umnyj-dom-tropiki-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Умный дом в тропиках: технологии для вилл на Ривьере-Майя (2026)</h3><p class="card-desc">Умный дом в Плайя-дель-Кармен и Тулуме: автоматизация кондиционирования, освещения, безопасности. Удалённое…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="умный дом и автоматизация на ривьере майя 2026" data-desc="системы домашней автоматизации, управление освещением, умная безопасность, климат-контроль. стоимость и бренды для домов в плая-дель-кармен.">
+<a href="umnyj-dom-avtomatizaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Умный дом и автоматизация на Ривьере Майя 2026</h3><p class="card-desc">Системы домашней автоматизации, управление освещением, умная безопасность, климат-контроль. Стоимость и бренды для…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="умный дом на ривьере майя: автоматизация (2026)" data-desc="кондиционер удалённо, умные замки для airbnb, датчики протечек, камеры. бюджеты 15 000–200 000 mxn. закладка при стройке = −40–60%.">
+<a href="umnyy-dom-avtomatizaciya-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Умный дом на Ривьере Майя: автоматизация (2026)</h3><p class="card-desc">Кондиционер удалённо, умные замки для Airbnb, датчики протечек, камеры. Бюджеты 15 000–200 000 MXN. Закладка при…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="управление недвижимостью на ривьере майя 2026" data-desc="управление недвижимостью, оптимизация арендного дохода, airbnb управление, расходы на обслуживание.">
+<a href="upravlenie-nedvizhimostyu-riviera-maya.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Управление недвижимостью на Ривьере Майя 2026</h3><p class="card-desc">Управление недвижимостью, оптимизация арендного дохода, Airbnb управление, расходы на обслуживание.</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+<div class="col-md-6 col-lg-4 article-item extra" data-cat="cat-home" data-title="чукум: полный гид по отделке (цены и уход, 2026)" data-desc="чукум — майянская водостойкая штукатурка: что это, реальные цены 2026 за м², где применять, цвета, герметизация и уход. фирменная отделка тулума.">
+<a href="chukum-otdelka-gid.html" class="text-decoration-none"><div class="blog-card"><div class="card-body"><span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Дизайн и дом</span><h3 class="card-title">Чукум: полный гид по отделке (цены и уход, 2026)</h3><p class="card-desc">Чукум — майянская водостойкая штукатурка: что это, реальные цены 2026 за м², где применять, цвета, герметизация и…</p></div><div class="card-footer-custom"><span class="read-more">Читать <i class="bi bi-arrow-right"></i></span></div></div></a></div>
+</div>
+<button class="show-all" onclick="showAll(this)">Показать все (27) <i class="bi bi-chevron-down"></i></button>
 </div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="531 проект на стадии строительства в кинтана-роо: что это значит для покупателей" data-desc="официальные данные: 27 800 новых домов строятся. тулум лидирует с 252 проектами, плая-дель-кармен — 143. федеральный бюджет и рост населения.">
-<a href="stroitelnyy-bum-quintana-roo-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">531 проект на стадии строительства в Кинтана-Роо: что это значит для покупателей</h3>
-<p class="card-desc">Официальные данные: 27 800 новых домов строятся. Тулум лидирует с 252 проектами, Плая-дель-Кармен — 143. Федеральный бюджет и рост населения.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="поезд майя и недвижимость: как железная дорога меняет ривьеру майя" data-desc="расположение станций, экспроприация земель, финансовый район канкуна. как меняются стоимость строительства и цены на недвижимость.">
-<a href="poezd-maya-vliyanie-na-nedvizhimost.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">Поезд Майя и недвижимость: как железная дорога меняет Ривьеру Майя</h3>
-<p class="card-desc">Расположение станций, экспроприация земель, Финансовый район Канкуна. Как меняются стоимость строительства и цены на недвижимость.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="новые экологические законы строительства в кинтана-роо 2026" data-desc="разрешения sema, реформа закона о недвижимости, прецедент пуэрто-морелос, муниципальные строительные нормы.">
-<a href="ekologicheskie-zakony-stroitelstva-quintana-roo-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">Новые экологические законы строительства в Кинтана-Роо 2026</h3>
-<p class="card-desc">Разрешения SEMA, реформа закона о недвижимости, прецедент Пуэрто-Морелос, муниципальные строительные нормы.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="pdu плая-дель-кармен 2026: новые правила зонирования" data-desc="план городского развития 2026–2050: лимиты высотности, плотность, экологические требования, объездные дороги.">
-<a href="pdu-zonirovanie-playa-del-carmen-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">PDU Плая-дель-Кармен 2026: новые правила зонирования</h3>
-<p class="card-desc">План городского развития 2026–2050: лимиты высотности, плотность, экологические требования, объездные дороги.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="рынок недвижимости тулума 2026: аэропорт, поезд майя и 26 проектов под следствием" data-desc="спад спроса на 40%, перепроизводство квартир, 26 расследуемых проектов. где ещё есть возможности. прогнозы цен.">
-<a href="rynok-nedvizhimosti-tulum-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">Рынок недвижимости Тулума 2026: аэропорт, Поезд Майя и 26 проектов под следствием</h3>
-<p class="card-desc">Спад спроса на 40%, перепроизводство квартир, 26 расследуемых проектов. Где ещё есть возможности. Прогнозы цен.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-novosti" data-title="новый закон о противодействии отмыванию денег в мексике 2026" data-desc="реформа lfpiorpi: сниженные пороги отчётности, ужесточение идентификации, влияние на фидейкомисо. больше бумаг — больше защиты.">
-<a href="zakon-protivodeystvie-otmyvaniyu-deneg-meksika-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(220,53,69,.08);color:#dc3545">Официальные новости</span>
-<h3 class="card-title mt-2">Новый закон о противодействии отмыванию денег в Мексике 2026</h3>
-<p class="card-desc">Реформа LFPIORPI: сниженные пороги отчётности, ужесточение идентификации, влияние на фидейкомисо. Больше бумаг — больше защиты.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-stoimost">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(25,135,84,.08);color:#198754"><i class="bi bi-calculator"></i></div><h2>Стоимость и ROI</h2><span class="cat-count">12 статей</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость строительства в плайя-дель-кармен (2026)" data-desc="актуальные цены на строительство: жилое, коммерческое, люкс. что влияет на бюджет.">
-<a href="stoimost-stroitelstva-playa-del-carmen-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Стоимость строительства в Плайя-дель-Кармен (2026)</h3>
-<p class="card-desc">Актуальные цены на строительство: жилое, коммерческое, люкс. Что влияет на бюджет.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="сколько стоит построить дом в тулуме? (2026)" data-desc="цена за м², разбивка по этапам. бюджет, средний, премиум варианты.">
-<a href="stoimost-stroitelstva-doma-tulum.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Сколько стоит построить дом в Тулуме? (2026)</h3>
-<p class="card-desc">Цена за м², разбивка по этапам. Бюджет, средний, премиум варианты.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="ремонт дома в плайя-дель-кармен (2026)" data-desc="кухня, ванная, бассейн, терраса — стоимость за м², сроки, материалы для тропиков.">
-<a href="remont-doma-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Ремонт дома в Плайя-дель-Кармен (2026)</h3>
-<p class="card-desc">Кухня, ванная, бассейн, терраса — стоимость за м², сроки, материалы для тропиков.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость ремонта кухни" data-desc="$4,000–$35,000 usd. бюджет, средний, премиум.">
-<a href="stoimost-remonta-kuhni-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Стоимость ремонта кухни</h3>
-<p class="card-desc">$4,000–$35,000 USD. Бюджет, средний, премиум.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость ремонта ванной" data-desc="$2,500–$22,000 usd. от бюджетного до премиум.">
-<a href="stoimost-remonta-vannoj-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Стоимость ремонта ванной</h3>
-<p class="card-desc">$2,500–$22,000 USD. От бюджетного до премиум.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="лучший ремонт для roi в плайя-дель-кармен (2026)" data-desc="бассейн, терраса, кухня — стоимость vs. добавленная ценность. данные для airbnb и перепродажи.">
-<a href="roi-remont-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Лучший ремонт для ROI в Плайя-дель-Кармен (2026)</h3>
-<p class="card-desc">Бассейн, терраса, кухня — стоимость vs. добавленная ценность. Данные для Airbnb и перепродажи.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="бассейны: типы, стоимость и обслуживание (2026)" data-desc="бетонный, infinity, rooftop — цены, отделка чукум, ежемесячное обслуживание.">
-<a href="bassejny-riviera-maya-stoimost.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Бассейны: типы, стоимость и обслуживание (2026)</h3>
-<p class="card-desc">Бетонный, infinity, rooftop — цены, отделка чукум, ежемесячное обслуживание.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="терраса на крыше: лучшая инвестиция" data-desc="варианты, стоимость, roi для airbnb. пергола, мини-бассейн, барбекю.">
-<a href="terrasa-na-kryshe-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Терраса на крыше: лучшая инвестиция</h3>
-<p class="card-desc">Варианты, стоимость, ROI для Airbnb. Пергола, мини-бассейн, барбекю.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="стоимость содержания дома в мексике (2026)" data-desc="электричество, вода, налог, страховка, бассейн, уборка — помесячная таблица.">
-<a href="stoimost-soderzhaniya-doma-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Стоимость содержания дома в Мексике (2026)</h3>
-<p class="card-desc">Электричество, вода, налог, страховка, бассейн, уборка — помесячная таблица.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="инвестиции в airbnb в тулуме" data-desc="доходность, спрос, стоимость управления. стоит ли инвестировать.">
-<a href="investicii-airbnb-tulum.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Инвестиции в Airbnb в Тулуме</h3>
-<p class="card-desc">Доходность, спрос, стоимость управления. Стоит ли инвестировать.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="калькулятор roi airbnb тулум" data-desc="расчёт окупаемости инвестиций в недвижимость для краткосрочной аренды.">
-<a href="kalkulyator-roi-airbnb-tulum.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Калькулятор ROI Airbnb Тулум</h3>
-<p class="card-desc">Расчёт окупаемости инвестиций в недвижимость для краткосрочной аренды.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-stoimost" data-title="коммерческое строительство в канкуне" data-desc="магазины, рестораны, отели — нормы, стоимость, сроки.">
-<a href="kommercheskoe-stroitelstvo-kankun.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(25,135,84,.08);color:#198754">Стоимость и ROI</span>
-<h3 class="card-title mt-2">Коммерческое строительство в Канкуне</h3>
-<p class="card-desc">Магазины, рестораны, отели — нормы, стоимость, сроки.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-inostrantsy">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(13,110,253,.08);color:#0d6efd"><i class="bi bi-globe"></i></div><h2>Для иностранцев</h2><span class="cat-count">7 статей</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="могут ли иностранцы построить дом в мексике?" data-desc="фидеикомисо, разрешения, пошаговый процесс. как владеть недвижимостью в прибрежной зоне.">
-<a href="inostrantsy-stroitelstvo-doma-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Могут ли иностранцы построить дом в Мексике?</h3>
-<p class="card-desc">Фидеикомисо, разрешения, пошаговый процесс. Как владеть недвижимостью в прибрежной зоне.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="фидеикомисо: как иностранцам покупать недвижимость" data-desc="банковский траст, права владения, стоимость оформления, альтернативы.">
-<a href="fideikomiso-inostrantsy-pokupka-nedvizhimosti.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Фидеикомисо: как иностранцам покупать недвижимость</h3>
-<p class="card-desc">Банковский траст, права владения, стоимость оформления, альтернативы.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="разрешения на строительство в плайя-дель-кармен" data-desc="какие документы нужны, куда подавать, сроки. пошаговый процесс.">
-<a href="razresheniya-na-stroitelstvo-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Разрешения на строительство в Плайя-дель-Кармен</h3>
-<p class="card-desc">Какие документы нужны, куда подавать, сроки. Пошаговый процесс.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="умный дом и автоматизация" data-desc="домотика, умное освещение, безопасность, климат. пакеты от $2 500 usd.">
-<a href="umnyj-dom-avtomatizaciya-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Умный дом и автоматизация</h3>
-<p class="card-desc">Домотика, умное освещение, безопасность, климат. Пакеты от $2 500 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="лифты и доступность" data-desc="жилые лифты, пандусы, универсальная доступность. от $18 000 usd.">
-<a href="lifty-dostupnost-doma-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Лифты и доступность</h3>
-<p class="card-desc">Жилые лифты, пандусы, универсальная доступность. От $18 000 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="гаражи и парковки" data-desc="проектирование, стоимость/м², автоматические ворота. крытый гараж от $650 usd/м².">
-<a href="garazhi-parkovki-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Гаражи и парковки</h3>
-<p class="card-desc">Проектирование, стоимость/м², автоматические ворота. Крытый гараж от $650 USD/м².</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-inostrantsy" data-title="цистерны и водоснабжение" data-desc="типы, объёмы, насосы, сбор дождевой воды. от $1 500 usd.">
-<a href="cisterny-vodosnabzhenie-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(13,110,253,.08);color:#0d6efd">Для иностранцев</span>
-<h3 class="card-title mt-2">Цистерны и водоснабжение</h3>
-<p class="card-desc">Типы, объёмы, насосы, сбор дождевой воды. От $1 500 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-praktika">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(32,201,151,.08);color:#20c997"><i class="bi bi-house-heart"></i></div><h2>Практические советы</h2><span class="cat-count">18 статей</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="ураганостойкое строительство в ривьере-майя" data-desc="строительные нормы, железобетон, ударопрочные окна, штормовые ставни.">
-<a href="uraganostoykoe-stroitelstvo.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Ураганостойкое строительство в Ривьере-Майя</h3>
-<p class="card-desc">Строительные нормы, железобетон, ударопрочные окна, штормовые ставни.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="9 красных флагов при найме подрядчика" data-desc="тревожные признаки, чек-лист контракта, как не попасть на мошенников.">
-<a href="krasnye-flagi-podryadchik-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">9 красных флагов при найме подрядчика</h3>
-<p class="card-desc">Тревожные признаки, чек-лист контракта, как не попасть на мошенников.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="подготовка дома к сезону ураганов: чек-лист" data-desc="ставни, генератор, запасы, страховка. что делать за месяц и за 48 часов.">
-<a href="podgotovka-doma-sezon-uraganov.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Подготовка дома к сезону ураганов: чек-лист</h3>
-<p class="card-desc">Ставни, генератор, запасы, страховка. Что делать за месяц и за 48 часов.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="умный дом в тропиках" data-desc="автоматизация кондиционеров, безопасность, удалённое управление. пакеты от $50 000 mxn.">
-<a href="umnyj-dom-tropiki-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Умный дом в тропиках</h3>
-<p class="card-desc">Автоматизация кондиционеров, безопасность, удалённое управление. Пакеты от $50 000 MXN.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="строительство бассейнов: полное руководство 2026" data-desc="типы, стоимость, отделка чукум, разрешения. 6–12 недель.">
-<a href="stroitelstvo-bassejnov-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Строительство бассейнов: полное руководство 2026</h3>
-<p class="card-desc">Типы, стоимость, отделка чукум, разрешения. 6–12 недель.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="полы и отделка для тропического климата" data-desc="керамогранит, травертин, чукум, микроцемент, тропическое дерево.">
-<a href="poly-otdelka-tropicheskiy-klimat.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Полы и отделка для тропического климата</h3>
-<p class="card-desc">Керамогранит, травертин, чукум, микроцемент, тропическое дерево.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="кондиционирование и вентиляция" data-desc="мини-сплит, vrf, канальная. стоимость, марки, расчёт btu.">
-<a href="kondicionirovanie-ventilyaciya-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Кондиционирование и вентиляция</h3>
-<p class="card-desc">Мини-сплит, VRF, канальная. Стоимость, марки, расчёт BTU.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="безопасность дома на ривьере майя" data-desc="камеры, умные замки, ураганные ставни, сигнализация.">
-<a href="bezopasnost-doma-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Безопасность дома на Ривьере Майя</h3>
-<p class="card-desc">Камеры, умные замки, ураганные ставни, сигнализация.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="ландшафтный дизайн на ривьере майя" data-desc="местные растения, полив, подсветка. сады от $1,650 usd.">
-<a href="landshaftnyy-dizayn-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Ландшафтный дизайн на Ривьере Майя</h3>
-<p class="card-desc">Местные растения, полив, подсветка. Сады от $1,650 USD.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="летние кухни и палапы на ривьере майя" data-desc="дизайн, стоимость ($3 500–$55 000 usd) и материалы для летних кухонь.">
-<a href="letnyaya-kuhnya-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Летние кухни и палапы на Ривьере Майя</h3>
-<p class="card-desc">Дизайн, стоимость ($3 500–$55 000 USD) и материалы для летних кухонь.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="дизайн освещения для домов на ривьере майя" data-desc="led, наружное, ландшафтное и умное освещение. стоимость по зонам.">
-<a href="osveshchenie-dizajn-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Дизайн освещения для домов на Ривьере Майя</h3>
-<p class="card-desc">LED, наружное, ландшафтное и умное освещение. Стоимость по зонам.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="крыша и гидроизоляция на ривьере майя" data-desc="бетонная плита, зелёная крыша, палапа. системы гидроизоляции с гарантией 3–20 лет.">
-<a href="krysha-gidroizolyaciya-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Крыша и гидроизоляция на Ривьере Майя</h3>
-<p class="card-desc">Бетонная плита, зелёная крыша, палапа. Системы гидроизоляции с гарантией 3–20 лет.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="окна и двери для тропического климата" data-desc="ураганостойкие, пвх, алюминий, дерево. сертификации miami-dade.">
-<a href="okna-dveri-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Окна и двери для тропического климата</h3>
-<p class="card-desc">Ураганостойкие, ПВХ, алюминий, дерево. Сертификации Miami-Dade.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="солнечные панели для домов на ривьере майя" data-desc="стоимость ($4 500–$22 000 usd), бренды, окупаемость и нормативы cfe.">
-<a href="solnechnye-paneli-doma-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Солнечные панели для домов на Ривьере Майя</h3>
-<p class="card-desc">Стоимость ($4 500–$22 000 USD), бренды, окупаемость и нормативы CFE.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="септики и очистка воды" data-desc="биодигестеры, очистные установки, стоимость и экологические нормы ривьеры майя.">
-<a href="septik-ochistka-vody-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Септики и очистка воды</h3>
-<p class="card-desc">Биодигестеры, очистные установки, стоимость и экологические нормы Ривьеры Майя.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="типы бетона для строительства" data-desc="товарный, насосный, самоуплотняющийся. марки f'c 200–400 и стоимость за м³.">
-<a href="tipy-betona-stroitelstvo-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Типы бетона для строительства</h3>
-<p class="card-desc">Товарный, насосный, самоуплотняющийся. Марки f'c 200–400 и стоимость за м³.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="страхование и гарантии строительства" data-desc="строительное страхование, структурные гарантии, гарантии исполнения и защита покупателя.">
-<a href="strahovanie-garantii-stroitelstvo-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Страхование и гарантии строительства</h3>
-<p class="card-desc">Строительное страхование, структурные гарантии, гарантии исполнения и защита покупателя.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-praktika" data-title="системы опреснения очистки воды дома отели ривьера майя" data-desc="обратный осмос водоподготовка стоимость установка обслуживание">
-<a href="sistemy-opresneniya-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card" style="position:relative">
-
-<div class="card-body">
-<span class="card-cat" style="background:rgba(32,201,151,.08);color:#20c997">Практические советы</span>
-<h3 class="card-title mt-2">Системы опреснения и очистки воды для домов и отелей</h3>
-<p class="card-desc">Полное руководство: обратный осмос, умягчители, УФ-стерилизация. Стоимость от $8 000 MXN. Качество воды по зонам.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
-<div class="cat-section" data-cat="cat-rukovodstva">
-<div class="cat-section-header"><div class="cat-icon" style="background:rgba(232,114,12,.08);color:#e8720c"><i class="bi bi-geo-alt"></i></div><h2>Руководства по строительству</h2><span class="cat-count">23 статей</span></div>
-<div class="row g-3 mb-5">
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="лучшие районы для строительства в плая-дель-кармен" data-desc="цены на землю, стиль жизни, roi по районам.">
-<a href="luchshie-rajony-stroitelstva-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Лучшие районы для строительства в Плая-дель-Кармен</h3>
-<p class="card-desc">Цены на землю, стиль жизни, ROI по районам.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="сроки строительства на ривьера-майя" data-desc="8–14 месяцев строительства, 2–4 месяца на разрешения.">
-<a href="sroki-stroitelstva-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Сроки строительства на Ривьера-Майя</h3>
-<p class="card-desc">8–14 месяцев строительства, 2–4 месяца на разрешения.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строительство под ключ в плая-дель-кармен" data-desc="один контракт, одна команда, одна цена.">
-<a href="stroitelstvo-pod-klyuch-playa-del-carmen.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Строительство под ключ в Плая-дель-Кармен</h3>
-<p class="card-desc">Один контракт, одна команда, одна цена.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="экологичное строительство в тулуме" data-desc="экологические нормы, материалы, солнечная энергия.">
-<a href="ekologichnoe-stroitelstvo-tulum.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Экологичное строительство в Тулуме</h3>
-<p class="card-desc">Экологические нормы, материалы, солнечная энергия.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="удалённое управление строительством" data-desc="ежедневные фото, еженедельные видеозвонки. 80% строят удалённо.">
-<a href="udalennoe-upravlenie-stroitelstvom-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Удалённое управление строительством</h3>
-<p class="card-desc">Ежедневные фото, еженедельные видеозвонки. 80% строят удалённо.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="плая-дель-кармен vs тулум: где строить?" data-desc="стоимость земли, нормы, доходность — сравнение.">
-<a href="playa-del-carmen-vs-tulum-stroitelstvo-2026.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Плая-дель-Кармен vs Тулум: где строить?</h3>
-<p class="card-desc">Стоимость земли, нормы, доходность — сравнение.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строить или покупать на ривьере-майя?" data-desc="сравнение стоимости, плюсы и минусы, для кого что лучше.">
-<a href="stroit-ili-pokupat-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Строить или покупать на Ривьере-Майя?</h3>
-<p class="card-desc">Сравнение стоимости, плюсы и минусы, для кого что лучше.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="как выбрать строительную компанию" data-desc="критерии выбора, вопросы подрядчику, гарантии, рекомендации.">
-<a href="vybrat-stroitelnuyu-kompaniyu-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Как выбрать строительную компанию</h3>
-<p class="card-desc">Критерии выбора, вопросы подрядчику, гарантии, рекомендации.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="как купить землю на ривьере майя" data-desc="цены, эхидо vs частная, фидеикомисо, лучшие зоны.">
-<a href="pokupka-zemli-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Как купить землю на Ривьере Майя</h3>
-<p class="card-desc">Цены, эхидо vs частная, фидеикомисо, лучшие зоны.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="управление недвижимостью" data-desc="airbnb управление, арендный доход, обслуживание.">
-<a href="upravlenie-nedvizhimostyu-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Управление недвижимостью</h3>
-<p class="card-desc">Airbnb управление, арендный доход, обслуживание.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="дизайн интерьера тропических домов" data-desc="стили, материалы, влагостойкие решения.">
-<a href="dizajn-interyera-tropicheskie-doma-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Дизайн интерьера тропических домов</h3>
-<p class="card-desc">Стили, материалы, влагостойкие решения.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="экологичные строительные материалы" data-desc="бамбук, переработанный бетон, зелёные крыши.">
-<a href="ekologichnye-stroitelnye-materialy-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Экологичные строительные материалы</h3>
-<p class="card-desc">Бамбук, переработанный бетон, зелёные крыши.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="типы фундаментов" data-desc="плита, сваи, кессоны для известняка.">
-<a href="tipy-fundamentov-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Типы фундаментов</h3>
-<p class="card-desc">Плита, сваи, кессоны для известняка.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="закрытые посёлки" data-desc="проектирование, инфраструктура, безопасность.">
-<a href="stroitelstvo-zakrytyh-poselkov-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Закрытые посёлки</h3>
-<p class="card-desc">Проектирование, инфраструктура, безопасность.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строительство кондоминиумов" data-desc="4-50 юнитов, предпродажи, roi.">
-<a href="stroitelstvo-kondominiumov-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Строительство кондоминиумов</h3>
-<p class="card-desc">4-50 юнитов, предпродажи, ROI.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="строительство ресторанов и баров" data-desc="кухня, разрешения, лицензия на алкоголь.">
-<a href="stroitelstvo-restoranov-barov-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Строительство ресторанов и баров</h3>
-<p class="card-desc">Кухня, разрешения, лицензия на алкоголь.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="водопровод и водосистемы" data-desc="скважины, цистерны, насосы, очистка.">
-<a href="vodoprovod-vodosistemy-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Водопровод и водосистемы</h3>
-<p class="card-desc">Скважины, цистерны, насосы, очистка.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="подготовка участка и подпорные стены" data-desc="расчистка, дробление камня, дренаж.">
-<a href="podgotovka-uchastka-podpornye-steny-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Подготовка участка и подпорные стены</h3>
-<p class="card-desc">Расчистка, дробление камня, дренаж.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="стоимость жизни при строительстве" data-desc="аренда, еда, транспорт, виза, интернет.">
-<a href="stoimost-zhizni-stroitelstvo-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Стоимость жизни при строительстве</h3>
-<p class="card-desc">Аренда, еда, транспорт, виза, интернет.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="график строительства" data-desc="помесячно: разрешения, фундамент, отделка.">
-<a href="grafik-stroitelstva-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">График строительства</h3>
-<p class="card-desc">Помесячно: разрешения, фундамент, отделка.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="мебель и ff&amp;e для аренды" data-desc="пакеты меблировки от $5,000.">
-<a href="mebel-ffe-arendnaya-nedvizhimost-riviera-maya.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Мебель и FF&amp;E для аренды</h3>
-<p class="card-desc">Пакеты меблировки от $5,000.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="налоговые льготы строительства" data-desc="вычеты isr, амортизация, солнечные стимулы.">
-<a href="nalogovye-lgoty-stroitelstvo-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Налоговые льготы строительства</h3>
-<p class="card-desc">Вычеты ISR, амортизация, солнечные стимулы.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-<div class="col-md-6 col-lg-4 article-item" data-cat="cat-rukovodstva" data-title="доступность и универсальный дизайн" data-desc="инвалидная коляска, пожилые, пандусы.">
-<a href="dostupnost-universalnyj-dizajn-doma-meksika.html" class="text-decoration-none">
-<div class="blog-card">
-<div class="card-body">
-<span class="card-cat" style="background:rgba(232,114,12,.08);color:#e8720c">Руководства по строительству</span>
-<h3 class="card-title mt-2">Доступность и универсальный дизайн</h3>
-<p class="card-desc">Инвалидная коляска, пожилые, пандусы.</p>
-</div>
-<div class="card-footer-custom">
-<span class="read-more">Читать <i class="bi bi-arrow-right"></i></span>
-</div>
-</div></a></div>
-</div></div>
 </div></section>
 
 <div class="lead-magnet mx-auto my-4" style="max-width:720px">
@@ -1237,50 +502,6 @@
 </form>
 </div>
 </section>
-
-<script>
-function filterCat(cat,btn){
-  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
-  btn.classList.add('active');
-  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
-  document.querySelectorAll('.cat-section').forEach(s=>{
-    if(cat==='all'||s.dataset.cat===cat){s.style.display=''}else{s.style.display='none'}
-  });
-  document.getElementById('searchInput').value='';
-  updateCount();
-}
-function searchArticles(){
-  var q=document.getElementById('searchInput').value.toLowerCase().trim();
-  document.querySelectorAll('.cat-pill').forEach(p=>{p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
-  document.querySelector('[data-cat="all"]').classList.add('active');
-  document.querySelectorAll('.cat-section').forEach(s=>s.style.display='');
-  var items=document.querySelectorAll('.article-item');
-  var shown=0;
-  items.forEach(item=>{
-    if(!q||item.dataset.title.includes(q)||item.dataset.desc.includes(q)){item.style.display='';shown++}else{item.style.display='none'}
-  });
-  document.querySelectorAll('.cat-section').forEach(s=>{
-    var v=s.querySelectorAll('.article-item:not([style*="display: none"])').length;
-    if(v===0&&q)s.style.display='none';
-  });
-  document.getElementById('searchCount').textContent=shown+' статей';
-  var nr=document.getElementById('noResults');
-  if(shown===0&&q){nr.style.display='block'}else{nr.style.display='none'}
-}
-function updateCount(){
-  var shown=0;
-  document.querySelectorAll('.article-item').forEach(i=>{if(getComputedStyle(i).display!=='none')shown++});
-  document.getElementById('searchCount').textContent=shown+' статей';
-}
-function toggleView(mode,btn){
-  var c=document.getElementById('articlesGrid');
-  document.querySelectorAll('.view-toggle button').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  if(mode==='list')c.classList.add('list-view');else c.classList.remove('list-view');
-}
-document.addEventListener('DOMContentLoaded',function(){updateCount()});
-</script>
-
 
 <section class="faq-section" style="padding:2rem 1rem"><div style="max-width:820px;margin:0 auto"><h2 class="section-title">Частые вопросы</h2>
 <div class="faq">
@@ -1332,6 +553,54 @@ var p=document.querySelector('.pill-count');if(p)p.textContent=n;
 var sub=document.querySelector('.section-subtitle');
 if(sub&&/^\s*\d+\s+(guides|gu\u00edas|guias)/i.test(sub.textContent))sub.innerHTML=sub.innerHTML.replace(/^(\s*)\d+/,'$1'+n);
 }catch(e){}})();
+</script>
+<script id="blogIndexScript">
+function filterCat(cat,btn){
+  document.querySelectorAll('.cat-pill').forEach(function(p){p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  btn.classList.add('active');
+  if(cat!=='all'){var c=btn.dataset.color;btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff'}
+  document.querySelectorAll('.article-item').forEach(function(i){i.style.display=''});
+  document.querySelectorAll('.cat-section').forEach(function(s){
+    var on=(cat==='all'||s.dataset.cat===cat);
+    s.style.display=on?'':'none';
+    s.classList.toggle('expanded',on&&cat!=='all');
+  });
+  document.getElementById('searchInput').value='';
+  document.getElementById('noResults').style.display='none';
+  updateCount();
+}
+function searchArticles(){
+  var q=document.getElementById('searchInput').value.toLowerCase().trim();
+  document.querySelectorAll('.cat-pill').forEach(function(p){p.classList.remove('active');p.style.background='';p.style.borderColor='';p.style.color=''});
+  var ap=document.querySelector('.cat-pill[data-cat="all"]');if(ap)ap.classList.add('active');
+  var shown=0;
+  document.querySelectorAll('.article-item').forEach(function(item){
+    var hit=!q||item.dataset.title.indexOf(q)>-1||item.dataset.desc.indexOf(q)>-1;
+    item.style.display=hit?'':'none';
+    if(hit)shown++;
+  });
+  document.querySelectorAll('.cat-section').forEach(function(s){
+    s.classList.toggle('expanded',!!q);
+    var v=0;s.querySelectorAll('.article-item').forEach(function(i){if(i.style.display!=='none')v++});
+    s.style.display=(q&&!v)?'none':'';
+  });
+  document.getElementById('noResults').style.display=(q&&!shown)?'block':'none';
+  setCount(shown);
+}
+function setCount(n){var e=document.getElementById('searchCount');if(e)e.textContent=n+' статей'}
+function updateCount(){
+  var n=0;document.querySelectorAll('.cat-section').forEach(function(s){
+    if(s.style.display!=='none')n+=s.querySelectorAll('.article-item').length});
+  setCount(n);
+}
+function showAll(btn){btn.closest('.cat-section').classList.add('expanded')}
+function toggleView(mode,btn){
+  var c=document.getElementById('articlesGrid');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  c.classList.toggle('list-view',mode==='list');
+}
+document.addEventListener('DOMContentLoaded',updateCount);
 </script>
 </body>
 </html>
