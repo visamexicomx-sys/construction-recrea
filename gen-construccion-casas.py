@@ -57,7 +57,7 @@ CITIES = {
    norm='En Benito Juárez la licencia de construcción se tramita ante la Dirección de Desarrollo Urbano con proyecto avalado por DRO. En Puerto Cancún y la Zona Hotelera se añade el visto bueno de FONATUR y, en lotes frente al mar, la concesión ZOFEMAT. En fraccionamientos con reglamento interno (Cumbres, Aqua, Lagos) hay además comité de diseño con restricciones de altura, fachada y horarios de obra.',
    soil='Suelo calizo con zonas de relleno y nivel freático alto cerca de la laguna Nichupté. El estudio de mecánica de suelos define el tipo de cimentación y el tratamiento contra humedad; en lotes cercanos a la laguna es obligatorio prever impermeabilización reforzada y protección anticorrosiva del acero.',
    extra='Cancún ofrece el terreno urbano más económico de la zona norte y proveedores a 20 minutos de obra, lo que abarata logística frente a Tulum. Es el mejor costo por m² construido de la Riviera Maya para casa propia.',
-   links=[('/cuanto-cuesta-construir-casa-cancun/','¿Cuánto cuesta construir una casa en Cancún?'),
+   links=[('/blog-es/cuanto-cuesta-construir-casa-cancun.html','¿Cuánto cuesta construir una casa en Cancún?'),
           ('/permisos-de-construccion-cancun/','Permisos de construcción en Cancún'),
           ('/constructora-cancun/','Constructora en Cancún'),
           ('/villas-de-lujo-puerto-cancun/','Villas de lujo en Puerto Cancún'),
@@ -91,7 +91,7 @@ CITIES = {
    norm='Tulum es el municipio más estricto de la Riviera Maya. Además de uso de suelo y licencia municipal con DRO, la mayoría de los proyectos requiere autorización ambiental de la SEMA (y MIA cuando hay desmonte o cercanía a cenotes o manglar). El PDU limita densidad y altura por zona, y la obra debe respetar el porcentaje de área verde permeable. Los tiempos de permiso son más largos: presupueste 3 a 5 meses.',
    soil='Roca caliza fracturada con cenotes y cavernas frecuentes, sobre todo en Región 15 y La Veleta. El estudio geofísico previo no es opcional: encontrar una caverna bajo el desplante ya iniciada la cimentación puede costar cientos de miles de pesos y semanas de retraso.',
    extra='Tulum es el m² más caro de la región por logística, normativa ambiental y demanda de acabados premium (chukum, madera dura, diseño bioclimático), pero también el mayor rendimiento en renta vacacional.',
-   links=[('/cuanto-cuesta-construir-casa-tulum/','¿Cuánto cuesta construir una casa en Tulum?'),
+   links=[('/blog-es/costo-construir-casa-tulum.html','¿Cuánto cuesta construir una casa en Tulum?'),
           ('/permisos-de-construccion-tulum-ciudad/','Permisos de construcción en Tulum'),
           ('/constructora-tulum/','Constructora en Tulum'),
           ('/villas-de-lujo-aldea-zama-tulum/','Villas de lujo en Aldea Zamá'),
@@ -193,6 +193,11 @@ def build(slug, d):
             "serviceType":"Obra nueva residencial llave en mano"}},
         "sameAs":["https://www.facebook.com/recrea.arquitectura","https://www.instagram.com/recrea_arquitectura"],
         "foundingDate":"2008","knowsLanguage":["es","en"]}
+    alts = '\n  '.join('<link rel="alternate" hreflang="%s" href="%s/%s-%s/">' % (c, BASE, pfx, slug)
+                       for c, pfx in [('es','construccion-de-casas'),('en','house-construction'),
+                                      ('de','hausbau'),('ru','stroitelstvo-domov'),
+                                      ('zh','zhuzhai-jianzao'),('fr','construction-de-maisons')])
+    alts += '\n  <link rel="alternate" hreflang="x-default" href="%s/house-construction-%s/">' % (BASE, slug)
     bc = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Inicio","item":BASE+"/"},
         {"@type":"ListItem","position":2,"name":h1}]}
@@ -235,6 +240,7 @@ def build(slug, d):
   <script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>
   <script type="application/ld+json">{json.dumps(bc, ensure_ascii=False)}</script>
   <link rel="canonical" href="{url}">
+  {alts}
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
