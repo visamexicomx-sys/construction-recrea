@@ -90,3 +90,71 @@ blog-de   96 articles  news=6 costs=25 permits=12 foreigners=4 build=30 home=19
 blog-ru  111 articles  news=7 costs=25 permits=14 foreigners=5 build=33 home=27
 blog-fr   97 articles  news=6 costs=24 permits=13 foreigners=5 build=29 home=20
 blog-zh   97 articles  news=6 costs=23 permits=13 foreigners=5 build=30 home=20
+[main 687e4d6] daily blog: 5 new SEO articles 2026-08-07
+ 60 files changed, 13166 insertions(+), 2227 deletions(-)
+ create mode 100644 __pycache__/gen-construccion-casas-ml.cpython-313.pyc
+ create mode 100644 __pycache__/gen-construccion-casas.cpython-313.pyc
+ create mode 100644 blog/complete-house-renovation-playa-del-carmen.html
+ create mode 100644 blog/condo-renovation-cancun-riviera-maya.html
+ create mode 100644 blog/eco-resort-construction-bacalar.html
+ create mode 100644 blog/glamping-construction-riviera-maya.html
+ create mode 100644 blog/hotel-renovation-cancun-zona-hotelera.html
+ create mode 100644 construccion-de-casas-aldea-zama/index.html
+ create mode 100644 construccion-de-casas-corasol/index.html
+ create mode 100644 construccion-de-casas-la-veleta/index.html
+ create mode 100644 construccion-de-casas-mayakoba/index.html
+ create mode 100644 construccion-de-casas-playacar/index.html
+ create mode 100644 construccion-de-casas-puerto-cancun/index.html
+ create mode 100644 construccion-de-casas-tulum-country-club/index.html
+ create mode 100644 construccion-de-casas-zona-hotelera-cancun/index.html
+ create mode 100644 construction-de-maisons-aldea-zama/index.html
+ create mode 100644 construction-de-maisons-corasol/index.html
+ create mode 100644 construction-de-maisons-la-veleta/index.html
+ create mode 100644 construction-de-maisons-mayakoba/index.html
+ create mode 100644 construction-de-maisons-playacar/index.html
+ create mode 100644 construction-de-maisons-puerto-cancun/index.html
+ create mode 100644 construction-de-maisons-tulum-country-club/index.html
+ create mode 100644 construction-de-maisons-zona-hotelera-cancun/index.html
+ create mode 100644 gen-casas-zonas.py
+ create mode 100644 hausbau-aldea-zama/index.html
+ create mode 100644 hausbau-corasol/index.html
+ create mode 100644 hausbau-la-veleta/index.html
+ create mode 100644 hausbau-mayakoba/index.html
+ create mode 100644 hausbau-playacar/index.html
+ create mode 100644 hausbau-puerto-cancun/index.html
+ create mode 100644 hausbau-tulum-country-club/index.html
+ create mode 100644 hausbau-zona-hotelera-cancun/index.html
+ create mode 100644 house-construction-aldea-zama/index.html
+ create mode 100644 house-construction-corasol/index.html
+ create mode 100644 house-construction-la-veleta/index.html
+ create mode 100644 house-construction-mayakoba/index.html
+ create mode 100644 house-construction-playacar/index.html
+ create mode 100644 house-construction-puerto-cancun/index.html
+ create mode 100644 house-construction-tulum-country-club/index.html
+ create mode 100644 house-construction-zona-hotelera-cancun/index.html
+ create mode 100644 stroitelstvo-domov-aldea-zama/index.html
+ create mode 100644 stroitelstvo-domov-corasol/index.html
+ create mode 100644 stroitelstvo-domov-la-veleta/index.html
+ create mode 100644 stroitelstvo-domov-mayakoba/index.html
+ create mode 100644 stroitelstvo-domov-playacar/index.html
+ create mode 100644 stroitelstvo-domov-puerto-cancun/index.html
+ create mode 100644 stroitelstvo-domov-tulum-country-club/index.html
+ create mode 100644 stroitelstvo-domov-zona-hotelera-cancun/index.html
+ create mode 100644 zhuzhai-jianzao-aldea-zama/index.html
+ create mode 100644 zhuzhai-jianzao-corasol/index.html
+ create mode 100644 zhuzhai-jianzao-la-veleta/index.html
+ create mode 100644 zhuzhai-jianzao-mayakoba/index.html
+ create mode 100644 zhuzhai-jianzao-playacar/index.html
+ create mode 100644 zhuzhai-jianzao-puerto-cancun/index.html
+ create mode 100644 zhuzhai-jianzao-tulum-country-club/index.html
+ create mode 100644 zhuzhai-jianzao-zona-hotelera-cancun/index.html
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+To https://github.com/visamexicomx-sys/construction-recrea.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/visamexicomx-sys/construction-recrea.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
