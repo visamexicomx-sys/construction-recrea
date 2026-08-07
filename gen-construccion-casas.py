@@ -114,6 +114,72 @@ CITIES = {
    testi=[('"Nos llevaron el trámite de SEMA completo en Aldea Zamá. Sin ese acompañamiento no habríamos podido construir."','Propietario, Aldea Zamá'),
           ('"Villa de 200 m² en La Veleta terminada para renta. Ocupación alta desde el primer año."','Inversionista, Tulum')]),
 
+ 'puerto-aventuras': dict(
+   city='Puerto Aventuras', muni='Solidaridad', pre='en',
+   zones='la zona de la marina, Xcalacoco, Bahía Chemuyil y los fraccionamientos privados de Puerto Aventuras',
+   m2='$13,000 – $27,000', usd='$720 – $1,500',
+   sizes=[('Casa 100 m² (2 recámaras)','$1.7M – $2.7M','$94,000 – $150,000'),
+          ('Casa 150 m² (3 rec. + alberca)','$2.9M – $4.9M','$160,000 – $270,000'),
+          ('Casa 200 m² (3–4 recámaras)','$3.8M – $6.5M','$210,000 – $360,000'),
+          ('Villa 300 m² de lujo','$8.1M – $14.6M','$450,000 – $810,000')],
+   norm='Puerto Aventuras pertenece a Solidaridad, así que el uso de suelo, la licencia de construcción y el DRO se tramitan en Playa del Carmen. La diferencia real está adentro: al ser una comunidad privada, el proyecto pasa además por la administración y el comité de diseño del fraccionamiento, con reglas de altura, fachada, colores, horarios de obra y acceso de camiones. Trabajamos con esos reglamentos desde hace años y presentamos el expediente completo para no perder semanas en observaciones.',
+   soil='Roca caliza con manto freático cercano y ambiente altamente salino por la proximidad al mar y a la marina. Además del estudio de mecánica de suelos, aquí es obligatorio prever recubrimientos mayores en el acero de refuerzo, herrería tratada y cancelería de aluminio anodizado: en Puerto Aventuras la corrosión, no la estructura, es lo que arruina casas mal construidas. En lotes frente al mar aplica concesión ZOFEMAT.',
+   extra='Puerto Aventuras es una comunidad cerrada con marina, golf y seguridad 24/7, muy demandada por extranjeros y por renta vacacional: la casa se construye pensando en huéspedes y en mantenimiento bajo cuando usted no está.',
+   links=[('/constructora-puerto-aventuras/','Constructora en Puerto Aventuras'),
+          ('/permisos-de-construccion-puerto-aventuras/','Permisos de construcción en Puerto Aventuras'),
+          ('/villas-de-lujo-puerto-aventuras/','Villas de lujo en Puerto Aventuras'),
+          ('/remodelacion-condominios-puerto-aventuras/','Remodelación de condominios'),
+          ('/villa-de-inversion-airbnb-puerto-aventuras/','Villa de inversión Airbnb'),
+          ('/calculadora/','Calculadora de costos'),
+          ('/blog-es/permisos-construccion-puerto-aventuras.html','Guía de permisos'),
+          ('/construccion-de-casas-riviera-maya/','Construcción de casas en la Riviera Maya')],
+   faq=[('¿Cuánto cuesta la construcción de una casa en Puerto Aventuras?',
+         'De $13,000 a $27,000 MXN por m² según acabados. Una casa de 150 m² con alberca cuesta entre $2.9 y $4.9 millones MXN ($160,000–$270,000 USD), sin el terreno.'),
+        ('¿Cómo funciona el permiso dentro del fraccionamiento?',
+         'Doble vía: licencia municipal en Solidaridad (uso de suelo, DRO, licencia de construcción) y aprobación del comité de diseño de Puerto Aventuras. Presentamos ambos expedientes y coordinamos accesos y horarios con la administración.'),
+        ('¿Cuánto tarda la obra?',
+         '8 a 14 meses de construcción más 2 a 4 meses de proyecto y permisos, incluyendo el trámite ante el comité del fraccionamiento.'),
+        ('¿Qué cuidados extra exige estar junto al mar y la marina?',
+         'Recubrimientos mayores en acero, herrería con tratamiento anticorrosivo, cancelería de aluminio anodizado, impermeabilización reforzada y equipos de A/A aptos para ambiente salino. Va incluido en nuestro estándar constructivo.'),
+        ('¿Se puede rentar la casa en Airbnb?',
+         'Sí, es uno de los mercados de renta más consolidados de la Riviera Maya. Diseñamos distribución para huéspedes, alberca y mobiliario FF&E, y coordinamos con el reglamento del fraccionamiento.'),
+        ('¿Trabajan con precio fijo?',
+         'Sí, contrato a precio fijo por partidas después del proyecto ejecutivo, con pagos por avance verificado y reporte semanal con fotos y video.')],
+   testi=[]),
+
+ 'akumal': dict(
+   city='Akumal', muni='Tulum', pre='en',
+   zones='Akumal Norte, Akumal Pueblo, Aventuras Akumal, Media Luna Bay y Jade Bay',
+   m2='$13,500 – $28,000', usd='$750 – $1,550',
+   sizes=[('Casa 100 m² (2 recámaras)','$1.8M – $2.8M','$100,000 – $155,000'),
+          ('Casa 150 m² (3 rec. + alberca)','$3.0M – $5.0M','$166,000 – $277,000'),
+          ('Casa 200 m² (3–4 recámaras)','$3.9M – $6.7M','$216,000 – $370,000'),
+          ('Villa 300 m² de lujo','$8.4M – $15.1M','$465,000 – $835,000')],
+   norm='Akumal pertenece al municipio de Tulum, no a Solidaridad: eso cambia todo el trámite. Además del uso de suelo y la licencia municipal con DRO, la mayoría de los predios requiere autorización ambiental de la SEMA, y los lotes frente al mar suman concesión ZOFEMAT. Akumal es zona de anidación de tortuga marina, así que hay restricciones de iluminación hacia la playa y de trabajos nocturnos en temporada de anidación (mayo–octubre). Presupueste de 3 a 5 meses de permisos.',
+   soil='Caliza fracturada con cavernas y cenotes, manto freático somero y ambiente salino intenso frente al arrecife. Aquí el estudio geofísico previo evita el peor sobrecosto de la zona, y el diseño estructural se hace con recubrimientos y aditivos para ambiente marino. El drenaje debe resolverse con biodigestor o planta compacta: descargar mal en Akumal es un riesgo legal y ambiental serio por la cercanía del arrecife.',
+   extra='Akumal es el mercado más eco-sensible y más premium por m² de la costa norte: obra pequeña, logística más larga y estándar de acabados alto (chukum, madera dura, diseño bioclimático), con altísima demanda de renta vacacional frente a la bahía.',
+   links=[('/constructora-akumal/','Constructora en Akumal'),
+          ('/permisos-de-construccion-akumal/','Permisos de construcción en Akumal'),
+          ('/villas-de-lujo-akumal/','Villas de lujo en Akumal'),
+          ('/villa-de-inversion-airbnb-akumal/','Villa de inversión Airbnb en Akumal'),
+          ('/blog-es/cuanto-cuesta-construir-casa-akumal.html','¿Cuánto cuesta construir en Akumal?'),
+          ('/calculadora/','Calculadora de costos'),
+          ('/blog-es/permisos-construccion-akumal.html','Guía de permisos'),
+          ('/construccion-de-casas-riviera-maya/','Construcción de casas en la Riviera Maya')],
+   faq=[('¿Cuánto cuesta la construcción de una casa en Akumal?',
+         'De $13,500 a $28,000 MXN por m². Una casa de 150 m² con alberca cuesta entre $3.0 y $5.0 millones MXN ($166,000–$277,000 USD), sin el terreno.'),
+        ('¿Por qué Akumal es más caro que Playa del Carmen?',
+         'Trámite ambiental de SEMA, logística más larga hasta proveedores, protección de tortuga y arrecife, y estándar de acabados más alto. La diferencia de obra ronda el 10–12%.'),
+        ('¿Qué permisos necesito en Akumal?',
+         'Uso de suelo y licencia municipal de Tulum con DRO, autorización ambiental de SEMA en la mayoría de los predios y concesión ZOFEMAT si el lote es frente al mar. Nosotros gestionamos los tres.'),
+        ('¿Hay restricciones por la tortuga marina?',
+         'Sí. En temporada de anidación (mayo–octubre) se restringe la iluminación dirigida a la playa y los trabajos nocturnos en lotes costeros. El proyecto de iluminación se diseña desde el inicio para cumplir sin sacrificar la casa.'),
+        ('¿Cómo se resuelve el drenaje?',
+         'Con biodigestor o planta de tratamiento compacta, nunca con fosa simple: la cercanía del arrecife y del manto freático lo exige, y es lo que revisa la autoridad ambiental.'),
+        ('¿Puedo construir si vivo fuera de México?',
+         'Sí: contrato bilingüe a precio fijo, pagos por avance, reporte semanal con fotos y video, y coordinación con su notario y fideicomiso.')],
+   testi=[]),
+
  'riviera-maya': dict(
    city='la Riviera Maya', muni='Solidaridad, Tulum, Benito Juárez y Puerto Morelos', pre='en',
    zones='Playa del Carmen, Tulum, Cancún, Puerto Aventuras, Akumal y Puerto Morelos',
@@ -126,6 +192,8 @@ CITIES = {
    soil='Toda la costa se asienta sobre roca caliza con cenotes, cavernas y nivel freático somero. El estudio de mecánica de suelos —y estudio geofísico donde hay riesgo de caverna— define la cimentación y es la mejor inversión del proyecto: evita el sobrecosto más caro de la región.',
    extra='Construimos en todo el corredor, de Puerto Morelos a Tulum, con un solo equipo, un solo contrato y un solo responsable de obra. La diferencia de costo entre extremos del corredor llega al 15% por logística y normativa.',
    links=[('/constructora-riviera-maya/','Constructora en la Riviera Maya'),
+          ('/construccion-de-casas-puerto-aventuras/','Construcción de casas en Puerto Aventuras'),
+          ('/construccion-de-casas-akumal/','Construcción de casas en Akumal'),
           ('/construccion-de-casas-playa-del-carmen/','Construcción de casas en Playa del Carmen'),
           ('/construccion-de-casas-cancun/','Construcción de casas en Cancún'),
           ('/construccion-de-casas-tulum/','Construcción de casas en Tulum'),
@@ -220,6 +288,8 @@ def build(slug, d):
     testi = '\n'.join(
       '<div class="col-md-6"><div class="p-3 bg-light rounded h-100"><p class="mb-2">%s</p>'
       '<p class="small text-muted mb-0"><strong>%s</strong></p></div></div>' % t for t in d['testi'])
+    testi_block = ('<h2 class="mt-4">Lo Que Dicen Nuestros Clientes</h2>\n<div class="row g-3 my-2">\n'
+                   + testi + '\n</div>') if d['testi'] else ''
 
     return f"""<!DOCTYPE html>
 <html lang="es">
@@ -331,10 +401,7 @@ def build(slug, d):
 <div class="col-md-6"><img loading="lazy" src="../img/residential-block-construction.jpg" class="img-fluid rounded" alt="Obra nueva residencial terminada por Recrea en {City}" style="width:100%;height:260px;object-fit:cover"></div>
 </div>
 
-<h2 class="mt-4">Lo Que Dicen Nuestros Clientes</h2>
-<div class="row g-3 my-2">
-{testi}
-</div>
+{testi_block}
 
 <div class="row g-3 my-4">
 <div class="col-md-6"><a href="{WA}?text=Hola!%20Quiero%20cotizar%20la%20construcci%C3%B3n%20de%20una%20casa%20en%20{City.replace(' ', '%20')}" target="_blank" rel="noopener" class="btn btn-success btn-lg w-100"><i class="bi bi-whatsapp me-2"></i>WhatsApp — 2 min</a></div>
