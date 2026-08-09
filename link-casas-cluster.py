@@ -22,6 +22,7 @@ z3 = load('gen-casas-zonas3.py', 'z3')
 z4 = load('gen-casas-zonas4.py', 'z4')
 il = load('gen-casas-islas.py', 'il')
 vh = load('gen-casas-villas-hoteles.py', 'vh')
+vh2 = load('gen-casas-villas-hoteles2.py', 'vh2')
 
 LANGS = ['es', 'en', 'ru', 'de', 'fr', 'zh']
 PREFIX = {'es': 'construccion-de-casas', 'en': 'house-construction', 'ru': 'stroitelstvo-domov',
@@ -34,6 +35,9 @@ BACK = {'es': 'Ver todas las zonas de %s', 'en': 'See every zone in %s', 'ru': '
         'de': 'Alle Lagen in %s', 'fr': 'Toutes les zones de %s', 'zh': '查看%s的全部片区'}
 # town name in a neutral form per language (H1 wording differs too much to parse)
 TOWN_NAME = {
+ 'puerto-aventuras': {'es': 'Puerto Aventuras', 'en': 'Puerto Aventuras', 'ru': 'Пуэрто-Авентурас',
+                      'de': 'Puerto Aventuras', 'fr': 'Puerto Aventuras', 'zh': 'Puerto Aventuras'},
+ 'akumal': {'es': 'Akumal', 'en': 'Akumal', 'ru': 'Акумаль', 'de': 'Akumal', 'fr': 'Akumal', 'zh': 'Akumal'},
  'playa-del-carmen': {'es': 'Playa del Carmen', 'en': 'Playa del Carmen', 'ru': 'Плая-дель-Кармен',
                       'de': 'Playa del Carmen', 'fr': 'Playa del Carmen', 'zh': '普拉亚德尔卡门'},
  'cancun': {'es': 'Cancún', 'en': 'Cancún', 'ru': 'Канкун', 'de': 'Cancún', 'fr': 'Cancún', 'zh': '坎昆'},
@@ -58,6 +62,9 @@ VH_LABEL = {'es': 'Villas y hoteles en %s', 'en': 'Villas and hotels in %s', 'ru
 # parent town -> {lang: slug of its villa+hotel page}
 VH = {d['parent']: {l: '%s-%s' % (vh.SLUG_PREFIX[l], vh.BASE_SLUG[z]) for l in LANGS}
       for z, d in vh.CITIES.items()}
+# second batch: only those that map onto an existing town page of the cluster
+VH.update({d['town']: {l: '%s-%s' % (vh2.SLUG_PREFIX[l], vh2.BASE_SLUG[z]) for l in LANGS}
+           for z, d in vh2.CITIES.items() if d.get('town')})
 
 MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
@@ -86,7 +93,8 @@ def run():
         by_parent.setdefault(parent, []).append((z, nm, slug, True))
 
     for lang in LANGS:
-        for parent, items in by_parent.items():
+        for parent in sorted(set(by_parent) | set(VH)):
+            items = by_parent.get(parent, [])
             f = '%s-%s/index.html' % (PREFIX[lang], parent)
             if not os.path.isfile(f):
                 print('missing town page', f); continue
