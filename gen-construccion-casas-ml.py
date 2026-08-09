@@ -13,6 +13,10 @@ import os, re, json
 
 BASE = 'https://construction-recrea.com'
 WA = 'https://wa.me/529844525333'
+# Optional per-location overrides filled in by the zone generators:
+#   OVR['h1'|'title'|'desc'|'block'][loc][lang] = str
+OVR = {}
+
 LOCS = ['playa-del-carmen', 'cancun', 'tulum', 'puerto-aventuras', 'akumal', 'riviera-maya']
 
 # ---------------------------------------------------------------- numbers ---
@@ -558,7 +562,14 @@ def build(lang, loc, ch):
              perm=n['perm'], zones=ZONES[lang][loc])
     f = lambda s: s.format(**F)
     url = BASE + '/' + SLUG[lang][loc] + '/'
-    h1, title, desc = f(t['h1']), f(t['title']), f(t['desc'])
+    h1 = OVR.get('h1', {}).get(loc, {}).get(lang) or f(t['h1'])
+    title = OVR.get('title', {}).get(loc, {}).get(lang) or f(t['title'])
+    desc = OVR.get('desc', {}).get(loc, {}).get(lang) or f(t['desc'])
+    extra_block = OVR.get('block', {}).get(loc, {}).get(lang, '')
+    alert_txt = OVR.get('alert', {}).get(loc, {}).get(lang) or f(t['alert'])
+    h_cost_txt = OVR.get('h_cost', {}).get(loc, {}).get(lang) or f(t['h_cost'])
+    row_lbl = OVR.get('row', {}).get(loc, {}).get(lang) or t['row']
+    h_proc_txt = OVR.get('h_proc', {}).get(loc, {}).get(lang) or t['h_proc']
 
     faq = [(f(q), f(a)) for q, a in t['faq']] + FAQX[lang][loc]
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -587,7 +598,7 @@ def build(lang, loc, ch):
       '<p class="small text-muted mb-0"><i class="bi bi-clock me-1"></i>%s</p></div></div>'
       % (i + 1, s[0], s[1], s[2]) for i, s in enumerate(t['steps']))
     rows = '\n'.join('<tr><td>%s</td><td>%s MXN</td><td>%s USD</td></tr>'
-                     % (t['row'].format(n=sz[0]), sz[1], sz[2]) for sz in n['sizes'])
+                     % (row_lbl.format(n=sz[0]), sz[1], sz[2]) for sz in n['sizes'])
     faq_html = '\n'.join(
       '<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button%s" type="button" '
       'data-bs-toggle="collapse" data-bs-target="#faq%d">%s</button></h3>'
@@ -644,16 +655,17 @@ def build(lang, loc, ch):
 <h1>{h1}</h1>
 <p class="lead">{f(t['lead'])}</p>
 <p>{f(t['intro'])}</p>
-<div class="alert" style="background:var(--accent);color:#000;border:none">{f(t['alert'])}</div>
+<div class="alert" style="background:var(--accent);color:#000;border:none">{alert_txt}</div>
 
-<h2 class="mt-4">{f(t['h_cost'])}</h2>
+<h2 class="mt-4">{h_cost_txt}</h2>
 <p>{t['cost_p']}</p>
 <div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>{t['th'][0]}</th><th>{t['th'][1]}</th><th>{t['th'][2]}</th></tr></thead><tbody>
 {rows}
 </tbody></table></div>
 <p>{t['cost_after']}</p>
+{extra_block}
 
-<h2 class="mt-4">{t['h_proc']}</h2>
+<h2 class="mt-4">{h_proc_txt}</h2>
 <p>{f(t['proc_p'])}</p>
 <div class="row g-3 my-2">
 {steps}
