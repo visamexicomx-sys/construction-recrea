@@ -23,6 +23,7 @@ z4 = load('gen-casas-zonas4.py', 'z4')
 il = load('gen-casas-islas.py', 'il')
 vh = load('gen-casas-villas-hoteles.py', 'vh')
 vh2 = load('gen-casas-villas-hoteles2.py', 'vh2')
+vh3 = load('gen-casas-villas-hoteles3.py', 'vh3')
 
 LANGS = ['es', 'en', 'ru', 'de', 'fr', 'zh']
 PREFIX = {'es': 'construccion-de-casas', 'en': 'house-construction', 'ru': 'stroitelstvo-domov',
@@ -65,6 +66,10 @@ VH = {d['parent']: {l: '%s-%s' % (vh.SLUG_PREFIX[l], vh.BASE_SLUG[z]) for l in L
 # second batch: only those that map onto an existing town page of the cluster
 VH.update({d['town']: {l: '%s-%s' % (vh2.SLUG_PREFIX[l], vh2.BASE_SLUG[z]) for l in LANGS}
            for z, d in vh2.CITIES.items() if d.get('town')})
+
+# gated communities that also have a villa+hotel page: zone page -> its VH page
+VHZ = {d['zone']: {l: '%s-%s' % (vh3.SLUG_PREFIX[l], vh3.BASE_SLUG[z]) for l in LANGS}
+       for z, d in vh3.ZONES.items()}
 
 MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
@@ -128,7 +133,10 @@ def run():
             s = strip_marked(open(f, encoding='utf-8').read(), MARK_BACK)
             town_slug = '%s-%s' % (PREFIX[lang], parent)
             town_name = TOWN_NAME[parent][lang]
-            para = '<p %s><a href="/%s/">%s</a></p>\n' % (MARK_BACK, town_slug, BACK[lang] % town_name)
+            para = '<p %s><a href="/%s/">%s</a>' % (MARK_BACK, town_slug, BACK[lang] % town_name)
+            if z in VHZ:
+                para += ' · <a href="/%s/">%s</a>' % (VHZ[z][lang], VH_LABEL[lang] % nm[lang])
+            para += '</p>\n'
             out = insert_after_table(s, para)
             if out is None:
                 print('no anchor in', f); continue
