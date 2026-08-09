@@ -24,6 +24,7 @@ il = load('gen-casas-islas.py', 'il')
 vh = load('gen-casas-villas-hoteles.py', 'vh')
 vh2 = load('gen-casas-villas-hoteles2.py', 'vh2')
 vh3 = load('gen-casas-villas-hoteles3.py', 'vh3')
+vh4 = load('gen-casas-villas-hoteles4.py', 'vh4')
 
 LANGS = ['es', 'en', 'ru', 'de', 'fr', 'zh']
 PREFIX = {'es': 'construccion-de-casas', 'en': 'house-construction', 'ru': 'stroitelstvo-domov',
@@ -70,6 +71,8 @@ VH.update({d['town']: {l: '%s-%s' % (vh2.SLUG_PREFIX[l], vh2.BASE_SLUG[z]) for l
 # gated communities that also have a villa+hotel page: zone page -> its VH page
 VHZ = {d['zone']: {l: '%s-%s' % (vh3.SLUG_PREFIX[l], vh3.BASE_SLUG[z]) for l in LANGS}
        for z, d in vh3.ZONES.items()}
+VHZ.update({d['zone']: {l: '%s-%s' % (vh4.SLUG_PREFIX[l], vh4.BASE_SLUG[z]) for l in LANGS}
+            for z, d in vh4.ZONES.items()})
 
 MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
