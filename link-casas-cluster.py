@@ -21,6 +21,7 @@ z2 = load('gen-casas-zonas2.py', 'z2')
 z3 = load('gen-casas-zonas3.py', 'z3')
 z4 = load('gen-casas-zonas4.py', 'z4')
 il = load('gen-casas-islas.py', 'il')
+vh = load('gen-casas-villas-hoteles.py', 'vh')
 
 LANGS = ['es', 'en', 'ru', 'de', 'fr', 'zh']
 PREFIX = {'es': 'construccion-de-casas', 'en': 'house-construction', 'ru': 'stroitelstvo-domov',
@@ -51,6 +52,12 @@ ISLES = {z: (d['parent'], {l: il.NAMES[z][l] for l in LANGS}, {l: il.SLUGS[l][z]
 # short label for the island links (they are villa+hotel pages, not house pages)
 ISLE_LABEL = {'es': 'Villas y hoteles en %s', 'en': 'Villas and hotels in %s', 'ru': 'Виллы и отели — %s',
               'de': 'Villen und Hotels auf %s', 'fr': 'Villas et hôtels à %s', 'zh': '%s别墅与酒店'}
+
+VH_LABEL = {'es': 'Villas y hoteles en %s', 'en': 'Villas and hotels in %s', 'ru': 'Виллы и отели — %s',
+            'de': 'Villen und Hotels in %s', 'fr': 'Villas et hôtels à %s', 'zh': '%s别墅与酒店'}
+# parent town -> {lang: slug of its villa+hotel page}
+VH = {d['parent']: {l: '%s-%s' % (vh.SLUG_PREFIX[l], vh.BASE_SLUG[z]) for l in LANGS}
+      for z, d in vh.CITIES.items()}
 
 MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
@@ -90,6 +97,9 @@ def run():
             if zones:
                 para += '<p %s>%s%s</p>\n' % (MARK_ZONES, LEAD_ZONES[lang],
                         ' · '.join('<a href="/%s/">%s</a>' % (sl, n) for n, sl in zones))
+            if parent in VH:
+                para += '<p %s>%s</p>\n' % (MARK_ZONES,
+                        '<a href="/%s/">%s</a>' % (VH[parent][lang], VH_LABEL[lang] % TOWN_NAME[parent][lang]))
             if isles:
                 para += '<p %s>%s%s</p>\n' % (MARK_ZONES, LEAD_ISLES[lang],
                         ' · '.join('<a href="/%s/">%s</a>' % (sl, n) for n, sl in isles))
