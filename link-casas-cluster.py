@@ -25,6 +25,7 @@ vh = load('gen-casas-villas-hoteles.py', 'vh')
 vh2 = load('gen-casas-villas-hoteles2.py', 'vh2')
 vh3 = load('gen-casas-villas-hoteles3.py', 'vh3')
 vh4 = load('gen-casas-villas-hoteles4.py', 'vh4')
+vh5 = load('gen-casas-villas-hoteles5.py', 'vh5')
 
 LANGS = ['es', 'en', 'ru', 'de', 'fr', 'zh']
 PREFIX = {'es': 'construccion-de-casas', 'en': 'house-construction', 'ru': 'stroitelstvo-domov',
@@ -73,6 +74,8 @@ VHZ = {d['zone']: {l: '%s-%s' % (vh3.SLUG_PREFIX[l], vh3.BASE_SLUG[z]) for l in 
        for z, d in vh3.ZONES.items()}
 VHZ.update({d['zone']: {l: '%s-%s' % (vh4.SLUG_PREFIX[l], vh4.BASE_SLUG[z]) for l in LANGS}
             for z, d in vh4.ZONES.items()})
+VHZ.update({d['zone']: {l: '%s-%s' % (vh5.SLUG_PREFIX[l], vh5.BASE_SLUG[z]) for l in LANGS}
+            for z, d in vh5.ZONES.items()})
 
 MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
