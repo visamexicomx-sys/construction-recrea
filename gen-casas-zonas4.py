@@ -211,7 +211,16 @@ for _lang, _pref, _calc, _blog in [('ru', 'stroitelstvo-domov', '/kalkulyator/',
             (_calc, names[0]), (_blog, names[1])]
 
 
+def _set_parent_urls(locs):
+    P = {'es':'construccion-de-casas','en':'house-construction','ru':'stroitelstvo-domov','de':'hausbau','fr':'construction-de-maisons','zh':'zhuzhai-jianzao'}
+    ml.OVR.setdefault('parent_url', {})
+    for zk, d in locs.items():
+        for l in ['es', 'en', 'ru', 'de', 'fr', 'zh']:
+            ml.OVR['parent_url'].setdefault(zk, {})[l] = '/%s-%s/' % (P[l], d['parent'])
+
+
 if __name__ == '__main__':
+    _set_parent_urls(ZONE4)
     for z in ZONE4:
         z1.ZAREA[z] = AREAS[z]
         z1.ZTEXT[z] = TEXT[z]

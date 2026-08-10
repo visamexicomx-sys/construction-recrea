@@ -81,6 +81,34 @@ MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
 
 
+# --- permits: every cluster page links to the permit landing for its location ---
+PERMIT_HUB = {'es': ('/permisos-licencias-construccion-riviera-maya/', 'Permisos, licencias y DRO en la Riviera Maya'),
+              'en': ('/construction-permits-licenses-riviera-maya/', 'Construction permits, licences and DRO'),
+              'ru': ('/razresheniya-i-licenzii-riviera-maya/', 'Разрешения, лицензии и DRO'),
+              'de': ('/baugenehmigungen-lizenzen-riviera-maya/', 'Baugenehmigungen, Lizenzen und DRO'),
+              'fr': ('/permis-et-licences-construction-riviera-maya/', 'Permis, licences et DRO'),
+              'zh': ('/jianzhu-xuke-yu-zhizhao-riviera-maya/', '建筑许可、执照与DRO')}
+PERMIT_LEAD = {'es': 'Permisos: ', 'en': 'Permits: ', 'ru': 'Разрешения: ',
+               'de': 'Genehmigungen: ', 'fr': 'Permis : ', 'zh': '许可：'}
+PERMIT_LOCAL = {'es': ('permisos-de-construccion-%s', 'Permisos de construcción en %s'),
+                'en': ('construction-permits-%s', 'Construction permits in %s')}
+# location key -> permit-landing slug fragment where it differs from the location key
+PERMIT_ALIAS = {'tulum': {'es': 'tulum-ciudad', 'en': 'tulum-city'},
+                'zona-hotelera-cancun': {'en': 'cancun-hotel-zone'}}
+MARK_PERMITS = 'data-cluster="permits"'
+
+
+def permit_link(loc, lang, display_name):
+    """Local permit landing when one exists (ES/EN only), otherwise the 6-language hub."""
+    if lang in PERMIT_LOCAL:
+        pat, label = PERMIT_LOCAL[lang]
+        frag = PERMIT_ALIAS.get(loc, {}).get(lang, loc)
+        slug = pat % frag
+        if os.path.isdir(slug):
+            return '/%s/' % slug, label % display_name
+    return PERMIT_HUB[lang]
+
+
 def strip_marked(html, mark):
     return re.sub(r'<p %s>.*?</p>\n?' % mark, '', html, flags=re.S)
 
@@ -122,6 +150,9 @@ def run():
             if isles:
                 para += '<p %s>%s%s</p>\n' % (MARK_ZONES, LEAD_ISLES[lang],
                         ' · '.join('<a href="/%s/">%s</a>' % (sl, n) for n, sl in isles))
+            href, label = permit_link(parent, lang, TOWN_NAME[parent][lang] if parent in TOWN_NAME else parent)
+            para += '<p %s>%s<a href="%s">%s</a></p>\n' % (MARK_PERMITS, PERMIT_LEAD[lang], href, label)
+            s = strip_marked(s, MARK_PERMITS)
             out = insert_after_table(s, para)
             if out is None:
                 print('no anchor in', f); continue
@@ -143,10 +174,47 @@ def run():
             if z in VHZ:
                 para += ' · <a href="/%s/">%s</a>' % (VHZ[z][lang], VH_LABEL[lang] % nm[lang])
             para += '</p>\n'
+            href, label = permit_link(z, lang, nm[lang])
+            para += '<p %s>%s<a href="%s">%s</a></p>\n' % (MARK_PERMITS, PERMIT_LEAD[lang], href, label)
+            s = strip_marked(s, MARK_PERMITS)
             out = insert_after_table(s, para)
             if out is None:
                 print('no anchor in', f); continue
             open(f, 'w', encoding='utf-8').write(out); changed += 1
+
+    # 2b. the regional hub pages (riviera-maya) get the permits hub too
+    for lang in LANGS:
+        f = '%s-riviera-maya/index.html' % PREFIX[lang]
+        if not os.path.isfile(f):
+            continue
+        s2 = strip_marked(open(f, encoding='utf-8').read(), MARK_PERMITS)
+        href, label = PERMIT_HUB[lang]
+        para = '<p %s>%s<a href="%s">%s</a></p>\n' % (MARK_PERMITS, PERMIT_LEAD[lang], href, label)
+        out = insert_after_table(s2, para)
+        if out is None:
+            continue
+        open(f, 'w', encoding='utf-8').write(out); changed += 1
+
+    # 3. villa/hotel pages -> permit landing for their location
+    VH_ALL = {}
+    for mod, dct in [(vh, vh.CITIES), (vh2, vh2.CITIES), (vh3, vh3.ZONES), (vh4, vh4.ZONES), (vh5, vh5.ZONES)]:
+        for zk, d in dct.items():
+            loc = d.get('zone') or d.get('town') or mod.BASE_SLUG[zk]
+            VH_ALL[zk] = (loc, {l: '%s-%s' % (mod.SLUG_PREFIX[l], mod.BASE_SLUG[zk]) for l in LANGS},
+                          {l: mod.NAMES[zk][l] for l in LANGS})
+    for zk, (loc, slugs, nms) in VH_ALL.items():
+        for lang in LANGS:
+            f = '%s/index.html' % slugs[lang]
+            if not os.path.isfile(f):
+                print('missing vh page', f); continue
+            s2 = strip_marked(open(f, encoding='utf-8').read(), MARK_PERMITS)
+            href, label = permit_link(loc, lang, nms[lang])
+            para = '<p %s>%s<a href="%s">%s</a></p>\n' % (MARK_PERMITS, PERMIT_LEAD[lang], href, label)
+            out = insert_after_table(s2, para)
+            if out is None:
+                print('no anchor in', f); continue
+            open(f, 'w', encoding='utf-8').write(out); changed += 1
+
     print('pages updated:', changed)
 
 

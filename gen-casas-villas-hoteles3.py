@@ -243,7 +243,16 @@ def block(z, lang):
             % (b['h'].format(c=c), b['p'], b['th'][0], b['th'][1], b['th'][2], rows, b['h2'], lis))
 
 
+def _set_parent_urls(locs):
+    P = {'es':'construccion-de-casas','en':'house-construction','ru':'stroitelstvo-domov','de':'hausbau','fr':'construction-de-maisons','zh':'zhuzhai-jianzao'}
+    ml.OVR.setdefault('parent_url', {})
+    for zk, d in locs.items():
+        for l in ['es', 'en', 'ru', 'de', 'fr', 'zh']:
+            ml.OVR['parent_url'].setdefault(zk, {})[l] = '/%s-%s/' % (P[l], d['parent'])
+
+
 if __name__ == '__main__':
+    _set_parent_urls(ZONES)
     for z in ZONES:
         z1.ZAREA[z] = AREAS[z]; z1.ZTEXT[z] = TEXT[z]; z1.ZFAQ[z] = FAQ[z]
     for lang in LINKS:

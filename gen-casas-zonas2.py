@@ -212,7 +212,21 @@ for _lang, _pref, _calc, _blog in [('ru', 'stroitelstvo-domov', '/kalkulyator/',
             (_calc, calcname), (_blog, blogname)]
 
 
+def _set_parent_urls(locs):
+    P = {'es':'construccion-de-casas','en':'house-construction','ru':'stroitelstvo-domov','de':'hausbau','fr':'construction-de-maisons','zh':'zhuzhai-jianzao'}
+    ml.OVR.setdefault('parent_url', {})
+    for zk, d in locs.items():
+        for l in ['es', 'en', 'ru', 'de', 'fr', 'zh']:
+            ml.OVR['parent_url'].setdefault(zk, {})[l] = '/%s-%s/' % (P[l], d['parent'])
+
+
+# appended 2026-08-09: distinguish the house page from Corasol and the Mayakoba resort
+_CM = {'es': ' Conviene no confundirlo con dos vecinos: Mayakoba es el complejo de resorts y residencias privadas, y Corasol es la comunidad de golf con beach club propio. Ciudad Mayakoba es plan maestro urbano —lotes unifamiliares, multifamiliares y uso mixto alrededor de un country club—, y por eso admite programas que en los otros dos no caben.', 'en': ' It should not be confused with two neighbours: Mayakoba is the resort and private residence complex, and Corasol is the golf community with its own beach club. Ciudad Mayakoba is an urban master plan — single-family, multi-family and mixed-use lots around a country club — which is why it allows programmes the other two cannot host.', 'ru': ' Важно не путать с двумя соседями: Майякоба — комплекс курортов и частных резиденций, Корасоль — гольф-комьюнити со своим бич-клубом. Сьюдад-Майякоба — городской мастер-план с участками под индивидуальные дома, многоквартирные и смешанные проекты вокруг кантри-клуба, поэтому здесь возможны программы, которые в тех двух не помещаются.', 'de': ' Nicht zu verwechseln mit zwei Nachbarn: Mayakoba ist die Resort- und Privatresidenz-Anlage, Corasol die Golf-Community mit eigenem Beachclub. Ciudad Mayakoba ist ein urbaner Masterplan — Einfamilien-, Mehrfamilien- und Mischnutzungsgrundstücke rund um einen Country Club — und lässt deshalb Programme zu, die in den beiden anderen keinen Platz haben.', 'fr': ' À ne pas confondre avec deux voisins : Mayakoba est le complexe de resorts et de résidences privées, et Corasol la communauté de golf avec son propre beach club. Ciudad Mayakoba est un plan-masse urbain — lots individuels, collectifs et mixtes autour d’un country club — d’où des programmes que les deux autres ne peuvent accueillir.', 'zh': ' 需与两个近邻区分开：Mayakoba 是度假村与私人住宅综合体，Corasol 是拥有自有海滩俱乐部的高尔夫社区。Ciudad Mayakoba 则是城市总体规划区——围绕乡村俱乐部布置独栋、多户与混合用途地块——因此可容纳前两者无法承载的开发内容。'}
+for _l, _x in _CM.items():
+    TEXT['ciudad-mayakoba'][_l] = TEXT['ciudad-mayakoba'][_l] + _x
+
 if __name__ == '__main__':
+    _set_parent_urls(ZONE2)
     # z1.register reads these module-level dicts
     for z in ZONE2:
         z1.ZAREA[z] = AREAS[z]

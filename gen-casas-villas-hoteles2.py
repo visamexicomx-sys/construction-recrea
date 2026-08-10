@@ -183,6 +183,12 @@ for _lang, _pref, _calc, _blog in [('ru', 'stroitelstvo-domov', '/kalkulyator/',
                             (_calc, names[0]), (_blog, names[1])]
 
 
+# appended 2026-08-09: distinguish from the Playa del Carmen villa/hotel page,
+# whose price band it borrows (different municipality, reef rules)
+_PM = {'es': ' Frente a Playa del Carmen, aquí manda otro municipio y otra normativa: Puerto Morelos es independiente desde 2016 y el Parque Nacional Arrecife condiciona drenaje, escurrimientos e iluminación. El terreno cuesta menos y el proyecto se diseña alrededor del arrecife, no alrededor de la avenida.', 'en': ' Compared with Playa del Carmen, a different municipality and a different rulebook apply here: Puerto Morelos has been independent since 2016 and the Reef National Park conditions drainage, runoff and lighting. Land costs less and the project is designed around the reef, not around the avenue.', 'ru': ' В отличие от Плая-дель-Кармен, здесь другой муниципалитет и другая нормативка: Пуэрто-Морелос самостоятелен с 2016 года, а Национальный парк «Риф» задаёт условия по канализации, стоку и освещению. Земля дешевле, а проект строится вокруг рифа, а не вокруг проспекта.', 'de': ' Anders als in Playa del Carmen gelten hier eine andere Gemeinde und ein anderes Regelwerk: Puerto Morelos ist seit 2016 eigenständig, und der Riff-Nationalpark bestimmt Entwässerung, Abfluss und Beleuchtung. Das Grundstück kostet weniger, und das Projekt wird um das Riff herum geplant, nicht um die Avenida.', 'fr': ' Contrairement à Playa del Carmen, ici ce sont une autre commune et d’autres règles : Puerto Morelos est indépendante depuis 2016 et le Parc National du Récif conditionne assainissement, ruissellement et éclairage. Le terrain coûte moins cher et le projet se conçoit autour du récif, pas autour de l’avenue.', 'zh': ' 与普拉亚德尔卡门不同，这里适用另一个市政与另一套规则：Puerto Morelos 自2016年独立设市，珊瑚礁国家公园对排水、径流与照明均有约束。地价更低，而项目是围绕珊瑚礁而非围绕大道来设计的。'}
+for _l, _t in _PM.items():
+    TEXT['vh-puerto-morelos'][_l] = TEXT['vh-puerto-morelos'][_l] + _t
+
 if __name__ == '__main__':
     for z in CITIES:
         z1.ZAREA[z] = AREAS[z]; z1.ZTEXT[z] = TEXT[z]; z1.ZFAQ[z] = FAQ[z]

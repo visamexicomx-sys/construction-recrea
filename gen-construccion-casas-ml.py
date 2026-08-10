@@ -17,6 +17,37 @@ WA = 'https://wa.me/529844525333'
 #   OVR['h1'|'title'|'desc'|'block'][loc][lang] = str
 OVR = {}
 
+# Locations that keep the full body. Everything else (zones and zone villa/hotel
+# pages) renders compact: the 8-step process, the included/excluded lists and the
+# "why us" bullets live on the parent town page and are linked, not repeated. That
+# boilerplate was ~40% of every zone page and carried zero differentiation.
+FULL = {'playa-del-carmen', 'cancun', 'tulum', 'puerto-aventuras', 'akumal', 'riviera-maya',
+        'isla-mujeres', 'cozumel',
+        'vh-playa-del-carmen', 'vh-tulum', 'vh-cancun',
+        'vh-puerto-aventuras', 'vh-akumal', 'vh-puerto-morelos'}
+
+# {lang: (process line, includes line, why line)} — the compact replacements
+COMPACT_TXT = {
+ 'es': ('El proceso de obra es el mismo que aplicamos en toda la Riviera Maya: revisión de terreno, anteproyecto, proyecto ejecutivo, permisos, cimentación, obra gris, instalaciones y acabados, y entrega llave en mano. <a href="%s">Vea el proceso completo con tiempos por etapa</a>.',
+        'El desglose de <a href="%s">qué incluye y qué no incluye el precio por m²</a> es común a todos nuestros proyectos.',
+        'Contrato a precio fijo por partidas, DRO y arquitectos licenciados, trabajadores con IMSS, reportes semanales con foto y video y garantía escrita de un año.'),
+ 'en': ('The construction process is the same one we run across the Riviera Maya: lot review, concept design, construction documents, permits, foundation, shell, services and finishes, then turnkey handover. <a href="%s">See the full process with per-stage timings</a>.',
+        'The breakdown of <a href="%s">what the price per m² includes and excludes</a> is common to all our projects.',
+        'Fixed-price contract by line item, licensed DRO and architects, workers registered with IMSS, weekly photo and video reports and a written one-year warranty.'),
+ 'ru': ('Процесс стройки тот же, что и по всей Ривьере-Майя: проверка участка, эскиз, рабочий проект, разрешения, фундамент, коробка, инженерия и отделка, сдача под ключ. <a href="%s">Посмотреть полный процесс со сроками по этапам</a>.',
+        'Разбор того, <a href="%s">что входит и что не входит в цену за м²</a>, одинаков для всех наших проектов.',
+        'Договор с фиксированной ценой по статьям, лицензированный DRO и архитекторы, рабочие с IMSS, еженедельные отчёты с фото и видео и письменная гарантия на год.'),
+ 'de': ('Der Bauablauf ist derselbe wie in der gesamten Riviera Maya: Grundstücksprüfung, Entwurf, Ausführungsplanung, Genehmigungen, Fundament, Rohbau, Installation und Ausbau, schlüsselfertige Übergabe. <a href="%s">Den vollständigen Ablauf mit Zeiten je Phase ansehen</a>.',
+        'Die Aufstellung, <a href="%s">was der m²-Preis enthält und was nicht</a>, gilt für alle unsere Projekte.',
+        'Festpreisvertrag nach Positionen, lizenzierter DRO und Architekten, bei IMSS angemeldete Arbeiter, wöchentliche Foto- und Videoberichte und ein Jahr schriftliche Garantie.'),
+ 'fr': ('Le déroulé du chantier est celui que nous appliquons dans toute la Riviera Maya : analyse du terrain, avant-projet, projet d’exécution, permis, fondations, gros œuvre, lots techniques et finitions, puis livraison clé en main. <a href="%s">Voir le déroulé complet avec les délais par étape</a>.',
+        'Le détail de <a href="%s">ce que le prix au m² comprend et ne comprend pas</a> est commun à tous nos projets.',
+        'Contrat à prix fixe par poste, DRO et architectes agréés, ouvriers déclarés à l’IMSS, rapports hebdomadaires photo et vidéo et garantie écrite d’un an.'),
+ 'zh': ('施工流程与我们在里维埃拉玛雅各地一致：地块核查、方案设计、施工图、许可办理、基础、主体、机电与装修，最后交钥匙移交。<a href="%s">查看含各阶段工期的完整流程</a>。',
+        '<a href="%s">每平方米价格包含与不包含的内容</a>，对我们所有项目均适用。',
+        '分项固定总价合同、持照DRO与建筑师、依法参保IMSS的工人、每周照片与视频报告，以及一年书面质保。'),
+}
+
 LOCS = ['playa-del-carmen', 'cancun', 'tulum', 'puerto-aventuras', 'akumal', 'riviera-maya']
 
 # ---------------------------------------------------------------- numbers ---
@@ -570,8 +601,11 @@ def build(lang, loc, ch):
     h_cost_txt = OVR.get('h_cost', {}).get(loc, {}).get(lang) or f(t['h_cost'])
     row_lbl = OVR.get('row', {}).get(loc, {}).get(lang) or t['row']
     h_proc_txt = OVR.get('h_proc', {}).get(loc, {}).get(lang) or t['h_proc']
+    compact = loc not in FULL
+    parent_url = OVR.get('parent_url', {}).get(loc, {}).get(lang, '/')
 
-    faq = [(f(q), f(a)) for q, a in t['faq']] + FAQX[lang][loc]
+    # compact pages drop the four generic FAQ (they were on 49 of 54 pages per language)
+    faq = ([] if loc not in FULL else [(f(q), f(a)) for q, a in t['faq']]) + FAQX[lang][loc]
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
     lb = {"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Recrea Construcción",
@@ -608,6 +642,26 @@ def build(lang, loc, ch):
       for i, (q, a) in enumerate(faq))
     links = ' · '.join('<a href="%s">%s</a>' % l for l in LINKS[lang][loc])
     badges = ''.join('<span class="trust-badge"><i class="bi bi-patch-check"></i>%s</span>' % b for b in t['badges'])
+    if compact:
+        cp, ci, cw = COMPACT_TXT[lang]
+        process_block = ('<h2 class="mt-4">%s</h2>\n<p>%s</p>\n<p>%s</p>\n'
+                         % (h_proc_txt, cp % parent_url, ci % parent_url))
+        why_block = '<h2 class="mt-4">%s</h2>\n<p>%s</p>\n' % (t['h_why'], cw)
+    else:
+        process_block = ('<h2 class="mt-4">%s</h2>\n<p>%s</p>\n<div class="row g-3 my-2">\n%s\n</div>\n'
+                         '<p class="mt-2">%s</p>\n\n'
+                         '<h2 class="mt-4">%s</h2>\n<div class="row g-3 my-2">\n'
+                         '<div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5>'
+                         '<i class="bi bi-check-circle me-2" style="color:#198754"></i>%s</h5><ul class="mb-0 small">\n%s\n'
+                         '</ul></div></div>\n'
+                         '<div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5>'
+                         '<i class="bi bi-x-circle me-2" style="color:#dc3545"></i>%s</h5><ul class="mb-0 small">\n%s\n'
+                         '</ul></div></div>\n</div>\n'
+                         % (h_proc_txt, f(t['proc_p']), steps, f(t['proc_total']), t['h_inc'],
+                            t['inc_t'], chr(10).join('<li>%s</li>' % x for x in t['inc']),
+                            t['ninc_t'], chr(10).join('<li>%s</li>' % x for x in t['ninc'])))
+        why_block = ('<h2 class="mt-4">%s</h2>\n<ul>\n%s\n</ul>\n'
+                     % (t['h_why'], chr(10).join('<li>%s</li>' % x for x in t['why'])))
     nav = ch['nav'].replace('{DROPDOWN}', dropdown(lang, loc))
 
     return f"""<!DOCTYPE html>
@@ -665,22 +719,7 @@ def build(lang, loc, ch):
 <p>{t['cost_after']}</p>
 {extra_block}
 
-<h2 class="mt-4">{h_proc_txt}</h2>
-<p>{f(t['proc_p'])}</p>
-<div class="row g-3 my-2">
-{steps}
-</div>
-<p class="mt-2">{f(t['proc_total'])}</p>
-
-<h2 class="mt-4">{t['h_inc']}</h2>
-<div class="row g-3 my-2">
-<div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5><i class="bi bi-check-circle me-2" style="color:#198754"></i>{t['inc_t']}</h5><ul class="mb-0 small">
-{chr(10).join('<li>%s</li>' % x for x in t['inc'])}
-</ul></div></div>
-<div class="col-md-6"><div class="p-3 bg-light rounded h-100"><h5><i class="bi bi-x-circle me-2" style="color:#dc3545"></i>{t['ninc_t']}</h5><ul class="mb-0 small">
-{chr(10).join('<li>%s</li>' % x for x in t['ninc'])}
-</ul></div></div>
-</div>
+{process_block}
 
 <h2 class="mt-4">{f(t['h_norm'])}</h2>
 <p>{NORM[lang][loc]}</p>
@@ -689,10 +728,7 @@ def build(lang, loc, ch):
 <p>{EXTRA[lang][loc]}</p>
 <p>{t['guides']}{links}</p>
 
-<h2 class="mt-4">{t['h_why']}</h2>
-<ul>
-{chr(10).join('<li>%s</li>' % x for x in t['why'])}
-</ul>
+{why_block}
 
 <h2 class="mt-5">{t['h_proj']}</h2>
 <div class="row g-3 my-2">
