@@ -174,3 +174,19 @@ blog-de   96 articles  news=6 costs=25 permits=12 foreigners=4 build=30 home=19
 blog-ru  111 articles  news=7 costs=25 permits=14 foreigners=5 build=33 home=27
 blog-fr   97 articles  news=6 costs=24 permits=13 foreigners=5 build=29 home=20
 blog-zh   97 articles  news=6 costs=23 permits=13 foreigners=5 build=30 home=20
+[main 8be593b] daily blog: 5 new SEO articles 2026-08-10
+ 9 files changed, 4857 insertions(+), 3493 deletions(-)
+ create mode 100644 blog/commercial-renovation-playa-del-carmen.html
+ create mode 100644 blog/environmental-impact-assessment-riviera-maya.html
+ create mode 100644 blog/land-use-permit-quintana-roo.html
+ create mode 100644 blog/outdoor-living-space-renovation-riviera-maya.html
+ create mode 100644 blog/vacation-rental-renovation-tulum.html
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+To https://github.com/visamexicomx-sys/construction-recrea.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/visamexicomx-sys/construction-recrea.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
