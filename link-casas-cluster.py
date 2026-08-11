@@ -23,6 +23,7 @@ z4 = load('gen-casas-zonas4.py', 'z4')
 z5 = load('gen-casas-zonas5.py', 'z5')
 z6 = load('gen-casas-zonas6.py', 'z6')
 z7 = load('gen-casas-zonas7.py', 'z7')
+z8 = load('gen-casas-zonas8.py', 'z8')
 il = load('gen-casas-islas.py', 'il')
 vh = load('gen-casas-villas-hoteles.py', 'vh')
 vh2 = load('gen-casas-villas-hoteles2.py', 'vh2')
@@ -52,7 +53,7 @@ TOWN_NAME = {
 
 # zone key -> (parent town, {lang: display name}, {lang: full slug})
 ZONES = {}
-for mod, zdict, names in [(z1, z1.ZONE, z1.ZNAME), (z2, z2.ZONE2, None), (z3, z3.ZONE3, None), (z4, z4.ZONE4, None), (z5, z5.ZONE5, None), (z6, z6.ZONE6, None), (z7, z7.ZONE7, None)]:
+for mod, zdict, names in [(z1, z1.ZONE, z1.ZNAME), (z2, z2.ZONE2, None), (z3, z3.ZONE3, None), (z4, z4.ZONE4, None), (z5, z5.ZONE5, None), (z6, z6.ZONE6, None), (z7, z7.ZONE7, None), (z8, z8.ZONE8, None)]:
     for z, d in zdict.items():
         nm = {l: (names[l][z] if names else mod.NAMES[z][l]) for l in LANGS}
         ZONES[z] = (d['parent'], nm, {l: '%s-%s' % (PREFIX[l], z) for l in LANGS})
