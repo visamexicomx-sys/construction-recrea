@@ -81,6 +81,9 @@ VHZ.update({d['zone']: {l: '%s-%s' % (vh4.SLUG_PREFIX[l], vh4.BASE_SLUG[z]) for 
 VHZ.update({d['zone']: {l: '%s-%s' % (vh5.SLUG_PREFIX[l], vh5.BASE_SLUG[z]) for l in LANGS}
             for z, d in vh5.ZONES.items()})
 
+NEARBY = {'es': 'Zonas cercanas: ', 'en': 'Nearby zones: ', 'ru': 'Соседние зоны: ',
+          'de': 'Nachbarlagen: ', 'fr': 'Zones voisines : ', 'zh': '邻近片区：'}
+MARK_NEAR = 'data-cluster="near"'
 MARK_ZONES = 'data-cluster="zones"'
 MARK_BACK = 'data-cluster="back"'
 
@@ -178,6 +181,14 @@ def run():
             if z in VHZ:
                 para += ' · <a href="/%s/">%s</a>' % (VHZ[z][lang], VH_LABEL[lang] % nm[lang])
             para += '</p>\n'
+            fam = [(z2, n2, s2) for z2, (p2, n2, s2) in sorted(list(ZONES.items()) + list(ISLES.items()))
+                   if p2 == parent]
+            i = [x[0] for x in fam].index(z)
+            sibs = [(n2, s2) for _, n2, s2 in (fam[i + 1:] + fam[:i])][:4]
+            if sibs:
+                para += '<p %s>%s%s</p>\n' % (MARK_NEAR, NEARBY[lang],
+                        ' · '.join('<a href="/%s/">%s</a>' % (sl[lang], n[lang]) for n, sl in sibs))
+            s = strip_marked(s, MARK_NEAR)
             href, label = permit_link(z, lang, nm[lang])
             para += '<p %s>%s<a href="%s">%s</a></p>\n' % (MARK_PERMITS, PERMIT_LEAD[lang], href, label)
             s = strip_marked(s, MARK_PERMITS)
@@ -211,9 +222,15 @@ def run():
             f = '%s/index.html' % slugs[lang]
             if not os.path.isfile(f):
                 print('missing vh page', f); continue
-            s2 = strip_marked(open(f, encoding='utf-8').read(), MARK_PERMITS)
+            s2 = strip_marked(strip_marked(open(f, encoding='utf-8').read(), MARK_PERMITS), MARK_NEAR)
             href, label = permit_link(loc, lang, nms[lang])
             para = '<p %s>%s<a href="%s">%s</a></p>\n' % (MARK_PERMITS, PERMIT_LEAD[lang], href, label)
+            vh_all = sorted(VH_ALL.items())
+            k = [x[0] for x in vh_all].index(zk)
+            vh_sibs = [(n2, s2b) for _, (l2, s2b, n2) in (vh_all[k + 1:] + vh_all[:k])][:4]
+            if vh_sibs:
+                para += '<p %s>%s%s</p>\n' % (MARK_NEAR, NEARBY[lang],
+                        ' · '.join('<a href="/%s/">%s</a>' % (sl[lang], n[lang]) for n, sl in vh_sibs))
             out = insert_after_table(s2, para)
             if out is None:
                 print('no anchor in', f); continue
