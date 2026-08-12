@@ -55,20 +55,20 @@ H1 = {
  'fr': 'Construction de Villas et d’Hôtels à {c}', 'zh': '{c}别墅与酒店建造',
 }
 TITLE = {
- 'es': 'Construcción de Villas y Hoteles en {c} | Llave en Mano | Recrea',
- 'en': 'Villa and Hotel Construction in {c} | Turnkey | Recrea',
- 'ru': 'Строительство вилл и отелей на {c} | Под ключ | Recrea',
- 'de': 'Villen- und Hotelbau auf {c} | Schlüsselfertig | Recrea',
- 'fr': 'Construction de Villas et d’Hôtels à {c} | Clé en Main | Recrea',
- 'zh': '{c}别墅与酒店建造 | 整包交钥匙 | Recrea',
+ 'es': 'Villas y Hoteles en {c} | Recrea',
+ 'en': 'Villas and Hotels in {c} | Recrea',
+ 'ru': 'Виллы и отели — {c} | Recrea',
+ 'de': 'Villen und Hotels in {c} | Recrea',
+ 'fr': 'Villas et Hôtels à {c} | Recrea',
+ 'zh': '{c}别墅与酒店建造 | Recrea',
 }
 DESC = {
- 'es': 'Construcción de villas y hoteles boutique en {c}: precio por m² y por llave 2026, logística de materiales por ferry, permisos municipales y ambientales. 18+ años, 196+ proyectos.',
- 'en': 'Villa and boutique hotel construction in {c}: 2026 cost per m² and per key, ferry logistics for materials, municipal and environmental permits. 18+ years, 196+ projects.',
- 'ru': 'Строительство вилл и бутик-отелей на {c}: цена за м² и за номер 2026, логистика материалов паромом, муниципальные и экологические разрешения. 18+ лет, 196+ проектов.',
- 'de': 'Villen- und Boutiquehotelbau auf {c}: Preis pro m² und pro Zimmer 2026, Materiallogistik per Fähre, kommunale und Umweltgenehmigungen. 18+ Jahre, 196+ Projekte.',
- 'fr': 'Construction de villas et d’hôtels boutique à {c} : prix au m² et par clé 2026, logistique des matériaux par ferry, permis municipaux et environnementaux. 18+ ans, 196+ projets.',
- 'zh': '{c}别墅与精品酒店建造：2026年每平方米及每间客房造价、材料轮渡物流、市政与环保许可。18年以上经验，196+个项目。',
+ 'es': 'Villas y hoteles boutique en {c}: precio por m² y por llave 2026, permisos municipales y ambientales, tiempos reales. 196+ proyectos.',
+ 'en': 'Villas and boutique hotels in {c}: 2026 cost per m² and per key, municipal and environmental permits, real timelines. 196+ projects.',
+ 'ru': 'Виллы и бутик-отели — {c}: цена за м² и за номер 2026, муниципальные и экологические разрешения, реальные сроки. 196+ проектов.',
+ 'de': 'Villen und Boutiquehotels in {c}: Preis pro m² und pro Zimmer 2026, kommunale und Umweltgenehmigungen, reale Bauzeiten. 196+ Projekte.',
+ 'fr': 'Villas et hôtels boutique à {c} : prix au m² et par clé 2026, permis municipaux et environnementaux, délais réels. 196+ projets.',
+ 'zh': '{c}别墅与精品酒店建造：2026年每平方米与每间客房造价、市政与环保许可、真实工期。196+个项目。',
 }
 
 TEXT = {

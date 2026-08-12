@@ -242,9 +242,9 @@ def build(slug, d):
     city, url = d['city'], BASE + '/construccion-de-casas-' + slug + '/'
     City = city[3:] if city.startswith('la ') else city
     h1 = 'Construcción de Casas en ' + City
-    title = h1 + ' | Obra Nueva Llave en Mano | Recrea'
-    desc = ('Construcción de casas en %s: obra nueva llave en mano con precio fijo. '
-            'Precios por m² 2026, proceso paso a paso, permisos y tiempos. 18+ años, 196+ proyectos.' % City)
+    title = h1 + ' | Recrea'
+    desc = ('Casa llave en mano en %s: precio por m² 2026, proceso paso a paso, '
+            'permisos y tiempos reales. Contrato a precio fijo, 196+ proyectos.' % City)
     kw = ('construccion de casas %s, construccion de casas en %s, construir casa %s, '
           'obra nueva %s, casas llave en mano %s' % (City.lower(), City.lower(), City.lower(), City.lower(), City.lower()))
 

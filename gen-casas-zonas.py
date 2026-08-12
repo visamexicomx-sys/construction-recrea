@@ -295,8 +295,8 @@ for _lang, _hub, _calc, _blog in [('ru', '/stroitelstvo-domov-%s/', '/kalkulyato
 ml.REF['es'] = 'constructora-cancun'
 ml.L['es'] = dict(locale='es_MX',
   h1='Construcción de Casas en {city}',
-  title='Construcción de Casas en {city} | Obra Nueva Llave en Mano | Recrea',
-  desc='Construcción de casas en {city}: obra nueva llave en mano con precio fijo. Precio por m² 2026, proceso paso a paso, permisos y tiempos. 18+ años, 196+ proyectos.',
+  title='Construcción de Casas en {city} | Recrea',
+  desc='Casa llave en mano en {city}: precio por m² 2026, proceso paso a paso, permisos y tiempos reales. Contrato a precio fijo, 196+ proyectos.',
   kw='construccion de casas {lcity}, construir casa {lcity}, obra nueva {lcity}, casas llave en mano {lcity}',
   lead='Obra nueva llave en mano en {city}: proyecto, permisos, cimentación, obra gris y acabados con un solo responsable y contrato a precio fijo.',
   intro='Recrea construye casas en {zones} desde 2008 — 196+ proyectos terminados en la Riviera Maya. Arquitectura, eléctrico, carpintería y herrería son equipos propios, así que su obra no depende de subcontratistas que aparecen y desaparecen.',
