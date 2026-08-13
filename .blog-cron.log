@@ -190,3 +190,19 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. If you want to integrate the remote changes,
 hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Generating 5 FULL blog articles for 2026-08-13...
+  + blog/construction-license-tulum-2026.html (262 lines)
+  + blog/condominium-regime-permit-mexico.html (262 lines)
+  + blog/foreigners-construction-permits-mexico.html (262 lines)
+  + blog/architectural-plans-tropical-home.html (262 lines)
+  + blog/3d-rendering-house-plans-riviera-maya.html (262 lines)
+  Sitemap: 1377 URLs
+  IndexNow: 200
+
+Done! 5 articles. 29 topics remaining. Total: 35
+blog     130 articles  news=6 costs=23 permits=20 foreigners=6 build=48 home=27
+blog-es  114 articles  news=7 costs=24 permits=15 foreigners=5 build=32 home=31
+blog-de   97 articles  news=6 costs=25 permits=13 foreigners=4 build=30 home=19
+blog-ru  112 articles  news=7 costs=25 permits=15 foreigners=5 build=33 home=27
+blog-fr   98 articles  news=6 costs=24 permits=14 foreigners=5 build=29 home=20
+blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
