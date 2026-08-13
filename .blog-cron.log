@@ -206,3 +206,20 @@ blog-de   97 articles  news=6 costs=25 permits=13 foreigners=4 build=30 home=19
 blog-ru  112 articles  news=7 costs=25 permits=15 foreigners=5 build=33 home=27
 blog-fr   98 articles  news=6 costs=24 permits=14 foreigners=5 build=29 home=20
 blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
+[main 784655a4] daily blog: 5 new SEO articles 2026-08-13
+ 13 files changed, 4529 insertions(+), 3153 deletions(-)
+ create mode 100644 blog/3d-rendering-house-plans-riviera-maya.html
+ create mode 100644 blog/architectural-plans-tropical-home.html
+ create mode 100644 blog/condominium-regime-permit-mexico.html
+ create mode 100644 blog/construction-license-tulum-2026.html
+ create mode 100644 blog/foreigners-construction-permits-mexico.html
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+To https://github.com/visamexicomx-sys/construction-recrea.git
+ ! [rejected]          main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/visamexicomx-sys/construction-recrea.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
