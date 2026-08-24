@@ -21,36 +21,74 @@ What it reports, in the order the answers matter:
   4. Cannibalisation — one query where two or more of our URLs compete.
   5. Cluster performance — do the pages built in August 2026 get impressions yet.
 """
-import csv, glob, os, re, sys
+import csv, glob, io, os, re, sys
 from collections import defaultdict
 
 GSC = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gsc')
 
 
+def decode(path):
+    """GSC exports are UTF-16 in some locales and UTF-8 in others.
+
+    Order matters: almost any byte string decodes as UTF-16 without raising,
+    it just comes out as CJK mojibake, so decide by BOM (or by the NUL bytes
+    that unmarked UTF-16 leaves behind) instead of by trial and error.
+    """
+    raw = open(path, 'rb').read()
+    if raw[:2] in (b'\xff\xfe', b'\xfe\xff') or b'\x00' in raw[:200]:
+        order = ('utf-16', 'utf-8-sig', 'cp1251')
+    else:
+        order = ('utf-8-sig', 'cp1251', 'cp1252', 'latin-1')
+    for enc in order:
+        try:
+            t = raw.decode(enc)
+        except (UnicodeDecodeError, UnicodeError):
+            continue
+        if '\x00' in t:
+            continue
+        return t
+    return raw.decode('utf-8', 'replace')
+
+
+def rows_of(path):
+    t = decode(path)
+    head = t.splitlines()[0] if t else ''
+    delim = ';' if head.count(';') > head.count(',') else ','
+    return list(csv.reader(io.StringIO(t), delimiter=delim))
+
+
 def read(name_hints):
-    """Find a CSV whose filename matches any hint, return list of dicts."""
-    for f in glob.glob(os.path.join(GSC, '*.csv')):
-        base = os.path.basename(f).lower()
-        if any(h in base for h in name_hints):
-            with open(f, encoding='utf-8-sig', newline='') as fh:
-                sample = fh.read(4096); fh.seek(0)
-                delim = ';' if sample.count(';') > sample.count(',') else ','
-                return [r for r in csv.DictReader(fh, delimiter=delim)]
+    """Find the CSV whose *first column header* matches any hint.
+
+    The filename is unreliable: Search Console names the files in the account
+    language, and the ZIP mangles non-ASCII names on some systems. The header
+    row is the only dependable signal, so match on that. Returns rows already
+    normalised to fixed keys, since the column names are localised too (and the
+    Russian export even spells "Kлики" with a Latin K).
+    """
+    for f in sorted(glob.glob(os.path.join(GSC, '*.csv'))):
+        rows = rows_of(f)
+        if len(rows) < 2:
+            continue
+        first = rows[0][0].lower().strip()
+        if not any(h in first for h in name_hints):
+            continue
+        out = []
+        for r in rows[1:]:
+            if not r or not r[0]:
+                continue
+            r = r + [''] * (5 - len(r))
+            out.append({'dim': r[0], 'clicks': r[1], 'impressions': r[2],
+                        'ctr': r[3], 'position': r[4]})
+        return out
     return []
 
 
 def num(v):
     if v is None: return 0.0
-    v = str(v).replace('%', '').replace(',', '.').strip()
+    v = str(v).replace('%', '').replace(',', '.').replace(' ', '').replace(' ', '').strip()
     try: return float(v)
     except ValueError: return 0.0
-
-
-def col(row, *hints):
-    for k in row:
-        kl = k.lower()
-        if any(h in kl for h in hints): return row[k]
-    return ''
 
 
 CLUSTERS = [
@@ -73,16 +111,15 @@ def main():
         print('Y desde Indexación -> Páginas -> Exportar, para el informe de indexación.')
         return 1
 
-    queries = read(['quer', 'consult', 'anfrag'])
-    pages = read(['page', 'pagin', 'seit'])
+    queries = read(['quer', 'consult', 'anfrag', 'запрос'])
+    pages = read(['page', 'pagin', 'seit', 'страниц'])
+    index = read(['reason', 'motivo', 'grund', 'причина'])
 
     if queries:
         rows = []
         for r in queries:
-            rows.append((col(r, 'quer', 'consult', 'anfrag'),
-                         num(col(r, 'click', 'clic')),
-                         num(col(r, 'impress', 'impres')),
-                         num(col(r, 'position', 'posici'))))
+            rows.append((r['dim'], num(r['clicks']), num(r['impressions']),
+                         num(r['position'])))
         tot_c = sum(x[1] for x in rows); tot_i = sum(x[2] for x in rows)
         print('=== CONSULTAS: %d | clics %d | impresiones %d | CTR %.1f%%'
               % (len(rows), tot_c, tot_i, 100 * tot_c / tot_i if tot_i else 0))
@@ -102,11 +139,21 @@ def main():
     if pages:
         prows = []
         for r in pages:
-            prows.append((col(r, 'page', 'pagin', 'url', 'seit'),
-                          num(col(r, 'click', 'clic')),
-                          num(col(r, 'impress', 'impres')),
-                          num(col(r, 'position', 'posici'))))
-        print('\n=== PÁGINAS con datos: %d' % len(prows))
+            prows.append((r['dim'], num(r['clicks']), num(r['impressions']),
+                          num(r['position'])))
+        pc = sum(x[1] for x in prows); pi = sum(x[2] for x in prows)
+        won = [x for x in prows if x[1] > 0]
+        print('\n=== PÁGINAS con datos: %d | clics %d | impresiones %d | CTR %.1f%%'
+              % (len(prows), pc, pi, 100 * pc / pi if pi else 0))
+        print('    con al menos un clic: %d  |  con impresiones pero 0 clics: %d'
+              % (len(won), len(prows) - len(won)))
+        top = sorted(prows, key=lambda x: -x[1])[:10]
+        share = 100 * sum(x[1] for x in top) / pc if pc else 0
+        print('    las 10 mejores páginas concentran el %.0f%% de los clics' % share)
+        print('\n--- Top 15 páginas')
+        for u, c, i, p in sorted(prows, key=lambda x: -x[1])[:15]:
+            print('   %5d clics %7d impr  pos %4.1f  %s'
+                  % (c, i, p, u.replace('https://construction-recrea.com', '')[:58]))
         print('\n--- Rendimiento por cluster')
         print('%-24s %8s %8s %10s %8s' % ('cluster', 'páginas', 'clics', 'impresiones', 'pos med'))
         for name, rx in CLUSTERS:
@@ -130,6 +177,13 @@ def main():
             if n: print('   %-24s sin impresiones: %d' % (name, len(n)))
         print('\n--- Ejemplos sin ninguna impresión (revisar indexación en GSC)')
         for u in never[:15]: print('   ', u)
+
+    if index:
+        # Indexación -> Páginas -> Exportar. Columnas: motivo, origen, validación, páginas.
+        print('\n=== INDEXACIÓN: por qué Google deja páginas fuera')
+        for r in index:
+            n = num(r['ctr']) or num(r['position']) or num(r['impressions'])
+            print('   %-52s %5d páginas' % (r['dim'][:52], n))
 
     if queries and pages:
         # cannibalisation needs the query+page export; GSC only gives it filtered,
