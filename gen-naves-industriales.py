@@ -318,11 +318,17 @@ def make(slug_city, d, order):
         OPER[vo],
     ]
     faq = d['faq'] + FAQ_COMMON
-    links = [('/naves-industriales-bodegas-riviera-maya/', 'Naves y bodegas en toda la Riviera Maya'),
-             ('/construccion-comercial-oficinas/', 'Construcción comercial y oficinas'),
-             ('/permisos-licencias-construccion-riviera-maya/', 'Permisos y licencias'),
-             ('/cimentacion-y-losas-playa-del-carmen/', 'Cimentación y losas'),
-             ('/supervision-de-obra/', 'Supervisión de obra')]
+    # three sibling cities, rotated by order so the cluster links in a ring instead of
+    # every page pointing at the same two neighbours
+    sibs = list(CITIES.items())
+    sibs = [sibs[(order + k) % len(sibs)] for k in (1, 2, 3)]
+    links = [('/naves-industriales-bodegas-riviera-maya/', 'Naves y bodegas en toda la Riviera Maya')]
+    links += [('/construccion-naves-industriales-bodegas-%s/' % s, 'Naves y bodegas en %s' % c['name'])
+              for s, c in sibs]
+    links += [('/construccion-comercial-oficinas/', 'Construcción comercial y oficinas'),
+              ('/permisos-licencias-construccion-riviera-maya/', 'Permisos y licencias'),
+              ('/cimentacion-y-losas-playa-del-carmen/', 'Cimentación y losas'),
+              ('/supervision-de-obra/', 'Supervisión de obra')]
     t_long = 'Construcción de Naves Industriales y Bodegas en %s | Recrea' % city
     t_short = 'Naves Industriales y Bodegas en %s | Recrea' % city
     return dict(
