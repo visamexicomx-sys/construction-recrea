@@ -1736,6 +1736,1474 @@ CONTENT["real-estate-investment-puerto-aventuras"] = {
  ],
 }
 
+CONTENT["custom-home-design-playa-del-carmen"] = {
+ "title": "Custom Home Design in Playa del Carmen: A Practical Brief",
+ "desc": "How a custom house actually gets designed here: the land-use envelope that sets your limits, climate-driven decisions, and what design and engineering fees cover.",
+ "intro": [
+   "Custom design in Playa del Carmen is less about style than most clients expect and more about three constraints that arrive before the first sketch: what the municipality lets you build on that specific lot, what the climate does to a building, and what your actual budget buys once permits, systems and furniture are counted. Designs that ignore any of the three get redrawn, and redrawing is the cheapest stage at which to discover a problem.",
+   "This is the brief we work through with clients before anything is drawn, in the order the answers are needed: the legal envelope, the climate decisions that cannot be retrofitted, the programme of spaces a house here actually needs, and what the design and engineering package costs."
+ ],
+ "sections": [
+  ("Start With the Envelope, Not the Style",
+   """    <p>Every lot in Solidaridad has a set of numbers attached to it, and they determine the house far more than any architectural preference. Get them in writing before you commission a design.</p>
+    <ul>
+      <li><strong>Land use (uso de suelo)</strong> &mdash; what is permitted on this lot: single-family, multi-family, mixed use, or something that rules out what you intended.</li>
+      <li><strong>COS (coeficiente de ocupaci&oacute;n del suelo)</strong> &mdash; the proportion of the lot the building footprint may cover. This is what decides whether you get the garden and pool you are imagining.</li>
+      <li><strong>CUS (coeficiente de utilizaci&oacute;n del suelo)</strong> &mdash; total built area permitted across all floors. The number that decides whether the house is one storey or two.</li>
+      <li><strong>Height and storeys</strong> &mdash; which also governs whether a rooftop terrace is possible, and roof terraces are the highest-value space on this coast.</li>
+      <li><strong>Setbacks</strong> front, rear and side. On narrow urban lots the setbacks often dictate the plan geometry outright.</li>
+      <li><strong>Alignment (alineamiento)</strong> and any easement, and in a gated community the design committee's own rules on materials, colours and boundary treatment.</li>
+    </ul>
+    <p>Two corollaries. First, if you are still choosing between lots, this check is part of due diligence, not a post-purchase formality &mdash; we have talked clients out of lots whose numbers could not accommodate the house they described. Second, if an architect abroad has already drawn something, this is the review that matters before anything is submitted: adjusting a plan is inexpensive, adjusting a foundation is not.</p>"""),
+  ("The Climate Decisions You Cannot Retrofit",
+   """    <p>A handful of design decisions determine how the house feels and what it costs to run, and every one of them is fixed the moment the structure goes up.</p>
+    <ul>
+      <li><strong>Orientation.</strong> Long axis roughly east&ndash;west so the main rooms face north and south and the small elevations take the brutal east and west sun. This single decision reduces cooling load more than any equipment you can buy later.</li>
+      <li><strong>Shading depth.</strong> Deep overhangs, covered terraces and louvres on the west. An unshaded west window in Playa del Carmen is an afternoon heater with no off switch.</li>
+      <li><strong>Cross-ventilation.</strong> Openings on opposite sides of each main space, with a path for the prevailing east&ndash;southeast breeze to leave. In the months when air conditioning is unnecessary, this is what makes the house pleasant rather than merely tolerable.</li>
+      <li><strong>Ceiling height.</strong> 2.9&ndash;3.4 m in main spaces. Height buys comfort in the tropics and it is cheap while the walls are rising.</li>
+      <li><strong>Roof as occupied space.</strong> Decide at the start: the structure, waterproofing build-up, stair and services all differ if the roof is a terrace rather than a roof.</li>
+      <li><strong>Plant and service space.</strong> Cistern, pump, water treatment, AC positions, pool equipment, laundry with covered drying. Houses designed elsewhere routinely omit all of these, and adding them later costs a bathroom.</li>
+    </ul>
+    <p>Materials follow the same logic. Chukum and polished concrete belong here and age well; imported timber cladding and delicate metalwork do not. Glazing, at the point where cooling load and storm resistance meet, is where we push clients hardest to spend.</p>"""),
+  ("What the Design Package Costs and Contains",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Stage</th><th>Deliverable</th><th>MXN (200&ndash;300 m&sup2; house)</th></tr></thead>
+      <tbody>
+        <tr><td>Concept and feasibility</td><td>Envelope check, massing, sketch plan, budget range</td><td>$25,000&ndash;$70,000</td></tr>
+        <tr><td>Architectural project</td><td>Full plans, elevations, sections, details, finish schedule</td><td>$120,000&ndash;$350,000</td></tr>
+        <tr><td>Structural engineering</td><td>Foundations, frame, slabs, based on the soil study</td><td>$45,000&ndash;$130,000</td></tr>
+        <tr><td>MEP engineering</td><td>Electrical, hydro-sanitary, AC, treatment, load schedules</td><td>$45,000&ndash;$120,000</td></tr>
+        <tr><td>3D renders and visualisation</td><td>Exterior and interior views for decisions and approvals</td><td>$15,000&ndash;$60,000</td></tr>
+        <tr><td>Soil study (mec&aacute;nica de suelos)</td><td>Probes across the footprint &mdash; a prerequisite, not an option</td><td>$25,000&ndash;$60,000</td></tr>
+        <tr><td>Permit file and DRO</td><td>Municipal submission, alignment, licence, DRO signature</td><td>$60,000&ndash;$250,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Taken together, design, engineering, studies and permits typically run <strong>8&ndash;14% of construction cost</strong> on a custom house here. Clients sometimes try to compress that percentage, and it is almost always the wrong economy: the errors it prevents &mdash; a plan that breaches CUS, foundations designed without a soil study, air conditioning sized by rule of thumb, a cistern that has to be dug up &mdash; each cost more than the whole package.</p>
+    <p>We do architecture, structural and MEP engineering in-house and carry the DRO, which is mainly a coordination benefit: the conduit and sleeves are in the slab because the same team drew both, and there is one party responsible if something needs resolving rather than three pointing at each other. If you already have an architect you like, we will build their design &mdash; we simply run the envelope and climate review first, and tell you plainly what we would change and why.</p>"""),
+ ],
+ "faq": [
+  ("What determines how big a house I can build on my lot?",
+   "Three municipal numbers: COS, which limits the footprint as a proportion of the lot; CUS, which limits total built area across all floors; and the height or storey limit, which also governs whether a rooftop terrace is possible. Setbacks then shape the plan geometry. Get all of them in writing for the specific lot before commissioning any design &mdash; and before buying, if you still can."),
+  ("What does architectural design cost in Playa del Carmen?",
+   "For a 200&ndash;300 m&sup2; house, the full architectural project runs $120,000&ndash;$350,000 MXN, with structural engineering $45,000&ndash;$130,000 and MEP $45,000&ndash;$120,000 on top, plus the soil study and the permit file. Design, engineering, studies and permits together typically come to 8&ndash;14% of construction cost."),
+  ("Which design decisions cannot be changed later?",
+   "Orientation, shading depth, cross-ventilation paths, ceiling height, whether the roof is occupied, and where the plant and service spaces go. All of them are fixed once the structure is up, and all of them determine how the house feels and what it costs to run. Finishes and fittings, by contrast, can always be changed."),
+  ("Can you build a design my own architect has drawn?",
+   "Yes, and we do it regularly. We run an envelope and climate review first &mdash; land use, COS, CUS, height, setbacks, orientation, west exposure, terrace depth, and the service spaces that plans drawn abroad usually omit &mdash; and tell you what we would change and why before anything is submitted."),
+  ("Do I really need a soil study first?",
+   "Yes, with probes across the actual footprint. The ground here is karst limestone: bearing can be excellent at shallow depth and a cavity can sit two metres away. The study costs $25,000&ndash;$60,000 MXN, and the structural design cannot be done properly without it &mdash; discovering a void after the slab is poured costs multiples of that."),
+ ],
+}
+
+CONTENT["two-story-house-construction-riviera-maya"] = {
+ "title": "Two-Storey House Construction in the Riviera Maya: Costs and Rules",
+ "desc": "When a second storey is the right move: CUS and height limits, the structural and cost premium, stair and services planning, and whether to build it now or later.",
+ "intro": [
+   "A second storey is the standard answer to a narrow lot, an expensive location, or a brief that wants bedrooms upstairs and living space opening to a garden. It is also the point at which a house stops being a simple structure: the foundations carry more, the stair eats floor area on both levels, the services get longer, and the municipal limits that were comfortable on one level start to bite.",
+   "This covers when going up genuinely beats spreading out, what the municipal numbers permit, the real cost premium per square metre, and the planning decisions &mdash; stair position, services, roof terrace, future second storey &mdash; that make the difference between a good two-storey house and an awkward one."
+ ],
+ "sections": [
+  ("When Up Beats Out",
+   """    <p>Going up is the right decision in specific circumstances rather than by default:</p>
+    <ul>
+      <li><strong>The lot is narrow or small,</strong> and the COS limit means a single-storey house of the area you want would leave no garden or pool.</li>
+      <li><strong>Land is expensive</strong> &mdash; in Playacar, central Playa del Carmen, Aldea Zam&aacute; or a gated community, building vertically uses costly land more efficiently.</li>
+      <li><strong>You want a view.</strong> On this coast, the second floor and the roof are where the sea, the jungle canopy or the golf course becomes visible. That view has a measurable effect on rental rate and resale.</li>
+      <li><strong>Zoning separation matters:</strong> bedrooms upstairs away from terrace noise, or a rentable ground-floor unit with the owner above.</li>
+      <li><strong>You are chasing breeze.</strong> A first floor catches noticeably more air movement than a ground floor enclosed by walls and planting.</li>
+    </ul>
+    <p>Reasons to stay single-storey: an ageing-in-place brief, a wide lot with generous COS, a budget where the premium below would eat the pool, or a lot whose height limit makes a second storey awkwardly compressed. On a retirement house we usually argue for one level plus a roof terrace reached by a comfortable stair, rather than living spread over two floors.</p>"""),
+  ("The Municipal Numbers and the Structural Premium",
+   """    <p><strong>Check three limits before designing.</strong> CUS caps total built area across all floors, so a second storey is only available if the CUS allows more than the ground floor already uses. Height and storey limits vary by zone and are strict in some &mdash; Tulum's are deliberately restrained, and gated communities often impose tighter rules than the municipality through their design committees. And in some coastal and hotel-zone classifications the storey count is capped outright.</p>
+    <p><strong>The construction premium.</strong> A two-storey house costs more per square metre than a single-storey house of the same total area, and the difference is not trivial:</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr><td>Foundations</td><td>Sized for double the load; on karst this may mean deeper footings or a stiffened raft</td></tr>
+        <tr><td>Structural frame</td><td>Larger columns and beams, a full intermediate slab with its own formwork and curing cycle</td></tr>
+        <tr><td>Stair</td><td>Consumes 8&ndash;14 m&sup2; across both levels and needs structure and finishes of its own</td></tr>
+        <tr><td>Services</td><td>Longer vertical runs, a second wet-area zone, pressure system sized for the head</td></tr>
+        <tr><td>Programme</td><td>Typically 1.5&ndash;3 months longer than the equivalent single storey</td></tr>
+        <tr><td><strong>Net premium</strong></td><td><strong>roughly 10&ndash;20% per m&sup2;</strong> over single-storey construction at the same specification</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Against that premium, you are buying garden, pool and view that a single-storey house on the same lot could not have. On a small lot that trade is usually clearly worth it; on a large one it usually is not.</p>"""),
+  ("Planning a Two-Storey House Properly",
+   """    <p>The decisions that separate a comfortable two-storey house from a cramped one:</p>
+    <ul>
+      <li><strong>Put the stair where it serves both floors without dominating either</strong> &mdash; and make it generous. A tight, steep stair is the defect owners complain about for the life of the house. In this climate an open or semi-external stair also works well and returns area to the rooms.</li>
+      <li><strong>Stack the wet areas.</strong> Bathrooms and the kitchen aligned vertically shortens runs, simplifies waterproofing and reduces the chance of a leak appearing in a ceiling.</li>
+      <li><strong>Waterproof the intermediate slab properly</strong> under upstairs bathrooms and any terrace over living space. A leak through a slab into a finished room below is the most expensive and most common two-storey failure.</li>
+      <li><strong>Design the roof as a terrace from the outset</strong> if height allows: parapet height, drainage, the stair's final flight, waterproofing build-up, shade structure and services. Retrofitting a usable roof is far more expensive than including it.</li>
+      <li><strong>Pressure and hot water for the upper floor.</strong> Size the pressure system for the head and plan recirculation so a first-floor shower does not run cold for thirty seconds.</li>
+      <li><strong>AC zoning by floor.</strong> Heat rises; the upper floor has a different load profile and needs its own zoning and capacity, not a share of the ground floor's.</li>
+      <li><strong>Guarding.</strong> Stair and terrace railings to 90 cm minimum residential, 1.05&ndash;1.10 m on terraces and anything rental or commercial, with no opening passing a 10 cm sphere and no climbable geometry.</li>
+    </ul>
+    <p><strong>On building the second storey later:</strong> it is possible, and it has to be designed in. That means foundations and columns sized for the future load, starter bars left at the columns, the stair position reserved, and the services and electrical capacity provided. Doing that during the first phase adds a modest amount to the structure; adding a storey to a house that was not designed for one means strengthening foundations and columns from below, which is disruptive, expensive, and occasionally not viable at all.</p>"""),
+ ],
+ "faq": [
+  ("How much more does a two-storey house cost?",
+   "Roughly 10&ndash;20% more per square metre than a single-storey house of the same total area and specification. The premium comes from foundations sized for double the load, a full intermediate slab, larger columns and beams, the stair (which consumes 8&ndash;14 m&sup2; across both levels), longer service runs, and a programme typically 1.5&ndash;3 months longer."),
+  ("Am I allowed to build two storeys on my lot?",
+   "It depends on three things: whether CUS allows more total built area than your ground floor uses, the height and storey limit for that zone, and any design committee rules if you are in a gated community. Some coastal and hotel-zone classifications cap storeys outright, and Tulum's height limits are deliberately restrained. Verify all three for the specific lot before designing."),
+  ("When is a second storey worth it?",
+   "When the lot is narrow or small and COS would otherwise leave no garden or pool; when land is expensive enough that building vertically uses it better; when there is a view worth reaching, which affects both rental rate and resale; or when you want bedrooms separated from terrace noise, or a rentable ground-floor unit under an owner's residence."),
+  ("What is the most common problem in two-storey houses here?",
+   "Water through the intermediate slab &mdash; from an upstairs bathroom or from a terrace built over living space &mdash; appearing as a stain in a finished ceiling. It is a waterproofing and detailing failure, it is expensive to trace and repair, and it is entirely preventable at construction. Stacking the wet areas vertically also reduces the risk."),
+  ("Can I add a second storey later?",
+   "Only comfortably if the first phase was designed for it: foundations and columns sized for the future load, starter bars left in place, the stair position reserved and services capacity provided. Adding a storey to a house not designed for one means strengthening foundations and columns from underneath &mdash; disruptive, costly, and sometimes not viable."),
+ ],
+}
+
+CONTENT["small-house-construction-tulum"] = {
+ "title": "Small House Construction in Tulum: Under 100 m² Done Properly",
+ "desc": "What a compact Tulum house really costs, where the fixed costs land regardless of size, off-grid decisions on jungle lots, and the design moves that make 80 m² feel generous.",
+ "intro": [
+   "A small house in Tulum is not a cheap version of a large one. Below roughly 100 m&sup2;, the fixed costs &mdash; permits, the environmental file, the soil study, the cistern, the treatment plant, the electrical connection or the solar system, the pool if you want one &mdash; stop being a small percentage of the budget and start dominating it. Two houses of 80 m&sup2; and 180 m&sup2; on similar lots can have surprisingly similar bills for everything that is not walls and finishes.",
+   "That is not an argument against building small. Compact houses are often the best decision in Tulum: they suit the lots, they leave the vegetation intact, they rent very well to couples and remote workers, and they can be off-grid far more easily than a large house. But they need to be planned with the fixed costs visible from the start, and designed so the space works."
+ ],
+ "sections": [
+  ("Where the Money Actually Goes Below 100 m²",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>MXN</th><th>Scales with house size?</th></tr></thead>
+      <tbody>
+        <tr><td>Construction, 80 m&sup2; at $17,000&ndash;$24,000/m&sup2; (Tulum bands)</td><td>$1,360,000&ndash;$1,920,000</td><td>Yes</td></tr>
+        <tr><td>Design, engineering, DRO and municipal permits</td><td>$120,000&ndash;$350,000</td><td>Barely</td></tr>
+        <tr><td>Environmental file (SEMA / vegetation, where required)</td><td>$80,000&ndash;$300,000</td><td>No &mdash; driven by the lot, not the house</td></tr>
+        <tr><td>Soil study</td><td>$25,000&ndash;$60,000</td><td>No</td></tr>
+        <tr><td>Cistern and pressure system</td><td>$50,000&ndash;$120,000</td><td>Partly</td></tr>
+        <tr><td>Treatment plant / biodigester and absorption well</td><td>$90,000&ndash;$250,000</td><td>Partly (occupancy, not area)</td></tr>
+        <tr><td>Electrical: CFE connection if serviced</td><td>$10,000&ndash;$40,000</td><td>No</td></tr>
+        <tr><td>Electrical: off-grid solar with storage if not</td><td>$250,000&ndash;$600,000</td><td>Partly (loads, not area)</td></tr>
+        <tr><td>Small pool or plunge pool</td><td>$180,000&ndash;$450,000</td><td>No</td></tr>
+        <tr><td>Access road / clearing on a jungle lot</td><td>$40,000&ndash;$300,000</td><td>No</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Read that table once and the strategy becomes obvious: on a small house, the cheapest savings are not in the house. They are in choosing a lot that is already serviced, that does not require the heaviest environmental file, and that does not need a kilometre of access road. The difference between two lots can exceed the entire cost of the walls.</p>"""),
+  ("Serviced Lot or Off-Grid: Decide First",
+   """    <p>Many Tulum lots &mdash; particularly in the Regiones, along the Coba road, and on jungle parcels away from the paved grid &mdash; have no CFE service and no municipal water. For a small house this is genuinely a choice rather than a problem, because a compact house has small loads.</p>
+    <ul>
+      <li><strong>Serviced lot:</strong> cheapest overall and simplest to permit. CFE connection $10,000&ndash;$40,000 where the street has service, municipal water into a cistern, treatment plant for wastewater.</li>
+      <li><strong>Off-grid by design:</strong> solar with battery storage sized to real loads (a compact house with inverter mini-splits, LED lighting and efficient appliances needs far less than people assume), a well or rainwater harvesting with treatment, LP gas for cooking and hot water, and a properly sized biodigester. Typically $250,000&ndash;$600,000 for a credible system on a small house &mdash; which is often less than a CFE line extension.</li>
+      <li><strong>Get the extension quoted before you buy.</strong> An electricity extension to an unserviced lot can run from $150,000 to well over $900,000. That single figure decides which of the two options above is right, and it is knowable before closing.</li>
+      <li><strong>Design for off-grid rather than bolting it on:</strong> cross-ventilation so air conditioning is optional most of the year, deep shade, a light-coloured roof, efficient appliances, and rainwater capture designed into the roof geometry.</li>
+    </ul>
+    <p>Tulum's environmental framework also matters here more than elsewhere in the corridor. Vegetation clearing is scrutinised, the cenote-riddled karst imposes setbacks and discharge rules, and a small, low-impact house sited among retained trees is both easier to authorise and better to live in than a larger one that clears the lot.</p>"""),
+  ("Design Moves That Make 80 m² Feel Generous",
+   """    <p>Compact houses succeed or fail on plan discipline. The moves that work here:</p>
+    <ul>
+      <li><strong>Count the terrace as living space and make it big.</strong> A 25 m&sup2; covered terrace attached to a 70 m&sup2; house is a 95 m&sup2; house for eleven months of the year. This is the single highest-value decision in a small tropical house.</li>
+      <li><strong>One generous space, not three small ones.</strong> Kitchen, dining and living as a single volume opening fully to the terrace, with the bedrooms as the only enclosed rooms.</li>
+      <li><strong>Height instead of width.</strong> 3.2&ndash;3.5 m ceilings, or a sloping roof with a high side, make a small plan feel large and help the heat rise away from you.</li>
+      <li><strong>Built-in storage everywhere,</strong> designed with the house rather than bought afterwards &mdash; a small house with nowhere to put things feels smaller than its area.</li>
+      <li><strong>No corridors.</strong> Circulation through rooms and along the terrace rather than down a hall; a corridor in an 80 m&sup2; house is several percent of the budget spent on walking.</li>
+      <li><strong>One well-made bathroom rather than two compromised ones,</strong> unless the house is for rental &mdash; in which case two en suites change the rate band and are worth the area.</li>
+      <li><strong>Plunge pool over a full pool.</strong> Cheaper to build, much cheaper to run, and it photographs as well for a listing.</li>
+      <li><strong>Plan the plant space properly.</strong> Cistern, pump, batteries or inverter, treatment plant, LP tank, laundry. In a small house these are a bigger proportion of the footprint, and squeezing them produces an unserviceable house.</li>
+    </ul>
+    <p>Small houses also make excellent first phases. If the lot and the budget allow, design the compact house as stage one of something larger &mdash; foundations, services and structure sized for a later bedroom wing or casita &mdash; and build the rest when it makes sense. That is a considerably cheaper path than building a large house you cannot yet afford to finish well, and much cheaper than extending a house that was never designed to grow.</p>"""),
+ ],
+ "faq": [
+  ("How much does a small house cost to build in Tulum?",
+   "Construction for an 80 m&sup2; house runs $1,360,000&ndash;$1,920,000 MXN at Tulum's $17,000&ndash;$24,000 per m&sup2; bands. On top of that sit costs that barely scale with size: permits and the environmental file, the soil study, cistern, treatment plant, electrical connection or solar system, pool and access. Those fixed items often exceed a third of the total on a small house."),
+  ("Is it cheaper per square metre to build small?",
+   "No &mdash; it is usually more expensive per m&sup2;, because the fixed costs are spread over fewer metres. Permits, the environmental file, the soil study, the treatment plant and the electrical connection cost roughly the same for 80 m&sup2; as for 180 m&sup2;. Building small saves money in total, not per metre."),
+  ("Should I go off-grid on a Tulum jungle lot?",
+   "Get the CFE extension quoted first: it can range from $150,000 to well over $900,000 MXN. A compact house has small loads, so a credible off-grid system &mdash; solar with storage, well or rainwater with treatment, LP gas, biodigester &mdash; runs $250,000&ndash;$600,000 and is frequently cheaper and faster than the line extension."),
+  ("How do you make a small house feel bigger?",
+   "A large covered terrace treated as living space, one generous open volume rather than several small rooms, 3.2&ndash;3.5 m ceilings or a sloping roof, built-in storage designed with the house, and no corridors. A plunge pool instead of a full pool frees budget and photographs just as well."),
+  ("Can I build a small house now and extend it later?",
+   "Yes, and it is often the smartest plan: design the compact house as phase one with foundations, services and structure sized for a later bedroom wing or casita, and build the rest when it makes sense. That costs far less than extending a house that was never designed to grow &mdash; and far less than finishing a large house badly."),
+ ],
+}
+
+CONTENT["luxury-villa-construction-playacar"] = {
+ "title": "Luxury Villa Construction in Playacar: Rules and Real Costs",
+ "desc": "Building in Playacar Phase I and II: the design committee, mature-tree and golf-frontage constraints, beachfront ZOFEMAT questions and premium-tier 2026 costs.",
+ "intro": [
+   "Playacar is the oldest and most established gated development in Playa del Carmen, and building there is governed as much by the community as by the municipality. It is effectively built out, so almost every project is either a teardown-and-rebuild, a substantial remodel, or construction on one of the few remaining lots &mdash; and each of those runs through a design committee that has spent thirty years protecting a particular look.",
+   "This is what building in Playacar actually involves: the difference between Phase I and Phase II, the committee's role and how to work with it rather than against it, the technical realities of golf frontage, mature canopy and beachfront positions, and what premium construction costs there in 2026."
+ ],
+ "sections": [
+  ("Phase I and Phase II Are Different Places",
+   """    <p>They are treated as one address and behave quite differently.</p>
+    <ul>
+      <li><strong>Phase I</strong> is closer to the town centre and the ferry, denser, older, and the part of Playacar where hotel and commercial uses are concentrated. Lots are generally smaller, walkability to 5th Avenue is real, and the rental market is stronger for guests who want to walk into town.</li>
+      <li><strong>Phase II</strong> is larger, quieter and more residential, built around the golf course, with bigger lots, mature vegetation and a more suburban character. This is where most of the larger custom villas are.</li>
+      <li><strong>Practical consequence for a project:</strong> in Phase I the constraints are lot size, neighbour proximity and construction access along narrow streets; in Phase II they are the golf frontage, the tree canopy and the committee's expectations about scale.</li>
+      <li><strong>Rental behaviour differs too.</strong> Phase I suits shorter stays and guests without a car; Phase II suits families, golfers and longer stays. That should inform the plan if income is part of the brief.</li>
+    </ul>
+    <p>Permits in both cases run through the municipality of <strong>Solidaridad</strong> &mdash; land use, construction licence, alignment, DRO, occupancy &mdash; with the community's own review layered on top and, in practice, first in the sequence.</p>"""),
+  ("The Design Committee, and Working With It",
+   """    <p>Playacar's architectural review is real, and the delays we see in the community are almost always an unscheduled committee round-trip. Expect review of:</p>
+    <ul>
+      <li><strong>Height, massing and setbacks</strong> beyond the municipal minimums &mdash; the community's own limits are often tighter.</li>
+      <li><strong>Roof form and materials,</strong> facade treatment, and the colour palette. The established Playacar language leans to a particular regional-colonial vocabulary, and radical departures get resistance.</li>
+      <li><strong>Boundary walls and fences,</strong> heights and finishes &mdash; a frequent source of revision.</li>
+      <li><strong>Tree removal.</strong> Mature canopy is part of what the community is protecting. Expect to justify every tree you want to remove, and expect some requests to be refused.</li>
+      <li><strong>Construction management:</strong> registered workers and controlled access, restricted working hours and days, rules on deliveries, material storage and skip placement, an obligation to keep streets clean, and usually a construction bond held against damage to community infrastructure.</li>
+    </ul>
+    <p>How to work with it: submit early and in the concept stage, before the architecture is finalised and before you have paid for a full set of drawings. Bring the tree survey with the concept, not later. And budget the programme for at least one review cycle &mdash; a fortnight or more, realistically &mdash; rather than assuming approval on first submission. Clients who treat the committee as a partner in the first meeting generally get through in one or two rounds; clients who treat it as an obstacle tend to discover how many rounds are possible.</p>"""),
+  ("Technical Realities and Premium Costs",
+   """    <p><strong>Teardown and rebuild</strong> is the most common Playacar project, and it carries items a greenfield build does not: demolition and debris removal, assessment of what can be retained, disconnection and reconnection of services, and the possibility that the existing structure has chloride damage that makes partial retention a false economy. Have the existing structure assessed before you decide between remodel and rebuild &mdash; the answer frequently changes once someone opens up a slab edge.</p>
+    <p><strong>Golf frontage</strong> brings errant golf balls, which is a glazing and skylight specification question, and an irrigation and drainage interface with the course. <strong>Beachfront lots</strong> bring the federal maritime zone: confirm precisely where the property ends and what concession exists, because the fence line is not the boundary. <strong>Mature canopy</strong> is an asset for shading and value and a constraint on footprint and crane access. And across all of Playacar, the marine specification applies &mdash; 316 stainless, anodised or marine-coated aluminium, generous concrete cover on exposed elements.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Level</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Premium (the realistic floor in Playacar)</td><td>$24,000&ndash;$30,000</td><td>$1,335&ndash;$1,670</td></tr>
+        <tr><td>Luxury</td><td>$30,000&ndash;$42,000</td><td>$1,670&ndash;$2,335</td></tr>
+        <tr><td>Beachfront / signature architecture</td><td>$42,000&ndash;$60,000+</td><td>$2,335&ndash;$3,335+</td></tr>
+        <tr><td>Demolition and debris removal (typical house)</td><td>$180,000&ndash;$600,000</td><td>&mdash;</td></tr>
+        <tr><td>Committee submission, bond, access management</td><td>$60,000&ndash;$250,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Playacar runs roughly 25% above baseline Playa del Carmen pricing, and the premium is real work rather than an address surcharge: restricted access and hours, the committee process, tree protection, marine specification and the finish level the market there expects. What you get for it is the most established address in Playa del Carmen, genuine walkability from Phase I, and a resale market that has held up through several cycles.</p>"""),
+ ],
+ "faq": [
+  ("How much does it cost to build a villa in Playacar?",
+   "Premium construction is the realistic floor at $24,000&ndash;$30,000 MXN per m&sup2; ($1,335&ndash;$1,670 USD), luxury $30,000&ndash;$42,000, and beachfront or signature architecture $42,000&ndash;$60,000+. That is roughly 25% above baseline Playa del Carmen, reflecting restricted access, the committee process, marine specification and the expected finish level."),
+  ("What does the Playacar design committee review?",
+   "Height, massing and setbacks beyond municipal minimums, roof form and materials, facade treatment and colour palette, boundary walls and fences, and tree removal &mdash; every tree you want to take out has to be justified. It also imposes construction rules: registered workers, controlled access, restricted hours, delivery and storage rules, and usually a bond. Submit at concept stage, with the tree survey."),
+  ("What is the difference between Playacar Phase I and Phase II?",
+   "Phase I is denser and closer to town with smaller lots, real walkability to 5th Avenue, and concentrated hotel and commercial use. Phase II is larger, quieter and residential, built around the golf course with bigger lots and mature canopy. Their rental markets differ too: short stays without a car in Phase I, families and golfers on longer stays in Phase II."),
+  ("Should I remodel or tear down and rebuild?",
+   "Have the existing structure assessed first, because the answer usually changes once someone opens up a slab edge. Older Playacar houses can carry chloride-induced reinforcement damage that makes partial retention a false economy. Demolition and debris removal typically runs $180,000&ndash;$600,000 MXN, which is often less than repairing a compromised frame."),
+  ("What should I check on a Playacar beachfront lot?",
+   "Exactly where the property ends and what concession exists over the federal maritime zone (ZOFEMAT) &mdash; the fence line is not the boundary. Also the storm exposure, which makes laminated or impact-rated glazing on the sea elevation a specification not to compromise, and the state of any existing seawall or dune structure."),
+ ],
+}
+
+CONTENT["beachfront-house-construction-riviera-maya"] = {
+ "title": "Beachfront House Construction: ZOFEMAT, Surge and Salt",
+ "desc": "What building on the shoreline really requires: the federal maritime zone, dune and turtle rules, surge-aware design, marine specification and honest cost premiums.",
+ "intro": [
+   "Beachfront is the most desirable and the most heavily regulated position on this coast, and the gap between what buyers assume and what the law permits is wider here than anywhere else in the corridor. The strip of land closest to the water is federal. The dune in front of it is protected. Turtles nest on it. And the structure you put behind it has to survive an exposure that destroys ordinary buildings in a decade.",
+   "This is the honest version: who owns what, which permits stack on top of the municipal licence, how surge and wind shape the design, what the marine specification costs, and what to verify before you buy a beachfront lot."
+ ],
+ "sections": [
+  ("Who Owns What: ZOFEMAT and the Dune",
+   """    <p><strong>The federal maritime-terrestrial zone (ZOFEMAT)</strong> is a strip measured landward from the shoreline that belongs to the nation. It is not part of your property even when a fence, a palapa or a previous owner's deck suggests otherwise. Use of it requires a federal concession, concessions are specific about what they permit, and they are transferable only under their own terms.</p>
+    <ul>
+      <li><strong>Establish the actual boundary</strong> with a survey referenced to the federal zone, not from the title area alone or from where the neighbour's wall is.</li>
+      <li><strong>Ask what concession exists</strong> for the property, what it allows, when it expires and whether it transfers on sale. A lot marketed as beachfront with no concession has a very different usable area than the brochure implies.</li>
+      <li><strong>The dune is protected vegetation.</strong> Clearing, levelling or building on the primary dune is not a permitting negotiation, and dune restoration is increasingly a condition of coastal authorisations. Designs that keep the dune intact and cross it on a raised walkway get approved; designs that flatten it do not.</li>
+      <li><strong>Turtle nesting rules apply,</strong> broadly May to October: shielded, low, amber or red beach-facing lighting, no facade or palm uplighting toward the sea, restrictions on night work and beach activity. These apply to the finished house in operation as well as to the build.</li>
+      <li><strong>Permit stack:</strong> municipal licence and DRO, state environmental (SEMA), federal environmental and maritime-zone matters (SEMARNAT, ZOFEMAT concession), CONAGUA for water, plus Civil Protection for anything commercial or rental.</li>
+    </ul>
+    <p>Realistic timelines for a beachfront file run considerably longer than an inland one &mdash; several months to over a year depending on scope and how complete the submission is. That is the single most common source of frustration for beachfront clients, and it is not compressible by pressure.</p>"""),
+  ("Designing for Surge, Wind and Salt",
+   """    <p>The exposure is the design brief. Three loads, all of which point in the same direction: build the ground plane to survive water and the envelope to survive wind.</p>
+    <ul>
+      <li><strong>Set the finished floor level above plausible surge,</strong> and accept that this means steps, a raised plinth or an elevated ground floor. Where surge is a serious consideration, design the lowest level as expendable &mdash; parking, storage, an open-sided terrace &mdash; rather than the primary living space.</li>
+      <li><strong>Continuous load path against uplift,</strong> with fixing patterns tightened at roof edges and corners where wind pressures are highest, and no light roof elements that are not engineered for lift.</li>
+      <li><strong>Laminated or impact-rated glazing on the sea elevation,</strong> or rated shutters. This is structural: a failed opening pressurises the building and the roof is then pushed from inside.</li>
+      <li><strong>Generous concrete cover and dense, low-permeability mixes</strong> on every exposed element, controlled on site with spacers and cured properly. Chloride-induced spalling is what kills beachfront concrete, and cover achieved is the only defence that matters.</li>
+      <li><strong>316 stainless everywhere exposed</strong> &mdash; fixings, railings, gates, light fittings, pool hardware, window furniture. Anodised or marine-grade coated aluminium for glazing. Coated coils on AC condensers.</li>
+      <li><strong>Design water out:</strong> drips, throats, falls, no upward-facing traps, and no detail that ponds salt water against concrete or metal.</li>
+      <li><strong>Fresh-water rinse points</strong> on terraces and around the pool. Periodic rinsing is the cheapest maintenance available and it roughly doubles the life of exposed metalwork.</li>
+    </ul>"""),
+  ("Cost Premiums and Pre-Purchase Checks",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>Beachfront figure</th></tr></thead>
+      <tbody>
+        <tr><td>Construction, premium specification</td><td>$30,000&ndash;$45,000 MXN/m&sup2;</td></tr>
+        <tr><td>Construction, luxury / signature</td><td>$45,000&ndash;$65,000+ MXN/m&sup2;</td></tr>
+        <tr><td>Marine specification premium over inland equivalent</td><td>+10&ndash;20% of construction</td></tr>
+        <tr><td>Environmental and federal permit package</td><td>$200,000&ndash;$900,000+</td></tr>
+        <tr><td>Impact-rated glazing, sea elevation</td><td>$12,000&ndash;$22,000 MXN/m&sup2; of opening</td></tr>
+        <tr><td>Treatment plant sized for occupancy + absorption</td><td>$120,000&ndash;$400,000</td></tr>
+        <tr><td>Annual maintenance, beachfront house</td><td>Budget 1.5&ndash;3% of build cost per year</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>That last line is the one owners underestimate. A beachfront house is a maintained object: rinsing, repainting, inspecting fixings, servicing AC, checking concrete at slab edges and balconies. Houses on this coast that receive that attention last; houses that do not show visible chloride damage within a decade regardless of how well they were built.</p>
+    <p><strong>Before buying, verify:</strong> the survey against the federal zone and what concession exists; the land-use classification, density, height and COS/CUS; whether any environmental authorisation already exists for the lot, because inheriting a clean file has real value; the condition of the dune and whether restoration will be required; electricity and water service or the cost of extension; and the realistic permit timeline for that municipality. We run this review for clients before purchase, and on beachfront lots it changes the decision more often than on any other kind of land.</p>"""),
+ ],
+ "faq": [
+  ("Can I build directly on the beach in Mexico?",
+   "No. The federal maritime-terrestrial zone (ZOFEMAT) closest to the water belongs to the nation, and using it requires a federal concession that is specific about what it permits. The primary dune in front of your building line is protected vegetation and cannot be cleared or levelled. Your house goes behind both, and the survey &mdash; not the fence line &mdash; establishes where that is."),
+  ("What does beachfront construction cost in the Riviera Maya?",
+   "Premium specification runs $30,000&ndash;$45,000 MXN per m&sup2; and luxury or signature architecture $45,000&ndash;$65,000+. The marine specification itself accounts for 10&ndash;20% over an equivalent inland build, and the environmental and federal permit package adds $200,000&ndash;$900,000 or more depending on scope."),
+  ("How long do beachfront permits take?",
+   "Considerably longer than inland &mdash; several months to over a year, depending on scope and how complete the submission is, because the municipal licence sits under state environmental review, federal environmental and maritime-zone matters, and CONAGUA. It is the most common frustration for beachfront clients, and pressure does not shorten it. A complete, well-prepared file does."),
+  ("How should a beachfront house be designed for storm surge?",
+   "Set the finished floor above plausible surge, which means a raised plinth or an elevated ground floor, and treat the lowest level as expendable where surge is serious &mdash; parking, storage or open terrace rather than primary living space. Combine that with a continuous uplift load path and impact-rated glazing on the sea elevation, since a failed opening pressurises the building."),
+  ("What maintenance does a beachfront house need?",
+   "Budget 1.5&ndash;3% of build cost annually: fresh-water rinsing of exposed metalwork and glass, repainting on a cycle, inspection of fixings, AC servicing with coated coils, and regular checks of concrete at slab edges and balconies where chloride damage shows first. Beachfront houses that get this attention last; those that do not show damage within a decade however well built."),
+ ],
+}
+
+CONTENT["retirement-home-mexico-riviera-maya"] = {
+ "title": "Building a Retirement Home in the Riviera Maya: Design for Decades",
+ "desc": "Single-level plans, step-free detailing, healthcare proximity, residency and fideicomiso basics, and running costs for a retirement house on the Caribbean coast.",
+ "intro": [
+   "Retirement buyers ask different questions than investors, and they should be designed for differently. The house has to work at seventy-five as well as at sixty, which means single-level living, step-free thresholds and doorways wide enough for a walker long before anyone needs one. It has to be cheap and simple to run, because a fixed income does not absorb a surprise. And its location matters for reasons that have nothing to do with rental yield &mdash; hospital access, walkability, community, and how easy it is for family to visit.",
+   "This covers the plan decisions that matter for ageing in place, the location trade-offs across the corridor, what ownership and residency involve for a foreign retiree, and honest running costs."
+ ],
+ "sections": [
+  ("Design for the Next Twenty-Five Years",
+   """    <p>Almost everything on this list costs little or nothing at design stage and a great deal to retrofit.</p>
+    <ul>
+      <li><strong>Single level.</strong> One storey plus, if you want a view, a roof terrace reached by a comfortable stair with a landing &mdash; not a house whose bedrooms are upstairs.</li>
+      <li><strong>Step-free throughout.</strong> Flush thresholds at every external door (with a channel drain and a slope away, so driven rain stays outside), no changes of level between rooms, and a gently ramped rather than stepped approach from the street and the carport.</li>
+      <li><strong>Door and corridor widths</strong> sized for a wheelchair or walker &mdash; 90 cm doors, generous turning space in bathrooms and the kitchen. Nobody has ever regretted a wide doorway.</li>
+      <li><strong>Bathrooms designed once, properly:</strong> a curbless walk-in shower with a linear drain, blocking in the walls for future grab rails even if you fit none now, a comfort-height WC, a lever tap, and enough clear floor to assist someone.</li>
+      <li><strong>Lighting and surfaces.</strong> Generous, even light with no dark transitions, switches at reachable heights, and floor finishes with real slip resistance when wet &mdash; polished porcelain around a pool is a hazard.</li>
+      <li><strong>A ground-floor guest or carer room</strong> with its own bathroom. It is a guest room for twenty years and the most important room in the house for the last five.</li>
+      <li><strong>Shade and a covered terrace,</strong> because outdoor living at midday is only possible in shade, and this is where you will actually spend your days.</li>
+      <li><strong>Low-maintenance everything:</strong> porcelain rather than natural stone that needs sealing, aluminium rather than timber joinery outside, native and drought-tolerant planting, and a pool sized for swimming rather than for photographs.</li>
+    </ul>"""),
+  ("Where to Retire in the Corridor",
+   """    <p>The trade-offs are real and they differ from what an investor would choose.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Location</th><th>For a retiree</th><th>Against</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Playa del Carmen</strong></td><td>Best hospital and specialist access in the corridor, walkable centre, large expat community, direct airport road</td><td>Busy, noisier, land prices in central and gated areas</td></tr>
+        <tr><td><strong>Puerto Aventuras</strong></td><td>Gated, very calm, walkable, services inside the community, strong resident community</td><td>HOA fees, limited land, car needed for anything beyond the gates</td></tr>
+        <tr><td><strong>Puerto Morelos</strong></td><td>Quiet village character, closest to Canc&uacute;n airport and its hospitals, gentler pace</td><td>Fewer services in the village itself</td></tr>
+        <tr><td><strong>Akumal</strong></td><td>Beautiful, small, strong community</td><td>Tulum municipality permitting, thinner medical access, more driving</td></tr>
+        <tr><td><strong>Tulum</strong></td><td>Setting and character</td><td>Traffic, construction noise, longer hospital access, permitting complexity &mdash; the least practical retirement choice in the corridor</td></tr>
+        <tr><td><strong>Bacalar</strong></td><td>Exceptional lagoon setting, low cost of living</td><td>3.5&ndash;4 h from the corridor's hospitals and supply chain</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>The item retirees consistently under-weight at purchase and over-weight five years later is <strong>proximity to healthcare</strong>. Playa del Carmen and Canc&uacute;n have the hospitals and specialists; everywhere else means a drive. If you have an existing condition, treat drive time to a hospital as a hard design constraint on location, not a preference.</p>"""),
+  ("Ownership, Residency and Running Costs",
+   """    <p><strong>Ownership.</strong> In the restricted zone within 50 km of the coast, foreigners hold residential property through a bank trust (<em>fideicomiso</em>) or a Mexican company. The fideicomiso is the normal route for a home: the bank holds title as trustee, you hold all beneficial rights &mdash; use, rent, sell, bequeath &mdash; for a renewable term, and it carries a setup cost and an annual bank fee. It is well-established, it is what the great majority of foreign-owned homes here sit in, and a notary (notario) handles the closing.</p>
+    <p><strong>Residency.</strong> Temporary and permanent residency are available through routes including proven income or savings thresholds, and the thresholds are set against Mexican minimum-wage units and change, so verify current figures with a consulate or an immigration lawyer. Residency matters practically: it simplifies banking, vehicle ownership and importing household goods, and permanent residency is a common goal for retirees who intend to stay.</p>
+    <p><strong>Healthcare.</strong> Private care here is good and inexpensive by US standards, and most retirees carry private insurance &mdash; either an international policy or a Mexican one, with the important caveat that Mexican insurers commonly restrict new enrolment above certain ages and exclude pre-existing conditions. Sort insurance out before you move, not after.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="table-dark"><tr><th>Annual running cost</th><th>MXN/year</th></tr></thead>
+      <tbody>
+        <tr><td>Property tax (predial) &mdash; modest by US/Canadian standards</td><td>$3,000&ndash;$20,000</td></tr>
+        <tr><td>Fideicomiso annual bank fee</td><td>$8,000&ndash;$20,000</td></tr>
+        <tr><td>Electricity with moderate AC use</td><td>$18,000&ndash;$60,000</td></tr>
+        <tr><td>Water, gas, internet</td><td>$12,000&ndash;$30,000</td></tr>
+        <tr><td>Pool and garden service</td><td>$24,000&ndash;$72,000</td></tr>
+        <tr><td>House insurance (coastal, incl. hurricane cover)</td><td>$15,000&ndash;$60,000</td></tr>
+        <tr><td>Maintenance reserve</td><td>1&ndash;2% of build cost</td></tr>
+        <tr><td>HOA, if in a gated community</td><td>Varies widely &mdash; verify per property</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Two decisions cut those numbers meaningfully: a house designed to be comfortable without air conditioning for most of the year, and solar. In a retirement house, where you are home all day and the CFE consumption threshold that triggers the expensive DAC tariff is easy to cross, solar frequently pays back in three to five years.</p>"""),
+ ],
+ "faq": [
+  ("What should a retirement house here include that a normal house does not?",
+   "Single-level living, flush thresholds at every door, 90 cm doorways and generous turning space, a curbless shower with blocking for future grab rails, even lighting with no dark transitions, slip-resistant floors, a ground-floor guest or carer room with its own bathroom, and a deep shaded terrace. Nearly all of it is free at design stage and expensive to retrofit."),
+  ("Where is the best place in the Riviera Maya to retire?",
+   "Playa del Carmen for hospital and specialist access, walkability and community; Puerto Aventuras for a gated, calm, walkable environment with services inside the gates; Puerto Morelos for village quiet close to Canc&uacute;n's hospitals. Tulum is the least practical choice for retirement &mdash; traffic, construction, longer hospital access and the most complex permitting."),
+  ("Can a foreigner own a home on the coast?",
+   "Yes. Within 50 km of the coast, foreigners hold residential property through a bank trust (fideicomiso) or a Mexican company. The fideicomiso gives you full beneficial rights &mdash; use, rent, sell, bequeath &mdash; with the bank as trustee, for a renewable term, at a setup cost plus an annual fee of roughly $8,000&ndash;$20,000 MXN."),
+  ("What does it cost to run a house here each year?",
+   "Predial is modest at $3,000&ndash;$20,000 MXN, the fideicomiso fee $8,000&ndash;$20,000, electricity with moderate AC $18,000&ndash;$60,000, water, gas and internet $12,000&ndash;$30,000, pool and garden service $24,000&ndash;$72,000, and coastal insurance $15,000&ndash;$60,000, plus a maintenance reserve of 1&ndash;2% of build cost. Solar often pays back in three to five years for a household that is home all day."),
+  ("What about healthcare and insurance?",
+   "Private care in Playa del Carmen and Canc&uacute;n is good and inexpensive by US standards, and most retirees carry private insurance. Arrange it before moving: Mexican insurers commonly restrict new enrolment above certain ages and exclude pre-existing conditions, so the options narrow the longer you wait."),
+ ],
+}
+
+CONTENT["jungle-house-construction-tulum"] = {
+ "title": "Jungle House Construction in Tulum: Clearing Rules and Off-Grid",
+ "desc": "Building on a Tulum jungle lot: vegetation permits, cenote setbacks, off-grid power and water, termite and humidity detailing, and what the access road really costs.",
+ "intro": [
+   "A jungle lot in Tulum is the most attractive land in the corridor and the most demanding to build on. The selva is protected vegetation, the ground is cenote-riddled karst, most parcels have no CFE service or municipal water, and the house you put there will be surrounded by the two things that destroy buildings in the tropics: constant humidity and an enormous termite population.",
+   "Done properly, the result is the best kind of house on this coast &mdash; shaded by mature canopy, quiet, cool without much air conditioning, and worth substantially more to rent than an equivalent house on a cleared lot. This covers the permits, the off-grid decisions, the detailing that keeps the jungle out of the structure, and the cost lines that only exist on this kind of land."
+ ],
+ "sections": [
+  ("Vegetation, Cenotes and the Environmental File",
+   """    <p>On a jungle lot the environmental file is the project's critical path, and it is driven by the land rather than the house.</p>
+    <ul>
+      <li><strong>A vegetation survey comes first.</strong> An inventory of what is on the lot, what species are protected, and what you propose to remove. This drives both the authorisation and the design, and it is the cheapest way to learn whether the house you want fits the land you are buying.</li>
+      <li><strong>Clearing is authorised, not assumed.</strong> Expect to justify each removal, to be limited to a proportion of the lot, and increasingly to commit to retaining or replanting. Designs that thread between mature trees are approved more readily than designs that need a clear site &mdash; and they produce better houses.</li>
+      <li><strong>Cenotes and sinkholes impose setbacks</strong> and restrictions on what may infiltrate nearby. A cenote on the lot is simultaneously an extraordinary asset and a hard constraint; map it before designing.</li>
+      <li><strong>Wastewater is the technical centre of the file.</strong> Treatment before infiltration, sized to occupancy, with the absorption well or field set back properly. What infiltrates in Tulum reaches the aquifer and then the reef, and this is what the review examines hardest.</li>
+      <li><strong>Authorities:</strong> municipality of Tulum for land use, licence, alignment and DRO; SEMA for state environmental impact; SEMARNAT and CONAGUA where federal jurisdiction or water matters arise.</li>
+      <li><strong>Timeline:</strong> plan for months rather than weeks, and file early. Tulum's review is the most environmentally demanding in the corridor, which is appropriate and is not negotiable.</li>
+    </ul>"""),
+  ("Off-Grid by Design, Not by Accident",
+   """    <p>Get the CFE extension quoted before you buy &mdash; it ranges from around $150,000 MXN on a lot near an existing line to well over $900,000 further out. That number decides the whole services strategy.</p>
+    <ul>
+      <li><strong>Solar with storage,</strong> sized to real loads. A house designed for cross-ventilation with inverter mini-splits used selectively, LED lighting and efficient appliances needs a fraction of what people assume. Typical credible systems for a jungle house: $300,000&ndash;$800,000 MXN depending on loads and autonomy.</li>
+      <li><strong>Water:</strong> a well with treatment, rainwater harvesting into a cistern, or both. With 1,200+ mm of annual rainfall, harvesting is genuinely productive here and the water is soft, which is a bonus for the plumbing and the pool.</li>
+      <li><strong>LP gas</strong> for cooking and hot water, with a stationary tank sized for the delivery interval &mdash; not exchange cylinders on a jungle track.</li>
+      <li><strong>Biodigester or package treatment plant</strong> sized to occupancy, with the absorption field positioned with regard to any cenote and the water table.</li>
+      <li><strong>Internet</strong> by fixed wireless or satellite, and it is worth solving properly: remote-worker guests are the strongest long-stay rental segment for this kind of house.</li>
+      <li><strong>Access road.</strong> The line nobody budgets. A few hundred metres of cleared and surfaced access can run $40,000&ndash;$300,000 MXN, needs its own clearing authorisation, and determines whether concrete trucks can reach the site at all &mdash; which changes the construction method.</li>
+    </ul>
+    <p>Designing off-grid from the start is very different from retrofitting it. Roof geometry for harvesting and panels, a plant room sized for batteries and treatment, load discipline in the appliance schedule, and a plan that works with the breeze so cooling is optional &mdash; all decided on the first sketch.</p>"""),
+  ("Keeping the Jungle Out of the Building",
+   """    <p>Termites and humidity are the two forces working on a jungle house continuously. The detailing that resists them:</p>
+    <ul>
+      <li><strong>No timber-to-ground path anywhere.</strong> Concrete pads, galvanised or stainless shoes, decks and platforms held above grade. Subterranean termites here will find any continuous route from soil to timber.</li>
+      <li><strong>Soil treatment before the slab,</strong> and a physical barrier at penetrations. This is cheap during construction and disruptive afterwards.</li>
+      <li><strong>Dense hardwoods or treated timber only</strong> for anything structural or exposed &mdash; machiche, ip&eacute;, cumaru, tzalam. Untreated pine in a jungle house is a meal.</li>
+      <li><strong>Ventilate everything:</strong> a gap behind joinery carcasses, vented plinths, air under decks, and no sealed cavity that traps humidity against timber or plaster.</li>
+      <li><strong>Continuous conditioning or dehumidification</strong> in closed rooms, particularly in a house that sits empty between visits. A humidistat-controlled dehumidifier is the difference between returning to a fresh house and returning to a mouldy one.</li>
+      <li><strong>Mosquito screening designed in,</strong> not added &mdash; screened openings, screened terrace sections, and a plan that lets you sleep with air moving.</li>
+      <li><strong>Sealed, rodent-resistant service penetrations,</strong> and a plant room that closes properly. The jungle is full of things looking for shelter.</li>
+      <li><strong>Keep the canopy but manage it:</strong> no branches overhanging the roof (they deliver debris, humidity and a bridge for insects), and a cleared zone immediately around the building while the wider lot stays intact.</li>
+    </ul>
+    <p><strong>Cost.</strong> Construction on a Tulum jungle lot runs $17,000&ndash;$26,000 MXN/m&sup2; for mid-range to premium work, with the site-specific lines &mdash; environmental file $80,000&ndash;$300,000, off-grid services $300,000&ndash;$800,000, access $40,000&ndash;$300,000, treatment plant $90,000&ndash;$250,000 &mdash; often adding up to more than a third of the total. Which is the real lesson of jungle lots: the house is the predictable part of the budget, and the land is where the money and the time actually go.</p>"""),
+ ],
+ "faq": [
+  ("Can I clear the jungle on my Tulum lot to build?",
+   "Only what is authorised. A vegetation survey comes first, each removal has to be justified, you will typically be limited to a proportion of the lot, and retention or replanting commitments are increasingly attached. Designs that thread between mature trees get approved more readily &mdash; and produce cooler, more valuable houses &mdash; than designs needing a clear site."),
+  ("How much does it cost to build on a jungle lot in Tulum?",
+   "Construction runs $17,000&ndash;$26,000 MXN per m&sup2; for mid-range to premium. Then come the land-driven lines: environmental file $80,000&ndash;$300,000, off-grid services $300,000&ndash;$800,000, treatment plant $90,000&ndash;$250,000, and access road $40,000&ndash;$300,000. Those frequently exceed a third of the total budget."),
+  ("Is off-grid realistic for a jungle house?",
+   "Yes, and it is often cheaper than a CFE line extension &mdash; get the extension quoted before buying, since it ranges from about $150,000 to over $900,000 MXN. A house designed for cross-ventilation with selective air conditioning needs far less power than people assume; credible systems run $300,000&ndash;$800,000 including storage."),
+  ("How do you stop termites in a jungle house?",
+   "Eliminate every timber-to-ground path &mdash; concrete pads, galvanised or stainless shoes, platforms above grade &mdash; treat the soil before the slab, use only dense hardwoods or properly treated timber, and ventilate every cavity. Subterranean termites here are relentless and will find any continuous route from soil to wood."),
+  ("What about humidity in a house surrounded by jungle?",
+   "Ventilate everything &mdash; behind joinery, under decks, through plinths &mdash; and run continuous conditioning or humidistat-controlled dehumidification in closed rooms, especially if the house sits empty between visits. Keep branches off the roof, maintain a cleared zone immediately around the building, and design mosquito screening in from the start."),
+ ],
+}
+
+CONTENT["penthouse-construction-playa-del-carmen"] = {
+ "title": "Penthouse Construction in Playa del Carmen: Roof, Load, Access",
+ "desc": "Building or remodelling a penthouse: height and CUS limits, roof-slab loading for pools and gardens, waterproofing that has to last, crane access and condo approvals.",
+ "intro": [
+   "A penthouse is the most valuable unit in a building in Playa del Carmen and the most technically exposed. It takes the full sun on its roof and its walls, it carries whatever you put on the roof terrace &mdash; a pool, planters, a pergola, a kitchen &mdash; and every one of those things sits above a waterproofing membrane that will be extremely expensive to repair once the terrace is finished over it.",
+   "This is for two audiences: developers planning the top floor of a new building, and owners remodelling an existing penthouse or adding a roof terrace. The constraints are similar; the approvals differ."
+ ],
+ "sections": [
+  ("Height, CUS and What the Regime Allows",
+   """    <p>Three limits decide whether a penthouse or a roof build-out is even possible.</p>
+    <ul>
+      <li><strong>Height and storey limits</strong> for the zone. Playa del Carmen's limits vary by area, and the coastal and central zones are more restricted than inland ones. A roof-level addition may count as a storey.</li>
+      <li><strong>CUS,</strong> which caps total built area across the building. If the building already uses its CUS, new enclosed area on the roof is not available &mdash; though an unroofed terrace or an open pergola may be treated differently. Verify how the municipality classifies what you intend to build.</li>
+      <li><strong>The condominium regime and bylaws,</strong> which are usually the binding constraint for an existing building. The roof is frequently a common element even where a penthouse has exclusive use of it, and structural alterations, additional load and changes to the building envelope generally need an assembly resolution, not just the administrator's nod. Get that in writing before spending money on drawings.</li>
+    </ul>
+    <p>For a developer, the sequence is simpler: the penthouse is designed with the building, the structure is sized for the roof terrace from the start, and the regime is written to allocate the roof as exclusive-use area to the penthouse. That is much cheaper than retrofitting either the structure or the paperwork.</p>"""),
+  ("Loading and Waterproofing: the Two Things That Matter",
+   """    <p><strong>Load.</strong> A roof designed as a roof and a roof designed as an occupied terrace with a pool are different structures. Approximate figures worth knowing before you start sketching:</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Roof terrace element</th><th>Load implication</th></tr></thead>
+      <tbody>
+        <tr><td>Occupied terrace with paving and furniture</td><td>Modest &mdash; usually within a slab designed for maintenance access plus an allowance</td></tr>
+        <tr><td>Planters with soil depth for shrubs or trees</td><td>Substantial and permanent; wet soil is heavy and drainage adds more</td></tr>
+        <tr><td>Plunge pool or jacuzzi</td><td>Concentrated and very heavy &mdash; nearly always needs dedicated support down to columns</td></tr>
+        <tr><td>Full pool on the roof</td><td>A structural design exercise from the foundations up; not a retrofit on an ordinary slab</td></tr>
+        <tr><td>Pergola or shade structure</td><td>Light in dead load, significant in wind uplift &mdash; anchorage is the issue, not weight</td></tr>
+        <tr><td>Outdoor kitchen, bar, equipment</td><td>Point loads plus services through the membrane</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Any of these on an existing building requires a structural assessment of the actual slab &mdash; reinforcement, span, condition and existing loads &mdash; before design. Adding a pool to a slab that cannot take it is the kind of mistake that is not repairable.</p>
+    <p><strong>Waterproofing.</strong> A roof terrace is a waterproofing project with a terrace on top. Build it up properly: a screed to falls with genuine slope to outlets, a membrane system rated for the exposure and for being buried, protection board over it, drainage layer, and then the finish on pedestals or a bedding layer. Every penetration &mdash; pergola anchor, pool pipe, planter drain, light fitting, service conduit &mdash; is sealed and detailed individually. And crucially, every one should be accessible or inspectable later, because the failure mode on this coast is water finding a penetration two years after handover and appearing in the penthouse ceiling.</p>
+    <div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i><strong>Test before you finish.</strong> Flood-test the membrane and hold it before any paving, pool or planting goes down. Finding a defect in a flood test costs a day; finding it after the terrace is built costs the terrace.</div>"""),
+  ("Access, Heat, and What It Costs",
+   """    <p><strong>Getting materials up</strong> is a real project constraint. Options are a crane (street closure permit, neighbour coordination, a day rate that makes batching essential), a construction hoist, or the service lift and stairs &mdash; which caps material sizes and multiplies labour. This is why penthouse remodels cost more per square metre than ground-floor ones: the same work with a much harder logistics problem. Plan deliveries in batches, and size materials to fit the available route.</p>
+    <p><strong>Heat and exposure.</strong> A penthouse takes sun on the roof and on more wall area than any other unit. The mitigations that matter: roof insulation (frequently absent in older buildings and the single biggest comfort upgrade available), a light or reflective roof finish, shade structures over glazing, and AC capacity calculated for the real load rather than copied from the floor below. A shaded, insulated penthouse is comfortable; an uninsulated one runs its air conditioning continuously and still loses in May.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="table-dark"><tr><th>Work</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>Roof terrace build-out: waterproofing, screed, finishes, per m&sup2;</td><td>$3,500&ndash;$9,000</td></tr>
+        <tr><td>Plunge pool on a roof, incl. structural support and plant</td><td>$350,000&ndash;$900,000</td></tr>
+        <tr><td>Pergola or shade structure, engineered for uplift, per m&sup2;</td><td>$4,500&ndash;$12,000</td></tr>
+        <tr><td>Outdoor kitchen, 316 stainless, per linear metre</td><td>$28,000&ndash;$60,000</td></tr>
+        <tr><td>Roof insulation retrofit, per m&sup2;</td><td>$900&ndash;$2,500</td></tr>
+        <tr><td>Full penthouse interior remodel, per m&sup2;</td><td>$12,000&ndash;$28,000</td></tr>
+        <tr><td>Crane day rate and street permit</td><td>$25,000&ndash;$90,000 per day</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>One planning note for developers: design the top floor as a penthouse from the beginning &mdash; structure sized for the terrace and a pool, membrane detailed for an occupied roof, services routed for a roof kitchen, exclusive-use area written into the regime. The cost of doing all of that at the design stage is small, and it is the difference between a top-floor apartment and the unit that sets the building's price ceiling.</p>"""),
+ ],
+ "faq": [
+  ("Can I add a pool to my penthouse roof terrace?",
+   "Only after a structural assessment of the actual slab &mdash; reinforcement, span, condition and existing loads. A plunge pool is a concentrated, very heavy load that nearly always needs dedicated support carried down to columns, and a full pool is a structural design exercise rather than a retrofit. You will also need a condominium assembly resolution, since the roof is usually a common element."),
+  ("What does a roof terrace build-out cost in Playa del Carmen?",
+   "Waterproofing, screed and finishes run $3,500&ndash;$9,000 MXN per m&sup2;. A plunge pool with its structural support and plant is $350,000&ndash;$900,000; an engineered pergola $4,500&ndash;$12,000 per m&sup2;; a stainless outdoor kitchen $28,000&ndash;$60,000 per linear metre. Crane access, where needed, adds $25,000&ndash;$90,000 per day plus the street permit."),
+  ("Do I need condominium approval to remodel a penthouse?",
+   "Almost certainly. The roof is frequently a common element even where the penthouse has exclusive use of it, and structural alterations, added load and changes to the building envelope generally require an assembly resolution rather than just the administrator's agreement. Get it in writing before commissioning drawings."),
+  ("Why are penthouses so much hotter than lower units?",
+   "They take full sun on the roof plus more exposed wall area than any other unit, and older buildings here frequently have no roof insulation at all. Retrofitting insulation at $900&ndash;$2,500 MXN per m&sup2; is usually the single biggest comfort upgrade available, followed by a reflective roof finish, shade over the glazing, and AC capacity calculated for the real load."),
+  ("What is the most common failure in roof terraces here?",
+   "Water finding a penetration &mdash; a pergola anchor, a pool pipe, a planter drain, a light fitting &mdash; and appearing in the ceiling below a year or two after handover. The defences are a proper build-up with falls, protection board and drainage layer, individually detailed penetrations, and a flood test held before any paving, pool or planting goes on top."),
+ ],
+}
+
+CONTENT["multi-family-house-riviera-maya"] = {
+ "title": "Multi-Family Construction in the Riviera Maya: Duplex to Fourplex",
+ "desc": "Building two to four units for rental income: density and parking limits, the condominium regime question, metering and services, and cost per unit in 2026.",
+ "intro": [
+   "A duplex, triplex or fourplex is the most efficient way to convert a single lot into rental income on this coast. One set of foundations, one roof structure, one service connection and one permit process serve several revenue streams &mdash; and the incremental cost of the second and third unit is far below the cost of the first.",
+   "What determines whether the project works is not construction. It is the land-use classification, the parking requirement, and whether you intend to sell units individually &mdash; which turns the project into a condominium regime and changes the legal work substantially. This covers all three, plus the design and metering decisions that make small multi-family buildings easy to operate."
+ ],
+ "sections": [
+  ("Density, Parking and What the Lot Permits",
+   """    <p>Check these before anything else, and get them in writing for the specific lot.</p>
+    <ul>
+      <li><strong>Land use must permit multi-family.</strong> A lot zoned for single-family housing does not become multi-family because the building looks like one house. This is the most common fatal flaw in these projects.</li>
+      <li><strong>Density (units per lot or per hectare)</strong> caps the unit count independently of the area you are allowed to build. Two lots with identical CUS can permit different numbers of units.</li>
+      <li><strong>COS and CUS</strong> then cap footprint and total built area, as always.</li>
+      <li><strong>Parking</strong> is the constraint that most often reduces the unit count. Municipalities require a number of spaces per unit, sometimes more for larger units, and those spaces have to fit on the lot with workable manoeuvring. On a narrow urban lot, parking &mdash; not floor area &mdash; is usually what decides whether you build three units or four.</li>
+      <li><strong>Setbacks, height and storeys</strong> as for any project, plus any requirement for private open space or common area.</li>
+      <li><strong>Services capacity.</strong> Four units need a water connection, cistern and electrical service sized for four households. CFE load requests and water connections for multi-family are a different application than for a house.</li>
+    </ul>
+    <p>Run this check as part of lot due diligence. We have reviewed plenty of lots marketed as ideal for small apartment buildings whose density or parking numbers permitted two units, not the four in the seller's pitch.</p>"""),
+  ("Condominium Regime: Only If You Intend to Sell Units",
+   """    <p>This is the decision that shapes the legal and cost structure of the project.</p>
+    <ul>
+      <li><strong>If you will own and rent the whole building,</strong> you do not need a condominium regime. One title, one owner, units rented as apartments. Simpler, cheaper, and you keep full control of how the property is used.</li>
+      <li><strong>If you intend to sell units individually,</strong> you need a condominium regime (<em>r&eacute;gimen de condominio</em>): a notarised instrument dividing the property into private units and common elements, with participation percentages, bylaws, and the common-area rules. That is a separate legal process with its own cost and timeline, and it usually needs to align with the construction licence and the as-built condition.</li>
+      <li><strong>Establish it at the right moment.</strong> Setting up the regime is cleanest when the building is designed for it &mdash; unit boundaries, separately metered services, independent access, and a clear separation of private and common elements. Retrofitting a regime onto a building designed as one house is possible but messier and more expensive.</li>
+      <li><strong>Write the bylaws for your actual intent.</strong> If units will be sold to investors who plan to rent short-term, the bylaws should permit it explicitly. If you want a residential building, say so. Bylaws are what future owners fight over.</li>
+      <li><strong>Pre-sale implications.</strong> Selling units off-plan brings obligations and buyer expectations of its own; the permits and the regime need to exist before you market, not after.</li>
+    </ul>"""),
+  ("Design, Metering and Cost Per Unit",
+   """    <p>Small multi-family buildings that are cheap to operate share a set of features:</p>
+    <ul>
+      <li><strong>Separate meters for everything possible.</strong> Individual CFE meters per unit, and individual water metering where it can be arranged. Shared utilities in a rental building mean either you absorb the cost or you argue about it monthly.</li>
+      <li><strong>One plant area, properly sized:</strong> cistern and pressure system for full occupancy of all units, treatment plant sized for the total, LP tanks, and equipment accessible without entering any unit.</li>
+      <li><strong>Independent access to each unit,</strong> ideally without shared internal corridors &mdash; external stairs and separate entries reduce common-area maintenance and suit the climate.</li>
+      <li><strong>Acoustic separation between units,</strong> which is the single most common complaint in small buildings here and is cheap during construction: a proper party-wall build-up, no rigid connections between floors and partitions, and resilient layers under upper-floor finishes.</li>
+      <li><strong>Private outdoor space for every unit</strong> &mdash; terrace, patio or roof share. On this coast, a unit without outdoor space rents at a real discount.</li>
+      <li><strong>Standardised fittings across all units,</strong> so one set of spares serves the whole building and maintenance is fast.</li>
+      <li><strong>A pool if the site allows,</strong> sized and positioned as a shared amenity with clear safety provision; it lifts rates across every unit.</li>
+    </ul>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Configuration</th><th>Construction MXN/m&sup2;</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Duplex, two units, shared structure</td><td>$15,000&ndash;$21,000</td><td>Cheapest per m&sup2; of the multi-family options</td></tr>
+        <tr><td>Triplex / fourplex, two storeys</td><td>$16,000&ndash;$23,000</td><td>Circulation and parking start to consume area</td></tr>
+        <tr><td>Small apartment building, 6&ndash;10 units</td><td>$17,000&ndash;$25,000</td><td>Lift, fire and Civil Protection requirements may apply</td></tr>
+        <tr><td>Condominium regime, notary and legal set-up</td><td>$150,000&ndash;$600,000 total</td><td>Only if selling units individually</td></tr>
+        <tr><td>Services for a 4-unit building (cistern, treatment, meters)</td><td>$350,000&ndash;$900,000 total</td><td>Sized for full occupancy of all units</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>The economics: per square metre, multi-family construction sits close to single-family, but the cost per <em>revenue-producing</em> square metre is better because circulation and plant are shared, and the land cost is divided across units. The risks are concentrated in the pre-construction phase &mdash; density, parking and land use &mdash; which is exactly where a couple of days of verification is worth more than anything you can do later.</p>"""),
+ ],
+ "faq": [
+  ("What limits how many units I can build on a lot?",
+   "Four things: whether the land use permits multi-family at all, the density limit in units, COS and CUS, and the parking requirement. On narrow urban lots, parking is usually what decides the unit count &mdash; the required spaces per unit have to fit on the lot with workable manoeuvring, which frequently reduces four units to three."),
+  ("Do I need a condominium regime for a duplex or fourplex?",
+   "Only if you intend to sell units individually. If you will own and rent the whole building, one title and one owner is simpler and cheaper. If you will sell, the regime is a notarised instrument dividing the property into private units and common elements with participation percentages and bylaws &mdash; $150,000&ndash;$600,000 MXN and its own timeline."),
+  ("How much does multi-family construction cost per square metre?",
+   "A duplex runs $15,000&ndash;$21,000 MXN per m&sup2;, a triplex or fourplex $16,000&ndash;$23,000, and a small 6&ndash;10 unit building $17,000&ndash;$25,000. Services for a four-unit building &mdash; cistern, treatment plant, separate meters &mdash; add $350,000&ndash;$900,000 sized for full occupancy of every unit."),
+  ("What is the most common complaint in small multi-family buildings here?",
+   "Noise between units. It is cheap to prevent during construction &mdash; a proper party-wall build-up, no rigid connections between floors and partitions, resilient layers under upper-floor finishes &mdash; and effectively impossible to fix afterwards without opening up the building."),
+  ("Should each unit have its own utility meters?",
+   "Yes, wherever it can be arranged: individual CFE meters per unit and individual water metering. Shared utilities in a rental building mean you either absorb the cost or argue about it every month. Plan the metering at design stage, because retrofitting separate services into a finished building is expensive."),
+ ],
+}
+
+CONTENT["modern-minimalist-house-playa-del-carmen"] = {
+ "title": "Minimalist Houses in Playa del Carmen: What Makes Them Work",
+ "desc": "Why minimalist detailing is harder in a tropical climate: chukum and concrete finishes, flush details that must still drain, hidden services, and what the precision costs.",
+ "intro": [
+   "Minimalism is the dominant architectural language on this coast, and it is considerably harder to execute here than the finished photographs suggest. A minimalist house removes the mouldings, reveals, drips and trims that conventional detailing uses to hide tolerance and to control water. What is left is flat planes meeting flat planes &mdash; in a climate with 1,200 mm of annual rain, driven horizontal rain, extreme UV and thermal movement.",
+   "Done well, it is the right architecture for the Riviera Maya: it suits the light, it works in chukum and concrete which are local materials, and it frames the landscape rather than competing with it. Done badly, it is a house with cracked render, stained walls and water in places water should not be. This is what separates the two."
+ ],
+ "sections": [
+  ("The Materials That Belong Here",
+   """    <ul>
+      <li><strong>Chukum.</strong> A regional lime-and-bark render with a soft, mineral, slightly mottled finish that suits this light better than paint ever does. It is breathable, it ages gracefully, and it is what gives Tulum and Playa del Carmen architecture its particular surface. It needs skilled application &mdash; it is applied wet, in passes, by people who have done it before &mdash; and it needs periodic sealing, particularly on horizontal or splash-exposed surfaces and around pools.</li>
+      <li><strong>Polished and burnished concrete</strong> for floors and occasionally walls. Excellent locally: hard, cool, and it takes the light well. Control joints have to be designed rather than cut wherever convenient, and the surface needs sealing on a schedule.</li>
+      <li><strong>Microcement</strong> over existing substrates, useful in renovation where a monolithic look is wanted without demolition. Thin, so substrate movement telegraphs through &mdash; the substrate preparation is the whole job.</li>
+      <li><strong>Exposed concrete (concreto aparente).</strong> Spectacular and unforgiving: the formwork quality, the pour, the vibration and the curing are all permanently visible, and in a marine environment cover and mix density matter even more than usual because there is no render to protect the reinforcement.</li>
+      <li><strong>Local stone</strong> &mdash; regional limestone and coralline stone &mdash; as cladding and paving, tonally exactly right for the palette.</li>
+      <li><strong>Large-format porcelain</strong> where a stone look is wanted without sealing and staining. Practical, especially around pools and in rental properties.</li>
+    </ul>
+    <p>What does not belong: dark surfaces in full sun (too hot to touch, and thermally punishing), imported timber cladding (it will not survive), delicate powder-coated metalwork close to the sea, and high-gloss anything &mdash; gloss shows every deviation in a flat plane, and flat planes here are large.</p>"""),
+  ("Flush Details Still Have to Drain",
+   """    <p>This is where minimalist houses fail, and almost all of the failures are water. Minimal detailing removes the elements that traditionally manage water, so each one has to be reinvented deliberately.</p>
+    <ul>
+      <li><strong>Flush thresholds need a channel drain</strong> and a slope away from the opening, with a drained and vented sill behind the frame so water that passes the outer seal escapes outward. A flush threshold without that is a funnel into the house.</li>
+      <li><strong>Frameless and minimal-frame glazing</strong> concentrates the entire weather line into a slim joint. That means top-grade systems, proper structural silicone, thermal breaks against condensation, and installation into square openings with correct anchorage. This is not a place to value-engineer.</li>
+      <li><strong>Parapets and flat roofs need drips and a defined edge</strong> even when the intent is a clean line &mdash; otherwise water runs back under the coping and streaks the wall below. A concealed drip does the job invisibly.</li>
+      <li><strong>Drainage falls are non-negotiable.</strong> A visually flat roof or terrace still needs real slope to real outlets, with overflows. Ponding finds every weakness.</li>
+      <li><strong>Hidden gutters and concealed downpipes</strong> must be oversized and accessible for cleaning. A blocked concealed gutter is a roof leak with no visible cause.</li>
+      <li><strong>Movement joints</strong> designed into large uninterrupted planes. Thermal movement here is significant, and a 12-metre unjointed chukum wall in full sun will tell you so.</li>
+      <li><strong>Shadow gaps instead of skirtings</strong> only work if the floor drains and the wall base is detailed for cleaning water. Otherwise they collect everything.</li>
+    </ul>"""),
+  ("Hidden Services and the Real Cost of Precision",
+   """    <p>Minimalism hides the services, which means the coordination has to happen before anything is built. Recessed linear air-conditioning diffusers and their plenums, concealed curtain and blind tracks, shadow-gap lighting with drivers somewhere accessible, flush access panels for valves and filters, no visible conduit, no surface-mounted anything. Every one of those is a decision made at the MEP coordination stage &mdash; on a minimalist house, the engineering drawings are the architecture.</p>
+    <p><strong>And it costs more.</strong> The paradox clients find hardest is that a house with less in it is more expensive, because the tolerance is tighter and the labour is more skilled.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Element</th><th>Cost reality</th></tr></thead>
+      <tbody>
+        <tr><td>Overall premium over conventional detailing, same area</td><td>+10&ndash;25%</td></tr>
+        <tr><td>Chukum, applied and sealed, per m&sup2;</td><td>$450&ndash;$1,100 MXN</td></tr>
+        <tr><td>Polished / burnished concrete floor, per m&sup2;</td><td>$700&ndash;$1,800 MXN</td></tr>
+        <tr><td>Microcement over prepared substrate, per m&sup2;</td><td>$900&ndash;$2,200 MXN</td></tr>
+        <tr><td>Minimal-frame sliding glazing, per m&sup2;</td><td>$14,000&ndash;$30,000 MXN</td></tr>
+        <tr><td>Recessed linear AC diffusers and plenums (per unit)</td><td>$12,000&ndash;$35,000 MXN</td></tr>
+        <tr><td>Concealed lighting, tracks and access panels</td><td>Adds 15&ndash;30% to the lighting and joinery package</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>The honest advice we give clients who want this architecture on a tight budget: reduce the area rather than the detailing. A smaller minimalist house executed precisely is a good building; a large one executed loosely is a house with cracked planes and water stains, and the photographs that sold you on the style were of the former. Choose the two or three moves that matter &mdash; the big glazed opening, the chukum walls, the flush terrace threshold &mdash; and spend properly on those.</p>"""),
+ ],
+ "faq": [
+  ("Why does a minimalist house cost more to build?",
+   "Because there is less to hide behind. Removing mouldings, reveals and trims removes the elements that absorb construction tolerance and manage water, so every junction has to be made precisely and detailed deliberately. Expect a 10&ndash;25% premium over conventional detailing at the same area and specification, mostly in skilled labour and in glazing."),
+  ("What is chukum and is it suitable for this climate?",
+   "A regional lime-and-bark render that gives the soft, mineral, slightly mottled surface characteristic of architecture here. It is breathable and ages gracefully, and it suits the local light better than paint. It requires skilled application in wet passes and periodic sealing, particularly on horizontal surfaces, splash zones and around pools. Budget $450&ndash;$1,100 MXN per m&sup2;."),
+  ("Where do minimalist houses fail on this coast?",
+   "Water, almost always. Flush thresholds without a channel drain and a drained sill, minimal glazing without a proper weather line, parapets with no concealed drip so water streaks the wall, visually flat roofs with no real fall, blocked concealed gutters, and large unjointed planes that crack from thermal movement. Each is preventable by detailing it on purpose."),
+  ("Can I have exposed concrete near the sea?",
+   "Yes, with discipline. There is no render protecting the reinforcement, so concrete cover and mix density matter more than usual, curing has to be done properly, and the formwork and pour quality are permanently on display. It is one of the most demanding finishes available here and it looks extraordinary when it is right."),
+  ("How do I get this look on a limited budget?",
+   "Reduce the area, not the detailing. A smaller minimalist house executed precisely is a good building; a large one executed loosely cracks and stains. Pick two or three moves that carry the architecture &mdash; the large glazed opening, chukum walls, a flush terrace threshold &mdash; and fund those properly rather than spreading a thin budget across more square metres."),
+ ],
+}
+
+CONTENT["office-building-construction-cancun"] = {
+ "title": "Office Building Construction in Cancún: Costs, Code, Fit-Out",
+ "desc": "Developing offices in Cancún: land use and parking ratios, core-and-shell vs fit-out costs, Civil Protection and accessibility requirements, and what tenants here ask for.",
+ "intro": [
+   "Cancún's office market is small relative to its hotel and residential markets, and it is driven by specific tenants: tour operators and DMCs, airlines and aviation services, logistics and freight, professional services, medical and dental practices, and an increasing number of back-office and shared-service operations attracted by the airport and the labour pool. Understanding which of those you are building for changes the building.",
+   "This covers the development questions in the order they arise: what the land use and parking ratio permit, how core-and-shell costs differ from fit-out, the compliance layer that commercial buildings carry and residential ones do not, and the specification tenants here actually ask about."
+ ],
+ "sections": [
+  ("Land Use, Parking and the Building Envelope",
+   """    <p>Office development lives or dies on the parking ratio. In Canc&uacute;n, as across the corridor, municipalities require a number of spaces per unit of office floor area, and that requirement &mdash; not CUS &mdash; usually determines how much lettable area a site supports.</p>
+    <ul>
+      <li><strong>Confirm the land use permits office and any ancillary uses</strong> you intend: ground-floor retail, a caf&eacute;, a clinic, a pharmacy. Mixed-use requires the classification to allow it.</li>
+      <li><strong>Calculate lettable area backwards from parking.</strong> Surface parking consumes the site; structured or basement parking costs substantially more per space but frees ground area &mdash; and in Canc&uacute;n's high water table, basements bring dewatering and waterproofing costs that need pricing before they are assumed.</li>
+      <li><strong>COS, CUS, height and setbacks</strong> as always, plus any requirements for landscaped area or permeable surface.</li>
+      <li><strong>Access and turning</strong> for service vehicles and refuse, which planners check and developers forget.</li>
+      <li><strong>Efficiency ratio.</strong> Lettable to gross is where an office building's economics are made: a compact, well-placed core with lifts, stairs, risers and WCs grouped together, and column spacing suited to the tenant layouts you expect. A poorly planned core costs you a percentage of rent for the life of the building.</li>
+    </ul>"""),
+  ("Core-and-Shell vs Fit-Out: Where the Money Sits",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Core and shell, low-rise (2&ndash;4 storeys)</td><td>$11,000&ndash;$18,000</td><td>$610&ndash;$1,000</td></tr>
+        <tr><td>Core and shell, mid-rise with lifts and structured parking</td><td>$16,000&ndash;$26,000</td><td>$890&ndash;$1,445</td></tr>
+        <tr><td>Basic tenant fit-out (open plan, ceilings, lighting, AC distribution)</td><td>$6,000&ndash;$12,000</td><td>$335&ndash;$670</td></tr>
+        <tr><td>Corporate fit-out (partitions, meeting rooms, cabling, joinery)</td><td>$12,000&ndash;$25,000</td><td>$670&ndash;$1,390</td></tr>
+        <tr><td>Medical or dental fit-out (services-heavy, gas, X-ray shielding)</td><td>$20,000&ndash;$40,000</td><td>$1,110&ndash;$2,225</td></tr>
+        <tr><td>Structured parking, per space</td><td>$180,000&ndash;$400,000</td><td>&mdash;</td></tr>
+        <tr><td>Surface parking, per space</td><td>$25,000&ndash;$70,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Decide the leasing model before design. <strong>Core and shell</strong> lets tenants fit out to their own brief and is the norm for larger tenants, but it slows absorption because a small tenant cannot occupy a bare floor. <strong>Fitted suites</strong> let you capture smaller tenants at higher rent per m&sup2; &mdash; which in Canc&uacute;n, where much of the demand is from small and medium operators rather than corporates, is often the better strategy for at least part of the building.</p>"""),
+  ("Compliance and What Tenants Actually Ask",
+   """    <p><strong>The commercial compliance layer</strong> is the part residential developers underestimate. Offices carry requirements a house does not:</p>
+    <ul>
+      <li><strong>Civil Protection:</strong> a fire and emergency plan, means of egress and travel distances, emergency lighting and signage, extinguishers and where required detection and alarm, plus an internal civil-protection programme for the operating building.</li>
+      <li><strong>Accessibility:</strong> step-free entry, accessible WCs, lift provision, appropriate door widths and parking spaces. This is both a legal requirement and an increasingly common tenant checklist item.</li>
+      <li><strong>Electrical:</strong> NOM-001-SEDE compliance with verification, a load schedule built for real tenant density, and metering per tenancy so you are not reselling electricity.</li>
+      <li><strong>Wastewater and water:</strong> connection permits, grease management where food service is included, and treatment where no sewer serves the site.</li>
+      <li><strong>DRO and licence</strong> as for any project, with the commercial classification driving the review.</li>
+    </ul>
+    <p><strong>What tenants here ask about,</strong> in roughly the order they ask:</p>
+    <ol>
+      <li><strong>Parking</strong> &mdash; how many spaces come with the tenancy. In Canc&uacute;n this is the first question, every time.</li>
+      <li><strong>Backup power.</strong> Outages are routine in the wet season. A building with a generator covering common areas, lifts and tenant essentials lets an operator answering calls from North America keep working, and that is worth real rent.</li>
+      <li><strong>Internet redundancy</strong> &mdash; two providers into the building by separate routes, and risers that let a tenant bring their own.</li>
+      <li><strong>Air conditioning that works and is separately metered,</strong> with capacity for the tenant's real occupancy rather than a nominal figure.</li>
+      <li><strong>Security and access control,</strong> with after-hours access for operations working other time zones.</li>
+      <li><strong>Location relative to the airport and staff transport routes</strong> &mdash; for a 200-seat back office, whether staff can reach it by public transport is decisive.</li>
+    </ol>
+    <p>Design against that list and the building leases. Two specification notes for Canc&uacute;n specifically: the salt-air specification still applies to anything exposed &mdash; 316 fixings, anodised or marine-coated aluminium, protected structural steel &mdash; and the glazing specification does double duty, cutting the cooling load that dominates operating cost and keeping the envelope intact in a storm.</p>"""),
+ ],
+ "faq": [
+  ("What does office construction cost per square metre in Cancún?",
+   "Core and shell runs $11,000&ndash;$18,000 MXN per m&sup2; for low-rise and $16,000&ndash;$26,000 for mid-rise with lifts and structured parking. Tenant fit-out adds $6,000&ndash;$12,000 for basic open plan, $12,000&ndash;$25,000 for corporate, and $20,000&ndash;$40,000 for medical. Structured parking is $180,000&ndash;$400,000 per space against $25,000&ndash;$70,000 for surface."),
+  ("What limits the size of an office building on my site?",
+   "Usually the parking ratio rather than CUS. Municipalities require a number of spaces per unit of office area, and those spaces have to fit with workable circulation. Structured or basement parking frees ground area at much higher cost per space &mdash; and in Canc&uacute;n's high water table a basement brings dewatering and waterproofing costs that should be priced, not assumed."),
+  ("Should I build core and shell or fitted suites?",
+   "Core and shell suits larger tenants who want their own fit-out, but it slows absorption because a small tenant cannot occupy a bare floor. In Canc&uacute;n much of the demand comes from small and medium operators, so fitting out part of the building as suites often captures tenants faster and at higher rent per m&sup2;."),
+  ("What compliance requirements do offices carry that houses do not?",
+   "Civil Protection &mdash; egress and travel distances, emergency lighting and signage, extinguishers, detection and alarm where required, and an internal civil-protection programme &mdash; plus accessibility obligations covering step-free entry, accessible WCs, lift provision and parking, NOM-compliant electrical with verification, and per-tenancy metering."),
+  ("What do office tenants in Cancún ask for most?",
+   "Parking, first and always. Then backup power, because wet-season outages are routine and an operator serving North American clients cannot stop; internet redundancy from two providers by separate routes; separately metered air conditioning sized for real occupancy; access control with after-hours entry; and a location staff can reach by public transport."),
+ ],
+}
+
+CONTENT["retail-store-construction-playa-del-carmen"] = {
+ "title": "Retail Store Construction in Playa del Carmen: Fifth Avenue Rules",
+ "desc": "Fitting out a shop on Quinta Avenida and beyond: licences and Civil Protection, landlord shell condition, night-work restrictions, and fit-out costs per m2.",
+ "intro": [
+   "Retail fit-out in Playa del Carmen has two versions. On Quinta Avenida and the blocks around it, you are working in a dense pedestrian corridor with restricted access, high rents, tight programmes and neighbours who trade all day &mdash; and the constraints of the street shape the job as much as the design does. In the plazas and along the avenues, the work resembles retail construction anywhere: easier access, more parking, lower rent, less footfall.",
+   "This covers what you need to open legally, what to check in a landlord's shell before signing, how Fifth Avenue logistics actually work, and what a fit-out costs per square metre in 2026."
+ ],
+ "sections": [
+  ("What You Need to Open, and in What Order",
+   """    <p>The permits are not the hard part; the sequence is. Starting the fit-out before the paperwork exists is how tenants end up paying rent on a shop they cannot open.</p>
+    <ul>
+      <li><strong>Land use and the operating licence (licencia de funcionamiento)</strong> for the specific activity. Retail, food service and alcohol are different classifications with different requirements, and alcohol in particular has its own permit path and its own limits by location.</li>
+      <li><strong>Construction or fit-out licence</strong> for the works, with a DRO where the scope requires one &mdash; structural alterations, changes to the facade, new mezzanines.</li>
+      <li><strong>Civil Protection:</strong> egress, occupancy load, emergency lighting and signage, extinguishers, and for food service the gas installation and extraction review. This is a pre-opening inspection, not a formality, and it is the most common reason an opening date slips.</li>
+      <li><strong>Health authority</strong> (COFEPRIS-related requirements) for any food or beverage handling.</li>
+      <li><strong>Facade and signage approval,</strong> which on Quinta Avenida and in the historic-character areas is genuinely restrictive on size, illumination and projection over the pedestrian way.</li>
+      <li><strong>Condominium or plaza rules</strong> where the unit sits in a building or centre: permitted hours for works, contractor insurance, common-area protection, deposits, and design criteria that may prescribe storefront materials.</li>
+    </ul>
+    <p>Two practical notes. First, verify the landlord's permits exist for the premises before you sign &mdash; a unit that was never licensed for your use is your problem after signature. Second, build the Civil Protection review into the programme rather than treating it as a final sign-off: its requirements affect ceiling layout, exit door swing and electrical design, and discovering them at the end means redoing finished work.</p>"""),
+  ("Check the Shell Before You Sign",
+   """    <p>Landlord shells in Playa del Carmen vary enormously, and what is missing is what you will pay for. Walk the unit with your contractor before signature and establish:</p>
+    <ul>
+      <li><strong>Electrical capacity and metering.</strong> How much load is actually available, whether there is a dedicated meter, and what it costs to increase. A retail unit with an air conditioning load, lighting, refrigeration or kitchen equipment can easily exceed the supply the previous tenant used.</li>
+      <li><strong>Water and drainage.</strong> Supply pressure and whether there is a cistern; drainage position and diameter; grease trap provision if you are doing food. Adding drainage across a finished slab is expensive and sometimes structurally constrained.</li>
+      <li><strong>Ceiling height and slab-to-slab.</strong> After AC ducts, lighting and any extraction, the finished ceiling can end up much lower than the impression at viewing.</li>
+      <li><strong>Extraction route for food service.</strong> The single most common deal-breaker: a restaurant needs a route to discharge at roof level, and if the building has none, or the condominium will not permit one, the concept does not fit the unit.</li>
+      <li><strong>Storefront condition and what you are allowed to change,</strong> including the rolling shutter, glazing and any structural lintel.</li>
+      <li><strong>Existing structure and waterproofing,</strong> particularly in older buildings, where a first-floor unit above you is a leak risk you inherit.</li>
+      <li><strong>Accessibility:</strong> step-free entry and accessible WC provision where required.</li>
+    </ul>
+    <p>Negotiate the shell condition and any landlord contribution against that list. A rent-free fit-out period is worth more than a small rent reduction when your programme is six to ten weeks.</p>"""),
+  ("Fifth Avenue Logistics and Fit-Out Costs",
+   """    <p><strong>Working on Quinta Avenida</strong> is a logistics exercise. The street is pedestrian, vehicle access is restricted and limited to defined hours, deliveries are effectively night or early-morning operations, materials have to be carried the last stretch, waste has to be removed the same way, and neighbouring businesses are trading throughout. That means noisy work is scheduled tightly, dust and noise control matter to your future neighbours, and the programme is longer than the same fit-out in a plaza. Price it honestly: restricted-access retail fit-out on the Fifth carries roughly a 15&ndash;30% premium over equivalent work with vehicle access, most of it in labour hours and out-of-hours rates.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Fit-out type</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Basic retail: paint, lighting, flooring, counter, AC</td><td>$5,500&ndash;$11,000</td><td>$305&ndash;$610</td></tr>
+        <tr><td>Mid-range retail: joinery, display systems, storefront, signage</td><td>$11,000&ndash;$22,000</td><td>$610&ndash;$1,225</td></tr>
+        <tr><td>Premium brand or jewellery: custom joinery, security, lighting design</td><td>$22,000&ndash;$45,000</td><td>$1,225&ndash;$2,500</td></tr>
+        <tr><td>Caf&eacute; or quick-service food: kitchen, extraction, grease, services</td><td>$18,000&ndash;$35,000</td><td>$1,000&ndash;$1,945</td></tr>
+        <tr><td>Full restaurant fit-out</td><td>$25,000&ndash;$55,000</td><td>$1,390&ndash;$3,055</td></tr>
+        <tr><td>Storefront and signage (typical unit, total)</td><td>$90,000&ndash;$450,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Two specification points that matter here more than elsewhere.</strong> The street is salt-adjacent and humid, so exposed metalwork in the storefront should be 316 stainless or marine-grade coated aluminium &mdash; a rusting shopfront on the Fifth is a visible problem within two seasons. And air conditioning has to cope with a door that is open all day: size it for the real condition, use an air curtain, and accept that a shop trading with open doors on Quinta Avenida has a cooling load nothing like a closed retail box.</p>
+    <p>Programme, realistically: six to ten weeks for a straightforward retail fit-out once permits are in hand, ten to sixteen for food service. The permits, not the construction, are usually the long pole &mdash; which is why we start that file in parallel with the design rather than after it.</p>"""),
+ ],
+ "faq": [
+  ("What permits do I need to open a shop in Playa del Carmen?",
+   "Land use and an operating licence for the specific activity (retail, food and alcohol are different classifications), a fit-out or construction licence with a DRO where the scope requires one, Civil Protection approval covering egress, occupancy, emergency lighting and extinguishers, health-authority requirements for any food handling, and facade and signage approval &mdash; which is restrictive on Quinta Avenida."),
+  ("What does a retail fit-out cost per square metre?",
+   "Basic retail runs $5,500&ndash;$11,000 MXN per m&sup2;, mid-range with joinery and storefront $11,000&ndash;$22,000, premium brand or jewellery $22,000&ndash;$45,000, a caf&eacute; or quick-service food unit $18,000&ndash;$35,000, and a full restaurant $25,000&ndash;$55,000. Restricted-access work on Fifth Avenue adds roughly 15&ndash;30%."),
+  ("What should I check in a unit before signing the lease?",
+   "Electrical capacity and metering, water pressure and drainage position and diameter, real ceiling height after ducts and extraction, and above all whether there is a permitted route for kitchen extraction to roof level if you are doing food &mdash; that is the most common deal-breaker. Also the storefront condition, what you may change, and whether the landlord's permits exist for your intended use."),
+  ("How does working on Quinta Avenida differ?",
+   "It is pedestrian with restricted vehicle access in defined hours, so deliveries are night or early-morning operations, materials and waste are carried the last stretch, and noisy work is tightly scheduled around trading neighbours. Expect a 15&ndash;30% cost premium and a longer programme than the same fit-out in a plaza with vehicle access."),
+  ("How long does a shop fit-out take?",
+   "Six to ten weeks for straightforward retail once permits are in hand, ten to sixteen for food service. The permits are usually the long pole rather than the construction, which is why the licence file should run in parallel with the design &mdash; and why the Civil Protection requirements should shape the ceiling, exits and electrical design rather than being discovered at final inspection."),
+ ],
+}
+
+CONTENT["warehouse-construction-riviera-maya"] = {
+ "title": "Warehouse Construction in the Riviera Maya: Spans, Slabs, Costs",
+ "desc": "Building a nave industrial in Quintana Roo: land use and industrial zones, portal frame spans, slab design, hurricane-rated doors and real cost per m2 in 2026.",
+ "intro": [
+   "Warehouse demand in the corridor is driven by things people do not associate with the Riviera Maya: supplying hotels and restaurants, cold chain for food distribution, construction materials, boat and equipment storage, last-mile logistics for a population that has grown fast, and self-storage for a transient residential market. The buildings themselves are the most standardised product we build &mdash; and the specification decisions that matter are unglamorous.",
+   "This covers where you are allowed to build one, how the structure and the slab should be specified, the hurricane detail that decides whether the roof stays on, and what a warehouse costs per square metre in 2026."
+ ],
+ "sections": [
+  ("Where You Can Build, and Site Selection",
+   """    <ul>
+      <li><strong>Industrial land use is specific and limited.</strong> Each municipality designates industrial and mixed light-industrial zones, and a warehouse in the wrong classification is not permittable regardless of how the building looks. Verify the classification for the exact lot before purchase, and confirm which activities are permitted &mdash; storage, light manufacturing, food handling and vehicle-related uses are not interchangeable.</li>
+      <li><strong>Access and turning circles.</strong> A building that cannot receive the vehicles it is designed for is worthless. Check the approach road width and surface, any weight or height restrictions on the route, and whether a full-size articulated vehicle can enter, manoeuvre and leave. Design the yard around the largest vehicle, not the average one.</li>
+      <li><strong>Electricity.</strong> Cold storage, workshop equipment and battery charging are substantial loads. Confirm available capacity at the lot and price any CFE extension or transformer before committing &mdash; on industrial land away from existing service this is one of the largest single variables in the budget.</li>
+      <li><strong>Water, drainage and fire.</strong> Sprinklers where required bring water storage and pump requirements that dominate the site services. Wastewater needs treatment where no sewer serves the area.</li>
+      <li><strong>Ground conditions.</strong> The karst limestone here usually gives good shallow bearing, which suits pad foundations &mdash; but cavities must be found before they are built over, and a large floor slab makes that a bigger investigation than a house needs.</li>
+      <li><strong>Flood level.</strong> Set the floor slab above plausible flooding. A warehouse floor 20 cm too low is an insurance conversation every few years.</li>
+    </ul>"""),
+  ("Structure, Slab and the Hurricane Detail",
+   """    <p><strong>Structure.</strong> A steel portal frame is the default for spans beyond about 12 m, with either a metal deck roof or insulated sandwich panel where the contents need thermal control. Clear span, eaves height and crane provision are the three decisions that set the frame:</p>
+    <ul>
+      <li><strong>Clear span:</strong> pick it from the racking layout, not from a round number. Columns in the wrong place cost storage capacity forever.</li>
+      <li><strong>Eaves height:</strong> racking height plus sprinkler and lighting zone plus clearance. Adding height at design stage is cheap; adding it later is a new building.</li>
+      <li><strong>Crane or hoist provision</strong> changes the frame entirely &mdash; decide before the steel is designed.</li>
+      <li><strong>Corrosion protection</strong> by exposure: inland and internal, zinc-rich primer plus epoxy; within a few kilometres of the coast, galvanising or a full three-coat system; near the shore, galvanised plus a duplex paint system, with connections and site welds properly treated.</li>
+    </ul>
+    <p><strong>The slab is where warehouses are won and lost.</strong> It carries racking point loads, forklift wheel loads and impact, and it has to stay flat. Specify the loading in kN/m&sup2; and the racking leg loads before design; get a proper sub-base and compaction; design the joint layout and dowel it rather than letting joints crack where they will; specify a surface finish and flatness tolerance appropriate to the equipment; and seal or harden it. A cheap slab cracks, spalls at the joints, and then damages equipment and inventory for the building's life. It is the last place to save money.</p>
+    <div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i><strong>The roller door is the hurricane weak point.</strong> Large doors are the most common envelope failure on industrial buildings in this region, and once a door fails the building pressurises internally and the roof is pushed from the inside. Specify wind-rated doors on exposed elevations and tighten the roof-sheet fixing pattern at edges and corners &mdash; both are minor line items against a roof replacement.</div>"""),
+  ("Costs and Specialised Variants",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Basic shell: portal frame, metal roof and walls, industrial slab</td><td>$4,500&ndash;$8,500</td><td>$250&ndash;$470</td></tr>
+        <tr><td>Insulated shell: sandwich panel roof and walls</td><td>$7,000&ndash;$13,000</td><td>$390&ndash;$720</td></tr>
+        <tr><td>With office and WC module (typically 5&ndash;15% of area)</td><td>$14,000&ndash;$24,000 on that area</td><td>&mdash;</td></tr>
+        <tr><td>Cold storage chamber, insulated panel and plant</td><td>$18,000&ndash;$38,000</td><td>$1,000&ndash;$2,110</td></tr>
+        <tr><td>Yard, paving, drainage, fencing and gates</td><td>$1,200&ndash;$3,500 per m&sup2; of yard</td><td>&mdash;</td></tr>
+        <tr><td>Sprinkler system with tank and pump</td><td>$1,500&ndash;$4,000 per m&sup2; of building</td><td>&mdash;</td></tr>
+        <tr><td>Foundations (karst, separate from the above)</td><td>Site specific &mdash; soil study first</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Cold storage</strong> deserves particular care here. Insulated panel continuity, vapour control, floor insulation, door detailing and redundancy in the refrigeration plant all matter, and so does backup power &mdash; a wet-season outage in a full cold room is an expensive afternoon. <strong>Self-storage</strong> is a different building again: a simple envelope subdivided into many small units, where the economics are in unit mix, corridor efficiency, access control and climate control rather than in span.</p>
+    <p><strong>Compliance.</strong> Warehouses carry the commercial layer: Civil Protection with egress, occupancy and fire provisions; NOM-compliant electrical with verification; accessibility in the office areas; and environmental requirements for anything stored that needs containment. On the operational side, insurers increasingly ask about wind-rated doors, roof fixing specification and flood level &mdash; which is one more reason to specify them properly rather than at minimum.</p>"""),
+ ],
+ "faq": [
+  ("How much does a warehouse cost per square metre in the Riviera Maya?",
+   "A basic shell with portal frame, metal roof and walls and an industrial slab runs $4,500&ndash;$8,500 MXN per m&sup2; ($250&ndash;$470 USD). An insulated sandwich-panel shell is $7,000&ndash;$13,000. Office and WC modules cost $14,000&ndash;$24,000 on their own area, and cold storage $18,000&ndash;$38,000. Foundations and yard works are separate."),
+  ("Can I build a warehouse anywhere in the corridor?",
+   "No &mdash; industrial land use is specific and limited, and each municipality designates where it is permitted. A warehouse in the wrong classification is not permittable, and the permitted activities differ too: storage, light manufacturing, food handling and vehicle uses are not interchangeable. Verify the classification for the exact lot before purchase."),
+  ("What is the most important specification in a warehouse?",
+   "The floor slab. It carries racking point loads, forklift wheel loads and impact, and it has to stay flat. Specify the loading and racking leg loads before design, get proper sub-base compaction, design and dowel the joint layout, set a flatness tolerance suited to the equipment, and seal or harden the surface. A cheap slab damages equipment and inventory for the life of the building."),
+  ("How are hurricane loads handled on an industrial building?",
+   "Wind governs, and uplift governs the details: holding-down bolts and pad weights sized to resist the frame lifting, and roof-sheet fixing patterns tightened at edges and corners. The critical item is the large roller door &mdash; it is the most common envelope failure here, and once it fails the building pressurises internally and the roof is pushed off from inside. Specify wind-rated doors on exposed elevations."),
+  ("What extra does cold storage involve?",
+   "Insulated panel continuity and vapour control, floor insulation, careful door detailing, redundancy in the refrigeration plant and &mdash; importantly in this region &mdash; backup power, since a wet-season outage in a full cold room is expensive within hours. Budget $18,000&ndash;$38,000 MXN per m&sup2; for the chamber and plant."),
+ ],
+}
+
+CONTENT["medical-clinic-construction-playa-del-carmen"] = {
+ "title": "Medical Clinic Construction in Playa del Carmen: Code and Cost",
+ "desc": "Building a clinic or dental practice here: COFEPRIS licensing, room specs, medical gas, X-ray shielding, infection-control finishes and fit-out cost per m2.",
+ "intro": [
+   "Playa del Carmen has real demand for private clinics, driven by a large resident expatriate population, a fast-growing local one, and medical and dental tourism from North America. Building for that demand is the most regulated construction work we do outside hotels: the health authority reviews the premises, the finishes and services are prescribed by function, and the paperwork governs the design rather than following it.",
+   "This is an orientation for a practitioner or investor planning a clinic, dental practice or day-surgery unit &mdash; the licensing framework, what each room type actually requires, the services that make clinics expensive, and realistic costs and timelines. Health regulation is detailed and changes; a regulatory consultant on the team from the start is not optional."
+ ],
+ "sections": [
+  ("Licensing Drives the Design",
+   """    <p>The federal health regulator COFEPRIS, with its state counterpart, governs healthcare premises, and the requirements depend on what you will do in the building. A consulting practice, an imaging centre, a dental practice with surgery, and a facility with an operating theatre and recovery beds are four different regulatory categories with different room schedules, different equipment requirements and different approval paths.</p>
+    <ul>
+      <li><strong>Define the clinical scope precisely before design.</strong> "A clinic" is not a brief. The list of procedures determines the room schedule, and the room schedule determines the building.</li>
+      <li><strong>Applicable NOM standards</strong> govern healthcare infrastructure and specific services &mdash; among them the standards covering medical establishments, medical gas installations and radiological safety. These are prescriptive documents, and the design should be checked against the ones that apply to your scope.</li>
+      <li><strong>Engage a health-regulatory consultant at concept stage.</strong> A design drawn without one is routinely non-compliant in ways that are expensive to correct: corridor widths, room areas, door widths, dirty-clean circulation separation, sink placement, ventilation.</li>
+      <li><strong>Municipal layer as well:</strong> land use permitting healthcare, construction or fit-out licence, DRO, parking to the commercial ratio, accessibility, and Civil Protection with egress, emergency lighting, extinguishers and, for facilities with sedated or immobile patients, evacuation provisions that genuinely work.</li>
+      <li><strong>Waste.</strong> Biological and sharps waste (RPBI) requires a compliant storage area and a contracted collection service &mdash; both are inspected items, and the storage area has to be in the plan, not found later.</li>
+    </ul>
+    <p>Sequence matters: get the regulatory room schedule agreed, then design, then submit. Designing first and adjusting to the regulator afterwards is the most common way clinic budgets overrun.</p>"""),
+  ("What the Rooms Actually Require",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Space</th><th>Key requirements</th></tr></thead>
+      <tbody>
+        <tr><td>Consulting room</td><td>Minimum area, hand basin, privacy, accessible door width, clinical washable finishes</td></tr>
+        <tr><td>Treatment / minor procedure room</td><td>Larger area, impervious seamless finishes, scrub provision, dedicated lighting and power, ventilation</td></tr>
+        <tr><td>Operating theatre</td><td>Filtered air supply with pressure regime, seamless coved flooring, medical gas outlets, isolated power, backup power, sterile-to-dirty circulation separation</td></tr>
+        <tr><td>Sterilisation (CEYE)</td><td>Distinct dirty and clean zones with one-way flow, autoclave with services, extraction, dedicated drainage</td></tr>
+        <tr><td>Imaging / X-ray</td><td>Lead or barite shielding designed by a specialist, door interlocks and warning lights, radiological safety documentation</td></tr>
+        <tr><td>Dental surgery</td><td>Compressed air and suction plant, water quality management, amalgam separator where used, seamless finishes</td></tr>
+        <tr><td>Recovery</td><td>Bed space with clearances, oxygen and suction, nurse visibility, call system, accessible WC</td></tr>
+        <tr><td>RPBI waste store</td><td>Separate, secure, ventilated, impervious surfaces, signage</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Finishes across all clinical areas</strong> follow one principle: seamless, impervious and cleanable. Welded sheet vinyl or resin flooring coved up the wall rather than tiles with grout joints; scrubbable coatings on walls; sealed ceilings in sterile areas; no open shelving in procedure rooms; and lever or sensor taps at every clinical basin. Ordinary commercial finishes fail inspection and, more importantly, fail clinically.</p>"""),
+  ("Services, Cost and Programme",
+   """    <p><strong>Services are why clinics cost what they do.</strong> Medical gas &mdash; oxygen, nitrous oxide, medical air, vacuum &mdash; is a designed, tested and certified pipeline system with alarms, not plumbing. Ventilation in theatres and sterilisation areas requires filtration and a designed pressure regime rather than split units. Electrical needs isolated or protected circuits in wet clinical zones, UPS for critical equipment, and a generator with automatic transfer for any facility that sedates patients &mdash; a wet-season outage mid-procedure is exactly the scenario the requirement exists for. Water quality management matters for dental and sterilisation equipment given local hardness. And the building needs redundancy: two water sources (municipal plus cistern), backup power, and spares for critical plant.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Consulting-only clinic fit-out</td><td>$14,000&ndash;$24,000</td><td>$780&ndash;$1,335</td></tr>
+        <tr><td>Dental practice with surgeries and plant</td><td>$20,000&ndash;$38,000</td><td>$1,110&ndash;$2,110</td></tr>
+        <tr><td>Clinic with minor procedure rooms and sterilisation</td><td>$25,000&ndash;$45,000</td><td>$1,390&ndash;$2,500</td></tr>
+        <tr><td>Day surgery with theatre, recovery and medical gas</td><td>$40,000&ndash;$75,000</td><td>$2,225&ndash;$4,170</td></tr>
+        <tr><td>X-ray shielding (per room, design and installation)</td><td>$150,000&ndash;$500,000</td><td>&mdash;</td></tr>
+        <tr><td>Medical gas system, small facility</td><td>$300,000&ndash;$1,200,000</td><td>&mdash;</td></tr>
+        <tr><td>Generator with ATS, small clinic</td><td>$200,000&ndash;$500,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Programme.</strong> Twelve to twenty weeks of construction for a consulting or dental fit-out, and six to twelve months for a facility with a theatre &mdash; but the regulatory path often runs longer than the build, which is why it starts first. Equipment lead times are the other trap: imaging equipment, autoclaves and dental chairs have long delivery times into Quintana Roo, and the room has to be built for the specific equipment model, so ordering late delays the building rather than the other way round.</p>
+    <p>We build clinics with the practitioner's regulatory consultant embedded in the design process from the first sketch. That is the arrangement that works: the room schedule is agreed with the regulator's requirements in hand, the services are designed to the standards that apply, and the equipment specifications are in the drawings before the walls go up.</p>"""),
+ ],
+ "faq": [
+  ("What does it cost to build a medical clinic in Playa del Carmen?",
+   "A consulting-only fit-out runs $14,000&ndash;$24,000 MXN per m&sup2;, a dental practice with surgeries and plant $20,000&ndash;$38,000, a clinic with procedure rooms and sterilisation $25,000&ndash;$45,000, and a day-surgery facility with theatre and medical gas $40,000&ndash;$75,000. X-ray shielding adds $150,000&ndash;$500,000 per room and a medical gas system $300,000&ndash;$1,200,000."),
+  ("Do I need COFEPRIS approval before building?",
+   "You need the regulatory room schedule and requirements agreed before designing, because they govern corridor widths, room areas, circulation separation, ventilation and finishes. Designing first and adjusting to the regulator afterwards is the most common cause of clinic cost overruns. Engage a health-regulatory consultant at concept stage and keep them in the process."),
+  ("What finishes are required in clinical areas?",
+   "Seamless, impervious and cleanable: welded sheet vinyl or resin flooring coved up the wall rather than tiles with grout joints, scrubbable wall coatings, sealed ceilings in sterile areas, no open shelving in procedure rooms, and lever or sensor taps at every clinical basin. Ordinary commercial finishes do not pass and do not perform."),
+  ("Does a clinic need a backup generator?",
+   "Any facility that sedates patients or depends on powered equipment mid-procedure does, with automatic transfer &mdash; wet-season outages here are routine, and that is precisely the scenario the requirement exists for. Budget $200,000&ndash;$500,000 MXN for a small clinic, plus UPS for critical equipment and two water sources."),
+  ("How long does a clinic project take?",
+   "Twelve to twenty weeks of construction for a consulting or dental fit-out and six to twelve months for a facility with a theatre &mdash; but the regulatory path frequently runs longer than the build, so it starts first. Equipment lead times are the other constraint: rooms are built for specific equipment models, and late orders delay the building."),
+ ],
+}
+
+CONTENT["gym-fitness-center-construction-riviera-maya"] = {
+ "title": "Gym Construction in the Riviera Maya: Floors, Loads, Ventilation",
+ "desc": "Building a gym or fitness studio here: slab loading for platforms, impact flooring, the AC and dehumidification load nobody budgets, showers, and cost per m2.",
+ "intro": [
+   "A gym is a deceptively technical building. It puts dynamic impact loads on a slab, needs a cooling and dehumidification load closer to a commercial kitchen than an office, has to move large volumes of air quietly, and carries a sanitary fit-out &mdash; showers, lockers, changing rooms &mdash; that has to survive constant wet use in a humid climate. Get any of those wrong and members notice within a week.",
+   "This covers the specification that matters for gyms in the Riviera Maya: what to do about the floor, how to size the air systems for a climate where sweat does not evaporate, wet-area detailing that lasts, and what different gym formats cost per square metre."
+ ],
+ "sections": [
+  ("Floors and Slab Loading",
+   """    <p><strong>The slab first.</strong> A dropped loaded barbell delivers a large, brief, concentrated impact, and an Olympic or CrossFit area needs a slab designed for it &mdash; not an ordinary commercial floor with rubber on top. On a ground-bearing slab this means specifying the loading, the thickness and the reinforcement for the platform zones. On a suspended slab &mdash; a gym on an upper floor, which is common in mixed-use buildings here &mdash; it requires structural assessment, and the answer is frequently to restrict free-weight dropping to a designed zone with dedicated support, or to use dead-blow platforms.</p>
+    <p><strong>Then the floor build-up, by zone:</strong></p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Zone</th><th>Build-up</th><th>MXN/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Free weights / lifting platforms</td><td>20&ndash;50 mm rubber tile over designed slab, or timber platform inserts</td><td>$1,200&ndash;$3,200</td></tr>
+        <tr><td>Machines and general floor</td><td>8&ndash;12 mm rubber roll or tile</td><td>$600&ndash;$1,400</td></tr>
+        <tr><td>Functional / turf area</td><td>Sled-rated artificial turf on shock pad</td><td>$900&ndash;$2,200</td></tr>
+        <tr><td>Studio (yoga, pilates, dance)</td><td>Sprung timber or vinyl sports floor</td><td>$1,400&ndash;$3,500</td></tr>
+        <tr><td>Cardio</td><td>Rubber with vibration isolation under treadmills</td><td>$700&ndash;$1,600</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Two local notes. Rubber flooring and humidity: seal the substrate and allow the slab to dry properly before laying, or moisture rises and lifts the adhesive. And vibration transmission &mdash; in a mixed-use building, a treadmill or a dropped weight travels through the structure into the apartment or office next door, and isolation details at the floor and at the wall junction are much cheaper than the dispute afterwards.</p>"""),
+  ("The Air System Is the Whole Job",
+   """    <p>This is where gyms in tropical climates are made or ruined. Bodies at exercise produce heat and a great deal of moisture; at 80% ambient humidity, sweat does not evaporate efficiently, so the room feels far worse than the thermometer says and members leave.</p>
+    <ul>
+      <li><strong>Size the cooling load from occupancy, not area.</strong> A gym's sensible and latent loads at peak occupancy are far above an office of the same size. Treat peak class attendance as the design case.</li>
+      <li><strong>Dehumidification as a distinct requirement.</strong> Air conditioning sized purely for temperature will hold 24&deg;C at 70% humidity, which is unpleasant for exercise. Either oversize for latent capacity with correct part-load behaviour, or add dedicated dehumidification.</li>
+      <li><strong>Fresh air and extraction.</strong> Mechanical ventilation with a real outdoor-air rate, extraction from changing rooms and showers, and no recirculation of changing-room air into the gym floor.</li>
+      <li><strong>Air movement where people are.</strong> Large-diameter low-speed fans plus directed supply. Perceived comfort in a gym is mostly air movement.</li>
+      <li><strong>Noise.</strong> Diffusers and fans selected for low noise &mdash; a studio with a roaring supply grille cannot run a yoga class.</li>
+      <li><strong>Redundancy.</strong> Two or more units per zone rather than one large one, so a failure degrades the space instead of closing it. In this climate a gym with no cooling is a closed gym.</li>
+    </ul>
+    <p>Budget for it honestly: on a gym, the mechanical package is typically the largest single trade after the floor and the equipment, and it is the one that determines whether members renew.</p>"""),
+  ("Wet Areas, Compliance and Cost by Format",
+   """    <p><strong>Showers and changing rooms</strong> are the second most common complaint and the most common maintenance problem. What works: full waterproofing membrane under tile with proper falls to linear drains, large-format porcelain rather than small mosaic (fewer joints), 316 stainless fixings and fittings throughout, mechanical extraction running on a timer past closing, ventilated lockers, sealed benches on legs, and hot water sized for the peak &mdash; a class finishing at the same moment is the design case, and an undersized water heater turns into a review problem immediately. Given local water hardness, a softener upstream protects every shower fitting and heater in the building.</p>
+    <p><strong>Compliance.</strong> Civil Protection with egress sized for real occupancy, emergency lighting, extinguishers and a defined assembly point; accessibility including an accessible WC and, where possible, accessible changing provision; NOM-compliant electrical with the load schedule built around equipment and air systems; and a music licensing arrangement, which is an operating rather than construction item but a real one.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Format</th><th>Fit-out MXN/m&sup2;</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Boutique studio (yoga, pilates, spin), 100&ndash;200 m&sup2;</td><td>$9,000&ndash;$18,000</td><td>Floor and air systems dominate</td></tr>
+        <tr><td>Functional / CrossFit box</td><td>$8,000&ndash;$16,000</td><td>Slab design and rig anchorage are the technical items</td></tr>
+        <tr><td>Full commercial gym with changing rooms</td><td>$14,000&ndash;$28,000</td><td>Wet areas and mechanical drive the cost</td></tr>
+        <tr><td>Hotel or condo fitness room</td><td>$12,000&ndash;$22,000</td><td>Vibration isolation is critical &mdash; guests sleep next door</td></tr>
+        <tr><td>Equipment package (separate)</td><td>$1,200,000&ndash;$6,000,000 total</td><td>Long lead times into Quintana Roo</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>One strategic note for this market: gyms serving a resident population behave differently from those serving hotels and short-stay visitors. A resident gym needs changing rooms, lockers and a class programme; a hotel fitness room needs excellent air conditioning, quiet equipment, vibration isolation and a view, and almost no wet area. Decide which you are building before the plan is drawn &mdash; the two briefs produce different buildings at similar cost.</p>"""),
+ ],
+ "faq": [
+  ("What slab does a gym with free weights need?",
+   "One designed for the impact. A dropped loaded barbell is a large, brief, concentrated load, so the platform zones need specified loading, thickness and reinforcement &mdash; not an ordinary commercial slab with rubber on top. On an upper floor it requires structural assessment, and the answer is often a designed lifting zone with dedicated support or dead-blow platforms."),
+  ("How should air conditioning be sized for a gym here?",
+   "From peak occupancy rather than floor area, with latent capacity treated as a distinct requirement. Bodies at exercise produce a lot of moisture, and at 80% ambient humidity a system sized only for temperature will hold 24&deg;C at 70% humidity &mdash; unpleasant for exercise. Add dedicated dehumidification, real outdoor-air ventilation, and use multiple units per zone for redundancy."),
+  ("What does a gym fit-out cost per square metre?",
+   "A boutique studio runs $9,000&ndash;$18,000 MXN per m&sup2;, a functional or CrossFit box $8,000&ndash;$16,000, a full commercial gym with changing rooms $14,000&ndash;$28,000, and a hotel or condo fitness room $12,000&ndash;$22,000. Equipment is separate and typically $1,200,000&ndash;$6,000,000 with long lead times into Quintana Roo."),
+  ("What goes wrong with gym showers and changing rooms?",
+   "Inadequate waterproofing and falls, too many tile joints, non-marine fixings, extraction that stops at closing time, and hot water sized for average rather than peak &mdash; a class finishing together is the design case. Given local water hardness, a softener upstream also protects every fitting and heater in the building."),
+  ("Can I put a gym in a mixed-use or condo building?",
+   "Yes, with vibration isolation designed in at the floor and at wall junctions, and with free-weight dropping either restricted to a designed zone or handled with dead-blow platforms. Treadmill and dropped-weight vibration travels through the structure to neighbouring apartments and offices, and the isolation details cost far less than the dispute afterwards."),
+ ],
+}
+
+CONTENT["coworking-space-construction-playa-del-carmen"] = {
+ "title": "Coworking Construction in Playa del Carmen: Power, Acoustics, AC",
+ "desc": "Building a coworking space for remote workers: internet redundancy and backup power, acoustic zoning, call booths, density and cost per desk in 2026.",
+ "intro": [
+   "Playa del Carmen has one of the largest concentrations of remote workers in Latin America, and the coworking product that succeeds here is not the one that succeeds in a European city. The members are mostly on North American or European working hours, they are on video calls for a large part of the day, they are paying for reliability above all else, and the two things that will lose them within a week are a dropped connection and a room that is too hot to think in.",
+   "This covers what that means physically: redundant internet and power, acoustic zoning built around calls rather than open-plan aesthetics, the cooling load of a dense room in this climate, and the cost per desk that makes the business model work."
+ ],
+ "sections": [
+  ("Reliability Is the Product",
+   """    <p>Everything else in a coworking space is a preference. These two are the product.</p>
+    <ul>
+      <li><strong>Internet redundancy.</strong> Two providers, entering the building by separate physical routes, with automatic failover. One fibre and one alternative technology is better than two fibres in the same duct, because the common failure here is a cut duct or a street works incident, not a provider outage. Publish the arrangement &mdash; members choose on it.</li>
+      <li><strong>Backup power.</strong> Outages in the wet season are routine. At minimum, a UPS covering the network equipment and enough desk power to let a call finish; properly, a generator with automatic transfer covering the whole floor, lifts and air conditioning. A coworking space that closes during an outage has no product. This is the single highest-value capital item in the build.</li>
+      <li><strong>Air conditioning with redundancy.</strong> Multiple units per zone rather than one large system, so a failure degrades a room instead of closing the floor, and capacity calculated on real occupancy plus equipment load rather than a per-m&sup2; rule.</li>
+      <li><strong>Structured cabling to every fixed desk</strong> as well as good wireless. Members on critical calls will plug in, and hot-desk wireless-only floors are a constant complaint.</li>
+      <li><strong>Wireless design, not wireless guesswork.</strong> Multiple access points on a planned channel layout, sized for device density &mdash; every member carries two or three devices.</li>
+      <li><strong>Power density at the desk.</strong> Two sockets and USB per person minimum, in the desk rather than on a wall, with the circuits designed for it.</li>
+    </ul>"""),
+  ("Acoustics and Zoning Around Calls",
+   """    <p>The defining acoustic problem of a coworking space in this market is that a large proportion of members are talking at any moment. Open plan with hard tropical finishes &mdash; concrete floors, glass, chukum walls &mdash; is the worst possible combination, and it is also the default aesthetic here.</p>
+    <ul>
+      <li><strong>Zone the plan by noise, not by desk type:</strong> a genuinely quiet zone with a no-calls rule, a general working zone, a collaborative and social zone, and enclosed call space. Put circulation and the coffee machine away from the quiet zone, not through it.</li>
+      <li><strong>Call booths are the highest-value square metre in the building.</strong> Single-person enclosed booths with their own ventilation and a proper door seal &mdash; not a phone nook with a curtain. Plan roughly one booth per 8&ndash;12 members and expect them to be fully occupied.</li>
+      <li><strong>Meeting rooms with real acoustic separation:</strong> partitions taken to the structural slab rather than stopping at a suspended ceiling, insulated cavities, seals on doors, and glazing specified for acoustic performance rather than just for looks.</li>
+      <li><strong>Absorption on the ceiling plane</strong> &mdash; the largest available surface &mdash; using mineral-wool-based panels rather than foam, which does not survive this humidity. Slatted timber over mineral wool works well and suits the regional palette.</li>
+      <li><strong>Soft floor finishes where feasible,</strong> or rugs over hard floors; the acoustic difference in a room full of talkers is immediately audible.</li>
+      <li><strong>Background masking:</strong> a low, even mechanical hum is your friend. Perfect silence makes every conversation legible across the room.</li>
+    </ul>
+    <p>The ventilation of enclosed booths deserves separate mention: a sealed booth with no air supply becomes unusable within fifteen minutes in this climate, and that is the most common defect in booths bought as furniture rather than built into the mechanical design.</p>"""),
+  ("Density, Amenities and Cost Per Desk",
+   """    <p><strong>Density</strong> determines the business model. Realistic planning figures including circulation and amenity space: 6&ndash;8 m&sup2; per member for a high-density hot-desk model, 9&ndash;12 m&sup2; for a comfortable mixed model, and 12&ndash;18 m&sup2; where private offices dominate. In this market, comfort sells &mdash; members who work full days on calls choose space over price more often than operators expect.</p>
+    <p><strong>Amenities that actually earn their area here:</strong> excellent coffee and a real kitchen (not a kettle), a shaded outdoor terrace as usable working space &mdash; a genuine differentiator on this coast and cheaper per m&sup2; than conditioned floor area &mdash; showers if you are near the beach or attracting cyclists, secure lockers and storage, a printing and package area, and 24/7 access control for members working other time zones.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Basic coworking fit-out (open plan, meeting rooms, kitchen)</td><td>$10,000&ndash;$18,000</td><td>$555&ndash;$1,000</td></tr>
+        <tr><td>Full-specification build (booths, private offices, acoustics, joinery)</td><td>$18,000&ndash;$32,000</td><td>$1,000&ndash;$1,780</td></tr>
+        <tr><td>Acoustic call booth, built in with ventilation (each)</td><td>$70,000&ndash;$200,000</td><td>&mdash;</td></tr>
+        <tr><td>Generator with ATS covering the floor</td><td>$250,000&ndash;$700,000</td><td>&mdash;</td></tr>
+        <tr><td>Redundant connectivity, network and cabling</td><td>$150,000&ndash;$600,000</td><td>&mdash;</td></tr>
+        <tr><td>Furniture, per member</td><td>$15,000&ndash;$45,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Compliance is the standard commercial layer: Civil Protection with egress sized for real occupancy, emergency lighting and extinguishers; accessibility including an accessible WC; NOM-compliant electrical with a load schedule built for desk density plus air conditioning; and the municipal operating licence for the activity. One design consequence of the occupancy calculation: a densely planned coworking floor can push the occupancy load above what the existing egress supports, which is a reason to check the exits before signing a lease rather than after drawing a plan.</p>"""),
+ ],
+ "faq": [
+  ("What matters most when building a coworking space here?",
+   "Redundant internet from two providers on separate physical routes with automatic failover, and backup power &mdash; ideally a generator with automatic transfer covering the floor and the air conditioning. Members in Playa del Carmen are on calls for North America and Europe all day; a space that drops connections or closes during an outage has no product."),
+  ("How much space should I plan per member?",
+   "Including circulation and amenities, 6&ndash;8 m&sup2; per member for high-density hot desking, 9&ndash;12 m&sup2; for a comfortable mixed model, and 12&ndash;18 m&sup2; where private offices dominate. In this market comfort sells: members working full days on video calls choose space over price more often than operators expect."),
+  ("How many call booths do I need?",
+   "Roughly one per 8&ndash;12 members, and expect them fully occupied. Build them in with their own ventilation and a proper door seal rather than buying sealed furniture pods &mdash; an unventilated booth becomes unusable within fifteen minutes in this climate, which is the most common defect in spaces that treated booths as furniture."),
+  ("What does a coworking fit-out cost?",
+   "A basic fit-out runs $10,000&ndash;$18,000 MXN per m&sup2; and a full specification with booths, private offices and acoustic treatment $18,000&ndash;$32,000. Add $70,000&ndash;$200,000 per built-in call booth, $250,000&ndash;$700,000 for a generator with automatic transfer, $150,000&ndash;$600,000 for redundant connectivity and cabling, and $15,000&ndash;$45,000 per member for furniture."),
+  ("How do you handle acoustics in an open tropical space?",
+   "Zone the plan by noise with a genuine no-calls quiet area, keep circulation and the coffee machine out of it, take meeting-room partitions to the structural slab, and put mineral-wool-based absorption on the ceiling plane &mdash; not foam, which will not survive the humidity. Slatted timber over mineral wool works acoustically and suits the local palette."),
+ ],
+}
+
+CONTENT["plaza-comercial-construction-riviera-maya"] = {
+ "title": "Shopping Plaza Development in the Riviera Maya: Developer Guide",
+ "desc": "Building a plaza comercial: land use and parking, anchor tenant logic, shell specification, common-area costs, tenant coordination and cost per leasable m2.",
+ "intro": [
+   "The neighbourhood plaza comercial is the workhorse of retail development in this corridor &mdash; a pharmacy, a convenience store, a bank agent, a couple of restaurants, a gym, a dental practice, a laundry. It serves the residential growth that the corridor keeps producing, it leases to local and regional operators rather than international brands, and its economics are unforgiving in a way that is easy to miss: the parking ratio sets your leasable area, and the anchor tenant sets your footfall.",
+   "This is a development guide for that product: the land-use and parking arithmetic, how to think about the tenant mix, what to build and what to leave to tenants, the common-area systems that determine operating cost, and realistic cost per leasable square metre."
+ ],
+ "sections": [
+  ("Parking Sets Your Leasable Area",
+   """    <p>Do this arithmetic before anything else, because it determines whether the site works at all.</p>
+    <ul>
+      <li><strong>Retail parking ratios are demanding,</strong> and restaurants are usually assessed more heavily than shops. A site's permitted leasable area is therefore not CUS &mdash; it is whatever the required spaces leave room for, plus circulation, service access and landscaping.</li>
+      <li><strong>Surface parking is the norm</strong> for neighbourhood plazas and consumes most of the site. Structured parking at $180,000&ndash;$400,000 MXN per space rarely pencils out for this product unless land values are exceptional.</li>
+      <li><strong>Visibility and access matter more than area.</strong> A plaza on the correct side of the road for the evening commute, with an easy in-and-out turn, outperforms a larger one that is awkward to enter. Check permitted turning movements with the road authority before you design the access.</li>
+      <li><strong>Service and refuse access</strong> separate from customer parking, with turning for delivery vehicles &mdash; planners check it and it is painful to retrofit.</li>
+      <li><strong>Land use</strong> must permit commercial and all the specific uses you intend: food service, alcohol, healthcare, gym and vehicle-related uses each have their own requirements, and some are restricted near schools or residential zones.</li>
+      <li><strong>Stormwater.</strong> A large paved area on karst needs designed drainage and infiltration; sheet flow into a neighbour's lot or the street is both a planning and a liability problem.</li>
+    </ul>"""),
+  ("Anchors, Mix and What You Build",
+   """    <p><strong>The anchor sets the plaza.</strong> In this corridor the reliable anchors are a convenience store or mini-market, a pharmacy chain, or a bank branch or agent &mdash; uses that generate daily trips. Around them the complementary mix that works: food and beverage with terrace space, a gym or studio, a dental or medical practice, a laundry, a mobile-phone and services shop, and a hair or beauty salon. Anchors negotiate hard on rent and on shell condition, and they are worth it: the smaller units price off the footfall the anchor brings.</p>
+    <p><strong>What to build as landlord, and what to leave:</strong></p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Element</th><th>Usual landlord scope</th></tr></thead>
+      <tbody>
+        <tr><td>Structure, roof, external walls, storefront opening</td><td>Landlord</td></tr>
+        <tr><td>Floor slab, screed to level</td><td>Landlord</td></tr>
+        <tr><td>Services capped at the unit: power with meter, water, drainage</td><td>Landlord &mdash; and size them generously</td></tr>
+        <tr><td>Extraction route to roof for food units</td><td>Landlord &mdash; build it into designated units or you cannot lease them to restaurants</td></tr>
+        <tr><td>Grease trap provision for food units</td><td>Landlord</td></tr>
+        <tr><td>Internal partitions, ceilings, finishes, AC</td><td>Tenant</td></tr>
+        <tr><td>Storefront glazing and signage within criteria</td><td>Tenant, to landlord's design criteria</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Two decisions repay themselves many times. First, designate two or three units as food-capable from the start, with extraction routes, grease provision and heavier power and water &mdash; retrofitting extraction through a finished roof is expensive and sometimes impossible, and restaurants are the highest-rent tenants in a neighbourhood plaza. Second, write and enforce storefront design criteria; a plaza where every tenant improvises its signage looks cheap within two years and rents accordingly.</p>"""),
+  ("Common Areas, Operating Cost and Numbers",
+   """    <p><strong>The common-area systems determine your service charge,</strong> and the service charge determines how tenants feel about renewing. The items that matter here: parking lighting on efficient fixtures with photocell and zone control; shade in the parking area, which in this climate measurably affects where customers choose to park and how long they stay; irrigation on harvested rainwater or a well rather than potable supply; a wastewater treatment plant where no sewer serves the site, sized for full tenancy including restaurants; refuse enclosure with grease and organics handling; security cameras and, usually, a guard post; and a backup generator covering common areas and the treatment plant &mdash; wet-season outages otherwise close the plaza.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>Shell construction, per leasable m&sup2;</td><td>$9,000&ndash;$16,000</td></tr>
+        <tr><td>Food-capable unit premium (extraction, grease, services), each</td><td>$150,000&ndash;$500,000</td></tr>
+        <tr><td>Surface parking, paving, drainage and lighting, per space</td><td>$25,000&ndash;$70,000</td></tr>
+        <tr><td>Landscaping and shade planting</td><td>$400&ndash;$1,500 per m&sup2; of open area</td></tr>
+        <tr><td>Treatment plant sized for full tenancy</td><td>$400,000&ndash;$1,500,000</td></tr>
+        <tr><td>Generator for common areas with ATS</td><td>$300,000&ndash;$900,000</td></tr>
+        <tr><td>Signage totem and wayfinding</td><td>$150,000&ndash;$600,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Compliance and programme.</strong> The plaza carries Civil Protection for the whole development plus each tenancy, accessibility across common areas and parking, NOM-compliant electrical with per-tenancy metering, environmental requirements for treatment and stormwater, and the municipal licences. Construction for a neighbourhood plaza typically runs eight to fourteen months, but tenant fit-outs then follow in sequence &mdash; and the practical lesson from every plaza we have worked on is to coordinate those fit-outs actively. Ten tenants each appointing their own contractor, working to their own programme, on one site with one set of services, produces conflicts that the landlord ends up paying for. A landlord-managed fit-out coordination process, with a contractor induction, defined hours and a damage deposit, is cheap and it is the difference between opening the plaza fully let and opening it half finished.</p>"""),
+ ],
+ "faq": [
+  ("What determines how much leasable area a plaza site supports?",
+   "The parking ratio, not CUS. Retail parking requirements are demanding and restaurants are assessed more heavily than shops, so permitted leasable area is whatever the required spaces leave room for after circulation, service access and landscaping. Structured parking at $180,000&ndash;$400,000 MXN per space rarely pencils out for a neighbourhood plaza."),
+  ("Which tenants anchor a plaza in this corridor?",
+   "Uses that generate daily trips: a convenience store or mini-market, a pharmacy chain, or a bank branch or agent. Around them, food and beverage with terrace space, a gym or studio, a dental or medical practice, a laundry, a phone and services shop and a salon. Anchors negotiate hard, and the smaller units price off the footfall they bring."),
+  ("What should the landlord build and what should tenants do?",
+   "Landlord: structure, roof, walls, storefront opening, slab, and services capped at each unit with meters &mdash; plus extraction routes and grease provision in the units designated for food, because retrofitting extraction through a finished roof is expensive and sometimes impossible. Tenants: partitions, ceilings, finishes, air conditioning and storefront within the landlord's design criteria."),
+  ("What does plaza construction cost per leasable square metre?",
+   "Shell construction runs $9,000&ndash;$16,000 MXN per leasable m&sup2;. Food-capable units add $150,000&ndash;$500,000 each; surface parking $25,000&ndash;$70,000 per space; a treatment plant sized for full tenancy $400,000&ndash;$1,500,000; and a common-area generator $300,000&ndash;$900,000."),
+  ("How do you manage ten tenant fit-outs at once?",
+   "Actively, as landlord. Ten tenants with ten contractors, ten programmes and one set of site services produces conflicts the landlord ends up paying for. A coordination process with contractor induction, defined working hours, a damage deposit and a single point of control is inexpensive, and it is the difference between opening fully let and opening half finished."),
+ ],
+}
+
+CONTENT["school-construction-quintana-roo"] = {
+ "title": "School Construction in Quintana Roo: Standards, Safety, Costs",
+ "desc": "Building a private school or nursery: SEP incorporation requirements, classroom and egress standards, hurricane shelter considerations, playgrounds and cost per m2.",
+ "intro": [
+   "Private school demand in the corridor tracks its residential growth, and it is concentrated in specific products: bilingual primary schools, international-curriculum schools serving expatriate families, Montessori and alternative programmes, and nurseries and daycare, which are the fastest-growing segment because both parents in most arriving families work.",
+   "Building for education is unlike other commercial construction in one important respect: the operating licence is contingent on the physical premises. The authorising body reviews the building against a schedule of requirements, and a design that does not meet them cannot be licensed regardless of quality. This covers that framework, the standards that shape the plan, the safety items specific to this region, and what schools cost to build."
+ ],
+ "sections": [
+  ("Incorporation Drives the Building",
+   """    <p>A private school in Mexico operating a recognised curriculum needs incorporation &mdash; <em>Reconocimiento de Validez Oficial de Estudios</em> &mdash; from the federal education authority (SEP) or the state education authority, depending on the level and the programme. Part of that process examines the premises: room areas per student, sanitary fixture counts by age group and gender, natural light and ventilation, circulation widths, outdoor and recreation area per student, and specialist spaces where the curriculum requires them.</p>
+    <ul>
+      <li><strong>Establish the requirement schedule before designing.</strong> The numbers differ by level &mdash; nursery, preschool, primary, secondary &mdash; and by programme, and they are prescriptive. Design against the schedule, not against a generic classroom plan.</li>
+      <li><strong>Daycare and nursery carry additional requirements</strong> covering ratios, safety, food handling and sometimes separate authorisation paths. These are the strictest premises requirements in the sector, and they are strict for good reason.</li>
+      <li><strong>International-curriculum schools</strong> layer accreditation body requirements on top of the Mexican ones &mdash; typically larger specialist spaces, libraries and sports provision.</li>
+      <li><strong>Municipal layer:</strong> land use permitting educational use (which is not available everywhere and can be restricted relative to traffic-sensitive streets), construction licence and DRO, parking including a workable drop-off arrangement, accessibility, and Civil Protection.</li>
+      <li><strong>Traffic and drop-off</strong> is the item that generates neighbour objections and municipal scrutiny. Design queuing and turning on site rather than on the street, and do it before the plan is fixed.</li>
+    </ul>
+    <p>Engage an education-regulatory consultant at concept stage, the same way clinics need a health-regulatory consultant. Retrofitting compliance into a completed building is the expensive path, and in this sector it can mean the building cannot open.</p>"""),
+  ("Classrooms, Egress and Hurricane Safety",
+   """    <p><strong>Classroom design fundamentals for this climate:</strong> cross-ventilation so the room is usable when the air conditioning is off (which happens), shading on every window so no child sits in direct sun, ceiling height and fans, acoustic treatment on the ceiling plane because a reverberant classroom is exhausting for teachers, and daylight from more than one direction where the plan allows. Single-loaded plans with external circulation &mdash; covered walkways rather than internal corridors &mdash; work extremely well here: they ventilate, they cost less, and they make egress simple.</p>
+    <p><strong>Egress and Civil Protection</strong> deserve particular attention in a building full of children:</p>
+    <ul>
+      <li>Two means of escape from every classroom block, with doors opening in the direction of travel and travel distances within limits for the occupancy.</li>
+      <li>Stairs sized for simultaneous evacuation, with handrails at child height as well as adult.</li>
+      <li>Emergency lighting, signage, extinguishers, detection where required, and a documented internal civil-protection programme with drills.</li>
+      <li>Assembly point on site, sized and marked, and reachable without crossing vehicle routes.</li>
+      <li>Fencing and controlled access &mdash; single supervised entry point, with the drop-off arrangement separated from pedestrian routes.</li>
+    </ul>
+    <p><strong>Hurricane considerations are specific to this region.</strong> Schools are frequently designated as temporary shelters, and even where yours is not, parents will ask what happens during a storm. That argues for a reinforced concrete core building with impact-rated or shuttered glazing, a generator, water storage, and at least one space that can hold occupants safely. Where a building is formally intended as a shelter, that changes the structural and services brief substantially and should be established at the start rather than claimed afterwards.</p>"""),
+  ("Outdoor Space, Playgrounds and Cost",
+   """    <p><strong>Outdoor area per student is a licensing requirement and the hardest thing to retrofit</strong> &mdash; it is why urban school sites in Playa del Carmen are constrained. Shade is the local specific: an unshaded playground in this climate is unusable from ten in the morning, so shade structures, canopies and planted trees are functional requirements rather than amenities. Playground surfacing needs impact attenuation appropriate to equipment height, and equipment itself should be specified for marine and UV exposure &mdash; galvanised or marine-grade coated steel with stainless fixings, and plastics with genuine UV stabilisation, because ordinary playground equipment chalks and becomes brittle within a few years here.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Nursery / daycare, purpose-built</td><td>$14,000&ndash;$26,000</td><td>$780&ndash;$1,445</td></tr>
+        <tr><td>Primary school classroom blocks</td><td>$12,000&ndash;$22,000</td><td>$670&ndash;$1,225</td></tr>
+        <tr><td>Specialist spaces (laboratory, library, music, art)</td><td>$18,000&ndash;$32,000</td><td>$1,000&ndash;$1,780</td></tr>
+        <tr><td>Covered multipurpose court / sports hall</td><td>$7,000&ndash;$16,000</td><td>$390&ndash;$890</td></tr>
+        <tr><td>Playground with shade and safety surfacing</td><td>$2,500&ndash;$7,000</td><td>$139&ndash;$390</td></tr>
+        <tr><td>Kitchen and dining (where provided)</td><td>$20,000&ndash;$38,000</td><td>$1,110&ndash;$2,110</td></tr>
+        <tr><td>Treatment plant, water storage, generator</td><td>$600,000&ndash;$2,500,000 total</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Phasing is the norm and should be designed in.</strong> Most private schools here open with preschool and lower primary and add year groups annually. That means a masterplan with services, circulation and structure sized for the final school, built in phases that each function independently and can be occupied while the next phase is under construction &mdash; with construction access segregated from the operating school, which is a Civil Protection and safeguarding requirement as much as a logistical one. Getting that masterplan right at the start is what keeps years three through eight from being disruptive and expensive.</p>"""),
+ ],
+ "faq": [
+  ("What approvals does a private school need in Quintana Roo?",
+   "Incorporation (RVOE) from the federal or state education authority for a recognised curriculum, which includes a review of the premises against a prescriptive schedule: room areas per student, sanitary fixtures by age and gender, natural light and ventilation, circulation widths and outdoor area per student. Plus the municipal layer &mdash; land use permitting education, licence and DRO, parking with a workable drop-off, accessibility and Civil Protection."),
+  ("How much does it cost to build a school here?",
+   "Primary classroom blocks run $12,000&ndash;$22,000 MXN per m&sup2;, purpose-built nursery or daycare $14,000&ndash;$26,000, specialist spaces $18,000&ndash;$32,000, a covered multipurpose court $7,000&ndash;$16,000, and playgrounds with shade and safety surfacing $2,500&ndash;$7,000. Site services &mdash; treatment plant, water storage, generator &mdash; add $600,000&ndash;$2,500,000."),
+  ("What classroom design works in this climate?",
+   "Cross-ventilated rooms that are usable with the air conditioning off, shading on every window so no child sits in direct sun, good ceiling height with fans, and acoustic treatment on the ceiling because a reverberant classroom exhausts teachers. Single-loaded plans with covered external walkways instead of internal corridors ventilate better, cost less and simplify egress."),
+  ("Do schools here need to function as hurricane shelters?",
+   "Schools are frequently designated as temporary shelters, and parents will ask regardless. Even where yours is not designated, a reinforced concrete core building with impact-rated or shuttered glazing, a generator, water storage and at least one space that can safely hold occupants is the sensible brief. Formal shelter designation changes the structural and services requirements substantially, so establish it at the start."),
+  ("Can a school be built in phases?",
+   "Yes, and most are &mdash; typically opening with preschool and lower primary and adding year groups annually. Design a masterplan with services, circulation and structure sized for the final school, with each phase functioning independently and construction access fully segregated from the operating school, which is a safeguarding and Civil Protection requirement as much as a logistical one."),
+ ],
+}
+
+CONTENT["hostel-construction-playa-del-carmen"] = {
+ "title": "Hostel Construction in Playa del Carmen: Beds, Baths, Compliance",
+ "desc": "Building a hostel that works: bed density vs comfort, bathroom ratios, Civil Protection and egress for dormitories, noise separation, and cost per bed in 2026.",
+ "intro": [
+   "Playa del Carmen has one of the deepest backpacker and budget-traveller markets in Mexico, and the hostel product has changed: the guest who once wanted the cheapest bunk now compares privacy pods, air conditioning, lockers, a decent kitchen and a pool, and reviews punish hostels that skimp on any of them. The economics still depend on beds per square metre, but the rating &mdash; which drives occupancy and rate &mdash; depends on the things that compete with bed count.",
+   "This covers how to resolve that tension: density and layout, bathroom ratios that keep reviews good, the compliance requirements that dormitory accommodation carries, the noise separation that decides whether guests sleep, and what a hostel costs to build per bed."
+ ],
+ "sections": [
+  ("Density Against Rating",
+   """    <p>Every square metre you give to comfort is a bed you did not build, and every bed you add past a threshold costs you rating points. Practical planning figures for this market:</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Configuration</th><th>Area per bed (incl. common)</th><th>Market position</th></tr></thead>
+      <tbody>
+        <tr><td>Dense dormitory, 8&ndash;12 beds, shared bath</td><td>8&ndash;11 m&sup2;</td><td>Budget; rating pressure on noise and bathrooms</td></tr>
+        <tr><td>Standard dormitory, 6&ndash;8 beds, good common areas</td><td>11&ndash;15 m&sup2;</td><td>The reliable middle of this market</td></tr>
+        <tr><td>Pod dormitory with privacy curtains, lights, power, locker</td><td>13&ndash;17 m&sup2;</td><td>Premium hostel &mdash; the current growth segment</td></tr>
+        <tr><td>Private rooms with en suite (mixed into the hostel)</td><td>22&ndash;30 m&sup2;</td><td>Highest revenue per m&sup2;; couples and older guests</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Mix formats deliberately.</strong> The strongest performers in Playa del Carmen combine pod dormitories with a meaningful number of private en-suite rooms: the dormitories fill the calendar and carry the social atmosphere, the privates carry the margin and extend the guest age range. A pure dormitory hostel is more exposed to seasonality and to a single bad review cycle.</p>
+    <p><strong>Non-negotiables in this market,</strong> because reviews here are explicit about them: air conditioning in every dormitory (not fans), a large secure locker per bed inside the room, a reading light and two power sockets at every bed, a proper guest kitchen, and a pool or at least a genuinely usable shaded outdoor social space. Those are the amenities guests compare, and they cost far less than the rate difference they support.</p>"""),
+  ("Bathrooms, Compliance and Egress",
+   """    <p><strong>Bathroom ratio is the single most common complaint in hostel reviews.</strong> Plan one shower and one WC per four to six beds as a working target, better at four, and locate them so a guest does not cross the social area in a towel. Individual lockable shower-and-WC cubicles rather than a communal gang bathroom rate noticeably better, and are worth the extra plumbing. In construction terms: full waterproofing under tile with falls to linear drains, large-format porcelain to reduce joints, 316 stainless fittings, mechanical extraction on a timer running past closing, and hot water sized for the morning peak &mdash; which is the design case, not the average.</p>
+    <p><strong>Dormitory accommodation carries a real compliance layer:</strong></p>
+    <ul>
+      <li><strong>Civil Protection</strong> with occupancy calculated on the actual bed count: two means of escape, travel distances, doors opening in the direction of travel, emergency lighting, signage, extinguishers, and detection and alarm &mdash; interlinked smoke detection in sleeping areas is the item to specify properly rather than minimally.</li>
+      <li><strong>Bunk construction and egress from the bed:</strong> stable steel frames anchored where necessary, guard rails on upper bunks, ladders rather than end-rungs, and clear aisle widths.</li>
+      <li><strong>Municipal lodging licence</strong> for the accommodation activity, plus food-service requirements if you have a bar or kitchen serving guests, and alcohol permitting if you serve it.</li>
+      <li><strong>Accessibility:</strong> accessible WC and, where feasible, an accessible room and step-free route.</li>
+      <li><strong>The state lodging tax and platform withholding</strong> apply to hostel revenue as they do to any accommodation &mdash; an operating matter to set up with an accountant before opening.</li>
+    </ul>"""),
+  ("Noise, Durability and Cost Per Bed",
+   """    <p><strong>Noise separation is what guests actually rate you on.</strong> A hostel is a building where people sleep next to people socialising, on different schedules. What works: locate the bar, kitchen and social terrace as far from sleeping areas as the plan allows and preferably with a buffer between; take dormitory partitions to the structural slab rather than stopping at a ceiling; insulate those cavities; seal dormitory doors; put resilient layers under upper-floor finishes above sleeping rooms; and isolate plant &mdash; pool pumps, AC condensers, water pumps &mdash; away from bedheads with anti-vibration mounts. Guest circulation carrying late-night footfall past dormitory doors is a design error worth redrawing the plan to avoid.</p>
+    <p><strong>Durability specification</strong> for a building that turns over every few nights: large-format porcelain floors throughout, washable paint with tiled or clad surfaces to shoulder height in circulation, laminate joinery with 316 hardware, steel bunk frames rather than timber, replaceable mattress protectors, and standardised fittings so one set of spares serves the whole building. Everything should be repairable by the maintenance person in an afternoon.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>New-build hostel, per m&sup2;</td><td>$15,000&ndash;$24,000</td></tr>
+        <tr><td>Conversion of an existing building, per m&sup2;</td><td>$9,000&ndash;$18,000</td></tr>
+        <tr><td>Total build cost per bed, standard dormitory format</td><td>$180,000&ndash;$330,000</td></tr>
+        <tr><td>Total build cost per bed, pod format with good common areas</td><td>$260,000&ndash;$450,000</td></tr>
+        <tr><td>Private en-suite room, each</td><td>$450,000&ndash;$900,000</td></tr>
+        <tr><td>Pool, small, with plant and safety provision</td><td>$350,000&ndash;$900,000</td></tr>
+        <tr><td>Guest kitchen, commercial-grade</td><td>$250,000&ndash;$700,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Conversions</strong> are common in Playa del Carmen and often the better entry: an existing building in a walkable location, restructured internally. The risks are the usual ones &mdash; existing structure and waterproofing condition, whether egress can be brought to compliance, and whether the extraction and drainage a kitchen needs can be routed. Assess all three before committing, because a building that cannot achieve compliant egress cannot become a hostel at any price.</p>"""),
+ ],
+ "faq": [
+  ("How much space should I plan per hostel bed?",
+   "Including common areas: 8&ndash;11 m&sup2; per bed for a dense dormitory, 11&ndash;15 m&sup2; for a standard format with good common space, 13&ndash;17 m&sup2; for pod dormitories, and 22&ndash;30 m&sup2; for private en-suite rooms. The strongest performers in Playa del Carmen mix pods with a meaningful number of privates &mdash; dormitories fill the calendar, privates carry the margin."),
+  ("What bathroom ratio does a hostel need?",
+   "Target one shower and one WC per four to six beds, and closer to four is better &mdash; bathroom ratio is the most common complaint in hostel reviews. Individual lockable shower-and-WC cubicles rate noticeably better than a communal gang bathroom, and hot water should be sized for the morning peak rather than the average."),
+  ("What does it cost to build a hostel in Playa del Carmen?",
+   "New-build runs $15,000&ndash;$24,000 MXN per m&sup2; and conversion of an existing building $9,000&ndash;$18,000. Per bed, that works out at $180,000&ndash;$330,000 for a standard dormitory format and $260,000&ndash;$450,000 for pods with good common areas. Private en-suite rooms are $450,000&ndash;$900,000 each."),
+  ("What compliance does dormitory accommodation carry?",
+   "Civil Protection with occupancy based on actual bed count &mdash; two means of escape, travel distances, doors opening in the direction of travel, emergency lighting and signage, extinguishers, and interlinked smoke detection in sleeping areas &mdash; plus bunk safety (guard rails, ladders, aisle widths), the municipal lodging licence, food and alcohol permits where applicable, and accessibility provision."),
+  ("How do you stop noise ruining the guest experience?",
+   "Separate the social and sleeping zones as far as the plan allows with a buffer between, take dormitory partitions to the structural slab and insulate them, seal doors, use resilient layers under floors above sleeping rooms, and isolate pool pumps, condensers and water pumps away from bedheads on anti-vibration mounts. Never route late-night circulation past dormitory doors."),
+ ],
+}
+
+CONTENT["apart-hotel-construction-riviera-maya"] = {
+ "title": "Apart-Hotel Construction in the Riviera Maya: The Hybrid Model",
+ "desc": "Why apart-hotels suit this market: unit mix and kitchenette design, lodging licence vs condo regime, services sized for self-catering, and cost per key.",
+ "intro": [
+   "The apart-hotel &mdash; serviced apartments with hotel-style reception, housekeeping and amenities &mdash; is arguably the best-fitted product for this corridor. It captures the families and longer-stay guests that a standard hotel room cannot hold, it competes directly with the private rental market while offering the reliability a hotel brand implies, and its longer average stays mean lower turnover cost and steadier occupancy than a room-only hotel.",
+   "It is also a genuinely hybrid building, and that is where developers get into trouble: it needs hotel infrastructure and residential kitchens, hotel compliance and apartment-quality acoustics, and a legal structure that depends on whether you will ever sell units. This covers unit mix, the design decisions self-catering forces, the legal fork, and cost per key."
+ ],
+ "sections": [
+  ("Unit Mix and Kitchenette Design",
+   """    <p><strong>Mix determines your market.</strong> The configurations that perform in this corridor:</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Unit</th><th>Area</th><th>Guest</th></tr></thead>
+      <tbody>
+        <tr><td>Studio with kitchenette</td><td>28&ndash;40 m&sup2;</td><td>Couples, solo long-stay, remote workers</td></tr>
+        <tr><td>One bedroom with full kitchen</td><td>45&ndash;65 m&sup2;</td><td>Couples on longer stays, small families</td></tr>
+        <tr><td>Two bedroom, two bath</td><td>70&ndash;100 m&sup2;</td><td>Families and two couples &mdash; the strongest rate per m&sup2;</td></tr>
+        <tr><td>Lock-off suite (one bed + adjoining studio)</td><td>65&ndash;90 m&sup2;</td><td>Sells as one or two keys &mdash; best flexibility in the building</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>A useful starting mix for a 30&ndash;50 key property here: roughly a third studios, a third one-bedrooms, a quarter two-bedrooms, and a handful of lock-offs. The two-bedroom units are usually the rate leaders, and the lock-offs give the revenue manager the most room to work with across seasons.</p>
+    <p><strong>Kitchenettes are where apart-hotels are won or lost.</strong> Guests choosing this product over a hotel room are choosing it to cook, and a token kitchenette generates worse reviews than no kitchen at all. What needs to be there: an induction or gas hob with real extraction to outside, a full-height fridge (not a minibar unit), a proper sink with a drainer, a dishwasher in one-bedroom units and above, adequate counter space, and actual storage for crockery and dry goods. And the extraction requirement is a building-wide consequence: thirty kitchens need thirty ducted extraction routes designed into the risers from the start, because recirculating hoods leave cooking smells and moisture in the unit and eventually in the corridor.</p>"""),
+  ("Lodging Licence or Condo Regime: the Legal Fork",
+   """    <p>This decision shapes the project's cost, financing and operation, and it should be taken before design, not after.</p>
+    <ul>
+      <li><strong>Single-owner apart-hotel.</strong> You own the building, operate it as lodging, and need the municipal lodging licence, Civil Protection approval, health requirements for any food service, and the state lodging tax arrangement. Simplest to operate, all revenue and all control in one place, and financed as a hotel asset.</li>
+      <li><strong>Condominium with a rental programme.</strong> You establish a condominium regime, sell units to individual investors, and operate a rental pool with the owners under a management agreement. This funds construction from pre-sales, which is why it is common &mdash; but it brings the regime, the bylaws, participation percentages, the management contract, and a group of owners with opinions. The bylaws must explicitly permit the short-term rental operation you intend, and the management agreement has to deal with revenue pooling, owner use and reserves.</li>
+      <li><strong>The mixed version</strong> &mdash; some units sold, some retained &mdash; is common and is the most complex to document. Get the regime and the management agreement drafted together, by a lawyer who has done it, before marketing anything.</li>
+      <li><strong>Either way,</strong> the building needs hotel-grade compliance: occupancy-based egress, emergency systems, accessibility, and commercial electrical and water provision. The condo route does not reduce the compliance layer &mdash; it adds a legal one.</li>
+    </ul>"""),
+  ("Services, Acoustics and Cost Per Key",
+   """    <p><strong>Self-catering changes the services sizing.</strong> Guests in apartments use substantially more water than hotel guests and use it at different times: dishwashers, laundry, longer occupancy. Size the cistern, the hot water plant, the pressure system and the wastewater treatment for full occupancy of self-catering units, not for a hotel's per-key averages. Guest laundry &mdash; whether in-unit in larger apartments or as a serviced facility &mdash; is expected in this product and needs its own water, drainage and extraction provision.</p>
+    <p><strong>Acoustics matter more than in a hotel,</strong> because guests cook, use appliances and stay in the unit longer. Party walls and floors between units need to be built to apartment standards: partitions to the structural slab, insulated cavities, resilient layers under floor finishes, sealed doors, and plumbing stacks isolated from bedroom walls &mdash; a dishwasher running next to a neighbour's bed is a review problem.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>MXN</th><th>USD</th></tr></thead>
+      <tbody>
+        <tr><td>Construction, mid-range apart-hotel, per key</td><td>$1,300,000&ndash;$2,400,000</td><td>$72,000&ndash;$133,000</td></tr>
+        <tr><td>Construction, premium, per key</td><td>$2,400,000&ndash;$4,200,000</td><td>$133,000&ndash;$233,000</td></tr>
+        <tr><td>FF&amp;E per key (higher than a hotel &mdash; kitchens and more furniture)</td><td>$250,000&ndash;$650,000</td><td>$13,900&ndash;$36,100</td></tr>
+        <tr><td>Back of house: reception, laundry, housekeeping, stores</td><td>Allow 8&ndash;15% of gross floor area</td><td>&mdash;</td></tr>
+        <tr><td>Treatment plant, cistern and hot water for self-catering occupancy</td><td>$1,200,000&ndash;$4,000,000</td><td>&mdash;</td></tr>
+        <tr><td>Pool, terrace and common amenity</td><td>$1,500,000&ndash;$6,000,000</td><td>&mdash;</td></tr>
+        <tr><td>Condominium regime and management documentation</td><td>$400,000&ndash;$1,500,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>The operating case is what makes this product attractive here: longer average stays mean fewer arrivals and departures per occupied night, which cuts housekeeping and front-desk cost per night materially, and guests who cook are less dependent on you providing food service &mdash; so you can run without a full restaurant, which removes the most operationally demanding part of a small hotel. Design it so the coffee and light-breakfast offer is small and efficient, rather than building a kitchen that serves three covers at eight in the morning.</p>"""),
+ ],
+ "faq": [
+  ("What unit mix works for an apart-hotel in the Riviera Maya?",
+   "For a 30&ndash;50 key property, roughly a third studios of 28&ndash;40 m&sup2;, a third one-bedrooms of 45&ndash;65 m&sup2;, a quarter two-bedrooms of 70&ndash;100 m&sup2;, and a few lock-off suites. The two-bedrooms usually lead on rate per m&sup2; because they take families and two couples, and the lock-offs give revenue management the most flexibility across seasons."),
+  ("How much does an apart-hotel cost per key?",
+   "Mid-range construction runs $1,300,000&ndash;$2,400,000 MXN per key ($72,000&ndash;$133,000 USD) and premium $2,400,000&ndash;$4,200,000. FF&amp;E is higher than a hotel at $250,000&ndash;$650,000 per key because of the kitchens and additional furniture, and services sized for self-catering occupancy add $1,200,000&ndash;$4,000,000."),
+  ("Do I need a condominium regime for an apart-hotel?",
+   "Only if you will sell units. A single-owner apart-hotel needs the municipal lodging licence, Civil Protection, health requirements for food service and the state lodging tax arrangement. Selling units to investors with a rental programme requires a condominium regime whose bylaws explicitly permit the operation, plus a management agreement covering revenue pooling, owner use and reserves."),
+  ("What makes an apart-hotel kitchenette good enough?",
+   "A real hob with extraction ducted to outside, a full-height fridge rather than a minibar unit, a proper sink with drainer, a dishwasher in one-bedroom units and above, usable counter space, and storage for crockery and dry goods. Guests choose this product to cook; a token kitchenette generates worse reviews than no kitchen at all."),
+  ("Why do apart-hotels operate more cheaply than hotels?",
+   "Longer average stays mean fewer arrivals and departures per occupied night, which materially cuts housekeeping and front-desk cost, and guests who cook do not need a full food-and-beverage operation &mdash; so you can run with a small, efficient breakfast and coffee offer instead of the most operationally demanding part of a small hotel."),
+ ],
+}
+
+CONTENT["eco-resort-construction-bacalar"] = {
+ "title": "Eco-Resort Construction in Bacalar: Low Impact, Real Constraints",
+ "desc": "Building a small eco-resort on the lagoon: stromatolite and shoreline protection, off-grid systems sized for guests, low-impact structures, logistics and cost per key.",
+ "intro": [
+   "Bacalar attracts eco-resort development for exactly the reasons that make it fragile: a freshwater lagoon of extraordinary clarity, living stromatolite formations along parts of the shore, dark skies, and a setting that sells itself. The development that has already arrived has produced visible consequences, enforcement attention has followed, and any new project there now faces a genuinely demanding environmental review &mdash; which is appropriate.",
+   "This is a build guide for a small, honest eco-resort: what the lagoon rules actually permit, how to size off-grid systems for paying guests rather than for a household, the structures and materials that suit the place, the logistics of building four hours from the corridor's supply chain, and cost per key."
+ ],
+ "sections": [
+  ("What the Lagoon Permits",
+   """    <p>Every design decision in Bacalar is downstream of the water, because the karst under the site drains into it and a closed lagoon cannot dilute what arrives.</p>
+    <ul>
+      <li><strong>Wastewater is the project.</strong> A resort's nutrient load is many times a house's. Treatment must be properly engineered, generously sized for peak occupancy, maintained under a documented regime, and discharged with correct setbacks &mdash; and this is the element the review examines hardest, because nutrient loading is directly implicated in the algal growth and loss of clarity already visible on parts of the lagoon.</li>
+      <li><strong>Stromatolites cannot be disturbed.</strong> Where these living formations occur along the shore they cannot be walked on, dredged, built over or shaded into decline. Shoreline works near them draw the highest scrutiny, and structures over the water have been the subject of enforcement elsewhere on the lagoon.</li>
+      <li><strong>Shoreline setbacks and the federal zone</strong> at the water's edge apply. Docks, swimming platforms and over-water decks are separately permitted questions, not automatic rights of a lakefront parcel.</li>
+      <li><strong>Vegetation and sediment.</strong> Clearing is authorised and limited, and construction-phase sediment control matters as much as effluent &mdash; runoff carrying disturbed soil into the lagoon is equally damaging.</li>
+      <li><strong>Authorities:</strong> the municipality of Bacalar for land use and licence, SEMA for state environmental impact, with federal involvement depending on proximity to water and project scale. Plan for a long file and start it first.</li>
+    </ul>
+    <p>The honest design conclusion: a project set back from the shoreline, low in density, treating its own water to a high standard and touching the water's edge minimally is approvable and is also the better product. The market coming to Bacalar pays for clarity, quiet and dark skies &mdash; the three things that maximising keys per hectare destroys.</p>"""),
+  ("Off-Grid Systems Sized for Guests",
+   """    <p>Guests use far more of everything than owners do, and they use it at the same times. Size accordingly.</p>
+    <ul>
+      <li><strong>Power.</strong> A guest room with air conditioning, hot water, lighting and charging, plus back-of-house refrigeration, laundry and a kitchen, is a substantial load. Solar with battery storage can carry a small resort, but it has to be designed against a real load schedule and a real autonomy target &mdash; and almost every credible system includes a generator for backup and for peak laundry and kitchen loads rather than pretending otherwise.</li>
+      <li><strong>Water.</strong> Guests use 200&ndash;400+ litres per occupied room per day depending on the amenity level. Combine rainwater harvesting (1,200+ mm of annual rainfall on large roof areas is productive), a well with treatment, and storage sized for the dry-season gap and for peak occupancy.</li>
+      <li><strong>Hot water.</strong> Solar thermal is excellent here and pays back quickly, with LP gas backup for the morning peak. Size the peak, not the average &mdash; a resort's showers happen within a two-hour window.</li>
+      <li><strong>Wastewater.</strong> Treatment sized for full occupancy plus the kitchen and laundry, with sludge management contracted and documented. Greywater separation for irrigation reduces the treated load and is worth designing in.</li>
+      <li><strong>Cooling.</strong> Design so air conditioning is optional in the shoulder months: cross-ventilation, deep shade, high ceilings, ceiling fans, light roofs. Every watt of cooling you design out is battery capacity you do not buy.</li>
+      <li><strong>Connectivity.</strong> Guests expect it even in an eco-resort. Fixed wireless or satellite with a backup path, and it is worth doing well &mdash; remote workers are a strong long-stay segment for this product.</li>
+    </ul>"""),
+  ("Structures, Logistics and Cost Per Key",
+   """    <p><strong>What suits the place</strong> is also what suits the constraints: low-rise, lightweight structures on point foundations rather than continuous slabs, raised platforms that keep the ground plane intact, palapa and timber roofs, local stone, chukum, cross-ventilated plans, and generous shade. Casitas dispersed among retained vegetation disturb less, read better and permit more easily than a single large block &mdash; and they let you build in phases, which is how most small resorts here should be funded.</p>
+    <p><strong>The logistics are the other half of the budget.</strong> Bacalar is 3.5&ndash;4 hours from Playa del Carmen and about 40 minutes from Chetumal. Basic materials come from Chetumal or locally; specialist items, quality hardware, aluminium systems and specified equipment come from the corridor with freight and lead time. Specialist trades &mdash; high-standard chukum, complex glazing, treatment plant and pool commissioning &mdash; usually mean mobilising crews with travel and accommodation. Supervision needs to be resident rather than a weekly visit, and the programme needs float, because a component that is a two-hour errand in Playa del Carmen is a two-day problem there.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>MXN</th><th>USD</th></tr></thead>
+      <tbody>
+        <tr><td>Casita, palapa-roofed, mid-range, per key</td><td>$900,000&ndash;$1,700,000</td><td>$50,000&ndash;$94,000</td></tr>
+        <tr><td>Casita, premium / design-led, per key</td><td>$1,700,000&ndash;$2,800,000</td><td>$94,000&ndash;$156,000</td></tr>
+        <tr><td>Common areas: reception, restaurant, dock-side palapa</td><td>$3,000,000&ndash;$12,000,000</td><td>&mdash;</td></tr>
+        <tr><td>Off-grid power with storage and generator backup</td><td>$1,500,000&ndash;$5,000,000</td><td>&mdash;</td></tr>
+        <tr><td>Water: harvesting, well, treatment, storage</td><td>$600,000&ndash;$2,500,000</td><td>&mdash;</td></tr>
+        <tr><td>Wastewater treatment for full occupancy</td><td>$500,000&ndash;$1,800,000</td><td>&mdash;</td></tr>
+        <tr><td>Environmental studies, permits and consultants</td><td>$400,000&ndash;$1,500,000</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>One candid note: our base and our crews are in Playa del Carmen, so a Bacalar project is a mobilisation for us and we price the travel, accommodation and resident supervision explicitly rather than burying them. For a straightforward small build, a good Bacalar or Chetumal contractor may serve you better. For a resort where the environmental file, the off-grid engineering and the finish standard are the difficult parts, mobilising a corridor team is usually the right call &mdash; and that conversation belongs before you buy the land, not after.</p>"""),
+ ],
+ "faq": [
+  ("What does an eco-resort cost per key in Bacalar?",
+   "A mid-range palapa-roofed casita runs $900,000&ndash;$1,700,000 MXN per key ($50,000&ndash;$94,000 USD) and a premium design-led one $1,700,000&ndash;$2,800,000. Common areas add $3,000,000&ndash;$12,000,000, off-grid power $1,500,000&ndash;$5,000,000, water systems $600,000&ndash;$2,500,000, wastewater treatment $500,000&ndash;$1,800,000, and environmental permitting $400,000&ndash;$1,500,000."),
+  ("Can I build on the lagoon shore?",
+   "Set back from it, with high-standard treatment and minimal shoreline intervention. Stromatolite formations cannot be walked on, dredged, built over or shaded into decline, and over-water structures have been the subject of enforcement elsewhere on the lagoon. Docks and swimming platforms are separately permitted questions, not automatic rights of a lakefront parcel."),
+  ("How do you size off-grid systems for a resort rather than a house?",
+   "From a real load schedule at peak occupancy, not from a household analogue. Guests use 200&ndash;400+ litres of water per occupied room per day and their hot water demand lands in a two-hour window; back-of-house refrigeration, laundry and kitchen add substantial electrical load. Credible systems combine solar with storage, a generator for peaks and backup, rainwater plus a treated well, and solar thermal with LP backup."),
+  ("Why is wastewater the central issue in Bacalar?",
+   "Because the karst carries whatever infiltrates into a closed lagoon that cannot dilute it, and a resort's nutrient load is many times a house's. Nutrient loading is directly implicated in the algal growth and loss of clarity already visible on parts of the lagoon, which is why treatment sizing, maintenance regime and discharge setbacks are what the environmental review examines hardest."),
+  ("What kind of structures suit an eco-resort there?",
+   "Low-rise lightweight buildings on point foundations rather than continuous slabs, raised platforms that keep the ground plane intact, palapa and timber roofs, local stone and chukum, cross-ventilated plans and deep shade. Dispersed casitas among retained vegetation disturb less, permit more easily, read better to the market, and allow phased construction."),
+ ],
+}
+
+CONTENT["hotel-renovation-cancun-zona-hotelera"] = {
+ "title": "Hotel Renovation in Cancún Hotel Zone: Phasing and Corrosion",
+ "desc": "Renovating a Zona Hotelera property: working while open, chloride damage in 30-year-old concrete, bathroom and MEP replacement, and cost per key in 2026.",
+ "intro": [
+   "Canc&uacute;n's Hotel Zone is built out. The strip of land between the lagoon and the sea has essentially no developable sites left, the remaining land is expensive and held by large operators, and consequently the work here is renovation: reconversion of tired properties, full refurbishment of rooms and public areas, and the structural repair that thirty or forty years of Caribbean exposure eventually forces.",
+   "Hotel renovation is a different discipline from hotel construction. The building is usually operating, the programme is dictated by the low season, the condition of the existing structure is only partly knowable before you open it, and every decision is measured against room-nights lost. This covers how to phase it, what the concrete is likely to look like when you get into it, and what it costs per key."
+ ],
+ "sections": [
+  ("Renovating While Open",
+   """    <p>Almost every Hotel Zone refurbishment happens around guests, and the discipline of that is most of the project management.</p>
+    <ul>
+      <li><strong>Phase by vertical stack or by floor,</strong> not by scattered rooms. A contiguous zone can be isolated, given its own access and services shut-off, and dust-sealed; scattered rooms mean noise and dust everywhere and no clean separation.</li>
+      <li><strong>Work to the low season.</strong> In this market that means the September&ndash;November window, which is also hurricane season &mdash; so the programme has to absorb weather risk and the building has to be weathertight at each stage boundary, not mid-demolition when a storm is named.</li>
+      <li><strong>Separate everything:</strong> construction access, service lifts, waste routes, and worker facilities entirely apart from guest circulation. Guests should not see, hear or smell the work, and in practice that means hoarding, negative-pressure dust control at the boundary, and a strict rule about which lift is which.</li>
+      <li><strong>Noise windows agreed in writing</strong> with the operator, and understood as immovable. Demolition and core drilling in a hotel with occupied rooms two floors below happens in defined hours or it produces refunds.</li>
+      <li><strong>Shut-downs planned, not improvised.</strong> Water, power and drainage isolations need to be mapped against the operating building &mdash; older hotels frequently have no isolation valves where the drawings say they do, which is worth discovering during survey rather than at midnight.</li>
+      <li><strong>A mock-up room, always.</strong> Build one complete room, have the operator and the designer sign it off, resolve every detail in it, and then repeat it. On a 300-key refurbishment the mock-up pays for itself several times over.</li>
+    </ul>"""),
+  ("What You Find When You Open a 30-Year-Old Building",
+   """    <p><strong>Chloride-induced corrosion is the defining condition of older Hotel Zone buildings.</strong> Salt has been migrating through the concrete cover for decades; where cover was thin or the concrete permeable, the reinforcement is corroding and the expanding product spalls the concrete. It shows first at balcony slab edges, on exposed columns and beams, at parapets and around embedded metalwork.</p>
+    <ul>
+      <li><strong>Survey before you price.</strong> Cover meter readings, carbonation and chloride testing, half-cell potential mapping where warranted, and opening up representative areas. This is the single most important pre-contract activity, and the most commonly skipped.</li>
+      <li><strong>Repair properly or repeat it.</strong> Correct concrete repair means cutting back to sound material beyond the corroded zone, cleaning or replacing reinforcement, applying a compatible repair mortar, and then protecting the element &mdash; coatings, or in significant cases cathodic protection. Patching over corroded steel guarantees the repair fails, usually within a few years.</li>
+      <li><strong>Balconies are the priority.</strong> They are the most exposed elements, they carry people, and they are where structural risk concentrates in these buildings.</li>
+      <li><strong>Waterproofing is likely at end of life</strong> on roofs, terraces and bathrooms &mdash; and bathroom leaks through slabs into rooms below are a recurring operational cost that a refurbishment should eliminate rather than decorate over.</li>
+      <li><strong>MEP is usually the real scope.</strong> Original galvanised pipework, undersized electrical capacity for modern room loads, obsolete AC plant, and drainage stacks at the end of their life. Replacing risers and stacks is disruptive, hard to phase and easy to underestimate &mdash; and it is what makes the difference between a refurbishment that lasts fifteen years and one that looks new for three.</li>
+      <li><strong>Asbestos and legacy materials</strong> can be present in buildings of this age; test before demolition rather than during it.</li>
+    </ul>
+    <div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i><strong>Carry a real contingency.</strong> On a hotel refurbishment of this age and exposure, 15&ndash;25% is realistic. The survey reduces uncertainty; it does not remove it, because you cannot open every element before contract.</div>"""),
+  ("Scope, Compliance and Cost Per Key",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN per key</th><th>USD per key</th></tr></thead>
+      <tbody>
+        <tr><td>Soft refurbishment: FF&amp;E, paint, textiles, light bathroom work</td><td>$120,000&ndash;$350,000</td><td>$6,700&ndash;$19,400</td></tr>
+        <tr><td>Full room renovation: bathroom replaced, MEP in room, joinery, finishes</td><td>$350,000&ndash;$900,000</td><td>$19,400&ndash;$50,000</td></tr>
+        <tr><td>Reconversion / repositioning to a higher segment</td><td>$900,000&ndash;$2,200,000</td><td>$50,000&ndash;$122,000</td></tr>
+        <tr><td>Structural concrete repair programme</td><td>$150,000&ndash;$700,000 per key equivalent</td><td>&mdash;</td></tr>
+        <tr><td>Riser and stack replacement (building-wide)</td><td>Price separately &mdash; the largest phasing risk</td><td>&mdash;</td></tr>
+        <tr><td>Public areas: lobby, restaurants, pool deck, spa</td><td>$15,000&ndash;$45,000 per m&sup2;</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Compliance on refurbishment</strong> is where operators sometimes hope the rules will not reopen. They usually do: a change of use or a significant alteration brings the current Civil Protection requirements into scope &mdash; egress, emergency lighting, detection and alarm, extinguishers, evacuation planning &mdash; along with current accessibility obligations, NOM-compliant electrical for anything reworked, and health requirements for food-and-beverage areas. On a repositioning project it is better to budget for bringing the whole property up to current requirements than to discover them selectively during inspections.</p>
+    <p><strong>Two specification decisions worth funding properly in this location.</strong> Glazing: laminated or impact-rated units on exposed elevations, which simultaneously cut the cooling load that dominates the operating bill and keep the envelope intact in a storm. And the marine specification on everything replaced &mdash; 316 stainless for fixings, railings and pool hardware, anodised or marine-grade coated aluminium for glazing and screens, coated coils on condensers. A refurbishment that reinstates 304 stainless and standard powder coat in this exposure is a refurbishment that will be needed again far sooner than the finance model assumes.</p>"""),
+ ],
+ "faq": [
+  ("What does hotel renovation cost per key in Cancún?",
+   "A soft refurbishment of FF&amp;E, paint and textiles runs $120,000&ndash;$350,000 MXN per key. A full room renovation with the bathroom and in-room MEP replaced is $350,000&ndash;$900,000. Repositioning to a higher segment is $900,000&ndash;$2,200,000. Structural concrete repair and riser replacement are priced separately and can be substantial."),
+  ("Can a hotel be renovated while it stays open?",
+   "Yes, and most Hotel Zone projects are. Phase by vertical stack or whole floor so a contiguous zone can be isolated, sealed and serviced separately; work the September&ndash;November low season while keeping the building weathertight at every stage boundary because it is also hurricane season; and keep construction access, lifts and waste routes entirely apart from guest circulation."),
+  ("What structural problems do older Hotel Zone buildings have?",
+   "Chloride-induced reinforcement corrosion, showing first at balcony slab edges, exposed columns and beams, parapets and embedded metalwork. It requires survey before pricing &mdash; cover readings, chloride and carbonation testing, opening up representative areas &mdash; and repair that cuts back beyond the corroded zone and then protects the element. Patching over corroded steel fails within a few years."),
+  ("What contingency should a hotel refurbishment carry?",
+   "Fifteen to twenty-five percent for a building of this age and exposure. A thorough condition survey reduces the uncertainty substantially but cannot remove it, because you cannot open up every element before contract &mdash; and the items that surprise people are usually concealed: reinforcement condition, waterproofing, and the state of risers and drainage stacks."),
+  ("Does renovation trigger current building requirements?",
+   "Generally yes. A change of use or significant alteration brings current Civil Protection requirements into scope &mdash; egress, emergency lighting, detection and alarm, evacuation planning &mdash; plus current accessibility obligations, NOM-compliant electrical for reworked installations, and health requirements in food-and-beverage areas. On a repositioning it is cheaper to budget for full compliance than to meet it piecemeal under inspection."),
+ ],
+}
+
+CONTENT["glamping-construction-riviera-maya"] = {
+ "title": "Glamping Construction in the Riviera Maya: Structures and Permits",
+ "desc": "Building a glamping site: whether tents count as construction, platform and services design, hurricane and humidity reality, and cost per key for safari tents and domes.",
+ "intro": [
+   "Glamping looks like the low-capital way into hospitality here, and it is cheaper than a hotel &mdash; but much less cheap than the tent price suggests. The tent or dome is typically a minority of the cost per key. The platform it stands on, the water and wastewater serving it, the power reaching it, the path connecting it, and the bathroom attached to it are the actual project, and they are conventional construction with conventional permits.",
+   "This covers the regulatory question people hope to avoid, how the structures actually perform in this climate, what services a glamping site needs, and honest cost per key for the formats that work in the corridor."
+ ],
+ "sections": [
+  ("Is a Tent Construction? Effectively, Yes",
+   """    <p>The hopeful reading is that a removable structure avoids the permitting that a building requires. In practice a commercial glamping operation here is treated as a lodging development, and the following all apply:</p>
+    <ul>
+      <li><strong>Land use must permit tourist lodging.</strong> A rural or agricultural classification frequently does not, and this is the first thing to verify &mdash; before the land, ideally.</li>
+      <li><strong>Environmental authorisation.</strong> Vegetation clearing for platforms, paths and services, plus the wastewater solution, put the project into the state environmental process, and in cenote-adjacent or coastal locations into federal considerations too. The tents being removable does not make the site works removable.</li>
+      <li><strong>Construction licence and DRO</strong> for the permanent elements: platforms, foundations, bathroom blocks, the reception and restaurant building, water and treatment infrastructure, roads and paths.</li>
+      <li><strong>Municipal lodging licence</strong> for the accommodation activity, plus food-service and alcohol permits where applicable.</li>
+      <li><strong>Civil Protection,</strong> which for a site of dispersed units means marked evacuation routes, emergency lighting along paths, extinguishers at units and in service areas, an assembly point, and &mdash; specific to this region &mdash; a documented hurricane plan, because the authority and your insurer will both ask what happens to guests and structures when a storm is named.</li>
+      <li><strong>Fire safety for fabric structures:</strong> flame-retardant certification for tent fabric and separation distances between units are reasonable expectations, and are what an insurer will look for.</li>
+    </ul>
+    <p>Treat the permitting as a hotel's, scaled down. Sites that proceed on the assumption that tents are furniture are the ones that get closed.</p>"""),
+  ("Structures That Survive Here",
+   """    <p>The climate is harsh on fabric, and the marketing photographs are usually taken in a dry climate. Honest expectations:</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Structure</th><th>Reality in this climate</th><th>Service life</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Safari / canvas tent</strong></td><td>Beautiful and breathable; UV and mould are the enemies. Needs a generous roof fly or a fixed roof over it, and periodic re-treatment</td><td>3&ndash;7 years for fabric, longer with a protective roof</td></tr>
+        <tr><td><strong>Geodesic dome, PVC-coated fabric</strong></td><td>Sheds rain and wind well; can get hot without careful ventilation and shading; the frame outlasts the skin</td><td>Skin 5&ndash;10 years, frame much longer</td></tr>
+        <tr><td><strong>Bell tent</strong></td><td>Entry-level, most vulnerable to humidity and wind; short cycle</td><td>2&ndash;4 years</td></tr>
+        <tr><td><strong>Cabin or casita with palapa roof</strong></td><td>Not glamping by the purist definition, but far and away the most durable option here and often the better investment</td><td>Decades, with re-thatching on cycle</td></tr>
+        <tr><td><strong>Treehouse / raised platform unit</strong></td><td>Strong market appeal; engineering and access requirements are real</td><td>Depends on structure; timber needs dense species</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Design rules regardless of format:</strong> raise the unit on a ventilated platform clear of the ground, never on grade; give every fabric structure a shading roof if you want it to last; ventilate continuously, because a closed fabric unit in this humidity grows mould within weeks; use dense hardwoods or galvanised steel for platforms with no timber-to-ground contact; and design the units to be struck or secured before a storm &mdash; a hurricane plan that involves removing fabric in a day means the fabric must actually be removable in a day by the staff you have.</p>"""),
+  ("Services, Bathrooms and Cost Per Key",
+   """    <p><strong>The bathroom decision drives the cost model.</strong> A private en-suite per unit is what guests now expect and what rate depends on &mdash; and it means water, drainage and treatment to every unit, which is the largest infrastructure line on the site. Shared bathroom blocks cut that cost dramatically but cap your rate and your market. Composting or low-flush systems reduce water and treatment load and read well to the eco-conscious guest, but they need honest maintenance planning rather than optimism.</p>
+    <ul>
+      <li><strong>Water:</strong> a well with treatment, rainwater harvesting, and storage sized for peak occupancy in the dry season.</li>
+      <li><strong>Wastewater:</strong> treatment before infiltration sized for full occupancy plus kitchen and laundry, with correct setbacks from any cenote &mdash; the technical core of the environmental file.</li>
+      <li><strong>Power:</strong> solar with storage suits this product well, since loads are modest per unit if you avoid air conditioning in favour of ventilation and fans. Where you do offer air conditioning &mdash; and in this climate many guests will expect it &mdash; the load rises sharply and a generator usually joins the system.</li>
+      <li><strong>Paths and lighting:</strong> permeable surfaces, low-level lighting that keeps dark skies (a genuine selling point) and complies with turtle rules on coastal sites, and routes that work in heavy rain and are navigable by a guest carrying luggage.</li>
+      <li><strong>Back of house:</strong> reception, kitchen, laundry, staff facilities and stores &mdash; conventional buildings that carry conventional requirements and are frequently forgotten in glamping budgets.</li>
+    </ul>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>Safari tent or dome unit, supplied</td><td>$120,000&ndash;$450,000</td></tr>
+        <tr><td>Platform, deck and shading roof, per unit</td><td>$120,000&ndash;$400,000</td></tr>
+        <tr><td>Private en-suite bathroom, per unit</td><td>$180,000&ndash;$450,000</td></tr>
+        <tr><td>Services run to each unit (water, drainage, power)</td><td>$80,000&ndash;$250,000</td></tr>
+        <tr><td><strong>Realistic total per key</strong></td><td><strong>$500,000&ndash;$1,300,000</strong></td></tr>
+        <tr><td>Palapa-roofed casita alternative, per key</td><td>$900,000&ndash;$1,700,000</td></tr>
+        <tr><td>Site infrastructure: water, treatment, solar, paths, back of house</td><td>$2,000,000&ndash;$8,000,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Note what that table implies. A glamping key lands at roughly half to two-thirds of a durable palapa casita, and the fabric needs replacing every few years while the casita does not. Glamping earns its place where the experience is the product &mdash; a cenote, a jungle clearing, a lagoon edge, dark skies &mdash; and where a lighter footprint is genuinely easier to authorise than buildings. Where the site would support casitas and the market would pay for them, the arithmetic over ten years usually favours the casitas.</p>"""),
+ ],
+ "faq": [
+  ("Do I need permits for a glamping site if the tents are removable?",
+   "Yes. A commercial glamping operation is treated as a lodging development: the land use must permit tourist lodging, the site works trigger environmental authorisation, the permanent elements &mdash; platforms, bathrooms, reception, services, paths &mdash; need a construction licence and DRO, and you need a municipal lodging licence plus Civil Protection approval including a documented hurricane plan."),
+  ("What does glamping cost per key in the Riviera Maya?",
+   "Realistically $500,000&ndash;$1,300,000 MXN per key all-in: the tent or dome is $120,000&ndash;$450,000, the platform and shading roof $120,000&ndash;$400,000, a private en-suite bathroom $180,000&ndash;$450,000, and services to the unit $80,000&ndash;$250,000. Site infrastructure adds $2,000,000&ndash;$8,000,000 on top."),
+  ("How long does tent fabric last in this climate?",
+   "Canvas safari tents three to seven years, longer if protected by a generous roof fly or fixed roof; PVC-coated dome skins five to ten years with the frame lasting much longer; bell tents two to four. UV and mould are the limits, so continuous ventilation and a shading roof are what extend the life of any fabric structure here."),
+  ("Should each unit have its own bathroom?",
+   "It is what guests now expect and what rate depends on, but it means water, drainage and treatment to every unit &mdash; the largest infrastructure line on the site. Shared bathroom blocks cut that cost substantially while capping your rate and your market. Composting or low-flush systems reduce water and treatment load but need a realistic maintenance plan."),
+  ("Is glamping better value than building casitas?",
+   "Per key, yes &mdash; roughly half to two-thirds the cost. Over ten years, often not, because the fabric needs replacing every few years and a palapa-roofed casita does not. Glamping earns its place where the setting is the product and where a lighter footprint is genuinely easier to authorise; otherwise casitas usually win the arithmetic."),
+ ],
+}
+
 if __name__ == "__main__":
     slugs = sys.argv[1:] or sorted(CONTENT)
     for s in slugs:
