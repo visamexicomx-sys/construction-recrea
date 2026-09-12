@@ -81,6 +81,7 @@ for key, cat in CATEGORIES.items():
 
 total = sum(cat_counts.values())
 updated = datetime.now().strftime('%d/%m/%Y %H:%M')
+today = datetime.now().strftime('%Y-%m-%d')
 active_cats = sum(1 for c in cat_counts.values() if c > 0)
 
 news_html = ''
@@ -130,6 +131,19 @@ page = f'''<!DOCTYPE html>
   <meta property="og:description" content="Noticias diarias de construcción, inmobiliario e inversión en la Riviera Maya.">
   <meta property="og:url" content="https://construction-recrea.com/noticias/">
   <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"CollectionPage",
+   "name":"Noticias del Sector — Construcción e Inmobiliario Riviera Maya",
+   "description":"Últimas noticias de construcción, inmobiliario, turismo e infraestructura en la Riviera Maya. Actualizado diariamente.",
+   "url":"https://construction-recrea.com/noticias/",
+   "inLanguage":"es",
+   "dateModified":"{today}",
+   "isPartOf":{{"@type":"WebSite","name":"Recrea Construction","url":"https://construction-recrea.com/"}},
+   "publisher":{{"@type":"GeneralContractor","name":"Recrea Construction","url":"https://construction-recrea.com/","areaServed":"Riviera Maya, Quintana Roo, México"}},
+   "breadcrumb":{{"@type":"BreadcrumbList","itemListElement":[
+     {{"@type":"ListItem","position":1,"name":"Inicio","item":"https://construction-recrea.com/"}},
+     {{"@type":"ListItem","position":2,"name":"Noticias","item":"https://construction-recrea.com/noticias/"}}]}}}}
+  </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">

@@ -9,7 +9,7 @@ location keywords for PDC/Tulum/Puerto Aventuras/Cancún/Akumal/Bacalar.
 Usage: python3 generate-blogs.py
 """
 
-import os, json, random
+import os, json, random, re
 from datetime import datetime
 
 TODAY = datetime.now().strftime('%Y-%m-%d')
@@ -481,6 +481,10 @@ def body_default(title, kw, slug, category):
 
 # === HTML TEMPLATE ===
 
+def slug_exists(slug):
+    return os.path.exists(os.path.join(BASE, 'blog', f'{slug}.html'))
+
+
 def generate_article_html(slug, title, keywords, service_page, category):
     kw_str = ', '.join(keywords)
     desc = f'{title}. Expert guide by Recrea Construction — 18+ years, 196 projects. Playa del Carmen, Tulum, Puerto Aventuras, Cancún, Akumal, Bacalar.'
@@ -501,7 +505,12 @@ def generate_article_html(slug, title, keywords, service_page, category):
         body = body_default(title, keywords, slug, category)
 
     # Related articles
-    related = [(t[0], t[1].replace('{YEAR}', YEAR)) for t in TOPICS if t[3] == category and t[0] != slug][:4]
+    # only link articles that already exist on disk — avoids dead "Related Articles" links
+    related = [(t[0], t[1].replace('{YEAR}', YEAR)) for t in TOPICS
+               if t[3] == category and t[0] != slug and slug_exists(t[0])][:4]
+    if len(related) < 3:
+        related += [(t[0], t[1].replace('{YEAR}', YEAR)) for t in TOPICS
+                    if t[3] != category and t[0] != slug and slug_exists(t[0])][:3 - len(related)]
     related_html = ''.join(f'<a href="/blog/{rs}.html" class="list-group-item list-group-item-action py-3"><i class="bi bi-arrow-right me-2" style="color:var(--accent)"></i>{rt}</a>' for rs, rt in related)
 
     # Schema
@@ -718,29 +727,53 @@ def load_tracker():
 def save_tracker(data):
     with open(TRACKER, 'w') as f: json.dump(data, f, indent=2)
 
-def slug_exists(slug):
-    return os.path.exists(os.path.join(BASE, 'blog', f'{slug}.html'))
 
 def update_sitemap():
+    """Rebuild sitemap.xml with clean directory URLs, skipping non-indexable pages.
+
+    Existing <lastmod> values are preserved — only new URLs get today's date, so the
+    freshness signal is not reset on every run.
+    """
+    sm_path = os.path.join(BASE, 'sitemap.xml')
+    old_lastmod = {}
+    if os.path.exists(sm_path):
+        old_xml = open(sm_path, encoding='utf-8').read()
+        for m in re.finditer(r'<loc>(.*?)</loc>\s*<lastmod>(.*?)</lastmod>', old_xml, re.S):
+            old_lastmod[m.group(1).strip()] = m.group(2).strip()
+
     pages = []
     for root, dirs, files in os.walk(BASE):
-        dirs[:] = [d for d in dirs if not d.startswith('.')]
+        dirs[:] = [d for d in dirs if not d.startswith('.') and d != '__pycache__']
         for f in files:
-            if f.endswith('.html'):
-                path = os.path.relpath(os.path.join(root, f), BASE)
+            if not f.endswith('.html'):
+                continue
+            path = os.path.relpath(os.path.join(root, f), BASE)
+            if path == '404.html':
+                continue
+            html = open(os.path.join(root, f), encoding='utf-8', errors='ignore').read()
+            if 'noindex' in html or 'Redirecting...' in html:
+                continue  # legacy redirect stubs must stay out of the sitemap
+            # clean URL: /dir/index.html -> /dir/, root index.html -> /
+            if path == 'index.html':
+                url = 'https://construction-recrea.com/'
+            elif path.endswith('/index.html'):
+                url = f'https://construction-recrea.com/{path[:-len("index.html")]}'
+            else:
                 url = f'https://construction-recrea.com/{path}'
-                if 'index.html' in path: prio = '0.9'
-                elif 'services/' in path: prio = '0.8'
-                elif 'blog' in path: prio = '0.7'
-                else: prio = '0.5'
-                pages.append((url, TODAY, 'weekly' if float(prio) >= 0.8 else 'monthly', prio))
+            if path.endswith('index.html'): prio = '0.9'
+            elif 'services/' in path: prio = '0.8'
+            elif 'blog' in path: prio = '0.7'
+            else: prio = '0.5'
+            pages.append((url, old_lastmod.get(url, TODAY),
+                          'weekly' if float(prio) >= 0.8 else 'monthly', prio))
     pages.sort(key=lambda x: (-float(x[3]), x[0]))
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for url, lastmod, freq, prio in pages:
         xml += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{prio}</priority>\n  </url>\n'
     xml += '</urlset>\n'
-    with open(os.path.join(BASE, 'sitemap.xml'), 'w') as f: f.write(xml)
+    with open(sm_path, 'w', encoding='utf-8') as f: f.write(xml)
     print(f"  Sitemap: {len(pages)} URLs")
+
 
 def ping_indexnow(urls):
     import urllib.request
