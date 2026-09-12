@@ -966,6 +966,481 @@ Z[("es","playa-del-carmen")] = {
  ],
 }
 
+Z[("de","cancun")] = {
+ "title": "Hausbau-Kosten in Cancún 2026: Warum Es Günstiger Ist",
+ "desc": "In Cancún baut man günstiger als im übrigen Korridor. Die m²-Spannen für 2026, woher der Abschlag kommt und wo er zum Risiko wird.",
+ "lead": "Ein 150-m&sup2;-Familienhaus in <strong>Canc&uacute;n</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$2.48M&ndash;$3M MXN ($138k&ndash;$167k USD)</strong> &mdash; der niedrigste Wert im Korridor und etwa 4% unter Playa del Carmen bei gleicher Ausstattung. Hier steht, woher dieser Abschlag kommt und wo er aufh&ouml;rt, ein Schn&auml;ppchen zu sein.",
+ "sections": [
+  ("Warum Cancún unter dem Rest des Korridors liegt",
+   """<p>Canc&uacute;n ist der einzige Ort im Korridor, an dem die Gr&ouml;&szlig;e des Marktes dem Bauherrn n&uuml;tzt: der gr&ouml;&szlig;te Arbeitskr&auml;ftepool der Region, die h&ouml;chste Dichte an Lieferanten und Werkst&auml;tten und genug konkurrierende Bauunternehmen, dass Preise tats&auml;chlich gepr&uuml;ft werden. Alles s&uuml;dlich von Puerto Morelos holt einen Teil der Arbeit von hier.</p>
+<ul>
+<li><strong>Material an der Quelle.</strong> Block, Zement, Stahl, Zuschl&auml;ge, Aluminium, Fliesen und Sanit&auml;robjekte werden lokal gekauft, ohne Fracht durch den Korridor &mdash; bei einem 150-m&sup2;-Haus sind das allein mehrere Prozent.</li>
+<li><strong>Gewerke ohne Anreise.</strong> Spezialarbeiten, die nach Tulum oder Akumal terminiert und transportiert werden m&uuml;ssen, sind hier ein Ortsgespr&auml;ch.</li>
+<li><strong>Grundst&uuml;cke im Landesinneren.</strong> Der Hausbau in Canc&uacute;n findet gr&ouml;&szlig;tenteils in geschlossenen Wohnanlagen im Inland statt: keine Bundesk&uuml;stenzone, keine ZOFEMAT-Konzession, kein Schildkr&ouml;ten-Kalender und eine leichtere Umweltakte als ein vergleichbares K&uuml;stengrundst&uuml;ck.</li>
+</ul>
+<p>Genehmigt wird in der Gemeinde <strong>Benito Ju&aacute;rez</strong> &mdash; Nutzungszertifikat, Baugenehmigung, Fluchtlinie und ein Director Responsable de Obra &mdash; und bei einem erschlossenen Wohngrundst&uuml;ck ist das einer der berechenbarsten Abl&auml;ufe im Bundesstaat.</p>"""),
+  ("Schlüsselfertige Kosten nach Hausgröße",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.65M&ndash;$2M</td><td>$92k&ndash;$111k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.48M&ndash;$3M</td><td>$138k&ndash;$167k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.30M&ndash;$4M</td><td>$183k&ndash;$222k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.13M&ndash;$5M</td><td>$229k&ndash;$278k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $16,500&ndash;$20,000 MXN/m&sup2; Standardausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Diese Spannen gelten f&uuml;r das Wohn-Canc&uacute;n im Inland. Ein Grundst&uuml;ck in der Zona Hotelera, auf Isla Dorada oder mit Meer- oder Lagunenfront ist ein anderes Geb&auml;ude: durchgehend Marine-Spezifikation, Fragen der Bundeszone und ein Ausbauniveau, das der Ort verlangt. Dort sind $26,000&ndash;$40,000 MXN/m&sup2; realistisch.</p>"""),
+  ("Wo die Ersparnis zum Risiko wird",
+   """<p>Ein gro&szlig;er, umk&auml;mpfter Markt erzeugt niedrige Preise und enorme Qualit&auml;tsunterschiede. Das Problem in Canc&uacute;n ist nicht der teure Bau, sondern der billige.</p>
+<ul>
+<li><strong>Angebote unter etwa $14,000 MXN/m&sup2;</strong> sparen an etwas Strukturellem &mdash; meist Bewehrungsdichte, Betonqualit&auml;t oder Elektroinstallation. In einer Starkwindregion ist der Bewehrungsstahl der falsche Posten.</li>
+<li><strong>Kein Bodengutachten.</strong> Der Karst kann hervorragende Tragf&auml;higkeit bieten und zwei Meter weiter einen Hohlraum. Sondierungen &uuml;ber der tats&auml;chlichen Grundfl&auml;che kosten $25,000&ndash;$60,000 und sind die g&uuml;nstigste Risikominderung im Projekt.</li>
+<li><strong>Regeln der Wohnanlage.</strong> Residencial Cumbres, Lagos del Sol, Villa Magna, Aqua und Palmaris betreiben Gestaltungsbeir&auml;te mit eigenen Vorgaben zu H&ouml;he, Abst&auml;nden, Materialien und Farben, dazu Arbeiterregistrierung, eingeschr&auml;nkte Arbeitszeiten und eine Baukaution. Reichen Sie in der Entwurfsphase ein.</li>
+<li><strong>Verkehr und Lieferfenster.</strong> Canc&uacute;n ist der einzige Ort im Korridor, an dem St&auml;dteverkehr ein Terminthema ist: Lieferungen in Wohnanlagen im Inland brauchen Zeitfenster, und Zeitbeschr&auml;nkungen versch&auml;rfen das.</li>
+<li><strong>Salz erreicht auch das Inland.</strong> Selbst mehrere Kilometer vom Meer halten Befestigungen, Gel&auml;nder und Verfl&uuml;ssigerlamellen in 316er Edelstahl und Marine-Beschichtung deutlich l&auml;nger.</li>
+</ul>
+<p>Ein 150-m&sup2;-Haus dauert etwa <strong>7&ndash;10 Monate</strong> von der Genehmigung bis zur &Uuml;bergabe, und die Lieferantendichte verhindert einen Teil der Materialwartezeiten, die Projekte weiter s&uuml;dlich verl&auml;ngern. Bestehen Sie auf einem Festpreisvertrag mit Positionsbudget und Zahlungen nach gepr&uuml;ftem Baufortschritt.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Cancún 2026?",
+   "Etwa $2.48M&ndash;$3M MXN ($138k&ndash;$167k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; mit Standardausbau auf einem Wohngrundst&uuml;ck im Inland, ohne Grundst&uuml;ck, Pool und M&ouml;bel &mdash; rund $16,500&ndash;$20,000 MXN/m&sup2;."),
+  ("Warum ist Cancún günstiger als Playa del Carmen oder Tulum?",
+   "Wegen der Marktgr&ouml;&szlig;e: der gr&ouml;&szlig;te Arbeitskr&auml;ftepool des Korridors, die h&ouml;chste Lieferantendichte und echter Wettbewerb unter Bauunternehmen. Zudem wird &uuml;berwiegend im Inland gebaut, was Bundesk&uuml;stenzone, Schildkr&ouml;tenregeln und die schwerere Umweltakte eines K&uuml;stengrundst&uuml;cks vermeidet."),
+  ("Gilt dieser Preis auch in der Zona Hotelera?",
+   "Nein. Zona Hotelera, Isla Dorada oder jede Meer- und Lagunenfront bedeutet durchgehende Marine-Spezifikation, Fragen der Bundeszone und ein h&ouml;heres Ausbauniveau &mdash; kalkulieren Sie dort $26,000&ndash;$40,000 MXN/m&sup2;."),
+  ("Wie niedrig darf ein Angebot in Cancún sein?",
+   "Betrachten Sie alles unter etwa $14,000 MXN/m&sup2; als Warnsignal. Zu diesem Preis wird an etwas Strukturellem gespart &mdash; Bewehrungsdichte, Betonqualit&auml;t oder Elektroinstallation &mdash; und das sind in einer Starkwindregion die falschen Einsparungen."),
+  ("Verteuern geschlossene Wohnanlagen den Bau?",
+   "Ja. Residencial Cumbres, Lagos del Sol, Villa Magna, Aqua und Palmaris haben eigene Gestaltungsbeir&auml;te mit Vorgaben zu H&ouml;he, Abst&auml;nden, Materialien und Farbe, dazu Arbeiterregistrierung, eingeschr&auml;nkte Arbeitszeiten und eine Kaution. Planen Sie den Pr&uuml;fzyklus ein, nicht nur die Geb&uuml;hren."),
+ ],
+}
+
+Z[("de","puerto-aventuras")] = {
+ "title": "Hausbau-Kosten in Puerto Aventuras 2026: Das Ganze Budget",
+ "desc": "Schlüsselfertige Baukosten in Puerto Aventuras plus die Posten der Marina-Gemeinde, die Käufer übersehen: HOA, Liegeplatz, Ufermauer, Gestaltungsbeirat.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Puerto Aventuras</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$2.77M&ndash;$3.38M MXN ($154k&ndash;$188k USD)</strong>, etwa 8% &uuml;ber Playa del Carmen. Der Bau ist der berechenbare Teil; die Posten darunter sind, wo Budgets in einer Marina-Gemeinde kippen.",
+ "sections": [
+  ("Schlüsselfertige Kosten nach Hausgröße",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.85M&ndash;$2.25M</td><td>$103k&ndash;$125k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.77M&ndash;$3.38M</td><td>$154k&ndash;$188k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.70M&ndash;$4.50M</td><td>$206k&ndash;$250k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.63M&ndash;$5.63M</td><td>$257k&ndash;$313k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $18,500&ndash;$22,500 MXN/m&sup2; Standardausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Die 8% gegen&uuml;ber Playa del Carmen sind vier konkrete Dinge und kein Zuschlag f&uuml;r die Adresse: kontrollierter Baustellenzugang mit Arbeiterregistrierung, eingeschr&auml;nkte Arbeitszeiten, l&auml;ngere Materialwege innerhalb der Anlage und die Marine-Spezifikation, die Kanal- und k&uuml;stennahe Lagen verlangen.</p>"""),
+  ("Die Posten, die vergessen werden",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Posten</th><th>Was zu klären ist</th></tr></thead><tbody>
+<tr><td><strong>HOA-Geb&uuml;hr</strong></td><td>Der aktuelle Betrag f&uuml;r genau dieses Grundst&uuml;ck, das zugrunde liegende Budget und die F&uuml;nfjahresentwicklung. Kanal- und marinanahe Lagen zahlen oft mehr.</td></tr>
+<tr><td><strong>Liegeplatz</strong></td><td>Ob im Eigentum, gepachtet oder zugewiesen &mdash; rechtlich und beim Wiederverkauf drei verschiedene Dinge &mdash; und die j&auml;hrlichen Kosten. Steganlagen werden getrennt vom Haus genehmigt.</td></tr>
+<tr><td><strong>Ufer- bzw. Kanalmauer</strong></td><td>Zustand, gepr&uuml;ft von jemandem, der Ihnen die Immobilie nicht verkauft. Eine Sanierung ist ein eigenes Projekt.</td></tr>
+<tr><td><strong>Gestaltungsbeirat</strong></td><td>Einreichung, Pr&uuml;fzyklus und Baukaution: $60,000&ndash;$250,000 MXN und mindestens eine Pr&uuml;frunde im Terminplan.</td></tr>
+<tr><td><strong>Marine-Spezifikation</strong></td><td>316er Befestigungen, eloxiertes oder marinebeschichtetes Aluminium, gr&ouml;&szlig;ere Betondeckung. Verteuert den Bau und spart &uuml;ber ein Jahrzehnt ein Vielfaches.</td></tr>
+</tbody></table></div>
+<p>Genehmigt wird in der Gemeinde <strong>Solidaridad</strong> &mdash; derselbe Weg wie in Playa del Carmen &mdash; wobei die Architekturpr&uuml;fung der Gemeinschaft in der Praxis davor liegt.</p>"""),
+  ("Kanallage: was sich technisch ändert",
+   """<ul>
+<li><strong>Hoher Grundwasserstand.</strong> Aush&uuml;be, Zisterne und Poolbecken brauchen Wasserhaltung und Auftriebsnachweis &mdash; ein zum falschen Zeitpunkt entleerter Pool kann aufschwimmen.</li>
+<li><strong>St&auml;ndiges Salzaerosol</strong> vom Wasser, keine saisonale Belastung. Hier ist 316er Edelstahl keine Vorliebe mehr.</li>
+<li><strong>Sturmexposition.</strong> Wassernahe Grundst&uuml;cke nehmen die volle Windlast und bei einem schweren Ereignis auch Sturmflut. Verbund- oder schlagfestes Glas zur Wasserseite ist die Spezifikation, bei der wir nicht nachgeben.</li>
+<li><strong>Uferbauwerke</strong> an der Wasserlinie haben eigene Planungs- und Genehmigungsanforderungen.</li>
+</ul>
+<p>Ein 150-m&sup2;-Haus dauert etwa <strong>7&ndash;10 Monate</strong> ab Genehmigung, und die eingeschr&auml;nkten Arbeitszeiten schieben den Terminplan ans obere Ende. Vertraglich Festpreis mit Positionsbudget und Zahlungen nach gepr&uuml;ftem Fortschritt.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Puerto Aventuras?",
+   "Etwa $2.77M&ndash;$3.38M MXN ($154k&ndash;$188k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; mit Standardausbau, ohne Grundst&uuml;ck, Pool und M&ouml;bel &mdash; rund $18,500&ndash;$22,500 MXN/m&sup2;, etwa 8% &uuml;ber Playa del Carmen."),
+  ("Warum ist es teurer als Playa del Carmen?",
+   "Vier konkrete Gr&uuml;nde: kontrollierter Zugang mit Arbeiterregistrierung, eingeschr&auml;nkte Arbeitszeiten, l&auml;ngere Materialwege in der Anlage und die Marine-Spezifikation f&uuml;r Kanal- und k&uuml;stennahe Lagen."),
+  ("Welche Kosten liegen außerhalb des Baubudgets?",
+   "Die HOA-Geb&uuml;hr f&uuml;r das konkrete Grundst&uuml;ck, eine etwaige Liegeplatzgeb&uuml;hr, die Sanierung der Ufermauer bei schlechtem Zustand sowie Einreichung und Kaution beim Gestaltungsbeirat mit rund $60,000&ndash;$250,000 MXN. Steganlagen werden separat genehmigt."),
+  ("Brauche ich neben der Gemeinde auch die Zustimmung der Anlage?",
+   "Ja, und praktisch kommt die Anlage zuerst. Baugenehmigung und DRO laufen &uuml;ber Solidaridad, w&auml;hrend der Architekturbeirat H&ouml;he, Abst&auml;nde, Materialien, Farben und Einfriedungen pr&uuml;ft. Reichen Sie in der Entwurfsphase ein."),
+  ("Was ändert sich bei einem Kanalgrundstück?",
+   "Wasserhaltung und Auftriebsnachweis f&uuml;r Aush&uuml;be und Pool, durchgehende Marine-Spezifikation wegen des st&auml;ndigen Salzaerosols, schlagfestes Glas zur Wasserseite wegen der Sturmexposition und eine separate Genehmigung f&uuml;r Bauwerke an der Wasserlinie."),
+ ],
+}
+
+Z[("de","akumal")] = {
+ "title": "Hausbau-Kosten in Akumal 2026: Die Umweltakte Entscheidet",
+ "desc": "Baukosten in Akumal 2026 und warum die Umwelt- und Genehmigungsakte — nicht die Mauern — die Endsumme bestimmt. Schildkröten, Kläranlage, Transport.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Akumal</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$2.85M&ndash;$3.52M MXN ($158k&ndash;$196k USD)</strong>. Auf einem Akumal-Grundst&uuml;ck ist der Bau jedoch die berechenbare H&auml;lfte: Umweltakte, Kl&auml;ranlage und Genehmigungskalender trennen zwei scheinbar gleiche Projekte.",
+ "sections": [
+  ("Schlüsselfertige Kosten nach Hausgröße",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.90M&ndash;$2.35M</td><td>$106k&ndash;$131k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.85M&ndash;$3.52M</td><td>$158k&ndash;$196k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.80M&ndash;$4.70M</td><td>$211k&ndash;$261k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.75M&ndash;$5.88M</td><td>$264k&ndash;$326k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $19,000&ndash;$23,500 MXN/m&sup2; Standardausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Das sind etwa 12% &uuml;ber Playa del Carmen: Transport jedes Materials den Korridor hinunter, Marine-Spezifikation wegen der Salzbelastung und eine kleinere lokale Gewerkebasis, die Anfahrten n&ouml;tig macht.</p>"""),
+  ("Posten, die es nur in Akumal gibt",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Posten</th><th>MXN</th><th>Warum</th></tr></thead><tbody>
+<tr><td>Umweltgutachten und Genehmigung</td><td>$80,000&ndash;$350,000</td><td>Umfang bestimmt die Vegetation und die K&uuml;stenn&auml;he, nicht die Hausgr&ouml;&szlig;e</td></tr>
+<tr><td>Kl&auml;ranlage + Sickerbrunnen</td><td>$120,000&ndash;$380,000</td><td>Keine Kanalisation; Reinigung vor Versickerung ist der Kern der Akte</td></tr>
+<tr><td>Schildkr&ouml;tenkonforme Beleuchtung</td><td>$30,000&ndash;$120,000</td><td>Niedrig, abgeschirmt, bernstein- oder rotfarben zur Strandseite</td></tr>
+<tr><td>ZOFEMAT-Vermessung und Konzessionspr&uuml;fung</td><td>$20,000&ndash;$80,000</td><td>Nur bei Grundst&uuml;cken in der Bundesk&uuml;stenzone</td></tr>
+<tr><td>Bodengutachten &uuml;ber der Grundfl&auml;che</td><td>$25,000&ndash;$60,000</td><td>Karst: ein Hohlraum kann zwei Meter neben guter Tragf&auml;higkeit liegen</td></tr>
+</tbody></table></div>
+<p>Vier dieser f&uuml;nf Posten skalieren mit dem <em>Grundst&uuml;ck</em>, nicht mit dem Haus. Deshalb ist ein kompaktes Haus in Akumal pro Quadratmeter teurer als ein gro&szlig;es &mdash; und deshalb ist ein Grundst&uuml;ck mit bestehender Umweltgenehmigung und Anschl&uuml;ssen an der Grenze die g&uuml;nstigste Ersparnis, die es hier gibt.</p>"""),
+  ("Der Genehmigungskalender und was Warten kostet",
+   """<p>Akumal geh&ouml;rt zur Gemeinde <strong>Tulum</strong>, nicht zu Solidaridad &mdash; das &uuml;berrascht viele, weil Playa del Carmen n&auml;her liegt. Tulums Pr&uuml;fung ist die umweltrechtlich anspruchsvollste im Korridor, und die Folge ist Zeit:</p>
+<ul>
+<li><strong>Umweltakte:</strong> 4&ndash;9 Monate bei bewachsenem oder k&uuml;stennahem Grundst&uuml;ck.</li>
+<li><strong>Genehmigungspr&uuml;fung bei vollst&auml;ndiger Akte:</strong> 4&ndash;12 Wochen.</li>
+<li><strong>Realistisch vom Kauf bis zum Baubeginn:</strong> 6&ndash;14 Monate.</li>
+</ul>
+<p>Diese Monate sind ein realer Kostenblock: gebundenes Grundst&uuml;ck und gebundenes Kapital ohne Ertrag. Sie sind auch der Grund, warum ein Grundst&uuml;ck mit sauberer bestehender Genehmigung einen Aufpreis hat &mdash; meist zu Recht.</p>
+<p>Ein Terminpunkt speziell f&uuml;r diesen K&uuml;stenabschnitt: Die Schildkr&ouml;tensaison l&auml;uft etwa von <strong>Mai bis Oktober</strong> und beschr&auml;nkt schwere Arbeiten, starke Beleuchtung und Aktivit&auml;t am Strand. Legen Sie laute Au&szlig;enphasen au&szlig;erhalb dieses Fensters und den Innenausbau hinein.</p>
+<p>Die Bauzeit betr&auml;gt etwa <strong>7&ndash;10 Monate</strong> f&uuml;r 150 m&sup2;. Festpreisvertrag mit Positionsbudget &mdash; und die Umweltauflagen (Anwuchskontrolle, Betriebsbuch der Kl&auml;ranlage, Beleuchtung) geh&ouml;ren nach der &Uuml;bergabe in jemandes Verantwortung, denn sie gelten lebenslang.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Akumal 2026?",
+   "Etwa $2.85M&ndash;$3.52M MXN ($158k&ndash;$196k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; mit Standardausbau &mdash; rund $19,000&ndash;$23,500 MXN/m&sup2;, etwa 12% &uuml;ber Playa del Carmen. Grundst&uuml;ck, Pool, M&ouml;bel und die Umweltposten kommen hinzu."),
+  ("Welche Zusatzkosten hat ein Grundstück in Akumal?",
+   "Umweltgutachten und Genehmigung $80,000&ndash;$350,000, Kl&auml;ranlage mit Sickerbrunnen $120,000&ndash;$380,000, schildkr&ouml;tenkonforme Beleuchtung $30,000&ndash;$120,000, ZOFEMAT-Vermessung $20,000&ndash;$80,000 und Bodengutachten $25,000&ndash;$60,000. Die meisten skalieren mit dem Grundst&uuml;ck, nicht mit dem Haus."),
+  ("Welche Gemeinde erteilt die Genehmigung für Akumal?",
+   "Tulum, nicht Solidaridad, obwohl Playa del Carmen n&auml;her liegt. Die Umweltpr&uuml;fung dort ist die anspruchsvollste im Korridor, weshalb 6&ndash;14 Monate vom Kauf bis zum Baubeginn realistisch sind."),
+  ("Beeinflussen die Schildkrötenregeln den Bauablauf?",
+   "Ja. Die Saison l&auml;uft etwa von Mai bis Oktober und beschr&auml;nkt schwere Arbeiten, starke Beleuchtung und Aktivit&auml;t am Strand. Laute Au&szlig;enphasen geh&ouml;ren au&szlig;erhalb der Saison, der Innenausbau hinein. Die Beleuchtungsregeln gelten auch f&uuml;r das fertige Haus."),
+  ("Ist ein kleineres Haus pro m² günstiger?",
+   "Nein, teurer. Umweltakte, Bodengutachten, Kl&auml;ranlage und Hausanschluss kosten f&uuml;r 80 m&sup2; fast dasselbe wie f&uuml;r 200 m&sup2;, sodass diese Fixposten bei einem kompakten Haus einen viel gr&ouml;&szlig;eren Anteil ausmachen."),
+ ],
+}
+
+Z[("de","puerto-morelos")] = {
+ "title": "Hausbau-Kosten in Puerto Morelos 2026: Das Beste Verhältnis",
+ "desc": "Puerto Morelos baut zu Playa-del-Carmen-Preisen auf günstigerem Land. Die Spannen 2026, die Einleitungsvorgaben am Riffpark und die Ruta de los Cenotes.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Puerto Morelos</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$2.55M&ndash;$3.15M MXN ($142k&ndash;$175k USD)</strong> &mdash; beim Bau praktisch auf dem Niveau von Playa del Carmen, auf meist g&uuml;nstigerem Grund. Diese Kombination macht den Ort zum stillen Preis-Leistungs-Sieger des Korridors.",
+ "sections": [
+  ("Kosten nach Hausgröße und die drei Teilmärkte",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.70M&ndash;$2.10M</td><td>$94k&ndash;$117k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.55M&ndash;$3.15M</td><td>$142k&ndash;$175k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.40M&ndash;$4.20M</td><td>$189k&ndash;$233k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.25M&ndash;$5.25M</td><td>$236k&ndash;$292k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $17,000&ndash;$21,000 MXN/m&sup2; Standardausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<ul>
+<li><strong>Strandnah:</strong> $26,000&ndash;$38,000+ MXN/m&sup2; mit Marine-Spezifikation und schwererer Umweltakte.</li>
+<li><strong>Ruta de los Cenotes:</strong> $14,000&ndash;$19,000 auf erschlossenem Grundst&uuml;ck, $17,000&ndash;$24,000 netzunabh&auml;ngig &mdash; billigeres Land, mehr Infrastruktur.</li>
+</ul>"""),
+  ("Eigene Gemeinde seit 2016",
+   """<p>Puerto Morelos hat sich 2016 von Benito Ju&aacute;rez getrennt und erteilt heute eigene Nutzungszertifikate, Baugenehmigungen, Fluchtlinien und Abnahmen. Drei praktische Folgen:</p>
+<ul>
+<li><strong>Eingereicht wird hier, nicht in Canc&uacute;n.</strong> Ratschl&auml;ge nach Benito-Ju&aacute;rez-Praxis sind &uuml;berholt &mdash; ebenso die Erfahrung eines Nachbarn von vor 2016.</li>
+<li><strong>Pr&uuml;fen Sie die Kennzahlen aktuell.</strong> Die Planungsinstrumente der Gemeinde sind noch jung und wurden fortgeschrieben: Dichte, H&ouml;he und zul&auml;ssige Nutzung f&uuml;r genau dieses Grundst&uuml;ck best&auml;tigen lassen.</li>
+<li><strong>Eine kleine Verwaltung ist eine direkte.</strong> Die pr&uuml;fende Stelle ist erreichbar, was eine vollst&auml;ndige Einreichung besonders wertvoll und eine unvollst&auml;ndige besonders langsam macht.</li>
+</ul>
+<p>Landesumweltpr&uuml;fung (SEMA), Bundeszust&auml;ndigkeit wo einschl&auml;gig, CONAGUA f&uuml;r Wasser und ZOFEMAT strandseitig gelten unver&auml;ndert.</p>"""),
+  ("Was Riff und Feuchtgebiete zur Spezifikation beitragen",
+   """<ul>
+<li><strong>Die Einleitqualit&auml;t ist der Kern der Akte.</strong> Reinigung vor Versickerung, richtig dimensioniert, mit separat gef&uuml;hrtem Poolr&uuml;cksp&uuml;lwasser &mdash; $90,000&ndash;$350,000 MXN je nach Belegung. Was hier versickert, erreicht den Aquifer und dann das Riff.</li>
+<li><strong>Mangroven sind nicht verhandelbar.</strong> Bei feuchtgebietsnahen Grundst&uuml;cken muss die Grenze der gesch&uuml;tzten Vegetation vor dem ersten Grundriss feststehen &mdash; manche angebotenen Grundst&uuml;cke haben deutlich weniger bebaubare Fl&auml;che als die Grundbuchfl&auml;che vermuten l&auml;sst.</li>
+<li><strong>Cenote-Abst&auml;nde</strong> gelten im Inland, mit Auflagen dazu, was in ihrer N&auml;he versickern darf.</li>
+<li><strong>Die H&ouml;he des Erdgeschossniveaus</strong> in tief liegendem Gel&auml;nde ist eine Entwurfsentscheidung gegen Hochwasser und Sturmflut &mdash; sp&auml;ter nicht korrigierbar.</li>
+<li><strong>An der Ruta de los Cenotes</strong> kalkulieren Sie die Zufahrt ($40,000&ndash;$300,000) und entweder eine CFE-Erweiterung &mdash; vor dem Kauf anfragen, $150,000 bis &uuml;ber $900,000 &mdash; oder ein geplantes Inselsystem mit Solar, Speicher, aufbereitetem Brunnen und Regenwasser.</li>
+</ul>
+<p>Die Bauzeit betr&auml;gt etwa <strong>7&ndash;10 Monate</strong> f&uuml;r 150 m&sup2;.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Puerto Morelos?",
+   "Etwa $2.55M&ndash;$3.15M MXN ($142k&ndash;$175k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; im Ort oder im Inland &mdash; rund $17,000&ndash;$21,000 MXN/m&sup2;, praktisch auf dem Niveau von Playa del Carmen. Strandnah $26,000&ndash;$38,000+, Ruta de los Cenotes $14,000&ndash;$24,000 je nach Erschlie&szlig;ung."),
+  ("Welche Gemeinde genehmigt in Puerto Morelos?",
+   "Puerto Morelos selbst &mdash; die Trennung von Benito Ju&aacute;rez (Canc&uacute;n) erfolgte 2016. Auskunft nach Canc&uacute;n-Praxis ist &uuml;berholt, und da die Planungsinstrumente jung sind, sollten Dichte, H&ouml;he und zul&auml;ssige Nutzung aktuell gepr&uuml;ft werden."),
+  ("Darf ich neben Mangroven bauen?",
+   "Nicht in der gesch&uuml;tzten Vegetation, und deren Grenze muss vor dem Grundriss feststehen. Manche angebotenen Grundst&uuml;cke haben erheblich weniger bebaubare Fl&auml;che als die Grundbuchfl&auml;che &mdash; das geh&ouml;rt vor den Kauf gepr&uuml;ft."),
+  ("Was bedeutet der Riff-Nationalpark für meinen Bau?",
+   "Dass die Einleitqualit&auml;t die zentrale technische Frage der Umweltakte ist. Reinigung vor Versickerung, auf die Belegung dimensioniert, mit separat gef&uuml;hrtem Poolr&uuml;cksp&uuml;lwasser, kostet $90,000&ndash;$350,000 MXN und wird genau gepr&uuml;ft."),
+  ("Ist die Ruta de los Cenotes günstiger?",
+   "Das Land ja, und der Bau liegt bei $14,000&ndash;$19,000 MXN/m&sup2; auf erschlossenem Grundst&uuml;ck. Viele Parzellen haben aber weder CFE noch Wasser: kalkulieren Sie die Netzerweiterung &mdash; vor dem Kauf anfragen, $150,000 bis &uuml;ber $900,000 &mdash; oder ein Inselsystem, plus $40,000&ndash;$300,000 Zufahrt."),
+ ],
+}
+
+Z[("de","playacar")] = {
+ "title": "Hausbau-Kosten in Playacar 2026: Abriss Oder Sanierung",
+ "desc": "Playacar ist bebaut — die meisten Projekte sind Sanierung oder Neubau nach Abriss. Spannen 2026, Abrisskosten, Gestaltungsbeirat, Phase I gegen Phase II.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Playacar</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$3.15M&ndash;$3.90M MXN ($175k&ndash;$217k USD)</strong>, etwa 25% &uuml;ber dem Basisniveau von Playa del Carmen. Playacar ist jedoch praktisch bebaut &mdash; die eigentliche Frage lautet daher nicht, was ein Neubau kostet, sondern ob das Bestandshaus saniert oder abgerissen wird.",
+ "sections": [
+  ("Sanieren oder abreißen: die Rechnung",
+   """<p>Fast jedes Projekt in Playacar ist ein Neubau nach Abriss, eine gro&szlig;e Sanierung oder eine Bebauung eines der wenigen verbliebenen Grundst&uuml;cke. Die Entscheidung zwischen den ersten beiden geh&ouml;rt hinter ein Gutachten, nicht hinter eine Besichtigung: H&auml;user dieses Alters an dieser K&uuml;ste tragen einen vorhersehbaren Schaden &mdash; chloridinduzierte Bewehrungskorrosion an Deckenr&auml;ndern, Balkonen, St&uuml;tzen und Attiken.</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Position</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Zustandsgutachten mit &Ouml;ffnungen an repr&auml;sentativen Stellen</td><td>$40,000&ndash;$150,000</td></tr>
+<tr><td>Abriss und Schuttentsorgung, typisches Haus</td><td>$180,000&ndash;$600,000</td></tr>
+<tr><td>Betoninstandsetzungsprogramm bei Erhalt</td><td>Nach Gutachten &mdash; kann den Abriss &uuml;bersteigen</td></tr>
+<tr><td>Kernsanierung, Premium-Ausbau</td><td>$14,000&ndash;$26,000 MXN/m&sup2;</td></tr>
+<tr><td>Neubau, Premium</td><td>$24,000&ndash;$30,000 MXN/m&sup2;</td></tr>
+<tr><td>Neubau, Luxus</td><td>$30,000&ndash;$42,000 MXN/m&sup2;</td></tr>
+</tbody></table></div>
+<p>Die ehrliche Schwelle: Sobald die Instandsetzung etwa 25&ndash;30% der Neubaukosten erreicht, zahlen Sie Neubaupreise f&uuml;r Raumh&ouml;hen, Ausrichtung und Grundriss eines alten Geb&auml;udes. In Playacar gibt es allerdings ein echtes Gegenargument: Die Grundst&uuml;cke sind nicht ersetzbar, alter Baumbestand ist gesch&uuml;tzt und wertvoll, und ein solides Haus der Neunziger mit gro&szlig;z&uuml;giger H&ouml;he in Phase II kann erhaltenswert sein.</p>"""),
+  ("Schlüsselfertige Kosten nach Hausgröße",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$2.10M&ndash;$2.60M</td><td>$117k&ndash;$144k</td></tr>
+<tr><td>150 m&sup2;</td><td>$3.15M&ndash;$3.90M</td><td>$175k&ndash;$217k</td></tr>
+<tr><td>200 m&sup2;</td><td>$4.20M&ndash;$5.20M</td><td>$233k&ndash;$289k</td></tr>
+<tr><td>250 m&sup2;</td><td>$5.25M&ndash;$6.50M</td><td>$292k&ndash;$361k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $21,000&ndash;$26,000 MXN/m&sup2; Standard- bis Premium-Ausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Die 25% &uuml;ber dem Basisniveau sind eingeschr&auml;nkter Zugang &uuml;ber enge Stra&szlig;en, registrierte Arbeiter und begrenzte Arbeitszeiten, das Verfahren des Gestaltungsbeirats, Baumschutz, Marine-Spezifikation und das erwartete Ausbauniveau. Bei einem Strandgrundst&uuml;ck in Playacar kommen Bundesk&uuml;stenzone und schlagfestes Glas zur Meerseite hinzu: dort $42,000&ndash;$60,000+ MXN/m&sup2;.</p>"""),
+  ("Beirat, Bäume und Phase I gegen Phase II",
+   """<p><strong>Die Architekturpr&uuml;fung ist real</strong> und dort verlieren Playacar-Terminpl&auml;ne Zeit. Erwartet werden Pr&uuml;fungen von H&ouml;he, Baumasse und Abst&auml;nden &uuml;ber das gemeindliche Ma&szlig; hinaus, Dachform und Materialien, Fassade und Farbe, Mauern und Z&auml;une und vor allem Baumf&auml;llungen &mdash; jeder Baum muss begr&uuml;ndet werden. Reichen Sie in der Entwurfsphase mit Baumkataster ein und planen Sie mindestens eine Pr&uuml;frunde plus Kaution ein.</p>
+<p><strong>Phase I und Phase II sind verschiedene Orte.</strong> Phase I liegt n&auml;her am Ort und an der F&auml;hre: dichter, kleinere Grundst&uuml;cke, echte Fu&szlig;l&auml;ufigkeit zur Quinta Avenida und Baustellenzufahrt &uuml;ber enge Stra&szlig;en, was verteuert. Phase II ist gr&ouml;&szlig;er und ruhiger am Golfplatz, mit gro&szlig;en Grundst&uuml;cken, altem Bewuchs und Platz f&uuml;r eine gr&ouml;&szlig;ere Villa &mdash; und Golflage macht Verglasung und Oberlichter zu einem kalkulierbaren Thema.</p>
+<p>Genehmigt wird in <strong>Solidaridad</strong>, der Bau dauert etwa <strong>7&ndash;10 Monate</strong> f&uuml;r 150 m&sup2;, zuz&uuml;glich Abriss.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Playacar?",
+   "Etwa $3.15M&ndash;$3.90M MXN ($175k&ndash;$217k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; &mdash; rund $21,000&ndash;$26,000 MXN/m&sup2;, etwa 25% &uuml;ber dem Basisniveau von Playa del Carmen. Luxusausbau $30,000&ndash;$42,000, Strandgrundst&uuml;cke $42,000&ndash;$60,000+."),
+  ("Sanieren oder abreißen?",
+   "Zuerst ein Gutachten mit &Ouml;ffnungen an repr&auml;sentativen Stellen f&uuml;r $40,000&ndash;$150,000 MXN, denn H&auml;user dieses Alters tragen h&auml;ufig chloridinduzierte Bewehrungskorrosion. Erreicht die Instandsetzung 25&ndash;30% der Neubaukosten, ist Abriss meist die bessere Entscheidung; Abbruch und Entsorgung kosten $180,000&ndash;$600,000."),
+  ("Was prüft der Gestaltungsbeirat in Playacar?",
+   "H&ouml;he, Baumasse und Abst&auml;nde &uuml;ber das gemeindliche Ma&szlig; hinaus, Dachform und Materialien, Fassade und Farbe, Mauern und Z&auml;une sowie jede Baumf&auml;llung. Dazu kommen Bauregeln: registrierte Arbeiter, Arbeitszeiten, Lieferungen, Lagerung und eine Kaution."),
+  ("Was unterscheidet Phase I von Phase II beim Bauen?",
+   "Phase I hat kleinere, dichtere Grundst&uuml;cke mit verteuernder Baustellenzufahrt &uuml;ber enge Stra&szlig;en und echte Fu&szlig;l&auml;ufigkeit zur Quinta Avenida. Phase II bietet gro&szlig;e Grundst&uuml;cke am Golfplatz mit altem Bewuchs &mdash; und Golflage macht Verglasung und Oberlichter zum praktischen Thema."),
+  ("Warum kostet Playacar 25% mehr?",
+   "Eingeschr&auml;nkter Zugang &uuml;ber enge Stra&szlig;en, registrierte Arbeiter und begrenzte Arbeitszeiten, das Beiratsverfahren, Baumschutz w&auml;hrend der Bauzeit, Marine-Spezifikation und das erwartete Ausbauniveau &mdash; jeweils reale Positionen, kein Adresszuschlag."),
+ ],
+}
+
+Z[("de","mayakoba")] = {
+ "title": "Hausbau-Kosten in Mayakoba 2026: Die Obergrenze",
+ "desc": "Mayakoba ist der teuerste Bauort der Riviera Maya. Die m²-Spannen 2026, was die Resort-Spezifikation tatsächlich umfasst und warum.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Mayakoba</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$3.60M&ndash;$4.50M MXN ($200k&ndash;$250k USD)</strong> &mdash; die h&ouml;chste Spanne im Korridor, etwa 42% &uuml;ber dem Basisniveau von Playa del Carmen. Am unteren Rand wird hier allerdings kaum gebaut, und diese Seite erkl&auml;rt, warum.",
+ "sections": [
+  ("Kosten nach Hausgröße und die realistische Zahl",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>150 m&sup2;</td><td>$3.60M&ndash;$4.50M</td><td>$200k&ndash;$250k</td></tr>
+<tr><td>250 m&sup2;</td><td>$6M&ndash;$7.50M</td><td>$333k&ndash;$417k</td></tr>
+<tr><td>350 m&sup2;</td><td>$8.40M&ndash;$10.50M</td><td>$467k&ndash;$583k</td></tr>
+<tr><td>500 m&sup2;</td><td>$12M&ndash;$15M</td><td>$667k&ndash;$833k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $24,000&ndash;$30,000 MXN/m&sup2; Standard- bis Premium-Ausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Das ist die Einstiegsspanne. Tats&auml;chlich entstehen im Masterplan H&auml;user von 300&ndash;600 m&sup2; in Autorenqualit&auml;t, was reale Werte von <strong>$35,000&ndash;$55,000 MXN/m&sup2;</strong> bedeutet, sobald Architektenleistung, importierte Ausstattung, Vollautomation, geplanter Pool und ausgewachsene Bepflanzung eingerechnet sind. Wer eine Mayakoba-Villa mit $24,000 kalkuliert, kalkuliert ein Haus, das die Gestaltungspr&uuml;fung nicht best&uuml;nde.</p>"""),
+  ("Was der Aufpreis tatsächlich kauft",
+   """<ul>
+<li><strong>Gestaltungskontrolle.</strong> Ein um den Resortbetrieb herum entwickelter Masterplan pr&uuml;ft Architektur, Materialien, Farbe, Freianlagen und Beleuchtung am Ma&szlig;stab der benachbarten Hotels. Einreichungen sind detailliert, Pr&uuml;fzyklen real, und die Fassade zu verbilligen steht nicht zur Wahl.</li>
+<li><strong>Ausbauerwartung.</strong> Die Vergleichsobjekte sind Branded Residences. Tischlerarbeiten, Naturstein, Verglasung und Beschl&auml;ge werden danach spezifiziert &mdash; und die pr&auml;zise Montage kostet mehr als das Material.</li>
+<li><strong>Baustellendisziplin.</strong> Gebaut wird in einer laufenden Luxusumgebung: kontrollierter Zugang, registrierte Arbeiter, begrenzte Zeiten, abgeschirmte Bauz&auml;une, L&auml;rmgrenzen, Reinigungspflichten und Kaution. Jeder Punkt kostet Bauzeit.</li>
+<li><strong>Naturraum.</strong> Der Masterplan ist um Lagunen, Kan&auml;le und Mangroven organisiert. Erhaltene Vegetation, Abst&auml;nde, Entw&auml;sserung und Einleitung werden zus&auml;tzlich auf Gemeinschaftsebene gesteuert.</li>
+<li><strong>Marine- und Feuchtespezifikation</strong> durchgehend: 316er Edelstahl, eloxiertes oder marinebeschichtetes Aluminium, gro&szlig;z&uuml;gige Betondeckung, hinterl&uuml;ftete Einbauten.</li>
+<li><strong>Knappheit.</strong> Wenige Wohngrundst&uuml;cke, jedes Projekt ein Einzelst&uuml;ck &mdash; keine Wiederholung, auf die sich Planungs- und Bauleitungskosten verteilen lie&szlig;en.</li>
+</ul>"""),
+  ("Ablauf, Genehmigungen und was zusätzlich zu budgetieren ist",
+   """<p>Genehmigt wird in der Gemeinde <strong>Solidaridad</strong>, mit der Architekturpr&uuml;fung der Gemeinschaft davor und einer Umweltpr&uuml;fung, die Lagune und Mangrove ernst nimmt. Reichen Sie in der Entwurfsphase ein: einen Entwurf fertigzustellen und erst dann zur Pr&uuml;fung zu geben, kostet hier ein Quartal.</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Zusätzlich zum Bau</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Architekten- und Ingenieurleistungen auf diesem Niveau</td><td>10&ndash;15% der Bausumme</td></tr>
+<tr><td>Einreichung, Pr&uuml;fzyklen, Baukaution</td><td>$150,000&ndash;$600,000</td></tr>
+<tr><td>Geplanter Pool mit Technik</td><td>$900,000&ndash;$3,500,000</td></tr>
+<tr><td>Ausgewachsene Bepflanzung und Bew&auml;sserung</td><td>$400,000&ndash;$2,000,000</td></tr>
+<tr><td>Ausstattung einer Villa dieser Klasse</td><td>$1,500,000&ndash;$6,000,000</td></tr>
+<tr><td>Gemeinschaftsgeb&uuml;hr</td><td>Laufend &mdash; je Grundst&uuml;ck pr&uuml;fen</td></tr>
+</tbody></table></div>
+<p>Die Bauzeit betr&auml;gt etwa <strong>10&ndash;16 Monate</strong> &mdash; l&auml;nger als im Korridor &uuml;blich, weil begrenzte Arbeitszeiten, Pr&uuml;fzyklen und Ausf&uuml;hrungspr&auml;zision Zeit kosten.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Mayakoba?",
+   "Die Einstiegsspanne liegt bei $24,000&ndash;$30,000 MXN/m&sup2;, also $3.60M&ndash;$4.50M MXN ($200k&ndash;$250k USD) f&uuml;r 150 m&sup2;. Real entstehen H&auml;user von 300&ndash;600 m&sup2; zu $35,000&ndash;$55,000 MXN/m&sup2; inklusive Architektenleistung, importierter Ausstattung, Automation, Pool und Bepflanzung."),
+  ("Warum ist Mayakoba der teuerste Bauort im Korridor?",
+   "Gestaltungskontrolle nach Resortma&szlig;stab, eine an Branded Residences orientierte Ausbauerwartung, Baustellendisziplin in laufender Luxusumgebung, Umweltmanagement um Lagunen und Mangroven, durchgehende Marine-Spezifikation und Knappheit ohne Wiederholungseffekte."),
+  ("Was muss ich zusätzlich zur Bausumme einplanen?",
+   "Planung und Ingenieurleistungen mit 10&ndash;15% der Bausumme, Einreichung und Kaution $150,000&ndash;$600,000, geplanter Pool $900,000&ndash;$3,500,000, ausgewachsene Bepflanzung $400,000&ndash;$2,000,000, Ausstattung $1,500,000&ndash;$6,000,000 sowie die laufende Gemeinschaftsgeb&uuml;hr."),
+  ("Wie lange dauert eine Villa in Mayakoba?",
+   "Etwa 10&ndash;16 Monate f&uuml;r eine Villa dieser Spezifikation, l&auml;nger als im Korridor &uuml;blich. Begrenzte Arbeitszeiten, Pr&uuml;fzyklen der Gemeinschaft und die geforderte Ausf&uuml;hrungspr&auml;zision kosten zus&auml;tzliche Zeit."),
+  ("Wer genehmigt den Entwurf?",
+   "Die Gemeinde Solidaridad f&uuml;r Nutzung, Genehmigung, Fluchtlinie und DRO sowie die Architekturpr&uuml;fung der Gemeinschaft, die praktisch zuerst kommt und Architektur, Materialien, Farbe, Freianlagen und Beleuchtung pr&uuml;ft."),
+ ],
+}
+
+Z[("de","corasol")] = {
+ "title": "Hausbau-Kosten in Corasol 2026: Bauen Im Laufenden Masterplan",
+ "desc": "Baukosten in Corasol 2026 und was Bauen in einem noch entstehenden Masterplan bedeutet: Infrastruktur in Etappen, Gestaltungsbeirat, Golflage, Zufahrtsregeln.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Corasol</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$3.30M&ndash;$4.12M MXN ($183k&ndash;$229k USD)</strong>, etwa 30% &uuml;ber dem Basisniveau von Playa del Carmen. In Corasol steht auch unser B&uuml;ro &mdash; diese Seite entsteht also wenige Gehminuten vom Thema entfernt.",
+ "sections": [
+  ("Schlüsselfertige Kosten nach Hausgröße",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>150 m&sup2;</td><td>$3.30M&ndash;$4.12M</td><td>$183k&ndash;$229k</td></tr>
+<tr><td>200 m&sup2;</td><td>$4.40M&ndash;$5.50M</td><td>$244k&ndash;$306k</td></tr>
+<tr><td>300 m&sup2;</td><td>$6.60M&ndash;$8.25M</td><td>$367k&ndash;$458k</td></tr>
+<tr><td>450 m&sup2;</td><td>$9.90M&ndash;$12.38M</td><td>$550k&ndash;$688k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $22,000&ndash;$27,500 MXN/m&sup2; Standard- bis Premium-Ausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Das meiste hier ist gr&ouml;&szlig;er als 150 m&sup2;: Grundst&uuml;cke und Markt dr&auml;ngen zu Villen von 250&ndash;450 m&sup2; mit Pool, Dachterrasse und geplanter Bepflanzung. Kalkulieren Sie das Gesamtpaket &mdash; bei 300 m&sup2; summieren sich Pool, Freianlagen, M&ouml;blierung und Honorare h&auml;ufig auf 35&ndash;50% oberhalb der reinen Bausumme.</p>"""),
+  ("Bauen in einer Gemeinschaft, die selbst noch entsteht",
+   """<ul>
+<li><strong>Die Infrastruktur kommt in Etappen.</strong> Lassen Sie sich f&uuml;r Ihr Grundst&uuml;ck best&auml;tigen, was heute tats&auml;chlich an der Grenze liegt &mdash; elektrische Leistung, Wasser, Kanal, Stra&szlig;enbelag &mdash; und was lediglich geplant ist. Zwischen "die Anlage wird haben" und "das Grundst&uuml;ck hat" liegt das Budgetrisiko.</li>
+<li><strong>Sie werden Baustellen als Nachbarn haben.</strong> Weitere H&auml;user und Gemeinschaftsarbeiten laufen &uuml;ber Jahre: L&auml;rm und Verkehr w&auml;hrend Ihrer Nutzung, geteilte Zufahrten w&auml;hrend Ihres Baus.</li>
+<li><strong>Die Gestaltungspr&uuml;fung ist aktiv und entwickelt sich.</strong> Der Beirat pr&uuml;ft H&ouml;he, Baumasse, Materialien, Farbe, Einfriedungen und Freianlagen, um ein stimmiges Bild in einer unfertigen Anlage zu sichern. Reichen Sie in der Entwurfsphase ein.</li>
+<li><strong>Zufahrts- und Bauregeln.</strong> Registrierte Arbeiter, kontrollierte Einfahrt, feste Lieferzeiten, Lagergrenzen auf dem Grundst&uuml;ck, Stra&szlig;enreinigung und Kaution. Kalkulieren Sie $80,000&ndash;$300,000 MXN f&uuml;r Einreichung, Kaution und Zufahrtsmanagement.</li>
+<li><strong>Golflage</strong> bringt die Frage von Verglasung und Oberlichtern &mdash; verirrte B&auml;lle sind ein reales, kalkulierbares Risiko &mdash; dazu die Schnittstelle von Bew&auml;sserung und Entw&auml;sserung zum Platz.</li>
+</ul>"""),
+  ("Baugrund, Genehmigungen und Ablauf",
+   """<p>Corasol liegt in der Gemeinde <strong>Solidaridad</strong>: Nutzungszertifikat, Fluchtlinie, Baugenehmigung und Director Responsable de Obra, mit der Architekturpr&uuml;fung der Gemeinschaft praktisch davor. Umweltanforderungen gelten wie an der &uuml;brigen K&uuml;ste, und der Karst verlangt ein Bodengutachten mit Sondierungen &uuml;ber der tats&auml;chlichen Grundfl&auml;che &mdash; gute Tragf&auml;higkeit und ein Hohlraum zwei Meter daneben sind hier beide normal.</p>
+<ul>
+<li><strong>Die Marine-Spezifikation gilt weiterhin.</strong> Corasol liegt nah genug am Meer, dass 316er Edelstahl, eloxiertes oder marinebeschichtetes Aluminium und gro&szlig;z&uuml;gige Betondeckung richtig und nicht optional sind.</li>
+<li><strong>Planen Sie das Dach von Anfang an als Terrasse,</strong> wenn die H&ouml;he es zul&auml;sst. Bei Grundst&uuml;cken mit Blick auf Platz oder Meer ist es der wertvollste Quadratmeter des Hauses; nachtr&auml;glich kostet es ein Vielfaches.</li>
+<li><strong>Technikfl&auml;chen richtig einplanen:</strong> Zisterne, Druckanlage, Wasseraufbereitung wegen der H&auml;rte, Pooltechnik und Positionen der Klimager&auml;te &mdash; alles wartungszug&auml;nglich.</li>
+</ul>
+<p>Die Bauzeit betr&auml;gt etwa <strong>8&ndash;12 Monate</strong> f&uuml;r eine Villa von 250&ndash;300 m&sup2; und mehr, wenn die Gestaltungspr&uuml;fung &uuml;ber einen Zyklus hinausgeht. Wenn Sie das Grundst&uuml;ck jetzt kaufen und sp&auml;ter bauen: Lassen Sie sich den Erschlie&szlig;ungsstand an der Grundst&uuml;cksgrenze vor dem Notartermin schriftlich geben.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Corasol?",
+   "Etwa $3.30M&ndash;$4.12M MXN ($183k&ndash;$229k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; &mdash; rund $22,000&ndash;$27,500 MXN/m&sup2;, etwa 30% &uuml;ber dem Basisniveau von Playa del Carmen. Die meisten H&auml;user hier haben 250&ndash;450 m&sup2;, wo Pool, Freianlagen, M&ouml;blierung und Honorare 35&ndash;50% hinzukommen."),
+  ("Was sollte ich vor dem Grundstückskauf in Corasol prüfen?",
+   "Welche Infrastruktur heute tats&auml;chlich an der Grundst&uuml;cksgrenze liegt &mdash; elektrische Leistung, Wasser, Kanal, Stra&szlig;enbelag &mdash; im Vergleich zum Geplanten. In einem noch entstehenden Masterplan liegt genau dort das Budgetrisiko."),
+  ("Kostet der Gestaltungsbeirat Zeit und Geld?",
+   "Beides. Kalkulieren Sie $80,000&ndash;$300,000 MXN f&uuml;r Einreichung, Baukaution und Zufahrtsmanagement und mindestens einen Pr&uuml;fzyklus im Terminplan, dazu registrierte Arbeiter, kontrollierte Einfahrt, Lieferzeiten und Stra&szlig;enreinigung."),
+  ("Was ändert die Golflage?",
+   "Die Spezifikation von Verglasung und Oberlichtern, weil verirrte B&auml;lle ein reales und kalkulierbares Risiko sind, dazu die Schnittstelle von Bew&auml;sserung und Entw&auml;sserung zum Platz. Das geh&ouml;rt in die Planung, nicht in einen sp&auml;teren Glastausch."),
+  ("Wie lange dauert eine Villa in Corasol?",
+   "Etwa 8&ndash;12 Monate f&uuml;r 250&ndash;300 m&sup2; von der Genehmigung bis zur &Uuml;bergabe, l&auml;nger bei mehr als einem Pr&uuml;fzyklus. Begrenzte Arbeitszeiten und kontrollierter Zugang schieben den Plan ans obere Ende."),
+ ],
+}
+
+Z[("de","aldea-zama")] = {
+ "title": "Hausbau-Kosten in Aldea Zamá 2026: Der Kalender Kostet",
+ "desc": "Baukosten in Aldea Zamá 2026 plus der Posten, den niemand einplant: Tulums Genehmigungskalender. Höhenbegrenzung, Stromversorgung, erschlossener Masterplan.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Aldea Zam&aacute;</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$3.08M&ndash;$3.75M MXN ($171k&ndash;$208k USD)</strong>, etwa 20% &uuml;ber dem Basisniveau von Playa del Carmen. Die Bausumme ist unkompliziert. Was in Tulum selten budgetiert wird, ist Zeit.",
+ "sections": [
+  ("Schlüsselfertige Kosten nach Hausgröße",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$2.05M&ndash;$2.50M</td><td>$114k&ndash;$139k</td></tr>
+<tr><td>150 m&sup2;</td><td>$3.08M&ndash;$3.75M</td><td>$171k&ndash;$208k</td></tr>
+<tr><td>200 m&sup2;</td><td>$4.10M&ndash;$5M</td><td>$228k&ndash;$278k</td></tr>
+<tr><td>300 m&sup2;</td><td>$6.15M&ndash;$7.50M</td><td>$342k&ndash;$417k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $20,500&ndash;$25,000 MXN/m&sup2; Standard- bis Premium-Ausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Aldea Zam&aacute; liegt aus einem einfachen Grund &uuml;ber den Tulum-Regionen und La Veleta: Es ist ein erschlossener Masterplan mit Leitungen im Boden, asphaltierten Zufahrten und definiertem Charakter in Geh- oder Radn&auml;he zur Strandstra&szlig;e. Sie bezahlen vorhandene Infrastruktur statt Infrastruktur, die Sie selbst herstellen m&uuml;ssen.</p>"""),
+  ("Was der Genehmigungskalender wirklich kostet",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Schritt</th><th>Dauer</th></tr></thead><tbody>
+<tr><td>Nutzungszertifikat und Fluchtlinie</td><td>2&ndash;8 Wochen</td></tr>
+<tr><td>Bodengutachten (parallel)</td><td>2&ndash;5 Wochen</td></tr>
+<tr><td>Umweltakte</td><td>3&ndash;8 Monate je nach Bewuchs</td></tr>
+<tr><td>Technische Planung (parallel)</td><td>6&ndash;14 Wochen</td></tr>
+<tr><td>Genehmigungspr&uuml;fung bei vollst&auml;ndiger Akte</td><td>4&ndash;12 Wochen</td></tr>
+<tr><td><strong>Gesamt bis zum Baubeginn</strong></td><td><strong>5&ndash;12 Monate</strong></td></tr>
+</tbody></table></div>
+<p>Diese Monate sind ein realer Posten: gebundenes Grundst&uuml;ck, gebundenes Kapital, kein Ertrag. Zwei Wege, sie zu verk&uuml;rzen. Erstens: Umweltakte und Bodengutachten starten, solange die Architektur noch im Entwurf ist &mdash; beides braucht keine Endpl&auml;ne und beeinflusst den Entwurf ohnehin. Zweitens: Beim Grundst&uuml;cksvergleich eine bestehende Umweltgenehmigung hoch gewichten; sie kann sechs Monate und einen sechsstelligen Betrag wert sein.</p>"""),
+  ("Höhe, Strom und was hier gebaut wird",
+   """<ul>
+<li><strong>Die H&ouml;henbegrenzungen sind streng</strong> und werden durchgesetzt. Tulums Regeln sind bewusst enger als die von Playa del Carmen &mdash; pr&uuml;fen Sie das genaue Ma&szlig; f&uuml;r Ihr Grundst&uuml;ck, bevor Sie eine Dachterrasse planen. Bei vielen Grundst&uuml;cken h&auml;ngt an dieser einen Zahl, ob das Projekt &uuml;berzeugt.</li>
+<li><strong>Die Stromversorgung ist unzuverl&auml;ssiger als in Playa del Carmen.</strong> Kalkulieren Sie einen &Uuml;berspannungsschutz f&uuml;r das ganze Haus als Standard und bei Mietobjekten ein Batteriesystem f&uuml;r das N&ouml;tigste &mdash; Internet, Poolsteuerung, etwas Licht und einen Ventilator &mdash; f&uuml;r $140,000&ndash;$330,000 MXN. Solar rechnet sich hier besonders, sobald Poolpumpe und mehrere Klimager&auml;te den Verbrauch in den DAC-Tarif treiben.</li>
+<li><strong>Der Markt ist eigentumswohnungsdominiert,</strong> was genau das Argument f&uuml;r ein Haus ist. Einem freistehenden Haus kann keine Eigent&uuml;merversammlung die Kurzzeitvermietung entziehen, es zahlt keine Gemeinschaftsgeb&uuml;hr auf den Bruttoertrag und l&auml;sst sich auf Rendite planen: Schlafzimmer mit eigenem Bad, Lock-off-Casita, Dachterrasse, Pool in der richtigen Blickachse.</li>
+</ul>
+<p>Technisch gelten die &uuml;blichen Tulum-Punkte: Reinigung vor Versickerung nach Belegung ($90,000&ndash;$250,000 MXN), Wasseraufbereitung wegen der H&auml;rte, Termiten- und Feuchtedetails sowie ein Bodengutachten, weil der Karst hier cenotenreich ist. Die Bauzeit betr&auml;gt etwa <strong>7&ndash;11 Monate</strong> f&uuml;r 150&ndash;200 m&sup2;.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Aldea Zamá?",
+   "Etwa $3.08M&ndash;$3.75M MXN ($171k&ndash;$208k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; im Standard- bis Premium-Ausbau &mdash; rund $20,500&ndash;$25,000 MXN/m&sup2;, etwa 20% &uuml;ber dem Basisniveau von Playa del Carmen."),
+  ("Warum ist es teurer als die Tulum-Regionen?",
+   "Weil die Infrastruktur vorhanden ist: ein erschlossener Masterplan mit Leitungen im Boden, asphaltierten Zufahrten und definiertem Charakter nahe der Strandstra&szlig;e. Bei einem g&uuml;nstigeren Regi&oacute;n-Grundst&uuml;ck bezahlen Sie Erschlie&szlig;ung, Zufahrt und Umfeld sp&auml;ter selbst."),
+  ("Wie lange dauert es bis zum Baubeginn in Tulum?",
+   "Realistisch f&uuml;nf bis zw&ouml;lf Monate ab Kauf: 2&ndash;8 Wochen Nutzungszertifikat und Fluchtlinie, 3&ndash;8 Monate Umweltakte bei bewachsenem Grundst&uuml;ck und 4&ndash;12 Wochen Genehmigungspr&uuml;fung. Starten Sie Umweltakte und Bodengutachten bereits in der Entwurfsphase."),
+  ("Ist eine Dachterrasse in Aldea Zamá möglich?",
+   "Das h&auml;ngt an der H&ouml;henbegrenzung des konkreten Grundst&uuml;cks, und Tulums Grenzen sind bewusst eng und werden durchgesetzt. Pr&uuml;fen Sie das Ma&szlig; vor dem Entwurf &mdash; bei vielen Grundst&uuml;cken entscheidet es &uuml;ber die Qualit&auml;t des Projekts."),
+  ("Was tun gegen Stromausfälle in Tulum?",
+   "&Uuml;berspannungsschutz f&uuml;r das ganze Haus als Standard und bei Mietobjekten ein Batteriesystem f&uuml;r Internet, Poolsteuerung, Licht und Ventilator f&uuml;r $140,000&ndash;$330,000 MXN. Solar amortisiert sich hier ebenfalls schnell, besonders im DAC-Tarif."),
+ ],
+}
+
+Z[("de","playa-del-carmen")] = {
+ "title": "Hausbau-Kosten in Playa del Carmen 2026: Phase für Phase",
+ "desc": "Der Referenzpreis des Korridors. Phasenbudget für ein 150-m²-Haus, was der m²-Preis enthält und was nicht, Zusatzposten und Budgetdisziplin.",
+ "lead": "Ein solide gebautes 150-m&sup2;-Familienhaus in <strong>Playa del Carmen</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$2.6M&ndash;$3.2M MXN ($145.000&ndash;$178.000 USD)</strong>. An dieser Zahl misst sich der gesamte Korridor &mdash; deshalb lohnt es, sie phasenweise zu verstehen statt als eine einzige Summe.",
+ "sections": [
+  ("Phasenbudget (Standardhaus, 150 m²)",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Phase</th><th>% des Budgets</th><th>Kosten (MXN)</th><th>Umfang</th></tr></thead><tbody>
+<tr><td>Genehmigungen, DRO, Gutachten</td><td>5%</td><td>$130.000&ndash;$160.000</td><td>Baugenehmigung, DRO, Boden, Vermessung</td></tr>
+<tr><td>Gr&uuml;ndung und Rohbau</td><td>30%</td><td>$780.000&ndash;$960.000</td><td>Bodenplatte, St&uuml;tzen, Unterz&uuml;ge, Decken</td></tr>
+<tr><td>W&auml;nde und Dach</td><td>18%</td><td>$470.000&ndash;$580.000</td><td>Mauerwerk, Ringanker, Dachdecke</td></tr>
+<tr><td>Installationen</td><td>15%</td><td>$390.000&ndash;$480.000</td><td>Elektro, Sanit&auml;r, Abwasser</td></tr>
+<tr><td>Ausbau</td><td>25%</td><td>$650.000&ndash;$800.000</td><td>B&ouml;den, Anstrich, Chukum, Tischlerei</td></tr>
+<tr><td>Endreinigung und &Uuml;bergabe</td><td>7%</td><td>$180.000&ndash;$220.000</td><td>Restarbeiten, &Uuml;bergabe</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Gesamt schl&uuml;sselfertig &asymp; $2.6M&ndash;$3.2M MXN. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Zwei Lesarten: Der Rohbau ist fast ein Drittel des Budgets und die einzige Phase, in der Sparen in einer Starkwindregion wirklich gef&auml;hrlich ist. Und der Ausbau mit 25% ist dort, wo Ihre Spezifikation tats&auml;chlich stattfindet &mdash; derselbe Rohbau mit anderem Ausbau verschiebt die Summe um 20%, ohne dass sich ein Plan &auml;ndert.</p>"""),
+  ("Was der m²-Preis enthält und was nicht",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Position</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Grundst&uuml;ck</td><td>Separat, und die gr&ouml;&szlig;te Variable in Playa del Carmen</td></tr>
+<tr><td>Pool 4&times;8 m mit Technik</td><td>$450.000&ndash;$1.200.000</td></tr>
+<tr><td>Dachterrassenausbau (Statik vorgesehen)</td><td>$3.500&ndash;$9.000 pro m&sup2;</td></tr>
+<tr><td>Wasseraufbereitung (Filter, Enth&auml;rter, Aktivkohle, Osmose)</td><td>$35.000&ndash;$95.000</td></tr>
+<tr><td>Klimaanlage, 4&ndash;5 Inverter-Zonen</td><td>$120.000&ndash;$280.000</td></tr>
+<tr><td>Solar, 5&ndash;8 kWp</td><td>$115.000&ndash;$250.000</td></tr>
+<tr><td>Freianlagen und Bew&auml;sserung</td><td>$500&ndash;$2.000 pro m&sup2;</td></tr>
+<tr><td>M&ouml;bel und Ger&auml;te</td><td>$450.000&ndash;$1.200.000 f&uuml;r ein Familienhaus</td></tr>
+</tbody></table></div>
+<p>Planung, Ingenieurleistungen, Gutachten und Genehmigungen liegen bei einem individuellen Haus zusammen typischerweise bei 8&ndash;14% der Bausumme &mdash; teils bereits in der Phasentabelle enthalten und keine Position zum K&uuml;rzen, denn jeder dadurch vermiedene Fehler kostet mehr als das ganze Paket.</p>"""),
+  ("Warum das die Referenz ist und wie das Budget hält",
+   """<p>Playa del Carmen liegt unter den geschlossenen und Premium-Lagen aus strukturellen Gr&uuml;nden, nicht aus Qualit&auml;tsgr&uuml;nden: breite Lieferantenbasis, echter Wettbewerb, erschlossene st&auml;dtische Grundst&uuml;cke, ein direkter Genehmigungsweg in der Gemeinde <strong>Solidaridad</strong> und bei den allermeisten Grundst&uuml;cken keine Bundesk&uuml;stenzone. Alles &Uuml;brige im Korridor ist ein Vielfaches davon: Puerto Morelos etwa gleichauf, Puerto Aventuras rund 8% dar&uuml;ber, Akumal 12%, Aldea Zam&aacute; 20%, Playacar 25%, Corasol 30%, Mayakoba 42%.</p>
+<ul>
+<li><strong>Festpreis mit Positionsbudget,</strong> kein m&sup2;-Preis per Handschlag. Ein Einheitspreis mal Quadratmeter ist kein Budget, sondern eine Einladung zum Nachverhandeln.</li>
+<li><strong>Zahlungen nach gepr&uuml;ftem Baufortschritt,</strong> nicht nach Kalenderdaten, mit 5&ndash;10% Einbehalt bis zum Abschluss der M&auml;ngelliste.</li>
+<li><strong>Nachtr&auml;ge schriftlich und bepreist,</strong> bevor gearbeitet wird. M&uuml;ndliche &Auml;nderungen sind der h&auml;ufigste Weg vom Festpreis zum offenen Preis.</li>
+<li><strong>Ausdr&uuml;ckliche Ausschlussliste</strong> &mdash; M&ouml;bel, Ger&auml;te, Freianlagen jenseits einer definierten Grenze, Anschlussgeb&uuml;hren &mdash; bei Vertragsschluss vereinbart.</li>
+</ul>
+<p>Ein 150-m&sup2;-Haus dauert etwa <strong>7&ndash;10 Monate</strong> ab Genehmigung, zuz&uuml;glich zwei bis vier Monate Vorlauf. F&uuml;r eine schnelle Sch&auml;tzung nutzen Sie den <a href="/kostenrechner/">Kostenrechner</a>.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Playa del Carmen 2026?",
+   "Etwa $2.6M&ndash;$3.2M MXN ($145.000&ndash;$178.000 USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; mit Standardausbau &mdash; rund $17.000&ndash;$21.000 MXN/m&sup2;, ohne Grundst&uuml;ck, Pool und M&ouml;bel."),
+  ("Was ist im m²-Preis nicht enthalten?",
+   "Grundst&uuml;ck, Pool ($450.000&ndash;$1.200.000), Dachterrassenausbau, Wasseraufbereitung, Klimaanlage, Solar, Freianlagen und M&ouml;blierung. Daraus entstehen die meisten Budget&uuml;berraschungen &mdash; also von Anfang an als eigene Positionen kalkulieren."),
+  ("Welche Phase kostet am meisten?",
+   "Gr&uuml;ndung und Rohbau mit etwa 30%, gefolgt vom Ausbau mit 25%. Der Rohbau ist zugleich die Phase, in der Sparen in einer Starkwindregion gef&auml;hrlich ist, w&auml;hrend der Ausbau die Summe um 20% verschieben kann, ohne dass sich ein Plan &auml;ndert."),
+  ("Wie verhält sich Playa del Carmen zu den anderen Lagen?",
+   "Es ist die Referenz. Puerto Morelos liegt etwa gleichauf, Puerto Aventuras rund 8% dar&uuml;ber, Akumal 12%, Aldea Zam&aacute; 20%, Playacar 25%, Corasol 30% und Mayakoba 42% &mdash; die Unterschiede stammen aus Zugangsbeschr&auml;nkungen, Gestaltungsbeir&auml;ten, Marine-Spezifikation und Umweltauflagen."),
+  ("Wie verhindere ich, dass das Budget davonläuft?",
+   "Festpreis mit Positionsbudget statt m&sup2;-Pauschale, Zahlungen nach gepr&uuml;ftem Baufortschritt mit 5&ndash;10% Einbehalt, schriftliche und bepreiste Nachtr&auml;ge vor Ausf&uuml;hrung und eine ausdr&uuml;ckliche Ausschlussliste bei Vertragsschluss."),
+ ],
+}
+
+Z[("de","tulum")] = {
+ "title": "Hausbau-Kosten in Tulum 2026: Grundstück Entscheidet",
+ "desc": "Baukosten in Tulum 2026 und warum das Grundstück — Erschließung, Bewuchs, Umweltakte — mehr über die Endsumme entscheidet als das Haus selbst.",
+ "lead": "Ein 150-m&sup2;-Haus in <strong>Tulum</strong> kostet 2026 schl&uuml;sselfertig rund <strong>$2.85M&ndash;$3.60M MXN ($158k&ndash;$200k USD)</strong>. Die Spanne der Endsummen ist hier jedoch gr&ouml;&szlig;er als irgendwo sonst im Korridor &mdash; und der Grund daf&uuml;r ist fast nie das Haus, sondern das Grundst&uuml;ck.",
+ "sections": [
+  ("Kosten nach Hausgröße und Lage",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Hausgr&ouml;&szlig;e</th><th>Schl&uuml;sselfertig (MXN)</th><th>Schl&uuml;sselfertig (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.90M&ndash;$2.40M</td><td>$106k&ndash;$133k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.85M&ndash;$3.60M</td><td>$158k&ndash;$200k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.80M&ndash;$4.80M</td><td>$211k&ndash;$267k</td></tr>
+<tr><td>300 m&sup2;</td><td>$5.70M&ndash;$7.20M</td><td>$317k&ndash;$400k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referenz: $19.000&ndash;$24.000 MXN/m&sup2; Standard- bis Premium-Ausbau. USD/MXN &asymp; 18. Ohne Grundst&uuml;ck, Pool und M&ouml;bel.</p>
+<p>Innerhalb Tulums spreizen sich die Lagen deutlich: die Regionen und La Veleta am unteren Rand, Aldea Zam&aacute; und der Tulum Country Club dar&uuml;ber, die Strandstra&szlig;e mit Marine-Spezifikation und schwerer Umweltakte weit dar&uuml;ber.</p>"""),
+  ("Warum das Grundstück die Endsumme bestimmt",
+   """<p>Vier Positionen, die mit dem Grundst&uuml;ck und nicht mit der Hausgr&ouml;&szlig;e skalieren:</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Position</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Umweltakte je nach Bewuchs</td><td>$80.000&ndash;$300.000</td></tr>
+<tr><td>Kl&auml;ranlage bzw. Biodigestor mit Sickerfeld</td><td>$90.000&ndash;$250.000</td></tr>
+<tr><td>CFE-Anschluss an erschlossener Stra&szlig;e</td><td>$10.000&ndash;$40.000</td></tr>
+<tr><td>CFE-Erweiterung zu unerschlossenem Grundst&uuml;ck</td><td>$150.000&ndash;&uuml;ber $900.000</td></tr>
+<tr><td>Inselversorgung statt Netzanschluss (Solar, Speicher, Brunnen)</td><td>$250.000&ndash;$800.000</td></tr>
+<tr><td>Zufahrt und Erschlie&szlig;ung im Dschungelgel&auml;nde</td><td>$40.000&ndash;$300.000</td></tr>
+</tbody></table></div>
+<p>Deshalb ist die wichtigste Entscheidung in Tulum die Grundst&uuml;cksauswahl und nicht die Ausstattungsliste. Lassen Sie die CFE-Erweiterung <em>vor</em> dem Kauf beziffern: Diese eine Zahl entscheidet dar&uuml;ber, ob Netzanschluss oder eine geplante Inselversorgung der g&uuml;nstigere und schnellere Weg ist.</p>"""),
+  ("Genehmigungskalender, Strom und Ausführung",
+   """<p>Tulums Pr&uuml;fung ist die umweltrechtlich anspruchsvollste im Korridor. Realistisch vergehen <strong>6&ndash;14 Monate</strong> vom Kauf bis zum Baubeginn: Nutzungszertifikat und Fluchtlinie 2&ndash;8 Wochen, Umweltakte 4&ndash;9 Monate bei bewachsenem Grundst&uuml;ck, technische Planung parallel, Genehmigungspr&uuml;fung 4&ndash;12 Wochen. Starten Sie Umweltakte und Bodengutachten in der Entwurfsphase &mdash; beides braucht keine Endpl&auml;ne und beeinflusst den Entwurf ohnehin.</p>
+<ul>
+<li><strong>H&ouml;henbegrenzungen sind streng</strong> und werden durchgesetzt &mdash; pr&uuml;fen Sie das Ma&szlig; f&uuml;r Ihr Grundst&uuml;ck, bevor Sie eine Dachterrasse planen.</li>
+<li><strong>Die Stromversorgung ist unzuverl&auml;ssiger</strong> als weiter n&ouml;rdlich: &Uuml;berspannungsschutz als Standard, bei Mietobjekten ein Batteriesystem f&uuml;r Internet, Poolsteuerung und Grundbeleuchtung, $140.000&ndash;$330.000 MXN.</li>
+<li><strong>Cenoten und Karst</strong> verlangen Bodengutachten mit Sondierungen und Abst&auml;nde f&uuml;r Versickerung. Was hier versickert, erreicht den Aquifer und das Riff.</li>
+<li><strong>Termiten und Feuchte:</strong> kein Holz-Erdkontakt, Bodenbehandlung vor der Platte, hinterl&uuml;ftete Einbauten, Entfeuchtung in geschlossenen R&auml;umen.</li>
+</ul>
+<p>Die reine Bauzeit betr&auml;gt etwa <strong>7&ndash;11 Monate</strong> f&uuml;r 150&ndash;200 m&sup2;. Festpreisvertrag mit Positionsbudget und Zahlungen nach gepr&uuml;ftem Fortschritt &mdash; und den Genehmigungskalender von Anfang an in die Planung nehmen, statt ihn zu entdecken.</p>"""),
+ ],
+ "faq": [
+  ("Was kostet ein Hausbau in Tulum 2026?",
+   "Etwa $2.85M&ndash;$3.60M MXN ($158k&ndash;$200k USD) schl&uuml;sselfertig f&uuml;r 150 m&sup2; &mdash; rund $19.000&ndash;$24.000 MXN/m&sup2;. Innerhalb Tulums liegen die Regionen und La Veleta am unteren Rand, Aldea Zam&aacute; dar&uuml;ber und die Strandstra&szlig;e deutlich dar&uuml;ber."),
+  ("Warum schwanken die Endsummen in Tulum so stark?",
+   "Weil vier gro&szlig;e Positionen mit dem Grundst&uuml;ck skalieren und nicht mit dem Haus: Umweltakte $80.000&ndash;$300.000, Kl&auml;ranlage $90.000&ndash;$250.000, Stromanschluss zwischen $10.000 und &uuml;ber $900.000, und Zufahrt im Dschungelgel&auml;nde $40.000&ndash;$300.000."),
+  ("Netzanschluss oder Inselversorgung?",
+   "Lassen Sie die CFE-Erweiterung vor dem Kauf beziffern. Liegt sie im hohen sechsstelligen Bereich, ist eine geplante Inselversorgung mit Solar, Speicher, aufbereitetem Brunnen und Regenwasser f&uuml;r $250.000&ndash;$800.000 oft g&uuml;nstiger und schneller."),
+  ("Wie lange dauert es bis zum Baubeginn?",
+   "Realistisch 6&ndash;14 Monate ab Kauf, haupts&auml;chlich wegen der Umweltakte, die bei bewachsenem Grundst&uuml;ck 4&ndash;9 Monate braucht. Umweltakte und Bodengutachten sollten starten, solange die Architektur noch im Entwurf ist."),
+  ("Welche technischen Punkte sind in Tulum besonders wichtig?",
+   "Reinigung vor Versickerung mit korrekten Abst&auml;nden zu Cenoten, Bodengutachten wegen des Karsts, &Uuml;berspannungsschutz und gegebenenfalls Batteriepuffer wegen der Netzqualit&auml;t, sowie konsequente Termiten- und Feuchtedetails ohne Holz-Erdkontakt."),
+ ],
+}
+
 if __name__ == "__main__":
     keys = ([tuple(a.split(":", 1)) for a in sys.argv[1:]] or sorted(Z))
     for lang, zone in keys:
