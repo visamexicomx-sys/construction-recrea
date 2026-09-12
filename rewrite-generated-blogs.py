@@ -1799,7 +1799,7 @@ CONTENT["custom-home-design-playa-del-carmen"] = {
 }
 
 CONTENT["two-story-house-construction-riviera-maya"] = {
- "title": "Two-Storey House Construction in the Riviera Maya: Costs and Rules",
+ "title": "Two-Storey House Construction in the Riviera Maya",
  "desc": "When a second storey is the right move: CUS and height limits, the structural and cost premium, stair and services planning, and whether to build it now or later.",
  "intro": [
    "A second storey is the standard answer to a narrow lot, an expensive location, or a brief that wants bedrooms upstairs and living space opening to a garden. It is also the point at which a house stops being a simple structure: the foundations carry more, the stair eats floor area on both levels, the services get longer, and the municipal limits that were comfortable on one level start to bite.",
@@ -1862,7 +1862,7 @@ CONTENT["two-story-house-construction-riviera-maya"] = {
 
 CONTENT["small-house-construction-tulum"] = {
  "title": "Small House Construction in Tulum: Under 100 m² Done Properly",
- "desc": "What a compact Tulum house really costs, where the fixed costs land regardless of size, off-grid decisions on jungle lots, and the design moves that make 80 m² feel generous.",
+ "desc": "What a compact Tulum house really costs, where the fixed costs land regardless of size, off-grid decisions on jungle lots, and making 80 m² feel generous.",
  "intro": [
    "A small house in Tulum is not a cheap version of a large one. Below roughly 100 m&sup2;, the fixed costs &mdash; permits, the environmental file, the soil study, the cistern, the treatment plant, the electrical connection or the solar system, the pool if you want one &mdash; stop being a small percentage of the budget and start dominating it. Two houses of 80 m&sup2; and 180 m&sup2; on similar lots can have surprisingly similar bills for everything that is not walls and finishes.",
    "That is not an argument against building small. Compact houses are often the best decision in Tulum: they suit the lots, they leave the vegetation intact, they rent very well to couples and remote workers, and they can be off-grid far more easily than a large house. But they need to be planned with the fixed costs visible from the start, and designed so the space works."
@@ -2044,7 +2044,7 @@ CONTENT["beachfront-house-construction-riviera-maya"] = {
 }
 
 CONTENT["retirement-home-mexico-riviera-maya"] = {
- "title": "Building a Retirement Home in the Riviera Maya: Design for Decades",
+ "title": "Building a Retirement Home in the Riviera Maya",
  "desc": "Single-level plans, step-free detailing, healthcare proximity, residency and fideicomiso basics, and running costs for a retirement house on the Caribbean coast.",
  "intro": [
    "Retirement buyers ask different questions than investors, and they should be designed for differently. The house has to work at seventy-five as well as at sixty, which means single-level living, step-free thresholds and doorways wide enough for a walker long before anyone needs one. It has to be cheap and simple to run, because a fixed income does not absorb a surprise. And its location matters for reasons that have nothing to do with rental yield &mdash; hospital access, walkability, community, and how easy it is for family to visit.",
@@ -2173,7 +2173,7 @@ CONTENT["jungle-house-construction-tulum"] = {
 
 CONTENT["penthouse-construction-playa-del-carmen"] = {
  "title": "Penthouse Construction in Playa del Carmen: Roof, Load, Access",
- "desc": "Building or remodelling a penthouse: height and CUS limits, roof-slab loading for pools and gardens, waterproofing that has to last, crane access and condo approvals.",
+ "desc": "Building or remodelling a penthouse: height and CUS limits, roof-slab loading for pools, waterproofing that lasts, crane access and condo approvals.",
  "intro": [
    "A penthouse is the most valuable unit in a building in Playa del Carmen and the most technically exposed. It takes the full sun on its roof and its walls, it carries whatever you put on the roof terrace &mdash; a pool, planters, a pergola, a kitchen &mdash; and every one of those things sits above a waterproofing membrane that will be extremely expensive to repair once the terrace is finished over it.",
    "This is for two audiences: developers planning the top floor of a new building, and owners remodelling an existing penthouse or adding a roof terrace. The constraints are similar; the approvals differ."
@@ -2307,7 +2307,7 @@ CONTENT["multi-family-house-riviera-maya"] = {
 
 CONTENT["modern-minimalist-house-playa-del-carmen"] = {
  "title": "Minimalist Houses in Playa del Carmen: What Makes Them Work",
- "desc": "Why minimalist detailing is harder in a tropical climate: chukum and concrete finishes, flush details that must still drain, hidden services, and what the precision costs.",
+ "desc": "Why minimalist detailing is harder in the tropics: chukum and concrete finishes, flush details that must still drain, hidden services, and what precision costs.",
  "intro": [
    "Minimalism is the dominant architectural language on this coast, and it is considerably harder to execute here than the finished photographs suggest. A minimalist house removes the mouldings, reveals, drips and trims that conventional detailing uses to hide tolerance and to control water. What is left is flat planes meeting flat planes &mdash; in a climate with 1,200 mm of annual rain, driven horizontal rain, extreme UV and thermal movement.",
    "Done well, it is the right architecture for the Riviera Maya: it suits the light, it works in chukum and concrete which are local materials, and it frames the landscape rather than competing with it. Done badly, it is a house with cracked render, stained walls and water in places water should not be. This is what separates the two."
@@ -2369,7 +2369,7 @@ CONTENT["modern-minimalist-house-playa-del-carmen"] = {
 
 CONTENT["office-building-construction-cancun"] = {
  "title": "Office Building Construction in Cancún: Costs, Code, Fit-Out",
- "desc": "Developing offices in Cancún: land use and parking ratios, core-and-shell vs fit-out costs, Civil Protection and accessibility requirements, and what tenants here ask for.",
+ "desc": "Developing offices in Cancún: land use and parking ratios, core-and-shell vs fit-out costs, Civil Protection and accessibility, and what tenants ask for.",
  "intro": [
    "Cancún's office market is small relative to its hotel and residential markets, and it is driven by specific tenants: tour operators and DMCs, airlines and aviation services, logistics and freight, professional services, medical and dental practices, and an increasing number of back-office and shared-service operations attracted by the airport and the labour pool. Understanding which of those you are building for changes the building.",
    "This covers the development questions in the order they arise: what the land use and parking ratio permit, how core-and-shell costs differ from fit-out, the compliance layer that commercial buildings carry and residential ones do not, and the specification tenants here actually ask about."
@@ -3012,7 +3012,7 @@ CONTENT["apart-hotel-construction-riviera-maya"] = {
 
 CONTENT["eco-resort-construction-bacalar"] = {
  "title": "Eco-Resort Construction in Bacalar: Low Impact, Real Constraints",
- "desc": "Building a small eco-resort on the lagoon: stromatolite and shoreline protection, off-grid systems sized for guests, low-impact structures, logistics and cost per key.",
+ "desc": "Building a small eco-resort on the lagoon: stromatolite and shoreline rules, off-grid systems sized for guests, low-impact structures and cost per key.",
  "intro": [
    "Bacalar attracts eco-resort development for exactly the reasons that make it fragile: a freshwater lagoon of extraordinary clarity, living stromatolite formations along parts of the shore, dark skies, and a setting that sells itself. The development that has already arrived has produced visible consequences, enforcement attention has followed, and any new project there now faces a genuinely demanding environmental review &mdash; which is appropriate.",
    "This is a build guide for a small, honest eco-resort: what the lagoon rules actually permit, how to size off-grid systems for paying guests rather than for a household, the structures and materials that suit the place, the logistics of building four hours from the corridor's supply chain, and cost per key."
@@ -3133,7 +3133,7 @@ CONTENT["hotel-renovation-cancun-zona-hotelera"] = {
 
 CONTENT["glamping-construction-riviera-maya"] = {
  "title": "Glamping Construction in the Riviera Maya: Structures and Permits",
- "desc": "Building a glamping site: whether tents count as construction, platform and services design, hurricane and humidity reality, and cost per key for safari tents and domes.",
+ "desc": "Building a glamping site: whether tents count as construction, platform and services design, hurricane and humidity reality, and real cost per key.",
  "intro": [
    "Glamping looks like the low-capital way into hospitality here, and it is cheaper than a hotel &mdash; but much less cheap than the tent price suggests. The tent or dome is typically a minority of the cost per key. The platform it stands on, the water and wastewater serving it, the power reaching it, the path connecting it, and the bathroom attached to it are the actual project, and they are conventional construction with conventional permits.",
    "This covers the regulatory question people hope to avoid, how the structures actually perform in this climate, what services a glamping site needs, and honest cost per key for the formats that work in the corridor."
@@ -3201,6 +3201,754 @@ CONTENT["glamping-construction-riviera-maya"] = {
    "It is what guests now expect and what rate depends on, but it means water, drainage and treatment to every unit &mdash; the largest infrastructure line on the site. Shared bathroom blocks cut that cost substantially while capping your rate and your market. Composting or low-flush systems reduce water and treatment load but need a realistic maintenance plan."),
   ("Is glamping better value than building casitas?",
    "Per key, yes &mdash; roughly half to two-thirds the cost. Over ten years, often not, because the fabric needs replacing every few years and a palapa-roofed casita does not. Glamping earns its place where the setting is the product and where a lighter footprint is genuinely easier to authorise; otherwise casitas usually win the arithmetic."),
+ ],
+}
+
+CONTENT["complete-house-renovation-playa-del-carmen"] = {
+ "title": "Complete House Renovation in Playa del Carmen: Survey First",
+ "desc": "What a full renovation involves here: condition survey before pricing, electrical and plumbing that must be replaced not extended, permits, phasing and cost per m2.",
+ "intro": [
+   "A complete renovation is the highest-variance work we do. A new build on a clean lot is largely predictable; opening up a twenty-year-old house in Playa del Carmen is not, because the cost is determined by conditions nobody can see until demolition starts. The houses that come in on budget are the ones that were surveyed properly first, and the ones that overrun are almost always the ones priced from a walk-through.",
+   "This covers what to survey and why, which systems should be replaced rather than extended, when renovation stops making sense against rebuilding, what permits a renovation needs, and realistic costs and programme for a full refurbishment."
+ ],
+ "sections": [
+  ("Survey Before You Price",
+   """    <p>Spend money on investigation before you spend it on drawings. On a house of fifteen years or more in this climate, these are the findings that move the budget:</p>
+    <ul>
+      <li><strong>Structural condition, especially exposed concrete.</strong> Slab edges, balconies, columns, parapets and roof beams. Chloride-induced reinforcement corrosion is the standard defect on this coast, and repairing it properly &mdash; cutting back beyond the corroded steel, treating or replacing reinforcement, repair mortar and protection &mdash; is a different order of cost from a cosmetic patch.</li>
+      <li><strong>Roof waterproofing,</strong> which usually has a service life shorter than the owner assumes. Assume replacement rather than repair unless there is evidence otherwise.</li>
+      <li><strong>Electrical installation.</strong> Older houses here frequently have no proper grounding, no GFCI protection in wet areas, undersized panels with no spare capacity, and cable buried in plaster without conduit. That combination is not extendable &mdash; it is replaceable.</li>
+      <li><strong>Plumbing and drainage.</strong> Original galvanised pipework corrodes internally; hard water accelerates it. Drainage falls and vent arrangements in older houses are often improvised. Camera the drains and pressure-test the supply before pricing.</li>
+      <li><strong>Termite and moisture damage</strong> in any timber &mdash; roof structure, joinery, decks &mdash; and in the substrate behind wet-area tiling.</li>
+      <li><strong>Pool structure and plant,</strong> if there is one: shell condition, the state of the plumbing rings, and whether the equipment is worth keeping.</li>
+      <li><strong>Windows and doors:</strong> frame corrosion, glazing type, and whether the openings are square enough to accept new units without rebuilding the reveals.</li>
+      <li><strong>Legacy materials.</strong> In older buildings, test before demolition rather than during.</li>
+    </ul>
+    <p>A proper survey with opening-up of representative areas costs a fraction of a percent of the project and is the difference between a fixed price that holds and a series of change orders.</p>"""),
+  ("Replace, Don't Extend — and Know When to Rebuild",
+   """    <p><strong>The systems to replace wholesale in a full renovation:</strong> the electrical installation (new conduit, circuits, panel, grounding, GFCI), the water supply pipework, the wet-area waterproofing, and the roof membrane. Extending any of these is a false economy &mdash; you inherit the failure mode and then finish over it. Everything else &mdash; structure, openings, joinery, finishes &mdash; can genuinely be assessed on merit.</p>
+    <p><strong>When to stop renovating and rebuild instead.</strong> The honest thresholds:</p>
+    <ul>
+      <li><strong>Structural repair exceeds roughly 25&ndash;30% of a rebuild's cost.</strong> At that point you are paying new-build money for an old building's geometry and performance.</li>
+      <li><strong>The plan is fundamentally wrong</strong> for how the house will be used &mdash; bad orientation, no cross-ventilation, rooms in the wrong places &mdash; and fixing it means moving most of the walls anyway.</li>
+      <li><strong>Ceiling heights are low</strong> and cannot be changed. This is the constraint that most often makes an otherwise sound old house not worth renovating in this climate.</li>
+      <li><strong>You want to add a storey</strong> and the existing foundations and columns were not designed for it. Strengthening from below is disruptive, expensive and occasionally not viable.</li>
+      <li><strong>CUS headroom exists and the location is valuable.</strong> If the lot permits substantially more built area than the existing house uses, rebuilding may produce a far better asset for a modest premium over renovating.</li>
+    </ul>
+    <p>Against that, renovation wins where the structure is sound, the plan works, the ceiling heights are generous, and the location is one where you could not buy the equivalent lot today &mdash; which describes a lot of central Playa del Carmen and Playacar.</p>"""),
+  ("Permits, Programme and Cost",
+   """    <p><strong>Permits.</strong> Cosmetic work generally does not require a licence, but anything structural, any change to the facade, any increase in built area, and any new services connection does &mdash; with a DRO where the scope requires one. In a condominium, the regime and bylaws govern as well, and works affecting common elements or the building envelope usually need an assembly resolution. The practical advice is to establish the permit position before demolition: stopping a live renovation to regularise it is expensive, and neighbours in this market do report unpermitted work.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Cosmetic: paint, some finishes, fittings</td><td>$2,500&ndash;$6,000</td><td>$139&ndash;$335</td></tr>
+        <tr><td>Standard renovation: kitchen, bathrooms, floors, electrical and plumbing renewed</td><td>$8,000&ndash;$16,000</td><td>$445&ndash;$890</td></tr>
+        <tr><td>Complete renovation: layout changes, all systems, all finishes, joinery</td><td>$14,000&ndash;$26,000</td><td>$780&ndash;$1,445</td></tr>
+        <tr><td>Complete renovation to premium specification</td><td>$26,000&ndash;$40,000</td><td>$1,445&ndash;$2,225</td></tr>
+        <tr><td>Structural concrete repair programme</td><td>Priced separately after survey</td><td>&mdash;</td></tr>
+        <tr><td>Roof waterproofing replacement</td><td>$900&ndash;$2,500 per m&sup2;</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Programme:</strong> three to five months for a standard renovation, five to nine for a complete one with layout changes, longer if structural repair or permits extend. <strong>Contingency:</strong> 15&ndash;20% on a full renovation even after a good survey &mdash; not because the survey was poor, but because you cannot open every element before contract.</p>
+    <p><strong>One recommendation from experience:</strong> live somewhere else. Phased renovation of an occupied house costs more, takes considerably longer, and produces a worse result, because the trades never get clear access and everything is done twice. If the house must stay occupied, phase by zone with sealed boundaries and accept the premium consciously rather than discovering it.</p>"""),
+ ],
+ "faq": [
+  ("What does a complete house renovation cost in Playa del Carmen?",
+   "A standard renovation with kitchen, bathrooms, floors and renewed electrical and plumbing runs $8,000&ndash;$16,000 MXN per m&sup2;. A complete renovation with layout changes, all systems and all finishes is $14,000&ndash;$26,000, and to premium specification $26,000&ndash;$40,000. Structural concrete repair is priced separately after survey."),
+  ("What should be surveyed before pricing a renovation?",
+   "Structural concrete condition &mdash; slab edges, balconies, columns, parapets &mdash; for chloride-induced corrosion; roof waterproofing; the electrical installation, which in older houses often lacks grounding, GFCI and conduit; supply pipework and drainage, by pressure test and camera; termite and moisture damage; the pool shell and plant; and window frame condition. Opening up representative areas is essential."),
+  ("Which systems should be replaced rather than repaired?",
+   "The electrical installation, the water supply pipework, wet-area waterproofing, and the roof membrane. Extending any of them means inheriting the failure mode and finishing over it. Structure, openings, joinery and finishes can genuinely be assessed on their merits."),
+  ("When is it better to rebuild than renovate?",
+   "When structural repair approaches 25&ndash;30% of a rebuild's cost; when the plan is fundamentally wrong and fixing it means moving most walls anyway; when ceiling heights are low and cannot be changed &mdash; the most common disqualifier in this climate; when you want a second storey the foundations were not designed for; or when the lot's CUS allows substantially more area than the existing house uses."),
+  ("Can I live in the house during the renovation?",
+   "You can, but it costs more, takes considerably longer and produces a worse result, because trades never get clear access and work is done twice. If it is unavoidable, phase by zone with sealed boundaries and budget the premium deliberately. Our advice for a complete renovation is to move out."),
+ ],
+}
+
+CONTENT["condo-renovation-cancun-riviera-maya"] = {
+ "title": "Condo Renovation in Cancún and the Riviera Maya: Rules First",
+ "desc": "Renovating an apartment: the condominium bylaws that govern your scope, working hours and lift access, plumbing in slabs, AC replacement, and realistic costs.",
+ "intro": [
+   "Renovating a condominium unit is less a construction problem than a coordination problem. The technical work is straightforward; what determines whether the project goes smoothly is the building &mdash; its bylaws, its administrator, its working hours, its single service lift, and its neighbours who are at home while you demolish a bathroom.",
+   "This covers what to establish before you buy or start, the technical constraints that apartments impose which houses do not, and what condo renovation costs and takes in Cancún and the Riviera Maya."
+ ],
+ "sections": [
+  ("The Bylaws Govern Your Scope",
+   """    <p>Get the condominium regime, the bylaws (<em>reglamento</em>) and recent assembly minutes before you plan anything &mdash; and before you buy, if you still can. What they typically control:</p>
+    <ul>
+      <li><strong>What is yours and what is common.</strong> Structural slabs and walls, the facade, windows in many buildings, balcony enclosures, risers and the roof are usually common elements even where you have exclusive use. You cannot alter a common element on your own authority.</li>
+      <li><strong>Whether structural alteration is permitted at all,</strong> and what documentation is needed &mdash; typically an engineer's letter and often an assembly resolution.</li>
+      <li><strong>Facade and balcony changes:</strong> glazing, shutters, screens, railings, air conditioning condenser positions. Buildings care about visual uniformity, and enclosing a balcony is frequently prohibited outright.</li>
+      <li><strong>Working hours and days,</strong> which are commonly restricted to weekday daytime and sometimes prohibited entirely in high season. In resort buildings that can mean a narrow annual window for noisy work.</li>
+      <li><strong>Contractor requirements:</strong> insurance, worker registration, a damage deposit, use of the service lift only, and protection of common areas.</li>
+      <li><strong>Debris and delivery rules.</strong> How waste leaves the building is a real constraint &mdash; in many towers it means bagged debris in the service lift, which changes both cost and programme.</li>
+    </ul>
+    <div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i><strong>Get written approval from the administrator before starting,</strong> with your scope attached. An unapproved renovation can be stopped mid-works, and in a building where several owners object, the resolution takes months.</div>"""),
+  ("Technical Constraints of an Apartment",
+   """    <ul>
+      <li><strong>You cannot move drainage freely.</strong> Waste connects to a riser at a fixed position, and floor build-ups in apartments are often too thin to run new falls. Moving a WC more than a short distance may need a raised floor, a macerator or the abandonment of the idea. Establish drainage positions before designing a new bathroom or kitchen layout.</li>
+      <li><strong>Chasing slabs is restricted.</strong> Cutting into a structural slab for pipework or conduit can compromise reinforcement, and many buildings prohibit it. Plan surface or ceiling routes, or a raised floor zone.</li>
+      <li><strong>Waterproofing is your neighbour's problem too.</strong> A bathroom above another apartment must be waterproofed properly &mdash; full membrane, falls, correct drain detailing &mdash; because a leak into the unit below is a liability conversation as well as a repair.</li>
+      <li><strong>Acoustics.</strong> Hard floor finishes transmit impact noise to the unit below, and many bylaws require an acoustic underlay or restrict hard flooring altogether. Comply deliberately: it is cheap during works and a permanent dispute otherwise.</li>
+      <li><strong>Air conditioning.</strong> Condenser position is usually controlled, refrigerant routes are constrained, and the building's electrical capacity per unit may limit what you can install. Confirm capacity before specifying.</li>
+      <li><strong>Electrical capacity</strong> per unit is fixed by the building's provision. Adding an electric cooktop, a large AC system or an EV charger may exceed it, and the building &mdash; not CFE alone &mdash; determines whether an increase is possible.</li>
+      <li><strong>Marine exposure still applies.</strong> In coastal buildings, use 316 stainless and marine-grade coated or anodised aluminium for anything exposed on the balcony, including the railing fixings and light fittings.</li>
+    </ul>"""),
+  ("Costs, Programme and the Rental Angle",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Cosmetic refresh: paint, fittings, some finishes</td><td>$2,500&ndash;$6,000</td><td>$139&ndash;$335</td></tr>
+        <tr><td>Kitchen and bathrooms replaced, floors renewed</td><td>$7,000&ndash;$15,000</td><td>$390&ndash;$835</td></tr>
+        <tr><td>Full apartment renovation with layout changes</td><td>$12,000&ndash;$24,000</td><td>$670&ndash;$1,335</td></tr>
+        <tr><td>Premium specification full renovation</td><td>$24,000&ndash;$38,000</td><td>$1,335&ndash;$2,110</td></tr>
+        <tr><td>Single bathroom, complete</td><td>$120,000&ndash;$400,000 each</td><td>&mdash;</td></tr>
+        <tr><td>Kitchen, complete with appliances</td><td>$180,000&ndash;$700,000</td><td>&mdash;</td></tr>
+        <tr><td>Restricted-access premium (tower, service lift only)</td><td>+10&ndash;25%</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Programme:</strong> four to eight weeks for a kitchen and bathrooms, ten to twenty weeks for a full renovation &mdash; but building working-hour restrictions can stretch that substantially, and in a resort building with a high-season prohibition the effective programme may be set by the calendar rather than by the work.</p>
+    <p><strong>If the unit is for rental,</strong> specify accordingly: large-format porcelain rather than soft stone, washable paint, laminate or lacquer joinery with 316 hardware, performance fabrics, standardised fittings so one set of spares serves the unit, and a smart lock with time-limited codes where the building permits it. And before committing to a rental plan, confirm the bylaws actually allow short-term rental and can not be trivially amended against you &mdash; that is the most common way a well-renovated condo turns into a disappointing investment.</p>"""),
+ ],
+ "faq": [
+  ("What do I need to check before renovating a condo?",
+   "The condominium regime, the bylaws and recent assembly minutes: what is private and what is common, whether structural alteration is permitted and with what documentation, rules on facade and balcony changes and condenser positions, working hours and days, contractor insurance and deposit requirements, and how debris must leave the building. Then get the administrator's written approval with your scope attached."),
+  ("Can I move the bathroom or kitchen in an apartment?",
+   "Only within the constraints of the drainage. Waste connects to a riser at a fixed position and apartment floor build-ups are often too thin to run new falls, so moving a WC any distance may require a raised floor, a macerator, or abandoning the idea. Establish drainage positions before designing any new layout."),
+  ("What does a condo renovation cost per square metre?",
+   "A cosmetic refresh runs $2,500&ndash;$6,000 MXN per m&sup2;, kitchen and bathrooms with new floors $7,000&ndash;$15,000, a full renovation with layout changes $12,000&ndash;$24,000, and premium specification $24,000&ndash;$38,000. Restricted tower access with service-lift-only delivery adds 10&ndash;25%."),
+  ("How long does an apartment renovation take?",
+   "Four to eight weeks for a kitchen and bathrooms, ten to twenty for a full renovation &mdash; but building restrictions often govern. Many buildings limit noisy work to weekday daytime and some prohibit it entirely in high season, which can mean the calendar rather than the scope sets your programme."),
+  ("What should I specify if the condo will be rented?",
+   "Large-format porcelain rather than soft stone, washable paint, laminate or lacquer joinery with 316 hardware, performance fabrics, standardised fittings so spares are on hand, and a smart lock with time-limited codes where permitted. Most importantly, confirm the bylaws allow short-term rental &mdash; and how easily an assembly could change that."),
+ ],
+}
+
+CONTENT["vacation-rental-renovation-tulum"] = {
+ "title": "Vacation Rental Renovation in Tulum: What Actually Raises Rate",
+ "desc": "Which renovation spend moves nightly rate and which does not: the photograph, bedroom count, AC reliability, pool, and durability choices that cut operating cost.",
+ "intro": [
+   "Renovating a rental property is an investment decision disguised as a design decision. Every peso has to justify itself either in nightly rate, in occupancy, or in reduced operating cost &mdash; and the spends that do that are not the ones owners instinctively choose. Owners renovate kitchens and living rooms. Guests book on the photograph, the bedroom count, and whether the reviews say the air conditioning works.",
+   "This is a ranked guide to renovation spend on a Tulum rental, based on what actually changes performance: what to do first, what to do only if the budget stretches, and what not to do at all."
+ ],
+ "sections": [
+  ("Ranked by Return: What to Do First",
+   """    <ol>
+      <li><strong>Fix the air conditioning, properly.</strong> Unreliable or inadequate AC is the most damaging complaint in reviews on this coast, and review score drives both rate and ranking. Replace tired units with inverter mini-splits sized from a real load calculation, one per bedroom, and service them on a schedule. This is the highest-return renovation item available and it is invisible in photographs.</li>
+      <li><strong>Add a bedroom, or make an existing room a proper en suite.</strong> Rate scales with how many couples or families can share comfortably. Converting a study, an oversized living room or a storage area into a fourth en-suite bedroom moves the property into a higher rate band and a larger group market &mdash; usually the single best structural change.</li>
+      <li><strong>Create or fix the hero photograph.</strong> Almost always the pool with the terrace behind it. That means the pool surface and coping in good condition, the terrace furnished and shaded, the planting mature, and the lighting good enough for a dusk shot. A property whose lead image is weak loses bookings it never knows about.</li>
+      <li><strong>Deepen or shade the outdoor living area.</strong> A covered terrace with a dining table, fans and lighting extends the usable house and photographs extremely well. A pergola or palapa over an exposed terrace is cheap relative to its effect.</li>
+      <li><strong>A lock-off unit or casita,</strong> if the plan allows. Two simultaneous bookings, owner use alongside rental, and a broader market. High capital cost, high return.</li>
+      <li><strong>Fix the water systems.</strong> Cistern sized for full occupancy, hot water for simultaneous showers, and treatment for the hardness. Guests rarely praise these; they complain loudly when they fail.</li>
+    </ol>"""),
+  ("Renovate for Operating Cost, Not Just for Rate",
+   """    <p>Net yield in this market is squeezed as much by operating cost and failure as by rate. A renovation is your one opportunity to reduce both.</p>
+    <ul>
+      <li><strong>Durable surfaces.</strong> Large-format porcelain floors instead of soft natural stone that stains from sunscreen and wine; washable paint; tiled or clad surfaces where luggage and furniture hit walls.</li>
+      <li><strong>Replaceable, standardised components.</strong> One tap model, one light fitting family, one paint colour, one AC brand across the property, with spares in a cupboard. A manager who can fix something the same day prevents a review.</li>
+      <li><strong>316 stainless and marine-coated aluminium</strong> for everything outdoors. Rust streaks on a terrace are visible in photographs and in reviews.</li>
+      <li><strong>Furniture built for turnover:</strong> performance fabrics or leather, hardwood or powder-coated aluminium frames outdoors, no rattan, mattress protectors on everything.</li>
+      <li><strong>Pool equipment and automation:</strong> a variable-speed pump and a controller with remote monitoring. A green pool on arrival is a refund; a monitored pool is a phone call.</li>
+      <li><strong>Leak and water monitoring,</strong> and a separated always-on circuit for security, internet, pool controller and a dehumidifier.</li>
+      <li><strong>Solar,</strong> if consumption has pushed the property onto the high-consumption CFE tariff &mdash; a rental villa with several AC units and a pool pump frequently has, and payback there is typically three to five years.</li>
+    </ul>"""),
+  ("What Not to Spend On — and Tulum Specifics",
+   """    <p><strong>Low-return spends</strong> in this market: high-end kitchen appliances guests will not use (a good hob, a large fridge and a dishwasher is the brief); designer fittings that photograph the same as durable ones; a formal dining room; bespoke joinery beyond the kitchen and wardrobes; expensive interior art; and anything delicate. All of these cost money and wear visibly under rental use without raising rate.</p>
+    <p><strong>Tulum-specific considerations</strong> that change the calculus:</p>
+    <ul>
+      <li><strong>Power reliability.</strong> Tulum's supply is less reliable than Playa del Carmen's, and in some areas properties are off-grid or partly so. A battery system covering essentials &mdash; internet, pool controller, some lighting, a fan &mdash; converts a blackout from a refund into an inconvenience.</li>
+      <li><strong>Water hardness and treatment,</strong> which affects everything downstream and shows up as scaled shower fittings in photographs.</li>
+      <li><strong>Wastewater.</strong> If the property has an old septic arrangement rather than treatment before infiltration, a renovation is the moment to correct it &mdash; it is what the environmental framework expects, and the karst carries whatever infiltrates toward the aquifer and the reef.</li>
+      <li><strong>Humidity and jungle exposure.</strong> Ventilated joinery, no veneer, dehumidification in closed rooms, termite treatment, and no timber-to-ground contact on decks and pergolas.</li>
+      <li><strong>Compliance for rental operation:</strong> the municipal lodging licence position, Civil Protection basics &mdash; extinguisher, gas installation, pool safety &mdash; and, in a condominium, whether the bylaws permit short-term rental at all.</li>
+    </ul>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Work</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>AC replacement, inverter mini-splits, per room installed</td><td>$25,000&ndash;$60,000</td></tr>
+        <tr><td>Convert a room to en-suite bedroom (bathroom added)</td><td>$180,000&ndash;$450,000</td></tr>
+        <tr><td>Pool resurfacing, coping and new plant</td><td>$150,000&ndash;$600,000</td></tr>
+        <tr><td>Pergola or palapa over an existing terrace</td><td>$90,000&ndash;$350,000</td></tr>
+        <tr><td>Full interior refresh to rental specification, per m&sup2;</td><td>$5,000&ndash;$12,000</td></tr>
+        <tr><td>FF&amp;E replacement, 3-bedroom villa</td><td>$450,000&ndash;$1,200,000</td></tr>
+        <tr><td>Battery backup for essentials</td><td>$140,000&ndash;$330,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>One sequencing note: do the invisible work first. Systems, waterproofing, wastewater and AC before finishes and furniture &mdash; because doing it the other way round means opening up finished surfaces, and because the property's reviews depend far more on the invisible items than on the visible ones.</p>"""),
+ ],
+ "faq": [
+  ("What renovation spend raises nightly rate the most in Tulum?",
+   "In order: reliable, properly sized air conditioning (the most damaging complaint in reviews, and invisible in photographs); adding an en-suite bedroom, because rate scales with how many couples can share comfortably; fixing the hero photograph, which is almost always the pool and terrace; and deepening or shading the outdoor living area."),
+  ("What is not worth renovating in a rental property?",
+   "High-end kitchen appliances guests will not use, designer fittings that photograph the same as durable ones, a formal dining room, bespoke joinery beyond the kitchen and wardrobes, expensive art, and anything delicate. They cost money, wear visibly under rental use, and do not move rate."),
+  ("How much does converting a room into an en-suite bedroom cost?",
+   "$180,000&ndash;$450,000 MXN including the new bathroom, depending on drainage access and specification. It is usually the best structural change available on a rental property because it moves the house into a higher rate band and a larger group market for a modest share of the property's value."),
+  ("What should I do about Tulum power cuts?",
+   "A battery system covering essentials &mdash; internet, pool controller, some lighting and a fan &mdash; for $140,000&ndash;$330,000 MXN. Tulum's supply is less reliable than Playa del Carmen's, and a blackout during a stay is the difference between an inconvenience and a refund. If consumption has pushed you onto the high-consumption tariff, pairing it with solar typically pays back in three to five years."),
+  ("In what order should the work be done?",
+   "Invisible first: systems, waterproofing, wastewater and air conditioning before finishes and furniture. Doing it in reverse means opening up finished surfaces, and the property's reviews depend far more on whether the water is hot and the AC works than on the colour of the cushions."),
+ ],
+}
+
+CONTENT["outdoor-living-space-renovation-riviera-maya"] = {
+ "title": "Outdoor Living Renovation in the Riviera Maya: Shade, Drainage",
+ "desc": "Upgrading terraces, patios and pool decks: shade structures compared, drainage and flush thresholds, outdoor kitchens, lighting and 2026 cost per element.",
+ "intro": [
+   "The outdoor room is where life happens on this coast, and it is the highest-return renovation available on most properties &mdash; for owners because it is where they will spend their time, and for rental owners because it is the photograph the booking is made on. It is also where most existing houses are weakest: a terrace with no shade, no drainage falls, no lighting and no power is common, and all four are fixable.",
+   "This is an element-by-element guide to upgrading outdoor space: shade structures compared honestly, the drainage detail that decides whether a flush threshold works, outdoor kitchens and pools, lighting, and what each piece costs in 2026."
+ ],
+ "sections": [
+  ("Shade First, Compared Honestly",
+   """    <p>Without shade, an outdoor space is unusable from mid-morning to late afternoon, which is most of the day. Shade is therefore the first intervention, not the decorative last one.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Option</th><th>MXN/m&sup2;</th><th>Maintenance</th><th>Best for</th></tr></thead>
+      <tbody>
+        <tr><td>Palapa (huano thatch on hardwood frame)</td><td>$2,400&ndash;$3,800</td><td>Re-thatch every 8&ndash;12 years</td><td>The coolest structure available; regional character</td></tr>
+        <tr><td>Hardwood pergola</td><td>$3,500&ndash;$7,000</td><td>Re-oil or seal every 12&ndash;24 months</td><td>Garden and jungle settings</td></tr>
+        <tr><td>Aluminium pergola, fixed louvre</td><td>$5,500&ndash;$9,500</td><td>Wash only</td><td>Rentals, remote-managed and beachfront properties</td></tr>
+        <tr><td>Aluminium bioclimatic (motorised louvres)</td><td>$11,000&ndash;$20,000</td><td>Motor service</td><td>Roof terraces and premium properties</td></tr>
+        <tr><td>Shade sails</td><td>$1,200&ndash;$3,000</td><td>Re-tension; replace fabric every 4&ndash;7 years</td><td>Cheapest quick improvement; pool areas</td></tr>
+        <tr><td>Extended concrete roof slab</td><td>$6,000&ndash;$12,000</td><td>None beyond waterproofing</td><td>Permanent covered terrace; also shades the wall</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Two local rules apply to all of them: everything exposed gets 316 stainless or hot-dip galvanised fixings, and anything on a roof terrace must be engineered for wind uplift and either anchored through the waterproofing with a sealed, detailed penetration or designed to be struck before a storm. A pergola that leaves the roof in June was not engineered; it was assembled.</p>"""),
+  ("Drainage, Levels and the Flush Threshold",
+   """    <p>The detail that separates a good outdoor renovation from a leaking one. Rain here arrives fast and heavy, and driven horizontal rain does not respect a threshold.</p>
+    <ul>
+      <li><strong>Falls away from the building,</strong> always, with a minimum slope that actually drains &mdash; and check the existing terrace with a level before you tile over it, because many existing terraces fall toward the house.</li>
+      <li><strong>A channel drain at every flush threshold,</strong> connected to a real outlet, with the door's sill drained and vented so water passing the outer seal escapes outward.</li>
+      <li><strong>Adequate outlets, and overflows.</strong> A walled terrace or roof terrace with one blocked outlet becomes a pond, and a pond finds every weakness in the waterproofing.</li>
+      <li><strong>Waterproofing under any terrace over occupied space,</strong> with the finish on pedestals or a proper bedding layer over protection board &mdash; and flood-tested before the finish goes down.</li>
+      <li><strong>Slip resistance when wet.</strong> Polished porcelain around a pool is a hazard; specify a textured finish rated for external wet use.</li>
+      <li><strong>Surface temperature.</strong> Dark paving and dark composite decking become too hot to walk on barefoot in the afternoon. Light-coloured stone, light porcelain or timber are the comfortable choices.</li>
+      <li><strong>Planting drainage.</strong> Planters against walls without drainage and a drained cavity behind them are how damp appears inside.</li>
+    </ul>"""),
+  ("Kitchens, Pools, Lighting and Cost",
+   """    <p><strong>Outdoor kitchens</strong> should be 316 stainless for anything structural and wet on a coastal property, with a granite or porcelain serving surface, drained and ventilated base units, and the grill positioned downwind of seating and never under thatch. Budget $85,000&ndash;$240,000 MXN for a 3 m run depending on grade and appliances.</p>
+    <p><strong>Pool work</strong> in a renovation usually means resurfacing, new coping, updated plant and sometimes conversion to a salt system. Chukum finishes suit the regional aesthetic and need periodic sealing; quality plaster or tile are the alternatives. A variable-speed pump pays for itself in electricity, and a controller with remote monitoring prevents the most expensive failure &mdash; a pool that turns green while nobody is looking. Resurfacing, coping and new plant runs $150,000&ndash;$600,000.</p>
+    <p><strong>Lighting is the cheapest transformation available</strong> and the one most often done badly. What works: low-level path and step lighting rather than floodlights, uplighting on a few trees, warm colour temperature at 2700&ndash;3000 K, everything on dimmers and zones, drivers located somewhere accessible and out of the heat, and marine-rated fittings with gasketed enclosures and drip loops. On beachfront properties in turtle-nesting areas, beach-facing lighting must be low, shielded and amber or red &mdash; which is a constraint worth designing around rather than discovering.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Element</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>Terrace re-tiling with falls and channel drain, per m&sup2;</td><td>$1,800&ndash;$4,500</td></tr>
+        <tr><td>Hardwood deck over existing slab or ground, per m&sup2;</td><td>$3,200&ndash;$6,800</td></tr>
+        <tr><td>Outdoor kitchen, 3 m</td><td>$85,000&ndash;$240,000</td></tr>
+        <tr><td>Pool resurfacing, coping and plant</td><td>$150,000&ndash;$600,000</td></tr>
+        <tr><td>Exterior lighting scheme, typical villa</td><td>$60,000&ndash;$250,000</td></tr>
+        <tr><td>Outdoor shower with drainage</td><td>$25,000&ndash;$90,000</td></tr>
+        <tr><td>Landscaping with native planting and irrigation, per m&sup2;</td><td>$500&ndash;$2,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>If the budget only covers one thing, it is shade. If it covers two, shade and lighting &mdash; together they roughly double the hours per day the space is usable, which is the actual return on an outdoor renovation.</p>"""),
+ ],
+ "faq": [
+  ("What is the best shade structure for a terrace here?",
+   "A palapa is the coolest and most characteristic at $2,400&ndash;$3,800 MXN per m&sup2; with re-thatching every 8&ndash;12 years. An aluminium pergola at $5,500&ndash;$9,500 needs only washing, which suits rentals and remote-managed properties. Shade sails are the cheapest quick improvement at $1,200&ndash;$3,000, and an extended concrete roof slab is the most permanent at $6,000&ndash;$12,000."),
+  ("How do you stop a flush threshold from leaking?",
+   "A channel drain immediately outside it connected to a real outlet, the terrace falling away from the building, and the door's sill drained and vented so water that passes the outer seal escapes outward. Check the existing terrace with a level first &mdash; many fall toward the house, which no amount of sealant will fix."),
+  ("What does it cost to renovate a terrace and pool area?",
+   "Re-tiling with proper falls and a channel drain runs $1,800&ndash;$4,500 MXN per m&sup2;, a hardwood deck $3,200&ndash;$6,800, pool resurfacing with coping and new plant $150,000&ndash;$600,000, an outdoor kitchen $85,000&ndash;$240,000, and an exterior lighting scheme for a typical villa $60,000&ndash;$250,000."),
+  ("What surface should I use around a pool?",
+   "Something textured and rated for external wet use, in a light colour. Polished porcelain is a slip hazard when wet, and dark paving or dark composite becomes too hot to walk on barefoot in the afternoon. Light stone, light textured porcelain and timber are the comfortable, safe choices."),
+  ("If I can only afford one improvement, what should it be?",
+   "Shade. Without it the space is unusable from mid-morning to late afternoon. If the budget stretches to two, add lighting &mdash; between them they roughly double the hours a day the outdoor room is actually usable, which is the real return on any outdoor renovation."),
+ ],
+}
+
+CONTENT["commercial-renovation-playa-del-carmen"] = {
+ "title": "Commercial Renovation in Playa del Carmen: Reopening Fast",
+ "desc": "Renovating shops, offices and restaurants: what triggers current code, landlord and tenant scope, working around trade, change of use, and cost per m2.",
+ "intro": [
+   "Commercial renovation is a programme problem before it is a construction problem. Every week the premises are closed is revenue lost, the lease is usually running regardless, and the decisive constraints are what the renovation triggers in code terms and whether the work can happen while the business trades.",
+   "This covers the question that determines the budget &mdash; what a renovation reopens in compliance terms &mdash; then the scope split between landlord and tenant, how to work around trading, what changing the use of a premises involves, and costs by type."
+ ],
+ "sections": [
+  ("What a Renovation Triggers",
+   """    <p>The instinct is to hope a refit is treated as maintenance. In practice, the scale of the work and any change of use determine how much of the current requirement comes back into scope, and it is cheaper to plan for it than to meet it under inspection.</p>
+    <ul>
+      <li><strong>Civil Protection is the main trigger.</strong> A significant alteration or a change of use generally brings the current requirements into play: egress and travel distances for the real occupancy, doors opening in the direction of travel, emergency lighting and signage, extinguishers, detection and alarm where required, and a documented internal programme for operation.</li>
+      <li><strong>Accessibility.</strong> Step-free entry, an accessible WC and appropriate door widths are expected on renovated commercial premises, and are increasingly checked.</li>
+      <li><strong>Electrical.</strong> Anything reworked must comply with NOM-001-SEDE, which in older premises usually means a new panel, proper grounding, GFCI in wet areas and a load schedule that matches the equipment actually being installed.</li>
+      <li><strong>Gas and extraction</strong> for any food service &mdash; a reviewed installation, a compliant extraction route to roof level, and grease management.</li>
+      <li><strong>Health requirements</strong> for food handling, with the finishes and layout that go with them.</li>
+      <li><strong>Licence amendment.</strong> The operating licence is tied to the activity and the premises; changing either usually means amending it, and the amendment can take longer than the construction.</li>
+    </ul>
+    <div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i><strong>Establish the compliance position before demolition.</strong> Discovering that the existing exits cannot support your new occupancy load after you have gutted the space is the most expensive sequence available &mdash; and occupancy load is exactly what a denser fit-out increases.</div>"""),
+  ("Landlord, Tenant and Trading Around the Work",
+   """    <p><strong>Scope split.</strong> Before signing anything, establish in writing who owns which element: structure, roof and facade; the storefront and any shutter; services capped at the unit and their capacity; extraction routes; grease provision; and the condition the premises must be returned in at lease end. Reinstatement obligations are the clause tenants read last and pay for first &mdash; a requirement to restore the premises to its original condition can be a five-figure liability on a fit-out you have already amortised.</p>
+    <p><strong>Working while trading</strong> is possible for phased work and rarely advisable for a full refit. If it must happen:</p>
+    <ul>
+      <li><strong>Phase by zone with hoardings and dust control</strong> at the boundary, and keep a clean, safe customer route that never crosses the works.</li>
+      <li><strong>Night and early-morning working</strong> where the building and the municipality permit it &mdash; in plazas and condominium buildings this is governed by rules, not preference. Expect a labour premium.</li>
+      <li><strong>Services isolations planned</strong> against trading hours. Water and power shut-downs in a restaurant are a closed restaurant.</li>
+      <li><strong>Be honest about the maths.</strong> Phased trading work typically costs 20&ndash;40% more and takes considerably longer than a closed-premises programme. For many businesses a short full closure is cheaper than a long partial one &mdash; run the arithmetic rather than assuming.</li>
+    </ul>
+    <p><strong>On Quinta Avenida and the surrounding blocks,</strong> add the access constraints of a pedestrian street: restricted vehicle hours, materials and waste carried the last stretch, and trading neighbours whose tolerance is finite. Budget the 15&ndash;30% premium that comes with it.</p>"""),
+  ("Change of Use, Scope by Type, and Costs",
+   """    <p><strong>Change of use is the highest-risk renovation.</strong> Turning a retail unit into a restaurant, an office into a clinic, or a house into a commercial premises reopens land use, occupancy, egress, services capacity and licensing simultaneously. The three checks that decide viability, in order: does the land use permit the new activity; can the extraction route and drainage a restaurant needs actually be built in this building; and can the egress support the new occupancy load. Answer those before signing the lease, because any one of them can be fatal and none of them is fixable by spending more on finishes.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Scope</th><th>MXN/m&sup2;</th><th>USD/m&sup2;</th></tr></thead>
+      <tbody>
+        <tr><td>Refresh: paint, lighting, minor finishes</td><td>$1,800&ndash;$4,500</td><td>$100&ndash;$250</td></tr>
+        <tr><td>Retail refit: finishes, joinery, storefront, AC</td><td>$8,000&ndash;$18,000</td><td>$445&ndash;$1,000</td></tr>
+        <tr><td>Office refit: partitions, ceilings, cabling, AC</td><td>$9,000&ndash;$20,000</td><td>$500&ndash;$1,110</td></tr>
+        <tr><td>Restaurant refit including kitchen and extraction</td><td>$20,000&ndash;$45,000</td><td>$1,110&ndash;$2,500</td></tr>
+        <tr><td>Change of use, structural and services work included</td><td>$18,000&ndash;$40,000</td><td>$1,000&ndash;$2,225</td></tr>
+        <tr><td>New extraction route to roof (where feasible)</td><td>$150,000&ndash;$600,000</td><td>&mdash;</td></tr>
+        <tr><td>Electrical renewal incl. panel and grounding</td><td>$1,200&ndash;$3,000 per m&sup2;</td><td>&mdash;</td></tr>
+        <tr><td>Trading-around-the-work premium</td><td>+20&ndash;40%</td><td>&mdash;</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Programme:</strong> four to eight weeks for a retail or office refit with the premises closed, eight to sixteen for a restaurant or a change of use &mdash; plus the licence amendment, which runs in parallel and is often the long pole. We start the licensing file alongside the design for exactly that reason: on commercial work the date that matters is not when the building is finished, it is when you are allowed to open.</p>"""),
+ ],
+ "faq": [
+  ("Does a commercial renovation trigger current building requirements?",
+   "Generally yes, in proportion to the scale of the work and any change of use. Civil Protection is the main trigger &mdash; egress and travel distances for the real occupancy, emergency lighting and signage, extinguishers, detection where required &mdash; along with accessibility, NOM-compliant electrical for anything reworked, gas and extraction review for food service, and an amendment to the operating licence."),
+  ("What does a commercial refit cost per square metre in Playa del Carmen?",
+   "A refresh runs $1,800&ndash;$4,500 MXN per m&sup2;, a retail refit $8,000&ndash;$18,000, an office refit $9,000&ndash;$20,000, a restaurant refit including kitchen and extraction $20,000&ndash;$45,000, and a change of use with structural and services work $18,000&ndash;$40,000. Working around trade adds 20&ndash;40%."),
+  ("Can the business stay open during the renovation?",
+   "For phased work, yes &mdash; with hoardings, dust control at the boundary and a customer route that never crosses the works. But phased trading work typically costs 20&ndash;40% more and takes considerably longer, so for many businesses a short full closure is cheaper than a long partial one. Run that arithmetic rather than assuming."),
+  ("What should I check before converting a retail unit into a restaurant?",
+   "Three things, in order: whether the land use permits food service and alcohol; whether an extraction route to roof level and the necessary drainage and grease provision can actually be built in that building; and whether the existing egress supports the higher occupancy load. Any one of them can be fatal, and none is solved by spending more on the fit-out."),
+  ("Who pays for what between landlord and tenant?",
+   "Establish it in writing before signing: structure, roof, facade, storefront, services capacity at the unit, extraction routes and grease provision are usually landlord items, with partitions, ceilings, finishes and air conditioning tenant items. Read the reinstatement clause carefully &mdash; an obligation to restore the premises at lease end is a real liability on a fit-out you have already amortised."),
+ ],
+}
+
+CONTENT["land-use-permit-quintana-roo"] = {
+ "title": "Land Use Permits in Quintana Roo: COS, CUS and Density",
+ "desc": "How uso de suelo works here: what the certificate tells you, reading COS, CUS, density and height, when a change of use is possible, and the pre-purchase check.",
+ "intro": [
+   "The land-use certificate is the single most important document in any project here, and it is the one buyers most often skip. It states what may be built on a specific lot: the permitted activities, the proportion of the lot that may be covered, the total floor area allowed, how many dwelling units, how tall, and how far the building must sit from each boundary. Everything downstream &mdash; the design, the budget, the financing, the rental model &mdash; is constrained by those numbers.",
+   "This explains how to read the certificate, what each coefficient actually means in practice, what happens when the use you want is not the use that is permitted, and the pre-purchase check we run for every client before they commit to land."
+ ],
+ "sections": [
+  ("Reading the Certificate",
+   """    <p>The document is issued by the municipality &mdash; Solidaridad, Tulum, Benito Ju&aacute;rez, Puerto Morelos, Isla Mujeres and the others each run their own &mdash; against the applicable urban development programme for that zone. Terminology varies slightly by municipality; the substance does not.</p>
+    <ul>
+      <li><strong>Permitted, conditioned and prohibited uses.</strong> The certificate typically lists activities in these three categories. "Conditioned" means possible subject to requirements or additional review &mdash; not a soft yes, and not a no.</li>
+      <li><strong>COS &mdash; coeficiente de ocupaci&oacute;n del suelo.</strong> The maximum proportion of the lot the building footprint may occupy, expressed as a decimal or percentage. A COS of 0.6 on a 500 m&sup2; lot allows a 300 m&sup2; footprint. This is what determines whether you get a garden and a pool.</li>
+      <li><strong>CUS &mdash; coeficiente de utilizaci&oacute;n del suelo.</strong> The maximum total built area across all floors, as a multiple of lot area. A CUS of 1.2 on that same lot allows 600 m&sup2; total. This is what determines whether you can build a second storey.</li>
+      <li><strong>Density</strong> &mdash; dwelling units permitted, per lot or per hectare. Independent of CUS, and the binding limit on multi-family projects.</li>
+      <li><strong>Height and storeys,</strong> sometimes expressed both ways, and the limit that decides whether a rooftop terrace is possible.</li>
+      <li><strong>Setbacks (restricciones)</strong> front, rear and side, which on narrow urban lots often dictate the plan geometry outright.</li>
+      <li><strong>Parking requirement</strong> for the intended use &mdash; and for commercial and multi-family projects, usually the constraint that actually caps the project.</li>
+      <li><strong>Green or permeable area requirement,</strong> which matters more here than people expect, since it interacts with COS.</li>
+    </ul>
+    <p>Note what the certificate does <em>not</em> tell you: whether the lot is inside the federal maritime zone, what the environmental constraints are, whether utilities reach it, or whether it sits over a cavity. Those are separate checks.</p>"""),
+  ("Changing the Use, and the Alignment",
+   """    <p><strong>When the use you want is not the use permitted,</strong> there are three honest possibilities and one fantasy. The possibilities: the activity may be "conditioned" rather than prohibited, in which case there is a defined path with requirements; the urban development programme may be under review, and periodic updates do change classifications; or a change of use can be formally requested, which is a substantive administrative process requiring justification, is discretionary, takes time, and is refused where it conflicts with the programme's intent. The fantasy is buying on the assumption that a change will be granted because a broker said it usually is.</p>
+    <p>Our advice is unambiguous: <strong>buy for the use that is permitted today.</strong> Treat any prospect of a change as upside with no value assigned to it in the purchase price. We have seen more than one client hold land for years waiting on a reclassification that never came.</p>
+    <p><strong>The alignment (alineamiento y n&uacute;mero oficial)</strong> is the companion document. It establishes the official street line, the official address, and the building line from which setbacks are measured &mdash; and it is what reveals any road-widening reserve, easement or service corridor crossing the lot. On corner lots and on land adjoining a planned road, this document occasionally changes a project's viability. Get it before you design, not with the licence application.</p>"""),
+  ("The Pre-Purchase Check",
+   """    <p>This is the review we run for clients before they buy land, and it has talked people out of purchases more than once &mdash; which is the point.</p>
+    <ol>
+      <li><strong>Land-use certificate for the exact lot,</strong> obtained from the municipality rather than taken from the seller. Confirm the permitted use matches your intent, and read COS, CUS, density, height, setbacks and parking against a sketch of what you actually want to build.</li>
+      <li><strong>Alignment,</strong> to establish the building line and reveal any reserve or easement.</li>
+      <li><strong>Environmental position:</strong> vegetation, proximity to cenotes or wetlands, any existing authorisation, and whether the project will require a state or federal environmental process.</li>
+      <li><strong>Federal maritime zone,</strong> on any coastal lot &mdash; a survey referenced to ZOFEMAT and confirmation of what concession exists.</li>
+      <li><strong>Utilities:</strong> whether CFE service and municipal water actually reach the lot, and a quoted cost for any extension. This single number can exceed the cost of the house's walls.</li>
+      <li><strong>Ground conditions,</strong> at least a preliminary view on cavity risk in the karst, with a full soil study before design.</li>
+      <li><strong>Title and encumbrances,</strong> through a notary &mdash; including whether the land is or ever was <em>ejido</em> land, which is a distinct and consequential question in this state, and whether property taxes and any HOA fees are current.</li>
+      <li><strong>Community rules,</strong> if the lot is in a gated development: the design committee's limits are frequently tighter than the municipality's.</li>
+    </ol>
+    <p>Together that review costs a small fraction of a lot purchase, and it is the cheapest risk reduction available in a project here. Design begins after it, not before &mdash; because a beautiful set of drawings for a house that exceeds CUS by 15% is worth nothing, and a lot whose electrification costs $900,000 MXN is a different investment than the one in the listing.</p>"""),
+ ],
+ "faq": [
+  ("What is the difference between COS and CUS?",
+   "COS caps the building footprint as a proportion of the lot &mdash; a COS of 0.6 on a 500 m&sup2; lot allows a 300 m&sup2; footprint, which is what determines whether you get a garden and pool. CUS caps total built area across all floors as a multiple of lot area &mdash; a CUS of 1.2 on that lot allows 600 m&sup2; total, which is what determines whether a second storey is available."),
+  ("Can I change the land use on a lot?",
+   "Sometimes. An activity listed as \"conditioned\" has a defined path with requirements; urban development programmes are periodically updated and classifications do change; and a formal change of use can be requested, but it is a substantive discretionary process that takes time and is refused where it conflicts with the programme. Buy for the use permitted today and treat any change as unpriced upside."),
+  ("What does the land-use certificate not tell me?",
+   "Whether the lot lies inside the federal maritime zone, what environmental constraints apply, whether electricity and water actually reach it, and whether there are cavities in the karst beneath it. Those are separate checks, and any one of them can change a project's cost or viability more than the zoning numbers do."),
+  ("Why do I need the alignment document?",
+   "It establishes the official street line and address and the building line from which setbacks are measured, and it reveals any road-widening reserve, easement or service corridor crossing the lot. On corner lots and land adjoining a planned road it occasionally changes a project's viability, so obtain it before designing rather than with the licence application."),
+  ("What should I check before buying land in Quintana Roo?",
+   "The land-use certificate for the exact lot obtained from the municipality, the alignment, the environmental position, the federal maritime zone on coastal lots, whether utilities reach the lot and what an extension would cost, preliminary ground conditions, title and encumbrances through a notary including any ejido history, and the design committee rules in a gated development."),
+ ],
+}
+
+CONTENT["environmental-impact-assessment-riviera-maya"] = {
+ "title": "Environmental Impact Assessment in the Riviera Maya: MIA Guide",
+ "desc": "When a project needs an MIA, state vs federal jurisdiction, what the studies cover, realistic timelines and costs, and the conditions that follow you into operation.",
+ "intro": [
+   "The environmental file is the longest item on the critical path of most projects in this corridor, and the one most often started too late. It is also widely misunderstood: owners expect a form, and what is actually required is a technical study of a specific piece of land, prepared by specialists, reviewed by an authority with discretion, and resolved with conditions that bind the project for its operating life.",
+   "This explains when an assessment is needed, who reviews it, what the studies contain, what it costs and how long it takes, and &mdash; the part people skip &mdash; what the conditions in the resolution require of you after the building is finished."
+ ],
+ "sections": [
+  ("Who Reviews What",
+   """    <p>Jurisdiction depends on the type, location and scale of the project, and getting it wrong wastes months. In broad terms:</p>
+    <ul>
+      <li><strong>State level (SEMA Quintana Roo)</strong> handles most private residential and many commercial projects that are not in federal jurisdiction &mdash; a house on a vegetated lot, a small development, a local commercial building.</li>
+      <li><strong>Federal level (SEMARNAT)</strong> takes projects in federal jurisdiction: those affecting mangrove, dune and other federally regulated vegetation, works in the federal maritime-terrestrial zone, projects inside or affecting protected natural areas, tourism developments above certain scales, and activities on the federal list.</li>
+      <li><strong>CONAGUA</strong> for water-related authorisations: use of national waters, works affecting the aquifer, and discharge.</li>
+      <li><strong>Municipality</strong> layers its own requirements and will not issue the construction licence without the environmental resolution where one is required.</li>
+      <li><strong>Protected areas</strong> &mdash; the Puerto Morelos reef park, Yum Balam, Sian Ka&apos;an, Isla Contoy and others &mdash; bring their own management programmes, and within them what is permissible is defined by zoning inside the area, not by the surrounding municipality's rules.</li>
+    </ul>
+    <p>The first professional task on any vegetated or coastal lot is therefore to determine jurisdiction and instrument. That takes a specialist consultant a short time and it sets the whole programme.</p>"""),
+  ("What the Study Actually Contains",
+   """    <p>The instruments range from a simple preventive report to a full impact statement, and the content scales with them. A typical MIA for a project here includes:</p>
+    <ul>
+      <li><strong>Vegetation inventory,</strong> species by species on the affected area, identifying protected species and the volume to be removed. This is the document that usually determines how much of the lot you can actually use.</li>
+      <li><strong>Fauna survey,</strong> with attention to protected species &mdash; and on the coast, to turtle nesting.</li>
+      <li><strong>Hydrogeology:</strong> the karst, cenotes and caves, groundwater depth and flow direction, and how the project's discharge will interact with the aquifer. In this region this is the technical heart of the document.</li>
+      <li><strong>Project description</strong> with the footprint, the phases, the water balance, the wastewater solution and the waste management plan.</li>
+      <li><strong>Impact identification and mitigation measures,</strong> which is what the authority negotiates &mdash; retention of vegetation, relocation of species, setbacks, treatment standards, construction-phase controls.</li>
+      <li><strong>Restoration and compensation commitments</strong> &mdash; replanting, dune restoration, or contributions where applicable.</li>
+      <li><strong>Monitoring programme</strong> for construction and operation.</li>
+    </ul>
+    <p>The consultant preparing it must be qualified and registered appropriately, and the quality of the document has a direct effect on the outcome. Thin submissions come back with requests for information, and each round costs weeks.</p>"""),
+  ("Cost, Timeline and Life-of-Project Conditions",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Project</th><th>Typical cost (MXN)</th><th>Indicative duration</th></tr></thead>
+      <tbody>
+        <tr><td>Single house, modest vegetation, state level</td><td>$80,000&ndash;$250,000</td><td>2&ndash;5 months</td></tr>
+        <tr><td>House on a heavily vegetated or coastal lot</td><td>$200,000&ndash;$600,000</td><td>4&ndash;9 months</td></tr>
+        <tr><td>Small development or boutique hotel, state level</td><td>$400,000&ndash;$1,200,000</td><td>6&ndash;12 months</td></tr>
+        <tr><td>Federal jurisdiction project (mangrove, ZOFEMAT, protected area)</td><td>$800,000&ndash;$3,000,000+</td><td>9&ndash;18 months+</td></tr>
+        <tr><td>Supporting studies (hydrogeology, soil, topography)</td><td>$60,000&ndash;$400,000</td><td>Run in parallel</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Those durations assume a complete, competent submission. They extend with each request for additional information, and they cannot be compressed by pressure &mdash; which is why the file starts before the architecture is finished, not after.</p>
+    <p><strong>The conditions are the part people forget.</strong> A favourable resolution is not a permission slip; it is a contract with obligations that run through construction and into operation:</p>
+    <ul>
+      <li><strong>Retention and replanting commitments,</strong> often with a survival requirement and reporting.</li>
+      <li><strong>Treatment plant performance standards</strong> and a maintenance and monitoring regime with records.</li>
+      <li><strong>Construction-phase controls:</strong> sediment control, waste management, noise and working-hour limits, and a designated environmental supervisor on larger projects.</li>
+      <li><strong>Operating restrictions:</strong> lighting specifications where turtle nesting applies, limits on beach or shoreline activity, water consumption reporting on larger projects.</li>
+      <li><strong>Periodic reporting</strong> to the authority for the life of the project, and inspection powers.</li>
+    </ul>
+    <p>Non-compliance carries fines, suspension and, in serious cases, closure &mdash; and enforcement in Quintana Roo has become noticeably more active. Two practical consequences. First, build the conditions into the operating budget and into the property manager's responsibilities, not into a folder. Second, when buying land or a built property, ask for the environmental resolution and its conditions, and check compliance history: <strong>inheriting a clean, compliant file is worth real money, and inheriting a non-compliant one is a liability that transfers with the asset.</strong></p>"""),
+ ],
+ "faq": [
+  ("Does my project need an environmental impact assessment?",
+   "Almost certainly if the lot has native vegetation, sits on or near the coast, is close to a cenote or wetland, or falls within a protected natural area &mdash; and for developments above modest scale regardless. The first professional step on any vegetated or coastal lot is determining the jurisdiction and the required instrument, which a specialist consultant can establish quickly."),
+  ("Who reviews the assessment, the state or the federal authority?",
+   "It depends on type, location and scale. SEMA Quintana Roo handles most private residential and local commercial projects. SEMARNAT takes federal jurisdiction: mangrove and dune, works in the federal maritime zone, projects inside or affecting protected natural areas, and tourism developments above certain scales. CONAGUA handles water-related authorisations."),
+  ("How long does an MIA take and what does it cost?",
+   "For a single house with modest vegetation at state level, $80,000&ndash;$250,000 MXN and two to five months. On a heavily vegetated or coastal lot, $200,000&ndash;$600,000 and four to nine months. A small development or boutique hotel, $400,000&ndash;$1,200,000 and six to twelve months. Federal jurisdiction projects run $800,000&ndash;$3,000,000+ and nine to eighteen months or more."),
+  ("What is in the study?",
+   "A species-by-species vegetation inventory of the affected area, a fauna survey including protected species and turtle nesting on the coast, hydrogeology covering the karst, cenotes, groundwater depth and flow and how discharge will interact with the aquifer, the project description with water balance and wastewater solution, impact identification with mitigation measures, restoration commitments, and a monitoring programme."),
+  ("What happens after the resolution is granted?",
+   "The conditions bind you through construction and operation: retention and replanting with survival and reporting requirements, treatment plant performance standards with maintenance records, construction-phase sediment and waste controls, operating restrictions such as turtle-compliant lighting, and periodic reporting. Enforcement has become more active, so build the conditions into the operating budget &mdash; and when buying, check the resolution and its compliance history, because a non-compliant file transfers with the asset."),
+ ],
+}
+
+CONTENT["construction-license-tulum-2026"] = {
+ "title": "Construction Licence in Tulum: Process, Documents, Timeline",
+ "desc": "How the Tulum municipal construction licence works: required documents, the DRO, the environmental prerequisite, fees, inspections and why it takes longer than PDC.",
+ "intro": [
+   "Tulum's construction licence is the most demanding in the corridor, and that is not an accident. The municipality sits on cenote-riddled karst draining to a reef, its growth has outpaced its infrastructure, and its planning and environmental review has tightened in response. Projects that arrive with a complete file and a realistic timeline get through. Projects that treat the licence as a formality to be handled after the design is finished do not.",
+   "This is the practical sequence: what has to exist before you can apply, what the file contains, the role of the Director Responsable de Obra, what it costs, what happens during and after construction, and how long to actually plan for."
+ ],
+ "sections": [
+  ("What Must Exist Before You Apply",
+   """    <p>The licence sits at the end of a chain. Each link has to be in place first.</p>
+    <ol>
+      <li><strong>Title and a clean property position,</strong> verified through a notary &mdash; including whether the land was ever <em>ejido</em>, which matters in this municipality.</li>
+      <li><strong>Land-use certificate</strong> for the lot, with the permitted use, COS, CUS, density, height and setbacks &mdash; and a design that fits inside them.</li>
+      <li><strong>Alignment and official number,</strong> establishing the street line and building line, and revealing any reserve or easement.</li>
+      <li><strong>Environmental resolution</strong> where the project requires one &mdash; which on a vegetated Tulum lot it usually does. This is the long pole, and the licence will not issue without it.</li>
+      <li><strong>Soil study,</strong> with probes across the footprint, because the structural design depends on it and the karst here demands it.</li>
+      <li><strong>Complete technical project:</strong> architectural drawings, structural design, and hydro-sanitary and electrical installations &mdash; including the wastewater solution, which in Tulum is examined closely.</li>
+      <li><strong>Director Responsable de Obra,</strong> registered with the municipality, who signs the project and the works and carries legal responsibility for compliance. A licence application without a DRO does not proceed.</li>
+      <li><strong>Water and sanitation position</strong> &mdash; connection where available, or the treatment and infiltration solution where not, with the corresponding authorisations.</li>
+    </ol>
+    <p>The sequencing insight that saves the most time: start the environmental file and the soil study while the architecture is still in concept. Both take weeks to months, neither depends on final drawings, and both constrain the design &mdash; so running them early prevents redrawing as well as saving calendar.</p>"""),
+  ("The File, the Fees and the DRO",
+   """    <p><strong>What the submission typically contains:</strong> the application form; property title and a recent tax receipt; the land-use certificate and alignment; the full drawing set signed by the DRO; structural and installation calculations; the soil study; the environmental resolution where applicable; the DRO's registration and acceptance; proof of payment of fees; and, depending on the project, civil-protection documentation and evidence of the water and wastewater arrangements.</p>
+    <p><strong>Fees</strong> are calculated on the built area and the type of works, against the municipality's schedule, and there are usually several components &mdash; the licence itself, the alignment, inspection and connection charges. As a rough planning figure for a private house in this municipality, allow in the range of $60,000&ndash;$300,000 MXN for licence and related municipal charges depending on area and value, with larger and commercial projects proportionally more. Treat that as an order of magnitude and confirm against the current schedule, since rates are updated periodically.</p>
+    <p><strong>The DRO is not a rubber stamp.</strong> This is a registered professional who assumes legal responsibility that the project and the works comply with the applicable regulations. They sign the drawings, they are accountable during construction, and they participate in inspections. Choose one who actually visits the site &mdash; a DRO who signs and disappears is a risk to you, since the paperwork says they are responsible and the practical reality is that nobody is checking. On our projects the DRO function sits inside the team alongside the design and the site management, which is the arrangement that keeps the chain of responsibility intact.</p>"""),
+  ("During and After Construction, and Realistic Timelines",
+   """    <p><strong>During construction</strong> the licence brings obligations: display of the licence on site, inspections at defined stages, compliance with the environmental resolution's construction-phase conditions, waste management, working hours, and site safety. Changes to the approved project require an amendment &mdash; building something different from what was authorised is the most common reason projects are suspended, and in this municipality it is actively enforced.</p>
+    <p><strong>After construction,</strong> the project needs its completion and occupancy documentation, the utility connections finalised, and any conditions from the environmental resolution carried into operation &mdash; treatment plant maintenance and records, replanting survival, lighting compliance where turtle rules apply. A property without its final documentation is harder to sell, harder to finance, and in a rental context harder to license.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Stage</th><th>Realistic duration in Tulum</th></tr></thead>
+      <tbody>
+        <tr><td>Land-use certificate and alignment</td><td>2&ndash;8 weeks</td></tr>
+        <tr><td>Soil study</td><td>2&ndash;5 weeks (run in parallel)</td></tr>
+        <tr><td>Environmental file, house on a vegetated lot</td><td>4&ndash;9 months</td></tr>
+        <tr><td>Technical project preparation</td><td>6&ndash;14 weeks (run in parallel)</td></tr>
+        <tr><td>Licence review and issue, complete file</td><td>4&ndash;12 weeks</td></tr>
+        <tr><td><strong>Total, realistic, from purchase to breaking ground</strong></td><td><strong>6&ndash;14 months</strong></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>That total is the number to plan around, and it is longer than Solidaridad for a comparable project &mdash; driven mostly by the environmental review rather than by the licence itself. It is also the number that makes some Tulum land purchases look different once it is included: carrying costs for a year before construction starts are part of the investment, and a lot with an existing environmental authorisation is worth more than one without for exactly that reason.</p>"""),
+ ],
+ "faq": [
+  ("How long does a construction licence take in Tulum?",
+   "Realistically six to fourteen months from purchase to breaking ground, once the whole chain is counted: land-use certificate and alignment two to eight weeks, soil study two to five, the environmental file four to nine months for a house on a vegetated lot, technical project six to fourteen weeks, and the licence review itself four to twelve weeks. The environmental review, not the licence, is the long pole."),
+  ("What do I need before applying for the licence?",
+   "Verified title, the land-use certificate with a design that fits its COS, CUS, density, height and setbacks, the alignment, the environmental resolution where required, a soil study with probes across the footprint, the complete technical project including structural and installation design and the wastewater solution, and a Director Responsable de Obra registered with the municipality."),
+  ("What is a DRO and can I do without one?",
+   "The Director Responsable de Obra is a registered professional who signs the project and the works and assumes legal responsibility for regulatory compliance. You cannot obtain a licence without one, and you should choose one who actually visits the site &mdash; a DRO who signs and disappears leaves you with the paperwork of supervision and none of the substance."),
+  ("What does the licence cost in Tulum?",
+   "Fees are calculated on built area and type of works against the municipality's schedule, with several components including the licence, alignment and inspection charges. As an order of magnitude for a private house, allow $60,000&ndash;$300,000 MXN for licence and related municipal charges depending on area and value, and confirm against the current schedule since rates are updated periodically."),
+  ("Why is Tulum slower than Playa del Carmen?",
+   "Because of the environmental review rather than the licence process itself. The municipality sits on cenote-riddled karst draining to a reef, growth has outpaced infrastructure, and the review has tightened in response &mdash; so vegetated lots need a fuller environmental file and closer scrutiny of the wastewater solution. Plan for it rather than around it, and note that a lot with an existing authorisation carries real value."),
+ ],
+}
+
+CONTENT["condominium-regime-permit-mexico"] = {
+ "title": "Condominium Regime in Mexico: What Developers Must Get Right",
+ "desc": "Establishing a régimen de condominio: when you need one, the instrument and bylaws, participation percentages, common elements, pre-sale implications and costs.",
+ "intro": [
+   "The condominium regime is the legal instrument that turns one property into individually sellable units with shared common elements. Any developer selling apartments, villas in a gated cluster, commercial units in a plaza or keys in a condo-hotel needs one &mdash; and the document they draft in a hurry at the end of the project governs the property for decades and produces most of the disputes that follow.",
+   "This is a developer's orientation: when the regime is required, what the instrument actually contains, the decisions inside it that matter most, how it interacts with pre-sales and with the construction licence, and what it costs. It is not legal advice &mdash; the regime is notarised work and state-regulated, and it needs a lawyer who has drafted several."
+ ],
+ "sections": [
+  ("When You Need One — and When You Do Not",
+   """    <ul>
+      <li><strong>You need a regime</strong> to sell units individually: apartments in a building, houses on a shared-access private development, commercial units in a plaza, or keys in a condo-hotel rental programme.</li>
+      <li><strong>You do not need one</strong> if you will own and rent the whole property. A single owner operating an apartment building or an apart-hotel has one title and needs no regime &mdash; which is simpler, cheaper and leaves you in full control of how the property is used.</li>
+      <li><strong>Vertical, horizontal and mixed.</strong> A regime can divide a building by floors and units (vertical), a site into house lots with common access and amenities (horizontal), or combine both. The physical type determines how common elements are defined.</li>
+      <li><strong>It is state-regulated.</strong> Quintana Roo's condominium legislation governs the content and procedure, and the instrument is executed before a notary and registered. Requirements differ from other states, so use local counsel.</li>
+      <li><strong>Sequencing.</strong> The regime has to correspond to what is actually built and authorised &mdash; the licence, the as-built condition and the regime's description of units and common areas must agree. Regularising a mismatch afterwards is slow and sometimes requires physical changes.</li>
+    </ul>
+    <p>The decision belongs at the start of the project, because it changes the design (separately metered services, independent access, clear unit boundaries), the financing (pre-sales versus asset finance) and the operation (owners' assembly versus single-owner control).</p>"""),
+  ("What the Instrument Contains, and the Decisions That Matter",
+   """    <p>The constitutive instrument and its bylaws (<em>reglamento</em>) typically cover:</p>
+    <ul>
+      <li><strong>Description of each private unit,</strong> with its area and boundaries, and of the common elements &mdash; structure, roof, facade, risers, corridors, amenities, parking, and any areas of exclusive use assigned to a unit (a terrace, a roof, a parking space).</li>
+      <li><strong>Participation percentages (indivisos),</strong> which determine each unit's share of common expenses and its voting weight. Get this right: it is the arithmetic behind every future service-charge dispute.</li>
+      <li><strong>Bylaws</strong> governing use, maintenance obligations, works within units, alterations to facades and common elements, pets, noise, and &mdash; critically &mdash; whether short-term rental is permitted.</li>
+      <li><strong>Assembly and administration:</strong> how the assembly is convened, quorum and majority thresholds for ordinary and extraordinary decisions, how the administrator is appointed and removed, and the budget and reserve-fund arrangements.</li>
+      <li><strong>Maintenance reserve.</strong> A defined reserve for major repairs &mdash; waterproofing, lifts, structural repair &mdash; which on this coast is not optional given the corrosion environment. Regimes with no reserve produce special assessments and owner conflict.</li>
+    </ul>
+    <p><strong>The two decisions developers most often get wrong:</strong></p>
+    <ol>
+      <li><strong>Short-term rental.</strong> If you are selling to investors on a rental proposition, the bylaws must permit it explicitly, and the amendment threshold must be high enough that a later majority of resident owners cannot casually reverse it. Selling units on a rental story with silent or ambiguous bylaws is how a building ends up in litigation.</li>
+      <li><strong>Exclusive-use areas.</strong> Roof terraces, gardens and parking assigned to specific units must be defined precisely in the instrument. Vague allocation of a roof between a penthouse and the community is the single most common source of dispute we see in buildings here.</li>
+    </ol>"""),
+  ("Pre-Sales, Costs and Practical Advice",
+   """    <p><strong>Pre-sales.</strong> Selling units before completion is how most small developments here are funded, and it interacts with the regime directly. Buyers and their lawyers will ask for the permits and for the draft regime; the instrument cannot be finalised and registered until the as-built condition is fixed, so purchase contracts typically commit to constituting the regime on defined terms. Those terms need to be drafted with the final regime in mind &mdash; promising a buyer something the eventual instrument contradicts creates liability. Buyers should also understand the honest position: a pre-sale contract before permits exist is the highest-risk version of this transaction, which is exactly why a developer with permits in hand can sell faster and better.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Item</th><th>MXN</th></tr></thead>
+      <tbody>
+        <tr><td>Regime constitution: legal drafting, notary, registration &mdash; small development</td><td>$150,000&ndash;$600,000</td></tr>
+        <tr><td>Larger or mixed-use development</td><td>$600,000&ndash;$2,000,000</td></tr>
+        <tr><td>Surveys, unit area schedules and plans for the instrument</td><td>$60,000&ndash;$300,000</td></tr>
+        <tr><td>Bylaws drafted for a rental programme (additional drafting)</td><td>$80,000&ndash;$300,000</td></tr>
+        <tr><td>Management agreement for a condo-hotel rental pool</td><td>$150,000&ndash;$600,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Practical advice from the construction side.</strong> Design for the regime: separately metered electricity and, where possible, water per unit; independent access to each unit; clear physical boundaries that match the legal ones; plant and equipment accessible without entering any private unit; and amenities positioned so their maintenance and noise do not fall on one owner. All of that costs little at design stage and is what makes the building governable afterwards.</p>
+    <p>And write the reserve fund into the regime with a realistic figure. On this coast, waterproofing, balcony concrete repair and marine-grade metalwork replacement are certainties on a twenty-year view, not risks. A building whose regime forces a reserve is a building whose owners will not be fighting about a special assessment in year twelve &mdash; and that is a selling point, not a cost.</p>"""),
+ ],
+ "faq": [
+  ("Do I need a condominium regime for my development?",
+   "Only if you will sell units individually &mdash; apartments, houses on a shared-access development, commercial units in a plaza, or keys in a condo-hotel. If you will own and rent the whole property, one title and no regime is simpler, cheaper, and leaves you in control of how the property is used."),
+  ("What does establishing a regime cost?",
+   "For a small development, $150,000&ndash;$600,000 MXN for legal drafting, notary and registration, plus $60,000&ndash;$300,000 for the surveys, unit area schedules and plans the instrument requires. Larger or mixed-use developments run $600,000&ndash;$2,000,000, and a condo-hotel management agreement adds $150,000&ndash;$600,000."),
+  ("What is the most important clause for an investor-focused building?",
+   "Whether short-term rental is permitted &mdash; stated explicitly, not left silent or ambiguous &mdash; and an amendment threshold high enough that a later majority of resident owners cannot casually reverse it. Selling units on a rental proposition with vague bylaws is how buildings end up in litigation."),
+  ("What are participation percentages and why do they matter?",
+   "Each unit's indiviso determines its share of common expenses and its voting weight in the assembly. It is the arithmetic behind every future service-charge dispute and every contested vote, so it needs to be calculated properly against unit areas and benefits rather than assigned casually."),
+  ("How does the regime interact with the construction licence?",
+   "They must agree. The regime has to correspond to what was actually authorised and built &mdash; the licence, the as-built condition and the instrument's description of units and common areas need to match. Regularising a mismatch afterwards is slow and can require physical changes, so keep the regime's drafting aligned with the project as it is built."),
+ ],
+}
+
+CONTENT["foreigners-construction-permits-mexico"] = {
+ "title": "Construction Permits for Foreigners in Mexico: How It Works",
+ "desc": "What changes when the owner is foreign: fideicomiso or company, RFC and invoicing, powers of attorney, who signs the permits, and how to run a build remotely.",
+ "intro": [
+   "The permitting process itself does not change because the owner is foreign. The same land-use certificate, the same municipal licence, the same DRO, the same environmental file. What changes is the ownership structure the permits attach to, the tax registration that lets you be invoiced properly, the documents that let someone act for you while you are abroad, and the practical machinery of running a construction project from another country.",
+   "This covers those four things in the order they arise, and it is written for the situation most of our clients are actually in: buying land or building in the restricted coastal zone, resident somewhere else, visiting a few times a year."
+ ],
+ "sections": [
+  ("Ownership: Fideicomiso or Mexican Company",
+   """    <p>Within 50 km of the coast and 100 km of a land border &mdash; the restricted zone, which includes the entire Riviera Maya &mdash; a foreign individual cannot hold direct title to residential land. Two established routes exist.</p>
+    <ul>
+      <li><strong>Fideicomiso (bank trust).</strong> A Mexican bank holds title as trustee and you are the beneficiary with all rights of use, lease, improvement, sale and inheritance, for a renewable term. It requires a permit from the Ministry of Foreign Affairs (SRE), it is set up before a notary, and it carries a setup cost plus an annual bank fee. This is the normal route for a home, and it is what the great majority of foreign-owned houses on this coast sit in.</li>
+      <li><strong>Mexican company.</strong> A Mexican corporation may hold land directly, including in the restricted zone, and foreigners may own the company. This suits commercial property, rental operations run as a business, and multi-property investors, and it brings corporate accounting, annual filings and tax obligations. It is generally the wrong structure for a single family home and the right one for a genuine business.</li>
+      <li><strong>Which to choose</strong> depends on your purpose, your tax position in your home country and how many properties you intend to hold. Get advice from a Mexican tax professional and, importantly, from someone in your own jurisdiction &mdash; the two answers interact, and a structure that is efficient here can be inefficient at home.</li>
+      <li><strong>Either way, the permits attach to the owner of record</strong> &mdash; the trust or the company &mdash; which means the ownership structure must be in place before the licence application, not alongside it.</li>
+    </ul>
+    <p>Note also the practical point people find surprising: the fideicomiso does not restrict what you build or how you use the property. It is a title-holding mechanism, not a set of conditions.</p>"""),
+  ("RFC, Invoicing and Powers of Attorney",
+   """    <p><strong>RFC and facturas.</strong> Mexican businesses invoice through the SAT electronic invoicing system, and a proper <em>factura</em> requires tax details for the recipient. Foreign owners building here commonly obtain an RFC (tax registration) so that construction, professional services and materials can be invoiced correctly &mdash; which matters for your records, for any future capital-gains calculation on sale, and for VAT treatment. Whether you need one, and in what form, depends on your structure and your intentions; ask a contador before the first significant payment rather than after a year of receipts that are not facturas.</p>
+    <p><strong>Powers of attorney.</strong> Permit applications, notary appointments, utility contracts and bank matters all need someone present who is authorised to act. A power of attorney granted before a Mexican notary &mdash; or executed abroad, apostilled and translated &mdash; lets your lawyer, your project manager or a trusted representative sign specific acts on your behalf. Two practical rules: scope it narrowly to the acts you actually intend, and keep the property-disposal power out of any instrument you give casually. A power that can sell your land is not a convenience document.</p>
+    <p><strong>Who signs what:</strong></p>
+    <ul>
+      <li><strong>The DRO</strong> signs the project and the works and carries the regulatory responsibility. This is a registered Mexican professional; the owner's nationality is irrelevant to it.</li>
+      <li><strong>The owner of record</strong> &mdash; trust or company &mdash; is the applicant for the licence, acting through an authorised representative if you are abroad.</li>
+      <li><strong>The notary</strong> handles the purchase, the trust constitution, any condominium regime and powers of attorney.</li>
+      <li><strong>Utility contracts</strong> (CFE, water) are taken in the name of the owner of record, with the same representation question.</li>
+    </ul>"""),
+  ("Running a Build From Abroad",
+   """    <p>Most of our clients are not in Mexico during construction. What makes that work is structure rather than trust:</p>
+    <ol>
+      <li><strong>A fixed-price contract with an itemised budget,</strong> not cost-plus with an unpriced scope. You cannot supervise a cost-plus job from another country.</li>
+      <li><strong>Payments tied to verified physical progress,</strong> not to calendar dates &mdash; design and permits, foundations, structure, envelope, MEP rough-in, finishes, external works, handover.</li>
+      <li><strong>Retention of five to ten percent</strong> released after the snag list is closed.</li>
+      <li><strong>Weekly photo and video reporting,</strong> which is not a courtesy &mdash; it is the evidence base for releasing each payment.</li>
+      <li><strong>Written, priced change orders</strong> before work proceeds. Verbal changes agreed on a video call are how remote projects drift.</li>
+      <li><strong>One accountable party.</strong> Design, engineering, permits, DRO and construction under one contract means one party is responsible when something needs resolving. Splitting them across an architect, a permit expediter and a contractor leaves the coordination to you, from a different time zone.</li>
+      <li><strong>An explicit exclusions list:</strong> furniture, appliances, landscaping beyond a defined line, utility connection fees, and anything else not in the price.</li>
+      <li><strong>Currency plan.</strong> The contract is in pesos because the work is bought in pesos; decide deliberately whether to convert at each milestone or up front, rather than leaving it to whenever a payment is due.</li>
+    </ol>
+    <p><strong>On residency:</strong> you do not need Mexican residency to own property through a fideicomiso or to build. Residency makes banking, vehicle ownership and long stays easier, and many owners pursue it for those reasons rather than for the construction. And on the practical side of taxes: rental income from the property is taxable in Mexico regardless of where you live, and the sale of the property has Mexican capital-gains consequences in which your documented construction cost &mdash; with proper facturas &mdash; matters a great deal. That is the strongest argument for getting the invoicing right from the first payment.</p>"""),
+ ],
+ "faq": [
+  ("Can a foreigner get a construction permit in Mexico?",
+   "Yes &mdash; the permitting process is the same regardless of the owner's nationality. What matters is that the ownership structure is in place first, because the permits attach to the owner of record: a fideicomiso (bank trust) or a Mexican company in the restricted coastal zone, which covers the entire Riviera Maya."),
+  ("Fideicomiso or Mexican company — which should I use?",
+   "A fideicomiso is the normal route for a family home: the bank holds title as trustee, you hold all rights of use, lease, improvement, sale and inheritance, with an SRE permit, a setup cost and an annual fee. A Mexican company suits commercial property, a rental business or multi-property investors, and brings corporate accounting and filings. Take advice both in Mexico and in your own jurisdiction, because the two tax positions interact."),
+  ("Do I need an RFC to build in Mexico as a foreigner?",
+   "Commonly yes, so that construction, professional services and materials can be properly invoiced as facturas. That documentation matters for your records, for VAT treatment, and above all for the capital-gains calculation when you eventually sell &mdash; documented construction cost reduces it. Ask a contador before the first significant payment."),
+  ("How do I sign permits and contracts if I am not in Mexico?",
+   "Through a power of attorney granted before a Mexican notary, or executed abroad, apostilled and translated, authorising a lawyer or representative to act for specific purposes. Scope it narrowly to the acts you intend, and keep the power to dispose of the property out of any instrument you grant casually."),
+  ("How do I manage a build remotely?",
+   "With a fixed-price contract and itemised budget rather than cost-plus; payments tied to verified physical progress, not dates; a five to ten percent retention released after the snag list closes; weekly photo and video reporting as the evidence for each release; written and priced change orders before work proceeds; and design, engineering, permits, DRO and construction under one accountable contract."),
+ ],
+}
+
+CONTENT["architectural-plans-tropical-home"] = {
+ "title": "Architectural Plans for a Tropical Home: What the Set Contains",
+ "desc": "What a complete plan set includes and why each drawing exists: site and roof plans, shading sections, wall details for driven rain, and finish schedules.",
+ "intro": [
+   "Clients arriving with plans drawn elsewhere usually have three of the drawings they need. They have floor plans, elevations and a nice render. What is missing is the set of drawings that resolve how a building actually keeps water out, how it is shaded, how the services reach where they need to be, and what every material is &mdash; and those are the drawings that determine whether the house is built the way it was imagined or improvised on site.",
+   "This describes what a complete architectural set contains for a house in this climate, why each drawing exists, the specific details that tropical construction requires and temperate detailing omits, and how the set relates to the engineering and the permit file."
+ ],
+ "sections": [
+  ("The Drawings, and Why Each One Exists",
+   """    <ul>
+      <li><strong>Site plan</strong> &mdash; the lot with setbacks, the building footprint, levels, drainage falls, the access, the plant positions (cistern, treatment plant, LP tank, pool equipment, AC condensers) and the trees being retained. This is the drawing the municipality reads against COS and setbacks, and the one that proves the plant actually fits somewhere.</li>
+      <li><strong>Floor plans</strong> with dimensions, door and window references, floor levels and finishes, and &mdash; here specifically &mdash; the position of every threshold that is flush, because each of those needs a drainage detail.</li>
+      <li><strong>Roof plan.</strong> The most neglected drawing and one of the most important: falls, outlets, overflows, parapet lines, the waterproofing extents, and the positions of anything that penetrates the roof. A roof plan that does not show falls and outlets is a leak waiting to be built.</li>
+      <li><strong>Elevations,</strong> with materials and finish notes, and the shading devices drawn rather than implied.</li>
+      <li><strong>Sections</strong> &mdash; and enough of them. Sections are where overhang depth against sun angle, ceiling height, roof build-up, threshold levels and the relationship between inside and terrace are actually resolved.</li>
+      <li><strong>Reflected ceiling plan,</strong> with lighting, fans, AC diffusers and access panels coordinated so the ceiling can be built once.</li>
+      <li><strong>Wet-area drawings:</strong> bathroom and kitchen layouts with tiling setting-out, waterproofing extents and fixture positions.</li>
+      <li><strong>Door and window schedule,</strong> with the glazing specification, frame finish and hardware grade per opening &mdash; on this coast that means stating laminated versus tempered, thermal break, anodised or marine powder coat, and 316 hardware.</li>
+      <li><strong>Finish schedule,</strong> room by room, so nothing is decided by a site conversation.</li>
+      <li><strong>Details</strong> &mdash; the drawings that separate a set from a sketch. See below.</li>
+    </ul>"""),
+  ("The Details a Tropical House Needs",
+   """    <p>These are the details that imported plan sets typically do not contain, and every one of them addresses a failure we are called to repair on houses built without them.</p>
+    <ul>
+      <li><strong>Flush threshold detail:</strong> channel drain, slope away, drained and vented sill behind the frame, and the membrane upstand. Without it, a flush threshold is a funnel.</li>
+      <li><strong>Window head, jamb and sill details</strong> showing the anchorage into structure, the sealant joint over a backer rod, the drip at the head and the drained sill. Driven rain here tests every one of those.</li>
+      <li><strong>Parapet and roof edge:</strong> coping, drip, membrane termination and upstand height &mdash; the detail that stops water running back under the coping and streaking the facade.</li>
+      <li><strong>Roof build-up</strong> with insulation, screed to falls, membrane, protection and finish, and the outlet and overflow details.</li>
+      <li><strong>Terrace over occupied space:</strong> full build-up including drainage layer and pedestal or bedding, plus every penetration detailed individually.</li>
+      <li><strong>Wet-area waterproofing:</strong> membrane extents, upstands, the shower floor detail and the junction with the door threshold.</li>
+      <li><strong>Overhang and shading sections</strong> drawn against actual sun angles for this latitude &mdash; an overhang copied from a temperate detail is either useless or blocks the view for no benefit.</li>
+      <li><strong>Movement joints</strong> in large render and concrete planes, positioned deliberately.</li>
+      <li><strong>Termite barrier detail</strong> at slab penetrations and any timber-to-structure junction.</li>
+      <li><strong>Plant room layouts</strong> with clearances that allow equipment to be serviced and replaced.</li>
+    </ul>"""),
+  ("Coordination, the Permit File, and What It Costs",
+   """    <p><strong>The architectural set does not stand alone.</strong> It has to agree with the structural design (which depends on the soil study), the MEP design (which puts conduit, sleeves and drainage in the slab before it is poured), and the permit file. The coordination points that cause the most trouble when they are missed: sleeves and penetrations through beams and slabs; the drainage invert levels against the treatment plant position; electrical riser and panel positions against the architecture; AC equipment positions and condensate routes; and structural depths against ceiling heights, which is the one that most often forces a late compromise.</p>
+    <p><strong>For the municipal file,</strong> the set is signed by the DRO and submitted alongside the structural and installation designs, the soil study and the environmental resolution where required. Drawings that are beautiful but incomplete come back &mdash; a submission missing the installations or the roof drainage is a submission that generates a request for information and loses weeks.</p>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Deliverable</th><th>MXN (200&ndash;300 m&sup2; house)</th></tr></thead>
+      <tbody>
+        <tr><td>Concept design and feasibility against the land-use envelope</td><td>$25,000&ndash;$70,000</td></tr>
+        <tr><td>Full architectural project including details and schedules</td><td>$120,000&ndash;$350,000</td></tr>
+        <tr><td>Structural engineering (after the soil study)</td><td>$45,000&ndash;$130,000</td></tr>
+        <tr><td>MEP engineering</td><td>$45,000&ndash;$120,000</td></tr>
+        <tr><td>3D renders for decisions and approvals</td><td>$15,000&ndash;$60,000</td></tr>
+        <tr><td>Permit file preparation and DRO</td><td>$60,000&ndash;$250,000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>If you already have plans,</strong> what we do is a review rather than a redraw: check the design against the land-use envelope (COS, CUS, height, setbacks), against the climate issues (orientation, west exposure, cross-ventilation, terrace depth), and against the local service spaces that imported sets omit &mdash; then add the details and schedules the set is missing and produce the engineering. That is usually far cheaper than starting again, and it keeps the design you fell in love with while making it buildable here.</p>"""),
+ ],
+ "faq": [
+  ("What drawings should a complete plan set include?",
+   "Site plan with setbacks, levels, drainage and plant positions; floor plans; a roof plan with falls, outlets and overflows; elevations; enough sections to resolve shading and build-ups; a reflected ceiling plan; wet-area drawings with waterproofing extents; door and window schedule with glazing and hardware specification; finish schedule; and construction details. Plans, elevations and a render are not a set."),
+  ("Which details do imported plan sets usually miss?",
+   "Flush threshold drainage, window head, jamb and sill details, parapet and roof edge with coping and drip, the roof build-up with falls and outlets, terrace-over-occupied-space build-ups with detailed penetrations, wet-area waterproofing extents, shading sections drawn against this latitude's sun angles, movement joints, and termite barriers at slab penetrations."),
+  ("What does a full architectural and engineering package cost?",
+   "For a 200&ndash;300 m&sup2; house: $120,000&ndash;$350,000 MXN for the architectural project with details and schedules, $45,000&ndash;$130,000 for structural engineering after the soil study, $45,000&ndash;$120,000 for MEP, $15,000&ndash;$60,000 for renders, and $60,000&ndash;$250,000 for the permit file and DRO."),
+  ("Why is the roof plan so important here?",
+   "Because it is where falls, outlets, overflows, waterproofing extents and roof penetrations are resolved, and rain here arrives fast and heavy. A roof plan that does not show falls and outlets means those decisions get made on site by whoever is laying the screed &mdash; which is how ponding, and then leaking, happens."),
+  ("Can you use the plans my architect already drew?",
+   "Usually yes. We review them against the land-use envelope, the climate issues and the local service spaces they typically omit, then add the missing details and schedules and produce the structural and MEP engineering. That is far cheaper than redrawing and it keeps the design intent, while making the building work in this climate."),
+ ],
+}
+
+CONTENT["3d-rendering-house-plans-riviera-maya"] = {
+ "title": "3D Renders for House Plans: Useful Tool, Dangerous Promise",
+ "desc": "How to use renders well: what they are good for, where they mislead, sun studies that matter more than pretty images, and what visualisation costs in 2026.",
+ "intro": [
+   "Renders are the most persuasive drawing in a project and the least reliable. They are extremely useful for deciding things &mdash; whether a ceiling height feels right, how a terrace reads from the pool, whether a material combination works &mdash; and they are routinely used instead to sell a building that will not look like that, on a lot whose light does not work that way, with vegetation that does not exist yet.",
+   "This is a practical guide to using visualisation well: which studies genuinely inform design decisions in this climate, where renders mislead and how to correct for it, how they function in a permit and pre-sale context, and what they cost."
+ ],
+ "sections": [
+  ("What Renders Are Actually Good For",
+   """    <p>Used as a design tool rather than a marketing one, visualisation earns its cost quickly.</p>
+    <ul>
+      <li><strong>Sun and shading studies</strong> are the highest-value output and the one most often skipped. A model of the actual building on the actual lot, run at this latitude through the day and across the seasons, tells you whether the overhang is deep enough, whether the west elevation needs louvres, whether the pool gets sun at four in the afternoon, and where the terrace is usable at midday. That is engineering, not imagery, and it changes designs.</li>
+      <li><strong>Spatial decisions:</strong> ceiling height, opening width, the relationship between the living space and the terrace, the view from the sofa rather than from the drone. Clients who see these at concept stage make better decisions and change less later, which is where the real saving is.</li>
+      <li><strong>Material combinations</strong> &mdash; chukum against timber against stone against the green of the vegetation &mdash; are much easier to judge on a rendered surface than on a sample board.</li>
+      <li><strong>Coordination review.</strong> A model built for rendering exposes conflicts: a beam through a window head, a duct crossing a corridor, a condenser in the middle of a view. Finding these in the model costs an hour; finding them on site costs a variation.</li>
+      <li><strong>Committee and neighbour approvals.</strong> In gated communities with a design committee, a render showing the building in its street context answers the question the committee is actually asking, and shortens the review.</li>
+      <li><strong>Pre-sale marketing,</strong> where they are indispensable and where the honesty obligations below apply most.</li>
+    </ul>"""),
+  ("Where Renders Mislead, and How to Correct",
+   """    <p>Every one of these is routine in this market, and each of them produces a disappointed client at handover:</p>
+    <ul>
+      <li><strong>Impossible vegetation.</strong> Mature palms and a lush garden that will take five to eight years to establish, if the planting budget survives at all. Ask for a render with day-one planting alongside the mature version.</li>
+      <li><strong>The light of somewhere else.</strong> Soft golden light at an angle that does not occur here, on a facade that will actually be in harsh overhead sun for most of the day. Insist on a midday render in addition to the dusk hero shot &mdash; midday is what the house looks like most of the time.</li>
+      <li><strong>Missing reality.</strong> No AC condensers, no cistern hatch, no LP tank, no pool equipment, no electricity meter, no neighbour's wall, no parked car. All of those exist in the finished building, and where they will sit is a design decision worth making rather than discovering.</li>
+      <li><strong>Glass that does not reflect.</strong> Renders often show glazing as invisible. Real glass on a bright coast reflects, which changes how the elevation reads entirely.</li>
+      <li><strong>Furniture at the wrong scale,</strong> which makes rooms look larger. Ask for furniture at real dimensions with circulation space shown.</li>
+      <li><strong>Finishes that are not in the budget.</strong> The most common one: a render specified with imported stone and joinery that the contract sum does not include. Renders should be produced from the finish schedule, not ahead of it.</li>
+      <li><strong>No context.</strong> A building rendered in isolation, on a lot that in reality has a house two metres from the boundary. Ask for the immediate context modelled, even roughly.</li>
+    </ul>
+    <div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i><strong>For pre-sale buyers:</strong> treat a render as an artist's impression and ask for the specification in writing &mdash; materials, glazing type, ceiling heights, appliance brands, planting at handover. Then visit a completed project by the same developer. The gap between render and delivery is the single most useful thing you can measure about a developer.</div>"""),
+  ("Formats, Cost, and Where to Spend",
+   """    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark"><tr><th>Deliverable</th><th>MXN</th><th>Best for</th></tr></thead>
+      <tbody>
+        <tr><td>Massing model and sun/shading study</td><td>$12,000&ndash;$45,000</td><td>The highest-value item &mdash; design decisions</td></tr>
+        <tr><td>Exterior render, per image</td><td>$8,000&ndash;$30,000</td><td>Approvals, marketing, committee submissions</td></tr>
+        <tr><td>Interior render, per image</td><td>$8,000&ndash;$28,000</td><td>Deciding materials, joinery and lighting</td></tr>
+        <tr><td>Full package, house: 6&ndash;10 images plus studies</td><td>$50,000&ndash;$180,000</td><td>Custom house at design stage</td></tr>
+        <tr><td>Animation / walkthrough, 60&ndash;90 s</td><td>$60,000&ndash;$300,000</td><td>Pre-sale marketing of a development</td></tr>
+        <tr><td>360&deg; panorama or VR walkthrough</td><td>$25,000&ndash;$120,000</td><td>Remote clients &mdash; genuinely useful for buyers abroad</td></tr>
+        <tr><td>Interactive real-time model</td><td>$200,000&ndash;$800,000</td><td>Larger developments with a sales suite</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>Where to spend if the budget is limited:</strong> the sun study first, then two or three interior views of the spaces you will actually live in, then one exterior. The spectacular aerial dusk render is the one clients ask for and the one that informs the fewest decisions.</p>
+    <p><strong>For remote clients</strong> &mdash; most of ours &mdash; 360&deg; panoramas are worth more than still images. Standing virtually in the living room and turning around answers questions that a curated viewpoint cannot, and it is the closest thing to walking the house before it exists. We produce visualisation in-house as part of the design process precisely so it can be used this way: to make decisions before construction, when changing your mind is free.</p>"""),
+ ],
+ "faq": [
+  ("Are 3D renders worth paying for?",
+   "Yes, if used as a design tool. A sun and shading study on the actual lot at this latitude is the highest-value output &mdash; it tells you whether overhangs are deep enough, whether the west elevation needs louvres, and when the terrace and pool get sun. Interior views also reduce late changes, which is where the real saving is."),
+  ("Where do renders mislead?",
+   "Mature vegetation that will take five to eight years, light angles that do not occur here, missing reality (AC condensers, cistern hatches, LP tanks, pool equipment, neighbours' walls), glass shown as invisible when real glass reflects, furniture drawn undersized, and finishes that are not actually in the budget. Ask for a midday render and a day-one planting version alongside the hero shot."),
+  ("What do renders cost in the Riviera Maya?",
+   "A massing model with sun and shading study runs $12,000&ndash;$45,000 MXN, individual exterior or interior images $8,000&ndash;$30,000 each, a full package of six to ten images plus studies $50,000&ndash;$180,000, an animation $60,000&ndash;$300,000, and 360&deg; panoramas $25,000&ndash;$120,000."),
+  ("What should a pre-sale buyer ask for besides renders?",
+   "The written specification &mdash; materials, glazing type, ceiling heights, appliance brands, planting at handover &mdash; and then a visit to a completed project by the same developer. The gap between that developer's renders and their delivered buildings is the single most useful thing you can measure before signing."),
+  ("If I can only afford a little visualisation, what should I buy?",
+   "The sun and shading study first, then two or three interior views of the rooms you will actually use, then one exterior. The aerial dusk render is the image clients ask for first and the one that informs the fewest real decisions. If you are buying from abroad, put the money into a 360&deg; panorama instead of extra still images."),
  ],
 }
 
