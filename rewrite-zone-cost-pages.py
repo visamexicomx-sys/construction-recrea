@@ -531,6 +531,441 @@ Z[("en","playa-del-carmen")] = {
  ],
 }
 
+Z[("es","cancun")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Cancún 2026",
+ "desc": "Construir en Cancún cuesta menos que en el resto del corredor. Rangos por m² 2026, de dónde viene ese descuento y dónde deja de ser una ganga.",
+ "lead": "Construir una casa familiar de 150 m&sup2; en <strong>Canc&uacute;n</strong> cuesta aproximadamente <strong>$2.48M&ndash;$3M MXN ($138k&ndash;$167k USD)</strong> llave en mano en 2026 &mdash; la cifra m&aacute;s baja del corredor y alrededor de 4% por debajo de Playa del Carmen con el mismo acabado. Aqu&iacute; explicamos de d&oacute;nde sale ese descuento y d&oacute;nde deja de serlo.",
+ "sections": [
+  ("Por qué Cancún cotiza por debajo del resto del corredor",
+   """<p>Canc&uacute;n es el &uacute;nico punto del corredor donde la escala juega a favor de quien construye una casa: la mayor bolsa de mano de obra de la regi&oacute;n, la mayor concentraci&oacute;n de proveedores y talleres, y suficientes constructoras compitiendo como para que el precio se ponga realmente a prueba. Todo lo que est&aacute; al sur de Puerto Morelos trae alguna parte del trabajo desde aqu&iacute;.</p>
+<ul>
+<li><strong>Materiales en origen.</strong> Block, cemento, acero, agregados, aluminio, loseta y muebles de ba&ntilde;o se compran localmente sin flete del corredor &mdash; en una casa de 150 m&sup2; eso solo vale varios puntos porcentuales.</li>
+<li><strong>Oficios sin movilizaci&oacute;n.</strong> El trabajo especializado que a Tulum o Akumal hay que programarlo y trasladarlo, aqu&iacute; es una llamada local.</li>
+<li><strong>Lotes residenciales tierra adentro.</strong> La mayor parte de la vivienda en Canc&uacute;n se construye en fraccionamientos cerrados interiores: sin zona federal mar&iacute;timo terrestre, sin concesi&oacute;n ZOFEMAT, sin calendario de anidaci&oacute;n de tortuga y con un expediente ambiental m&aacute;s ligero que un lote costero equivalente.</li>
+</ul>
+<p>Los permisos se tramitan en el municipio de <strong>Benito Ju&aacute;rez</strong> &mdash; uso de suelo, licencia de construcci&oacute;n, alineamiento y Director Responsable de Obra &mdash; y para un lote residencial urbanizado es de los procesos m&aacute;s predecibles del estado.</p>"""),
+  ("Costo llave en mano por tamaño de casa",
+   """<p>Rangos con acabado est&aacute;ndar para Canc&uacute;n &mdash; estructura, instalaciones y acabados; sin terreno, alberca ni mobiliario:</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.65M&ndash;$2M</td><td>$92k&ndash;$111k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.48M&ndash;$3M</td><td>$138k&ndash;$167k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.30M&ndash;$4M</td><td>$183k&ndash;$222k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.13M&ndash;$5M</td><td>$229k&ndash;$278k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $16,500&ndash;$20,000 MXN/m&sup2; acabado est&aacute;ndar. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>Esos rangos aplican al Canc&uacute;n residencial interior. Un lote en la Zona Hotelera, en Isla Dorada o con frente al mar o a la laguna es otro edificio: especificaci&oacute;n marina completa, preguntas de zona federal y un nivel de acabado que el sitio exige. Ah&iacute; el rango realista es $26,000&ndash;$40,000 MXN/m&sup2;.</p>"""),
+  ("Dónde el ahorro se convierte en riesgo",
+   """<p>Un mercado grande y competido produce precios bajos y una enorme variaci&oacute;n de calidad. En Canc&uacute;n el problema no es la obra cara: es la barata.</p>
+<ul>
+<li><strong>Cotizaciones por debajo de $14,000 MXN/m&sup2;</strong> est&aacute;n recortando algo estructural &mdash; normalmente densidad de armado, calidad del concreto o la instalaci&oacute;n el&eacute;ctrica. En una zona de vientos altos, el acero no es el lugar para ahorrar.</li>
+<li><strong>Sin mec&aacute;nica de suelos.</strong> El karst puede dar excelente capacidad de carga somera y una cavidad dos metros al lado. El estudio sobre la huella real cuesta $25,000&ndash;$60,000 y es la reducci&oacute;n de riesgo m&aacute;s barata del proyecto.</li>
+<li><strong>Reglas del fraccionamiento.</strong> Residencial Cumbres, Lagos del Sol, Villa Magna, Aqua o Palmaris operan comit&eacute;s de dise&ntilde;o con sus propios l&iacute;mites de altura, remetimientos, materiales y colores, adem&aacute;s de registro de trabajadores, horarios restringidos y fianza de obra. Pres&eacute;ntelo en etapa de anteproyecto.</li>
+<li><strong>Tr&aacute;fico y ventanas de entrega.</strong> Canc&uacute;n es el &uacute;nico lugar del corredor donde el tr&aacute;fico urbano es un tema de programa: las entregas a fraccionamientos interiores requieren horario, y los reglamentos de horario lo complican m&aacute;s.</li>
+<li><strong>La sal tambi&eacute;n llega tierra adentro.</strong> Incluso a varios kil&oacute;metros del mar, herrajes, barandales y serpentines de condensadores duran mucho m&aacute;s en acero inoxidable 316 y recubrimientos de grado marino.</li>
+</ul>
+<p>Una casa de 150 m&sup2; toma unos <strong>7&ndash;10 meses</strong> desde la licencia hasta la entrega, y la profundidad de proveedores de Canc&uacute;n reduce las esperas de material que alargan obras m&aacute;s al sur. Exija contrato a precio fijo con presupuesto desglosado y pagos por avance verificado: en un mercado de este tama&ntilde;o, ese documento es lo que separa a los buenos constructores de los baratos.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Cancún en 2026?",
+   "Alrededor de $2.48M&ndash;$3M MXN ($138k&ndash;$167k USD) llave en mano para una casa de 150 m&sup2; con acabado est&aacute;ndar en lote residencial interior, sin terreno, alberca ni mobiliario &mdash; unos $16,500&ndash;$20,000 MXN/m&sup2;."),
+  ("¿Por qué Cancún es más barato que Playa del Carmen o Tulum?",
+   "Por escala: la mayor bolsa de mano de obra del corredor, la mayor densidad de proveedores y talleres, y suficiente competencia entre constructoras para que el precio se pruebe. Adem&aacute;s, la vivienda se construye en lotes interiores, lo que evita la zona federal mar&iacute;timo terrestre, las reglas de anidaci&oacute;n de tortuga y el expediente ambiental m&aacute;s pesado de un lote costero."),
+  ("¿Ese precio aplica en la Zona Hotelera?",
+   "No. Zona Hotelera, Isla Dorada o cualquier frente de mar o laguna implica especificaci&oacute;n marina completa, preguntas de zona federal y mayor nivel de acabado: presupuestar $26,000&ndash;$40,000 MXN/m&sup2; en lugar del rango interior."),
+  ("¿Cuál es el precio más bajo razonable de un constructor en Cancún?",
+   "Tome como se&ntilde;al de alerta cualquier cifra por debajo de unos $14,000 MXN/m&sup2;. A ese precio se est&aacute; reduciendo algo estructural &mdash; densidad de armado, calidad del concreto o la instalaci&oacute;n el&eacute;ctrica &mdash; y en una zona de vientos altos esos son los ahorros equivocados."),
+  ("¿Los fraccionamientos cerrados encarecen la obra?",
+   "S&iacute;. Residencial Cumbres, Lagos del Sol, Villa Magna, Aqua y Palmaris tienen comit&eacute;s de dise&ntilde;o con l&iacute;mites propios de altura, remetimientos, materiales y color, adem&aacute;s de registro de trabajadores, horarios restringidos y fianza. Presupueste el ciclo de revisi&oacute;n en el programa, no solo las cuotas."),
+ ],
+}
+
+Z[("es","puerto-aventuras")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Puerto Aventuras 2026",
+ "desc": "Costos llave en mano en Puerto Aventuras más las partidas de la comunidad marina que casi nadie presupuesta: cuota HOA, muelle, muro de canal y comité.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Puerto Aventuras</strong> cuesta aproximadamente <strong>$2.77M&ndash;$3.38M MXN ($154k&ndash;$188k USD)</strong> llave en mano en 2026, cerca de 8% por encima de Playa del Carmen. La obra es la parte predecible; las partidas de abajo son donde se descuadran los presupuestos en una comunidad marina.",
+ "sections": [
+  ("Costo llave en mano por tamaño de casa",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.85M&ndash;$2.25M</td><td>$103k&ndash;$125k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.77M&ndash;$3.38M</td><td>$154k&ndash;$188k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.70M&ndash;$4.50M</td><td>$206k&ndash;$250k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.63M&ndash;$5.63M</td><td>$257k&ndash;$313k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $18,500&ndash;$22,500 MXN/m&sup2; acabado est&aacute;ndar. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>El 8% sobre Playa del Carmen son cuatro cosas concretas, no un recargo por la direcci&oacute;n: acceso controlado con registro de trabajadores, horarios restringidos que alargan el programa, mayor manejo de material dentro de la comunidad y la especificaci&oacute;n de grado marino que exigen las posiciones sobre canal o cerca del mar. Cada una es una partida real.</p>"""),
+  ("Las partidas que se olvidan",
+   """<p>Quedan fuera del costo de obra y son las que sorprenden a quien compra por primera vez en la comunidad:</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Concepto</th><th>Qué confirmar</th></tr></thead><tbody>
+<tr><td><strong>Cuota de mantenimiento (HOA)</strong></td><td>La cifra vigente para ese lote, el presupuesto que la respalda y su tendencia de cinco a&ntilde;os. Los lotes sobre canal y cerca de la marina suelen pagar m&aacute;s.</td></tr>
+<tr><td><strong>Muelle o amarre</strong></td><td>Si es propio, arrendado o asignado &mdash; tres figuras distintas legalmente y en reventa &mdash; y cu&aacute;nto cuesta al a&ntilde;o. Las obras de muelle se permisan aparte de la casa.</td></tr>
+<tr><td><strong>Muro de canal</strong></td><td>Su estado, revisado por alguien que no le est&aacute; vendiendo la propiedad. Repararlo es un proyecto en s&iacute; mismo.</td></tr>
+<tr><td><strong>Comit&eacute; de dise&ntilde;o</strong></td><td>Presentaci&oacute;n, ciclo de revisi&oacute;n y fianza de obra: presupueste $60,000&ndash;$250,000 MXN y al menos una ronda de revisi&oacute;n en el programa.</td></tr>
+<tr><td><strong>Especificaci&oacute;n marina</strong></td><td>Herrajes 316, aluminio anodizado o con recubrimiento marino, mayor recubrimiento de concreto. Suma a la obra y ahorra mucho m&aacute;s en una d&eacute;cada.</td></tr>
+</tbody></table></div>
+<p>Los permisos se tramitan en el municipio de <strong>Solidaridad</strong> &mdash; la misma ruta que Playa del Carmen &mdash; con la revisi&oacute;n arquitect&oacute;nica de la comunidad por delante en la pr&aacute;ctica.</p>"""),
+  ("Frente a canal: qué cambia técnicamente",
+   """<p>El lote sobre canal es la raz&oacute;n para comprar aqu&iacute;, y cambia la ingenier&iacute;a:</p>
+<ul>
+<li><strong>Nivel fre&aacute;tico alto.</strong> Excavaciones, cisterna y vaso de alberca requieren abatimiento y revisi&oacute;n de flotaci&oacute;n &mdash; una alberca vaciada en el momento equivocado puede flotar.</li>
+<li><strong>Aerosol salino constante</strong> desde el agua, no exposici&oacute;n estacional. Aqu&iacute; el inoxidable 316 deja de ser preferencia.</li>
+<li><strong>Exposici&oacute;n a tormenta.</strong> Los lotes junto al agua reciben viento completo y, en un evento serio, marea de tormenta. El vidrio laminado o con clasificaci&oacute;n de impacto en la fachada al agua es la especificaci&oacute;n que no negociamos.</li>
+<li><strong>Estructuras de borde</strong> en la l&iacute;nea de agua tienen dise&ntilde;o y autorizaci&oacute;n propios.</li>
+</ul>
+<p>La obra de una casa de 150 m&sup2; toma unos <strong>7&ndash;10 meses</strong> desde la licencia, y los horarios restringidos dentro de la comunidad empujan el programa al extremo largo. Contrate a precio fijo con presupuesto desglosado y pagos por avance verificado: donde el acceso es controlado y las horas limitadas, un esquema abierto es donde el calendario se desdibuja.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Puerto Aventuras?",
+   "Alrededor de $2.77M&ndash;$3.38M MXN ($154k&ndash;$188k USD) llave en mano para 150 m&sup2; con acabado est&aacute;ndar, sin terreno, alberca ni mobiliario &mdash; unos $18,500&ndash;$22,500 MXN/m&sup2;, cerca de 8% arriba de Playa del Carmen."),
+  ("¿Por qué es más caro que Playa del Carmen?",
+   "Por cuatro razones concretas: acceso controlado con registro de trabajadores, horarios restringidos que alargan el programa, mayor manejo de material dentro de la comunidad y la especificaci&oacute;n de grado marino que exigen los lotes sobre canal o cercanos al mar."),
+  ("¿Qué costos quedan fuera del presupuesto de obra?",
+   "La cuota de mantenimiento del lote, el cargo de muelle o amarre si aplica, la reparaci&oacute;n del muro de canal si est&aacute; deteriorado, y la presentaci&oacute;n al comit&eacute; con su fianza, alrededor de $60,000&ndash;$250,000 MXN. Las obras de muelle se permisan por separado."),
+  ("¿Necesito aprobación de la comunidad además del municipio?",
+   "S&iacute;, y en la pr&aacute;ctica la comunidad va primero. La licencia y el DRO se tramitan en Solidaridad, mientras el comit&eacute; arquitect&oacute;nico revisa altura, remetimientos, materiales, colores y bardas. Presente en anteproyecto: una ronda de revisi&oacute;n no prevista es el retraso m&aacute;s com&uacute;n aqu&iacute;."),
+  ("¿Qué cambia en un lote con frente a canal?",
+   "Abatimiento y revisi&oacute;n de flotaci&oacute;n para excavaciones y alberca, especificaci&oacute;n marina completa porque el aerosol salino es constante, vidrio laminado o de impacto en la fachada al agua por la exposici&oacute;n a tormenta, y autorizaci&oacute;n aparte para cualquier obra en la l&iacute;nea de agua."),
+ ],
+}
+
+Z[("es","akumal")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Akumal 2026",
+ "desc": "Costos de obra en Akumal 2026 y por qué el expediente ambiental — no los muros — define el total. Tortugas, planta de tratamiento, transporte y calendario.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Akumal</strong> cuesta aproximadamente <strong>$2.85M&ndash;$3.52M MXN ($158k&ndash;$196k USD)</strong> llave en mano en 2026. Pero en un lote de Akumal la construcci&oacute;n es la mitad predecible del presupuesto: el expediente ambiental, la planta de tratamiento y el calendario de permisos son lo que separa dos proyectos aparentemente iguales.",
+ "sections": [
+  ("Costo llave en mano por tamaño de casa",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.90M&ndash;$2.35M</td><td>$106k&ndash;$131k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.85M&ndash;$3.52M</td><td>$158k&ndash;$196k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.80M&ndash;$4.70M</td><td>$211k&ndash;$261k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.75M&ndash;$5.88M</td><td>$264k&ndash;$326k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $19,000&ndash;$23,500 MXN/m&sup2; acabado est&aacute;ndar. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>Es cerca de 12% arriba de Playa del Carmen, y ese sobreprecio es transporte de todo el material por el corredor, especificaci&oacute;n de grado marino por la exposici&oacute;n salina, y una base local de oficios m&aacute;s peque&ntilde;a que obliga a movilizar cuadrillas.</p>"""),
+  ("Las partidas que solo existen en Akumal",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Partida</th><th>MXN</th><th>Por qué</th></tr></thead><tbody>
+<tr><td>Estudios y autorizaci&oacute;n ambiental</td><td>$80,000&ndash;$350,000</td><td>El alcance lo fija la vegetaci&oacute;n y la distancia a la costa, no el tama&ntilde;o de la casa</td></tr>
+<tr><td>Planta de tratamiento + pozo de absorci&oacute;n</td><td>$120,000&ndash;$380,000</td><td>No hay drenaje municipal: tratar antes de infiltrar es el centro del expediente</td></tr>
+<tr><td>Iluminaci&oacute;n compatible con anidaci&oacute;n</td><td>$30,000&ndash;$120,000</td><td>Baja, apantallada, &aacute;mbar o roja en fachadas hacia la playa</td></tr>
+<tr><td>Levantamiento ZOFEMAT y revisi&oacute;n de concesi&oacute;n</td><td>$20,000&ndash;$80,000</td><td>Solo en lotes que tocan la zona federal mar&iacute;timo terrestre</td></tr>
+<tr><td>Mec&aacute;nica de suelos sobre la huella</td><td>$25,000&ndash;$60,000</td><td>Karst: una cavidad puede estar a dos metros de una buena capacidad de carga</td></tr>
+</tbody></table></div>
+<p>Cuatro de esas cinco partidas escalan con el <em>lote</em>, no con la casa. Por eso una casa compacta en Akumal sale m&aacute;s cara por metro cuadrado que una grande, y por eso el ahorro m&aacute;s barato disponible es elegir un lote con autorizaci&oacute;n ambiental vigente y servicios ya en el l&iacute;mite del predio.</p>"""),
+  ("El calendario de permisos y lo que cuesta esperar",
+   """<p>Akumal pertenece al municipio de <strong>Tulum</strong>, no a Solidaridad &mdash; sorprende a muchos propietarios porque Playa del Carmen queda m&aacute;s cerca. La revisi&oacute;n de Tulum es la m&aacute;s exigente del corredor en materia ambiental, y la consecuencia pr&aacute;ctica es calendario:</p>
+<ul>
+<li><strong>Expediente ambiental:</strong> 4&ndash;9 meses en un lote con vegetaci&oacute;n o cercano a la costa.</li>
+<li><strong>Revisi&oacute;n de licencia con expediente completo:</strong> 4&ndash;12 semanas.</li>
+<li><strong>Total realista desde la compra hasta iniciar obra:</strong> 6&ndash;14 meses.</li>
+</ul>
+<p>Esos meses son un costo real: terreno cargado y capital comprometido sin producir. Tambi&eacute;n son la raz&oacute;n por la que un lote con autorizaci&oacute;n vigente se vende con premio &mdash; y normalmente lo vale.</p>
+<p>Un dato de programaci&oacute;n propio de esta costa: la anidaci&oacute;n de tortuga corre aproximadamente de <strong>mayo a octubre</strong>, con restricciones a trabajo pesado, iluminaci&oacute;n intensa y actividad en la arena cerca de la playa. Programe las fases exteriores ruidosas fuera de esa ventana y los acabados interiores dentro de ella.</p>
+<p>La obra toma unos <strong>7&ndash;10 meses</strong> para 150 m&sup2;. Contrate a precio fijo con presupuesto desglosado, y aseg&uacute;rese de que las condicionantes ambientales &mdash; supervivencia de reforestaci&oacute;n, bit&aacute;cora de la planta, cumplimiento de iluminaci&oacute;n &mdash; queden asignadas a alguien despu&eacute;s de la entrega, porque siguen vigentes toda la vida del inmueble.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Akumal en 2026?",
+   "Alrededor de $2.85M&ndash;$3.52M MXN ($158k&ndash;$196k USD) llave en mano para 150 m&sup2; con acabado est&aacute;ndar &mdash; unos $19,000&ndash;$23,500 MXN/m&sup2;, cerca de 12% arriba de Playa del Carmen. Terreno, alberca, mobiliario y las partidas ambientales van aparte."),
+  ("¿Qué costos adicionales tiene un lote en Akumal?",
+   "Estudios y autorizaci&oacute;n ambiental $80,000&ndash;$350,000, planta de tratamiento con pozo de absorci&oacute;n $120,000&ndash;$380,000, iluminaci&oacute;n compatible con anidaci&oacute;n $30,000&ndash;$120,000, levantamiento ZOFEMAT en lotes federales $20,000&ndash;$80,000 y mec&aacute;nica de suelos $25,000&ndash;$60,000. Casi todas escalan con el lote, no con la casa."),
+  ("¿Qué municipio otorga los permisos en Akumal?",
+   "Tulum, no Solidaridad, aunque Playa del Carmen quede m&aacute;s cerca. Su revisi&oacute;n ambiental es la m&aacute;s exigente del corredor, por lo que conviene planear entre 6 y 14 meses desde la compra hasta iniciar obra."),
+  ("¿Las reglas de anidación afectan el programa de obra?",
+   "S&iacute;. La temporada corre aproximadamente de mayo a octubre y restringe trabajo pesado, iluminaci&oacute;n intensa y actividad en la arena cerca de la playa. Programe las fases exteriores fuera de la temporada y los interiores dentro. Las reglas de iluminaci&oacute;n tambi&eacute;n aplican a la casa terminada."),
+  ("¿Una casa más pequeña sale más barata por m² en Akumal?",
+   "No, sale m&aacute;s cara por metro. El expediente ambiental, la mec&aacute;nica de suelos, la planta de tratamiento y la conexi&oacute;n de servicios cuestan casi lo mismo para 80 m&sup2; que para 200 m&sup2;, as&iacute; que en una casa compacta esas partidas fijas pesan mucho m&aacute;s."),
+ ],
+}
+
+Z[("es","puerto-morelos")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Puerto Morelos 2026",
+ "desc": "Puerto Morelos construye a precio de Playa del Carmen con terreno más barato. Rangos 2026, la descarga frente al parque de arrecife y la Ruta de los Cenotes.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Puerto Morelos</strong> cuesta aproximadamente <strong>$2.55M&ndash;$3.15M MXN ($142k&ndash;$175k USD)</strong> llave en mano en 2026 &mdash; pr&aacute;cticamente al nivel de Playa del Carmen en obra, sobre terreno por lo general m&aacute;s barato. Esa combinaci&oacute;n es lo que lo convierte en la opci&oacute;n de valor discreta del corredor.",
+ "sections": [
+  ("Costo llave en mano y los tres submercados",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$1.70M&ndash;$2.10M</td><td>$94k&ndash;$117k</td></tr>
+<tr><td>150 m&sup2;</td><td>$2.55M&ndash;$3.15M</td><td>$142k&ndash;$175k</td></tr>
+<tr><td>200 m&sup2;</td><td>$3.40M&ndash;$4.20M</td><td>$189k&ndash;$233k</td></tr>
+<tr><td>250 m&sup2;</td><td>$4.25M&ndash;$5.25M</td><td>$236k&ndash;$292k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $17,000&ndash;$21,000 MXN/m&sup2; acabado est&aacute;ndar. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>Esos rangos cubren el pueblo y los lotes residenciales interiores. Los otros dos submercados se comportan distinto:</p>
+<ul>
+<li><strong>Frente al mar y cercano a costa:</strong> $26,000&ndash;$38,000+ MXN/m&sup2; con especificaci&oacute;n marina, preguntas de zona federal y expediente ambiental m&aacute;s pesado.</li>
+<li><strong>Ruta de los Cenotes:</strong> $14,000&ndash;$19,000 en lote con servicios, o $17,000&ndash;$24,000 construyendo fuera de red &mdash; terreno m&aacute;s barato, m&aacute;s infraestructura.</li>
+</ul>"""),
+  ("Municipio propio desde 2016",
+   """<p>Puerto Morelos se separ&oacute; de Benito Ju&aacute;rez en 2016 y hoy emite su propio uso de suelo, licencias, alineamientos y ocupaci&oacute;n. Tres consecuencias pr&aacute;cticas:</p>
+<ul>
+<li><strong>Se tramita aqu&iacute;, no en Canc&uacute;n.</strong> La orientaci&oacute;n basada en la pr&aacute;ctica de Benito Ju&aacute;rez est&aacute; desactualizada, igual que la experiencia de un vecino anterior a 2016.</li>
+<li><strong>Verifique los n&uacute;meros del lote hoy.</strong> Los instrumentos de planeaci&oacute;n del municipio son relativamente recientes y se han actualizado: confirme densidad, altura y uso permitido para el predio exacto en lugar de asumirlos de un documento viejo.</li>
+<li><strong>Una administraci&oacute;n peque&ntilde;a es una administraci&oacute;n directa.</strong> Quien revisa su expediente es accesible, lo que vuelve muy valioso presentar un expediente completo &mdash; y muy lento presentar uno incompleto.</li>
+</ul>
+<p>La revisi&oacute;n ambiental estatal (SEMA), la jurisdicci&oacute;n federal cuando aplica, CONAGUA en materia de agua y ZOFEMAT del lado de playa siguen aplicando igual que en el resto del corredor.</p>"""),
+  ("Lo que el arrecife y los humedales agregan a la especificación",
+   """<p>Puerto Morelos tiene la geograf&iacute;a ambiental m&aacute;s expl&iacute;cita del corredor: parque nacional de arrecife frente a la costa, manglar y humedal protegidos detr&aacute;s del pueblo, y karst con cenotes tierra adentro. Cada uno es una partida, no un lema.</p>
+<ul>
+<li><strong>La calidad de la descarga es el centro del expediente.</strong> Tratamiento antes de infiltrar, correctamente dimensionado, con el retrolavado de alberca por ruta separada &mdash; $90,000&ndash;$350,000 MXN seg&uacute;n ocupaci&oacute;n. Lo que se infiltra aqu&iacute; llega al acu&iacute;fero y de ah&iacute; al arrecife.</li>
+<li><strong>El manglar no se negocia.</strong> En lotes junto al humedal hay que establecer el l&iacute;mite de vegetaci&oacute;n protegida antes de dibujar la huella &mdash; y algunos predios en venta tienen mucho menos &aacute;rea construible que la superficie escriturada. Rev&iacute;selo antes de comprar.</li>
+<li><strong>Restricciones por cenotes</strong> tierra adentro, con limitaciones sobre qu&eacute; puede infiltrarse cerca.</li>
+<li><strong>El nivel de piso terminado</strong> en terrenos bajos junto al humedal o la costa debe fijarse considerando inundaci&oacute;n y marea de tormenta. Es decisi&oacute;n de proyecto y no se corrige despu&eacute;s.</li>
+<li><strong>En la Ruta de los Cenotes,</strong> presupueste el camino de acceso ($40,000&ndash;$300,000) y la extensi&oacute;n de CFE &mdash; cot&iacute;cela antes de comprar, va de $150,000 a m&aacute;s de $900,000 &mdash; o un sistema fuera de red con solar, almacenamiento, pozo tratado y captaci&oacute;n pluvial.</li>
+</ul>
+<p>La obra de 150 m&sup2; toma unos <strong>7&ndash;10 meses</strong> desde la licencia hasta la entrega.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Puerto Morelos?",
+   "Alrededor de $2.55M&ndash;$3.15M MXN ($142k&ndash;$175k USD) llave en mano para 150 m&sup2; en lote del pueblo o interior &mdash; unos $17,000&ndash;$21,000 MXN/m&sup2;, pr&aacute;cticamente al nivel de Playa del Carmen. Frente al mar sube a $26,000&ndash;$38,000+ y la Ruta de los Cenotes va de $14,000 a $24,000 seg&uacute;n servicios."),
+  ("¿Qué municipio emite los permisos en Puerto Morelos?",
+   "El propio Puerto Morelos: se separ&oacute; de Benito Ju&aacute;rez (Canc&uacute;n) en 2016. Cualquier orientaci&oacute;n basada en la pr&aacute;ctica de Canc&uacute;n est&aacute; desactualizada, y como los instrumentos de planeaci&oacute;n son recientes conviene verificar densidad, altura y uso del predio exacto."),
+  ("¿Puedo construir en un lote junto al manglar?",
+   "No dentro de la vegetaci&oacute;n protegida, y el l&iacute;mite debe establecerse antes de dibujar la huella. Algunos lotes en venta tienen bastante menos &aacute;rea construible que la superficie de escrituras, as&iacute; que conviene verificarlo antes de comprar."),
+  ("¿Qué implica el parque nacional de arrecife para mi obra?",
+   "Que la calidad de la descarga es la pregunta t&eacute;cnica central del expediente. Tratamiento antes de infiltrar dimensionado a la ocupaci&oacute;n, con retrolavado de alberca por ruta separada, cuesta $90,000&ndash;$350,000 MXN y se revisa con detalle porque el karst lleva lo infiltrado al acu&iacute;fero y al arrecife."),
+  ("¿Construir en la Ruta de los Cenotes es más barato?",
+   "El terreno s&iacute;, y la obra ronda $14,000&ndash;$19,000 MXN/m&sup2; en lote con servicios. Pero muchos predios no tienen CFE ni agua municipal: presupueste la extensi&oacute;n &mdash; cot&iacute;cela antes de comprar, va de $150,000 a m&aacute;s de $900,000 &mdash; o un sistema fuera de red, m&aacute;s $40,000&ndash;$300,000 de camino de acceso."),
+ ],
+}
+
+Z[("es","playacar")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Playacar 2026",
+ "desc": "Playacar está prácticamente lleno: la mayoría de proyectos son remodelación o demolición. Rangos 2026, costo de demolición, comité de diseño y Fase I vs Fase II.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Playacar</strong> cuesta aproximadamente <strong>$3.15M&ndash;$3.90M MXN ($175k&ndash;$217k USD)</strong> llave en mano en 2026, cerca de 25% arriba de Playa del Carmen base. Pero Playacar est&aacute; pr&aacute;cticamente construido, as&iacute; que la pregunta real no es cu&aacute;nto cuesta una casa nueva &mdash; es si conviene remodelar la que est&aacute; en el lote o tirarla.",
+ "sections": [
+  ("Remodelar o demoler: la aritmética",
+   """<p>Casi todo proyecto en Playacar es una reconstrucci&oacute;n, una remodelaci&oacute;n mayor o una obra en uno de los pocos lotes que quedan. La decisi&oacute;n entre las dos primeras debe tomarse tras un dictamen, no tras una visita, porque las casas de esa edad en esta costa cargan un defecto predecible: corrosi&oacute;n del acero de refuerzo por cloruros en bordes de losa, balcones, columnas y pretiles.</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Concepto</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Dictamen estructural con calas en zonas representativas</td><td>$40,000&ndash;$150,000</td></tr>
+<tr><td>Demolici&oacute;n y retiro de escombro, casa tipo</td><td>$180,000&ndash;$600,000</td></tr>
+<tr><td>Programa de reparaci&oacute;n de concreto, si se conserva</td><td>Se cotiza tras el dictamen &mdash; puede superar la demolici&oacute;n</td></tr>
+<tr><td>Remodelaci&oacute;n integral, especificaci&oacute;n premium</td><td>$14,000&ndash;$26,000 MXN/m&sup2;</td></tr>
+<tr><td>Obra nueva, premium</td><td>$24,000&ndash;$30,000 MXN/m&sup2;</td></tr>
+<tr><td>Obra nueva, lujo</td><td>$30,000&ndash;$42,000 MXN/m&sup2;</td></tr>
+</tbody></table></div>
+<p>El umbral honesto: cuando la reparaci&oacute;n estructural se acerca a 25&ndash;30% del costo de reconstruir, est&aacute; pagando precio de obra nueva por la altura libre, la orientaci&oacute;n y la planta de un edificio viejo. En Playacar hay contraargumento real, eso s&iacute;: los lotes no se reponen, el arbolado maduro est&aacute; protegido y vale, y una casa de los noventa bien construida y con buenas alturas en Fase II puede merecer conservarse.</p>"""),
+  ("Costo llave en mano por tamaño de casa",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$2.10M&ndash;$2.60M</td><td>$117k&ndash;$144k</td></tr>
+<tr><td>150 m&sup2;</td><td>$3.15M&ndash;$3.90M</td><td>$175k&ndash;$217k</td></tr>
+<tr><td>200 m&sup2;</td><td>$4.20M&ndash;$5.20M</td><td>$233k&ndash;$289k</td></tr>
+<tr><td>250 m&sup2;</td><td>$5.25M&ndash;$6.50M</td><td>$292k&ndash;$361k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $21,000&ndash;$26,000 MXN/m&sup2; acabado est&aacute;ndar a premium. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>Ese 25% sobre Playa del Carmen base es acceso restringido por calles angostas, trabajadores registrados y horarios limitados, el proceso del comit&eacute; de dise&ntilde;o, protecci&oacute;n de arbolado, especificaci&oacute;n de grado marino y el nivel de acabado que el mercado local espera. En un lote de Playacar frente al mar, agregue la zona federal mar&iacute;timo terrestre y vidrio de impacto en la fachada al mar: ah&iacute; el rango es $42,000&ndash;$60,000+ MXN/m&sup2;.</p>"""),
+  ("El comité, los árboles y Fase I vs Fase II",
+   """<p><strong>La revisi&oacute;n arquitect&oacute;nica es real</strong> y es donde se atrasan los programas en Playacar. Espere revisi&oacute;n de altura, volumetr&iacute;a y remetimientos m&aacute;s estrictos que los municipales, forma y materiales de cubierta, tratamiento de fachada y paleta de color, bardas y cercas, y sobre todo retiro de arbolado &mdash; el dosel maduro es parte de lo que la comunidad protege y cada &aacute;rbol se justifica. Presente en anteproyecto con el inventario de arbolado en mano, y contemple al menos un ciclo de revisi&oacute;n m&aacute;s la fianza de obra.</p>
+<p><strong>Fase I y Fase II son lugares distintos.</strong> Fase I est&aacute; m&aacute;s cerca del pueblo y del ferry: m&aacute;s densa, lotes m&aacute;s chicos, caminabilidad real a la Quinta Avenida y acceso de obra por calles angostas que encarece. Fase II es mayor y m&aacute;s tranquila alrededor del campo de golf, con lotes grandes, vegetaci&oacute;n madura y espacio para una villa importante &mdash; y el frente de golf trae su propia pregunta de cristaler&iacute;a, porque las pelotas desviadas son un riesgo cotizable en ventanas y domos.</p>
+<p>Los permisos se tramitan en <strong>Solidaridad</strong>, la misma ruta que el resto de Playa del Carmen, con la revisi&oacute;n de la comunidad por delante en la pr&aacute;ctica. La obra toma unos <strong>7&ndash;10 meses</strong> para 150 m&sup2;, m&aacute;s la demolici&oacute;n cuando aplica.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir en Playacar?",
+   "Alrededor de $3.15M&ndash;$3.90M MXN ($175k&ndash;$217k USD) llave en mano para 150 m&sup2; &mdash; unos $21,000&ndash;$26,000 MXN/m&sup2;, cerca de 25% arriba de Playa del Carmen base. Especificaci&oacute;n de lujo va de $30,000 a $42,000 y los lotes frente al mar de $42,000 a $60,000+."),
+  ("¿Conviene remodelar la casa existente o demolerla?",
+   "Primero un dictamen con calas en zonas representativas, $40,000&ndash;$150,000 MXN, porque las casas de esa edad suelen traer corrosi&oacute;n del refuerzo por cloruros. Cuando la reparaci&oacute;n estructural se acerca a 25&ndash;30% del costo de reconstruir, normalmente conviene demoler: retiro y escombro cuestan $180,000&ndash;$600,000."),
+  ("¿Qué revisa el comité de diseño de Playacar?",
+   "Altura, volumetr&iacute;a y remetimientos m&aacute;s estrictos que los municipales, forma y materiales de cubierta, fachada y color, bardas y cercas, y el retiro de arbolado, que debe justificarse &aacute;rbol por &aacute;rbol. Tambi&eacute;n fija reglas de obra: trabajadores registrados, horarios, entregas, almacenaje y fianza."),
+  ("¿Qué diferencia hay entre Fase I y Fase II para construir?",
+   "Fase I tiene lotes m&aacute;s chicos y densos con acceso de obra por calles angostas que encarece, y caminabilidad real a la Quinta Avenida. Fase II tiene lotes grandes junto al golf, vegetaci&oacute;n madura y espacio para una villa &mdash; y el frente de golf vuelve la especificaci&oacute;n de ventanas y domos un tema pr&aacute;ctico."),
+  ("¿Por qué Playacar cuesta 25% más que el resto de Playa del Carmen?",
+   "Acceso restringido por calles angostas, trabajadores registrados y horarios limitados, el proceso del comit&eacute;, protecci&oacute;n de arbolado durante la obra, especificaci&oacute;n de grado marino y el nivel de acabado que espera el mercado local. Cada punto es una partida real, no un recargo por la direcci&oacute;n."),
+ ],
+}
+
+Z[("es","mayakoba")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Mayakoba 2026",
+ "desc": "Mayakoba es el lugar más caro para construir en la Riviera Maya. Rangos por m² 2026, qué incluye realmente la especificación de nivel resort y por qué.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Mayakoba</strong> cuesta aproximadamente <strong>$3.60M&ndash;$4.50M MXN ($200k&ndash;$250k USD)</strong> llave en mano en 2026 &mdash; el rango m&aacute;s alto del corredor, cerca de 42% arriba de Playa del Carmen base. Aunque casi nada se construye en ese extremo bajo: lo que realmente se levanta aqu&iacute; est&aacute; muy por encima, y esta p&aacute;gina explica por qu&eacute;.",
+ "sections": [
+  ("Costo llave en mano y la cifra realista",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>150 m&sup2;</td><td>$3.60M&ndash;$4.50M</td><td>$200k&ndash;$250k</td></tr>
+<tr><td>250 m&sup2;</td><td>$6M&ndash;$7.50M</td><td>$333k&ndash;$417k</td></tr>
+<tr><td>350 m&sup2;</td><td>$8.40M&ndash;$10.50M</td><td>$467k&ndash;$583k</td></tr>
+<tr><td>500 m&sup2;</td><td>$12M&ndash;$15M</td><td>$667k&ndash;$833k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $24,000&ndash;$30,000 MXN/m&sup2; acabado est&aacute;ndar a premium. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>Esas cifras son el rango de entrada. Las casas que efectivamente se construyen dentro del plan maestro son de 300&ndash;600 m&sup2; con especificaci&oacute;n de autor, lo que lleva los n&uacute;meros reales a <strong>$35,000&ndash;$55,000 MXN/m&sup2;</strong> contando dise&ntilde;o arquitect&oacute;nico, herrajes y acabados importados, automatizaci&oacute;n completa, alberca de proyecto y jardiner&iacute;a madura. Presupuestar una villa de Mayakoba desde los $24,000 es presupuestar una casa que no pasar&iacute;a la revisi&oacute;n de dise&ntilde;o.</p>"""),
+  ("Qué compra realmente ese sobreprecio",
+   """<ul>
+<li><strong>Control de dise&ntilde;o.</strong> Un plan maestro construido alrededor de la operaci&oacute;n hotelera revisa arquitectura, materiales, color, paisaje e iluminaci&oacute;n con el est&aacute;ndar de los hoteles vecinos. Las presentaciones son detalladas, los ciclos de revisi&oacute;n existen y abaratar la fachada no es una opci&oacute;n disponible.</li>
+<li><strong>Expectativa de acabado.</strong> Los comparables son residencias de marca. Carpinter&iacute;a, piedra, cristaler&iacute;a y herrajes se especifican contra eso, y la mano de obra para instalarlos con precisi&oacute;n cuesta m&aacute;s que los materiales.</li>
+<li><strong>Disciplina de obra.</strong> Se construye dentro de un entorno de resort en operaci&oacute;n: acceso controlado, trabajadores registrados, horarios restringidos, tapiales apantallados, l&iacute;mites de ruido, obligaciones de limpieza y fianza. Cada punto son horas de programa.</li>
+<li><strong>Entorno ambiental.</strong> El plan maestro se organiza alrededor de lagunas, canales y manglar. Vegetaci&oacute;n conservada, restricciones, drenaje y descarga se gestionan a nivel comunidad adem&aacute;s de las autoridades &mdash; y el paisaje que no puede retirar es parte de lo que paga.</li>
+<li><strong>Especificaci&oacute;n marina y de humedad</strong> completa: inoxidable 316, aluminio anodizado o con recubrimiento marino, recubrimiento generoso de concreto, carpinter&iacute;a ventilada.</li>
+<li><strong>Escasez.</strong> Pocos lotes residenciales y cada proyecto es a la medida: no hay repetici&oacute;n entre la cual repartir el costo de dise&ntilde;o y direcci&oacute;n.</li>
+</ul>"""),
+  ("Programa, permisos y qué más presupuestar",
+   """<p>Los permisos se tramitan en el municipio de <strong>Solidaridad</strong> &mdash; uso de suelo, licencia, alineamiento y DRO &mdash; con la revisi&oacute;n arquitect&oacute;nica de la comunidad por delante y, por el entorno, una revisi&oacute;n ambiental que toma en serio la laguna y el manglar. Presente a la comunidad en anteproyecto: terminar un dise&ntilde;o y despu&eacute;s mandarlo a revisi&oacute;n es como los proyectos de Mayakoba pierden un trimestre.</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Además de la obra</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Dise&ntilde;o e ingenier&iacute;a de autor a este nivel</td><td>10&ndash;15% de la obra</td></tr>
+<tr><td>Presentaci&oacute;n a la comunidad, revisiones y fianza</td><td>$150,000&ndash;$600,000</td></tr>
+<tr><td>Alberca de proyecto con equipo</td><td>$900,000&ndash;$3,500,000</td></tr>
+<tr><td>Jardiner&iacute;a madura y riego</td><td>$400,000&ndash;$2,000,000</td></tr>
+<tr><td>Mobiliario y equipamiento de una villa de esta clase</td><td>$1,500,000&ndash;$6,000,000</td></tr>
+<tr><td>Cuota de comunidad</td><td>Recurrente &mdash; verificar por lote</td></tr>
+</tbody></table></div>
+<p>La obra toma unos <strong>10&ndash;16 meses</strong> para una villa de esta especificaci&oacute;n, m&aacute;s que la norma del corredor: horarios restringidos, ciclos de revisi&oacute;n y precisi&oacute;n de acabado consumen tiempo que un lote suburbano no consume. Contrate a precio fijo con presupuesto desglosado y pagos por avance verificado.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Mayakoba?",
+   "El rango de entrada es $24,000&ndash;$30,000 MXN/m&sup2;, es decir $3.60M&ndash;$4.50M MXN ($200k&ndash;$250k USD) para 150 m&sup2;. En la pr&aacute;ctica se construyen casas de 300&ndash;600 m&sup2; a $35,000&ndash;$55,000 MXN/m&sup2; contando dise&ntilde;o de autor, acabados importados, automatizaci&oacute;n, alberca y jardiner&iacute;a madura."),
+  ("¿Por qué Mayakoba es lo más caro del corredor?",
+   "Control de dise&ntilde;o con est&aacute;ndar de resort, expectativa de acabado comparada con residencias de marca, disciplina de obra dentro de un entorno de lujo en operaci&oacute;n, gesti&oacute;n ambiental alrededor de lagunas y manglar, especificaci&oacute;n marina completa y escasez de lotes sin repetici&oacute;n entre la cual repartir costos."),
+  ("¿Qué debo presupuestar además de la obra?",
+   "Dise&ntilde;o e ingenier&iacute;a 10&ndash;15% de la obra, presentaci&oacute;n y fianza $150,000&ndash;$600,000, alberca de proyecto $900,000&ndash;$3,500,000, jardiner&iacute;a madura $400,000&ndash;$2,000,000, mobiliario y equipamiento $1,500,000&ndash;$6,000,000, y la cuota recurrente de comunidad."),
+  ("¿Cuánto tarda una villa en Mayakoba?",
+   "Unos 10&ndash;16 meses para una villa de esta especificaci&oacute;n, m&aacute;s que la norma del corredor. Horarios restringidos, ciclos de revisi&oacute;n de la comunidad y la precisi&oacute;n que exige el nivel de acabado consumen tiempo adicional."),
+  ("¿Quién aprueba el diseño?",
+   "El municipio de Solidaridad para uso de suelo, licencia, alineamiento y DRO, y la revisi&oacute;n arquitect&oacute;nica de la comunidad, que en la pr&aacute;ctica va primero y examina arquitectura, materiales, color, paisaje e iluminaci&oacute;n. Presente en anteproyecto."),
+ ],
+}
+
+Z[("es","corasol")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Corasol 2026",
+ "desc": "Costos de obra en Corasol 2026 y qué implica construir dentro de un plan maestro en desarrollo: infraestructura por etapas, comité, frente de golf y accesos.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Corasol</strong> cuesta aproximadamente <strong>$3.30M&ndash;$4.12M MXN ($183k&ndash;$229k USD)</strong> llave en mano en 2026, cerca de 30% arriba de Playa del Carmen base. Corasol es adem&aacute;s donde est&aacute; nuestra oficina, as&iacute; que esta p&aacute;gina se escribe a pocos minutos a pie del tema.",
+ "sections": [
+  ("Costo llave en mano por tamaño de casa",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>150 m&sup2;</td><td>$3.30M&ndash;$4.12M</td><td>$183k&ndash;$229k</td></tr>
+<tr><td>200 m&sup2;</td><td>$4.40M&ndash;$5.50M</td><td>$244k&ndash;$306k</td></tr>
+<tr><td>300 m&sup2;</td><td>$6.60M&ndash;$8.25M</td><td>$367k&ndash;$458k</td></tr>
+<tr><td>450 m&sup2;</td><td>$9.90M&ndash;$12.38M</td><td>$550k&ndash;$688k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $22,000&ndash;$27,500 MXN/m&sup2; acabado est&aacute;ndar a premium. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>La mayor parte de lo que se construye aqu&iacute; supera los 150 m&sup2;: los lotes y el mercado empujan hacia villas de 250&ndash;450 m&sup2; con alberca, roof garden y jardiner&iacute;a de proyecto. Presupueste el paquete completo y no solo el precio por metro: en una villa de 300 m&sup2;, alberca, jardiner&iacute;a, mobiliario y honorarios suman com&uacute;nmente 35&ndash;50% sobre la cifra de obra.</p>"""),
+  ("Construir dentro de una comunidad que todavía se construye",
+   """<p>Esta es la diferencia pr&aacute;ctica entre Corasol y una direcci&oacute;n consolidada como Playacar. El plan maestro sigue desarroll&aacute;ndose, y eso corta por los dos lados:</p>
+<ul>
+<li><strong>La infraestructura llega por etapas.</strong> Confirme para su lote qu&eacute; hay realmente en el l&iacute;mite del predio hoy &mdash; capacidad el&eacute;ctrica, agua, drenaje, superficie de calle &mdash; y qu&eacute; est&aacute; programado en lugar de prometido. La distancia entre "la comunidad tendr&aacute;" y "el lote tiene" es donde se mueven los presupuestos.</li>
+<li><strong>Tendr&aacute; vecinos en obra.</strong> Otras casas y obras de comunidad estar&aacute;n en marcha durante a&ntilde;os: ruido y tr&aacute;fico durante su propia ocupaci&oacute;n, y accesos compartidos durante su construcci&oacute;n.</li>
+<li><strong>La revisi&oacute;n de dise&ntilde;o est&aacute; activa y en evoluci&oacute;n.</strong> El comit&eacute; examina altura, volumetr&iacute;a, materiales, color, bardas y paisaje con la intenci&oacute;n de proteger una imagen coherente en una comunidad que a&uacute;n no termina. Presente en anteproyecto.</li>
+<li><strong>Reglas de acceso y obra.</strong> Trabajadores registrados, entrada controlada, horarios de entrega definidos, l&iacute;mites de almacenaje en el lote, limpieza de calle y fianza. Presupueste $80,000&ndash;$300,000 MXN entre presentaci&oacute;n, fianza y gesti&oacute;n de accesos.</li>
+<li><strong>El frente de golf</strong> en los lotes correspondientes trae la pregunta de cristaler&iacute;a y domos &mdash; las pelotas desviadas son un riesgo real y cotizable &mdash; adem&aacute;s de la interfaz de riego y drenaje con el campo.</li>
+</ul>"""),
+  ("Condiciones de sitio, permisos y programa",
+   """<p>Corasol pertenece al municipio de <strong>Solidaridad</strong>, as&iacute; que la ruta de permisos es la conocida: certificado de uso de suelo, alineamiento, licencia de construcci&oacute;n y Director Responsable de Obra, con la revisi&oacute;n arquitect&oacute;nica de la comunidad por delante en la pr&aacute;ctica. Los requisitos ambientales aplican al lote como en el resto de la costa, y el karst exige mec&aacute;nica de suelos con sondeos sobre la huella real: buena capacidad de carga somera y una cavidad dos metros al lado son ambas normales aqu&iacute;.</p>
+<ul>
+<li><strong>La especificaci&oacute;n marina sigue aplicando.</strong> Corasol est&aacute; lo bastante cerca del mar para que inoxidable 316, aluminio anodizado o con recubrimiento marino y recubrimiento generoso de concreto sean lo correcto, no una mejora opcional.</li>
+<li><strong>Dise&ntilde;e la azotea como terraza desde el inicio</strong> si la altura lo permite. En lotes con vista al campo o hacia el mar es el metro cuadrado m&aacute;s valioso de la casa, y adaptarla despu&eacute;s cuesta varias veces lo que incluirla.</li>
+<li><strong>Planee bien el cuarto de m&aacute;quinas:</strong> cisterna, hidroneum&aacute;tico, tratamiento de agua por la dureza local, equipo de alberca y posiciones de aire acondicionado, todo accesible para servicio.</li>
+</ul>
+<p>La obra toma unos <strong>8&ndash;12 meses</strong> para una villa de 250&ndash;300 m&sup2;, y m&aacute;s si la revisi&oacute;n de dise&ntilde;o pasa de un ciclo. Contrate a precio fijo con presupuesto desglosado y pagos por avance verificado &mdash; y si compra el lote ahora para construir despu&eacute;s, obtenga por escrito la situaci&oacute;n de servicios en el l&iacute;mite del predio antes de cerrar.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Corasol?",
+   "Alrededor de $3.30M&ndash;$4.12M MXN ($183k&ndash;$229k USD) llave en mano para 150 m&sup2; &mdash; unos $22,000&ndash;$27,500 MXN/m&sup2;, cerca de 30% arriba de Playa del Carmen base. La mayor&iacute;a de las casas aqu&iacute; son de 250&ndash;450 m&sup2;, donde alberca, jardiner&iacute;a, mobiliario y honorarios suman 35&ndash;50% adicional."),
+  ("¿Qué debo revisar antes de comprar un lote en Corasol?",
+   "Qu&eacute; infraestructura est&aacute; realmente en el l&iacute;mite del lote hoy &mdash; capacidad el&eacute;ctrica, agua, drenaje, superficie de calle &mdash; frente a lo que est&aacute; programado. En un plan maestro en desarrollo, esa diferencia es donde se mueven los presupuestos."),
+  ("¿El comité de diseño agrega costo y tiempo?",
+   "S&iacute; a ambos. Presupueste $80,000&ndash;$300,000 MXN entre presentaci&oacute;n, fianza de obra y gesti&oacute;n de accesos, y contemple al menos un ciclo de revisi&oacute;n en el programa, adem&aacute;s de trabajadores registrados, entrada controlada, horarios y limpieza de calle."),
+  ("¿Qué cambia con frente al campo de golf?",
+   "La especificaci&oacute;n de ventanas y domos, porque las pelotas desviadas son un riesgo real y cotizable, adem&aacute;s de la interfaz de riego y drenaje con el campo. Conviene resolverlo en proyecto y no reemplazando cristales despu&eacute;s."),
+  ("¿Cuánto tarda una villa en Corasol?",
+   "Unos 8&ndash;12 meses para 250&ndash;300 m&sup2; desde la licencia hasta la entrega, y m&aacute;s si la revisi&oacute;n de dise&ntilde;o pasa de un ciclo. Los horarios restringidos y el acceso controlado empujan el programa al extremo largo."),
+ ],
+}
+
+Z[("es","aldea-zama")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Aldea Zamá 2026",
+ "desc": "Costos en Aldea Zamá 2026 más la partida que nadie presupuesta: el calendario de permisos de Tulum. Altura, confiabilidad eléctrica y el plan maestro urbanizado.",
+ "lead": "Una casa de 150 m&sup2; en <strong>Aldea Zam&aacute;</strong> cuesta aproximadamente <strong>$3.08M&ndash;$3.75M MXN ($171k&ndash;$208k USD)</strong> llave en mano en 2026, cerca de 20% arriba de Playa del Carmen base. La cifra de obra es directa. La que casi nadie presupuesta en Tulum es el tiempo.",
+ "sections": [
+  ("Costo llave en mano por tamaño de casa",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Tama&ntilde;o</th><th>Llave en mano (MXN)</th><th>Llave en mano (USD)</th></tr></thead><tbody>
+<tr><td>100 m&sup2;</td><td>$2.05M&ndash;$2.50M</td><td>$114k&ndash;$139k</td></tr>
+<tr><td>150 m&sup2;</td><td>$3.08M&ndash;$3.75M</td><td>$171k&ndash;$208k</td></tr>
+<tr><td>200 m&sup2;</td><td>$4.10M&ndash;$5M</td><td>$228k&ndash;$278k</td></tr>
+<tr><td>300 m&sup2;</td><td>$6.15M&ndash;$7.50M</td><td>$342k&ndash;$417k</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Referencia: $20,500&ndash;$25,000 MXN/m&sup2; acabado est&aacute;ndar a premium. USD/MXN &asymp; 18. Sin terreno, alberca ni mobiliario.</p>
+<p>Aldea Zam&aacute; cotiza por encima de las Regiones de Tulum y de La Veleta por una raz&oacute;n simple: es un plan maestro urbanizado, con servicios instalados, accesos pavimentados y car&aacute;cter definido, a distancia caminable o de bicicleta de la carretera de playa. Se paga infraestructura que ya existe en vez de infraestructura que hay que construir.</p>"""),
+  ("Lo que realmente cuesta el calendario de permisos",
+   """<p>La revisi&oacute;n de Tulum es la m&aacute;s exigente del corredor en materia ambiental, y en un lote con vegetaci&oacute;n el expediente es la ruta cr&iacute;tica. Duraciones realistas desde la compra hasta iniciar obra:</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Etapa</th><th>Duración</th></tr></thead><tbody>
+<tr><td>Certificado de uso de suelo y alineamiento</td><td>2&ndash;8 semanas</td></tr>
+<tr><td>Mec&aacute;nica de suelos (en paralelo)</td><td>2&ndash;5 semanas</td></tr>
+<tr><td>Expediente ambiental</td><td>3&ndash;8 meses seg&uacute;n vegetaci&oacute;n</td></tr>
+<tr><td>Proyecto t&eacute;cnico (en paralelo)</td><td>6&ndash;14 semanas</td></tr>
+<tr><td>Revisi&oacute;n de licencia con expediente completo</td><td>4&ndash;12 semanas</td></tr>
+<tr><td><strong>Total antes de iniciar obra</strong></td><td><strong>5&ndash;12 meses</strong></td></tr>
+</tbody></table></div>
+<p>Esos meses son una partida real: terreno cargado y capital comprometido sin producir. Dos formas de acortarlos. Primero, arranque el expediente ambiental y la mec&aacute;nica de suelos con la arquitectura todav&iacute;a en anteproyecto &mdash; ninguno requiere planos finales y ambos condicionan el dise&ntilde;o. Segundo, al comparar lotes, valore mucho una autorizaci&oacute;n ambiental vigente: puede valer seis meses y una cifra de seis d&iacute;gitos.</p>"""),
+  ("Altura, energía y qué se construye aquí",
+   """<ul>
+<li><strong>Los l&iacute;mites de altura son restringidos</strong> y se aplican. Las reglas de Tulum son deliberadamente m&aacute;s estrictas que las de Playa del Carmen, as&iacute; que verifique el l&iacute;mite exacto de su lote antes de dise&ntilde;ar una azotea &mdash; en muchos predios el roof garden es la diferencia entre un buen proyecto y uno comprometido, y depende de ese solo n&uacute;mero.</li>
+<li><strong>La confiabilidad el&eacute;ctrica es menor que en Playa del Carmen.</strong> Presupueste protecci&oacute;n contra sobretensiones para toda la casa como est&aacute;ndar y, en propiedad de renta, un sistema de bater&iacute;as para lo esencial &mdash; internet, controlador de alberca, algo de iluminaci&oacute;n y un ventilador &mdash; por $140,000&ndash;$330,000 MXN. El solar tiene mucho sentido aqu&iacute;, sobre todo cuando bomba de alberca y varios equipos de aire llevan el consumo a la tarifa DAC.</li>
+<li><strong>El mercado est&aacute; dominado por condominios,</strong> que es justamente el argumento para construir casa. Una casa independiente no puede perder su permiso de renta corta por acuerdo de asamblea, no paga cuota de mantenimiento sobre el ingreso bruto y puede dise&ntilde;arse para rendimiento: rec&aacute;maras con ba&ntilde;o propio, casita lock-off, roof garden y alberca colocada para la fotograf&iacute;a.</li>
+</ul>
+<p>T&eacute;cnicamente aplican los temas habituales de Tulum: tratamiento antes de infiltrar dimensionado a la ocupaci&oacute;n ($90,000&ndash;$250,000 MXN), tratamiento de agua por la dureza local, detalles contra termita y humedad, y mec&aacute;nica de suelos porque el karst aqu&iacute; est&aacute; lleno de cenotes. La obra toma unos <strong>7&ndash;11 meses</strong> para 150&ndash;200 m&sup2;.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Aldea Zamá?",
+   "Alrededor de $3.08M&ndash;$3.75M MXN ($171k&ndash;$208k USD) llave en mano para 150 m&sup2; con acabado est&aacute;ndar a premium &mdash; unos $20,500&ndash;$25,000 MXN/m&sup2;, cerca de 20% arriba de Playa del Carmen base."),
+  ("¿Por qué cuesta más que las Regiones de Tulum?",
+   "Porque la infraestructura ya existe: es un plan maestro urbanizado con servicios instalados, accesos pavimentados y car&aacute;cter definido cerca de la carretera de playa. En un lote de Regi&oacute;n m&aacute;s barato se paga despu&eacute;s construir los servicios, el acceso y el entorno."),
+  ("¿Cuánto tardo en poder iniciar obra en Tulum?",
+   "De cinco a doce meses desde la compra: 2&ndash;8 semanas de uso de suelo y alineamiento, 3&ndash;8 meses de expediente ambiental en lote con vegetaci&oacute;n, y 4&ndash;12 semanas de revisi&oacute;n de licencia. Arranque el expediente y la mec&aacute;nica de suelos con la arquitectura a&uacute;n en anteproyecto."),
+  ("¿Puedo construir roof garden en Aldea Zamá?",
+   "Depende del l&iacute;mite de altura de su lote, y en Tulum esos l&iacute;mites son deliberadamente restringidos y se aplican. Verif&iacute;quelo antes de dise&ntilde;ar: en muchos predios la azotea utilizable es la diferencia entre un proyecto fuerte y uno comprometido."),
+  ("¿Qué hago con los cortes de energía en Tulum?",
+   "Protecci&oacute;n contra sobretensiones para toda la casa como est&aacute;ndar y, en propiedad de renta, bater&iacute;as para lo esencial &mdash; internet, controlador de alberca, iluminaci&oacute;n y ventilador &mdash; por $140,000&ndash;$330,000 MXN. El solar tambi&eacute;n se paga r&aacute;pido, sobre todo si el consumo ya lleg&oacute; a tarifa DAC."),
+ ],
+}
+
+Z[("es","playa-del-carmen")] = {
+ "title": "Cuánto Cuesta Construir una Casa en Playa del Carmen 2026",
+ "desc": "El precio de referencia del corredor. Presupuesto por etapas de una casa de 150 m², qué incluye y qué no el precio por m², extras y cómo no perder el control.",
+ "lead": "Una casa familiar bien construida de 150 m&sup2; en <strong>Playa del Carmen</strong> cuesta aproximadamente <strong>$2.6M&ndash;$3.2M MXN ($145,000&ndash;$178,000 USD)</strong> llave en mano en 2026. Esta es la cifra contra la que se compara todo el corredor, as&iacute; que conviene entenderla por etapas y no como un solo n&uacute;mero.",
+ "sections": [
+  ("Presupuesto por etapas (casa estándar de 150 m²)",
+   """<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Etapa</th><th>% del presupuesto</th><th>Costo aprox. (MXN)</th><th>Incluye</th></tr></thead><tbody>
+<tr><td>Permisos, DRO y estudios</td><td>5%</td><td>$130,000&ndash;$160,000</td><td>Licencia, DRO, mec&aacute;nica de suelos, topograf&iacute;a</td></tr>
+<tr><td>Cimentaci&oacute;n y estructura</td><td>30%</td><td>$780,000&ndash;$960,000</td><td>Losa, columnas, trabes, entrepisos</td></tr>
+<tr><td>Muros y cubierta</td><td>18%</td><td>$470,000&ndash;$580,000</td><td>Block, castillos, losa de azotea</td></tr>
+<tr><td>Instalaciones</td><td>15%</td><td>$390,000&ndash;$480,000</td><td>El&eacute;ctrica, hidr&aacute;ulica, sanitaria</td></tr>
+<tr><td>Acabados</td><td>25%</td><td>$650,000&ndash;$800,000</td><td>Pisos, pintura, chukum, carpinter&iacute;a</td></tr>
+<tr><td>Limpieza y entrega</td><td>7%</td><td>$180,000&ndash;$220,000</td><td>Detalles finales, entrega</td></tr>
+</tbody></table></div>
+<p class="text-muted small">Total llave en mano &asymp; $2.6M&ndash;$3.2M MXN. Sin terreno, alberca ni mobiliario.</p>
+<p>Dos lecturas de esa tabla. La estructura es casi un tercio del presupuesto y es la &uacute;nica etapa donde ahorrar es genuinamente peligroso en una zona de vientos altos. Y los acabados, con 25%, son donde vive realmente su especificaci&oacute;n: la misma obra negra con distintos acabados mueve el total un 20% sin cambiar un solo plano.</p>"""),
+  ("Qué incluye y qué no el precio por m²",
+   """<p>El rango de $17,000&ndash;$21,000 MXN/m&sup2; que produce esos totales cubre estructura, instalaciones y acabados est&aacute;ndar. Lo siguiente queda fuera y explica la mayor&iacute;a de las sorpresas de presupuesto:</p>
+<div class="table-responsive"><table class="table table-bordered"><thead class="table-dark"><tr><th>Concepto</th><th>MXN</th></tr></thead><tbody>
+<tr><td>Terreno</td><td>Aparte, y la mayor variable en Playa del Carmen</td></tr>
+<tr><td>Alberca de 4&times;8 m con equipo</td><td>$450,000&ndash;$1,200,000</td></tr>
+<tr><td>Habilitaci&oacute;n de roof garden (estructura ya prevista)</td><td>$3,500&ndash;$9,000 por m&sup2;</td></tr>
+<tr><td>Tren de tratamiento de agua (filtro, suavizador, carb&oacute;n, &oacute;smosis)</td><td>$35,000&ndash;$95,000</td></tr>
+<tr><td>Aire acondicionado, 4&ndash;5 zonas inverter</td><td>$120,000&ndash;$280,000</td></tr>
+<tr><td>Solar, 5&ndash;8 kWp</td><td>$115,000&ndash;$250,000</td></tr>
+<tr><td>Jardiner&iacute;a y riego</td><td>$500&ndash;$2,000 por m&sup2;</td></tr>
+<tr><td>Mobiliario y electrodom&eacute;sticos</td><td>$450,000&ndash;$1,200,000 en casa familiar</td></tr>
+</tbody></table></div>
+<p>Dise&ntilde;o, ingenier&iacute;a, estudios y permisos suman normalmente 8&ndash;14% del costo de obra en una casa a la medida &mdash; en parte ya reflejado en la tabla anterior, y no es partida para comprimir: cada error que evita cuesta m&aacute;s que el paquete completo.</p>"""),
+  ("Por qué es la referencia del corredor y cómo sostener el presupuesto",
+   """<p>Playa del Carmen cotiza por debajo de las zonas cerradas y premium por razones estructurales, no de calidad: base amplia de proveedores, competencia real entre constructoras, lotes urbanos con servicios, una ruta de permisos directa en el municipio de <strong>Solidaridad</strong> y ausencia de zona federal mar&iacute;timo terrestre en la gran mayor&iacute;a de los predios. Todo lo dem&aacute;s del corredor es un m&uacute;ltiplo de esta cifra: Puerto Morelos al mismo nivel, Puerto Aventuras cerca de 8% arriba, Akumal 12%, Aldea Zam&aacute; 20%, Playacar 25%, Corasol 30% y Mayakoba 42%.</p>
+<p>Cuatro h&aacute;bitos que mantienen el presupuesto donde empez&oacute;:</p>
+<ul>
+<li><strong>Precio fijo con presupuesto desglosado,</strong> no un precio por m&sup2; de apret&oacute;n de manos. Una tarifa &uacute;nica multiplicada por metros no es un presupuesto: es una invitaci&oacute;n a renegociar.</li>
+<li><strong>Pagos contra avance f&iacute;sico verificado,</strong> no contra fechas, con 5&ndash;10% de retenci&oacute;n liberada al cerrar la lista de detalles.</li>
+<li><strong>&Oacute;rdenes de cambio por escrito y cotizadas antes de ejecutarlas.</strong> Los cambios verbales son la ruta m&aacute;s com&uacute;n de un precio firme a uno abierto.</li>
+<li><strong>Lista expl&iacute;cita de exclusiones</strong> &mdash; mobiliario, electrodom&eacute;sticos, jardiner&iacute;a m&aacute;s all&aacute; de cierto l&iacute;mite, derechos de conexi&oacute;n &mdash; acordada en la firma, para que las sorpresas ocurran en papel y no en obra.</li>
+</ul>
+<p>Una casa de 150 m&sup2; toma unos <strong>7&ndash;10 meses</strong> desde la licencia hasta la entrega, m&aacute;s dos a cuatro meses de tr&aacute;mites previos. Use la <a href="/calculadora/">calculadora de costos</a> para una estimaci&oacute;n r&aacute;pida con su tama&ntilde;o y nivel de acabado.</p>"""),
+ ],
+ "faq": [
+  ("¿Cuánto cuesta construir una casa en Playa del Carmen en 2026?",
+   "Alrededor de $2.6M&ndash;$3.2M MXN ($145,000&ndash;$178,000 USD) llave en mano para una casa de 150 m&sup2; con acabado est&aacute;ndar &mdash; unos $17,000&ndash;$21,000 MXN/m&sup2;, sin terreno, alberca ni mobiliario."),
+  ("¿Qué no incluye el precio por metro cuadrado?",
+   "Terreno, alberca ($450,000&ndash;$1,200,000), habilitaci&oacute;n de roof garden, tratamiento de agua, aire acondicionado, solar, jardiner&iacute;a y mobiliario. De ah&iacute; vienen casi todas las sorpresas de presupuesto, as&iacute; que convi&eacute;rtalas en partidas propias desde el inicio."),
+  ("¿Qué etapa cuesta más?",
+   "Cimentaci&oacute;n y estructura, con cerca de 30% del presupuesto, seguidas de acabados con 25%. La estructura es tambi&eacute;n donde ahorrar resulta peligroso en zona de vientos altos, mientras que los acabados pueden mover el total un 20% sin cambiar un plano."),
+  ("¿Cómo se compara con las demás zonas?",
+   "Es la referencia. Puerto Morelos est&aacute; al mismo nivel, Puerto Aventuras cerca de 8% arriba, Akumal 12%, Aldea Zam&aacute; 20%, Playacar 25%, Corasol 30% y Mayakoba 42% &mdash; y esas diferencias vienen de accesos restringidos, comit&eacute;s de dise&ntilde;o, especificaci&oacute;n marina y requisitos ambientales, no de calidad de obra."),
+  ("¿Cómo evito que el presupuesto se desborde?",
+   "Precio fijo con presupuesto desglosado en lugar de una tarifa por m&sup2;, pagos contra avance f&iacute;sico verificado con 5&ndash;10% de retenci&oacute;n, &oacute;rdenes de cambio por escrito y cotizadas antes de ejecutarse, y una lista expl&iacute;cita de exclusiones acordada en la firma."),
+ ],
+}
+
 if __name__ == "__main__":
     keys = ([tuple(a.split(":", 1)) for a in sys.argv[1:]] or sorted(Z))
     for lang, zone in keys:
