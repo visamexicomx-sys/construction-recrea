@@ -312,3 +312,12 @@ blog-de   97 articles  news=6 costs=25 permits=13 foreigners=4 build=30 home=19
 blog-ru  112 articles  news=7 costs=25 permits=15 foreigners=5 build=33 home=27
 blog-fr   98 articles  news=6 costs=24 permits=14 foreigners=5 build=29 home=20
 blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
+[main 54c87e3f] daily blog: new SEO articles 2026-09-29
+ 9 files changed, 1571 insertions(+), 12 deletions(-)
+ create mode 100644 blog/building-a-house-akumal-guide.html
+ create mode 100644 blog/building-a-house-cozumel-ferry-logistics.html
+ create mode 100644 blog/cozumel-construction-costs-island.html
+ create mode 100644 blog/gated-community-building-puerto-aventuras.html
+ create mode 100644 blog/marina-home-construction-puerto-aventuras.html
+To https://github.com/visamexicomx-sys/construction-recrea.git
+   ae2b0202..54c87e3f  main -> main
