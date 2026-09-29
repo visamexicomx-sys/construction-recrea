@@ -293,3 +293,22 @@ blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
  2 files changed, 16 insertions(+), 2 deletions(-)
 To https://github.com/visamexicomx-sys/construction-recrea.git
    75c82713..f26b5e08  main -> main
+From https://github.com/visamexicomx-sys/construction-recrea
+ * branch              main       -> FETCH_HEAD
+Already up to date.
+Generating 5 FULL blog articles for 2026-09-29...
+  + blog/building-a-house-akumal-guide.html (298 lines)
+  + blog/marina-home-construction-puerto-aventuras.html (298 lines)
+  + blog/gated-community-building-puerto-aventuras.html (298 lines)
+  + blog/building-a-house-cozumel-ferry-logistics.html (298 lines)
+  + blog/cozumel-construction-costs-island.html (298 lines)
+  Sitemap: 1623 URLs
+  IndexNow: 200
+
+Done! 5 articles. 49 topics remaining. Total: 74
+blog     168 articles  news=6 costs=28 permits=21 foreigners=7 build=73 home=33
+blog-es  114 articles  news=7 costs=24 permits=15 foreigners=5 build=32 home=31
+blog-de   97 articles  news=6 costs=25 permits=13 foreigners=4 build=30 home=19
+blog-ru  112 articles  news=7 costs=25 permits=15 foreigners=5 build=33 home=27
+blog-fr   98 articles  news=6 costs=24 permits=14 foreigners=5 build=29 home=20
+blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
