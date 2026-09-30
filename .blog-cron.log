@@ -340,3 +340,12 @@ blog-de   97 articles  news=6 costs=25 permits=13 foreigners=4 build=30 home=19
 blog-ru  112 articles  news=7 costs=25 permits=15 foreigners=5 build=33 home=27
 blog-fr   98 articles  news=6 costs=24 permits=14 foreigners=5 build=29 home=20
 blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
+[main a533a53e] daily blog: new SEO articles 2026-09-30
+ 9 files changed, 1536 insertions(+), 38 deletions(-)
+ create mode 100644 blog/building-near-bacalar-lagoon-rules.html
+ create mode 100644 blog/building-on-isla-mujeres-water-and-ferry.html
+ create mode 100644 blog/eco-cabana-construction-bacalar.html
+ create mode 100644 blog/hotel-renovation-cozumel.html
+ create mode 100644 blog/isla-mujeres-construction-permits.html
+To https://github.com/visamexicomx-sys/construction-recrea.git
+   4f9a47b9..a533a53e  main -> main
