@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 gsc/*.csv
 gsc/*.zip
+.blog-cron.log

@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /*.py$
+Disallow: /*.sh$
+Disallow: /*.log$
 
 Sitemap: https://construction-recrea.com/sitemap.xml
 
