@@ -349,3 +349,26 @@ blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
  create mode 100644 blog/isla-mujeres-construction-permits.html
 To https://github.com/visamexicomx-sys/construction-recrea.git
    4f9a47b9..a533a53e  main -> main
+From https://github.com/visamexicomx-sys/construction-recrea
+ * branch              main       -> FETCH_HEAD
+   b0e5ebf7..8deac32c  main       -> origin/main
+Updating b0e5ebf7..8deac32c
+Fast-forward
+ noticias/index.html | 92 ++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 70 insertions(+), 22 deletions(-)
+Generating 5 FULL blog articles for 2026-10-02...
+  + blog/fastest-town-to-permit-riviera-maya.html (262 lines)
+  + blog/municipal-differences-quintana-roo-construction.html (262 lines)
+  + blog/off-grid-building-riviera-maya-guide.html (298 lines)
+  + blog/ferry-logistics-island-construction.html (298 lines)
+  + blog/zofemat-concession-explained.html (262 lines)
+  Sitemap: 1847 URLs
+  IndexNow: 200
+
+Done! 5 articles. 34 topics remaining. Total: 89
+blog     183 articles  news=6 costs=29 permits=23 foreigners=7 build=84 home=34
+blog-es  114 articles  news=7 costs=24 permits=15 foreigners=5 build=32 home=31
+blog-de   97 articles  news=6 costs=25 permits=13 foreigners=4 build=30 home=19
+blog-ru  112 articles  news=7 costs=25 permits=15 foreigners=5 build=33 home=27
+blog-fr   98 articles  news=6 costs=24 permits=14 foreigners=5 build=29 home=20
+blog-zh   98 articles  news=6 costs=23 permits=14 foreigners=5 build=30 home=20
