@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Insert the GA4 tag into every HTML page that lacks it. Safe to run repeatedly.
 Runs after the daily blog and news generators so new pages are tagged too."""
-import os, sys
-GA_ID = "G-XXXXXXXXXX"  # set to the real GA4 measurement ID
+import os, re, sys
+GA_ID = "G-SFZNF5WW0Z"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 if len(sys.argv) > 1:
     GA_ID = sys.argv[1]
@@ -19,7 +19,9 @@ for d, dirs, files in os.walk(ROOT):
         if not f.endswith('.html'): continue
         p = os.path.join(d, f)
         s = open(p, encoding='utf-8', errors='surrogateescape').read()
-        if 'googletagmanager.com/gtag/js' in s or '</head>' not in s: continue
-        s = s.replace('</head>', TAG + '</head>', 1)
+        if 'googletagmanager.com/gtag/js' in s: continue
+        m = re.search(r'<head[^>]*>', s, re.I)
+        if not m: continue
+        s = s[:m.end()] + '\n' + TAG.rstrip('\n') + s[m.end():]
         open(p, 'w', encoding='utf-8', errors='surrogateescape').write(s); n += 1
 print("analytics: tagged", n, "pages")
