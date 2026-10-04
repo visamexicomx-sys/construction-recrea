@@ -7,6 +7,7 @@ git pull --rebase origin main || { echo "pull failed, aborting"; exit 1; }
 
 /usr/bin/python3 generate-blogs.py
 /usr/bin/python3 rebuild-blog-index.py
+/usr/bin/python3 add-analytics.py
 
 git add -A
 git diff --staged --quiet && { echo "nothing new"; exit 0; }
