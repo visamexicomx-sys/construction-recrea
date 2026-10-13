@@ -61,14 +61,7 @@
         <option value="luxury">Люкс — авторский дизайн, умный дом</option>
       </select>
       <label class="form-label fw-bold mt-3" for="cloc">Локация</label>
-      <select class="form-select" id="cloc">
-        <option value="pdc" selected>Playa del Carmen</option>
-        <option value="tulum">Tulum</option>
-        <option value="pa">Puerto Aventuras</option>
-        <option value="cancun">Cancún</option>
-        <option value="akumal">Akumal / Puerto Morelos</option>
-        <option value="bacalar">Bacalar</option>
-      </select>
+      <select class="form-select" id="cloc"><option value="costa-mujeres">Коста-Мухерес</option><option value="isla-mujeres">Исла-Мухерес</option><option value="holbox">Хольбош</option><option value="cancun">Канкун</option><option value="puerto-morelos">Пуэрто-Морелос</option><option value="pdc" selected>Плайя-дель-Кармен</option><option value="cozumel">Косумель</option><option value="pa">Пуэрто-Авентурас</option><option value="xpu-ha">Шпу-Ха</option><option value="akumal">Акумаль</option><option value="chan-chemuyil">Чан-Чемуйиль</option><option value="tulum">Тулум</option><option value="felipe-carrillo-puerto">Фелипе-Каррильо-Пуэрто</option><option value="bacalar">Бакалар</option><option value="mahahual">Махауаль</option><option value="chetumal">Четумаль</option></select>
       <label class="form-label fw-bold mt-3" for="cpool">Pool</label>
       <select class="form-select" id="cpool">
         <option value="none" selected>Без бассейна</option>
@@ -114,7 +107,7 @@
 (function(){
   var FX = 18.0; // MXN per USD
   var levels = {budget:[12000,14000], mid:[15000,19000], premium:[20000,25000], luxury:[25000,35000]};
-  var loc = {pdc:1.0, tulum:1.15, pa:1.10, cancun:0.95, akumal:1.10, bacalar:0.85};
+  var loc = {'pdc':1.0, 'tulum':1.15, 'pa':1.1, 'cancun':0.95, 'akumal':1.1, 'bacalar':0.85, 'puerto-morelos':1.05, 'costa-mujeres':1.15, 'xpu-ha':1.2, 'chan-chemuyil':1.1, 'felipe-carrillo-puerto':0.85, 'chetumal':0.88, 'mahahual':1.08, 'cozumel':1.17, 'isla-mujeres':1.2, 'holbox':1.25}; var ZQ={'playa-del-carmen':'pdc','puerto-aventuras':'pa'}; (function(){var q=new URLSearchParams(location.search).get('zona')||new URLSearchParams(location.search).get('zone');if(q){q=ZQ[q]||q;if(loc[q])document.getElementById('cloc').value=q;}})();
   var pools = {none:[0,0], small:[10000,13000], large:[15000,22000]}; // USD
   function fmt(n){return '$'+Math.round(n).toLocaleString('en-US');}
   function calc(){
@@ -147,6 +140,7 @@
   calc();
 })();
 </script>
+<section class="py-3" data-nb="rel"><div class="container"><p class="small text-muted mb-0"><strong>По теме:</strong> <a href="/kalkulyator-stoimosti-stroitelstva-otelya/">Калькулятор стоимости отеля</a> · <a href="/kalkulyator-stoimosti-kommercheskogo-zdaniya/">Калькулятор коммерческого здания</a> · <a href="/kalkulyator-stoimosti-azs/">Калькулятор стоимости АЗС</a> · <a href="/kalkulyator-stoimosti-stroitelstva-kliniki/">Калькулятор стоимости клиники</a> · <a href="/kalkulyator-stoimosti-remonta/">Калькулятор стоимости ремонта</a> · <a href="/kalkulyator-stoimosti-stroitelstva-sklada/">Склады</a></p></div></section>
 <nav class="py-3" data-orbit="1"><div class="container"><p class="small text-muted mb-0"><strong>Смотрите также:</strong> <a href="/kommercheskoe-stroitelstvo-akumal/">Коммерческое строительство в Акумале</a> · <a href="/kommercheskoe-stroitelstvo-bacalar/">Коммерческое строительство в Бакаларе</a> · <a href="/stroitelstvo-vill-i-otelei-isla-mujeres/">Строительство вилл и отелей на Исла-Мухерес</a> · <a href="/roskoshnye-villy-xpu-ha/">Виллы премиум-класса в Шпу-Ха</a> · <a href="/services/metalloizdeliya.html">Металлоконструкции, алюминий и стекло в Ривьере Майя</a> · <a href="/blog-ru/uraganostoykoe-stroitelstvo.html">Ураганостойкое строительство в Ривьере-Майя: как строить безопасно</a> · <a href="/blog-ru/stoimost-stroitelstva-doma-tulum.html">Сколько стоит построить дом в Тулуме в 2026 году?</a> · <a href="/blog-ru/skolko-stoit-postroit-dom-tulum.html">Сколько Стоит Построить Дом в Тулуме? (2026)</a> · <a href="/blog-ru/skolko-stoit-postroit-dom-playacar.html">Сколько Стоит Построить Дом в Плаякаре? (2026)</a> · <a href="/roskoshnye-villy-el-cielo-playa-del-carmen/">Виллы премиум-класса в Эль-Сьело, Плайя-дель-Кармен</a></p></div></nav>
 <section data-review="gbp" class="py-4" style="background:#f6f7f9;border-top:1px solid #e6e8eb"><div class="container text-center"><h2 class="h5 mb-2">Работали с нами? Оставьте отзыв в Google</h2><p class="mb-3 text-muted small">Ваш отзыв помогает другим владельцам решиться, а нам — становиться лучше.</p><a href="https://www.google.com/search?q=Recrea+Construction+%26+Arquitectura&amp;ludocid=15171494471908439484#lrd=0x0:0xd28bf9d715e7b5bc,3,,," target="_blank" rel="noopener" class="btn btn-cta me-2 mb-2"><i class="bi bi-star-fill me-2"></i>Написать отзыв</a><a href="https://www.google.com/maps?cid=15171494471908439484" target="_blank" rel="noopener" class="btn btn-outline-secondary mb-2"><i class="bi bi-google me-2"></i>Читать отзывы в Google</a></div></section>
 <footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-4"><h5>Recrea Construction</h5><p>Строительная компания в Плая-дель-Кармен. Дома, виллы, коммерция и ремонт на Ривьере Майя с 2008 года.</p>

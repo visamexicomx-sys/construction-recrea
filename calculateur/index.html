@@ -61,14 +61,7 @@
         <option value="luxury">Luxe — architecte, domotique</option>
       </select>
       <label class="form-label fw-bold mt-3" for="cloc">Emplacement</label>
-      <select class="form-select" id="cloc">
-        <option value="pdc" selected>Playa del Carmen</option>
-        <option value="tulum">Tulum</option>
-        <option value="pa">Puerto Aventuras</option>
-        <option value="cancun">Cancún</option>
-        <option value="akumal">Akumal / Puerto Morelos</option>
-        <option value="bacalar">Bacalar</option>
-      </select>
+      <select class="form-select" id="cloc"><option value="costa-mujeres">Costa Mujeres</option><option value="isla-mujeres">Isla Mujeres</option><option value="holbox">Holbox</option><option value="cancun">Cancún</option><option value="puerto-morelos">Puerto Morelos</option><option value="pdc" selected>Playa del Carmen</option><option value="cozumel">Cozumel</option><option value="pa">Puerto Aventuras</option><option value="xpu-ha">Xpu-Há</option><option value="akumal">Akumal</option><option value="chan-chemuyil">Chan Chemuyil</option><option value="tulum">Tulum</option><option value="felipe-carrillo-puerto">Felipe Carrillo Puerto</option><option value="bacalar">Bacalar</option><option value="mahahual">Mahahual</option><option value="chetumal">Chetumal</option></select>
       <label class="form-label fw-bold mt-3" for="cpool">Piscine</label>
       <select class="form-select" id="cpool">
         <option value="none" selected>Sans piscine</option>
@@ -122,7 +115,7 @@
 (function(){
   var FX = 18.0; // MXN per USD
   var levels = {budget:[12000,14000], mid:[15000,19000], premium:[20000,25000], luxury:[25000,35000]};
-  var loc = {pdc:1.0, tulum:1.15, pa:1.10, cancun:0.95, akumal:1.10, bacalar:0.85};
+  var loc = {'pdc':1.0, 'tulum':1.15, 'pa':1.1, 'cancun':0.95, 'akumal':1.1, 'bacalar':0.85, 'puerto-morelos':1.05, 'costa-mujeres':1.15, 'xpu-ha':1.2, 'chan-chemuyil':1.1, 'felipe-carrillo-puerto':0.85, 'chetumal':0.88, 'mahahual':1.08, 'cozumel':1.17, 'isla-mujeres':1.2, 'holbox':1.25}; var ZQ={'playa-del-carmen':'pdc','puerto-aventuras':'pa'}; (function(){var q=new URLSearchParams(location.search).get('zona')||new URLSearchParams(location.search).get('zone');if(q){q=ZQ[q]||q;if(loc[q])document.getElementById('cloc').value=q;}})();
   var pools = {none:[0,0], small:[10000,13000], large:[15000,22000]}; // USD
   function fmt(n){return '$'+Math.round(n).toLocaleString('en-US');}
   function calc(){
@@ -155,6 +148,7 @@
   calc();
 })();
 </script>
+<section class="py-3" data-nb="rel"><div class="container"><p class="small text-muted mb-0"><strong>Voir aussi :</strong> <a href="/calculateur-cout-construction-hotel/">Calculateur de coût d'hôtel</a> · <a href="/calculateur-cout-batiment-commercial/">Calculateur de coût commercial</a> · <a href="/calculateur-cout-station-service/">Calculateur de coût de station-service</a> · <a href="/calculateur-cout-construction-clinique/">Calculateur de coût de clinique</a> · <a href="/calculateur-cout-renovation/">Calculateur de coût de rénovation</a> · <a href="/calculateur-cout-construction-entrepot/">Entrepôts</a></p></div></section>
 <nav class="py-3" data-orbit="1"><div class="container"><p class="small text-muted mb-0"><strong>À explorer aussi :</strong> <a href="/charpente-metallique-riviera-maya/">Fabrication et montage de charpentes métalliques en Riviera Maya</a> · <a href="/constructeur-cancun/">Entreprise de Construction à Cancún</a> · <a href="/construction-entrepots-industriels-felipe-carrillo-puerto/">Construction d’entrepôts industriels à Felipe Carrillo Puerto</a> · <a href="/potabilisation-dessalement-riviera-maya/">Unités de potabilisation, d&#x27;osmose inverse et de dessalement</a> · <a href="/construction-de-maisons-bacalar/">Construction de maisons à Bacalar</a> · <a href="/construction-villas-hotels-puerto-aventuras/">Construction de Villas et d’Hôtels à Puerto Aventuras</a> · <a href="/blog-fr/domotique-maison-connectee-riviera-maya.html">Domotique et maison connectée dans la Riviera Maya</a> · <a href="/blog-fr/ameublement-ffe-locations-riviera-maya.html">Ameublement et FF&amp;E pour biens locatifs dans la Riviera Maya</a> · <a href="/construction-villas-hotels-chetumal/">Construction de villas et hôtels à Chetumal</a></p></div></nav>
 <section data-review="gbp" class="py-4" style="background:#f6f7f9;border-top:1px solid #e6e8eb"><div class="container text-center"><h2 class="h5 mb-2">Nous avons travaillé ensemble ? Laissez un avis Google</h2><p class="mb-3 text-muted small">Votre avis aide d'autres propriétaires à décider, et nous aide à progresser.</p><a href="https://www.google.com/search?q=Recrea+Construction+%26+Arquitectura&amp;ludocid=15171494471908439484#lrd=0x0:0xd28bf9d715e7b5bc,3,,," target="_blank" rel="noopener" class="btn btn-cta me-2 mb-2"><i class="bi bi-star-fill me-2"></i>Rédiger un avis</a><a href="https://www.google.com/maps?cid=15171494471908439484" target="_blank" rel="noopener" class="btn btn-outline-secondary mb-2"><i class="bi bi-google me-2"></i>Voir les avis Google</a></div></section>
 <footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-4"><h5>Recrea Construction</h5><p>Entreprise de construction à Playa del Carmen. Maisons, villas, commercial et rénovation dans la Riviera Maya depuis 2008.</p>

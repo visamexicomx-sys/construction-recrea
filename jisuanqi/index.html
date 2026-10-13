@@ -61,14 +61,7 @@
         <option value="luxury">豪华 — 建筑师设计、智能家居</option>
       </select>
       <label class="form-label fw-bold mt-3" for="cloc">位置</label>
-      <select class="form-select" id="cloc">
-        <option value="pdc" selected>Playa del Carmen</option>
-        <option value="tulum">Tulum</option>
-        <option value="pa">Puerto Aventuras</option>
-        <option value="cancun">Cancún</option>
-        <option value="akumal">Akumal / Puerto Morelos</option>
-        <option value="bacalar">Bacalar</option>
-      </select>
+      <select class="form-select" id="cloc"><option value="costa-mujeres">穆赫雷斯海岸</option><option value="isla-mujeres">穆赫雷斯岛</option><option value="holbox">奥尔沃克斯岛</option><option value="cancun">坎昆</option><option value="puerto-morelos">莫雷洛斯港</option><option value="pdc" selected>卡门海滩</option><option value="cozumel">科苏梅尔</option><option value="pa">冒险港</option><option value="xpu-ha">Xpu-Há</option><option value="akumal">阿库马尔</option><option value="chan-chemuyil">Chan Chemuyil</option><option value="tulum">图卢姆</option><option value="felipe-carrillo-puerto">费利佩·卡里略·普埃尔托</option><option value="bacalar">巴卡拉尔</option><option value="mahahual">马哈瓦尔</option><option value="chetumal">切图马尔</option></select>
       <label class="form-label fw-bold mt-3" for="cpool">Pool</label>
       <select class="form-select" id="cpool">
         <option value="none" selected>无泳池</option>
@@ -125,7 +118,7 @@
 (function(){
   var FX = 18.0; // MXN per USD
   var levels = {budget:[12000,14000], mid:[15000,19000], premium:[20000,25000], luxury:[25000,35000]};
-  var loc = {pdc:1.0, tulum:1.15, pa:1.10, cancun:0.95, akumal:1.10, bacalar:0.85};
+  var loc = {'pdc':1.0, 'tulum':1.15, 'pa':1.1, 'cancun':0.95, 'akumal':1.1, 'bacalar':0.85, 'puerto-morelos':1.05, 'costa-mujeres':1.15, 'xpu-ha':1.2, 'chan-chemuyil':1.1, 'felipe-carrillo-puerto':0.85, 'chetumal':0.88, 'mahahual':1.08, 'cozumel':1.17, 'isla-mujeres':1.2, 'holbox':1.25}; var ZQ={'playa-del-carmen':'pdc','puerto-aventuras':'pa'}; (function(){var q=new URLSearchParams(location.search).get('zona')||new URLSearchParams(location.search).get('zone');if(q){q=ZQ[q]||q;if(loc[q])document.getElementById('cloc').value=q;}})();
   var pools = {none:[0,0], small:[10000,13000], large:[15000,22000]}; // USD
   function fmt(n){return '$'+Math.round(n).toLocaleString('en-US');}
   function calc(){
@@ -158,7 +151,8 @@
   calc();
 })();
 </script>
-<nav class="py-3" data-orbit="1"><div class="container"><p class="small text-muted mb-0"><strong>延伸阅读：</strong> <a href="/jiudian-gaizao-riviera-maya/">里维埃拉玛雅酒店及度假村翻新，无需停业</a> · <a href="/lengku-jianzao-riviera-maya/">里维埃拉玛雅冷藏仓库与冷库建造</a> · <a href="/cangku-changfang-jianzao-puerto-aventuras/">冒险港仓库与工业厂房建造</a> · <a href="/bieshu-jiudian-jianzao-aldea-zama/">Aldea Zamá别墅与酒店建造</a> · <a href="/zhuzhai-jianzao-residencial-cumbres/">昆布雷斯住宅区，坎昆住宅建造</a> · <a href="/blog-zh/riviera-maya-fangchan-zengzhi-2026.html">2026年里维埃拉玛雅房地产增值</a> · <a href="/blog-zh/jinkou-jiaju-cailiao-moxige.html">为您的里维埃拉玛雅建房进口家具与材料</a> · <a href="/zhuzhai-jianzao-riviera-maya/">里维埃拉玛雅住宅建造</a> · <a href="/jiayouzhan-jianzao-cozumel/">科苏梅尔加油站建造与改造</a> · <a href="/haohua-bieshu-tulum-country-club/">图卢姆乡村俱乐部豪华别墅</a> · <a href="/blog-zh/zona-hotelera-cancun-jianfang-chengben.html">在坎昆酒店区建房要多少钱？（2026）</a></p></div></nav>
+<section class="py-3" data-nb="rel"><div class="container"><p class="small text-muted mb-0"><strong>相关服务：</strong> <a href="/jiudian-jianzao-chengben-jisuanqi/">酒店造价计算器</a> · <a href="/shangye-jianzhu-chengben-jisuanqi/">商业建筑造价计算器</a> · <a href="/jiayouzhan-jianzao-chengben-jisuanqi/">加油站造价计算器</a> · <a href="/zhensuo-jianzao-chengben-jisuanqi/">诊所造价计算器</a> · <a href="/fanxin-chengben-jisuanqi/">翻新费用计算器</a> · <a href="/cangku-jianzao-chengben-jisuanqi/">仓库</a></p></div></section>
+<nav class="py-3" data-orbit="1"><div class="container"><p class="small text-muted mb-0"><strong>延伸阅读：</strong> <a href="/jiudian-gaizao-riviera-maya/">里维埃拉玛雅酒店及度假村翻新，无需停业</a> · <a href="/jiudian-jianzao-chengben-jisuanqi/">精品酒店建造成本计算器</a> · <a href="/cangku-changfang-jianzao-puerto-aventuras/">冒险港仓库与工业厂房建造</a> · <a href="/bieshu-jiudian-jianzao-aldea-zama/">Aldea Zamá别墅与酒店建造</a> · <a href="/zhuzhai-jianzao-residencial-cumbres/">昆布雷斯住宅区，坎昆住宅建造</a> · <a href="/blog-zh/riviera-maya-fangchan-zengzhi-2026.html">2026年里维埃拉玛雅房地产增值</a> · <a href="/blog-zh/jinkou-jiaju-cailiao-moxige.html">为您的里维埃拉玛雅建房进口家具与材料</a> · <a href="/zhuzhai-jianzao-riviera-maya/">里维埃拉玛雅住宅建造</a> · <a href="/jiayouzhan-jianzao-cozumel/">科苏梅尔加油站建造与改造</a> · <a href="/haohua-bieshu-tulum-country-club/">图卢姆乡村俱乐部豪华别墅</a> · <a href="/blog-zh/zona-hotelera-cancun-jianfang-chengben.html">在坎昆酒店区建房要多少钱？（2026）</a></p></div></nav>
 <section data-review="gbp" class="py-4" style="background:#f6f7f9;border-top:1px solid #e6e8eb"><div class="container text-center"><h2 class="h5 mb-2">与我们合作过？欢迎在 Google 留下评价</h2><p class="mb-3 text-muted small">您的评价能帮助其他业主做决定，也帮助我们改进。</p><a href="https://www.google.com/search?q=Recrea+Construction+%26+Arquitectura&amp;ludocid=15171494471908439484#lrd=0x0:0xd28bf9d715e7b5bc,3,,," target="_blank" rel="noopener" class="btn btn-cta me-2 mb-2"><i class="bi bi-star-fill me-2"></i>撰写评价</a><a href="https://www.google.com/maps?cid=15171494471908439484" target="_blank" rel="noopener" class="btn btn-outline-secondary mb-2"><i class="bi bi-google me-2"></i>查看 Google 评价</a></div></section>
 <footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-4"><h5>Recrea Construction</h5><p>普拉亚德尔卡门建筑公司。自2008年起在里维埃拉玛雅提供住宅、别墅、商业与翻新。</p>
 <p data-review="gbp-foot" class="mb-0 mt-2"><a href="https://www.google.com/search?q=Recrea+Construction+%26+Arquitectura&amp;ludocid=15171494471908439484#lrd=0x0:0xd28bf9d715e7b5bc,3,,," target="_blank" rel="noopener">撰写评价</a> · <a href="https://www.google.com/maps?cid=15171494471908439484" target="_blank" rel="noopener">查看 Google 评价</a></p>
