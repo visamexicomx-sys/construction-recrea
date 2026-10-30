@@ -52,6 +52,7 @@
 </nav>
 <div style="padding-top:116px"></div>
 <nav class="container mt-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Inicio</a></li><li class="breadcrumb-item active">Director Responsable de Obra (DRO): Qué Hace y Cuánto Cuesta</li></ol></nav>
+<section class="py-4" data-calcbox="1"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="p-4 rounded shadow-sm" style="background:#f7f2e8;border:1px solid #c8a96e" data-calc="{&quot;lines&quot;: [{&quot;from&quot;: &quot;t&quot;, &quot;qty&quot;: &quot;m2&quot;, &quot;opts&quot;: [{&quot;tiers&quot;: [[200, 25000, 60000], [500, 50000, 120000]]}]}], &quot;ask&quot;: &quot;Edificio o desarrollo: se cotiza por proyecto&quot;}"><h2 class="h4 mb-3">Calculadora de honorarios del DRO</h2><div class="row g-3"><div class="col-md-6"><label class="form-label small">Superficie de la obra (m²)</label><input type="number" min="0" class="form-control" name="m2" value="150"></div><input type="hidden" name="t" value="0"></div><p class="h5 mt-3 mb-1">Honorario estimado: <strong data-out></strong></p><p class="small text-muted mb-0">Rangos de la tabla de honorarios 2026 de esta página. Edificios y desarrollos se cotizan por proyecto.</p></div></div></div></div></section>
 <section class="py-5"><div class="container"><div class="row justify-content-center"><div class="col-lg-8">
 <h1>Director Responsable de Obra (DRO): Qué Hace y Cuánto Cuesta</h1>
 <p class="lead">El DRO es quien responde ante el municipio por que la obra cumpla el reglamento. Sin su firma no hay licencia, y con una firma prestada no hay respaldo real.</p>
@@ -75,6 +76,17 @@
 </tbody></table></div>
 <h2 class="mt-4">Honorarios 2026</h2>
 <p>Varían por superficie, complejidad y municipio. Estos son los rangos habituales en la Riviera Maya para obra residencial.</p>
+<h2 class="mt-4" data-dro="m2">Cuánto cobra un DRO por m² y por firma</h2>
+<p>El DRO cotiza por proyecto, no por metro cuadrado. Para comparar presupuestos sirve llevar el honorario a m²: con los rangos de la tabla anterior, el costo por m² baja conforme crece la casa.</p>
+<div class="table-responsive"><table class="table table-sm"><thead><tr><th>Superficie</th><th>Honorario total 2026</th><th>Equivale a</th></tr></thead><tbody>
+<tr><td>100 m²</td><td>$25,000 – $60,000 MXN</td><td>$250 – $600 MXN/m²</td></tr>
+<tr><td>200 m²</td><td>$25,000 – $60,000 MXN</td><td>$125 – $300 MXN/m²</td></tr>
+<tr><td>350 m²</td><td>$50,000 – $120,000 MXN</td><td>$143 – $343 MXN/m²</td></tr>
+<tr><td>500 m²</td><td>$50,000 – $120,000 MXN</td><td>$100 – $240 MXN/m²</td></tr>
+</tbody></table></div>
+<p><strong>¿Y «por firma»?</strong> El honorario normal ya incluye la firma del proyecto y de la licencia, el trámite y las visitas. Cuando alguien ofrece «solo la firma» a una fracción de ese precio, está ofreciendo la firma prestada que se describe abajo: la licencia sale, pero nadie revisa la obra ni responde por ella.</p>
+<p><strong>Firmar planos de una obra existente</strong> (regularización) no se cotiza por m² sino según el estado de la construcción: requiere levantamiento, revisión estructural y, a veces, refuerzos antes de que un DRO acepte firmar.</p>
+<p><strong>Qué sube o baja el honorario:</strong> superficie y número de niveles, municipio, si el predio está en zona costera o con restricción ambiental, si incluye la terminación de obra y, en edificios, los corresponsables (estructura, instalaciones, diseño urbano) que el reglamento municipal puede exigir y que cobran por separado.</p>
 <h2 class="mt-4">La firma prestada</h2>
 <p>Existe la práctica de conseguir una firma sin que el profesional pise la obra. Es más barata y deja al propietario sin respaldo: ante un requerimiento, una sanción o un problema estructural, nadie responde y la irregularidad se convierte en un obstáculo el día de vender. Cuando el constructor gestiona el DRO, conviene igualmente saber quién es y ver su registro.</p>
 
@@ -107,4 +119,5 @@
 <script>(function(){var t=document.getElementById('waToggle'),b=document.getElementById('waChatBox'),c=document.getElementById('waClose'),i=document.getElementById('waIcon');if(!t||!b)return;var open=false;t.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open=!open;b.classList.toggle('open',open);if(i)i.className=open?'bi bi-x-lg':'bi bi-whatsapp';});if(c)c.addEventListener('click',function(e){e.stopPropagation();open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';});document.addEventListener('click',function(e){if(open&&!e.target.closest('#waWidget')){open=false;b.classList.remove('open');if(i)i.className='bi bi-whatsapp';}});})();</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});</script>
+<script src="/js/calc-mini.js" defer></script>
 </body></html>
