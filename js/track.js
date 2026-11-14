@@ -44,12 +44,12 @@
     var f=e.target;if(f&&f.tagName==='FORM'){ev('generate_lead',{form_action:f.getAttribute('action')||''});if(/contact-form/.test(f.className))toCRM(f);}
   },true);
 })();
-/* Instagram card: shows once the visitor reaches the 3rd screen (scroll > 2 viewports); dismiss hides it for 7 days. Not on the homepages. */
+/* Instagram card: shows on the 3rd screen (scroll > 2 viewports); short pages: at half scroll or after 15 s. Close hides it for the session, Follow for 7 days. Not on the root homepage. */
 (function(){
   var p=location.pathname;
-  if(/^\/((en|es|de|ru|fr|zh|mx)\/)?(index\.html)?$/.test(p)||/^\/pt\/home-portugues\/?/.test(p))return;
-  var URL='https://www.instagram.com/recrea_arquitectura',K='ig_card_hide',shown=false;
-  try{var t=+localStorage.getItem(K);if(t&&Date.now()-t<7*864e5)return;}catch(e){}
+  if(/^\/(index\.html)?$/.test(p))return;
+  var URL='https://www.instagram.com/recrea_arquitectura',K='ig_follow',shown=false;
+  try{var t=+localStorage.getItem(K);if(t&&Date.now()-t<7*864e5)return;if(sessionStorage.getItem('ig_close'))return;}catch(e){}
   var L=(document.documentElement.lang||'en').slice(0,2);
   var T={en:['See our projects on Instagram','Villas, condos and renovations from the Riviera Maya: before and after, site progress and finished homes.','Follow @recrea_arquitectura'],
          es:['Vea nuestras obras en Instagram','Villas, departamentos y remodelaciones en la Riviera Maya: antes y después, avance de obra y casas terminadas.','Seguir @recrea_arquitectura'],
@@ -70,10 +70,12 @@
       '<a href="'+URL+'" target="_blank" rel="noopener" style="display:block;text-align:center;padding:10px 12px;border-radius:10px;color:#fff;font-weight:600;text-decoration:none;background:linear-gradient(90deg,#f58529,#dd2a7b,#8134af)">'+T[2]+'</a>';
     document.body.appendChild(d);
     requestAnimationFrame(function(){d.style.transform='none';d.style.opacity='1';});
-    d.querySelector('button').onclick=function(){try{localStorage.setItem(K,Date.now());}catch(e){}d.remove();if(typeof gtag==='function')gtag('event','instagram_card_close');};
+    d.querySelector('button').onclick=function(){try{sessionStorage.setItem('ig_close',1);}catch(e){}d.remove();if(typeof gtag==='function')gtag('event','instagram_card_close');};
     d.querySelector('a').onclick=function(){try{localStorage.setItem(K,Date.now());}catch(e){}if(typeof gtag==='function')gtag('event','instagram_click',{link_url:URL,source:'ig_card'});};
     if(typeof gtag==='function')gtag('event','instagram_card_view');
   }
-  function onScroll(){if(window.scrollY>window.innerHeight*2){show();window.removeEventListener('scroll',onScroll);}}
+  function onScroll(){var h=window.innerHeight,m=document.documentElement.scrollHeight-h;
+    if(window.scrollY>h*2||(m<h*2.5&&window.scrollY>m*0.5)){show();window.removeEventListener('scroll',onScroll);}}
   window.addEventListener('scroll',onScroll,{passive:true});
+  setTimeout(function(){if(document.documentElement.scrollHeight<window.innerHeight*3)show();},15000);
 })();
