@@ -79,3 +79,16 @@
   window.addEventListener('scroll',onScroll,{passive:true});
   setTimeout(function(){if(document.documentElement.scrollHeight<window.innerHeight*3)show();},15000);
 })();
+/* Root homepage: round Instagram button next to the WhatsApp and email floats (other pages get the card above). */
+(function(){
+  if(!/^\/(index\.html)?$/.test(location.pathname))return;
+  var e=document.querySelector('.email-float');if(!e)return;
+  var URL='https://www.instagram.com/recrea_arquitectura',m=window.innerWidth<=480;
+  var a=document.createElement('a');a.href=URL;a.target='_blank';a.rel='noopener';a.className='ig-float';a.setAttribute('aria-label','Instagram @recrea_arquitectura');
+  var s=m?50:62;
+  a.style.cssText='position:fixed;bottom:'+(m?16:26)+'px;right:'+(m?136:166)+'px;width:'+s+'px;height:'+s+'px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:'+(m?1.3:1.6)+'rem;text-decoration:none;z-index:9998;transition:transform .3s;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%);box-shadow:0 4px 15px rgba(214,36,159,.4)';
+  a.innerHTML='<i class="bi bi-instagram"></i>';
+  a.onmouseenter=function(){a.style.transform='scale(1.1)';};a.onmouseleave=function(){a.style.transform='';};
+  a.onclick=function(){if(typeof gtag==='function')gtag('event','instagram_click',{link_url:URL,source:'ig_float'});};
+  e.parentNode.insertBefore(a,e.nextSibling);
+})();
