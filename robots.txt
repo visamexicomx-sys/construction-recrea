@@ -4,6 +4,20 @@ Disallow: /*.py$
 Disallow: /*.sh$
 Disallow: /*.log$
 
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+Allow: /
+Disallow: /*.py$
+Disallow: /*.sh$
+Disallow: /*.log$
+
 Sitemap: https://construction-recrea.com/sitemap.xml
 
 # Crawl-delay: 1
