@@ -40,8 +40,29 @@
     });
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',consent);else consent();
+  /* After formsubmit emails the lead, it redirects (_next) to WhatsApp with the lead pre-filled, so it lands in Recrea's chat. */
+  var WA='529844525333';
+  var WT={es:['Hola Recrea, acabo de enviar una solicitud desde su sitio web:','Nombre','Teléfono','Email','Tipo','Ubicación','Tamaño (m²)','Mensaje','Página'],
+    en:['Hi Recrea, I just sent a request from your website:','Name','Phone','Email','Type','Location','Size (m²)','Message','Page'],
+    ru:['Здравствуйте, Recrea! Я отправил заявку с вашего сайта:','Имя','Телефон','Email','Тип','Локация','Площадь (м²)','Сообщение','Страница'],
+    de:['Hallo Recrea, ich habe gerade eine Anfrage über Ihre Website gesendet:','Name','Telefon','E-Mail','Art','Ort','Fläche (m²)','Nachricht','Seite'],
+    fr:['Bonjour Recrea, je viens d\'envoyer une demande depuis votre site :','Nom','Téléphone','E-mail','Type','Lieu','Surface (m²)','Message','Page'],
+    zh:['您好 Recrea，我刚通过网站提交了需求：','姓名','电话','邮箱','类型','地点','面积 (m²)','留言','页面']};
+  function toWA(f){
+    try{
+      if(val(f,'_honey')||!val(f,'name'))return;
+      var t=WT[(document.documentElement.lang||'es').slice(0,2)]||WT.en;
+      var rows=[[1,'name'],[2,'phone'],[3,'email'],[4,'project_type'],[5,'location'],[6,'size'],[7,'message']].map(function(r){var v=val(f,r[1])||(r[1]==='project_type'?val(f,'service_type'):r[1]==='size'?val(f,'area'):'');return v?t[r[0]]+': '+v.slice(0,600):'';}).filter(Boolean);
+      var h1=document.querySelector('h1');
+      rows.push(t[8]+': '+(h1?h1.textContent.trim().slice(0,90)+' — ':'')+location.href.split(/[?#]/)[0]);
+      var url='https://wa.me/'+WA+'?text='+encodeURIComponent(t[0]+'\n\n'+rows.join('\n'));
+      var n=f.querySelector('input[name="_next"]');
+      if(!n){n=document.createElement('input');n.type='hidden';n.name='_next';f.appendChild(n);}
+      n.value=url;ev('whatsapp_lead_redirect',{page:location.pathname});
+    }catch(err){}
+  }
   document.addEventListener('submit',function(e){
-    var f=e.target;if(f&&f.tagName==='FORM'){ev('generate_lead',{form_action:f.getAttribute('action')||''});if(/contact-form/.test(f.className))toCRM(f);}
+    var f=e.target;if(f&&f.tagName==='FORM'){ev('generate_lead',{form_action:f.getAttribute('action')||''});if(/contact-form/.test(f.className)){toCRM(f);toWA(f);}}
   },true);
 })();
 /* Round Instagram button next to the WhatsApp and email floats, on every page. */
